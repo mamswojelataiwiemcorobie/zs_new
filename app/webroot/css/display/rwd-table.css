@@ -1,0 +1,41 @@
+/* Styles for the tables test page */
+.display-table-wrapper {
+   position: relative;
+   margin: 5em 5%;
+}
+.display-table-menu-wrapper {
+   position: absolute;
+   top: -7em;
+   right: 0;
+}
+.display-table-menu {
+   position: absolute;
+   background-color: #fff;
+   padding: 10px;
+   border: 1px solid #ccc;
+   font-size: 13px;
+   width: 12em;
+   right: 0;
+   left: auto;
+}
+.display-table-menu-hidden {
+   left: -999em;
+   right: auto;
+}
+.display-table-menu-btn {
+   text-decoration: none;
+   color: #333;
+   font-size: 1.2em;
+   background: #eee url(../display/icon-menu.png) no-repeat 5px center;
+   padding: .3em 10px .3em 20px;
+   border: 1px solid #ccc;
+}
+.display-table-menu li {
+   padding: .3em 0;
+}
+.display-table-ul{
+   list-style:none !important;
+}
+.z{
+    z-index: 1 !important;
+}

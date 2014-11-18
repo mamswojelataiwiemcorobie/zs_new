@@ -1,0 +1,1 @@
+document.getElementsByClassName('next paginate_button').innerHTML="";

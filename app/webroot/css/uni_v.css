@@ -1,0 +1,97 @@
+	form[class=form-inline] > div:nth-of-type(2) 
+	{
+    	width: 50%;
+    	padding-right: 10px;
+	}
+	form[class=form-inline] > div:nth-of-type(3) 
+	{
+    	width: 50%;
+    	
+	}
+	form[class=form-inline] > select
+	{
+		margin-left: 50%;
+		//width: 100px;
+	}
+.bg {
+	height:0 !important;
+}
+.logos {
+	height:500 !important;
+
+	border: red 1px solid !important;
+	height:500 !important;
+}
+.pictureAndTexDiv {
+	border: blue 1px solid !important;
+	height:500 !important;
+    width: 1% !important;
+    display: table !important;
+	margin: 0 auto !important; 
+}
+#floater {
+	border: red 1px solid !important;
+    float: left !important;
+    height: 50% !important;
+    width: 100% !important;
+    margin-bottom: -50px !important;
+}
+.cell {
+	clear: both !important;
+    height: 100px !important;
+	border: yellow 1px solid !important;
+}
+
+.cell img{
+    border: green 1px solid !important;
+}
+h2{
+	text-align:center !important;
+	//padding-bottom:200
+}
+
+.p-uni-2 {
+ margin-left:5% !important;
+ margin-right:5% !important;
+ margin-top:10% !important;
+}
+.p-un {
+margin:0 auto
+}
+
+.p-b-center{
+	text-align: center !important;
+}
+  @media screen and (max-width:800px) {
+    .form-group{
+      display: inline !important;
+    }
+}
+   @media screen and (max-width:520px) {
+   	.box, .alert{
+    	width: 100%;
+    	font-size: 10px !important;
+    	word-wrap: break-word !important;
+  	}
+    h2{
+      font-size:20px !important;
+    }
+    ul{
+    	font-size: 10px !important;
+		word-wrap: break-word !important;
+    }
+    h4:before{
+    	height: 25px !important;
+		width: 25px !important;
+		background-size: 15px 15px !important;
+    }
+    h4{
+    	padding: 6px 0px 6px 40px !important;
+    }
+}
+    @media screen and (max-width:400px) {
+    h2{
+      font-size:17px !important;
+      word-wrap: break-word !important;
+    }
+  }

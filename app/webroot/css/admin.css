@@ -1,0 +1,24 @@
+/** Admin**/
+#flashMessage {
+	color :red;
+	font-size:25px;
+	font-weight:bold;
+	padding-top:10px;
+}
+
+.table {
+	margin-bottom: 0px;
+}
+
+.form-horizontal {
+margin-bottom: 10px;
+border-bottom: 2px solid;
+}
+
+.dodaj_kierunki {
+	margin-top:20px;
+}
+
+#content-wrapper {
+	margin:10px 0;
+}

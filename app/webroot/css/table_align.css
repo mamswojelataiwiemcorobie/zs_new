@@ -1,0 +1,12 @@
+/* Alignment SelectBox with ResetButton */
+th{
+	white-space: nowrap !important;
+}
+.yadcf-filter-wrapper{
+/*div[id=yadcf-filter-wrapper]{*/
+	width: auto !important;
+}
+.yadcf-filter-reset-button{
+/*div[id=yadcf-filter-wrapper] input{*/
+	display: inline !important;
+}

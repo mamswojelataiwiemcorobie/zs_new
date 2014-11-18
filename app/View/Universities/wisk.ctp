@@ -1,0 +1,5 @@
+<?php
+	//unv
+	echo $min;
+
+?>

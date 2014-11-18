@@ -1,0 +1,1776 @@
+2014-11-13 10:20:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Course.placa' in 'order clause'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Course`...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Course`...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Course`...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(Course), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php(52): Model->find('all', Array)
+#6 [internal function]: CoursesController->top()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(CoursesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CoursesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\kierunki_top.ctp(9): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(81): View->element('kierunki_top')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 10:20:41 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1205.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:20:41 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1213.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:20:41 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:20:41 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1238.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:20:44 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1198.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:21:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Course.placa' in 'order clause'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Course`...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Course`...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Course`...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(Course), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php(52): Model->find('all', Array)
+#6 [internal function]: CoursesController->top()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(CoursesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CoursesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\kierunki_top.ctp(9): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(81): View->element('kierunki_top')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 10:21:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:21:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1238.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:21:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Course.placa' in 'order clause'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Course`...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Course`...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Course`...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(Course), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php(52): Model->find('all', Array)
+#6 [internal function]: CoursesController->top()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(CoursesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CoursesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\kierunki_top.ctp(9): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(81): View->element('kierunki_top')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 10:21:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:22:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Course.placa' in 'order clause'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Course`...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Course`...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Course`...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(Course), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php(52): Model->find('all', Array)
+#6 [internal function]: CoursesController->top()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(CoursesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CoursesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\kierunki_top.ctp(9): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(81): View->element('kierunki_top')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 10:22:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:22:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1198.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:22:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Course.placa' in 'order clause'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Course`...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Course`...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Course`...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(Course), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php(52): Model->find('all', Array)
+#6 [internal function]: CoursesController->top()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(CoursesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CoursesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\kierunki_top.ctp(9): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(81): View->element('kierunki_top')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 10:22:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:22:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1205.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:22:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Course.placa' in 'order clause'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Course`...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Course`...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Course`...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(Course), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php(52): Model->find('all', Array)
+#6 [internal function]: CoursesController->top()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(CoursesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CoursesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\kierunki_top.ctp(9): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(81): View->element('kierunki_top')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 10:22:28 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:22:28 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1205.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:22:28 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1238.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 10:23:19 Error: [MissingTableException] Table universities for model University was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'universities',
+  'class' => 'University',
+  'ds' => 'default',
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3243): Model->setSource('universities')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): Model->getDataSource()
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(582): Model->find('all')
+#3 [internal function]: UniversitiesController->home_slider()
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(6): Object->requestAction(Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(55): View->element('home_uni_logos_...')
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#18 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2014-11-13 10:23:49 Error: [MissingTableException] Table universities for model University was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'universities',
+  'class' => 'University',
+  'ds' => 'default',
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3243): Model->setSource('universities')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): Model->getDataSource()
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(595): Model->find('all', Array)
+#3 [internal function]: UniversitiesController->top()
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\uczelnie_top.ctp(9): Object->requestAction(Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(75): View->element('uczelnie_top')
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#18 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2014-11-13 10:24:11 Error: [MissingTableException] Table contacts for model Contact was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'contacts',
+  'class' => 'Contact',
+  'ds' => 'default',
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3243): Model->setSource('contacts')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('Contact', 'fields')
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\footer.ctp(57): FormHelper->create('Contact', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\app\View\Layouts\default.ctp(126): View->element('footer')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(535): View->_render('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#15 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#16 [internal function]: PagesController->display('home')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#20 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#21 {main}
+2014-11-13 11:12:33 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp, line 66]
+2014-11-13 11:12:33 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 66)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 66, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 66, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 11:13:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1198.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:13:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1109.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:13:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1205.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:13:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1213.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:13:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1238.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:21:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1109.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:21:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1205.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:21:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1238.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:21:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1198.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:21:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1213.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:22:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1109.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:22:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1198.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:22:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1205.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:22:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1213.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:22:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1238.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:24:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1213.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:24:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1109.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:24:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1198.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:24:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1238.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:24:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1205.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:27:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1109.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:27:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1205.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:27:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1198.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:27:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1238.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:27:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1213.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:31:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1198.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:31:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1238.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:31:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1109.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:31:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1205.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:31:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1213.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:34:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1109.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:34:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1205.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:34:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1213.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:34:50 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1238.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:38:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1198.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:38:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1238.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:38:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1213.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:38:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1109.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:38:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1205.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:41:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1109.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:41:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1205.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:41:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1213.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:43:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1109.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:43:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1213.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:43:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1198.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:43:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1205.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 11:43:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie_min/1238.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 12:05:04 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'University.nazwa' in 'field list'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(238): Model->find('all')
+#6 [internal function]: UniversitiesController->home_slider()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(17): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(30): View->element('home_uni_logos_...')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 12:06:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'University.nazwa' in 'field list'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(238): Model->find('all')
+#6 [internal function]: UniversitiesController->home_slider()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(17): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(30): View->element('home_uni_logos_...')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 12:07:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'University.nazwa' in 'field list'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(238): Model->find('all')
+#6 [internal function]: UniversitiesController->home_slider()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(17): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(30): View->element('home_uni_logos_...')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 12:08:51 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 537]
+2014-11-13 12:08:51 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 537)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 537, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 537, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:11:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'University.typ' in 'field list'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(238): Model->find('all')
+#6 [internal function]: UniversitiesController->home_slider()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(17): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(30): View->element('home_uni_logos_...')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 12:11:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'University.typ' in 'field list'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(238): Model->find('all')
+#6 [internal function]: UniversitiesController->home_slider()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(17): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(30): View->element('home_uni_logos_...')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 12:12:30 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 484]
+2014-11-13 12:12:30 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 484)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 484, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 484, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:13:08 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 807]
+2014-11-13 12:13:08 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 807)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:16:55 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 807]
+2014-11-13 12:16:55 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 807)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:18:22 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 807]
+2014-11-13 12:18:22 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 807)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:19:57 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 549]
+2014-11-13 12:19:57 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 549)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 549, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 549, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:20:09 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\String.php, line 243]
+2014-11-13 12:20:09 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 243, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 243, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:23:08 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 493]
+2014-11-13 12:23:08 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 493)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 493, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 493, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:24:00 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 823]
+2014-11-13 12:24:01 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 823)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 823, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 823, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:24:44 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\String.php, line 247]
+2014-11-13 12:24:44 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 247)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 247, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 247, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:24:58 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 816]
+2014-11-13 12:24:58 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 816)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 816, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 816, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:27:04 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 544]
+2014-11-13 12:27:04 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 544)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 544, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 544, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:28:25 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 800]
+2014-11-13 12:28:25 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 800)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 800, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 800, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:32:39 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 530]
+2014-11-13 12:32:39 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 530)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 530, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 530, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:34:02 Error: Fatal Error (1): Maximum execution time of 90 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 493]
+2014-11-13 12:34:02 Error: [FatalErrorException] Maximum execution time of 90 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 493)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 493, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 493, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:36:14 Error: Fatal Error (1): Maximum execution time of 90 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 807]
+2014-11-13 12:36:14 Error: [FatalErrorException] Maximum execution time of 90 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 807)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:37:43 Error: Fatal Error (1): Maximum execution time of 120 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 807]
+2014-11-13 12:37:43 Error: [FatalErrorException] Maximum execution time of 120 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 807)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:38:30 Error: Fatal Error (1): Maximum execution time of 120 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 807]
+2014-11-13 12:38:30 Error: [FatalErrorException] Maximum execution time of 120 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 807)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:38:34 Error: Fatal Error (1): Maximum execution time of 60 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 498]
+2014-11-13 12:38:34 Error: [FatalErrorException] Maximum execution time of 60 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 498)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 498, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 498, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:41:01 Error: Fatal Error (1): Maximum execution time of 60 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 816]
+2014-11-13 12:41:01 Error: [FatalErrorException] Maximum execution time of 60 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 816)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 816, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 816, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:42:55 Error: Fatal Error (1): Maximum execution time of 60 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 554]
+2014-11-13 12:42:55 Error: [FatalErrorException] Maximum execution time of 60 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 554)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 554, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 554, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:44:09 Error: Fatal Error (1): Maximum execution time of 60 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\String.php, line 244]
+2014-11-13 12:44:09 Error: [FatalErrorException] Maximum execution time of 60 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 244)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 244, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 244, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:46:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UniversitiesParameter.university_id' in 'on clause'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(237): Model->find('all')
+#6 [internal function]: UniversitiesController->home_slider()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(17): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(30): View->element('home_uni_logos_...')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 12:47:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UniversitiesParameter.id_university' in 'field list'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(237): Model->find('all')
+#6 [internal function]: UniversitiesController->home_slider()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(17): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(30): View->element('home_uni_logos_...')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 12:47:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UniversitiesParameter.id_university' in 'field list'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(237): Model->find('all')
+#6 [internal function]: UniversitiesController->home_slider()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(17): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(30): View->element('home_uni_logos_...')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 12:47:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UniversitiesParameter.id_university' in 'field list'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(237): Model->find('all')
+#6 [internal function]: UniversitiesController->home_slider()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(17): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(30): View->element('home_uni_logos_...')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 12:48:43 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\String.php, line 243]
+2014-11-13 12:48:43 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 243, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 243, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:49:19 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 493]
+2014-11-13 12:49:19 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 493)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 493, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 493, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:50:43 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 237]
+2014-11-13 12:50:43 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 237)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 237, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 237, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:50:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UniversityParameter.nazwa' in 'field list'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(237): Model->find('all', Array)
+#6 [internal function]: UniversitiesController->home_slider()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(17): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(30): View->element('home_uni_logos_...')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#22 [internal function]: PagesController->display('home')
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#24 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#25 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#26 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#27 {main}
+2014-11-13 12:51:57 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 486]
+2014-11-13 12:51:57 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 486)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 486, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 486, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:52:32 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 817]
+2014-11-13 12:52:32 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 817)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 817, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 817, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:53:16 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 498]
+2014-11-13 12:53:16 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 498)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 498, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 498, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:53:26 Error: [MissingTableException] Table contacts for model Contact was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'contacts',
+  'class' => 'Contact',
+  'ds' => 'default',
+)
+Request URL: /uczelnie
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3243): Model->setSource('contacts')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('Contact', 'fields')
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\footer.ctp(57): FormHelper->create('Contact', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\app\View\Layouts\default.ctp(121): View->element('footer')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(535): View->_render('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#16 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#17 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2014-11-13 12:53:35 Error: [MissingTableException] Table contacts for model Contact was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'contacts',
+  'class' => 'Contact',
+  'ds' => 'default',
+)
+Request URL: /kontakt
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3243): Model->setSource('contacts')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('Contact', 'fields')
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\View\Contacts\index.ctp(55): FormHelper->create('Contact', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ContactsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-11-13 12:55:05 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 486]
+2014-11-13 12:55:05 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 486)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 486, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 486, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:55:50 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\basics.php, line 199]
+2014-11-13 12:55:50 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 199)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 199, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 199, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:56:35 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 807]
+2014-11-13 12:56:35 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 807)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:57:37 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 820]
+2014-11-13 12:57:37 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 820)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 820, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 820, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 12:58:28 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 498]
+2014-11-13 12:58:28 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 498)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 498, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 498, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 13:02:24 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\String.php, line 243]
+2014-11-13 13:02:24 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 243, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 243, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 13:03:47 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 549]
+2014-11-13 13:03:47 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 549)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 549, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 549, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 13:07:10 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 526]
+2014-11-13 13:07:10 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 526)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 526, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 526, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 13:07:56 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 473]
+2014-11-13 13:07:56 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 473)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 473, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 473, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 13:09:39 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 496]
+2014-11-13 13:09:39 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 496)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 496, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 496, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 13:16:30 Error: [MissingTableException] Table contacts for model Contact was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'contacts',
+  'class' => 'Contact',
+  'ds' => 'default',
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3243): Model->setSource('contacts')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('Contact', 'fields')
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\footer.ctp(57): FormHelper->create('Contact', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\app\View\Layouts\default.ctp(121): View->element('footer')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(535): View->_render('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#15 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#16 [internal function]: PagesController->display('home')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#20 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#21 {main}
+2014-11-13 13:19:56 Error: [MissingTableException] Table contacts for model Contact was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'contacts',
+  'class' => 'Contact',
+  'ds' => 'default',
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3243): Model->setSource('contacts')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('Contact', 'fields')
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\footer.ctp(57): FormHelper->create('Contact', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\app\View\Layouts\default.ctp(121): View->element('footer')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(535): View->_render('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#15 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#16 [internal function]: PagesController->display('home')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#20 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#21 {main}
+2014-11-13 13:20:18 Error: [MissingTableException] Table contacts for model Contact was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'contacts',
+  'class' => 'Contact',
+  'ds' => 'default',
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3243): Model->setSource('contacts')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('Contact', 'fields')
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\footer.ctp(57): FormHelper->create('Contact', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\app\View\Layouts\default.ctp(121): View->element('footer')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(535): View->_render('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#15 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#16 [internal function]: PagesController->display('home')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#20 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#21 {main}
+2014-11-13 13:21:48 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 473]
+2014-11-13 13:21:48 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 473)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 473, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 473, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 13:22:45 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 238]
+2014-11-13 13:22:45 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 238)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 238, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 238, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 13:23:23 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 807]
+2014-11-13 13:23:23 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 807)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 13:30:44 Error: [MissingTableException] Table uczelnie_fotos for model UczelnieFoto was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'uczelnie_fotos',
+  'class' => 'UczelnieFoto',
+  'ds' => 'default',
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3243): Model->setSource('uczelnie_fotos')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(238): Model->find('all', Array)
+#4 [internal function]: UniversitiesController->home_slider()
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(17): Object->requestAction(Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(26): View->element('home_uni_logos_...')
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#16 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#19 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#20 [internal function]: PagesController->display('home')
+#21 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#22 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#24 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#25 {main}
+2014-11-18 09:48:55 Error: [MissingTableException] Table uczelnie_fotos for model UczelnieFoto was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'uczelnie_fotos',
+  'class' => 'UczelnieFoto',
+  'ds' => 'default',
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3243): Model->setSource('uczelnie_fotos')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(238): Model->find('all', Array)
+#4 [internal function]: UniversitiesController->home_slider()
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(17): Object->requestAction(Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(26): View->element('home_uni_logos_...')
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#16 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#19 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#20 [internal function]: PagesController->display('home')
+#21 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#22 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#23 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#24 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#25 {main}

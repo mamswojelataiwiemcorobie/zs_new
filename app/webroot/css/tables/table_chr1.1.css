@@ -1,0 +1,91 @@
+/* PAGINATOION */
+.dataTables_paginate{
+	margin-top: 20px !important;
+}
+.next{
+	display: inline !important;
+	float: none !important;
+	margin-top: none !important;
+	padding-bottom: none !important;
+}
+.paginate_active, .paginate_button, .last, .next{
+	//background: #f65d40 !important; 
+	border: 0px !important;
+	border-color: #fff transparent !important;
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+
+	
+	color: #999 !important;
+	//cursor: not-allowed !important;
+	
+	padding: 10px 16px !important;
+	font-size: 18px !important;
+	padding: 6px 12px !important;
+	margin: 0 0px !important;
+	margin-left: -1px !important;
+}
+.first{
+	border-bottom-left-radius: 4px !important;
+	border-top-left-radius: 4px !important;
+}
+.last{
+	border-bottom-right-radius: 4px !important;
+	border-top-right-radius: 4px !important;
+}
+.paginate_active{
+	background: #f54828 !important;
+}
+.paginate_button:hover{
+	background: #eee !important;
+}
+/* SELECT & BUTTON */
+.yadcf-filter-reset-button{
+background: #DADADA !important;
+border: none !important;
+height: 32px !important;
+margin-left: 4px !important;
+font-weight: normal !important;
+font-size: small !important;
+}.yadcf-filter{
+	border: 1px solid #e1e1e1 !important;
+}
+/* Alignment SelectBox with ResetButton */
+th{
+	//white-space: nowrap !important;
+}
+.yadcf-filter-wrapper{
+	width: auto !important;
+}
+.yadcf-filter-reset-button{
+	display: inline !important;
+}
+/* TABLE VISIBILYTY */
+.inuse{
+	background: #FFF;
+}
+th{
+	//text-align:center !important; 
+	vertical-align:text-top !important;
+}
+table.dataTable tr.odd td.sorting_1 {
+background-color: #EAEBFF !important;
+}
+table.dataTable tr.even td.sorting_1 {
+background-color: #fff !important;
+}
+table.dataTable tr.odd {
+background-color: #F5F5F5 !important;
+}
+/* WAITING */
+.dataTables_processing
+{
+	background-color: #999;
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #ccc 10px, #ccc 20px);
+	color: #666;
+	height: 50px !important;
+	font-weight:bold;
+	//padding-bottom:25px;
+}
+

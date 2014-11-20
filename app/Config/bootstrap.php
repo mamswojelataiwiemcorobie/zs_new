@@ -118,3 +118,12 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 
+/*Cache*/
+// long
+Cache::config('long', array(
+    'engine' => 'File',
+    'duration' => '+1 week',
+    'probability' => 100,
+    'path' => CACHE . 'long' . DS,
+));
+

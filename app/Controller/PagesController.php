@@ -30,7 +30,7 @@ App::uses('AppController', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers/pages-controller.html
  */
 class PagesController extends AppController {
-
+	public $components = array('Wordpress');
 /**
  * Controller name
  *
@@ -83,5 +83,7 @@ class PagesController extends AppController {
 		$this->set('title_for_layout', 'Najlepsze uczelnie');
 		$this->set('description_for_layout', 'Ranking uczelni. Najlepsze uczelnie na rynku.');
 		$this->set('keywords_for_layout', 'najlepsze, uczelnie, ranking');
-	}
+
+		
+		}
 }

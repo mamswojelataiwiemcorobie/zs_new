@@ -11588,3 +11588,173 @@ Stack Trace:
 #3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-11-20 11:59:46 Error: [MissingComponentException] Component class DataTable, WordpressComponent could not be found.
+Exception Attributes: array (
+  'class' => 'DataTable, WordpressComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('DataTable, Word...', Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(17): Object->requestAction(Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(26): View->element('home_uni_logos_...')
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('home', NULL)
+#15 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php(74): Controller->render('home')
+#16 [internal function]: PagesController->display('home')
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#20 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#21 {main}
+2014-11-20 12:00:52 Error: [MissingComponentException] Component class WordpressComponent could not be found.
+Exception Attributes: array (
+  'class' => 'WordpressComponent',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Wordpress', Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(PagesController))
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-20 12:05:51 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\PagesController.php, line 83]
+2014-11-20 12:05:51 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 83, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 83, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 12:27:03 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-11-20 12:27:04 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 12:38:33 Error: Fatal Error (1): Call to undefined method WordpressComponent::getDataSource() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\Component\WordpressComponent.php, line 224]
+2014-11-20 12:38:33 Error: [FatalErrorException] Call to undefined method WordpressComponent::getDataSource()
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 224)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 12:58:50 Error: [CacheException] Cache engine long is not properly configured.
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Cache\Cache.php(136): Cache::_buildEngine('long')
+#1 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(128): Cache::config('long', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#5 {main}
+2014-11-20 12:59:44 Error: Fatal Error (1): Call to undefined method WordpressComponent::loadModel() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\Component\WordpressComponent.php, line 224]
+2014-11-20 12:59:44 Error: [FatalErrorException] Call to undefined method WordpressComponent::loadModel()
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 224)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 13:04:16 Error: Fatal Error (1): Call to undefined method WordpressComponent::loadModel() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\Component\WordpressComponent.php, line 224]
+2014-11-20 13:04:16 Error: [FatalErrorException] Call to undefined method WordpressComponent::loadModel()
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 224)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 13:06:02 Error: Fatal Error (1): Call to undefined method WordpressComponent::loadModel() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\Component\WordpressComponent.php, line 224]
+2014-11-20 13:06:02 Error: [FatalErrorException] Call to undefined method WordpressComponent::loadModel()
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 224)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 13:06:14 Error: Fatal Error (1): Call to undefined method WordpressComponent::getDataSource() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\Component\WordpressComponent.php, line 224]
+2014-11-20 13:06:14 Error: [FatalErrorException] Call to undefined method WordpressComponent::getDataSource()
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 224)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 13:06:49 Error: Fatal Error (1): Call to undefined method WordpressComponent::getDataSource() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\Component\WordpressComponent.php, line 224]
+2014-11-20 13:06:49 Error: [FatalErrorException] Call to undefined method WordpressComponent::getDataSource()
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 224)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 13:11:19 Error: Fatal Error (1): Call to a member function fetchAll() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\Component\WordpressComponent.php, line 225]
+2014-11-20 13:11:19 Error: [FatalErrorException] Call to a member function fetchAll() on a non-object
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 225)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 225, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 225, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 13:11:42 Error: Fatal Error (1): Call to undefined method WordpressComponent::fetchAll() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\Component\WordpressComponent.php, line 225]
+2014-11-20 13:11:42 Error: [FatalErrorException] Call to undefined method WordpressComponent::fetchAll()
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 225)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 225, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 225, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 13:22:25 Error: Fatal Error (1): Call to a member function getLatest() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php, line 76]
+2014-11-20 13:22:25 Error: [FatalErrorException] Call to a member function getLatest() on a non-object
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 76)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 76, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 76, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-20 13:22:52 Error: Fatal Error (1): Call to undefined method WordpressComponent::getDataSource() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\Component\WordpressComponent.php, line 224]
+2014-11-20 13:22:52 Error: [FatalErrorException] Call to undefined method WordpressComponent::getDataSource()
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 224)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

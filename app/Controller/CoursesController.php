@@ -2,7 +2,7 @@
 App::uses('Controller', 'Controller');
 
 class CoursesController extends AppController {	
-	public $components = array('DataTable');
+	public $components = array('DataTable', 'Wordpress');
 	
 	public function index() {
 
@@ -45,7 +45,12 @@ class CoursesController extends AppController {
 	}
 	
 	public function topKierunki() {
-		$courses = $this->Course-> query("SELECT DISTINCT uk.course_id, COUNT(*) FROM universities u LEFT JOIN courseon_universities uk ON uk.university_id = u.id WHERE u.university_type_id = 1 GROUP BY uk.course_id ORDER BY 2 DESC LIMIT 0,15");
+		$courses = Cache::read('top_courses', 'long');
+        if (!$courses) {
+            $courses = $this->Course-> query("SELECT DISTINCT uk.course_id, COUNT(*) FROM universities u LEFT JOIN courseon_universities uk ON uk.university_id = u.id WHERE u.university_type_id = 1 GROUP BY uk.course_id ORDER BY 2 DESC LIMIT 0,15");
+            Cache::write('top_courses', $courses, 'long');
+        }
+
 		$kierunki = array();
 		$i=0;
 		foreach ($courses as $kierunek) {
@@ -63,6 +68,15 @@ class CoursesController extends AppController {
 	}
 
 	public function losowyKierunek() {
+		$wordpress_posts = Cache::read( 'wordpress_posts', 'long' );
+			if ( $wordpress_posts === false ) {
+				$this->Wordpress->limit = 1;
+				$this->Wordpress->niceurls = true;
+				$this->Wordpress->thumbnails = true;
+				$wordpress_posts = $this->Wordpress->getLatest();
+				Cache::write('wordpress_posts', $wordpress_posts, 'long');
+			}
+		$this->set('wordpress_posts', $wordpress_posts);
 		$this->Course->contain();
 		$losowe = $this->Course->find('all', array('conditions' => array('Course.opis1 !='=> ''), 
 													'order'=>'rand()',

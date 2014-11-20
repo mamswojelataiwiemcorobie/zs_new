@@ -64,6 +64,91 @@
   <!-- Recent projects - policealne -->
   <?php echo $this->element('home_poli_logos_slider'); ?>
 
+  <!-- Wp_posts -->
+  <section class="home-portfolio bgarea topspace30">
+		<div class="bgarea-semitransparent">
+			<div class="container">
+				<?php 
+				if( $wordpress_posts ){
+					foreach($wordpress_posts as $post):
+						// Thumbnail
+						$post_thumbnail = '/path/to/your/placeholder-image.jpg';
+						if(isset($post['thumbnail_100x100'])) {
+							$post_thumbnail = $post['thumbnail_100x100'];
+						}
+
+						echo $post['link'];
+						echo $text->truncate( str_replace("\n", "", $post['content']), 200, array('exact'=>true, 'ending'=>'') );
+						echo '<img src="' . $post_thumbnail . '" width="100" height="100" class="" alt="" />';
+					endforeach;
+				}
+				?>
+				<h1 class="small text-center animated fadeInLeftNow notransition fadeInLeft">Z NASZEGO BLOGA</h1>
+				<p class="animated fadeInRightNow notransition text-center topspace20 fadeInRight">
+					 <?php echo h($post['title']);?>
+				</p>
+				<br>
+				<div class="row">
+					<div class="col-md-6 animated fadeInLeftNow notransition fadeInLeft">
+						<div class="carousel carousel-fade slide carousel-featuredwork" id="carousel-featuredwork">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-featuredwork" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-featuredwork" data-slide-to="1" class=""></li>
+								<li data-target="#carousel-featuredwork" data-slide-to="2" class=""></li>
+							</ol>
+							<div class="carousel-inner" style="margin-top:-20px;">
+								<div class="item active">
+									<img src="img/demo/desktop3.png" alt="">
+								</div>
+								<div class="item">
+									<img src="img/demo/slide1-1.png" alt="">
+								</div>
+								<div class="item">
+									<img src="img/demo/desktop2.png" alt="">
+								</div>
+							</div>
+							<!-- /.carousel-inner -->
+						</div>
+					</div>
+					<div class="col-md-6 animated fadeInRightNow notransition fadeInRight">
+						<ul class="icons">
+							<li>
+							<h4><i class="icon-magic"></i>Winning Template Awards</h4>
+							<p>
+								 Suspendisse nisl sapien, mattis ut libero ut, placerat eleifend urna. Quisque commodo.
+							</p>
+							</li>
+							<li>
+							<h4><i class="icon-heart"></i>Love at first sight with App</h4>
+							<p>
+								 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis consectetur venenatis ante in adipiscing.
+							</p>
+							</li>
+							<li>
+							<h4><i class="icon-twitter"></i>Top Social Media</h4>
+							<p>
+								 Maecenas tempus purus vitae magna posuere tempor. Aliquam sed augue justo. Etiam pellentesque purus sed tincidunt dignissim.
+							</p>
+							</li>
+							<li>
+							<h4><i class="icon-leaf"></i>Professional modern Theme</h4>
+							<p>
+								 Donec commodo euismod sem, eu vehicula dui malesuada rutrum. Cras lobortis.
+							</p>
+							</li>
+							<li>
+							<h4><i class="icon-cog"></i>Best choice for your Web</h4>
+							<p>
+								 Quisque tempor convallis est ac viverra. Cras dictum arcu leo, commodo rhoncus turpis convallis ac. Praesent sapien nulla lobortis quis sapien eu.
+							</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
   <!-- KIERUNKI ================================================== -->
     <?php echo $this->element('losoweKierunki'); ?>
     <!-- /.kierunki end-->

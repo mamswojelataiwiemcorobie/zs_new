@@ -108,3 +108,24 @@
 		}, "slow");
 		});
 		});
+
+	//PARTNERZY
+	$('.nasi-partnerzy .slider').click(function(e){
+		// SLIDER CONFIGURATION FOR PARNER LINKS
+		var cfg = {
+			image_width:2570,
+			link_endings:[118,214,559,784,904,1061,1298,1403,1550,1725,1820,1970,2140,2340,2470,2570],
+			link_adressess:['http://www.krakow.pl','http://www.bialystok.pl','http://www.lublin.eu/ua','http://www.gdansk.pl','http://www.opole.pl','http://www.olsztyn.com.pl','http://www.rzeszow.pl','http://www.zielona-gora.pl/','http://www.interia.pl/','http://www.notatek.pl/','http://study.lublin.eu/pl/', 'http://www.youngtalentmanagement.pl/YTM/Young_Talent_Management.html','http://www.m-ekspert.pl/','http://www.happinate.com/','http://www.um.kielce.pl/','http://www.happinate.com/'],
+		};
+		var tg = $(e.target);
+		var _x = e.pageX - tg.offset().left;
+		var bgp = parseInt(tg.css('background-position').match(/[0-9]+/)[0]);
+		var cpos = (_x + (cfg.image_width - bgp % cfg.image_width)) % cfg.image_width;
+		for (var i in cfg.link_endings) {
+			if (cfg.link_endings[i] > cpos) {
+				if (cfg.link_adressess[i]) 
+					window.open(cfg.link_adressess[i],'_blank');
+				return;
+			}
+		}
+	});

@@ -44,16 +44,33 @@ class CoursesController extends AppController {
 		$this->set('u', $db);
 	}
 	
-	public function top() {
-		$this->Course->contain();
-		$courses = $this->Course->find('all', array(
-															'order' => array('Course.srednia' => 'desc',
-																			 'Course.placa' => 'desc'),
-															'limit' => 5));
+	public function topKierunki() {
+		$courses = $this->Course-> query("SELECT DISTINCT uk.course_id, COUNT(*) FROM universities u LEFT JOIN courseon_universities uk ON uk.university_id = u.id WHERE u.university_type_id = 1 GROUP BY uk.course_id ORDER BY 2 DESC LIMIT 0,15");
+		$kierunki = array();
+		$i=0;
+		foreach ($courses as $kierunek) {
+			$this->Course->contain();
+			$course = $this->Course-> findById($kierunek['uk']['course_id']);
+			$kierunki[$i]['id'] = $course['Course']['id'];
+			$kierunki[$i]['nazwa'] = $course['Course']['nazwa'];
+			$i++;
+		}
 		if (!empty($this -> request -> params['requested'])) {
-		   return $courses;
-		}else {
-			$this->set('courses', $courses);
+		   return $kierunki;
+		} else {
+			$this->set('kierunki', $kierunki);
+		}
+	}
+
+	public function losowyKierunek() {
+		$this->Course->contain();
+		$losowe = $this->Course->find('all', array('conditions' => array('Course.opis1 !='=> ''), 
+													'order'=>'rand()',
+             										'limit' => 3,));
+		if (!empty($this -> request -> params['requested'])) {
+		   return $losowe;
+		} else {
+			$this->set('losowe', $losowe);
 		}
 	}
 	

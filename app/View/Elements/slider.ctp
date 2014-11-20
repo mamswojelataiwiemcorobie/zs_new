@@ -1,45 +1,116 @@
-<style type="text/css">
-	.two{
-		margin-top: 14;
-	}
-</style>
-	<section class="pageheader-default" style="background:url(img/demo/7.jpg);">
-
-	<div class="bgarea-semitransparent">
-
-		<div class="container">
-
-			<div class="row">
-
-				<div class="col-md-6">
-
-					<h1 class="landingpage animated fadeInLeftBig notransition">są różne porównywarki</h1>
-					<h3 class="landingpage animated fadeInDownBig notransition">ale tylko u nas porównasz </h3>
-					<div class="btn-wrap animated fadeInUpBig notransition">
-
-						<a class="btn btn-minimal" href="/uczelnie">Uczelnie</a><span>lub</span><a class="btn btn-minimal" href="/miasta">miasta</a>
-					<h3 class="landingpage animated fadeInDownBig notransition"></h3>
-
-
-					
-<h3 class="landingpage animated fadeInDownBig notransition">w których możesz studiować</h3>
-
-
+<section class="carousel carousel-fade slide home-slider" id="c-slide" data-ride="carousel" data-interval="4500" data-pause="false">
+	<ol class="carousel-indicators">
+		<li data-target="#c-slide" data-slide-to="0" class=""></li>
+		<li data-target="#c-slide" data-slide-to="1" class="active"></li>
+		<li data-target="#c-slide" data-slide-to="2" class=""></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="item" style="background: url(img/demo/bg.jpg);">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 fadein scaleInv anim_1">
+						<div class="fadein scaleInv anim_2">
+							<h1 class="carouselText1 animated fadeInUpBig">Welcome to <span class="colortext">Calypso</span></h1>
+						</div>
+						<div class="fadein scaleInv anim_1">
+							<p class="carouselText2 animated fadeInLeft">
+								 MultiPurpose Template
+							</p>
+						</div>
+						<div class="fadein scaleInv anim_2">
+							<p class="carouselText3">
+								<i class="icon-ok"></i> Bootstrap 3.0+ Compatible
+							</p>
+						</div>
+						<div class="fadein scaleInv anim_3">
+							<p class="carouselText3">
+								<i class="icon-ok"></i> Responsive Layouts
+							</p>
+						</div>
+						<div class="fadein scaleInv anim_4">
+							<p class="carouselText3">
+								<i class="icon-ok"></i> Beautiful Animation Effects
+							</p>
+						</div>
+						<div class="fadein scaleInv anim_5">
+							<p class="carouselText3">
+								<i class="icon-ok"></i> Top Notch Support
+							</p>
+						</div>
 					</div>
-
+					<div class="col-md-6 text-center fadein scaleInv anim_2">
+						<div class="text-center">
+							<div class="fadein scaleInv anim_3">
+								<img src="img/demo/slide1-3.png" alt="" class="slide1-3 animated rollIn">
+							</div>
+							<div class="fadein scaleInv anim_8">
+								<img src="img/demo/slide1-1.png" alt="" class="slide1-1 animated rollIn">
+							</div>
+							<div class="fadein scaleInv anim_5">
+								<img src="img/demo/slide1-2.png" alt="" class="slide1-2 animated rollIn">
+							</div>
+						</div>
+					</div>
 				</div>
-
-				<div class="col-md-6">
-
-					<img src="img/demo/desktop3.png" class="img-responsive animated fadeInRightBig notransition" alt="" />
-
-				</div>
-
 			</div>
-
 		</div>
-
+		<div class="item active" style="background: url(img/demo/slide1.jpg);">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 animated fadeInUp notransition">
+						<img src="img/demo/desktop3.png" alt="" style="width:90%;">
+					</div>
+					<div class="col-md-6 animated fadeInDown  notransition topspace30 text-right">
+						<div class="car-highlight1 animated fadeInLeftBig">
+							 Add ANYTHING in Slider
+						</div>
+						<br>
+						<div class="car-highlight2 animated fadeInRightBig notransition">
+							 Powerful Options
+						</div>
+						<br>
+						<div class="car-highlight3 animated fadeInUpBig notransition">
+							 Video, Audio, Text, Iframes etc
+						</div>
+						<br>
+						<div class="car-highlight4 animated flipInX notransition">
+							 Any HTML5 code you wish
+						</div>
+						<br>
+						<div class="car-highlight5 animated rollIn notransition">
+							 Slider with <span class="font100">Total Control</span><br>
+							<span class="font100" style="font-size:20px;">Embed Practically</span> Anything<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item" style="background: url(img/demo/slide3.jpg);">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<br>
+						<br>
+						<div class="animated fadeInDownBig notransition">
+							<span class="car-largetext">Vivid Skins <span class="font300">&amp; Three</span> Layouts</span><br>
+						</div>
+						<br>
+						<br>
+						<div class="car-widecircle animated fadeInLeftBig notransition">
+							<span>Wide</span>
+						</div>
+						<div class="car-middlecircle animated fadeInUpBig notransition">
+							<span>Boxed</span>
+						</div>
+						<div class="car-smallcircle animated fadeInRightBig notransition">
+							<span>Narrow</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-
-	</section>
-
+	<!-- /.carousel-inner -->
+	<a class="left carousel-control animated fadeInLeft" href="#c-slide" data-slide="prev"><i class="icon-angle-left"></i></a>
+	<a class="right carousel-control animated fadeInRight" href="#c-slide" data-slide="next"><i class="icon-angle-right"></i></a>
+</section>

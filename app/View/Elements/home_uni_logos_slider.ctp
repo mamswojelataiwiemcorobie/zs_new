@@ -19,17 +19,19 @@
 							?>						
 							<li>
 								<div class="boxcontainer">
-									<img src="img/uczelnie_min/<?php echo $university['UczelnieFoto']['path']; ?>" alt="Logo">
+									<div class="wrap">
+										<img src="/uploads/<?php echo $university['UniversitiesPhoto']['path']; ?>" alt="Logo">
+									</div>
 									<div class="roll" style="opacity: 0;">
 										<div class="wrapcaption">
-											<a echo "universities/". $university['University']['id']. "/". $slug=Inflector::slug($university['UniversityParameter']['nazwa'],'-');?>">
+											<a href="/universities/ <?php echo $university['University']['id']. "/". $slug=Inflector::slug($university['University']['nazwa'],'-');?>">
 												<i class="icon-link captionicons"></i>
 											</a>
 											<a data-gal="prettyPhoto[gallery1]" href="img/demo/showcase1.jpg" title="La Chaux De Fonds"><i class="icon-zoom-in captionicons"></i></a>
 										</div>
 									</div>
 									<h1>
-										<a href="<?php echo "universities/". $university['University']['id']. "/". $slug=Inflector::slug($university['UniversityParameter']['nazwa'],'-');?>"><?php echo $university['University']['nazwa'];?></a>
+										<a href="<?php echo "universities/". $university['University']['id']. "/". $slug=Inflector::slug($university['University']['nazwa'],'-');?>"><?php echo $university['University']['nazwa'];?></a>
 									</h1>
 									<p>
 										<?php echo $university['University']['nazwa'];?>

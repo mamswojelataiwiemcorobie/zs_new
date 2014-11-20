@@ -3,6 +3,7 @@ App::uses('Controller', 'Controller');
 
 class UniversitiesController extends AppController {
 	public $components = array('DataTable');
+	public $helpers = array('Cache');
 
 	public function index() {
 	
@@ -10,6 +11,10 @@ class UniversitiesController extends AppController {
 		$this->set('description_for_layout', 'Zostań studentem. Najlepsze szkoły wyższe.');
 		$this->set('keywords_for_layout', 'uniwersytety, szkoły, ranking');
 		$this->set('tabele', true);
+
+		$this->University->recursive = 3; 
+		$universities = $this->University->find('all', array('limit'=> 1));
+		Debugger::dump($universities);
 		
 		if($this->RequestHandler->responseType() == 'json') {
 			$this->paginate = array(
@@ -235,28 +240,44 @@ class UniversitiesController extends AppController {
 	
 	public function home_slider() {
 		//$this->University->contain();
-		$universities = $this->University->find('all', array('conditions' => array('UczelnieFoto.typ' => 'logo'), 'limit'=> 5));
+		$universities = $this->University->UniversitiesPhoto->find('all', array('conditions' => array('UniversitiesPhoto.typ' => 'logo', 'University.university_type_id' => 1, 'University.abonament >=' => 2), 'limit'=> 5));
+		//Debugger::dump($universities);
 		if (!empty($this -> request -> params['requested'])) {
 		   return $universities;
 		} else {
 			$this->set('universities', $universities);
 		}
-		
+	}
 
-	}
-	public function top() {
-		$this->University->contain();
-		$universities = $this->University->find('all', array(
-															'order' => array('University.srednia' => 'desc'),
-															'limit' => 5));
+	public function home_slider_poli() {
+		//$this->University->contain();
+		$universities = $this->University->UniversitiesPhoto->find('all', array('conditions' => array('UniversitiesPhoto.typ' => 'logo', 'University.university_type_id' => 2, 'University.abonament >=' => 2), 'limit'=> 5));
+		//Debugger::dump($universities);
 		if (!empty($this -> request -> params['requested'])) {
 		   return $universities;
 		} else {
 			$this->set('universities', $universities);
 		}
-		
 	}
-	var $ff='<h1>Ranking uniwersytetów</h1>';
+
+	public function topCity() {
+		$topCity = $this->University-> query("SELECT miasto, COUNT(*) FROM universities_parameters GROUP BY miasto ORDER BY 2 DESC LIMIT 0,20");
+		if (!empty($this -> request -> params['requested'])) {
+		   return $topCity;
+		} else {
+			$this->set('topCity', $topCity);
+		}
+	}
+
+	public function topPolicealne() {
+		$topCity = $this->University-> query("SELECT DISTINCT up.miasto, COUNT(up.miasto) FROM universities u LEFT JOIN universities_parameters up ON up.university_id = u.id WHERE u.university_type_id = 2 GROUP BY up.miasto ORDER BY 2 DESC LIMIT 0,20");
+		if (!empty($this -> request -> params['requested'])) {
+		   return $topCity;
+		} else {
+			$this->set('topCity', $topCity);
+		}
+	}
+
 	public function slider_2() {
 	return $this->ff;
 	}
@@ -829,9 +850,18 @@ class UniversitiesController extends AppController {
 				echo "<br>";
 		}
 	}
-	public function porownanie($id1 = null, $id2 = null){
-		echo $id1;
-		pr($id2);
+	public function nazwy(){
+		$this->University->contain('UniversitiesParameter.nazwa');
+		$universities = $this->University->find('all');
+		//Debugger::dump($universities);
+		foreach($universities as $uni) {
+			if ($uni['University']['nazwa'] == $uni['UniversitiesParameter']['nazwa']) {
+
+			} else {
+				$this->University->id = $uni['University']['id'];
+				$this->University->saveField('nazwa', $uni['UniversitiesParameter']['nazwa']);
+			}
+		}
 	}
 	
 	 function admin_search() {

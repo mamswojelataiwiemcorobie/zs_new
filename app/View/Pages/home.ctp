@@ -62,7 +62,21 @@
 
 
   <!-- Recent projects - policealne -->
-  <?php //echo $this->element('home_uni_logos_slider'); ?>
+  <?php echo $this->element('home_poli_logos_slider'); ?>
+
+  <!-- KIERUNKI ================================================== -->
+    <?php echo $this->element('losoweKierunki'); ?>
+    <!-- /.kierunki end-->
+
+<!-- PARTNERZY slider ================================================= -->
+    <section class="service-box topspace30" id="service-top">
+	    <div class="container">
+		  <div class="nasi-partnerzy">
+		    <div class="header">NASI PARTNERZY</div>
+		    <div class="slider"></div>
+		  </div>
+		</div>
+	</section>
 
   <!-- Bla bla -->
   <section class="home-features topspace30">
@@ -88,59 +102,7 @@
             Pierwsza edycja informatora „Zostań Studentem” spotkała się z niezwykle ciepłym odbiorem. To kilkudziesięciostronicowe wydawnictwo zapoczątkowało zupełnie nową jakość informatorów – coraz mniej podobnych do książki telefonicznej, a coraz bardziej do kolorowego magazynu o tematyce uniwersyteckiej.<br>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <h4><i class="icon icon-pushpin">
-            </i>UCZELNIE</h4>
-             <?php //echo $this->element('uczelnie_top'); ?>. <br>
-          </div>
-          <div class="col-md-4">
-            <h4><i class="icon icon-cogs">
-            </i>KIERUNKI</h4>
-            <?php //echo $this->element('kierunki_top'); ?>
-             Trigger ideas: quickly experiment with site colors &amp; patterns, try out web typography and much more. <br>
-          </div>
-          <div class="col-md-4">
-            <h4><i class="icon icon-leaf">
-            </i>POLICEALNE</h4>
-            <div class="bottomspace30">
-              <?php //echo $this->element('miasta_top'); ?>
-               Trigger ideas: quickly experiment with site colors &amp; patterns, try out web typography and much more.
-            </div>
-          </div>
-        </div>
+         <?php echo $this->element('top'); ?>
       </div>
     </div>
-  </section>
-
-    <!-- KIERUNKI ================================================== -->
-   <section class="service-box topspace30" id="service-top">
-    <div class="container">
-      <div class="row" id="tops">
-        <div class="col-md-4 text-center animated fadeInLeftNow notransition">
-          <div class="icon-box-top">
-            <i class="fontawesome-icon medium circle-white center icon-book"></i>            
-               <?php //echo $this->element('uczelnie_top'); ?>            
-          </div>
-        </div>
-        <div class="col-md-4 text-center animated fadeInLeftNow notransition">
-          <div class="icon-box-top">
-            <i class="fontawesome-icon medium circle-white center icon-arrow-right"></i>            
-               <?php //echo $this->element('kierunki_top'); ?>            
-          </div>
-        </div>
-        <div class="col-md-4 text-center animated fadeInRightNow notransition">
-          <div class="icon-box-top">
-            <i class="fontawesome-icon medium circle-white center icon-home"></i>
-              <?php //echo $this->element('miasta_top'); ?>
-          </div>
-        </div>
-      </div>
-    </div>
-   </section>
-    <!-- /.kierunki end-->
-
-    <!-- PARTNERZY slider ================================================= -->
-	
-	
-  
+  </section>  

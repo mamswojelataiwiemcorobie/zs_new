@@ -14,3 +14,8 @@
     display: table;
     margin: 0 auto;
     }
+
+.nasi-partnerzy .slider {
+    height:105px;
+    background:url('../images/partnerzy.jpg') left center repeat-x;
+}

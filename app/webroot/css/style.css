@@ -752,6 +752,12 @@ font-weight: 500;}
 	line-height:28px;
 	font-size: 19px;
 }
+
+/*--------------------------------------------------	partnerzy---------------------------------------------------*/
+.nasi-partnerzy .slider {
+height:105px;
+background:url('../images/partnerzy.jpg') left center repeat-x;
+}
 /*--------------------------------------------------	service-box---------------------------------------------------*/
 .service-box h1 {
 		text-transform:uppercase;
@@ -1143,7 +1149,7 @@ h1.small {
 	font-size:60px;
 }
 .footer {
-	background:#222 url(/img/bgfooter.jpg);
+	background:#222;
 	color:#888;
 	margin-top:50px;
 	padding-top:50px;
@@ -2963,7 +2969,20 @@ a.prev span,a.next span {
 	position:relative;
 }
 .recent-projects-home .boxcontainer img {
-	height:185px;
+	max-height: 100%;
+	max-width: 100%;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.wrap {
+	height: 185px;
+	margin: 10px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 }
 .recent-projects-home .smalltitle {
 	max-width:50%;

@@ -3,9 +3,10 @@ class University extends AppModel {
 	public $actsAs = array(
 		'Containable',
 	);
-	//public $belongsTo = array('UniversityType');
-	//public $hasOne = array('UniversitiesParameter');
-	public $hasMany = array( 'CourseonUniversity', 'UczelnieFoto');
+	public $belongsTo = array('UniversityType');
+	public $hasOne = array('UniversitiesParameter');
+	public $hasMany = array('UniversitiesPhoto' => array('className' => 'UniversitiesPhoto',
+            'foreignKey' => 'university_id'));
 	//public $displayField = 'nazwa';
 		
 	public function resize_image($file, $w, $h, $crop=FALSE) {

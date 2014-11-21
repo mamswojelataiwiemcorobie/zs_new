@@ -11758,3 +11758,349 @@ Stack Trace:
 #3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-11-21 10:02:05 Error: Fatal Error (1): Call to undefined method WordpressController::getDataSource() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\WordpressController.php, line 10]
+2014-11-21 10:02:05 Error: [FatalErrorException] Call to undefined method WordpressController::getDataSource()
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 10, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 10, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-21 10:05:29 Error: Fatal Error (1): Call to undefined function set() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\WordpressController.php, line 21]
+2014-11-21 10:05:29 Error: [FatalErrorException] Call to undefined function set()
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 21, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 21, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-21 10:05:48 Error: Fatal Error (1): Call to undefined method WordpressComponent::getDataSource() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\Component\WordpressComponent.php, line 224]
+2014-11-21 10:05:48 Error: [FatalErrorException] Call to undefined method WordpressComponent::getDataSource()
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 224)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-21 10:08:07 Error: Fatal Error (1): Call to undefined method WordpressComponent::getDataSource() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\Component\WordpressComponent.php, line 224]
+2014-11-21 10:08:07 Error: [FatalErrorException] Call to undefined method WordpressComponent::getDataSource()
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 224)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 224, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-21 10:56:05 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp, line 39]
+2014-11-21 10:56:05 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 39, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 39, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-21 10:56:43 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp, line 39]
+2014-11-21 10:56:43 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 39, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 39, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-21 11:07:14 Error: [MissingControllerException] Controller class WordpressesController could not be found.
+Exception Attributes: array (
+  'class' => 'WordpressesController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp(3): Object->requestAction(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(68): View->element('recent_post')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-21 11:07:22 Error: [MissingControllerException] Controller class WordpressesController could not be found.
+Exception Attributes: array (
+  'class' => 'WordpressesController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp(3): Object->requestAction(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(68): View->element('recent_post')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-21 11:07:31 Error: [MissingControllerException] Controller class WordpresssController could not be found.
+Exception Attributes: array (
+  'class' => 'WordpresssController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp(3): Object->requestAction(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(68): View->element('recent_post')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-21 11:11:34 Error: [MissingControllerException] Controller class BlogsController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogsController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp(3): Object->requestAction(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(68): View->element('recent_post')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-21 11:11:45 Error: [MissingControllerException] Controller class BlogsController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogsController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp(3): Object->requestAction(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(68): View->element('recent_post')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-21 11:12:31 Error: [MissingControllerException] Controller class BlogsController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogsController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp(3): Object->requestAction(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(68): View->element('recent_post')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-21 11:12:35 Error: [MissingControllerException] Controller class BlogsController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogsController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp(3): Object->requestAction(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(68): View->element('recent_post')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-21 11:13:02 Error: [MissingControllerException] Controller class BlogsController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogsController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp(3): Object->requestAction(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(68): View->element('recent_post')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-21 11:13:07 Error: [MissingControllerException] Controller class BlogsController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogsController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp(3): Object->requestAction(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(68): View->element('recent_post')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-21 11:13:34 Error: [MissingControllerException] Controller class BlogsController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogsController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp(3): Object->requestAction(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(68): View->element('recent_post')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-21 11:14:00 Error: [MissingControllerException] Controller class BlogsController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogsController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp(3): Object->requestAction(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(68): View->element('recent_post')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-21 11:14:33 Error: [MissingControllerException] Controller class BlogsController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogsController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp(3): Object->requestAction(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(68): View->element('recent_post')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-11-21 11:14:48 Error: [MissingControllerException] Controller class BlogsController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogsController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\recent_post.ctp(3): Object->requestAction(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(68): View->element('recent_post')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}

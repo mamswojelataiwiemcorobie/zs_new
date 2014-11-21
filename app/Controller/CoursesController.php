@@ -2,7 +2,7 @@
 App::uses('Controller', 'Controller');
 
 class CoursesController extends AppController {	
-	public $components = array('DataTable', 'Wordpress');
+	public $components = array('DataTable');
 	
 	public function index() {
 
@@ -68,15 +68,6 @@ class CoursesController extends AppController {
 	}
 
 	public function losowyKierunek() {
-		$wordpress_posts = Cache::read( 'wordpress_posts', 'long' );
-			if ( $wordpress_posts === false ) {
-				$this->Wordpress->limit = 1;
-				$this->Wordpress->niceurls = true;
-				$this->Wordpress->thumbnails = true;
-				$wordpress_posts = $this->Wordpress->getLatest();
-				Cache::write('wordpress_posts', $wordpress_posts, 'long');
-			}
-		$this->set('wordpress_posts', $wordpress_posts);
 		$this->Course->contain();
 		$losowe = $this->Course->find('all', array('conditions' => array('Course.opis1 !='=> ''), 
 													'order'=>'rand()',

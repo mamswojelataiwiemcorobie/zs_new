@@ -6,6 +6,7 @@
 				$(this).closest('li').addClass('active');
 			}
 		});  
+
 		/* ---------------------------------------------------------------------- */
 		/*	Carousel
 		/* ---------------------------------------------------------------------- */
@@ -13,8 +14,8 @@
 			$('#carousel-projects').carouFredSel({
 			responsive: true,
 			items       : {
-		        width       : 300,
-		        height      : 295,
+	        width       : 200,
+	        height      : 295,
 	        visible     : {
 	            min         : 1,
 	            max         : 4
@@ -22,7 +23,7 @@
 	    },
 			width: '200px',
 			height: '295px',
-			auto: true,
+			auto: true, 
 			circular	: true,
 			infinite	: false,
 			prev : {
@@ -42,7 +43,13 @@
 	        duration: 1200
 	    }
 		});
-			});
+		});
+
+		//CALL PRETTY PHOTO
+		$(document).ready(function(){
+			$("a[data-gal^='prettyPhoto']").prettyPhoto({social_tools:'', animation_speed: 'normal' , theme: 'dark_rounded'});
+		});
+		
 
 		//CALL TESTIMONIAL ROTATOR
 		$( function() {
@@ -63,11 +70,6 @@
 			*/
 			$( '#cbp-qtrotator' ).cbpQTRotator();
 		} );
-
-		//CALL PRETTY PHOTO
-		$(document).ready(function(){
-			$("a[data-gal^='prettyPhoto']").prettyPhoto({social_tools:'', animation_speed: 'normal' , theme: 'dark_rounded'});
-		});
 
 		//MASONRY
 		$(document).ready(function(){

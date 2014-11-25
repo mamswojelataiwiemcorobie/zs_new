@@ -17,11 +17,8 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 ?>
+<!DOCTYPE html>
 <html>
-	<?php
-		echo $this->Html->docType('html5');
-		// Outputs: <!DOCTYPE html>
-	?>
 <head>
 	<?php 
 		echo $this->Html->charset(); 
@@ -120,6 +117,7 @@
 	<div >
 		<?php echo $this->element('footer'); ?>
 	</div>
+	<script src="/js/jquery.js"></script>
 	<?php
 		echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js');
 		echo $this->Html->script('https://www.google.com/jsapi');
@@ -142,6 +140,38 @@
 		
 		echo $this->Html->script('index_func.js');
 	?>
+	<script>
+	//CALL PRETTY PHOTO
+	$(document).ready(function(){
+		$("a[data-gal^='prettyPhoto']").prettyPhoto({social_tools:'', animation_speed: 'normal' , theme: 'dark_rounded'});
+	});
+</script>
+<script>
+	//MASONRY
+	$(document).ready(function(){
+	var $container = $('#content');
+	  $container.imagesLoaded( function(){
+		$container.isotope({
+		filter: '*',	
+		animationOptions: {
+		 duration: 750,
+		 easing: 'linear',
+		 queue: false,	 
+	   }
+	});
+	});
+	$('#filter a').click(function (event) {
+		$('a.selected').removeClass('selected');
+		var $this = $(this);
+		$this.addClass('selected');
+		var selector = $this.attr('data-filter');
+		$container.isotope({
+			 filter: selector
+		});
+		return false;
+	});
+	});
+</script>
 
 </body>
 </html>

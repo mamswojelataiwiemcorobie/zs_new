@@ -24,14 +24,13 @@
 									</div>
 									<div class="roll" style="opacity: 0;">
 										<div class="wrapcaption">
-											<a href="/universities/ <?php echo $university['University']['id']. "/". $slug=Inflector::slug($university['University']['nazwa'],'-');?>">
+											<a href="/uczelnia/<?php echo Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];?>">
 												<i class="icon-link captionicons"></i>
 											</a>
-											<a data-gal="prettyPhoto[gallery1]" href="img/demo/showcase1.jpg" title="La Chaux De Fonds"><i class="icon-zoom-in captionicons"></i></a>
 										</div>
 									</div>
 									<h1>
-										<a href="<?php echo "universities/". $university['University']['id']. "/". $slug=Inflector::slug($university['University']['nazwa'],'-');?>"><?php echo $university['University']['nazwa'];?></a>
+										<a href="/uczelnia/<?php echo $slug=Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];?>"><?php echo $university['University']['nazwa'];?> </a>
 									</h1>
 									<p>
 										<?php echo $university['University']['nazwa'];?>

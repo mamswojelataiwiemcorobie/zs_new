@@ -36,177 +36,44 @@ class UniversitiesController extends AppController {
 		}
 	}
 	
-	public function view($id = null) {
-		if (empty($this->request->data)) {
-			if (!$id) {
-				throw new NotFoundException(__('Invalid post'));
-			}
-			$this->University->contain('City', 'UniversityType', 'UniversitiesParameter', 'Exchange');
-			$university = $this->University->findById($id);
-			//Debugger::dump($university);
-			if (!$university) {
-				throw new NotFoundException(__('Invalid post'));
-			}
-			$this->University->CourseonUniversity->contain('Course');
-			$db = $this->University->CourseonUniversity->find('all', 
-				array('fields'=>array('Course.id','Course.nazwa', 'Course.courses_type_id'), 
-					'order' => array('Course.courses_type_id'), 
-					'group' => array('Course.id'), 
-					'conditions' => array('CourseonUniversity.university_id' => $id)
-				));
-			foreach ($db as $d) {
-				switch ($d['Course']['courses_type_id']) {
-					case 1:
-						$typ='Artystyczne'; break;
-					case 2:
-						$typ='Ekonomiczne'; break;
-					case 3:
-						$typ='Humanistyczne'; break;
-					case 4:
-						$typ='Przyrodnicze'; break;
-					case 5:
-						$typ='Techniczne'; break;
-					case 6:
-						$typ='Inne'; break;
-					case 7:
-						$typ='Filologiczne'; break;
-					default:
-						$typ = ''; break;
-				}
-				$kursy[$d['Course']['courses_type_id']]['nazwa_typ']= $typ;
-				$kursy[$d['Course']['courses_type_id']][$d['Course']['id']]['id']= $d['Course']['id'];
-				$kursy[$d['Course']['courses_type_id']][$d['Course']['id']]['nazwa']= $d['Course']['nazwa'];
-				//Debugger::dump($d['Course']['courses_type_id']);
-			}
-			
-			$this->University->contain('City', 'UniversityType', 'UniversitiesParameter', 'Exchange');
-			$university2 = $this->University->find('first', array(
-							'conditions' =>	array('University.id !=' => $university['University']['id'],
-												'University.university_type_id' => $university['University']['university_type_id']))
-							);
-			$db2 = $this->University->CourseonUniversity->find('all', array('fields'=>array('Course.id','Course.nazwa', 'Course.courses_type_id'), 'order' => array('Course.courses_type_id'), 'group' => array('Course.id'), 'conditions' => array('CourseonUniversity.university_id' => $university2['University']['id'])));
-			foreach ($db2 as $d2) {
-				switch ($d2['Course']['courses_type_id']) {
-					case 1:
-						$typ='Artystyczne'; break;
-					case 2:
-						$typ='Ekonomiczne'; break;
-					case 3:
-						$typ='Humanistyczne'; break;
-					case 4:
-						$typ='Przyrodnicze'; break;
-					case 5:
-						$typ='Techniczne'; break;
-					case 6:
-						$typ='Inne'; break;
-					case 7:
-						$typ='Filologiczne'; break;
-					default:
-						$typ = 'Różne'; break;
-				}
-				$kursy2[$d2['Course']['courses_type_id']]['nazwa_typ']= $typ;
-				$kursy2[$d2['Course']['courses_type_id']][$d2['Course']['id']]['id']= $d2['Course']['id'];
-				$kursy2[$d2['Course']['courses_type_id']][$d2['Course']['id']]['nazwa']= $d2['Course']['nazwa'];
-				//Debugger::dump($d['Course']['courses_type_id']);
-			}
-			
-		} else {
-			if(empty($this->request->data['University'])){
-				
-			}else{
-				$dane= $this->request->data;
-				$id = $dane['University']['id'];
-				$id2 = $dane['University']['id2'];
-				
-				if (!$id) {
-					throw new NotFoundException(__('Invalid post'));
-				}
-				$this->University->contain('City', 'UniversityType', 'UniversitiesParameter', 'Exchange');
-				$university = $this->University->findById($id);
-				if (!$university) {
-					throw new NotFoundException(__('Invalid post'));
-				}
-				$this->University->CourseonUniversity->contain('Course');
-				$db = $this->University->CourseonUniversity->find('all', array('fields'=>array('Course.id','Course.nazwa', 'Course.courses_type_id'), 'order' => array('Course.courses_type_id'), 'group' => array('Course.id'), 'conditions' => array('CourseonUniversity.university_id' => $id)));
-				foreach ($db as $d) {
-					switch ($d['Course']['courses_type_id']) {
-						case 1:
-							$typ='Artystyczne'; break;
-						case 2:
-							$typ='Ekonomiczne'; break;
-						case 3:
-							$typ='Humanistyczne'; break;
-						case 4:
-							$typ='Przyrodnicze'; break;
-						case 5:
-							$typ='Techniczne'; break;
-						case 6:
-							$typ='Inne'; break;
-						case 7:
-							$typ='Filologiczne'; break;
-						default:
-							$typ = ''; break;
-					}
-					$kursy[$d['Course']['courses_type_id']]['nazwa_typ']= $typ;
-					$kursy[$d['Course']['courses_type_id']][$d['Course']['id']]['id']= $d['Course']['id'];
-					$kursy[$d['Course']['courses_type_id']][$d['Course']['id']]['nazwa']= $d['Course']['nazwa'];
-					//Debugger::dump($d['Course']['courses_type_id']);
-				}
-				if (!$id2) {
-					throw new NotFoundException(__('Invalid post'));
-				}
-				$this->University->contain('City', 'UniversityType', 'UniversitiesParameter', 'Exchange');
-				$university2 = $this->University->findById($id2);
-				//Debugger::dump($university2);
-				$db2 = $this->University->CourseonUniversity->find('all', array('fields'=>array('Course.id','Course.nazwa', 'Course.courses_type_id'), 'order' => array('Course.courses_type_id'), 'group' => array('Course.id'), 'conditions' => array('CourseonUniversity.university_id' => $id2)));
-				foreach ($db2 as $d2) {
-					switch ($d2['Course']['courses_type_id']) {
-						case 1:
-							$typ='Artystyczne'; break;
-						case 2:
-							$typ='Ekonomiczne'; break;
-						case 3:
-							$typ='Humanistyczne'; break;
-						case 4:
-							$typ='Przyrodnicze'; break;
-						case 5:
-							$typ='Techniczne'; break;
-						case 6:
-							$typ='Inne'; break;
-						case 7:
-							$typ='Filologiczne'; break;
-						default:
-							$typ = 'Różne'; break;
-					}
-					$kursy2[$d2['Course']['courses_type_id']]['nazwa_typ']= $typ;
-					$kursy2[$d2['Course']['courses_type_id']][$d2['Course']['id']]['id']= $d2['Course']['id'];
-					$kursy2[$d2['Course']['courses_type_id']][$d2['Course']['id']]['nazwa']= $d2['Course']['nazwa'];
-					//Debugger::dump($d['Course']['courses_type_id']);
-				}
-			}
-		}	
+	public function view($id, $nrzakladki=null) {
 		
+		$university = $this->University->find('first', array('conditions'=> array('University.id'=>$id)));
+		$zakladka_page = !empty($nrzakladki) ? (int)$nrzakladki : 0;
+		$this->set('zakladka_page', $zakladka_page);
 		
+		$university['url'] = "/uczelnia/". Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];
+		$base_url = substr($university['url'],0);
+		$university['zakladka1url'] = $base_url.'/'.Inflector::slug($university['UniversitiesParameter']['nzakladki1'], '-').'-1';
+		$university['zakladka2url'] = $base_url.'/'.Inflector::slug($university['UniversitiesParameter']['nzakladki2'], '-').'-2';
+		$university['zakladka3url'] = $base_url.'/'.Inflector::slug($university['UniversitiesParameter']['nzakladki3'], '-').'-3';
+		$university['zakladka4url'] = $base_url.'/'.Inflector::slug($university['UniversitiesParameter']['nzakladki4'], '-').'-4';
+				
 
-		$this->University->contain('UniversityType');
-		$universityo = $this->University->find('all', array('fields' => array('University.id', 'University.nazwa', 'UniversityType.nazwa'),
-			'order' => array('University.nazwa')));
-		//Debugger::dump($university2);
-		foreach ($universityo as $o) {
-			$options[$o['UniversityType']['nazwa']][$o['University']['id']] = $o['University']['nazwa'];
+		$this->set('description_for_layout', 'Zostań studentem. Najlepsze szkoły wyższe.');
+		$this->set('keywords_for_layout', 'uniwersytety, szkoły, ranking');
+		
+		$university['galeria'] = array();
+		foreach ($university['UniversitiesPhoto'] as $photo) {
+			if($photo['typ']=='logo') {
+				$university['logo'] = $photo['path'];
+			} elseif($photo['typ']=='galeria') {
+				array_push($university['galeria'], $photo['path']);
+			}
 		}
-			
-			/*meta*/
-			$this->set('title_for_layout', $university['University']['nazwa']);
-			$this->set('description_for_layout', $university['University']['nazwa']. ' - Najlepsza szkoła wyższa.');
-			$this->set('keywords_for_layout', $university['University']['nazwa']. ', uniwersytety, szkoły, ranking');
-			
-			$this->set('title_for_slider2', 'Porównaj Uniwersytety:');
-			$this->set('options', $options);
+		$university = Set::remove($university, 'UniversitiesPhoto');
+		if ($university['University']['abonament'] < 2) {
+			$university['logo'] = 'no-photo.jpg';
+			//$u['kierunki'] = $u['kierunki_full'] = array();
+			$uuniversity['zakladka1'] = $university['zakladka2'] = $university['zakladka3'] = $university['zakladka4'] = '';
+		}
+		$this->set('title_for_layout', $university['University']['nazwa']);
+		if ($university['University']['abonament'] < 2) {
 			$this->set('university', $university);
-			$this->set('u', $kursy);
-			$this->set('university2', $university2);
-			$this->set('u2', $kursy2);
+			$this->render('view_simple');
+		} else {
+			$this->set('university', $university);
+		}
 	}
 	
 	

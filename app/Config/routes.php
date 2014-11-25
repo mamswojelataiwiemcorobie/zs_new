@@ -53,23 +53,6 @@
             'id' => '[0-9]+',
 			'slug'=>'.+'
         ));
-
-	Router::connect(
-        '/erazmus/:slug-:id',
-        array(
-            'controller' => 'exchanges',
-            'action' => 'view'),
-        array(
-            'pass' => array('id'),
-            'id' => '[0-9]+',
-            'slug'=>'.+'
-        ));
-
-    Router::connect(
-        '/erazmusy',
-        array(
-            'controller' => 'exchanges',
-            'action' => 'index'));
       
     Router::connect(
         '/kontakt',
@@ -93,8 +76,21 @@
         array(
             'controller' => 'cities',
             'action' => 'index'));
-		
-	Router::connect(
+
+    Router::connect(
+        '/uczelnia/:slug-:id/:zakladka-:nrzakladki',
+        array(
+            'controller' => 'universities',
+            'action' => 'view'),
+        array(
+            'pass' => array('id', 'nrzakladki'),
+            'id' => '[0-9]+',
+            'slug'=>'.+',
+            'zakladka'=>'.+',
+            'nrzakladki' => '[0-9]+',
+        ));
+
+    Router::connect(
         '/uczelnia/:slug-:id',
         array(
             'controller' => 'universities',
@@ -102,7 +98,7 @@
         array(
             'pass' => array('id'),
             'id' => '[0-9]+',
-			'slug'=>'.+'
+            'slug'=>'.+'
         ));
 		
 	Router::connect(
@@ -125,60 +121,11 @@
             'id1' => '[0-9]+',
             'id2' => '[0-9]+'
         ));
-
-    Router::connect(
-        '/u/u:id1',
-        array(
-            'controller' => 'universities',
-            'action' => 'url'),
-        array(
-            'pass' => array('id1', 'id2'),
-            'id1' => '[0-9]+',
-            'id2' => '[0-9]+'
-        ));
-
-    Router::connect(
-        '/tests/s&a=:id1-:id2',
-        array(
-            'controller' => 'tests',
-            'action' => 'results'),
-        array(
-            'pass' => array('id1', 'id2'),
-            //'id1' => '[0-9]+',
-            //'id2' => '[0-9]+'
-        ));
-
-    Router::connect(
-        '/porownanie-:id1-:id2',
-        array(
-            'controller' => 'tests',
-            'action' => 'resuni'),
-        array(
-            'pass' => array('id1', 'id2'),
-            //'id1' => '[0-9]+',
-            //'id2' => '[0-9]+'
-        ));
 		
 	Router::connect(
         '/uczelnie',
         array(
             'controller' => 'universities',
-            'action' => 'index'));
-			
-	Router::connect(
-        '/zawod/:slug-:id',
-        array(
-            'controller' => 'professions',
-            'action' => 'view'),
-        array(
-            'pass' => array('id'),
-            'id' => '[0-9]+',
-			'slug'=>'.+'
-        ));		
-	Router::connect(
-        '/zawody',
-        array(
-            'controller' => 'professions',
             'action' => 'index'));
 		
 	Router::connect(

@@ -2,7 +2,7 @@
 $recent_post = $this->requestAction(array('controller' => 'blog',
 											'action' => 'recent_post'));
 							?>	
- <section class="home-portfolio bgarea topspace30">
+ <section id="recent_post" class="home-portfolio bgarea topspace30">
 		<div class="bgarea-semitransparent">
 			<div class="container">
 				<?php foreach($recent_post as $post):?>
@@ -16,12 +16,12 @@ $recent_post = $this->requestAction(array('controller' => 'blog',
 						<div class="carousel carousel-fade slide carousel-featuredwork" id="carousel-featuredwork">
 							<ol class="carousel-indicators">
 								<li data-target="#carousel-featuredwork" data-slide-to="0" class="active"></li>
-								<li data-target="#carousel-featuredwork" data-slide-to="1" class=""></li>
-								<li data-target="#carousel-featuredwork" data-slide-to="2" class=""></li>
+								<!-- <li data-target="#carousel-featuredwork" data-slide-to="1" class=""></li>
+								<li data-target="#carousel-featuredwork" data-slide-to="2" class=""></li> -->
 							</ol>
 							<div class="carousel-inner" style="margin-top:-20px;">
 								<div class="item active">
-									<img src="http://blog.zostanstudentem.pl/wp-content/uploads/<?php echo $post['Thumbnail'];?>" class="" alt="" />';
+									<img src="http://blog.zostanstudentem.pl/wp-content/uploads/<?php echo $post['Thumbnail'];?>" class="" alt="" />
 								</div>
 								<div class="item">
 									<img src="img/demo/slide1-1.png" alt="">

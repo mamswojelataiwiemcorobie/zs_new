@@ -537,6 +537,7 @@ font-weight: 500;}
 	max-width:100%;
 	height:auto;
 	line-height:1;
+	margin: 0 auto;
 }
 .carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev {
 	display:block;
@@ -736,7 +737,6 @@ font-weight: 500;}
 /*--------------------------------------------------	CAROUSEL FEATURED WORK---------------------------------------------------*/
 #carousel-featuredwork .item {
 	padding:0;
-	height:410px;
 }
 #carousel-featuredwork .carousel-indicators {
 	margin-left: -31%;
@@ -751,6 +751,11 @@ font-weight: 500;}
 	font-weight:300;
 	line-height:28px;
 	font-size: 19px;
+}
+
+/*--------------------------------------------------	recent post---------------------------------------------------*/
+#recent_post p{
+	font-size: 15px;
 }
 
 /*--------------------------------------------------	partnerzy---------------------------------------------------*/
@@ -838,6 +843,159 @@ background:url('../images/partnerzy.jpg') left center repeat-x;
 	line-height:40px;
 	margin-right:5px;
 	color: #fff;
+}
+
+/*--------------------------------------------------	Uczelnia---------------------------------------------------*/
+#uczelnia .cont {
+padding:10px 35px 15px 35px;
+color:#111111;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(204, 204, 204);
+margin-bottom: 20px;
+}
+#uczelnia .cont .head {
+margin-bottom:22px;
+font:20px/32px 'Lato', sans-serif;
+font-weight: 300;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+color:#12537c;
+background:url('spacer.png') left bottom repeat-x;
+}
+#uczelnia .lista_kierunkow li {
+float:left;
+width:141px;
+margin-left:20px;
+padding:4px 0;
+list-style:disc none outside;
+font:bold 12px/16px Arial;
+color:#3a83b2;
+text-align:left;
+}
+#uczelnia .lista_jezykow li {
+float:left;
+width:141px;
+margin-left:20px;
+padding:4px 0;
+list-style:disc none outside;
+font:bold 12px/16px Arial;
+color:#3a83b2;
+text-align:left;
+text-transform: uppercase;
+}
+#uczelnia .main {
+padding:8% 30px;
+}
+#uczelnia .main .ml {
+float:left;
+min-width:180px;
+margin-bottom:20px;
+text-align:center;
+width:35%;
+}
+#uczelnia .cont-c .main .mr-noimage {
+width:375px;
+}
+#uczelnia .main .mr {
+float:left;
+margin-left:5%;
+margin-bottom:10px;
+width:60%;
+}
+#uczelnia .main .mbrl {
+float:left;
+width:194px;
+clear: both;
+}
+#uczelnia .main .mbr {
+float:right;
+}
+#uczelnia .main .mb {
+margin-top:6px;
+clear:both;
+background:url('spacer.png') left top repeat-x;
+}
+#uczelnia .main h1 {
+float:left;
+padding: 10px 0;
+margin-bottom:10px;
+font:22px/28px 'Lato', sans-serif;
+font-weight: 300;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+background:url('spacer.png') left bottom repeat-x;
+}
+#uczelnia .main address {
+clear:both;
+color:#3a83b2;
+}
+#uczelnia .main a.url {
+float:left;
+clear:both;
+font:bold 13px/18px 'Lato';
+color:#3a83b2;
+}
+#uczelnia .social{
+height: 33px;
+padding: 0;
+border: 0;
+margin-top: 9px;
+margin-left:0px;
+}
+#uczelnia .social li a { 
+display:block; width:32px; height:32px;float:left;margin-right: 7px;
+margin-bottom: 7px;
+}
+#uczelnia .social .fb{
+background-image: url("social_sprite.png");
+background-position: 0 0;
+}
+#uczelnia .social .gp{
+background-image: url("social_sprite.png");
+background-position: 0px -33px;
+}
+#uczelnia .social .yt{
+background-image: url("social_sprite.png");
+background-position: 0 -66px;
+}
+#uczelnia .social .twitter{
+background-image: url("social_sprite.png");
+background-position: 0 -99px;
+}
+#uczelnia .social li{
+display:inline;
+}
+#uczelnia .main address {
+font:normal 12px/18px 'Lato';
+display:block;
+}
+#uczelnia .main span {
+font:normal 10px/16px 'Lato';
+}
+#uczelnia .main span a {
+font:normal 10px 'Lato';
+}
+#uczelnia .main .mb .mbl {
+clear:both;
+padding-top:8px;
+margin-left: 10px;
+}
+
+#uczelnia .main .mb .mbl a {
+outline:none;
+}
+#uczelnia .main .mb .mbl .more {
+display:none;
+}
+#uczelnia .main .uczelnia-rekrutuj {
+display:block;
+}
+#uczelnia .main .uczelnia-schowek {
+display:block;
+margin-bottom: 9px;
+}
+#uczelnia .main .uzupelnij-profil {
+display:block;
+margin-bottom: 9px;
 }
 /*--------------------------------------------------	MISC---------------------------------------------------*/
 
@@ -3020,6 +3178,10 @@ a.prev span,a.next span {
 }
 .boxportfolio2 .captionicons {
 	top: 57%;
+}
+
+.galeria .boxcontainer img {
+height: 185px;
 }
 /*================================================== BLOG ===============================================*/
 .aligncenter {

@@ -6,7 +6,7 @@ class University extends AppModel {
 	public $belongsTo = array('UniversityType');
 	public $hasOne = array('UniversitiesParameter');
 	public $hasMany = array('UniversitiesPhoto' => array('className' => 'UniversitiesPhoto',
-            'foreignKey' => 'university_id'));
+            'foreignKey' => 'university_id'), 'CourseonUniversity');
 	//public $displayField = 'nazwa';
 		
 	public function resize_image($file, $w, $h, $crop=FALSE) {

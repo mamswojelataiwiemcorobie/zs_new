@@ -1,5 +1,5 @@
 <?php
-class TypCourse extends AppModel {
+class CourseMode extends AppModel {
 	public $hasMany = array('CourseonUniversity');
 	public $displayField = 'nazwa';
 }

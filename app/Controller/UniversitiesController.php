@@ -67,6 +67,28 @@ class UniversitiesController extends AppController {
 			//$u['kierunki'] = $u['kierunki_full'] = array();
 			$uuniversity['zakladka1'] = $university['zakladka2'] = $university['zakladka3'] = $university['zakladka4'] = '';
 		}
+
+		$this->University->CourseonUniversity->contain('Course.id', 'Course.nazwa');
+		$kierunki = $this->University->CourseonUniversity->find('all', array('conditions'=>array('CourseonUniversity.university_id'=>$id), 																
+																			'order'=>array('Course.nazwa')));
+		foreach ($kierunki as $kierunek) {
+			//$kierunki_full[$kierunek['CourseonUniversity']['id_wydzial']] = $kierunek['Wydzial']['nazwa'];
+			$type= $kierunek['CourseonUniversity']['course_type_id'].$kierunek['CourseonUniversity']['course_mode_id'];
+			$kierunki_full[$kierunek['CourseonUniversity']['id_wydzial']][$kierunek['Course']['id']]['nazwa'] = $kierunek['Course']['nazwa'];
+			$kierunki_full[$kierunek['CourseonUniversity']['id_wydzial']][$kierunek['Course']['id']][$type] = true;
+			$kierunki_types[$type] = true;
+		}
+		$types = array('11','21','31','41','61','51','71','12','22','32','42','62','52','72','60','50','70');
+			if (isset($kierunki_types)) {
+				$ttypes = array();
+				foreach ($types as $t) {
+					if (isset($kierunki_types[$t])) $ttypes[] = $t;
+				}
+				$kierunki_types = $ttypes;
+			}
+		$this->set('kierunki_full', $kierunki_full);
+		$this->set('kierunki_types', $kierunki_types);
+
 		$this->set('title_for_layout', $university['University']['nazwa']);
 		if ($university['University']['abonament'] < 2) {
 			$this->set('university', $university);

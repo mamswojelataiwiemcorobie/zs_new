@@ -14,6 +14,9 @@ body {
 	margin-left:0;
 	margin-right:0;
 }
+table .collapse.in {
+display: table-row;
+}
 ul,menu,dir {
 	display:block;
 	list-style-type:disc;
@@ -926,13 +929,10 @@ background:url('spacer.png') left bottom repeat-x;
 }
 #uczelnia .main address {
 clear:both;
-color:#3a83b2;
 }
 #uczelnia .main a.url {
 float:left;
 clear:both;
-font:bold 13px/18px 'Lato';
-color:#3a83b2;
 }
 #uczelnia .social{
 height: 33px;
@@ -963,10 +963,6 @@ background-position: 0 -99px;
 }
 #uczelnia .social li{
 display:inline;
-}
-#uczelnia .main address {
-font:normal 12px/18px 'Lato';
-display:block;
 }
 #uczelnia .main span {
 font:normal 10px/16px 'Lato';
@@ -2176,11 +2172,51 @@ blockquote p {
 /* =============================================================== */
 /* Table================================================================ */
 th {
-	font-size:14px;
+	font-size:16px;
 	background:#f9f9f9;
 	border-bottom:0 !Important;
 	font-weight:normal;
 	color: #444;
+}
+table.kierunki-full td,
+table.kierunki-full th {
+text-align:center;
+}
+
+table.kierunki-full strong {
+font-weight: normal;
+}
+
+table.kierunki-full th {
+	color: #fff;
+background-color: #428bca;
+border-color: #357ebd;
+padding:4px 5px;
+font-weight:400;
+}
+table.kierunki-full {
+	border-collapse:collapse;
+	border: 1px solid #ddd;
+	width: 100%;
+	font-size: 17px;
+}
+table.kierunki-full td {
+padding:2px 4px;
+	border: 1px solid #ddd;
+}
+colgroup.stacjonarne, colgroup.niestacjonarne, colgroup.szkola1, colgroup.szkola2 {
+border:1px solid #2C3E50;
+}
+#wydzial {
+text-transform:uppercase;
+text-align:center;
+background-color:#1ABC9C;
+color: white;
+font-weight:400;
+font-size: 14px;
+}
+#wydzial a{
+color: white;
 }
 /* Skills /* ============================================================== */
 ul#skill {
@@ -8863,8 +8899,8 @@ ul.resp-tabs-list,ul.resp-tabs-list p {
 }
 .resp-tabs-list li {
 	color:#333;
-	font-weight:300;
-	font-size:14px;
+	font-weight: 400;
+	font-size: 16px;
 	display:inline-block;
 	padding:13px 15px;
 	margin:0;

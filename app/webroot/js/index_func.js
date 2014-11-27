@@ -73,27 +73,16 @@
 
 		//MASONRY
 		$(document).ready(function(){
-		var $container = $('#content');
-		  $container.imagesLoaded( function(){
-			$container.isotope({
-			filter: '*',	
-			animationOptions: {
-			 duration: 750,
-			 easing: 'linear',
-			 queue: false,	 
-		   }
-		});
-		});
-		$('#filter a').click(function (event) {
-			$('a.selected').removeClass('selected');
-			var $this = $(this);
-			$this.addClass('selected');
-			var selector = $this.attr('data-filter');
-			$container.isotope({
-				 filter: selector
+			$('#filter a').click(function (event) {
+				$('a.selected').removeClass('selected');
+				var $this = $(this);
+				$this.addClass('selected');
+				var selector = $this.attr('data-filter');
+				$container.isotope({
+					 filter: selector
+				});
+				return false;
 			});
-			return false;
-		});
 		});
 
 	//ROLL ON HOVER

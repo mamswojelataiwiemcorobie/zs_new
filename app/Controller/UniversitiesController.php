@@ -49,7 +49,6 @@ class UniversitiesController extends AppController {
 		$university['zakladka3url'] = $base_url.'/'.Inflector::slug($university['UniversitiesParameter']['nzakladki3'], '-').'-3';
 		$university['zakladka4url'] = $base_url.'/'.Inflector::slug($university['UniversitiesParameter']['nzakladki4'], '-').'-4';
 				
-
 		$this->set('description_for_layout', 'Zostań studentem. Najlepsze szkoły wyższe.');
 		$this->set('keywords_for_layout', 'uniwersytety, szkoły, ranking');
 		
@@ -68,14 +67,17 @@ class UniversitiesController extends AppController {
 			$uuniversity['zakladka1'] = $university['zakladka2'] = $university['zakladka3'] = $university['zakladka4'] = '';
 		}
 
-		$this->University->CourseonUniversity->contain('Course.id', 'Course.nazwa');
+		$this->University->CourseonUniversity->contain('Course.id', 'Course.nazwa', 'Faculty.nazwa', 'Faculty.id');
 		$kierunki = $this->University->CourseonUniversity->find('all', array('conditions'=>array('CourseonUniversity.university_id'=>$id), 																
 																			'order'=>array('Course.nazwa')));
 		foreach ($kierunki as $kierunek) {
-			//$kierunki_full[$kierunek['CourseonUniversity']['id_wydzial']] = $kierunek['Wydzial']['nazwa'];
 			$type= $kierunek['CourseonUniversity']['course_type_id'].$kierunek['CourseonUniversity']['course_mode_id'];
-			$kierunki_full[$kierunek['CourseonUniversity']['id_wydzial']][$kierunek['Course']['id']]['nazwa'] = $kierunek['Course']['nazwa'];
-			$kierunki_full[$kierunek['CourseonUniversity']['id_wydzial']][$kierunek['Course']['id']][$type] = true;
+			$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['nazwa'] = $kierunek['Course']['nazwa'];
+			if (isset($kierunek['Faculty']['nazwa'])) {
+				$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['wydzial_id'] = $kierunek['Faculty']['id'];
+				$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['wydzialnazwa'] = $kierunek['Faculty']['nazwa'];
+			}
+			$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']][$type] = true;
 			$kierunki_types[$type] = true;
 		}
 		$types = array('11','21','31','41','61','51','71','12','22','32','42','62','52','72','60','50','70');

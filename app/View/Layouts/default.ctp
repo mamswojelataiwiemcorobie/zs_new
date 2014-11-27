@@ -133,14 +133,13 @@
 		if (class_exists('JsHelper') && method_exists($this->Js, 'writeBuffer')) 	
 			echo $this->Js->writeBuffer();
 		// Writes cached scripts
-
 		echo $this->Html->script('bootstrap.js');
 		echo $this->Html->script('common.js');
 		echo $this->Html->script('plugins.js');
 		
 		echo $this->Html->script('index_func.js');
 	?>
-	<script>
+<script>
 	//CALL PRETTY PHOTO
 	$(document).ready(function(){
 		$("a[data-gal^='prettyPhoto']").prettyPhoto({social_tools:'', animation_speed: 'normal' , theme: 'dark_rounded'});
@@ -149,27 +148,16 @@
 <script>
 	//MASONRY
 	$(document).ready(function(){
-	var $container = $('#content');
-	  $container.imagesLoaded( function(){
-		$container.isotope({
-		filter: '*',	
-		animationOptions: {
-		 duration: 750,
-		 easing: 'linear',
-		 queue: false,	 
-	   }
-	});
-	});
-	$('#filter a').click(function (event) {
-		$('a.selected').removeClass('selected');
-		var $this = $(this);
-		$this.addClass('selected');
-		var selector = $this.attr('data-filter');
-		$container.isotope({
-			 filter: selector
+		$('#filter a').click(function (event) {
+			$('a.selected').removeClass('selected');
+			var $this = $(this);
+			$this.addClass('selected');
+			var selector = $this.attr('data-filter');
+			$container.isotope({
+				 filter: selector
+			});
+			return false;
 		});
-		return false;
-	});
 	});
 </script>
 

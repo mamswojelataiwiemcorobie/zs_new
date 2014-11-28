@@ -3,7 +3,9 @@
 		<section class="animated fadeInUp notransitioncont main">
 			<?php if ($university['logo']): ?>
 				<div class="ml">
-					<img itemprop="logo" src="/img/uczelnie_min/<?php echo $university['logo'];?>" alt="Logo uczelni <?php echo $university['University']['nazwa'];?>"/></div><?php endif; ?>
+					<img itemprop="logo" src="/img/uczelnie/<?php echo $university['logo'];?>" alt="Logo uczelni <?php echo $university['University']['nazwa'];?>"/>
+				</div>
+			<?php endif; ?>
 			<div class="mr<?php if (!($university['logo'])): ?> mr-noimage <?php endif; ?>">
 				<h1 itemprop="legalname"><?php echo $university['University']['nazwa'];?></h1>
 				<div class="mbrl">
@@ -74,12 +76,13 @@
 				</ul>
 				<div class="resp-tabs-container cont">
 					<?php if ($zakladka_page === 0) : ?>
-						<div>
+						<div id="accordion-container">
 							<!-- GALERIA -->
-							<div class="row galeria">
 							<?php if ($university['University']['abonament'] > 2):?>
+							<div class="row galeria">
+								<h2 class="accordion-header">Galeria</h2>
 								<?php if (count($university['galeria'])>0) :?>
-								<div class="col-md-12">
+								<div class="col-md-12 accordion-content">
 									<div class="list_carousel text-center">
 										<div class="carousel_nav">
 											<a class="prev" id="car_prev" href="#"><span>prev</span></a>
@@ -104,15 +107,13 @@
 									</div>
 								</div>
 								<?php endif;?>
-							<?php endif;?>
 							</div>
+							<?php endif;?>
 							<?php if (strlen($university['UniversitiesParameter']['opis']) > 0):?>
-								<section >
+								<h2 class="accordion-header">Opis</h2>
+								<section class="accordion-content">
 									<div class="row">
 										<div class="col-md-12 animated fadeInLeft notransition">
-											<h1 class="smalltitle">
-											<span>Opis <?php if ($university['University']['university_type_id'] == 1):?>uczelni<?php else:?>szkoły<?php endif;?></span>
-											</h1>
 											<div class="info"><?php echo $university['UniversitiesParameter']['opis'];?>
 												<?php if ($university['University']['abonament'] < 2 && $university['University']['university_type_id'] == 1):?>. Kierunki studiów. Studia dzienne (stacjonarne) i zaoczne (niestacjonarne), licencjackie, inżynierskie, magisterskie. Jakie studia wybrać? Czy warto tu studiować twój wymarzony kierunek. <?php endif;?>
 												<?php if ($university['University']['abonament'] < 2 && $university['University']['university_type_id'] == 2):?>. Szkoła policealna - kursy roczne i dwuletnie po których jest pewna praca.<?php endif;?>
@@ -122,19 +123,28 @@
 									</div>
 								</section>
 							<?php endif;?>
-							{if $lokalizacja_poparawna}
-								<div class="row">
+							<?php if ($wydzialy) :?>
+								<h2 class="accordion-header">Wydziały</h2>
+								<div class="row accordion-content">
 									<div class="col-md-12 animated fadeInLeft notransition">
-										<h1 class="smalltitle">
-										<span>Lokalizacja</span>
-										</h1>
-								<div class="bok">
-									
-									<div class="info" id="gogmap"></div>
+										<ul class="icons chevronlist">	
+											<?php foreach($wydzialy as $wydzial) : ?>											
+												<li>
+													<a href="/wydzial<?php echo Inflector::slug($wydzial['Faculty']['nazwa'],'-').'-'. $wydzial['Faculty']['id'];?>"><?php echo $wydzial['Faculty']['nazwa'];?></a>
+												</li>
+											<?php endforeach;?>
+										</ul>
+									</div>
 								</div>
+							<?php endif;?>
+							<?php if ($lokalizacja_poparawna) :?>
+								<h2 id= "lokalizacja"class="accordion-header">Lokalizacja</h2>
+								<div class="row accordion-content">
+									<div class="col-md-12 animated fadeInLeft notransition">
+										<div class="info" id="map-canvas" style="width: 100%; height: 266px; margin-bottom: 5%;"></div>
+									</div>
 								</div>
-								</div>
-							{/if}
+							<?php endif;?>
 						</div>
 					<!-- KIERUNKI -->
 					<?php elseif ($zakladka_page === 5) :?>
@@ -155,19 +165,7 @@
 										<div class="cl"></div>
 									</div>
 								<?php endif;?>
-								<?php if ($university['University']['abonament'] < 2 and $university['University']['university_type_id'] != 3) :?>
-									<div class="cont lista_kierunkow">
-										<h1 class="smalltitle">
-											<span>KIERUNKI</span>
-										</h1>
-										<div class="info">
-											{foreach from=$uczelnia.kierunki_full item=uk key=ukk name=uk}
-												{foreach from=$uk item=uk2 key=ukk2}<a href="{$uczelnia.kierunki[$ukk][$ukk2].url}">{$uczelnia.kierunki[$ukk][$ukk2].nazwa}</a>{if !$smarty.foreach.uk2.last} | {/if}{/foreach}{/foreach}
-										</div>
-										<div class="cl"></div>
-									</div>
-								<?php else: ?>
-									<?php if (count($kierunki_full) > 0): if($university['University']['university_type_id'] != 3):?>
+								<?php if (count($kierunki_full) > 0): if($university['University']['university_type_id'] != 3):?>
 									<div class="lista_kierunkow" id="kierunki">
 										<h1 class="smalltitle">
 											<span>KIERUNKI</span>
@@ -211,7 +209,7 @@
 																<?php if ($w1!==$w2):?>
 																	<tr data-toggle="collapse" id="<?php echo $kierunki_full[$ukk][$ukk2]['wydzial_id'];?>" data-target=".<?php echo $kierunki_full[$ukk][$ukk2]['wydzial_id'];?>collapsed" aria-expanded="true">
 																		<td id="wydzial" colspan="<?php echo in_array('11',$kierunki_types) + in_array('21',$kierunki_types) + in_array('31',$kierunki_types) + in_array('41',$kierunki_types) + in_array('71',$kierunki_types) + in_array('12',$kierunki_types) + in_array('22',$kierunki_types) + in_array('32',$kierunki_types) + in_array('42',$kierunki_types) + in_array('72',$kierunki_types) + in_array('60',$kierunki_types) + in_array('61',$kierunki_types) + in_array('62',$kierunki_types) + in_array('50',$kierunki_types) + in_array('51',$kierunki_types) + in_array('52',$kierunki_types) + in_array('70',$kierunki_types) + 1?>">
-																			<?php echo $kierunki_full[$ukk][$ukk2]['wydzialnazwa'];?>
+																			<?php echo $kierunki_full[$ukk][$ukk2]['wydzialnazwa'];?><i class="glyphicon glyphicon-plus pull-right "></i>
 																		</td>
 																	</tr>
 																	<?php $w2=$kierunki_full[$ukk][$ukk2]['wydzialnazwa'];?>	
@@ -236,7 +234,7 @@
 										</div>
 										<div class="cl"></div>
 									</div>
-									<?php endif;?><?php endif;?>
+									<?php endif;?>
 								<?php endif;?>
 								</div>
 							</div>
@@ -259,3 +257,66 @@
 		</div>
 	</div>
 </div>
+<?php if ($lokalizacja_poparawna) :?>
+	<script type="text/javascript">
+
+	//Google Map
+
+	function initialize() {
+
+		var myLatlng = new google.maps.LatLng(<?php echo $university['UniversitiesParameter']['lokalizacja_y'].','.$university['UniversitiesParameter']['lokalizacja_x']?>);
+
+		var mapOptions = {
+
+			zoom: 12,
+
+			center: myLatlng
+
+		}
+
+		map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+		var marker = new google.maps.Marker({
+
+			position: myLatlng,
+
+			map: map,
+
+			draggable: false,
+
+			animation: google.maps.Animation.Bounce,
+
+			title: '<?php echo $university['University']['nazwa'];?>'
+
+		});
+
+		var clicked = 0;
+
+		google.maps.event.addDomListener(marker, 'click', function() {
+
+			if(clicked == 0 ){
+
+				map.setZoom(10);
+
+				map.setCenter(marker.getPosition());
+
+				marker.setIcon('/img/icon.png');
+
+				clicked = 1; 
+
+			}else{
+
+				map.setZoom(8);
+
+				map.setCenter(myLatlng);
+
+				marker.setIcon('/img/default_icon.png');
+
+				clicked = 0; 
+
+			}
+		});
+
+	}
+	</script>
+<?php endif;?>

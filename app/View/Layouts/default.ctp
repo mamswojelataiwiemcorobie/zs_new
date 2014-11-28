@@ -102,9 +102,9 @@
 </head>
 <body class="on" onLoad="" scroll="yes" >
 	<?php 
-		echo $this->element('menu_top'); 
+		echo $this->element('menu_top', array(), array('cache' => true)); 
 		if ($this->request->here == '/') 		{
-			echo $this->element('slider');
+			echo $this->element('slider', array(), array('cache' => true));
 		} 		else 		{
 			echo $this->element('slider2');
 		}  
@@ -115,7 +115,7 @@
 		</div>
 	</div>	
 	<div >
-		<?php echo $this->element('footer'); ?>
+		<?php echo $this->element('footer', array(), array('cache' => true)); ?>
 	</div>
 	<script src="/js/jquery.js"></script>
 	<?php

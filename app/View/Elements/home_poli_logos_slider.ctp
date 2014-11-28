@@ -30,7 +30,7 @@
 										</div>
 									</div>
 									<h1>
-										<a href="<?php echo "universities/". $university['University']['id']. "/". Inflector::slug($university['University']['nazwa'],'-');?>"><?php echo $university['University']['nazwa'];?></a>
+										<a href="<?php echo "uczelnia/". $university['University']['id']. "/". Inflector::slug($university['University']['nazwa'],'-');?>"><?php echo $university['University']['nazwa'];?></a>
 									</h1>
 									<p>
 										<?php echo $university['University']['nazwa'];?>

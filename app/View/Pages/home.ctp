@@ -23,7 +23,7 @@
 <!-- Studeo
 ================================================== -->
   <!-- Recent projects - szkoły wyższe -->
-  <?php echo $this->element('home_uni_logos_slider'); ?>  
+  <?php echo $this->element('home_uni_logos_slider', array(), array('cache' => true)); ?>  
   <!-- /szkoly end-->
 
   <section class="home-features topspace30">
@@ -62,13 +62,13 @@
 
 
   <!-- Recent projects - policealne -->
-  <?php echo $this->element('home_poli_logos_slider'); ?>
+  <?php echo $this->element('home_poli_logos_slider', array(), array('cache' => true)); ?>
 
   <!-- Wp_posts -->
-  <?php echo $this->element('recent_post'); ?>
+  <?php echo $this->element('recent_post', array(), array('cache' => true)); ?>
 
   <!-- KIERUNKI ================================================== -->
-    <?php echo $this->element('losoweKierunki'); ?>
+    <?php echo $this->element('losoweKierunki', array(), array('cache' => true)); ?>
     <!-- /.kierunki end-->
 
 <!-- PARTNERZY slider ================================================= -->
@@ -105,7 +105,7 @@
             Pierwsza edycja informatora „Zostań Studentem” spotkała się z niezwykle ciepłym odbiorem. To kilkudziesięciostronicowe wydawnictwo zapoczątkowało zupełnie nową jakość informatorów – coraz mniej podobnych do książki telefonicznej, a coraz bardziej do kolorowego magazynu o tematyce uniwersyteckiej.<br>
           </div>
         </div>
-         <?php echo $this->element('top'); ?>
+         <?php echo $this->element('top', array(), array('cache' => true)); ?>
       </div>
     </div>
   </section>  

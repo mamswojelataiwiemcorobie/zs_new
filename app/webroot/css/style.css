@@ -896,6 +896,9 @@ margin-bottom:20px;
 text-align:center;
 width:35%;
 }
+#uczelnia .main .ml img{
+	max-height: 200px;
+}
 #uczelnia .cont-c .main .mr-noimage {
 width:375px;
 }
@@ -2217,6 +2220,10 @@ font-size: 14px;
 }
 #wydzial a{
 color: white;
+}
+.collapsing{
+ 	-webkit-transition:height .01s ease;
+  	transition:height .01s ease
 }
 /* Skills /* ============================================================== */
 ul#skill {

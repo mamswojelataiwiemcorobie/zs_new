@@ -32716,3 +32716,834 @@ Request URL: /css/spacer.png
 Stack Trace:
 #0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-12-01 09:51:32 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Inflector.php, line 419]
+2014-12-01 09:51:32 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /uczelnia/Dolnoslaska-Wyzsza-Szkola-Przedsiebiorczosci-i-Techniki-w-Polkowicach-14/KIERUNKI-5
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 419)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 419, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 419, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-01 09:52:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 12:46:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 12:46:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:14:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:14:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/social_sprite.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:20:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:20:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:25:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:26:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:28:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:28:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:29:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:30:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:31:01 Error: [MissingControllerException] Controller class SearchenginesController could not be found.
+Exception Attributes: array (
+  'class' => 'SearchenginesController',
+  'plugin' => NULL,
+)
+Request URL: /wyszukiwarka/szkoly-wyzsze-1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:32:18 Error: [MissingControllerException] Controller class SearchenginesController could not be found.
+Exception Attributes: array (
+  'class' => 'SearchenginesController',
+  'plugin' => NULL,
+)
+Request URL: /wyszukiwarka/szkoly-wyzsze-1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:32:58 Error: [MissingControllerException] Controller class SearchenginesController could not be found.
+Exception Attributes: array (
+  'class' => 'SearchenginesController',
+  'plugin' => NULL,
+)
+Request URL: /wyszukiwarka/szkoly-wyzsze-1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:34:19 Error: [MissingControllerException] Controller class SearchenginesController could not be found.
+Exception Attributes: array (
+  'class' => 'SearchenginesController',
+  'plugin' => NULL,
+)
+Request URL: /wyszukiwarka/szkoly-wyzsze-1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:34:48 Error: [MissingControllerException] Controller class SearchEnginesController could not be found.
+Exception Attributes: array (
+  'class' => 'SearchEnginesController',
+  'plugin' => NULL,
+)
+Request URL: /wyszukiwarka/szkoly-wyzsze-1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:35:39 Error: [MissingControllerException] Controller class SearchenginesController could not be found.
+Exception Attributes: array (
+  'class' => 'SearchenginesController',
+  'plugin' => NULL,
+)
+Request URL: /searchengines
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:35:47 Error: [MissingControllerException] Controller class SearchEnginesController could not be found.
+Exception Attributes: array (
+  'class' => 'SearchEnginesController',
+  'plugin' => NULL,
+)
+Request URL: /search_engines
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:35:56 Error: [MissingControllerException] Controller class SearchEnginesController could not be found.
+Exception Attributes: array (
+  'class' => 'SearchEnginesController',
+  'plugin' => NULL,
+)
+Request URL: /search_engines/2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:36:48 Error: [MissingControllerException] Controller class SearchEnginesController could not be found.
+Exception Attributes: array (
+  'class' => 'SearchEnginesController',
+  'plugin' => NULL,
+)
+Request URL: /search_engines/2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:37:21 Error: [MissingControllerException] Controller class SearchEnginesController could not be found.
+Exception Attributes: array (
+  'class' => 'SearchEnginesController',
+  'plugin' => NULL,
+)
+Request URL: /search_engines/2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-01 13:38:20 Error: [MissingActionException] Action UniversitiesController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'UniversitiesController',
+  'action' => 'search',
+)
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-01 13:38:29 Error: [MissingActionException] Action UniversitiesController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'UniversitiesController',
+  'action' => 'search',
+)
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-01 13:39:51 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\search.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\search.ctp',
+)
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-01 14:04:16 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\search.ctp, line 87]
+2014-12-01 14:04:16 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 87)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 87, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 87, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-01 14:07:53 Error: [MissingControllerException] Controller class WyszukiwarkaController could not be found.
+Exception Attributes: array (
+  'class' => 'WyszukiwarkaController',
+  'plugin' => NULL,
+)
+Request URL: /wyszukiwarka/szukaj-4.html?kierunek_id=%7B%24sf.kierunek_id%7D&id_wojewodztwo=%7B%24sf.id_wojewodztwo%7D&rodzaj=%7B%24sf.rodzaj%7D
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-02 09:55:33 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php, line 21]
+2014-12-02 09:55:34 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 21, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 21, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 10:13:45 Error: Fatal Error (1): Call to undefined function get_form_data() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 150]
+2014-12-02 10:13:46 Error: [FatalErrorException] Call to undefined function get_form_data()
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 150)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 150, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 150, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 10:15:46 Error: Fatal Error (1): Call to undefined function get_form_data() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 150]
+2014-12-02 10:15:46 Error: [FatalErrorException] Call to undefined function get_form_data()
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 150)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 150, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 150, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 10:16:13 Error: Fatal Error (1): Call to undefined function szukajUczelniQuery() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 156]
+2014-12-02 10:16:13 Error: [FatalErrorException] Call to undefined function szukajUczelniQuery()
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 156)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 156, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 156, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 10:36:01 Error: Fatal Error (4): syntax error, unexpected '$q' (T_VARIABLE) in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 65]
+2014-12-02 10:36:01 Error: [FatalErrorException] syntax error, unexpected '$q' (T_VARIABLE)
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 65, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 65, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 10:36:39 Error: Fatal Error (1): Call to undefined function szukajUczelniQuery() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 156]
+2014-12-02 10:36:39 Error: [FatalErrorException] Call to undefined function szukajUczelniQuery()
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 156)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 156, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 156, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 10:37:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sqp' at line 1
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('sqp', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('sqp', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('sqp', Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(799): DboSource->query('sqp', Array, Object(University))
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php(40): Model->__call('sqp', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php(40): University->sqp('u.typ = '%s'', '2')
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(156): University->szukajUczelniQuery(Array, Array)
+#8 [internal function]: UniversitiesController->search('2')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-02 10:41:29 Error: Fatal Error (1): Call to undefined method UniversitiesController::av() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 169]
+2014-12-02 10:41:29 Error: [FatalErrorException] Call to undefined method UniversitiesController::av()
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 169)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 169, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 169, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 10:43:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sqp' at line 1
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('sqp', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('sqp', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('sqp', Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(799): DboSource->query('sqp', Array, Object(University))
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php(40): Model->__call('sqp', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php(40): University->sqp('u.typ = '%s'', '2')
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(156): University->szukajUczelniQuery(Array, Array)
+#8 [internal function]: UniversitiesController->search('2')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-02 10:45:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sqp' at line 1
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('sqp', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('sqp', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('sqp', Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(799): DboSource->query('sqp', Array, Object(University))
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php(40): Model->__call('sqp', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php(40): University->sqp('u.typ = '%s'', '2')
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(156): University->szukajUczelniQuery(Array, Array)
+#8 [internal function]: UniversitiesController->search('2')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-02 10:45:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sqp' at line 1
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('sqp', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('sqp', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('sqp', Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(799): DboSource->query('sqp', Array, Object(University))
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php(40): Model->__call('sqp', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php(40): University->sqp('u.typ = '%s'', '2')
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(156): University->szukajUczelniQuery(Array, Array)
+#8 [internal function]: UniversitiesController->search('2')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-02 10:47:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sqp' at line 1
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('sqp', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('sqp', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('sqp', Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(799): DboSource->query('sqp', Array, Object(University))
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php(40): Model->__call('sqp', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php(40): University->sqp('u.typ = '%s'', '2')
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(156): University->szukajUczelniQuery(Array, Array)
+#8 [internal function]: UniversitiesController->search('2')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-02 10:49:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sqp' at line 1
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('sqp', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('sqp', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('sqp', Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(799): DboSource->query('sqp', Array, Object(University))
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php(40): Model->__call('sqp', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php(40): University->sqp('University.univ...', '2')
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(156): University->szukajUczelniQuery(Array, Array)
+#8 [internal function]: UniversitiesController->search('2')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-02 11:12:32 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 40]
+2014-12-02 11:12:32 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 40, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 40, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 11:17:30 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 41]
+2014-12-02 11:17:30 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 41, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 41, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 11:18:34 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 42]
+2014-12-02 11:18:34 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 42, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 42, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 11:18:56 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 45]
+2014-12-02 11:18:56 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 45, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 45, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 11:24:07 Error: Fatal Error (4): syntax error, unexpected '*' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 184]
+2014-12-02 11:24:07 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 184)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 184, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 184, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 11:35:34 Error: Fatal Error (4): syntax error, unexpected ':', expecting '(' in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\search.ctp, line 11]
+2014-12-02 11:35:34 Error: [FatalErrorException] syntax error, unexpected ':', expecting '('
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 11, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 11, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 11:42:10 Error: Fatal Error (4): syntax error, unexpected '$q' (T_VARIABLE) in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 68]
+2014-12-02 11:42:10 Error: [FatalErrorException] syntax error, unexpected '$q' (T_VARIABLE)
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 68)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 68, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 68, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 11:42:36 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 66]
+2014-12-02 11:42:36 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 66)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 66, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 66, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 11:44:54 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 66]
+2014-12-02 11:44:54 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 66)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 66, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 66, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 11:45:28 Error: Fatal Error (4): syntax error, unexpected '*' in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 98]
+2014-12-02 11:45:28 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 98)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 98, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 98, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 11:45:53 Error: Fatal Error (1): Call to a member function found_rows() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 71]
+2014-12-02 11:45:53 Error: [FatalErrorException] Call to a member function found_rows() on a non-object
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 71, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 71, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 11:49:07 Error: Fatal Error (1): Call to a member function fk1vaa() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 72]
+2014-12-02 11:49:07 Error: [FatalErrorException] Call to a member function fk1vaa() on a non-object
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 72)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 72, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 72, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 11:50:50 Error: Fatal Error (1): Call to a member function q() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 88]
+2014-12-02 11:50:50 Error: [FatalErrorException] Call to a member function q() on a non-object
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 88)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 88, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 88, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 11:51:16 Error: Fatal Error (1): Call to undefined method UniversitiesController::av() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 179]
+2014-12-02 11:51:16 Error: [FatalErrorException] Call to undefined method UniversitiesController::av()
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 179)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 179, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 179, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:02:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sq' at line 1
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('sq', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('sq', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('sq', Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(799): DboSource->query('sq', Array, Object(University))
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php(68): Model->__call('sq', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php(68): University->sq(Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(156): University->szukajUczelniQuery(Array, Array)
+#8 [internal function]: UniversitiesController->search('2')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-02 12:09:22 Error: Fatal Error (4): syntax error, unexpected '=' in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\search.ctp, line 62]
+2014-12-02 12:09:22 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 62, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 62, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:15:26 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\search.ctp, line 88]
+2014-12-02 12:15:26 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 88, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 88, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:15:43 Error: Fatal Error (4): syntax error, unexpected 'name' (T_STRING) in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\search.ctp, line 55]
+2014-12-02 12:15:43 Error: [FatalErrorException] syntax error, unexpected 'name' (T_STRING)
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 55, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 55, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:25:36 Error: Fatal Error (64): Cannot redeclare UniversitiesController::$components in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 11]
+2014-12-02 12:25:36 Error: [FatalErrorException] Cannot redeclare UniversitiesController::$components
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\Users\Admini...', 11)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\Users\Admini...', 11, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\Users\Admini...', 11, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:26:19 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 158]
+2014-12-02 12:26:19 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 158)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 158, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 158, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:26:38 Error: Fatal Error (4): syntax error, unexpected 'name' (T_STRING) in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\search.ctp, line 55]
+2014-12-02 12:26:38 Error: [FatalErrorException] syntax error, unexpected 'name' (T_STRING)
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 55, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 55, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:29:18 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 163]
+2014-12-02 12:29:18 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 163)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 163, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 163, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:29:33 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wq' in 'where clause'
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(166): PaginatorComponent->paginate('University')
+#7 [internal function]: UniversitiesController->search('2')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-02 12:29:45 Error: Fatal Error (1): Call to undefined function dump() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 168]
+2014-12-02 12:29:45 Error: [FatalErrorException] Call to undefined function dump()
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 168)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 168, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 168, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:29:55 Error: Fatal Error (1): Call to undefined function dump() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 168]
+2014-12-02 12:29:55 Error: [FatalErrorException] Call to undefined function dump()
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 168)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 168, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 168, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:30:42 Error: Fatal Error (1): Call to undefined function dump() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 168]
+2014-12-02 12:30:42 Error: [FatalErrorException] Call to undefined function dump()
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 168)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 168, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 168, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:30:56 Error: Fatal Error (4): syntax error, unexpected 'name' (T_STRING) in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\search.ctp, line 55]
+2014-12-02 12:30:56 Error: [FatalErrorException] syntax error, unexpected 'name' (T_STRING)
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 55, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 55, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:33:55 Error: Fatal Error (4): syntax error, unexpected 'name' (T_STRING) in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\search.ctp, line 82]
+2014-12-02 12:33:55 Error: [FatalErrorException] syntax error, unexpected 'name' (T_STRING)
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 82)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 82, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 82, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:37:42 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\search.ctp, line 98]
+2014-12-02 12:37:42 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 98)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 98, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 98, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:38:15 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\search.ctp, line 98]
+2014-12-02 12:38:15 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 98)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 98, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 98, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 12:39:59 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\search.ctp, line 118]
+2014-12-02 12:39:59 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 118)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 118, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 118, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 13:08:50 Error: Fatal Error (1): Function name must be a string in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 185]
+2014-12-02 13:08:50 Error: [FatalErrorException] Function name must be a string
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\Users\Admini...', 185)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\Users\Admini...', 185, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\Users\Admini...', 185, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 13:10:34 Error: Fatal Error (1): Function name must be a string in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 173]
+2014-12-02 13:10:34 Error: [FatalErrorException] Function name must be a string
+Request URL: /wyszukiwarka/lkjkhk-2
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Function name m...', 'C:\Users\Admini...', 173)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'C:\Users\Admini...', 173, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'C:\Users\Admini...', 173, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-02 13:18:57 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/%7B$uw.logo%7D
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-02 13:19:49 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/%7B$uw.logo%7D
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-02 13:21:12 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/%7B$uw.logo%7D
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-02 13:21:50 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/%7B$uw.logo%7D
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-02 13:29:09 Error: [NotFoundException] Not Found
+Request URL: /universities/search/2/page:3
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(165): PaginatorComponent->paginate('University')
+#1 [internal function]: UniversitiesController->search('2')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}

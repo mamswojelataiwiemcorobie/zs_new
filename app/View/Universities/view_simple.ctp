@@ -136,6 +136,11 @@
 						</div>
 					</div>
 				<?php endif;?>
+				<div class="row">
+						<div class="col-md-12 animated fadeInLeft notransition">
+							<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fzostanstudentem&amp;width=320&amp;height=480&amp;colorscheme=light&amp;show_faces=true&amp;border_color=white&amp;stream=true&amp;header=false&amp;appId=290331384356620" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:480px;" allowTransparency="true"></iframe></div>
+				</div>
+				</br>
 			</div>
 		</div>
 	</div>

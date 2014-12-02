@@ -3,11 +3,16 @@ App::uses('AppController', 'Controller');
 
 class UniversitiesController extends AppController {
 	public $helpers = array('Cache');
+	public $components = array('Paginator');
 	public $cacheAction = array(
 	    'view' => 36000,
 	    'index'  => 48000
 	);
-	public $components = array('DataTable');
+	//public $components = array('DataTable');
+
+	public $paginate = array(
+        'limit' => 5,
+    );
 
 	public function index() {
 	
@@ -117,8 +122,92 @@ class UniversitiesController extends AppController {
 			$this->set('university', $university);
 		}
 	}
-	
-	
+
+	public function search($tid) {
+		//$this->request->query['page'];
+
+		$this->set('tid',$tid);
+
+		$_req = isset($_GET) ? $_GET : array();
+		if (isset($_req['slowo']) && $_req['slowo'] === 'SŁOWO KLUCZOWE') $_req['slowo'] = '';
+		if (isset($_req['miasto']) && $_req['miasto'] === 'MIASTO') $_req['miasto'] = '';
+		if (isset($_req['kierunek']) && $_req['kierunek'] === 'KIERUNEK') $_req['kierunek'] = '';
+		if (isset($_req['jezyk']) && $_req['jezyk'] === 'JĘZYK') $_req['jezyk'] = '';
+
+		$form_structure = array(
+			array('slowo','.*',''),
+			array('kierunek','(^[0-9]+$)|(^$)',''),
+			array('kierunek_id','(^[0-9]+$)|(^$)',''),
+			array('id_wojewodztwo','(^[0-9]+$)|(^$)',''),
+			array('miasto','(^[0-9]+$)|(^$)',''),
+			array('id_typ','(^[0-9]+$)|(^$)',''),
+			array('id_tryb','(^[0-9]+$)|(^$)',''),
+			array('jezyk','(^[0-9]+$)|(^$)',''),
+			array('jezyk_id','(^[0-9]+$)|(^$)',''),
+			array('rodzaj','.+',''),
+		);
+		$lf = array(
+			'limit'=>5,
+			'page'=>isset($_GET['p']) ? $_GET['p'] : 1,
+		);
+		$sf = $this->get_form_data($form_structure,$_req);
+		if (!empty($sf) && $tid !== 4) $sf['rodzaj'] = $tid;
+		if (!empty($sf['kierunek_id'])) { //$sf['kierunek'] = '';
+		} else {$sf['kierunek_id']='';}
+
+		//if (isset($_req['slowo'])) {
+			$pp = $this->University->szukajUczelniQuery($sf,array_merge($lf,array("promowane"=>'1')));
+			$this->Paginator->settings = array(
+		        'conditions' => $pp,
+		        'limit' => 10,
+		        'contain' => array('UniversitiesParameter')
+		    );
+		    $data = $this->Paginator->paginate('University');
+
+			if (count($data)>0) {
+				$demo = $this->University->szukajUczelniQuery($sf,array_merge($lf,array("demo"=>'1')));
+				$this->Paginator->settings = array(
+			        'conditions' => $demo,
+			        'limit' => 10,
+			        'contain' => array('UniversitiesParameter')
+			    );
+			    $demoo = $this->Paginator->paginate('University');
+				$this->set('uczelnie_wyniki_demo',$demoo);
+			} else {
+				$demo = $this->University->szukajUczelniQuery($sf,array_merge($lf,array("demo"=>'1')));
+			}
+			$fullc = count($pp) + count($demo);
+			if ($fullc > 0) {
+				if (!empty($_req['slowo'])) countSearchKeywords($_req['slowo']);
+				//Debugger::dump($data);
+				$this->set('uczelnie_wyniki',$data);
+			} else {
+				$this->set('uczelnie_wyniki_brak',1);
+			}
+		//} else {
+			//$this->av('uczelnie_nosearch',1);
+		//}
+		//$this->av('uczelnie_searchurl',$this->wyszukiwarka_cleanurl());
+		$this->set('sf',$sf);
+		
+		if (isset($_req['rodzaj'])) {
+			switch ($_req['rodzaj']) {
+			case 1:
+				$r = 'Szkoła wyższa, uniwersytet'; break;
+			case 2:
+				$r = 'Szkoła policealna'; break;
+			case 3:
+				$r = 'Szkoła językowa'; break;
+			}
+		}
+		if (!empty($_req['miasto'])) {$this->set('title_for_layout', $_req['miasto']. ' - ' .$r. ' | Zostań Studentem');
+			if (!empty($_req['kierunek'])) $this->set('title_for_layout',  $_req['kierunek']. ' - ' .$_req['miasto']. ' - ' .$r. ' | Zostań Studentem');
+		} elseif (!empty($_req['kierunek'])) $this->set('title_for_layout', $_req['kierunek']. ' - ' .$r. ' | Zostań Studentem');
+		else $this->set('title_for_layout', 'Wyszukiwarka - Szkoły wyższe - policelane - językowe | Zostań Studentem');
+
+		$this->set('description_for_layout', 'Znajdź szkołę, uczelnie, uniwersytet i kierunek studiów który Cię interesuje');
+		$this->set('keywords_for_layout', 'szkoła, wyższa, policealna, językowa, uczelnia, kierunek, studia');
+	}	
 	
 	public function ranking() {
 		$this->University->contain();
@@ -129,7 +218,7 @@ class UniversitiesController extends AppController {
 			//foreach ($ranking as $r) {
 				if(!empty($university['University']['photo'])) {
 					$file= $university['University']['photo'];
-					$src='C:\Users\Administrator\Documents\klu\cakephp-2.3.8\app\webroot\img\uploads/'.$file;
+					$src ='C:\Users\Administrator\Documents\klu\cakephp-2.3.8\app\webroot\img\uploads/'.$file;
 					$dest='C:\Users\Administrator\Documents\klu\cakephp-2.3.8\app\webroot\img\uczelnie/'.$file;
 					if (!copy($src,$dest)) {
 						echo "failed to copy $file...\n";

@@ -110,17 +110,6 @@
             'pass' => array('nazwa'),
 			'slug'=>'.+'
         ));
-
-    Router::connect(
-        '/search/s&a=:id1-:id2',
-        array(
-            'controller' => 'universities',
-            'action' => 'porownanie'),
-        array(
-            'pass' => array('id1', 'id2'),
-            'id1' => '[0-9]+',
-            'id2' => '[0-9]+'
-        ));
 		
 	Router::connect(
         '/uczelnie',
@@ -129,21 +118,15 @@
             'action' => 'index'));
 		
 	Router::connect(
-        '/kierunekuczelni/:slug-:id',
+        '/wyszukiwarka/:slug-:tid',
         array(
-            'controller' => 'CourseonUniversities',
-            'action' => 'view'),
+            'controller' => 'universities',
+            'action' => 'search'),
         array(
-            'pass' => array('id'),
-            'id' => '[0-9]+',
+            'pass' => array('tid'),
+            'tid' => '[0-9]+',
 			'slug'=>'.+'
         ));
-	
-	Router::connect(
-        '/kierunkiuczelni',
-        array(
-            'controller' => 'CourseonUniversities',
-            'action' => 'index'));
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on

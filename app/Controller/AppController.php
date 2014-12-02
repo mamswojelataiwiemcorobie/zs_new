@@ -78,7 +78,12 @@ class AppController extends Controller {
 		$cookie = $this->Cookie->read('New'); 		
 	}
 
-
-	
-	
+	public function get_form_data($structure,$req) {
+		$r = array();
+		$ip = !empty($req);
+		foreach ($structure as $data) {
+			$r[$data[0]] = $ip && isset($req[$data[0]]) ? $req[$data[0]] : null;
+		}
+		return $r;
+	}
 }

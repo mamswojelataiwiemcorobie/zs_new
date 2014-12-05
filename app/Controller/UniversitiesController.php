@@ -146,44 +146,47 @@ class UniversitiesController extends AppController {
 			array('jezyk_id','(^[0-9]+$)|(^$)',''),
 			array('rodzaj','.+',''),
 		);
-		$lf = array(
-			'limit'=>5,
-			'page'=>isset($_GET['p']) ? $_GET['p'] : 1,
-		);
+		
 		$sf = $this->get_form_data($form_structure,$_req);
 		if (!empty($sf) && $tid !== 4) $sf['rodzaj'] = $tid;
 		if (!empty($sf['kierunek_id'])) { //$sf['kierunek'] = '';
 		} else {$sf['kierunek_id']='';}
 
 		//if (isset($_req['slowo'])) {
-			$pp = $this->University->szukajUczelniQuery($sf,array_merge($lf,array("promowane"=>'1')));
+			$pp = $this->University->szukajUczelniQuery($sf);
+			
 			$this->Paginator->settings = array(
-		        'conditions' => $pp,
-		        'limit' => 10,
-		        'contain' => array('UniversitiesParameter')
+		        'conditions' => $pp,		        
+		        'order' => array('University.abonament' => 'desc', 'University.nazwa' => 'asc'),
+		        'limit' => 5,
+		        'contain' => array('UniversitiesParameter', 'UniversitiesPhoto')
 		    );
 		    $data = $this->Paginator->paginate('University');
 
 			if (count($data)>0) {
-				$demo = $this->University->szukajUczelniQuery($sf,array_merge($lf,array("demo"=>'1')));
-				$this->Paginator->settings = array(
-			        'conditions' => $demo,
-			        'limit' => 10,
-			        'contain' => array('UniversitiesParameter')
-			    );
-			    $demoo = $this->Paginator->paginate('University');
-				$this->set('uczelnie_wyniki_demo',$demoo);
-			} else {
-				$demo = $this->University->szukajUczelniQuery($sf,array_merge($lf,array("demo"=>'1')));
-			}
-			$fullc = count($pp) + count($demo);
-			if ($fullc > 0) {
 				if (!empty($_req['slowo'])) countSearchKeywords($_req['slowo']);
-				//Debugger::dump($data);
-				$this->set('uczelnie_wyniki',$data);
+				$uczelnie_promo = array();
+				$uczelnie = array();
+				foreach ($data as $uczelnia) {
+					if ($uczelnia['University']['abonament'] > 1) {
+						foreach ($uczelnia['UniversitiesPhoto'] as $photo) {
+							if($photo['typ']=='logo') {
+								$uczelnia['logo'] = $photo['path'];
+							} 
+						}
+						$uczelnia = Set::remove($uczelnia, 'UniversitiesPhoto');
+						$uczelnie_promo[] = $uczelnia;
+					} else {
+						$uczelnie[] = $uczelnia;
+					}
+				}
+				//Debugger::dump($uczelnie_promo);
+				$this->set('uczelnie_wyniki',$uczelnie_promo);
+				$this->set('uczelnie_wyniki_demo',$uczelnie);
 			} else {
 				$this->set('uczelnie_wyniki_brak',1);
 			}
+			
 		//} else {
 			//$this->av('uczelnie_nosearch',1);
 		//}
@@ -205,9 +208,115 @@ class UniversitiesController extends AppController {
 		} elseif (!empty($_req['kierunek'])) $this->set('title_for_layout', $_req['kierunek']. ' - ' .$r. ' | Zostań Studentem');
 		else $this->set('title_for_layout', 'Wyszukiwarka - Szkoły wyższe - policelane - językowe | Zostań Studentem');
 
+		$this->set('title_for_slider2','Znajdź uczelnie');
+
 		$this->set('description_for_layout', 'Znajdź szkołę, uczelnie, uniwersytet i kierunek studiów który Cię interesuje');
 		$this->set('keywords_for_layout', 'szkoła, wyższa, policealna, językowa, uczelnia, kierunek, studia');
 	}	
+
+	function ajax() {
+		$tid = $_GET['tid'];
+		$r = array();
+		switch ($tid) {
+			case "1":
+				$txt = $_POST['txt'];
+				$rq = wojewodztwaLikeGetQuery($txt,8);
+				foreach ($rq as $ri) {
+					$r[] = array(
+						'label'=>$ri['nazwa'],
+						'value'=>$ri['id_wojewodztwo'],
+					);
+				}
+				break;
+			case "2":
+				$rel_woj = $_POST['wid'];
+				$txt = $_POST['txt'];
+				$r = miastaLikeGetQuery($txt,$rel_woj,8);
+				/*foreach ($rq as $ri) {
+					$r[] = array(
+						'label'=>$ri['nazwa'],
+						'value'=>$ri['id_miasto'],
+					);
+				}*/
+				break;
+			case "3":
+				if (!preg_match('/\/(kierunek)|(kierunki)\//',$_SERVER['HTTP_REFERER'])) {
+					preg_match('/([0-9]+)\.html/',$_SERVER['HTTP_REFERER'],$ref);
+					$ref = $ref[1];
+				} else {
+					$ref = 1;
+				}
+				$txt = $_POST['txt'];
+				$rq = kierunkiLikeGetQuery($txt,8,$ref);
+				foreach ($rq as $ri) {
+					$r[] = array(
+						'label'=>$ri['nazwa'],
+						'value'=>$ri['id_kierunek'],
+					);
+				}
+				break;
+			case "4":
+				$chapter = $_POST['chapter'] ;
+				$ul = $_SESSION['search-box-three-results'][$chapter];
+				if (isset($_POST['index'])) $_SESSION['search-box-three-page'] = $_POST['index'];
+				$_SESSION['search-box-three-page']++;
+				$cur_p = $_SESSION['search-box-three-page'];
+				$pages = ceil(count($ul)/3);
+				$cur_off = ($cur_p - 1) * 3;
+				if (count($ul) < $cur_off + 1) {
+					$cur_off = 0;
+					$_SESSION['search-box-three-page'] = 1;
+					$cur_p = $_SESSION['search-box-three-page'];
+					$pages = ceil(count($ul)/3);
+					$cur_off = ($cur_p - 1) * 3;
+				}
+				//vdie(count($ul),$cur_off,$_SESSION['search-box-three-page']);
+				$cur_r = array_slice($ul,$cur_off,3);
+				//vdie($cur_r,$cur_off);
+
+				$tmpl = new template();
+				$tmpl->assign("list_items",$cur_r);
+				$tmpl->assign("list_page",$cur_p);
+				$tmpl->assign("list_pages",$pages);
+				$r[] = array(
+					"html"=>$tmpl->render('frontend/item-list.tpl'),
+				);
+				break;
+			case "5":
+				$id = $_POST['id'];
+				list($u) = szukajUczelniQuery(array("id"=>$id));
+				if (!empty($u)) {
+					dodajDoSchowkaQuery($id);
+					$r[] = array(
+						"id"=>$u['id'],
+						"link"=>$u['url'],
+						"name"=>$u['nazwa'],
+						"image"=>$u['logo']?'/miniatura/120x85/uploads/'.$u['logo']:false,
+					);
+				}
+				break;
+			case "6":
+				$s = wczytajSchowekQuery();
+				$tr = array();
+				foreach ($s as $ts) {
+					$tr[] = array(
+						"id"=>$ts['id'],
+						"link"=>$ts['url'],
+						"name"=>$ts['nazwa'],
+						"image"=>$ts['logo']?'/miniatura/120x85/uploads/'.$ts['logo']:false,
+					);
+				}
+				$r[] = array(
+					"schowek"=>$tr,
+				);
+				break;
+			case "7":
+				usunZeSchowkaQuery($_POST['id']);
+				break;
+		}
+		
+		$this->output_json($r);
+	}
 	
 	public function ranking() {
 		$this->University->contain();

@@ -33547,3 +33547,1054 @@ Stack Trace:
 #4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
 #5 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2014-12-05 09:24:44 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php, line 565]
+2014-12-05 09:24:46 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/2/page:1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 565)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 565, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 565, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-05 09:40:25 Error: Fatal Error (4): syntax error, unexpected 'DESC' (T_STRING), expecting ')' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 164]
+2014-12-05 09:40:25 Error: [FatalErrorException] syntax error, unexpected 'DESC' (T_STRING), expecting ')'
+Request URL: /universities/search/2/page:1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 164)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 164, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 164, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-05 09:41:15 Error: [MissingControllerException] Controller class WyszukiwarkaController could not be found.
+Exception Attributes: array (
+  'class' => 'WyszukiwarkaController',
+  'plugin' => NULL,
+)
+Request URL: /wyszukiwarka/szkoly-wyzsze-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 09:54:47 Error: Fatal Error (1): Class 'Debbuger' not found in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 37]
+2014-12-05 09:54:47 Error: [FatalErrorException] Class 'Debbuger' not found
+Request URL: /wyszukiwarka/szkoly-wyzsze-2.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Debbuger...', 'C:\Users\Admini...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Debbuger...', 'C:\Users\Admini...', 37, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Debbuger...', 'C:\Users\Admini...', 37, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-05 09:58:29 Error: Fatal Error (64): Only variables can be passed by reference in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 34]
+2014-12-05 09:58:29 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /wyszukiwarka/szkoly-wyzsze-2.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Only variables ...', 'C:\Users\Admini...', 34)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', 'C:\Users\Admini...', 34, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', 'C:\Users\Admini...', 34, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-05 09:59:08 Error: Fatal Error (4): syntax error, unexpected '$wq' (T_VARIABLE) in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 35]
+2014-12-05 09:59:08 Error: [FatalErrorException] syntax error, unexpected '$wq' (T_VARIABLE)
+Request URL: /wyszukiwarka/szkoly-wyzsze-2.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 35, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 35, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-05 09:59:35 Error: Fatal Error (4): syntax error, unexpected 'array_push' (T_STRING) in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 35]
+2014-12-05 09:59:35 Error: [FatalErrorException] syntax error, unexpected 'array_push' (T_STRING)
+Request URL: /wyszukiwarka/szkoly-wyzsze-2.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 35, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 35, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-05 10:01:56 Error: Fatal Error (4): syntax error, unexpected '$wq' (T_VARIABLE) in [C:\Users\Administrator\Documents\klu\zs_new\app\Model\University.php, line 35]
+2014-12-05 10:01:56 Error: [FatalErrorException] syntax error, unexpected '$wq' (T_VARIABLE)
+Request URL: /wyszukiwarka/szkoly-wyzsze-2.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 35, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 35, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-05 10:02:06 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ArrayUniversity.university_type_id' in 'where clause'
+Request URL: /wyszukiwarka/szkoly-wyzsze-2.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(164): PaginatorComponent->paginate('University')
+#7 [internal function]: UniversitiesController->search('2')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-05 10:05:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ArrayUniversity.university_type_id' in 'where clause'
+Request URL: /wyszukiwarka/szkoly-wyzsze-2.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(164): PaginatorComponent->paginate('University')
+#7 [internal function]: UniversitiesController->search('2')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-05 10:07:59 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=> 2    LIMIT 5' at line 1
+Request URL: /wyszukiwarka/szkoly-wyzsze-2.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(164): PaginatorComponent->paginate('University')
+#7 [internal function]: UniversitiesController->search('2')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-05 10:40:51 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13542752841778.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:40:52 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13679198357710.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:40:52 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13642081677718.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:41:58 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13542752841778.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:41:58 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13642081677718.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:41:58 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13679198357710.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:46:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13642081677718.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:46:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13679198357710.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:46:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13542752841778.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:51:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:51:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13542752841778.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:51:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13542752841778.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:51:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13679198357710.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:51:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13642081677718.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:51:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:55:31 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13679198357710.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:55:31 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13642081677718.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:55:31 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13542752841778.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:55:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:57:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:57:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13679198357710.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:57:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13542752841778.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:57:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13642081677718.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:57:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13542752841778.jpg'
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 10:57:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/uczelnie/13542752841778.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:00:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:06:57 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13542752841778.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:06:58 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13679198357710.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:06:58 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13642081677718.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:06:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:07:19 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13679198357710.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:07:20 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13642081677718.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:07:20 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13542752841778.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:07:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:08:31 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13542752841778.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:08:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:08:31 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13642081677718.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:08:31 Error: [MissingControllerException] Controller class MiniaturaController could not be found.
+Exception Attributes: array (
+  'class' => 'MiniaturaController',
+  'plugin' => NULL,
+)
+Request URL: /miniatura/160x125/uploads/13679198357710.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:09:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:10:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:16:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:17:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:22:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:23:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:30:52 Error: Fatal Error (4): syntax error, unexpected ':' in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\wyniki_promo.ctp, line 10]
+2014-12-05 11:30:52 Error: [FatalErrorException] syntax error, unexpected ':'
+Request URL: /wyszukiwarka/szkoly-wyzsze-1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 10, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 10, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-05 11:30:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:31:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:32:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:38:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:39:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:41:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:41:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/slf.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:43:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:45:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:46:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:47:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:48:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:50:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:56:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 11:59:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:01:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:01:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:03:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:04:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:06:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:11:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:16:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:18:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:25:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:27:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:38:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:39:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:40:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:46:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:49:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:51:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 12:53:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:01:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:06:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'k.nazwa' in 'where clause'
+Request URL: /wyszukiwarka/szukaj-4.html?slowo=S%C5%81OWO+KLUCZOWE&kierunek=+&wojewodztwo=WOJEW%C3%93DZTWO&miasto=MIASTO&tryb=TRYB&typ=TYP&id_tryb=&id_typ=&kierunek_id=&id_wojewodztwo=&rodzaj=1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(164): PaginatorComponent->paginate('University')
+#7 [internal function]: UniversitiesController->search('4')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-05 13:13:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:15:14 Error: [MissingControllerException] Controller class AjaxController could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxController',
+  'plugin' => NULL,
+)
+Request URL: /ajax/wczytaj-wojewodztwa-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:15:14 Error: [MissingControllerException] Controller class AjaxController could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxController',
+  'plugin' => NULL,
+)
+Request URL: /ajax/wczytaj-wojewodztwa-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:16:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'up.nazwa' in 'where clause'
+Request URL: /wyszukiwarka/szukaj-4.html?slowo=polska&kierunek=+&wojewodztwo=WOJEW%C3%93DZTWO&miasto=MIASTO&tryb=TRYB&typ=TYP&id_tryb=&id_typ=&kierunek_id=&id_wojewodztwo=&rodzaj=1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(164): PaginatorComponent->paginate('University')
+#7 [internal function]: UniversitiesController->search('4')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-05 13:20:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:20:39 Error: [MissingControllerException] Controller class AjaxController could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxController',
+  'plugin' => NULL,
+)
+Request URL: /ajax/wczytaj-wojewodztwa-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:20:39 Error: [MissingControllerException] Controller class AjaxController could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxController',
+  'plugin' => NULL,
+)
+Request URL: /ajax/wczytaj-wojewodztwa-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:20:39 Error: [MissingControllerException] Controller class AjaxController could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxController',
+  'plugin' => NULL,
+)
+Request URL: /ajax/wczytaj-wojewodztwa-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:20:39 Error: [MissingControllerException] Controller class AjaxController could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxController',
+  'plugin' => NULL,
+)
+Request URL: /ajax/wczytaj-wojewodztwa-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:20:40 Error: [MissingControllerException] Controller class AjaxController could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxController',
+  'plugin' => NULL,
+)
+Request URL: /ajax/wczytaj-wojewodztwa-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:20:40 Error: [MissingControllerException] Controller class AjaxController could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxController',
+  'plugin' => NULL,
+)
+Request URL: /ajax/wczytaj-wojewodztwa-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:20:40 Error: [MissingControllerException] Controller class AjaxController could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxController',
+  'plugin' => NULL,
+)
+Request URL: /ajax/wczytaj-wojewodztwa-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:20:40 Error: [MissingControllerException] Controller class AjaxController could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxController',
+  'plugin' => NULL,
+)
+Request URL: /ajax/wczytaj-wojewodztwa-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:20:41 Error: [MissingControllerException] Controller class AjaxController could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxController',
+  'plugin' => NULL,
+)
+Request URL: /ajax/wczytaj-wojewodztwa-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:20:41 Error: [MissingControllerException] Controller class AjaxController could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxController',
+  'plugin' => NULL,
+)
+Request URL: /ajax/wczytaj-wojewodztwa-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:21:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:46:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:48:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:56:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:58:48 Error: [MissingControllerException] Controller class AjaxController could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxController',
+  'plugin' => NULL,
+)
+Request URL: /ajax/wczytaj-wojewodztwa-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 13:58:48 Error: [MissingControllerException] Controller class AjaxController could not be found.
+Exception Attributes: array (
+  'class' => 'AjaxController',
+  'plugin' => NULL,
+)
+Request URL: /ajax/wczytaj-wojewodztwa-1.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-05 14:07:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/znajdz-uczelnie-mini.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

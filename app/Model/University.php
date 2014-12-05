@@ -9,14 +9,11 @@ class University extends AppModel {
             'foreignKey' => 'university_id'), 'CourseonUniversity');
 	//public $displayField = 'nazwa';
 
-	function szukajUczelniQuery($p,$c=array()) {
+	function szukajUczelniQuery($p) {
 		global $db;
-		if (!isset($c['limit'])) $c['limit'] = 999999;
-		if (!isset($c['page'])) $c['page'] = 1;
-		if (!isset($c['first_offset'])) $c['first_offset'] = ($c['page'] - 1) * $c['limit'];
 		
 		$conds = array(
-			"slowo"=>"CONCAT(up.nazwa,up.adres,up.opis,up.www,up.telefon,up.zakladka1,up.zakladka2,up.zakladka3,up.zakladka4,up.tagi) LIKE ",
+			"slowo"=>"CONCAT(University['nazwa'],up.adres,up.opis,up.www,up.telefon,up.zakladka1,up.zakladka2,up.zakladka3,up.zakladka4,up.tagi) LIKE ",
 			"jezyk"=>"k.nazwa LIKE ",
 			"jezyk_id"=>"k.typ_uczelni = 3 AND uk.id_kierunek = ",
 			"kierunek"=>"k.nazwa LIKE ",
@@ -27,24 +24,16 @@ class University extends AppModel {
 			"miasto"=>"up.miasto = ",
 			"id_typ"=>"uk.typ = '%s'",
 			"id_tryb"=>"uk.tryb = '%s'",
-			"rodzaj"=>"University.university_type_id = ",
+			"rodzaj"=>"University.university_type_id",
 			"id"=>"u.id = ",
 			"ids"=>"u.id IN ",
 		);
 		$vq = $wq = array();
 		foreach ($p as $par=>$val) {
 			if (!empty($val)) {
-				$wq[] = $conds[$par].''.$val;
+				$wq[$conds[$par]] = $val;
 			}
 		}
-		if (in_array('pelne', $c)) {
-			$wq[] = "University.abonament > 1";
-		} else if (in_array('demo', $c)) {
-			$wq[] = "University.abonament = 1";
-		} else if (in_array('promowane', $c)) {
-			$wq[] = "University.abonament > 2";
-		}
-
 		return $wq;
 		//$vq= $this->find('all', array('conditions'=>$wq) );
 		//public $components = array('Paginator');

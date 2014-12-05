@@ -1,3 +1,12 @@
+$(function(){
+	if ($('#searchpage').size() > 0) {
+		searchpage.init('#searchpage');
+	}
+	if ($('#znajdz-uczelnie-mini').size() > 0) {
+		searchpage.init('#znajdz-uczelnie-mini');
+	}
+});
+
 //podświetlenie aktywnej strony w menu
 		$("#nav a").each(function () {
 			var path = window.location.pathname;
@@ -153,3 +162,221 @@
 			}
 		}
 	});
+
+var searchpage = {
+	init: function(tel) {
+		searchpage.tel = $(tel);
+		var x_typ = {
+			autocomplete:true,
+			sel:'input[name="typ"]',
+			selDataFromId:'input[name="id_typ"]',
+			def:'TYP',
+			cfg:{
+				source:[
+					{label:'Studia licencjackie',value:'1'},
+					{label:'Studia inżynierskie',value:'2'},
+					{label:'Studia magisterskie',value:'3'},
+					{label:'Studia podyplomowe',value:'4'}
+				],
+				minLength: 0
+			}
+		};
+		var x_tryb = {
+			autocomplete:true,
+			sel:'input[name="tryb"]',
+			selDataFromId:'input[name="id_tryb"]',
+			def:'TRYB',
+			cfg:{
+				source:[
+					{label:'Stacjonarne',value:'1'},
+					{label:'Niestacjonarne',value:'2'}
+				],
+				minLength: 0
+			}
+		};
+		var x_kierunek = {
+			autocomplete:true,
+			sel:'input[name="kierunek"]',
+			selDataFromId:'input[name="kierunek_id"]',
+			def:'KIERUNEK',
+			cfg:{
+				source:searchpage.getKierunki,
+				minLength: 1
+			}
+		};
+		var x_jezyk = {
+			autocomplete:true,
+			sel:'input[name="jezyk"]',
+			selDataFromId:'input[name="jezyk_id"]',
+			def:'JĘZYK',
+			cfg:{
+				source:searchpage.getJezyki,
+				minLength: 1
+			}
+		};
+		var x_wojewodztwo = {
+			autocomplete:true,
+			sel:'input[name="wojewodztwo"]',
+			selDataFromId:'input[name="id_wojewodztwo"]',
+			def:'WOJEWÓDZTWO',
+			cfg:{
+				source:searchpage.getWojewodztwa,
+				minLength: 0
+			}
+		};
+		var x_miasto = {
+			autocomplete:true,
+			sel:'input[name="miasto"]',
+			def:'MIASTO',
+			cfg:{
+				source:searchpage.getMiasta,
+				minLength: 0
+			}
+		};
+		var x_slowo = {
+			autocomplete:false,
+			sel:'input[name="slowo"]',
+			def:'SŁOWO KLUCZOWE',
+		};
+		//searchpage.setDataFromHidden();
+		searchpage.cfg = [
+			x_typ,
+			x_tryb,
+			x_kierunek,
+			x_wojewodztwo,
+			x_miasto,
+			x_slowo,
+			x_jezyk
+		];
+		for (var i in searchpage.cfg) {
+			var ti = searchpage.cfg[i];
+			var tg = $(ti.sel);
+			if (tg.size() === 0) continue;
+			//console.log('setCfg',ti);
+			tg.data('cfg',ti);
+			tg.bind('blur',searchpage.triggerBlur);
+			tg.bind('click',searchpage.triggerClick);
+			if (ti.autocomplete) {
+				tg.autocomplete(ti.cfg);
+				var idVal = 'selDataFromId' in ti ? $(ti.selDataFromId).val() : '';
+				//console.log(idVal);
+				if (idVal !== '') {
+					//console.log(typeof ti.cfg.source);
+					switch (typeof ti.cfg.source) {
+						case "function":
+							ti.cfg.source({term:'',idVal:idVal,ti:ti},searchpage.setDefaultFromFunction);
+							break;
+						case "object":
+							tg.val(ti.cfg.source[idVal-1].label);
+							break;
+					}
+				}
+				tg.bind('autocompleteselect',searchpage.triggerSelect);
+			}
+			if ($(tg).is('.kieronly')) ti.def = 'SZUKAJ KIERUNKU';
+			if (tg.val().length === 0) tg.val(ti.def);
+		}
+	},
+	setDefaultFromFunction: function(r,d) {
+		for (var i in r) {
+			if (r[i].value == d.idVal) {
+				$(d.ti.sel).val(r[i].label);
+				return;
+			}
+		}
+	},
+	getJezyki: function(d,c) {
+		var txt = d.term;
+		$.ajax({
+			type: "POST",
+			url: "/ajax/wczytaj-kierunki-3.html",
+			data: {txt:txt},
+			dataType: "json",
+			success:function(r){
+				c(r,d);
+			}
+		});
+	},
+	getKierunki: function(d,c) {
+		var txt = d.term;
+		$.ajax({
+			type: "POST",
+			url: "/ajax/wczytaj-kierunki-3.html",
+			data: {txt:txt},
+			dataType: "json",
+			success:function(r){
+				c(r,d);
+			}
+		});
+	},
+	getMiasta: function(d,c) {
+		var woj = $('input[name="id_wojewodztwo"]').val();
+		var txt = d.term;
+		if (!woj && txt.length === 0) return;
+		$.ajax({
+			type: "POST",
+			url: "/ajax/wczytaj-miasta-2.html",
+			data: {txt:txt,wid:woj},
+			dataType: "json",
+			success:function(r){
+				c(r,d);
+			}
+		});
+	},
+	getWojewodztwa: function(d,c) {
+		var txt = d.term;
+		$.ajax({
+			type: "POST",
+			url: "/ajax/wczytaj-wojewodztwa-1.html",
+			data: {txt:txt},
+			dataType: "json",
+			success:function(r){
+				c(r,d);
+			}
+		});
+	},
+	setDataFromHidden: function() {
+		searchpage.tel.find('.znajdz-uczelnie :hidden').each(function(){
+			var tn = this.name.match(/\[(.+)\]/)[1];
+			searchpage.setDataParams(tn,this.value);
+		});
+	},
+	setDataParams: function(_param,_data) {
+		searchpage.tel.find('.znajdz-uczelnie input[name="'+_param+'"]').val(_data);
+	},
+	triggerSelect: function (e,sel) {
+		var tg = e.target;
+		var vl = sel.item.value;
+		var cfg = $(tg).data('cfg');
+		$(cfg.selDataFromId).val(sel.item.value);
+		$(cfg.sel).val(sel.item.label);
+		e.preventDefault();
+		if (tg.name === 'wojewodztwo]') {
+			$('input[name="miasto"]').val('');
+			$('input[name="miasto"]').trigger('blur');
+		}
+		if ($(tg).is('.kieronly')) {
+			window.location.href = '/kierunek/szukaj-'+vl+'.html';
+		}
+	},
+	triggerBlur: function(e) {
+		var tg = e.target;
+		var vl = tg.value;
+		var cfg = $(tg).data('cfg');
+		if (vl === '') tg.value = cfg.def;
+
+		if (!cfg.autocomplete) return;
+		if (vl === '') $(cfg.selDataFromId).val('');
+	},
+	triggerClick: function(e) {
+		var tg = e.target;
+		var vl = tg.value;
+		var cfg = $(tg).data('cfg');
+		if (cfg.def === vl) tg.value = '';
+
+		if (!cfg.autocomplete) return;
+
+		//console.log('trigger click');
+		if (!tg.value) $(tg).autocomplete("search",tg.value);
+	}
+}

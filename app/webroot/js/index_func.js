@@ -289,7 +289,7 @@ var searchpage = {
 		var txt = d.term;
 		$.ajax({
 			type: "POST",
-			url: "/ajax/wczytaj-kierunki-3.html",
+			url: "/universities/ajax/wczytaj-kierunki-3.html",
 			data: {txt:txt},
 			dataType: "json",
 			success:function(r){
@@ -301,7 +301,7 @@ var searchpage = {
 		var txt = d.term;
 		$.ajax({
 			type: "POST",
-			url: "/ajax/wczytaj-kierunki-3.html",
+			url: "/universities/ajax/3",
 			data: {txt:txt},
 			dataType: "json",
 			success:function(r){
@@ -315,7 +315,7 @@ var searchpage = {
 		if (!woj && txt.length === 0) return;
 		$.ajax({
 			type: "POST",
-			url: "/ajax/wczytaj-miasta-2.html",
+			url: "/universities/ajax/wczytaj-miasta-2.html",
 			data: {txt:txt,wid:woj},
 			dataType: "json",
 			success:function(r){
@@ -327,7 +327,7 @@ var searchpage = {
 		var txt = d.term;
 		$.ajax({
 			type: "POST",
-			url: "/ajax/wczytaj-wojewodztwa-1.html",
+			url: "/universities/ajax/1",
 			data: {txt:txt},
 			dataType: "json",
 			success:function(r){

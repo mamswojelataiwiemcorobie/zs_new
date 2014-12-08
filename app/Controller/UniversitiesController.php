@@ -215,23 +215,29 @@ class UniversitiesController extends AppController {
 	}	
 
 	function ajax() {
-		$tid = $_GET['tid'];
+		$tid = $this->request->pass[0];
 		$r = array();
 		switch ($tid) {
 			case "1":
 				$txt = $_POST['txt'];
-				$rq = wojewodztwaLikeGetQuery($txt,8);
+				$rq = $this->University->District->find('all', array('conditions'=> array('District.nazwa LIKE ' => '%'.$txt.'%'),
+															'fields' => array('District.id', 'District.nazwa'),
+															'order'=> array('District.nazwa'),
+															'limit'=> 8));
 				foreach ($rq as $ri) {
 					$r[] = array(
-						'label'=>$ri['nazwa'],
-						'value'=>$ri['id_wojewodztwo'],
+						'label'=>$ri['District']['nazwa'],
+						'value'=>$ri['District']['id'],
 					);
 				}
 				break;
 			case "2":
 				$rel_woj = $_POST['wid'];
 				$txt = $_POST['txt'];
-				$r = miastaLikeGetQuery($txt,$rel_woj,8);
+				$r = $this->University->find('list', array('conditions'=> array('University.district_id'=> $rel_woj, 'UniversityParameter.miasto LIKE ' => '%'.$txt.'%'), 
+															'fields' => array('DISTINCT University.miasto'),
+															'limit'=> 8));
+				Debugger::dump($r);
 				/*foreach ($rq as $ri) {
 					$r[] = array(
 						'label'=>$ri['nazwa'],
@@ -247,71 +253,14 @@ class UniversitiesController extends AppController {
 					$ref = 1;
 				}
 				$txt = $_POST['txt'];
-				$rq = kierunkiLikeGetQuery($txt,8,$ref);
+				$rq = $this->University->CourseonUniversity->find('all', array('conditions'=> array('university_type_id'=>$ref, 'Course.nazwa LIKE %' => $txt)));
+				Debugger::dump($rq);
 				foreach ($rq as $ri) {
 					$r[] = array(
 						'label'=>$ri['nazwa'],
 						'value'=>$ri['id_kierunek'],
 					);
 				}
-				break;
-			case "4":
-				$chapter = $_POST['chapter'] ;
-				$ul = $_SESSION['search-box-three-results'][$chapter];
-				if (isset($_POST['index'])) $_SESSION['search-box-three-page'] = $_POST['index'];
-				$_SESSION['search-box-three-page']++;
-				$cur_p = $_SESSION['search-box-three-page'];
-				$pages = ceil(count($ul)/3);
-				$cur_off = ($cur_p - 1) * 3;
-				if (count($ul) < $cur_off + 1) {
-					$cur_off = 0;
-					$_SESSION['search-box-three-page'] = 1;
-					$cur_p = $_SESSION['search-box-three-page'];
-					$pages = ceil(count($ul)/3);
-					$cur_off = ($cur_p - 1) * 3;
-				}
-				//vdie(count($ul),$cur_off,$_SESSION['search-box-three-page']);
-				$cur_r = array_slice($ul,$cur_off,3);
-				//vdie($cur_r,$cur_off);
-
-				$tmpl = new template();
-				$tmpl->assign("list_items",$cur_r);
-				$tmpl->assign("list_page",$cur_p);
-				$tmpl->assign("list_pages",$pages);
-				$r[] = array(
-					"html"=>$tmpl->render('frontend/item-list.tpl'),
-				);
-				break;
-			case "5":
-				$id = $_POST['id'];
-				list($u) = szukajUczelniQuery(array("id"=>$id));
-				if (!empty($u)) {
-					dodajDoSchowkaQuery($id);
-					$r[] = array(
-						"id"=>$u['id'],
-						"link"=>$u['url'],
-						"name"=>$u['nazwa'],
-						"image"=>$u['logo']?'/miniatura/120x85/uploads/'.$u['logo']:false,
-					);
-				}
-				break;
-			case "6":
-				$s = wczytajSchowekQuery();
-				$tr = array();
-				foreach ($s as $ts) {
-					$tr[] = array(
-						"id"=>$ts['id'],
-						"link"=>$ts['url'],
-						"name"=>$ts['nazwa'],
-						"image"=>$ts['logo']?'/miniatura/120x85/uploads/'.$ts['logo']:false,
-					);
-				}
-				$r[] = array(
-					"schowek"=>$tr,
-				);
-				break;
-			case "7":
-				usunZeSchowkaQuery($_POST['id']);
 				break;
 		}
 		

@@ -86,4 +86,9 @@ class AppController extends Controller {
 		}
 		return $r;
 	}
+	public function output_json($r) {
+		ob_end_clean();
+		echo json_encode($r);
+		exit();
+	}
 }

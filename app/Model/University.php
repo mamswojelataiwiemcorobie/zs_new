@@ -3,7 +3,7 @@ class University extends AppModel {
 	public $actsAs = array(
 		'Containable',
 	);
-	public $belongsTo = array('UniversityType');
+	public $belongsTo = array('UniversityType', 'District');
 	public $hasOne = array('UniversitiesParameter');
 	public $hasMany = array('UniversitiesPhoto' => array('className' => 'UniversitiesPhoto',
             'foreignKey' => 'university_id'), 'CourseonUniversity');
@@ -20,7 +20,7 @@ class University extends AppModel {
 			"kierunek_id"=>"uk.id_kierunek = ",
 			"wydzial_id"=>"uk.id_wydzial= ",
 			"kierunek_kat"=>"k.id_kat = ",
-			"id_wojewodztwo"=>"u.wojewodztwo = ",
+			"id_wojewodztwo"=>"University.district_id = ",
 			"miasto"=>"up.miasto = ",
 			"id_typ"=>"uk.typ = '%s'",
 			"id_tryb"=>"uk.tryb = '%s'",

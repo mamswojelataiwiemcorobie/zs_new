@@ -136,7 +136,7 @@
 		echo $this->Html->script('bootstrap.js');
 		echo $this->Html->script('common.js');
 		echo $this->Html->script('plugins.js');
-		echo $this->Html->script('jquery-ui-1.8.17.custom.min.js');
+		//echo $this->Html->script('jquery-ui-1.8.17.custom.min.js');
 		echo $this->Html->script('index_func.js');
 	?>
 <script>

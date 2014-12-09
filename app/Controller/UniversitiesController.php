@@ -123,12 +123,66 @@ class UniversitiesController extends AppController {
 		}
 	}
 
-	public function search($tid) {
-		//$this->request->query['page'];
+	function search_all() {
+        // the page we will redirect to
+        $url['action'] = 'search';
+         
+        // build a URL will all the search elements in it
+        // the resulting URL will be
+        // example.com/cake/posts/index/Search.keywords:mykeyword/Search.tag_id:3
+        foreach ($this->data as $k=>$v){
+            foreach ($v as $kk=>$vv){
+                $url[$k.'.'.$kk]=$vv;
+            }
+        }
+ 
+        // redirect the user to the url
+        $this->redirect($url, null, true);
+    }
 
+	public function search($tid) {
 		$this->set('tid',$tid);
 
-		$_req = isset($_GET) ? $_GET : array();
+		if(isset($this->request->query['keywords'])) {
+            $keywords = mb_strtolower($this->request->query['keywords'], 'UTF-8');
+            $keywords = explode(' ', $keywords);
+			Debugger::dump($keywords);
+			foreach ($keywords as $keyword) {
+						$conditions['and'][] = array('University.university_type_id LIKE' => "%$keyword%");
+					    $conditions['or'][] = array('Course.nazwa LIKE' => "%$keyword%");
+					    $conditions['or'][] = array('University.nazwa LIKE' => "%$keyword%");
+					    $conditions['or'][] = array('UniversitiesParameter.miasto LIKE' => "%$keyword%");
+					}
+			$this->Paginator->settings = array(
+		        'conditions' => array(
+		        	'University.university_type_id' => $tid,
+		        	
+		        	'Course.nazwa LIKE' => "%$keywords%",
+		        	"OR" => array(
+				        'LOWER(University.nazwa) LIKE' => "%$keywords%",
+				        'LOWER(UniversitiesParameter.miasto) LIKE' => "%$keywords%",
+				    )),
+				'order' => array('University.abonament'=> 'desc', 'UniversityParameter.nazwa' => 'asc' ),
+				'limit' => 5,
+				'contain' => array('UniversitiesParameter', 'UniversitiesPhoto')
+		    );
+        } else { 
+			$this->Paginator->settings = array(
+		        'conditions' => array('University.university_type_id' => $tid),
+				'order' => array('University.abonament'=> 'desc', 'UniversityParameter.nazwa' => 'asc' ),
+				'limit' => 5,
+				'contain' => array('UniversitiesParameter.miasto', 'UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
+		    );
+		}
+        $data = $this->paginate('University');
+		//Debugger::dump($data);
+        
+
+
+		//$this->request->query['page'];
+
+
+/*		$_req = isset($_GET) ? $_GET : array();
 		if (isset($_req['slowo']) && $_req['slowo'] === 'SŁOWO KLUCZOWE') $_req['slowo'] = '';
 		if (isset($_req['miasto']) && $_req['miasto'] === 'MIASTO') $_req['miasto'] = '';
 		if (isset($_req['kierunek']) && $_req['kierunek'] === 'KIERUNEK') $_req['kierunek'] = '';
@@ -154,14 +208,30 @@ class UniversitiesController extends AppController {
 
 		//if (isset($_req['slowo'])) {
 			$pp = $this->University->szukajUczelniQuery($sf);
+			//Debugger::dump($pp);
 			
 			$this->Paginator->settings = array(
 		        'conditions' => $pp,		        
 		        'order' => array('University.abonament' => 'desc', 'University.nazwa' => 'asc'),
 		        'limit' => 5,
-		        'contain' => array('UniversitiesParameter', 'UniversitiesPhoto')
+		        'joins' => array(
+		            array(
+		                'table' => 'courseon_universities',
+		                'alias' => 'CourseonUniversity',
+		                'conditions'=> array('University.id = CourseonUniversity.university_id')
+		            ),array(
+		                'table' => 'courses',
+		                'alias' => 'Course',
+		                'conditions'=> array('CourseonUniversity.course_id = course.id')
+		            )
+		        ),
+    			'group' => 'University.id'
+		        //'contain' => array('UniversitiesParameter', 'UniversitiesPhoto', 'CourseonUniversity')
 		    );
 		    $data = $this->Paginator->paginate('University');
+
+		   //Debugger::dump($data);*/
+
 
 			if (count($data)>0) {
 				if (!empty($_req['slowo'])) countSearchKeywords($_req['slowo']);
@@ -191,7 +261,7 @@ class UniversitiesController extends AppController {
 			//$this->av('uczelnie_nosearch',1);
 		//}
 		//$this->av('uczelnie_searchurl',$this->wyszukiwarka_cleanurl());
-		$this->set('sf',$sf);
+		/*$this->set('sf',$sf);
 		
 		if (isset($_req['rodzaj'])) {
 			switch ($_req['rodzaj']) {
@@ -205,8 +275,8 @@ class UniversitiesController extends AppController {
 		}
 		if (!empty($_req['miasto'])) {$this->set('title_for_layout', $_req['miasto']. ' - ' .$r. ' | Zostań Studentem');
 			if (!empty($_req['kierunek'])) $this->set('title_for_layout',  $_req['kierunek']. ' - ' .$_req['miasto']. ' - ' .$r. ' | Zostań Studentem');
-		} elseif (!empty($_req['kierunek'])) $this->set('title_for_layout', $_req['kierunek']. ' - ' .$r. ' | Zostań Studentem');
-		else $this->set('title_for_layout', 'Wyszukiwarka - Szkoły wyższe - policelane - językowe | Zostań Studentem');
+		} elseif (!empty($_req['kierunek'])) $this->set('title_for_layout', $_req['kierunek']. ' - ' .$r. ' | Zostań Studentem');*/
+		$this->set('title_for_layout', 'Wyszukiwarka - Szkoły wyższe - policelane - językowe | Zostań Studentem');
 
 		$this->set('title_for_slider2','Znajdź uczelnie');
 
@@ -232,18 +302,25 @@ class UniversitiesController extends AppController {
 				}
 				break;
 			case "2":
-				$rel_woj = $_POST['wid'];
+				if(isset($_POST['wid'])) $rel_woj = $_POST['wid'];
 				$txt = $_POST['txt'];
-				$r = $this->University->find('list', array('conditions'=> array('University.district_id'=> $rel_woj, 'UniversityParameter.miasto LIKE ' => '%'.$txt.'%'), 
-															'fields' => array('DISTINCT University.miasto'),
+				$conditions = array('UniversitiesParameter.miasto LIKE ' => '%%%'.$txt.'%%');
+				if(!empty($rel_woj)) {
+					$condition2 = array('University.district_id' => $rel_woj);
+					$conditions = array_merge($conditions, $condition2);
+				}
+				$this->University->contain('UniversitiesParameter.miasto');
+				$rq = $this->University-> find('all', array('conditions'=> $conditions, 
+															'fields' => array('DISTINCT UniversitiesParameter.miasto'),
+															'order' => array('UniversitiesParameter.miasto'),
 															'limit'=> 8));
-				Debugger::dump($r);
-				/*foreach ($rq as $ri) {
+				//Debugger::dump($r);
+				foreach ($rq as $ri) {
 					$r[] = array(
-						'label'=>$ri['nazwa'],
-						'value'=>$ri['id_miasto'],
+						'label'=>$ri['UniversitiesParameter']['miasto'],
+						'value'=>$ri['UniversitiesParameter']['miasto'],
 					);
-				}*/
+				}
 				break;
 			case "3":
 				if (!preg_match('/\/(kierunek)|(kierunki)\//',$_SERVER['HTTP_REFERER'])) {
@@ -253,12 +330,15 @@ class UniversitiesController extends AppController {
 					$ref = 1;
 				}
 				$txt = $_POST['txt'];
-				$rq = $this->University->CourseonUniversity->find('all', array('conditions'=> array('university_type_id'=>$ref, 'Course.nazwa LIKE %' => $txt)));
+				//$this->University->CourseonUniversity->contain('Course');
+				$rq = $this->University->CourseonUniversity->find('all', array('conditions'=> array('University.university_type_id'=>$ref, 'Course.nazwa LIKE ' => '%'.$txt.'%%'),
+																				'fields' => array('DISTINCT Course.nazwa', 'Course.id'), 
+																				'limit' => 8));
 				Debugger::dump($rq);
 				foreach ($rq as $ri) {
 					$r[] = array(
-						'label'=>$ri['nazwa'],
-						'value'=>$ri['id_kierunek'],
+						'label'=>$ri['Course']['nazwa'],
+						'value'=>$ri['Course']['id'],
 					);
 				}
 				break;
@@ -920,7 +1000,7 @@ class UniversitiesController extends AppController {
 		}
 	}
 	
-	 function admin_search() {
+	public function admin_search() {
         // the page we will redirect to
         $url['action'] = 'index';
          

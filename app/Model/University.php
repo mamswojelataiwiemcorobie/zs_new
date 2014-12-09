@@ -6,24 +6,26 @@ class University extends AppModel {
 	public $belongsTo = array('UniversityType', 'District');
 	public $hasOne = array('UniversitiesParameter');
 	public $hasMany = array('UniversitiesPhoto' => array('className' => 'UniversitiesPhoto',
-            'foreignKey' => 'university_id'), 'CourseonUniversity');
+            											'foreignKey' => 'university_id'),
+            				'CourseonUniversity'  => array('className' => 'CourseonUniversity',
+            											'foreignKey' => 'university_id'));
 	//public $displayField = 'nazwa';
 
 	function szukajUczelniQuery($p) {
 		global $db;
 		
 		$conds = array(
-			"slowo"=>"CONCAT(University['nazwa'],up.adres,up.opis,up.www,up.telefon,up.zakladka1,up.zakladka2,up.zakladka3,up.zakladka4,up.tagi) LIKE ",
-			"jezyk"=>"k.nazwa LIKE ",
+			"slowo"=>"CONCAT(University.nazwa,UniversitiesParameter.adres,UniversitiesParameter.opis,UniversitiesParameter.www,UniversitiesParameter.telefon,UniversitiesParameter.zakladka1,UniversitiesParameter.zakladka2,UniversitiesParameter.zakladka3,UniversitiesParameter.zakladka4,UniversitiesParameter.tagi) LIKE ",
+			"jezyk"=>"Course.nazwa LIKE",
 			"jezyk_id"=>"k.typ_uczelni = 3 AND uk.id_kierunek = ",
-			"kierunek"=>"k.nazwa LIKE ",
-			"kierunek_id"=>"uk.id_kierunek = ",
-			"wydzial_id"=>"uk.id_wydzial= ",
-			"kierunek_kat"=>"k.id_kat = ",
+			"kierunek"=>"Course.nazwa LIKE",
+			"kierunek_id"=>"CourseonUniversity.course_id = ",
+			//"wydzial_id"=>"uk.id_wydzial= ",
+			//"kierunek_kat"=>"k.id_kat = ",
 			"id_wojewodztwo"=>"University.district_id = ",
-			"miasto"=>"up.miasto = ",
-			"id_typ"=>"uk.typ = '%s'",
-			"id_tryb"=>"uk.tryb = '%s'",
+			"miasto"=>"UniversitiesParameter.miasto = ",
+			"id_typ"=>"CourseonUniversity.course_type_id",
+			"id_tryb"=>"CourseonUniversity.course_mode_id",
 			"rodzaj"=>"University.university_type_id",
 			"id"=>"u.id = ",
 			"ids"=>"u.id IN ",

@@ -315,7 +315,7 @@ var searchpage = {
 		if (!woj && txt.length === 0) return;
 		$.ajax({
 			type: "POST",
-			url: "/universities/ajax/wczytaj-miasta-2.html",
+			url: "/universities/ajax/2",
 			data: {txt:txt,wid:woj},
 			dataType: "json",
 			success:function(r){

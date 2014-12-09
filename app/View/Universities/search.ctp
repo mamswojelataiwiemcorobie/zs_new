@@ -1,10 +1,15 @@
 <div id="searchpage" class="row <?php if ($tid == '2'):?>znajdz-szkole-policealna<?php elseif ($tid == '3'):?>znajdz-szkole-jezykowa<?php endif;?>">
 	<div class="col-md-8 l">
-		<div class="znajdz-uczelnie-c"><div class="znajdz-uczelnie">
-			<form method="get"{if $tid===4} action="/wyszukiwarka/szukaj-4.html"{/if}>
+		<?php echo $this->Form->create('University',array('action'=>'search/'.$tid,'class'=>'form-inline input-append', 'role'=>'form', 'type' => 'GET'));?>
+			<input type="text" name="keywords" placeholder="Type something…" class="input-medium">
+			<button class="btn" type="submit" >Search</button>
+			<button class="btn" type="button">Options</button>
+		<?php echo $this->Form->end();?>
+		<!-- <div class="znajdz-uczelnie-c"><div class="znajdz-uczelnie">
+			<form method="get"{if $tid===4} action="/wyszukiwarka/szukaj-1"{/if}>
 				<div class="inputs">
 					<?php if ($tid == '1' || $tid == '4'):?><input type="text" name="slowo" value="<?php echo $sf['slowo'];?>"/>
-					<input type="text" name="kierunek" class="s" value="<?php echo $sf['kierunek'];?> "/>
+					<input type="text" name="kierunek" class="s" value="<?php echo $sf['kierunek'];?>"/>
 					<input type="text" name="wojewodztwo"/>
 					<input type="text" name="miasto" class="s" value="<?php echo $sf['miasto'];?>"/>
 					<input type="text" name="tryb"/>
@@ -27,7 +32,7 @@
 				</div>
 				<div class="submit"><input type="submit" value=" "/></div>
 			</form>
-		</div></div>
+		</div></div> -->
 		<!-- <div id="znajdz-uczelnie-mini"><div><form method="get" action="/wyszukiwarka/szukaj-4.html">
 			<input type="hidden" name="id_wojewodztwo"/>
 			<div><input type="text" name="slowo"/></div>

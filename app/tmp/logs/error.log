@@ -38444,3 +38444,859 @@ Stack Trace:
 #3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-12-10 10:14:41 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\RequestHandlerComponent.php, line 23]
+2014-12-10 10:14:43 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=krak%C3%B3w
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 23, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 23, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 10:15:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Course.nazwa' in 'where clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(177): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 10:18:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Course.nazwa' in 'where clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(173): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 10:23:41 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lastQuery' at line 1
+Request URL: /universities/search/1?keywords=krak%C3%B3w
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('lastQuery', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('lastQuery', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('lastQuery', Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(799): DboSource->query('lastQuery', Array, Object(University))
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(183): Model->__call('lastQuery', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(183): University->lastQuery()
+#7 [internal function]: UniversitiesController->search('1')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-10 10:24:53 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\sql.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\sql.ctp',
+)
+Request URL: /universities/search/1?keywords=krak%C3%B3w
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName('sql')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render('sql', NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(183): Controller->render('sql')
+#3 [internal function]: UniversitiesController->search('1')
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-12-10 10:30:35 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 10:30:35 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=krak%C3%B3w
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 10:32:51 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 10:32:51 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=krak%C3%B3w
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 10:40:56 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 10:40:56 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=krak%C3%B3w
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 10:44:32 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 10:44:32 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=krak%C3%B3w
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 10:54:44 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 2]
+2014-12-10 10:54:44 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /universities/search/1?keywords=krak%C3%B3w
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 2, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 2, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 11:16:23 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 143]
+2014-12-10 11:16:23 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 143)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 143, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 143, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 11:25:25 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 11:25:25 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 11:28:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(175): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:29:35 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 11:29:35 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 11:37:12 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 171]
+2014-12-10 11:37:12 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 171)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 171, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 171, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 11:39:19 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 158]
+2014-12-10 11:39:19 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 158)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 158, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 158, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 11:40:14 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'zs_new.join_table' doesn't exist
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(188): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:43:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(182): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:43:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(182): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:45:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(188): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:45:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(189): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:46:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(189): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:46:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(189): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:46:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(189): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:48:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(188): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:50:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(188): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:51:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(188): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:52:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Course.nazwa' in 'where clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(188): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:53:04 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(188): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:53:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Course.nazwa' in 'where clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(188): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 11:58:12 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 11:58:12 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 11:59:18 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 11:59:18 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 12:00:25 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 181]
+2014-12-10 12:00:25 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 181)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 181, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 181, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 12:00:44 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'zs_new.join_table' doesn't exist
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(202): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 12:17:02 Error: Fatal Error (1): Call to a member function bindModel() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 154]
+2014-12-10 12:17:02 Error: [FatalErrorException] Call to a member function bindModel() on a non-object
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 154)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 154, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 154, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 12:17:18 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'zs_new.join_table' doesn't exist
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(213): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 12:17:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(213): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 12:25:55 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 12:25:55 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 12:32:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(205): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 12:34:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(205): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 12:35:05 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 12:35:05 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 12:37:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourseonUniversity.course_id' in 'on clause'
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(206): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 12:46:11 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'zs_new.join_table' doesn't exist
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(207): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 12:52:40 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 12:52:40 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 12:55:14 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 12:55:14 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=krak%C3%B3w+g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 12:56:19 Error: Fatal Error (4): syntax error, unexpected ''contain'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 196]
+2014-12-10 12:56:19 Error: [FatalErrorException] syntax error, unexpected ''contain'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 196)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 196, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 196, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 12:59:52 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 12:59:52 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 13:03:04 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UniversitiesParameter.miasto' in 'where clause'
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(1074): PaginatorComponent->paginate('University', Array, Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(209): Controller->paginate('University')
+#8 [internal function]: UniversitiesController->search('1')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-10 13:05:10 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 13:05:10 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 13:07:43 Error: Fatal Error (4): syntax error, unexpected ''joins'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 194]
+2014-12-10 13:07:43 Error: [FatalErrorException] syntax error, unexpected ''joins'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 194)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 194, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 194, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 13:17:59 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 13:17:59 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 13:22:30 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 13:22:30 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 13:23:53 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 13:23:53 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 13:25:19 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 13:25:19 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 13:25:23 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 13:25:23 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 13:54:17 Error: [MissingPluginException] Plugin Search could not be found.
+Exception Attributes: array (
+  'plugin' => 'Search',
+)
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(367): CakePlugin::path('Search')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(228): App::pluginPath('Search')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(100): class_exists('PrgComponent')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Search.Prg', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-10 13:57:00 Error: [MissingPluginException] Plugin Search could not be found.
+Exception Attributes: array (
+  'plugin' => 'Search',
+)
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(367): CakePlugin::path('Search')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(228): App::pluginPath('Search')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(100): class_exists('PrgComponent')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Search.Prg', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-10 13:57:26 Error: [MissingPluginException] Plugin Search could not be found.
+Exception Attributes: array (
+  'plugin' => 'Search',
+)
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(367): CakePlugin::path('Search')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(228): App::pluginPath('Search')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(100): class_exists('PrgComponent')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Search.Prg', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-10 13:59:28 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 13:59:28 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 14:02:59 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-10 14:02:59 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 14:03:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'University.keywords' in 'where clause'
+Request URL: /universities/search/1?keywords=prawo
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(University), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(197): PaginatorComponent->paginate()
+#7 [internal function]: UniversitiesController->search('1')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-10 14:15:43 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 189]
+2014-12-10 14:15:44 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /universities/search/1?keywords=g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 189)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 189, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 189, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 14:16:20 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 189]
+2014-12-10 14:16:20 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /universities/search/1?keywords=g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 189)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 189, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 189, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-10 14:16:30 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 189]
+2014-12-10 14:16:30 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /universities/search/1?keywords=g%C3%B3rnicza
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 189)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 189, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 189, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

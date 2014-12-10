@@ -1,8 +1,16 @@
 <?php
 class University extends AppModel {
 	public $actsAs = array(
-		'Containable',
+		'Containable', 'Search.Searchable'
 	);
+
+	public $filterArgs = array(
+        'keywords' => array(
+            'type' => 'query',
+            'method' => 'orConditions'
+        ),
+    );
+
 	public $belongsTo = array('UniversityType', 'District');
 	public $hasOne = array('UniversitiesParameter');
 	public $hasMany = array('UniversitiesPhoto' => array('className' => 'UniversitiesPhoto',
@@ -10,6 +18,17 @@ class University extends AppModel {
             				'CourseonUniversity'  => array('className' => 'CourseonUniversity',
             											'foreignKey' => 'university_id'));
 	//public $displayField = 'nazwa';
+
+	public function orConditions($data = array()) {
+        $filter = $data['filter'];
+        $condition = array(
+            'OR' => array(
+                $this->alias . '.nazwa LIKE' => '%' . $filter . '%',
+                $this->alias . '.nazwa LIKE' => '%' . $filter . '%',
+            )
+        );
+        return $condition;
+    }
 
 	function szukajUczelniQuery($p) {
 		global $db;

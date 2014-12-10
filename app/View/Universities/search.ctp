@@ -1,4 +1,5 @@
 <div id="searchpage" class="row <?php if ($tid == '2'):?>znajdz-szkole-policealna<?php elseif ($tid == '3'):?>znajdz-szkole-jezykowa<?php endif;?>">
+	<?php echo $this->element('sql_dump');?>
 	<div class="col-md-8 l">
 		<?php echo $this->Form->create('University',array('action'=>'search/'.$tid,'class'=>'form-inline input-append', 'role'=>'form', 'type' => 'GET'));?>
 			<input type="text" name="keywords" placeholder="Type something…" class="input-medium">

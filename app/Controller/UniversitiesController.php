@@ -1,18 +1,14 @@
 <?php
-App::uses('AppController', 'Controller');
+App::uses('AppController', 'Controller', 'UniversitiesController', 'CourseonUniversity');
 
 class UniversitiesController extends AppController {
 	public $helpers = array('Cache');
-	public $components = array('Paginator');
+	public $components = array('Paginator',  'Search.Prg');
 	public $cacheAction = array(
 	    'view' => 36000,
 	    'index'  => 48000
 	);
 	//public $components = array('DataTable');
-
-	public $paginate = array(
-        'limit' => 5,
-    );
 
 	public function index() {
 	
@@ -144,28 +140,54 @@ class UniversitiesController extends AppController {
 		$this->set('tid',$tid);
 
 		if(isset($this->request->query['keywords'])) {
-            $keywords = mb_strtolower($this->request->query['keywords'], 'UTF-8');
+            /*$keywords = mysql_escape_string(mb_strtolower($this->request->query['keywords'], 'UTF-8'));
             $keywords = explode(' ', $keywords);
-			Debugger::dump($keywords);
+			//Debugger::dump($keywords);
+			$conditions['and'][] = array('University.university_type_id' => $tid);
 			foreach ($keywords as $keyword) {
-						$conditions['and'][] = array('University.university_type_id LIKE' => "%$keyword%");
-					    $conditions['or'][] = array('Course.nazwa LIKE' => "%$keyword%");
+				
+					    //$conditions['or'][] = array('Course.nazwa LIKE' => "%$keyword%");
 					    $conditions['or'][] = array('University.nazwa LIKE' => "%$keyword%");
 					    $conditions['or'][] = array('UniversitiesParameter.miasto LIKE' => "%$keyword%");
+					    $conditions['or'][] = array('UniversitiesParameter.zakladka1 LIKE' => "%$keyword%");
 					}
-			$this->Paginator->settings = array(
-		        'conditions' => array(
-		        	'University.university_type_id' => $tid,
-		        	
-		        	'Course.nazwa LIKE' => "%$keywords%",
-		        	"OR" => array(
-				        'LOWER(University.nazwa) LIKE' => "%$keywords%",
-				        'LOWER(UniversitiesParameter.miasto) LIKE' => "%$keywords%",
-				    )),
-				'order' => array('University.abonament'=> 'desc', 'UniversityParameter.nazwa' => 'asc' ),
-				'limit' => 5,
-				'contain' => array('UniversitiesParameter', 'UniversitiesPhoto')
-		    );
+
+		
+			$joins = array(
+				array(
+						'type' => 'INNER',
+		                'table' => 'courseon_universities',
+		                'alias' => 'CourseonUniversity',
+		                'conditions'=> array('University.id = CourseonUniversity.university_id')
+		            ), array(
+		            	'type' => 'INNER',
+		                'table' => 'courses',
+		                'alias' => 'Course',
+		                'conditions'=> array('CourseonUniversity.course_id = course.id', 
+		                					//$conditionsjoin
+		                )
+		            )
+			);
+				//$this->University->contain('CourseonUniversity');
+				$this->paginate = array(
+					'University' => array(
+						'order' => array('University.abonament'=> 'desc', 'UniversityParameter.nazwa' => 'asc' ),				 
+						'limit' => 5,
+						'recursive' => 0,
+						'conditions' =>        	
+		        			$conditions,
+						//'joins' => $joins,
+						'group' => 'University.id',
+						'contain' => array('UniversitiesParameter', 'UniversitiesPhoto')
+						
+					)
+				);
+*/
+			$this->Prg->commonProcess();
+        	$this->Paginator->settings['conditions'] = $this->University->parseCriteria($this->Prg->parsedParams());
+        	$this->Paginator->settings['limit'] = 5;
+        	$this->Paginator->settings['order'] = array('University.abonament'=> 'desc', 'UniversityParameter.nazwa' => 'asc' );
+
         } else { 
 			$this->Paginator->settings = array(
 		        'conditions' => array('University.university_type_id' => $tid),
@@ -174,7 +196,7 @@ class UniversitiesController extends AppController {
 				'contain' => array('UniversitiesParameter.miasto', 'UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
 		    );
 		}
-        $data = $this->paginate('University');
+        $data =  $this->Paginator->paginate();
 		//Debugger::dump($data);
         
 

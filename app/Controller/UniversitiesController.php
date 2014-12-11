@@ -140,120 +140,67 @@ class UniversitiesController extends AppController {
 		$this->set('tid',$tid);
 
 		if(isset($this->request->query['keywords'])) {
-            /*$keywords = mysql_escape_string(mb_strtolower($this->request->query['keywords'], 'UTF-8'));
+            $keywords = mysql_escape_string(mb_strtolower($this->request->query['keywords'], 'UTF-8'));
             $keywords = explode(' ', $keywords);
-			//Debugger::dump($keywords);
-			$conditions['and'][] = array('University.university_type_id' => $tid);
-			foreach ($keywords as $keyword) {
-				
-					    //$conditions['or'][] = array('Course.nazwa LIKE' => "%$keyword%");
-					    $conditions['or'][] = array('University.nazwa LIKE' => "%$keyword%");
-					    $conditions['or'][] = array('UniversitiesParameter.miasto LIKE' => "%$keyword%");
-					    $conditions['or'][] = array('UniversitiesParameter.zakladka1 LIKE' => "%$keyword%");
-					}
-
-		
-			$joins = array(
-				array(
-						'type' => 'INNER',
-		                'table' => 'courseon_universities',
-		                'alias' => 'CourseonUniversity',
-		                'conditions'=> array('University.id = CourseonUniversity.university_id')
-		            ), array(
-		            	'type' => 'INNER',
-		                'table' => 'courses',
-		                'alias' => 'Course',
-		                'conditions'=> array('CourseonUniversity.course_id = course.id', 
-		                					//$conditionsjoin
-		                )
-		            )
-			);
+			if (isset($keywords[1])) {
+						$conditions = array(
+						    'OR' => array(
+						        array('University.all_courses LIKE' => "%$keywords[0]%"),
+						        array('University.nazwa LIKE' => "%$keywords[0]%"),
+						        array('University.miasto LIKE' => "%$keywords[0]%"),
+						         array('UniversitiesParameter.tagi LIKE' => "%$keywords[0]%"),
+						    ),
+						    'AND' => array(
+						    	array('University.university_type_id' => $tid),
+						    		'OR' => array(
+						                 array('University.all_courses LIKE' => "%$keywords[1]%"),
+									    array('University.nazwa LIKE' => "%$keywords[1]%"),
+									    array('University.miasto LIKE' => "%$keywords[1]%"),
+									     array('UniversitiesParameter.tagi LIKE' => "%$keywords[1]%"),
+								)
+						    ),
+						    
+						);
+			} else {
+				$conditions = array(
+						    'OR' => array(
+						        array('University.all_courses LIKE' => "%$keywords[0]%"),
+						        array('University.nazwa LIKE' => "%$keywords[0]%"),
+						        array('University.miasto LIKE' => "%$keywords[0]%"),
+						         array('UniversitiesParameter.tagi LIKE' => "%$keywords[0]%"),
+						    ),
+						    'AND' => array(
+						    	array('University.university_type_id' => $tid),
+						    		
+						    ),
+						    
+						);
+			}		
+			
 				//$this->University->contain('CourseonUniversity');
 				$this->paginate = array(
 					'University' => array(
-						'order' => array('University.abonament'=> 'desc', 'UniversityParameter.nazwa' => 'asc' ),				 
+						'order' => array('University.abonament'=> 'desc', 'University.nazwa' => 'asc' ),				 
 						'limit' => 5,
 						'recursive' => 0,
-						'conditions' =>        	
-		        			$conditions,
-						//'joins' => $joins,
+						'conditions' => 
+		        			$conditions
+,						//'joins' => $joins,
 						'group' => 'University.id',
-						'contain' => array('UniversitiesParameter', 'UniversitiesPhoto')
+						'contain' => array('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
 						
 					)
 				);
-*/
-			$this->Prg->commonProcess();
-        	$this->Paginator->settings['conditions'] = $this->University->parseCriteria($this->Prg->parsedParams());
-        	$this->Paginator->settings['limit'] = 5;
-        	$this->Paginator->settings['order'] = array('University.abonament'=> 'desc', 'UniversityParameter.nazwa' => 'asc' );
 
         } else { 
 			$this->Paginator->settings = array(
 		        'conditions' => array('University.university_type_id' => $tid),
 				'order' => array('University.abonament'=> 'desc', 'UniversityParameter.nazwa' => 'asc' ),
 				'limit' => 5,
-				'contain' => array('UniversitiesParameter.miasto', 'UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
+				'contain' => array('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
 		    );
 		}
         $data =  $this->Paginator->paginate();
-		//Debugger::dump($data);
-        
-
-
-		//$this->request->query['page'];
-
-
-/*		$_req = isset($_GET) ? $_GET : array();
-		if (isset($_req['slowo']) && $_req['slowo'] === 'SŁOWO KLUCZOWE') $_req['slowo'] = '';
-		if (isset($_req['miasto']) && $_req['miasto'] === 'MIASTO') $_req['miasto'] = '';
-		if (isset($_req['kierunek']) && $_req['kierunek'] === 'KIERUNEK') $_req['kierunek'] = '';
-		if (isset($_req['jezyk']) && $_req['jezyk'] === 'JĘZYK') $_req['jezyk'] = '';
-
-		$form_structure = array(
-			array('slowo','.*',''),
-			array('kierunek','(^[0-9]+$)|(^$)',''),
-			array('kierunek_id','(^[0-9]+$)|(^$)',''),
-			array('id_wojewodztwo','(^[0-9]+$)|(^$)',''),
-			array('miasto','(^[0-9]+$)|(^$)',''),
-			array('id_typ','(^[0-9]+$)|(^$)',''),
-			array('id_tryb','(^[0-9]+$)|(^$)',''),
-			array('jezyk','(^[0-9]+$)|(^$)',''),
-			array('jezyk_id','(^[0-9]+$)|(^$)',''),
-			array('rodzaj','.+',''),
-		);
-		
-		$sf = $this->get_form_data($form_structure,$_req);
-		if (!empty($sf) && $tid !== 4) $sf['rodzaj'] = $tid;
-		if (!empty($sf['kierunek_id'])) { //$sf['kierunek'] = '';
-		} else {$sf['kierunek_id']='';}
-
-		//if (isset($_req['slowo'])) {
-			$pp = $this->University->szukajUczelniQuery($sf);
-			//Debugger::dump($pp);
-			
-			$this->Paginator->settings = array(
-		        'conditions' => $pp,		        
-		        'order' => array('University.abonament' => 'desc', 'University.nazwa' => 'asc'),
-		        'limit' => 5,
-		        'joins' => array(
-		            array(
-		                'table' => 'courseon_universities',
-		                'alias' => 'CourseonUniversity',
-		                'conditions'=> array('University.id = CourseonUniversity.university_id')
-		            ),array(
-		                'table' => 'courses',
-		                'alias' => 'Course',
-		                'conditions'=> array('CourseonUniversity.course_id = course.id')
-		            )
-		        ),
-    			'group' => 'University.id'
-		        //'contain' => array('UniversitiesParameter', 'UniversitiesPhoto', 'CourseonUniversity')
-		    );
-		    $data = $this->Paginator->paginate('University');
-
-		   //Debugger::dump($data);*/
-
 
 			if (count($data)>0) {
 				if (!empty($_req['slowo'])) countSearchKeywords($_req['slowo']);
@@ -304,6 +251,7 @@ class UniversitiesController extends AppController {
 
 		$this->set('description_for_layout', 'Znajdź szkołę, uczelnie, uniwersytet i kierunek studiów który Cię interesuje');
 		$this->set('keywords_for_layout', 'szkoła, wyższa, policealna, językowa, uczelnia, kierunek, studia');
+
 	}	
 
 	function ajax() {
@@ -440,77 +388,8 @@ class UniversitiesController extends AppController {
 	return $this->ff;
 	}
 
-	public function srednia() {
-		/*wartosci wspólczynników dla m-miasta r-ranking perspektyw*/
-		$wm=3;
-		$wr=6;
-		
-		$sum = $wm+$wr;
-		$this->University->contain('City');
-		$universities = $this->University->find('all');	
-		foreach ($universities as $university) {
-			if ($university['University']['ranking'] != 0) {
-				$srednias= (($university['City']['srednia'])/100*$wm)+((1/$university['University']['ranking'])*$wr);
-			} else $srednias= (($university['City']['srednia'])/100*$wm);
-			
-			$srednia = $srednias/ $sum;
-			
-			if ($university['University']['pakiet'] = 1) {
-				$srednia = $srednia + 100 - $university['University']['waga_pakietu'];
-				//$session->setFlash("message");
-			}
-			$this->University->updateAll( 
-										array( 'University.srednia' => $srednia), 
-										array( 'University.id' => $university['University']['id']));
-			
-		}
-		$this->redirect(array('action' => 'index'));
-	}
-	public function order() {
-		$x = $this->University->find('all',array ('fields' => array('University.nazwa', 'University.srednia'),'order' => array('University.srednia' => 'desc')));
-		$i=0;
-		foreach ($x as $University) {
-			echo $i=$i + 1;
-			echo $University['University']['nazwa'];
-			echo $University['University']['srednia'].'<br>';
-
-			
-
-			$this->University->updateAll( 
-						array( 'University.sortx' => $i), 
-						array( 'University.id' => $University['University']['id']));
-		}
-	}
-	public function srednia2() {
-				
-				
-		$universities = $this->University->find('all');	
-		//$session->setFlash("ddd");
-		
-		foreach ($universities as $university) {
-		echo $university['University']['pakiet'];
-		echo $university['University']['PAKIET'];
-		echo $university['University']['Pakiet'];
-		echo $university['University']['srednia']."<br>";
-		/*	
-				
-			if ($university['University']['pakiet'] = 1 or $university['University']['pakiet'] =  "1") {
-				$srednia = $university['University']['srednia'] - 2100 - $university['University']['waga_pakietu'];
-			
-			$this->University->updateAll( 
-										array( 'University.srednia' => $srednia), 
-										array( 'University.id' => $university['University']['id']));
-			}
-		}
-		$this->redirect(array('action' => 'index'));
-		*/}
-	}
-	public function q() {
-		$w = 9;
-		//$session->setFlash("message");
-		//print $session->flash("flash", );
-		//echo "ddd";
-	}
+	
+	
 	public function delateSzkoly() {
 		$this->University->deleteAll(array('University.university_type_id' => 20), true);
 		$this->redirect(array('action' => 'index'));
@@ -560,464 +439,40 @@ class UniversitiesController extends AppController {
 		}
 	}
 
-	public function promoxxx(){
-		//$unv = $this->University->find('count');
-		//$unv = $this->University->find('first', array('fields' => array('University.nazwa', 'University.srednia')));
-		//$unv = $this->University->find('list', array('fields' => array('University.srednia','University.promonr', 'University.id' ),'order' => array('University.srednia' => 'desc','University.srednia' => 'asc')));
-		
-		//copy to ABONAMENT srednia
-		$unv1 = $this->University->find('list', 
-			array(
-				'fields' => array('University.id','University.srednia','University.ABONAMENT'),
-				'order' => array('University.srednia' => 'desc'), 
-			)
-		);
-
-		foreach($unv1 as $abo => $unv2){
-			foreach($unv2 as $id => $sr){
-
-				$this->University->id = $id; 
-				$this->University->saveField('ABONAMENT_srednia', $sr);
-			}
-		}
-
-		//updating ABONAMENT srednia
-		$unv1 = $this->University->find('list', 
-			array(
-				'fields' => array('University.id','University.srednia','University.ABONAMENT'),
-				'order' => array('University.ABONAMENT' => 'desc'), 
-				'conditions' => array('NOT' => array('University.ABONAMENT' => array(0, 4, 5)))
-			)
-		);
-
-		foreach($unv1 as $abo => $unv2){
-			foreach($unv2 as $id => $sr){
-
-				$ABONAMENT_srednia = $abo * $sr/10;
-				$this->University->id = $id; 
-				$this->University->saveField('ABONAMENT_srednia', $ABONAMENT_srednia);
-			}
-		}
-		
-		$this->set('unv1',$unv1);
-
-		//make ABONAMENT rank
-		$unv3 = $this->University->find('list', 
-			array(
-				'fields' => array('University.id','University.ABONAMENT_srednia'),
-				'order' => array('University.ABONAMENT_srednia' => 'desc'), 
-			)
-		);
-		$this->set('unv3',$unv3);
-
-		$i=0;
-		foreach($unv3 as $id => $ABONAMENT_srednia){
-				$i++;
-				$this->University->id = $id; 
-				$this->University->saveField('ABONAMENT_rank', $i);
-		}
-	}
-	public function sredniauniversities() {
-		$this->Rank = ClassRegistry::init('Rank');
-			$wagi = $this->Rank->find('all', array('fields'=>array('Rank.weight_value')));
-				$this->Rank->id = 12;
-				$this->Rank->saveField('weight_value', 0);
-				$start =  date("d-m-Y h:i:s");
-				$this->Rank->saveField('start', $start);
-				$this->Rank->saveField('end', 'not ready');
-
-				$wag_miasto = $wagi[8]['Rank']['weight_value'];
-				$wag_kier = $wagi[9]['Rank']['weight_value'];
-				$wag_il_kier = 5;	
-
-		echo '<br><br><br><br><br><br><br><br>';
-
-		$this->Course = ClassRegistry::init('Course');
-		$this->CourseonUniversity = ClassRegistry::init('CourseonUniversity');
-		$this->City = ClassRegistry::init('City');
-
-		$LIST_IDs = $this->University->find('list', array( 'order' => array('id' => 'ASC'), 'fields'=>array('University.id', )));
-		
-		$MAX_il_kierunkow = 0;
-		foreach ($LIST_IDs as $ID) {
-			$university_id = $ID;
-			//echo " | ";
-			$LISTA_KIERUNKI = $this->CourseonUniversity->find('list', array('conditions' => array('CourseonUniversity.university_id' => $university_id ), 'fields' => array('CourseonUniversity.course_id')));
-			$i = 0; 
-			$suma = 0;
-			foreach ($LISTA_KIERUNKI as $key => $kierunek) {
-				$i = $i + 1;
-				//echo $i." | ";
-			}
-			if ($MAX_il_kierunkow < $i ){
-				$MAX_il_kierunkow = $i;
-			}
-			//echo "<br>";
-			//echo "<br>";
-		}
-		echo 'MAX_il_kierunkow:  '.$MAX_il_kierunkow;
-		echo "<br>";
-		echo "<br>";
-
-		$LIST_IDs = $this->University->find('list', array( 'order' => array('id' => 'ASC'), 'fields'=>array('University.id', )));
-		foreach ($LIST_IDs as $ID) {
-		$university_id = $ID;
-			echo '{{{ '.$university_id. ' [ '; 
-
-
-			$LISTA_KIERUNKI = $this->CourseonUniversity->find('list', array('conditions' => array('CourseonUniversity.university_id' => $university_id ), 'fields' => array('CourseonUniversity.course_id')));
-			//pr($LISTA_KIERUNKI);
-			$i = 0;
-			$suma = 0;
-			foreach ($LISTA_KIERUNKI as $key => $kierunek) {
-				
-				echo ' $';
-				$i = $i + 1;
-				echo $i." | ";
-				$sr_placa = $this->Course->find('list', array('conditions' => array('Course.id' => $kierunek), 'fields' => array('Course.srednia')));
-				//pr($sr_placa);
-				foreach ($sr_placa as $key => $sr_new) {
-					if (isset($sr_placa)){
-						echo $sr_placa = $sr_new;
-						$suma = $suma + $sr_placa;
-					}else{
-						//pr($placa);
-						//echo $sr_placa = $sr_placa[0]['Course']['srednia'];
-						echo 'nie ma tego kierunku';
-					}
-				}
-			}
-			echo '] ';
-			if ($i==0){
-				echo '!!!!!!!!!!!!!'.$suma;
-				echo $sr_kier = 0;
-				echo " | ";
-				echo $sr_il_kier = 0;
-			}else{
-				echo $sr_kier = $suma/$i;
-				echo " | ";
-				echo $sr_il_kier = (($i/( $MAX_il_kierunkow - 1 )) * 10);
-
-			}
-			echo'}{';
-
-			$CITY_OF_UNI = $this->University->find('first', array('conditions' => array('University.id' => $university_id ), 'fields'=>array('University.city_id', )));
-			//pr($CITY_OF_UNI);
-			echo  $city_id = $CITY_OF_UNI['University']['city_id'].' | ';
-
-			$LIST_MIASTA = $this->City->find('list', array('conditions' => array('City.id' => $city_id ), 'fields' => array('City.srednia', 'City.nazwa')));
-			//pr($LIST_MIASTA);
-			foreach ($LIST_MIASTA as $sr_miasto => $miasto) {
-				echo $miasto;
-				echo $sr_miasto;
-			}
-			
-			echo'}{';
-
-			if (($wag_kier + $wag_miasto) == 0 ){
-				echo $sr_uni = 0;
-			}else{
-				echo $sr_uni = ($sr_kier * $wag_kier + $sr_il_kier * $wag_il_kier + $sr_miasto * $wag_miasto) / ($wag_kier + $wag_miasto);
-			}
-			
-
-			$this->University->id = $ID;
-			$this->University->saveField('srednia', $sr_uni);
-			$this->Rank->saveField('weight_value', 1);
-			$end =  date("d-m-Y h:i:s");  
-			$this->Rank->saveField('end', $end);
-			$duration = (strtotime($end) - strtotime($start));
-			$this->Rank->saveField('duration', $duration);
-
-			//abo
-		}
-		$this->Rank->id = 12;
-		$this->Rank->saveField('weight_value', 1);
-	}
-	public function abonament() {
-		$this->Rank = ClassRegistry::init('Rank');
-			$wagi = $this->Rank->find('all', array('fields'=>array('Rank.weight_value')));
-				$this->Rank->id = 13;
-				$this->Rank->saveField('weight_value', 0);
-				$start =  date("d-m-Y h:i:s");
-				$this->Rank->saveField('start', $start);
-
-		$LIST_IDs = $this->University->find('list', array ('order' => array('id' => 'ASC'), 'fields'=>array('University.id', )));
-		foreach ($LIST_IDs as $ID) {
-			$university_id = $ID;
-
-			$SREDNIA = $this->University->find('first', array('conditions' => array('University.id' => $university_id ), 'fields'=>array('University.srednia', )));
-			echo $sr_uni = $SREDNIA['University']['srednia'];
-
-			$ABONAMENT = $this->University->find('first', array('conditions' => array('University.id' => $university_id ), 'fields'=>array('University.ABONAMENT', )));
-			echo $abo = $ABONAMENT['University']['ABONAMENT'];
-			switch ($abo) {
-			   case "standard":
-				 $sr_uni = ($sr_uni + 100);
-				 break;
-			   case "premium":
-				 $sr_uni = ($sr_uni + 200);
-				 break;
-			   case "gold":
-				 $sr_uni = ($sr_uni + 300);
-				 break;
-			   default:
-				 $sr_uni = $sr_uni;
-			}
-			$this->University->id = $ID;
-			$this->University->saveField('ABONAMENT_srednia', $sr_uni );
-
-		}
-		$this->Rank->id = 13;
-		$this->Rank->saveField('weight_value', 1);
-		$end =  date("d-m-Y h:i:s");  
-		$this->Rank->saveField('end', $end);
-		$duration = (strtotime($end) - strtotime($start));
-		$this->Rank->saveField('duration', $duration);
-
-	}
-	public function rank() {
-		///$this->Rank = ClassRegistry::init('Rank');
-		//	$wagi = $this->Rank->find('all', array('fields'=>array('Rank.weight_value')));
-		//		$this->Rank->id = 14;
-		//        $this->Rank->saveField('weight_value', 0);
-
-		$Model = 'University';
-
-		echo '<br><br><br><br><br><br><br><br>';
-		echo 'id | srednia | rank<br>';
-		$PartArray = $this->$Model->find('list', array ('fields' => array($Model.'.id',$Model.'.srednia'),'order' => array($Model.'.srednia' => 'desc')));
-		pr($PartArray);
-		//$this->Rank->id = 14;
-		//$this->Rank->saveField('weight_value', 1);    
-	}
-	public function rank_with_abo() {
-		$Model = 'University';
-		$PartArray = $this->$Model->find('list', array(
-			'fields' => array($Model.'.id',$Model.'.ABONAMENT_srednia'),
-			'order' => array($Model.'.ABONAMENT_srednia' => 'desc')));
-		$i = 0;
-		foreach ($PartArray as $id => $ABONAMENT_srednia) {
-			$i = $i + 1;
-			echo $id.' | '.$ABONAMENT_srednia.'<br>';
-
-			$this->$Model->id = $id;
-			$this->$Model->saveField('rank', $i);
-
-		}
-
-	}
-		public function rank_rank() {
-		$this->Rank = ClassRegistry::init('Rank');
-			$wagi = $this->Rank->find('all', array('fields'=>array('Rank.weight_value')));
-				$this->Rank->id = 14;
-				$this->Rank->saveField('weight_value', 0);
-				$start = date("d-m-Y h:i:s");
-				$this->Rank->saveField('start', $start);
-
-		$Model = 'University';
-
-		echo '<br><br><br><br><br><br><br><br>';
-		echo 'nr | id | srednia | rank<br>';
-		$PartArray1 = $this->$Model->find('list', array ('fields' => array($Model.'.id',$Model.'.srednia'),'order' => array($Model.'.srednia' => 'desc')));
-		foreach ($PartArray1 as $id1 => $srednia1) {
-
-			$this->$Model->id = $id1;
-			$this->$Model->saveField('rank', $id1/1100);
-		}
-		$PartArray = $this->$Model->find('list', array ('fields' => array($Model.'.id',$Model.'.srednia'),'order' => array($Model.'.srednia' => 'desc')));
-		$i=0;
-		foreach ($PartArray as $id => $srednia) {
-		
-			echo $i = ($i + 1).' | ';
-			echo $id.' | ';
-			echo $srednia.' | ';
-			echo $i . '<br>';
-			$this->$Model->id = $id;
-			$this->$Model->saveField('rank', $i);
-		} 
-				$this->Rank->id = 14;
-				$this->Rank->saveField('weight_value', 1);
-				$end =  date("d-m-Y h:i:s");  
-				$this->Rank->saveField('end', $end);
-				$duration = (strtotime($end) - strtotime($start));
-				$this->Rank->saveField('duration', $duration);
-	}
-
-	public function rank_abo() {
-		$this->Rank = ClassRegistry::init('Rank');
-			$wagi = $this->Rank->find('all', array('fields'=>array('Rank.weight_value')));
-				$this->Rank->id = 14;
-				$this->Rank->saveField('weight_value', 0);
-				$start = date("d-m-Y h:i:s");
-				$this->Rank->saveField('start', $start);
-
-		$Model = 'University';
-
-		echo '<br><br><br><br><br><br><br><br>';
-		echo 'nr | id | ABONAMENT_srednia | rank<br>';
-		$PartArray1 = $this->$Model->find('list', array ('fields' => array($Model.'.id',$Model.'.ABONAMENT_srednia'),'order' => array($Model.'.ABONAMENT_srednia' => 'desc')));
-		foreach ($PartArray1 as $id1 => $ABONAMENT_srednia1) {
-
-			$this->$Model->id = $id1;
-			$this->$Model->saveField('rank', $id1/1100);
-		}
-		$PartArray = $this->$Model->find('list', array ('fields' => array($Model.'.id',$Model.'.ABONAMENT_srednia'),'order' => array($Model.'.ABONAMENT_srednia' => 'desc')));
-		$i=0;
-		foreach ($PartArray as $id => $ABONAMENT_srednia) {
-		
-			echo $i = ($i + 1).' | ';
-			echo $id.' | ';
-			echo $ABONAMENT_srednia.' | ';
-			echo $i . '<br>';
-			$this->$Model->id = $id;
-			$this->$Model->saveField('rank', $i);
-		} 
-				$this->Rank->id = 14;
-				$this->Rank->saveField('weight_value', 1);
-				$end =  date("d-m-Y h:i:s");  
-				$this->Rank->saveField('end', $end);
-				$duration = (strtotime($end) - strtotime($start));
-				$this->Rank->saveField('duration', $duration);
-	}
-	public function time() {
-		echo '<br><br><br><br><br><br><br><br>';
-		echo date("d-m-Y h:i:s");echo '<br>';
-		$this->Rank = ClassRegistry::init('Rank');
-			$wagi = $this->Rank->find('all', array('fields'=>array('Rank.weight_value')));
-				$this->Rank->id = 19;
-				$this->Rank->saveField('weight_value', 202);
-				$this->Rank->id = 19;
-				$this->Rank->saveField('start', date("d-m-Y h:i:s"));
-
-		$this->requestAction('cities/time');
-		echo date("d-m-Y h:i:s");echo '<br>';
-		$this->requestAction('cities/time2');
-		echo date("d-m-Y h:i:s");echo '<br>';
-
-		/*
-		echo $ready1 = $wagi[15]['Rank']['weight_value'];
-		echo '<br>';
-		echo $ready2 = $wagi[16]['Rank']['weight_value'];
-		
-
-		do {
-
-		   echo $ready1 = $wagi[15]['Rank']['weight_value'];
-		   echo ' | ';
-		   echo date("d-m-Y h:i:s");
-		   echo '<br>';
-		   sleep(1);
-		} while ($ready1 = 1);
 	
-		*/
-
-				$this->Rank->id = 19;
-				$this->Rank->saveField('weight_value', 1);
-				$this->Rank->id = 19;
-				$this->Rank->saveField('end', date("d-m-Y h:i:s"));
-				
-
-	}
-	public function auctualisation(){
-		$this->Rank = ClassRegistry::init('Rank');
-			$wagi = $this->Rank->find('all', array('fields'=>array('Rank.weight_value')));
-				$this->Rank->id = 20;
-				$this->Rank->saveField('weight_value', 0);
-				$start = date("d-m-Y h:i:s");
-				$this->Rank->saveField('start', $start);
-
-				for ($i=11; $i <= 15; $i++) { 
-					$nr = 'not ready';
-					$this->Rank->id = $i;
-					$this->Rank->saveField('weight_value', $nr);
-					$this->Rank->saveField('start', $nr);
-					$this->Rank->saveField('end', $nr);
-					$this->Rank->saveField('duration', $nr);
-				}
-					$this->Rank->id = 20;
-					$this->Rank->saveField('end', $nr);
-					$this->Rank->saveField('duration', $nr);
-
-				
-				$this->Rank->id = 12;
-				$this->Rank->id = 13;
-				$this->Rank->id = 14;
-				$this->Rank->id = 15;
-
-
-			$this->requestAction('cities/sredniacities');
-			$this->requestAction('universities/sredniauniversities');
-			$this->requestAction('universities/abonament');
-			//$this->requestAction('universities/rank');
-			$this->requestAction('universities/rank_abo');
-			$this->requestAction('cities/rank');
-		
-				$this->Rank->id = 20;
-				$this->Rank->saveField('weight_value', 1);
-				$end =  date("d-m-Y h:i:s");  
-				$this->Rank->saveField('end', $end);
-				$duration = (strtotime($end) - strtotime($start));
-				$this->Rank->saveField('duration', $duration);
-	}
+	
 	public function update_all_courses_name(){
-				echo '<br><br><br><br><br><br><br><br>';
-		$this->Course = ClassRegistry::init('Course');
-		$this->CourseonUniversity = ClassRegistry::init('CourseonUniversity');
-		$this->City = ClassRegistry::init('City');
-
-		$LIST_IDs = $this->University->find('list', array( 'order' => array('id' => 'ASC'), 'fields'=>array('University.id', )));
-		
-		$MAX_il_kierunkow = 0;
-		foreach ($LIST_IDs as $ID) {
-			echo $university_id = $ID;
-			echo " | ";
-			$LISTA_KIERUNKI = $this->CourseonUniversity->find('list', array('conditions' => array('CourseonUniversity.university_id' => $university_id ), 'fields' => array('CourseonUniversity.course_id')));
-			$i = 0; 
-			$suma = 0;
-			$kier = array();
-			$lista_kier = "";
-			foreach ($LISTA_KIERUNKI as $key => $kierunek) {
-				$i = $i + 1;
-				//echo $kierunek." | ";
-				if (in_array($kierunek, $kier)){
-				}else{
-					array_push($kier, $kierunek);
-					
-
-					$nazwy_kier = $this->Course->find('list', array(
-						'conditions' => array('Course.id' => $kierunek ), 
-						'fields' => array('Course.nazwa')));
-					echo pr($nazwy_kier);
-					echo " |k ";
-					echo  $kierunek;
-					echo " | ";
-					echo $nazwy_kier[$kierunek];
-					echo " | ";
-					echo $lista_kier = $lista_kier.$nazwy_kier[$kierunek].', ';
-					//echo '<br>'.$nazwy_kier[$kierunek].', ';
-				}
-				
-			
-			}
-			echo 'v'.$lista_kier;
-			$this->University->id = $university_id;
-			$this->University->saveField('all_courses_names', $lista_kier);
-			//pr($kier);
-				echo "<br>";
-				echo "<br>";
+		$this->University->contain();
+		$universities = $this->University->find('all', array('fields' => array('University.id'), 'order' => array('University.abonament' => 'DESC')));	
+		foreach ($universities as $university) {
+			$this->University->CourseonUniversity->contain('Course.nazwa');
+			$courses = $this->University->CourseonUniversity->find('list', 
+																					array(
+																						'conditions'=>array(
+																							'CourseonUniversity.university_id'=>$university['University']['id']), 
+																						'fields' => array('Course.nazwa'),
+																						'group' => 'Course.nazwa',
+																						//'limit' => 8,
+																						'order'=>'Course.nazwa'));	
+			$courses_names = implode(',', $courses);
+			//Debugger::dump($courses_names);
+			$this->University->id = $university['University']['id'];
+			$this->University->saveField('all_courses', $courses_names);		
 		}
+		
+		
+		
 	}
 	public function nazwy(){
-		$this->University->contain('UniversitiesParameter.nazwa');
+		$this->University->contain('UniversitiesParameter.miasto');
 		$universities = $this->University->find('all');
 		//Debugger::dump($universities);
 		foreach($universities as $uni) {
-			if ($uni['University']['nazwa'] == $uni['UniversitiesParameter']['nazwa']) {
+			if ($uni['University']['miasto'] == $uni['UniversitiesParameter']['miasto']) {
 
 			} else {
 				$this->University->id = $uni['University']['id'];
-				$this->University->saveField('nazwa', $uni['UniversitiesParameter']['nazwa']);
+				$this->University->saveField('miasto', $uni['UniversitiesParameter']['miasto']);
 			}
 		}
 	}

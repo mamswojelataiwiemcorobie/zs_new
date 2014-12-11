@@ -35,7 +35,7 @@
 										</a>
 									</h1>
 									<p>
-										<?php echo $university['University']['nazwa'];?>
+										<?php echo $university['University']['miasto'];?>
 									</p>
 								</div>
 							</li>

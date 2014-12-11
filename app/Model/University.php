@@ -4,12 +4,7 @@ class University extends AppModel {
 		'Containable', 'Search.Searchable'
 	);
 
-	public $filterArgs = array(
-        'keywords' => array(
-            'type' => 'query',
-            'method' => 'orConditions'
-        ),
-    );
+	
 
 	public $belongsTo = array('UniversityType', 'District');
 	public $hasOne = array('UniversitiesParameter');
@@ -18,6 +13,16 @@ class University extends AppModel {
             				'CourseonUniversity'  => array('className' => 'CourseonUniversity',
             											'foreignKey' => 'university_id'));
 	//public $displayField = 'nazwa';
+
+	public $filterArgs = array(
+		        'keywords' => array(
+				        'type' => 'like',
+				        'encode' => true,
+				        'before' => false,
+				        'after' => false,
+				        'field' => array('Course.nazwa', 'University.nazwa')
+        ),
+    );
 
 	public function orConditions($data = array()) {
         $filter = $data['filter'];

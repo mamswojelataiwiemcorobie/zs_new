@@ -215,7 +215,7 @@
 																	<?php $w2=$kierunki_full[$ukk][$ukk2]['wydzialnazwa'];?>	
 																<?php endif;?>
 															<?php endif;?>
-																<tr class="collapse <?php if($i!==0):?>out<?php else :?>in<?php endif;?> <?php echo $kierunki_full[$ukk][$ukk2]['wydzial_id'];?>collapsed">			
+																<tr <?php if (isset($kierunki_full[$ukk][$ukk2]['wydzialnazwa'])):?> class="collapse <?php if($i!==0):?>out<?php else :?>in<?php endif;?> <?php echo $kierunki_full[$ukk][$ukk2]['wydzial_id'];?>collapsed" <?php endif;?>>	
 																	<td >
 																		<div >
 																			<a href="/kierunek/<?php echo Inflector::slug($kierunki_full[$ukk][$ukk2]['nazwa'],'-').'-'. $ukk2;?>">
@@ -225,8 +225,8 @@
 																	</td>
 																	<?php foreach ($kierunki_types as $value):?>
 																		<td ><div ><?php if (isset($uk2[$value])):?>•<?php endif;?></div></td>
-																	<?php endforeach;?>
-																</tr>
+																	<?php endforeach;?>																
+																</tr>																
 														<?php endforeach;?>
 													<?php $i++; endforeach;?>
 												

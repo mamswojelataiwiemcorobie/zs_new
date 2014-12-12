@@ -4,7 +4,7 @@
         <?php $topCity = $this->requestAction(array('controller' => 'universities', 
                                             'action' => 'topCity'));
                 foreach ($topCity as $city) : ?>
-            <a href="/"><?php echo $city['universities_parameters']['miasto'];?></a> | 
+            <a href="/"><?php echo $city['universities']['miasto'];?></a> | 
         <?php endforeach; ?>
         <br>
     </div>
@@ -23,7 +23,7 @@
             <?php $topPolicealne = $this->requestAction(array('controller' => 'universities', 
                                             'action' => 'topPolicealne'));
                 foreach ($topPolicealne as $kierunek) : ?>
-            <a href="/"><?php echo $kierunek['up']['miasto'];?></a> | 
+            <a href="/"><?php echo $kierunek['u']['miasto'];?></a> | 
             <?php endforeach; ?>
         </div>
       </div>

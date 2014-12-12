@@ -127,6 +127,22 @@ $(function(){
 	return false;
 	});
 
+	/* ---------------------------------------------------------------------- */
+	/*	Tabs1&2
+	/* ---------------------------------------------------------------------- */
+	$(document).ready(function () {
+		$('#horizontalTab').easyResponsiveTabs({
+			type: 'default', //Types: default, vertical, accordion           
+			width: 'auto', //auto or any width like 600px
+			fit: true   // 100% fit in a container
+		});
+		$('#verticalTab').easyResponsiveTabs({
+			type: 'vertical',
+			width: 'auto',
+			fit: true
+		});
+	});
+
 	//ROLL ON HOVER
 		$(function() {
 		$(".roll").css("opacity","0");

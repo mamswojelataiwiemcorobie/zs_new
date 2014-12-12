@@ -119,23 +119,6 @@ class UniversitiesController extends AppController {
 		}
 	}
 
-	function search_all() {
-        // the page we will redirect to
-        $url['action'] = 'search';
-         
-        // build a URL will all the search elements in it
-        // the resulting URL will be
-        // example.com/cake/posts/index/Search.keywords:mykeyword/Search.tag_id:3
-        foreach ($this->data as $k=>$v){
-            foreach ($v as $kk=>$vv){
-                $url[$k.'.'.$kk]=$vv;
-            }
-        }
- 
-        // redirect the user to the url
-        $this->redirect($url, null, true);
-    }
-
 	public function search($tid) {
 		$this->set('tid',$tid);
 
@@ -367,7 +350,7 @@ class UniversitiesController extends AppController {
 	}
 
 	public function topCity() {
-		$topCity = $this->University-> query("SELECT miasto, COUNT(*) FROM universities_parameters GROUP BY miasto ORDER BY 2 DESC LIMIT 0,20");
+		$topCity = $this->University-> query("SELECT miasto, COUNT(*) FROM universities GROUP BY miasto ORDER BY 2 DESC LIMIT 0,20");
 		if (!empty($this -> request -> params['requested'])) {
 		   return $topCity;
 		} else {
@@ -376,7 +359,7 @@ class UniversitiesController extends AppController {
 	}
 
 	public function topPolicealne() {
-		$topCity = $this->University-> query("SELECT DISTINCT up.miasto, COUNT(up.miasto) FROM universities u LEFT JOIN universities_parameters up ON up.university_id = u.id WHERE u.university_type_id = 2 GROUP BY up.miasto ORDER BY 2 DESC LIMIT 0,20");
+		$topCity = $this->University-> query("SELECT DISTINCT u.miasto, COUNT(u.miasto) FROM universities u WHERE u.university_type_id = 2 GROUP BY u.miasto ORDER BY 2 DESC LIMIT 0,20");
 		if (!empty($this -> request -> params['requested'])) {
 		   return $topCity;
 		} else {

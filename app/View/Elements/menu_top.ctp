@@ -33,7 +33,7 @@
 			<li><a href="/">Strona główna</a></li>
 			<li class="dropdown">
 			<li class="dropdown"><?php echo $this->Html->link('SZKOŁY WYŻSZE', '/wyszukiwarka/szkoly-wyzsze-1', array('escape' => false, 'ext' => 'html')); ?></li>
-			<li class="dropdown"><?php echo $this->Html->link('KIERUNKI', '/kierunki', array('escape' => false)); ?></li>
+			<li class="dropdown"><?php echo $this->Html->link('KIERUNKI', '/kierunki/artystyczne-1.html', array('escape' => false)); ?></li>
 			<li class="dropdown"><?php echo $this->Html->link('MIASTA', '/miasta', array('escape' => false)); ?></li>
 			<li class="dropdown"><?php echo $this->Html->link('ZAWODY', '/zawody', array('escape' => false)); ?></li>
 			<li class="dropdown"><?php echo $this->Html->link('ERASMUS', '/erazmusy', array('escape' => false)); ?></li>

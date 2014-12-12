@@ -6,21 +6,24 @@ class CoursesController extends AppController {
 	
 	public function index() {
 
-		$this->set('title_for_layout', 'Ranking kierunków');
-		$this->set('description_for_layout', 'Ranking kierunków. Najlepsze kierunki.');
-		$this->set('keywords_for_layout', 'Kierunki, wydziały, specjalizacje, ranking');
-		
-		$this->set('tabele', true);
+		$this->set('title_for_layout', 'Kierunki studiów | Zostań Studentem');
+		$this->set('description_for_layout', 'Wybierz kierunek studiów który najbardziej Cię interesuje. Nowe kierunki humanistyczne, artystyczne, ekonomiczne, techniczne, przyrodnicze');
+		$this->set('keywords_for_layout', 'kierunki, studia, studiów');
+		$this->set('title_for_slider2','Kierunki');
 
-		if($this->RequestHandler->responseType() == 'json') {
-			$this->paginate = array(
-				'order' => array('Course.srednia' => 'desc'),
-				'contain' => array('CoursesType'),
-				'fields' => array('Course.rank','Course.nazwa','CoursesType.nazwa', 'Course.zawod', 'Course.placa', 'Course.srednia', 'Course.id'),
-			);
-			$this->DataTable->emptyElements = 1;
-			$this->set('courses', $this->DataTable->getResponse());
-			$this->set('_serialize','courses');
+		$tid = $this->request->pass[0];
+		$this->set('tid', $tid);
+		
+		$this->Course->CoursesCategory->contain();
+		$kategorie = $this->Course->CoursesCategory->find('all');
+		$this->set('kategorie',$kategorie);
+		if ($tid) {
+			$kierunki = $this->Course->find('all', array('conditions' => array('Course.courses_category_id' => $tid, 'Course.university_type_id' => 1)));
+			$this->set('kategoria_set',1);
+			$this->set('kierunki',$kierunki);
+			$this->set('kategoria',$kategorie[$tid-1]);
+		} else {
+			$this->set('kategoria_set',0);
 		}
 	}
 	
@@ -28,20 +31,44 @@ class CoursesController extends AppController {
 		if (!$id) {
 			throw new NotFoundException(__('Invalid post'));
 		}
+
+		$this->Course->CoursesCategory->contain();
+		$kategorie = $this->Course->CoursesCategory->find('all');
+		$this->set('kategorie',$kategorie);
+
+		$kierunek = $this->Course->find('first', array('conditions'=> array('Course.id'=> $id)));
+
+		$this->set('title_for_layout', 'Kierunki studiów | Zostań Studentem');
+		$this->set('description_for_layout', 'Wybierz kierunek studiów który najbardziej Cię interesuje. Nowe kierunki humanistyczne, artystyczne, ekonomiczne, techniczne, przyrodnicze');
+		$this->set('keywords_for_layout', 'kierunki, studia, studiów');
+		$this->set('title_for_slider2','Kierunki');
+
 		
-		$this->Course->contain('CoursesType.nazwa', 'Profession.nazwa', 'Profession.placa');
-		$course = $this->Course->findById($id);
-		
-		if (!$course) {
-			throw new NotFoundException(__('Invalid post'));
+		$kierunki = kierunkiGetQuery($tid);
+		if (!isset($kierunki[$tid])) return $this->_throw_404();
+		$this->av('kierunek',$kierunki[$tid]);
+		$this->seo['title'] = 'Kierunek '.$kierunki[$tid]['nazwa'].' | Zostań Studentem';
+		$this->seo['description'] = substr(html_entity_decode(strip_tags($kierunki[$tid]['opis1']),ENT_COMPAT,'UTF-8'),0,160);
+		$this->seo['keywords'] = $kierunki[$tid]['nazwa'].' , kierunek , studia';
+		$kierunki = kierunkiByKatGetQuery($kierunki[$tid]['id_kat'],999,1);
+		$this->av('kierunki',$kierunki);
+		/*$sf = array("promowane"=>1,"kierunek_id"=>$tid);
+		$lf = array(
+			'limit'=>7,
+			'page'=>isset($_GET['p']) ? $_GET['p'] : 1,
+		);
+		$lf['first_offset'] = ($lf['page'] - 1) * $lf['limit'];
+		$lf['last_offset'] = $lf['page'] * $lf['limit'];
+		list ($r,$fullc) = szukajUczelniQuery($sf,$lf);
+		if ($fullc > 0) {
+			$this->av('uczelnie_wyniki',$r);
+			$this->av('uczelnie_wyniki_c',$fullc);
+			$this->av('uczelnie_wyniki_maxp',ceil($fullc/$lf['limit']));
+			$this->av('uczelnie_wyniki_cp',ceil($lf['page']));
+		} else {
+			$this->av('uczelnie_wyniki_brak',1);
 		}
-		$this->set('title_for_layout', $course['Course']['nazwa']);
-		$this->set('title_for_slider2', 'Ranking kierunków');
-		
-		$db = $this->Course->query("SELECT DISTINCT University.id, University.nazwa, University.photo FROM universities AS University JOIN courseon_universities AS CourseonUniversity ON (CourseonUniversity.course_id = " .$id. " AND CourseonUniversity.university_id = University.id);");
-		
-		$this->set('course', $course);
-		$this->set('u', $db);
+		$this->av('uczelnie_searchurl',$this->wyszukiwarka_cleanurl());*/
 	}
 	
 	public function topKierunki() {

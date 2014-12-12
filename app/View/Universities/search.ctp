@@ -1,6 +1,6 @@
 <div id="searchpage" class="row <?php if ($tid == '2'):?>znajdz-szkole-policealna<?php elseif ($tid == '3'):?>znajdz-szkole-jezykowa<?php endif;?>">
 	<div class="col-md-8 l">
-		<?php echo $this->Form->create('University',array('action'=>'search/'.$tid,'class'=>'form-inline input-append', 'role'=>'form', 'type' => 'GET'));?>
+		<?php echo $this->Form->create('University',array('class'=>'form-inline input-append', 'role'=>'form', 'type' => 'GET'));?>
 			<input type="text" name="keywords" placeholder="Type something…" class="input-medium">
 			<button class="btn" type="submit" >Search</button>
 			<button class="btn" type="button">Options</button>
@@ -16,7 +16,7 @@
 				echo $this->Paginator->counter(array(
 				  'format' => __('Strona {:page} z {:pages}, Znaleziono {:count} wyników')
 				));
-				switch ($tid) {
+				/*switch ($tid) {
 					case 1:
 						$r = 'szkoly-wyzsze'; break;
 					case 2:
@@ -25,8 +25,7 @@
 						$r = 'Szkoły-językowa'; break;
 				}
 				$action = '/'.$r.'-'. $tid .'.html/';
-				if (isset($this->request->query['keywords'])) {
-					$action = $action + $this->request->query['keywords'];				}
+				
 				$this->Paginator->options(array(
 
 				    'url' =>array(
@@ -34,7 +33,7 @@
 				        'action' => $action
 				    )
 				    
-				));
+				));*/
 			?>
 			<ul class="pagination pagination-lg">
 				<?php

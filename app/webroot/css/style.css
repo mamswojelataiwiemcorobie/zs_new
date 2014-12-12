@@ -849,22 +849,6 @@ background:url('../images/partnerzy.jpg') left center repeat-x;
 }
 
 /*--------------------------------------------------	Uczelnia---------------------------------------------------*/
-#uczelnia .cont {
-padding:10px 35px 15px 35px;
-color:#111111;
-border-width: 1px;
-border-style: solid;
-border-color: rgb(204, 204, 204);
-margin-bottom: 20px;
-}
-#uczelnia .cont .head {
-margin-bottom:22px;
-font:20px/32px 'Lato', sans-serif;
-font-weight: 300;
-text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-color:#12537c;
-background:url('spacer.png') left bottom repeat-x;
-}
 #uczelnia .lista_kierunkow li {
 float:left;
 width:141px;
@@ -1219,6 +1203,12 @@ display: block;
 width: 111px;
 height: 34px;
 background: url('/img/slf.png') -1080px -93px no-repeat;
+}
+
+/*--------------------------------------------------	KIERUNKI---------------------------------------------------*/
+#kierunki .lista_kierunkow li{
+width: 50%;
+float: left;
 }
 /*--------------------------------------------------	MISC---------------------------------------------------*/
 
@@ -9133,7 +9123,7 @@ ul.resp-tabs-list,ul.resp-tabs-list p {
 	font-weight: 400;
 	font-size: 16px;
 	display:inline-block;
-	padding:13px 15px;
+	padding:13px 11px;
 	margin:0;
 	list-style:none;
 	cursor:pointer;
@@ -10285,154 +10275,6 @@ ul.ca-menu {list-style:none;}
 .z{
     z-index: 1;
 }
-/*uniwerytet*/
-.col-md-6 {
-	margin: 10px 0;
-}
-.p-log-4 {
-width: 80%;
-margin: auto;
-}
-.sto {
-	width:100%;
-	height:300px !important;
-}
-	#uniwersytet address{
-			margin-bottom: 0px;
-			font-size: 18px;
-	}
-	#uniwersytet .linki a {
-	color: white;
-	}
-@media screen and (min-width:800px) {
-	.chart {
-		min-height:500px;
-	}
-}
-.panel-body ul {
-	font-size:16px;
-}
-.panel-body ul li
-{
-  margin-left: 58px;
-}
-/*erasmus form*/
-@media screen and (max-width:800px) {
-	#erasmus .input{
-		width: 90%;
-	}
-		#erasmus input{
-			display: block;
-			clear: both;
-		}
-	}
-#erasmus input[type="submit"] {
-	float: right;
-}
-.input.select {
-	float: left;
-	padding-right: 15px;
-	padding-left: 15px;	
-	text-align: center;
-	font-family: Open Sans,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	text-transform: capitalize;
-}
-
- form[id=ExchangeIndexForm] > div:nth-of-type(2) 
-{
-	width: 20%
-}
- form[id=ExchangeIndexForm] > div:nth-of-type(3) 
-{
-	width: 30%
-}
- form[id=ExchangeIndexForm] > div:nth-of-type(4) 
-{
-	width: 50%
-}
- form[id=ExchangeIndexForm] > .submit
-{
-	clear: both;
-}
-
-/*tabele*/
-	.dataTables_length label select {
-		width: 60px;
-	}
-	.cc{
-		margin-left: 5px;
-		float: none;
-	}
-/*misto*/
-	#chart_miasto{
-		width: 100%; 
-		height: 100%;
-	}
-	#miasto .logo {
-		width: 25%;min-width:150px;
-	}
-	.herb {
-		min-width:150px;
-	}
-	.opis {
-		margin-bottom:15px;
-	}
-	.wykresy_male {
-		max-width:600px;
-	}
-	#miasto h1:first-of-type {
-		margin-top:0;
-	}
-	
-	.carousel h2 {
-		margin-top:35px;
-	}
-	
-/*kierunek*/
-#kierunek h1:nth-of-type(1), #kierunek h4:nth-of-type(1){
-		display: inline;
-	}
-.btn-zbc{
-		width: 200px;
-	}
-.zbc{
-	color: #fff;
-	
-}
-	
-/*kierunkiuczelni*/
-		#kierunkiuczelni .logo{
-		width:100%; 
-		max-width: 500px;
-	}
-	#kierunkiuczelni h1{
-		width: 60%;
-		
-	}
-	.box {
-		width: 70%;
-	}
-	@media screen and (max-width:600px) {
-	    #kierunkiuczelni h1, #zawod h2{
-			width: 100%;
-			font-size:20px;
-		}
-		.box{
-			width: 90%;
-		}
-	}
-
-/*Erasmus*/
-	#wymiana h3 {
-	margin-top:40px;
-	}
-  #wymiana .visualization, .chart_div{
-    width:50%;
-  }
-  
-  #ucz_{
-		padding-left: 25;
-	}
   
 /*captcha*/ 
 
@@ -10443,50 +10285,3 @@ margin: auto;
     }
   }
   
-/*zawod*/
-	#zawod ul{
-		font-size:17px;
-	}
-	#zawod .guzik{
-		padding:0;
-		margin-top: 20;
-	}
-	#zawod h2{
-		margin-top:35px;
-	}
-  
-.view a.prev, view a.next {
-		display: block ;
-		float: left ;
-		margin-left: 3px;
-	}
-
-
-@media screen and (max-width: 530px) {
-		    table{
-		        font-size: 11px;
-		    }
-		    .yadcf-filter{
-		    	width: 75px;
-		    }
-		    th{
-		    	font-size: 13px;
-		    }
-		#lab {
-	        display: none ;
-	    }
-		
-		h2{
-			font-size:20px;
-		}
-}
-@media screen and (max-width: 360px) {
-		    table{
-		        font-size: 10px;/*(13?)*/
-		    }
-		.first, .previous, .next, .last, .paginate_active, .paginate_button{
-	    	font-size: 15px ;
-	    	padding: 5px 10px;
-	    }
-	}
-

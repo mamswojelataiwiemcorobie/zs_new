@@ -37,11 +37,15 @@
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 	
 	Router::connect(
-        '/kierunki',
+        '/kierunki/:slug-:tid',
         array(
             'controller' => 'courses',
-            'action' => 'index')
-	);
+            'action' => 'index'),
+         array(
+            'pass' => array('tid'),
+            'tid' => '[0-9]+',
+            'slug'=>'.+'
+    ));
 		
 	Router::connect(
         '/kierunek/:slug-:id',

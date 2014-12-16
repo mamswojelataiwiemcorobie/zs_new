@@ -12,10 +12,10 @@
 			<?php if ($kategoria_set): ?>
 				<div class="resp-tabs-container">
 					<div  <?php if ($kategoria_set && $tid==$kategoria['CoursesCategory']['id']):?> style="display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; "<?php endif;?>>
+																										  display: -moz-box;
+																										  display: -ms-flexbox;
+																										  display: -webkit-flex;
+																										  display: flex; "<?php endif;?>>
 					<p>
 						<ul class="icons chevronlist lista_kierunkow">
 							<?php foreach ($kierunki as $ki):?>

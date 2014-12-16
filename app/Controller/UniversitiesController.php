@@ -117,6 +117,22 @@ class UniversitiesController extends AppController {
 
 			$this->set('university', $university);
 		}
+		$this->zapisz_odwiedziny_uczelni($university);
+		Debugger::dump($_SESSION['ostatnio_odwiedzane']);
+	}
+
+	public function zapisz_odwiedziny_uczelni($u) {
+		//unset($_SESSION['ostatnio_odwiedzane']);
+		session_start();
+		if (!isset($_SESSION['ostatnio_odwiedzane'])) $_SESSION['ostatnio_odwiedzane'] = array();
+		$doadd = 1;
+		foreach ($_SESSION['ostatnio_odwiedzane'] as $lvis) if ($lvis['id'] === $u['University']['id']) $doadd = 0;
+		if ($doadd) array_unshift($_SESSION['ostatnio_odwiedzane'],array(
+			'id'=>$u['University']['id'],
+			'url'=>$u['url'],
+			'name'=>$u['University']['nazwa'],
+		));
+		$_SESSION['ostatnio_odwiedzane'] = array_slice($_SESSION['ostatnio_odwiedzane'],0,10);
 	}
 
 	public function search($tid) {
@@ -124,6 +140,7 @@ class UniversitiesController extends AppController {
 
 		if(isset($this->request->query['keywords'])) {
             $keywords = mysql_escape_string(mb_strtolower($this->request->query['keywords'], 'UTF-8'));
+            $this->University->countSearchKeywords($keywords);
             $keywords = explode(' ', $keywords);
 			if (isset($keywords[1])) {
 						$conditions = array(
@@ -174,7 +191,32 @@ class UniversitiesController extends AppController {
 						
 					)
 				);
-
+		} elseif (isset($this->request->query['miasto'])) {
+			$this->paginate = array(
+					'University' => array(
+						'order' => array('University.abonament'=> 'desc', 'University.nazwa' => 'asc' ),				 
+						'limit' => 5,
+						'recursive' => 0,
+						'conditions' => array('University.university_type_id' => $tid, 'University.miasto LIKE' => '%'.$this->request->query['miasto'].'%'),
+						//'joins' => $joins,
+						'group' => 'University.id',
+						'contain' => array('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
+						
+					)
+				);
+		} elseif (isset($this->request->query['kierunek'])) {
+			$this->paginate = array(
+					'University' => array(
+						'order' => array('University.abonament'=> 'desc', 'University.nazwa' => 'asc' ),				 
+						'limit' => 5,
+						'recursive' => 0,
+						'conditions' => array('University.university_type_id' => $tid, 'University.all_courses LIKE' => '%' .$this->request->query['miasto'].'%'),
+						//'joins' => $joins,
+						'group' => 'University.id',
+						'contain' => array('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
+						
+					)
+				);
         } else { 
 			$this->Paginator->settings = array(
 		        'conditions' => array('University.university_type_id' => $tid),
@@ -186,7 +228,6 @@ class UniversitiesController extends AppController {
         $data =  $this->Paginator->paginate();
 
 			if (count($data)>0) {
-				if (!empty($_req['slowo'])) countSearchKeywords($_req['slowo']);
 				$uczelnie_promo = array();
 				$uczelnie = array();
 				foreach ($data as $uczelnia) {

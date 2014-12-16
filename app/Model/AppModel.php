@@ -32,4 +32,14 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+	public function countSearchKeywords($keyword) {
+		$db = $this->getDataSource();
+		$db->fetchAll("INSERT INTO search_keywords (id,keyword,counter) VALUES (NULL,?,1) ON DUPLICATE KEY UPDATE counter = counter+1",array($keyword));
+	}
+
+	public function getSearchKeyword($id) {
+		$db = $this->getDataSource();
+		$r= $db->fetchAll("SELECT * FROM search_keywords WHERE id = ?",array($id));
+		return $r;
+	}
 }

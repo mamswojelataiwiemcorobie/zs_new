@@ -46,6 +46,17 @@
             'tid' => '[0-9]+',
             'slug'=>'.+'
     ));
+
+    Router::connect(
+        '/kierunek/:slug-:id.html/*',
+        array(
+            'controller' => 'courses',
+            'action' => 'view'),
+        array(
+            'pass' => array('id'),
+            'id' => '[0-9]+',
+            'slug'=>'.+',
+        ));
 		
 	Router::connect(
         '/kierunek/:slug-:id',
@@ -110,17 +121,7 @@
         array(
             'controller' => 'universities',
             'action' => 'index'));
-		
-	Router::connect(
-        '/wyszukiwarka/:slug-:tid',
-        array(
-            'controller' => 'universities',
-            'action' => 'search'),
-        array(
-            'pass' => array('tid'),
-            'tid' => '[0-9]+',
-			'slug'=>'.+'
-        ));
+
     Router::connect(
         '/wyszukiwarka/:slug-:tid/*',
         array(

@@ -1,17 +1,25 @@
+<?php 
+	$najczesciej_wyszukiwane = $this->requestAction(array('controller' => 'SearchKeywords',
+									'action' => 'najczesciej'));
+							?>		
 <div class="qlist qlist-red">
 	<div class="header">NAJCZĘŚCIEJ WYSZUKIWANE</div>
 	<div class="cont">
-		{foreach from=$najczesciej_wyszukiwane item="fit"}
-		<p{cycle values=', class="sec"'}><a href="/najczesciej-szukane/{$fit.keyword|@polskie_znaki}-{$fit.id}.html">{$fit.keyword}</a></p>{/foreach}
+		<?php foreach ($najczesciej_wyszukiwane as $fit):?>
+		<p{cycle values=', class="sec"'}><a href="/najczesciej_szukane/<?php echo Inflector::slug($fit['SearchKeyword']['keyword'],'-').'-'.  $fit['SearchKeyword']['id'];?>.html"><?php echo $fit['SearchKeyword']['keyword'];?></a></p><?php endforeach;?>
 	</div>
 </div>
-{if $ostatnio_odwiedzane|@count > 0}<div class="qlist qlist-blue">
+<?php 
+	$ostatnio_odwiedzane = $this->requestAction(array('controller' => 'SearchKeywords',
+									'action' => 'ostatnio'));
+							?>		
+<?php if (count($ostatnio_odwiedzane) > 0):?><div class="qlist qlist-blue">
 	<div class="header">OSTATNIO ODWIEDZANE</div>
 	<div class="cont">
-		{foreach from=$ostatnio_odwiedzane item="fit"}
-		<p{cycle values=', class="sec"'}><a href="{$fit.url}">{$fit.name}</a></p>{/foreach}
+		<?php foreach($ostatnio_odwiedzane as $fit):?>
+		<p{cycle values=', class="sec"'}><a href="{$fit.url}"></a><?php echo $fit['name'];?></a></p><?php endforeach;?>
 	</div>
-</div>{/if}
+</div><?php endif;?>
 <!-- {if $act!=='wyszukiwarka'}<div id="znajdz-uczelnie-mini"><div><form method="get" action="/wyszukiwarka/szukaj-4.html">
 	<input type="hidden" name="s[wojewodztwo]"/>
 	<div><input type="text" name="s[slowo]"/></div>

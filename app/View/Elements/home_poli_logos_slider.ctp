@@ -24,14 +24,14 @@
 									</div>
 									<div class="roll" style="opacity: 0;">
 										<div class="wrapcaption">
-											<a href="/uczelnia/<?php echo $university['University']['id']. "/". Inflector::slug($university['University']['nazwa'],'-');?>.html">
+											<a href="/uczelnia/<?php echo Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];?>.html">
 												<i class="icon-link captionicons"></i>
 											</a>
 										</div>
 									</div>
 									<h1>
-										<a href="<?php echo "uczelnia/". $university['University']['id']. "/". Inflector::slug($university['University']['nazwa'],'-');?>.html">
-											<?php echo $university['University']['nazwa'];?>
+										<a href="/uczelnia/<?php echo $slug=Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];?>.html">
+											<?php echo $university['University']['nazwa'];?> 
 										</a>
 									</h1>
 									<p>

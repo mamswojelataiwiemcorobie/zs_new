@@ -16,7 +16,7 @@
 				echo $this->Paginator->counter(array(
 				  'format' => __('Strona {:page} z {:pages}, Znaleziono {:count} wyników')
 				));
-				/*switch ($tid) {
+				switch ($tid) {
 					case 1:
 						$r = 'szkoly-wyzsze'; break;
 					case 2:
@@ -24,16 +24,29 @@
 					case 3:
 						$r = 'Szkoły-językowa'; break;
 				}
-				$action = '/'.$r.'-'. $tid .'.html/';
 				
-				$this->Paginator->options(array(
+				/*if (isset($this->request->query['keywords'])) {
+					$this->Paginator->options(array(
 
-				    'url' =>array(
-				        'controller' => 'wyszukiwarka',
-				        'action' => $action
-				    )
-				    
-				));*/
+					    'url' =>array(
+					        'controller' => 'wyszukiwarka',
+					        'action' => '/'.$r.'-'. $tid .'.html?keywords='. $this->request->query['keywords']
+					    )
+					    
+					));
+				} else {
+					$this->Paginator->options(array(
+
+					    'url' =>array(
+					        'controller' => 'wyszukiwarka',
+					        'action' => '/'.$r.'-'. $tid .'.html/'
+					    )
+					    
+					));
+				}*/
+
+				/*$this->Paginator->options(array('url' => array_merge($this->passedArgs,
+						array('?' => ltrim(strstr($_SERVER['QUERY_STRING'], '&'), '&')))));*/
 			?>
 			<ul class="pagination pagination-lg">
 				<?php

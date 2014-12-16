@@ -59,6 +59,8 @@ class AppController extends Controller {
 		} else {
 			$this->Auth->allow();
 		}
+		//session_start();
+
 		
         //$this->set('tracks', ClassRegistry::init('Track')->find('first');
 		$this->set('init', false);
@@ -73,7 +75,7 @@ class AppController extends Controller {
         }
 		//$this->Cookie->httpOnly = true;
 		//$cookie = $this->Cookie->read('rememberMe');
-		
+		//session_start();
 		$this->Cookie->httpOnly = true;
 		$cookie = $this->Cookie->read('New'); 		
 	}

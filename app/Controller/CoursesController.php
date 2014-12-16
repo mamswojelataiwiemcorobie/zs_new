@@ -27,7 +27,7 @@ class CoursesController extends AppController {
 		}
 	}
 	
-	public function view($id = null) {
+	public function view($id = null, $page = null) {
 		if (!$id) {
 			throw new NotFoundException(__('Invalid post'));
 		}
@@ -36,38 +36,69 @@ class CoursesController extends AppController {
 		$kategorie = $this->Course->CoursesCategory->find('all');
 		$this->set('kategorie',$kategorie);
 
+		$this->Course->contain('CoursesCategory');
 		$kierunek = $this->Course->find('first', array('conditions'=> array('Course.id'=> $id)));
 
-		$this->set('title_for_layout', 'Kierunki studiów | Zostań Studentem');
-		$this->set('description_for_layout', 'Wybierz kierunek studiów który najbardziej Cię interesuje. Nowe kierunki humanistyczne, artystyczne, ekonomiczne, techniczne, przyrodnicze');
-		$this->set('keywords_for_layout', 'kierunki, studia, studiów');
-		$this->set('title_for_slider2','Kierunki');
-
+		$this->set('title_for_layout', 'Kierunek '.$kierunek['Course']['nazwa'].' | Zostań Studentem');
+		$this->set('description_for_layout', substr(html_entity_decode(strip_tags($kierunek['Course']['opis1']),ENT_COMPAT,'UTF-8'),0,160));
+		$this->set('keywords_for_layout', $kierunek['Course']['nazwa'].' , kierunek , studia');
+		$this->set('title_for_slider2',$kierunek['Course']['nazwa']);
 		
-		$kierunki = kierunkiGetQuery($tid);
-		if (!isset($kierunki[$tid])) return $this->_throw_404();
-		$this->av('kierunek',$kierunki[$tid]);
-		$this->seo['title'] = 'Kierunek '.$kierunki[$tid]['nazwa'].' | Zostań Studentem';
-		$this->seo['description'] = substr(html_entity_decode(strip_tags($kierunki[$tid]['opis1']),ENT_COMPAT,'UTF-8'),0,160);
-		$this->seo['keywords'] = $kierunki[$tid]['nazwa'].' , kierunek , studia';
-		$kierunki = kierunkiByKatGetQuery($kierunki[$tid]['id_kat'],999,1);
-		$this->av('kierunki',$kierunki);
-		/*$sf = array("promowane"=>1,"kierunek_id"=>$tid);
-		$lf = array(
-			'limit'=>7,
-			'page'=>isset($_GET['p']) ? $_GET['p'] : 1,
-		);
-		$lf['first_offset'] = ($lf['page'] - 1) * $lf['limit'];
-		$lf['last_offset'] = $lf['page'] * $lf['limit'];
-		list ($r,$fullc) = szukajUczelniQuery($sf,$lf);
-		if ($fullc > 0) {
-			$this->av('uczelnie_wyniki',$r);
-			$this->av('uczelnie_wyniki_c',$fullc);
-			$this->av('uczelnie_wyniki_maxp',ceil($fullc/$lf['limit']));
-			$this->av('uczelnie_wyniki_cp',ceil($lf['page']));
+		$this->set('kierunek',$kierunek);
+
+		$this->Paginator->settings = array(
+					'Course' => array(
+						//'order' => array('University.abonament'=> 'desc', 'University.nazwa' => 'asc' ),				 
+						'limit' => 5,
+						'recursive' => -1,
+						'fields' => array('DISTINCT CourseonUniversity.university_id'),
+						'conditions' => array('Course.id'=>$id, 'University.abonament >' => 1),
+						'order' => array('University.id', 'University.nazwa'),
+						'joins' => array(
+					        array(
+					            'alias' => 'CourseonUniversity',
+					            'table' => 'courseon_universities',
+					            'type' => 'LEFT',
+					            'conditions' => '`Course`.`id` = `CourseonUniversity`.`course_id`'
+					        ), 
+					         array(
+					            'alias' => 'University',
+					            'table' => 'universities',
+					            'type' => 'LEFT',
+					            'conditions' => '`CourseonUniversity`.`university_id` = `University`.`id`'
+					        ), 
+					    ),
+					)
+				);
+		$uczelnie =  $this->Paginator->paginate();
+		//Debugger::dump($uczelnie);
+
+		if (count($uczelnie) > 0) {
+			$uczelnie_promo = array();
+			foreach ($uczelnie as $key => $uczelnia) {
+				$this->Course->CourseonUniversity->University->contain('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto');
+						
+				$uczelnia_c = $this->Course->CourseonUniversity->University->find('first', array('conditions' => array('University.id'=> $uczelnia['CourseonUniversity']['university_id'], 
+																														'University.abonament >' => '1')));
+				if($uczelnia_c) {
+					foreach ($uczelnia_c['UniversitiesPhoto'] as $photo) {
+						if($photo['typ']=='logo') {
+							$uczelnia_c['logo'] = $photo['path'];
+						} 
+					}
+					
+					$uczelnie_promo[] = $uczelnia_c;
+				}
+			}
+			if (count($uczelnie_promo) > 0) {
+				$this->set('uczelnie_wyniki',$uczelnie_promo);
+			} else {
+				$this->set('uczelnie_wyniki_brak',1);
+			}
 		} else {
-			$this->av('uczelnie_wyniki_brak',1);
-		}
+				$this->set('uczelnie_nosearch',1);
+			}
+		/*
 		$this->av('uczelnie_searchurl',$this->wyszukiwarka_cleanurl());*/
 	}
 	

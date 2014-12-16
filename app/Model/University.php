@@ -2,9 +2,7 @@
 class University extends AppModel {
 	public $actsAs = array(
 		'Containable', 'Search.Searchable'
-	);
-
-	
+	);	
 
 	public $belongsTo = array('UniversityType', 'District');
 	public $hasOne = array('UniversitiesParameter');

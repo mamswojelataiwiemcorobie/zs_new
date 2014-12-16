@@ -76,7 +76,7 @@
 				</ul>
 				<div class="resp-tabs-container cont">
 					<?php if ($zakladka_page === 0) : ?>
-						<div id="accordion-container">
+						<div id="accordion-container" style="display: block; "?>
 							<!-- GALERIA -->
 							<?php if ($university['University']['abonament'] > 2):?>
 							<div class="row galeria">
@@ -148,8 +148,8 @@
 						</div>
 					<!-- KIERUNKI -->
 					<?php elseif ($zakladka_page === 5) :?>
-						<section >
-							<div class="row">
+						
+							<div class="row" style="display:block;">
 								<div class="col-md-12 animated fadeInLeft notransition">
 								<?php if($university['University']['university_type_id'] == 3): ?>
 									<div class="cont lista_jezykow">
@@ -218,7 +218,7 @@
 																<tr <?php if (isset($kierunki_full[$ukk][$ukk2]['wydzialnazwa'])):?> class="collapse <?php if($i!==0):?>out<?php else :?>in<?php endif;?> <?php echo $kierunki_full[$ukk][$ukk2]['wydzial_id'];?>collapsed" <?php endif;?>>	
 																	<td >
 																		<div >
-																			<a href="/kierunek/<?php echo Inflector::slug($kierunki_full[$ukk][$ukk2]['nazwa'],'-').'-'. $ukk2;?>">
+																			<a href="/kierunek/<?php echo Inflector::slug($kierunki_full[$ukk][$ukk2]['nazwa'],'-').'-'. $ukk2;?>.html">
 																				<?php echo $kierunki_full[$ukk][$ukk2]['nazwa'];?>
 																			</a>
 																		</div>
@@ -238,7 +238,7 @@
 								<?php endif;?>
 								</div>
 							</div>
-						</section>
+					
 					<?php elseif ($zakladka_page === 1) : if ($university['UniversitiesParameter']['zakladka1']) :?>
 						<div class="cont-c zakladka" style="display:block"><?php echo $university['UniversitiesParameter']['zakladka1'];?></div>
 					<?php endif;?>

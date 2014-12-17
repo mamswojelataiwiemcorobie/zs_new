@@ -22,8 +22,13 @@
 				<?php endif;?>
 			</div>
 			<div class="data-r">
-				<?php if ($uw['University']['link_rejestracji']):?><a href="<?php echo $uw['University']['link_rejestracji'];?>" class="uczelnia-rekrutuj" target="_blank" rel="nofollow"></a><?php endif;?>
-				<a href="/uczelnia/<?php echo $slug=Inflector::slug($uw['University']['nazwa'],'-').'-'.  $uw['University']['id'];?>.html#kierunki" class="uczelnia-<?php if ($uw['University']['university_type_id'] != 3):?>kierunki<?php else :?>jezyki<?php endif;?>"></a>
+				<?php if ($uw['University']['link_rejestracji']):?>
+					<a href="<?php echo $uw['University']['link_rejestracji'];?>" class="uczelnia-rekrutuj btn btn-success" target="_blank" rel="nofollow">
+						<i class="icon-plus"></i> Rekrutuj
+					</a><?php endif;?>
+				<a href="/uczelnia/<?php echo $slug=Inflector::slug($uw['University']['nazwa'],'-').'-'.  $uw['University']['id'];?>.html#kierunki" class="btn btn-large btn-primary">
+					<i class="icon-ok-sign"></i> Kierunki
+				</a>
 			</div>
 		</div></div>
 	</div>

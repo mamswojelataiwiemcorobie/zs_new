@@ -20,8 +20,8 @@
 					<th>ID</th>
 					<th><?php echo $this->Paginator->sort('nazwa', 'Nazwa');?>  </th>
 					<th><?php echo $this->Paginator->sort('UniversityType.nazwa', 'Typ');?>  </th>
-					<th><?php echo $this->Paginator->sort('City.nazwa', 'Miasto');?></th>
-					<th><?php echo $this->Paginator->sort('pakiet', 'Pakiet');?></th>
+					<th><?php echo $this->Paginator->sort('University.miasta', 'Miasto');?></th>
+					<th><?php echo $this->Paginator->sort('abonament', 'Pakiet');?></th>
 					<th>Actions</th>
 				</tr>
 			</thead>
@@ -30,13 +30,13 @@
 					<td><?php echo $university['University']['id']; ?></td>
 					<td><?php echo $this->Html->link( $university['University']['nazwa']  ,   array('action'=>'edit', $university['University']['id']),array('escape' => false) );?></td>
 					<td><?php echo $university['UniversityType']['nazwa']; ?></td>
-					<td><?php echo $university['City']['nazwa']; ?></td>
-					<td><?php echo $university['University']['pakiet']; ?></td>
+					<td><?php echo $university['University']['miasto']; ?></td>
+					<td><?php echo $university['University']['abonament']; ?></td>
 					<td >
-					<?php 	echo $this->Html->link(    "Edit",   array('action'=>'edit', $university['University']['id']) ); ?> | 
-					<?php	echo $this->Html->link(    "Delete", array('action'=>'delete', $university['University']['id'])); ?> |
-					<?php 	echo $this->Html->link(    "Kierunki", array('controller'=> 'courseon_universities', 'action'=>'lista', $university['University']['id']));	?> |
-					<?php 	echo $this->Html->link(    "Erasmusy", array('controller'=> 'exchanges', 'action'=>'lista', $university['University']['id']));	?>
+					<?php 	echo $this->Html->link("Edit",   array('action'=>'edit', $university['University']['id']) ); ?> | 
+					<?php	echo $this->Html->link("Delete", array('action'=>'delete', $university['University']['id'])); ?> |
+					<?php 	echo $this->Html->link("Kierunki", array('controller'=> 'courseon_universities', 'action'=>'lista', $university['University']['id']));?> |
+					<?php 	echo $this->Html->link("Wydziały", array('controller'=> 'faculties', 'action'=>'lista', $university['University']['id']));	?>
 					</td>
 				</tr>
 				<?php endforeach; ?>
@@ -45,9 +45,11 @@
 		</table>
 	</div>
 	<ul class="pagination">
-		<li><?php echo $this->Paginator->prev('<< ' . __('previous', true), array(), null, array('class'=>'disabled'));?></li>
-		<li><?php echo $this->Paginator->numbers(array(   'class' => 'numbers'     ));?></li>
-		<li><?php echo $this->Paginator->next(__('next', true) . ' >>', array(), null, array('class' => 'disabled'));?></li>
+		<?php
+		  echo $this->Paginator->prev('&laquo;', array('tag' => 'li', 'escape' => false), '<a href="#">&laquo;</a>', array('class' => 'prev disabled', 'tag' => 'li', 'escape' => false));
+		  echo $this->Paginator->numbers(array('separator' => '', 'tag' => 'li', 'currentLink' => true, 'currentClass' => 'active', 'currentTag' => 'a'));
+		  echo $this->Paginator->next('&raquo;', array('tag' => 'li', 'escape' => false), '<a href="#">&raquo;</a>', array('class' => 'next disabled', 'tag' => 'li', 'escape' => false));
+		?>
 	</ul>
 </div>   
 <?php echo $this->Html->link( "Powrót do listy uniwersytetów",   array('action'=>'index'),array('escape' => false) ); ?>    

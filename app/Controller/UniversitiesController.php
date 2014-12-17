@@ -118,12 +118,11 @@ class UniversitiesController extends AppController {
 			$this->set('university', $university);
 		}
 		$this->zapisz_odwiedziny_uczelni($university);
-		Debugger::dump($_SESSION['ostatnio_odwiedzane']);
 	}
 
 	public function zapisz_odwiedziny_uczelni($u) {
 		//unset($_SESSION['ostatnio_odwiedzane']);
-		session_start();
+		
 		if (!isset($_SESSION['ostatnio_odwiedzane'])) $_SESSION['ostatnio_odwiedzane'] = array();
 		$doadd = 1;
 		foreach ($_SESSION['ostatnio_odwiedzane'] as $lvis) if ($lvis['id'] === $u['University']['id']) $doadd = 0;
@@ -529,9 +528,9 @@ class UniversitiesController extends AppController {
             );
         } else { 
 			$this->paginate = array(
-				'limit' => 30,
-				'order' => array('University.nazwa' => 'asc' ),
-				'contain' => array('City.nazwa', 'UniversitiesParameter', 'UniversityType')
+				'limit' => 15,
+				'order' => array('University.abonament'=> 'desc', 'University.nazwa' => 'asc' ),
+				'contain' => array('UniversitiesParameter', 'UniversityType')
 			);
 		}
         $universities = $this->paginate('University');
@@ -545,17 +544,29 @@ class UniversitiesController extends AppController {
                 $this->Session->setFlash('Please provide a user id');
                 $this->redirect(array('action'=>'index'));
             }
-			$this->University->contain('UniversitiesParameter' , 'City.id', 'City.nazwa', 'UniversityType','Promo');
+			$this->University->contain('UniversitiesParameter', 'UniversityType', 'UniversitiesPhoto');
             $university = $this->University->findById($id);
-			$this->set('cities', $this->University->City->find('list'));
+
 			$this->set('type', $this->University->UniversityType->find('list'));
+			$this->set('district', $this->University->District->find('list', array('fields'=>array('id', 'nazwa'))));
 
 			//Debugger::dump($university);
+			$university['galeria'] = array();
+			foreach ($university['UniversitiesPhoto'] as $photo) {
+				if($photo['typ']=='logo') {
+					$university['logo'] = $photo['path'];
+				} elseif($photo['typ']=='galeria') {
+					array_push($university['galeria'], $photo['path']);
+				}
+			}
+			$university = Set::remove($university, 'UniversitiesPhoto');
+
 			
             if ($this->request->is('post') || $this->request->is('put')) {
 				//Debugger::dump($this->request->data);
                 $filename = strtotime('now');
-				$photo = $this->request->data['University']['photo'];
+                
+				$photo = $this->request->data['logo'];
 				
 				
 				$path = "/img/uczelnie_min/";
@@ -564,15 +575,15 @@ class UniversitiesController extends AppController {
 				if(!empty($photo['name'])) {
 					if (in_array($photo['type'], array('image/jpeg','image/pjpeg','image/png'))) {
 					
-						$img = $this->University->resize_image($photo, 400, 400);
+						$img = $this->University->resize_image($photo, 200, 200);
 						$photoFile = "$dir$id.png";
 						imagepng($img, $photoFile);	
-						$this->request->data['University']['photo'] = $id.'.png';				
+						$this->request->data['logo'] = $id.'.png';				
 					} else {
 						$this->Session->setFlash(__('Proszę przesłać plik w formacie JPG albo PNG'));
 					}
 				} else { 
-					$this->request->data['University']['photo'] = $university['University']['photo'];
+					$this->request->data['logo'] = $university['logo'];
 				}
 				//unlink($photo['tmp_name']); 
 
@@ -585,6 +596,7 @@ class UniversitiesController extends AppController {
             } 
            
             $this->request->data = $university;
+            //Debugger::dump( $this->request->data);
     }
 	
 	public function admin_add() {

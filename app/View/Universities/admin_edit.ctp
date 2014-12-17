@@ -9,54 +9,22 @@
 			<?php echo $this->Form->input('nazwa', array('label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
 		</div>
 		<div class="form-group">
-			<label class="col-sm-2 control-label">Miasto</label>
-			<div class="col-sm-10">
-				<?php echo $this->Form->select('city_id',$cities);?>
-			</div>
-		</div>
-		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
-				<?php echo $this->Form->input('publiczna');?>
-			</div>
-		</div>
-		<div class="form-group">
 			<label class="col-sm-2 control-label">Typ szkoły</label>
 			<div class="col-sm-10">
 				<?php echo $this->Form->select('university_type_id', $type, array('class'=> 'form-control'));?>
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-sm-2 control-label">średnia</label>
-			<?php echo $this->Form->input('srednia', array( 'label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
+			<label class="col-sm-2 control-label">Miasto</label>
+			<div class="col-sm-10">
+				<?php echo $this->Form->input('miasto', array('label' => false, 'class'=> 'form-control'));?>
+			</div>
 		</div>
 		<div class="form-group">
-			<?php $this->Form->error( 'avatar' );?>
-			<?php
-				if(!empty( $this->request->data['University']['photo'])): ?>
-					<div class="input col-sm-6">
-						<label>Obecne logo:</label>
-						<img src="/img/uczelnie_min/<?php echo  $this->request->data['University']['photo']; ?>" width="200" />
-					</div>
-				<?php endif;?>
-				<div class="col-sm-6">
-					<?php echo  $this->Form->input('photo', array('label'=>'Załaduj inne logo:', 'type'=>'file'));	?>
-				</div>
-		</div>
-		<div class="form-group">
-			<label class="col-sm-2 control-label">Kategoria przyznana przez ministerstwo</label>
-			<?php echo $this->Form->input('kategoria', array( 'label' => false, 'div' => 'col-sm-10'));?>
-		</div>
-		<div class="form-group">
-			<label class="col-sm-2 control-label">Procent studentów niestacjonarnych</label>
-			<?php echo $this->Form->input('il_st_pl', array( 'label' => false, 'div' => 'col-sm-10'));?>
-		</div>
-		<div class="form-group">
-			<label class="col-sm-2 control-label">Procent studentów niestacjonarnych</label>
-			<?php echo $this->Form->input('il_st_bezpl', array( 'label' => false, 'div' => 'col-sm-10'));?>
-		</div>
-		<div class="form-group">
-			<label class="col-sm-2 control-label">Miejsce w rankingu</label>
-			<?php echo $this->Form->input('rank', array( 'label' => false, 'div' => 'col-sm-10'));?>
+			<label class="col-sm-2 control-label">Województwo</label>
+			<div class="col-sm-10">
+				<?php echo $this->Form->select('district_id', $district, array('class'=> 'form-control'));?>
+			</div>
 		</div>
 		<div class="form-group">
 			<?php echo $this->Form->hidden('UniversitiesParameter.id', array('value' => $this->data['UniversitiesParameter']['id']));
@@ -77,6 +45,22 @@
 			<?php echo $this->Form->input('UniversitiesParameter.telefon', array( 'label' => false, 'div' => 'col-sm-10', 'type' => 'tel', 'class'=> 'form-control'));?>
 		</div>
 		<div class="form-group">
+			<label class="col-sm-2 control-label">Fb</label>
+			<?php echo $this->Form->input('UniversitiesParameter.fb', array( 'label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Google+</label>
+			<?php echo $this->Form->input('UniversitiesParameter.gplus', array( 'label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label">YouTube</label>
+			<?php echo $this->Form->input('UniversitiesParameter.yt', array( 'label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Twitter</label>
+			<?php echo $this->Form->input('UniversitiesParameter.twitter', array( 'label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
+		</div>
+		<div class="form-group">
 			<label class="col-sm-2 control-label">Opis</label>
 			<?php echo $this->Form->input('UniversitiesParameter.opis', array( 
 				'label' => false, 'type'=>'textarea', 'div' => 'col-sm-10', 'class'=> 'form-control wysiwig'
@@ -84,16 +68,46 @@
 			); ?>
 		</div>
 		<div class="form-group">
-			<label class="col-sm-2 control-label">Akademik</label>
-			<?php echo $this->Form->input('UniversitiesParameter.akademik', array( 'label' => false, 'div' => 'col-sm-10'));?>
+			<label class="col-sm-2 control-label">Link rejestreacji</label>
+			<?php echo $this->Form->input('link_rejestracji', array( 'label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
+		</div>
+		<div class="col-md-2">
+			<span class="gmap-overflow-call" data-toggle="modal" data-target="#gmap-overflow">mapa</span>
+		</div>
+		<div class="col-md-10">			
+			<div class="form-group col-md-6">
+				<label class="col-sm-4">Lokalizacja X</label>
+				<?php echo $this->Form->input('UniversitiesParameter.lokalizacja_x', array( 'label' => false, 'div' => 'col-sm-8', 'class'=> 'gmap-lon form-control'));?>
+			</div>
+			<div class="form-group col-md-6">
+				<label class="col-sm-4">Lokalizacja Y</label>
+				<?php echo $this->Form->input('UniversitiesParameter.lokalizacja_y', array( 'label' => false, 'div' => 'col-sm-8', 'class'=> 'gmap-lat form-control'));?>
+			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-sm-2">Stypendium socjalne</label>
-			<?php echo $this->Form->input('UniversitiesParameter.s_socj', array( 'label' => false, 'div' => 'col-sm-10'));?>
+			<label class="col-sm-2 control-label">Logo</label>
+			<div class="col-sm-10">
+				<?php $this->Form->error( 'avatar' );?>
+				<div class="jsimageupload_single"></div>
+				<div class="uimage">
+					<input type="hidden" name="logo" value="<?php echo  $this->request->data['logo']; ?>"/>
+					<img src="/miniatura/200x200/uploads/<?php echo  $this->request->data['logo']; ?>"/><span class="delimage">x</span>
+				</div>
+			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-sm-2">Stypendium naukowe</label>
-			<?php echo $this->Form->input('UniversitiesParameter.s_nauk', array( 'label' => false, 'div' => 'col-sm-10'));?>
+			<label class="col-sm-2 control-label">Galeria</label>
+			<div class="col-sm-10">
+				<div class="jsimageupload_multi">
+				<?php if (!empty($this->request->data['galeria'])) :
+					foreach ($this->request->data['galeria'] as $gal) :?>
+						<div class="uimage">
+							<input type="hidden" name="galeria[]" value="<?php echo $gal;?>"/>
+							<img src="/miniatura/200x200/uploads/<?php echo $gal;?>"/>
+							<div class="buttons"><span class="leftimage"> &laquo; </span><span class="delimage">usuń</span><span class="rightimage"> &raquo; </span></div></div>
+					<?php endforeach;?>
+				<?php endif;?>
+			</div>
 		</div>
 		<div class="form-group">
 			<label class="col-sm-2">Stypendium sportowe</label>
@@ -119,4 +133,5 @@
 <div class="clearfix"></div>
 <?php 
 echo $this->Html->link( "Return to Dashboard",   array('action'=>'index') ); 
+	echo $this->element('html_gmap');
 ?>

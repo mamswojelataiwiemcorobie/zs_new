@@ -15,8 +15,6 @@ class SearchKeywordsController extends AppController {
 
 	public function ostatnio() {
 		$ostatnio = isset($_SESSION['ostatnio_odwiedzane']) ? $_SESSION['ostatnio_odwiedzane'] : array();
-		Debugger::dump($ostatnio);
-		Debugger::dump($_SESSION['ostatnio_odwiedzane']);
 		return $ostatnio;
 	}
 }

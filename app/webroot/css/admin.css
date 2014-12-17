@@ -22,3 +22,9 @@ border-bottom: 2px solid;
 #content-wrapper {
 	margin:10px 0;
 }
+#gmap-overflow {
+display: none;
+}
+.uimage {
+	float:left;
+}

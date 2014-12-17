@@ -8,9 +8,7 @@
 		<ul class="nav nav-tabs nav-stacked">
 			<li><?php echo $this->html->link('Lista uczelni',  '/admin/universities' , array('class' => 'blue')); ?></li>
 			<li><?php echo $this->html->link('Lista kieruków', '/admin/courses'); ?></li>
-			<li><?php echo $this->html->link('Lista zawodów', '/admin/professions'); ?></li>
-			<li><?php echo $this->html->link('Lista uczelni w projekcie erazmus', '/admin/exchanges'); ?></li>
-			<li><?php echo $this->html->link('Lista miast', '/admin/cities'); ?></li>
+			<li><?php echo $this->html->link('Lista kategorii kierunków', '/admin/courses_categories'); ?></li>
 			<li class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 				  Lista stron: <span class="caret"></span>
@@ -19,31 +17,6 @@
 					
 					<li>
 						<?php echo $this->html->link('Lista kieruków na uczelniach', '/admin/courseon_universities/'); ?>
-					</li>
-				</ul>
-			</li>
-			<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-				Lista kategori:<span class="caret"></span>
-				</a>
-				<ul class="dropdown-menu" role="menu">
-					<li>
-						<?php echo $this->html->link('uczelnia - kategorie ', '/admin/universities_parameters'); ?>
-					</li>
-					<li>
-						<?php echo $this->html->link('uczelnia - stypendia i dane adresowe ', '/admin/university_types'); ?>
-					</li>
-					<li>
-						<?php echo $this->html->link('kierunki - tryb nauki', '/admin/tryb_courses'); ?>
-					</li>
-					<li>
-						<?php echo $this->html->link('kierunki - stopnie nauki', '/admin/typ_courses'); ?>
-					</li>
-					<li>
-						<?php echo $this->html->link('kierunki - kategorie', '/admin/courses_types'); ?>
-					</li>
-					<li>
-						<?php echo $this->html->link('kierunki - możliwe zawody', '/admin/professions_courses'); ?>
 					</li>
 				</ul>
 			</li>

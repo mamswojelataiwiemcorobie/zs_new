@@ -1179,16 +1179,10 @@ float:left;
 .uczelnia-rekrutuj {
 cursor: pointer;
 display: block;
-width: 111px;
-height: 34px;
-background: url('/img/slf.png') -953px -255px no-repeat;
 }
 .uczelnia-kierunki {
 cursor: pointer;
 display: block;
-width: 111px;
-height: 34px;
-background: url('/img/slf.png') -1080px -93px no-repeat;
 }
 
 /*--------------------------------------------------	KIERUNKI---------------------------------------------------*/

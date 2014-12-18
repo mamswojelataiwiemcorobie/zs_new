@@ -45189,3 +45189,978 @@ Request URL: /loader.gif
 Stack Trace:
 #0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-12-18 08:24:52 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Nie mo¿na nawi¹zaæ po³¹czenia, poniewa¿ komputer docelowy aktywnie go odmawia.
+',
+  'enabled' => true,
+)
+Request URL: /admin/users/login
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3221): ConnectionManager::getDataSource('default')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3243): Model->setSource('users')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('User', 'fields')
+#8 C:\Users\Administrator\Documents\klu\zs_new\app\View\Users\admin_login.ctp(3): FormHelper->create('User')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-12-18 08:24:52 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Nie mo¿na nawi¹zaæ po³¹czenia, poniewa¿ komputer docelowy aktywnie go odmawia.
+',
+  'enabled' => true,
+)
+Request URL: /wyszukiwarka/szkoly-wyzsze-1?keywords=politechnika
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3221): ConnectionManager::getDataSource('default')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3243): Model->setSource('universities')
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Model\AppModel.php(36): Model->getDataSource()
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(142): AppModel->countSearchKeywords('politechnika')
+#7 [internal function]: UniversitiesController->search('1')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-18 08:24:56 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Nie mo¿na nawi¹zaæ po³¹czenia, poniewa¿ komputer docelowy aktywnie go odmawia.
+',
+  'enabled' => true,
+)
+Request URL: /admin/users/login
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3221): ConnectionManager::getDataSource('default')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3243): Model->setSource('users')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('User', 'fields')
+#8 C:\Users\Administrator\Documents\klu\zs_new\app\View\Users\admin_login.ctp(3): FormHelper->create('User')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-12-18 08:25:17 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Nie mo¿na nawi¹zaæ po³¹czenia, poniewa¿ komputer docelowy aktywnie go odmawia.
+',
+  'enabled' => true,
+)
+Request URL: /admin/users/login
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3221): ConnectionManager::getDataSource('default')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(3243): Model->setSource('users')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('User', 'fields')
+#8 C:\Users\Administrator\Documents\klu\zs_new\app\View\Users\admin_login.ctp(3): FormHelper->create('User')
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-12-18 11:00:36 Error: Fatal Error (4): syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION) in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 13]
+2014-12-18 11:00:36 Error: [FatalErrorException] syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 13, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 13, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-18 11:00:36 Error: Fatal Error (4): syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION) in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 13]
+2014-12-18 11:00:36 Error: [FatalErrorException] syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION)
+Request URL: /admin/universities/edit/css/jquery.fileupload.css
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 13, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 13, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-18 11:00:36 Error: Fatal Error (4): syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION) in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 13]
+2014-12-18 11:00:36 Error: [FatalErrorException] syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION)
+Request URL: /admin/universities/edit/js/jquery.iframe-transport.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 13, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 13, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-18 11:00:37 Error: Fatal Error (4): syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION) in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 13]
+2014-12-18 11:00:37 Error: [FatalErrorException] syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION)
+Request URL: /admin/universities/edit/js/jquery.fileupload.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 13, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 13, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-18 11:18:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.iframe-transport.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:18:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:18:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-image.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:18:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-process.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:18:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-validate.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:19:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:19:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-validate.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:19:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.iframe-transport.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:19:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-image.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:19:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-process.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:27:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:27:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-process.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:27:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.iframe-transport.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:27:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-image.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:27:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-validate.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:32:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-process.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:32:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-image.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:32:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:32:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.iframe-transport.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:32:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-validate.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:32:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.iframe-transport.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:32:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:32:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-process.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:32:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-image.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:32:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.fileupload-validate.js
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 11:40:22 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\RequestHandlerComponent.php(262): Object->requestAction('/admin/universi...', Array)
+#6 [internal function]: RequestHandlerComponent->beforeRedirect(Object(UniversitiesController), Array, NULL, true)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(761): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(601): Controller->redirect(Array)
+#12 [internal function]: UniversitiesController->admin_edit('394')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-12-18 11:40:26 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\RequestHandlerComponent.php(262): Object->requestAction('/admin/universi...', Array)
+#6 [internal function]: RequestHandlerComponent->beforeRedirect(Object(UniversitiesController), Array, NULL, true)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(761): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(601): Controller->redirect(Array)
+#12 [internal function]: UniversitiesController->admin_edit('394')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-12-18 11:40:28 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\RequestHandlerComponent.php(262): Object->requestAction('/admin/universi...', Array)
+#6 [internal function]: RequestHandlerComponent->beforeRedirect(Object(UniversitiesController), Array, NULL, true)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(761): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(601): Controller->redirect(Array)
+#12 [internal function]: UniversitiesController->admin_edit('394')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-12-18 11:40:31 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\RequestHandlerComponent.php(262): Object->requestAction('/admin/universi...', Array)
+#6 [internal function]: RequestHandlerComponent->beforeRedirect(Object(UniversitiesController), Array, NULL, true)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(761): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(601): Controller->redirect(Array)
+#12 [internal function]: UniversitiesController->admin_edit('394')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-12-18 11:42:43 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\RequestHandlerComponent.php(262): Object->requestAction('/admin/universi...', Array)
+#6 [internal function]: RequestHandlerComponent->beforeRedirect(Object(UniversitiesController), Array, NULL, true)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(761): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(601): Controller->redirect(Array)
+#12 [internal function]: UniversitiesController->admin_edit('394')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-12-18 11:52:17 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\RequestHandlerComponent.php(262): Object->requestAction('/admin/universi...', Array)
+#6 [internal function]: RequestHandlerComponent->beforeRedirect(Object(UniversitiesController), Array, NULL, true)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(761): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(601): Controller->redirect(Array)
+#12 [internal function]: UniversitiesController->admin_edit('394')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-12-18 12:32:00 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/[object%20Object]
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-18 12:33:43 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/[object%20Object]
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-18 12:34:48 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/[object%20Object]
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-18 12:35:06 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/[object%20Object]
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-18 13:27:56 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /uploads/
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-18 13:40:29 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/[object%20Object]
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-18 13:41:19 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/[object%20Object]
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-18 13:44:22 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/[object%20Object]
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-18 13:50:20 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/[object%20Object]
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-18 14:04:44 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/[object%20Object]
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-18 14:18:50 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/[object%20Object]
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-18 14:22:04 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/server/php/
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-18 14:22:17 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\json\admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\json\\admin_edit.ctp',
+)
+Request URL: /admin/universities/edit/server/php/
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\JsonView.php(88): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): JsonView->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-18 14:38:53 Error: [MissingPluginException] Plugin Search could not be found.
+Exception Attributes: array (
+  'plugin' => 'Search',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(367): CakePlugin::path('Search')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(228): App::pluginPath('Search')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(100): class_exists('PrgComponent')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Search.Prg', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-18 14:40:51 Error: [MissingPluginException] Plugin Search could not be found.
+Exception Attributes: array (
+  'plugin' => 'Search',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(367): CakePlugin::path('Search')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(228): App::pluginPath('Search')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(100): class_exists('PrgComponent')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Search.Prg', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-18 14:41:05 Error: [MissingPluginException] Plugin Search could not be found.
+Exception Attributes: array (
+  'plugin' => 'Search',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(367): CakePlugin::path('Search')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(228): App::pluginPath('Search')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(100): class_exists('PrgComponent')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Search.Prg', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-18 14:41:08 Error: [MissingPluginException] Plugin Search could not be found.
+Exception Attributes: array (
+  'plugin' => 'Search',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(367): CakePlugin::path('Search')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(228): App::pluginPath('Search')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(100): class_exists('PrgComponent')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Search.Prg', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-18 14:41:10 Error: [MissingPluginException] Plugin Search could not be found.
+Exception Attributes: array (
+  'plugin' => 'Search',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(367): CakePlugin::path('Search')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(228): App::pluginPath('Search')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(100): class_exists('PrgComponent')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Search.Prg', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-18 14:41:14 Error: [MissingPluginException] Plugin Search could not be found.
+Exception Attributes: array (
+  'plugin' => 'Search',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(367): CakePlugin::path('Search')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(228): App::pluginPath('Search')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(100): class_exists('PrgComponent')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Search.Prg', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-18 14:41:16 Error: [MissingPluginException] Plugin Search could not be found.
+Exception Attributes: array (
+  'plugin' => 'Search',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(367): CakePlugin::path('Search')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(228): App::pluginPath('Search')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(100): class_exists('PrgComponent')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Search.Prg', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-18 14:41:26 Error: [MissingPluginException] Plugin Search could not be found.
+Exception Attributes: array (
+  'plugin' => 'Search',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(367): CakePlugin::path('Search')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(228): App::pluginPath('Search')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(100): class_exists('PrgComponent')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Search.Prg', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-18 14:41:38 Error: [MissingPluginException] Plugin Search could not be found.
+Exception Attributes: array (
+  'plugin' => 'Search',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(367): CakePlugin::path('Search')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(228): App::pluginPath('Search')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(100): class_exists('PrgComponent')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Search.Prg', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-18 14:41:46 Error: [MissingPluginException] Plugin Search could not be found.
+Exception Attributes: array (
+  'plugin' => 'Search',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(367): CakePlugin::path('Search')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(228): App::pluginPath('Search')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(100): class_exists('PrgComponent')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Search.Prg', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-18 14:42:02 Error: [MissingPluginException] Plugin Search could not be found.
+Exception Attributes: array (
+  'plugin' => 'Search',
+)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(367): CakePlugin::path('Search')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(228): App::pluginPath('Search')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(549): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(100): class_exists('PrgComponent')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Search.Prg', Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(UniversitiesController))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-18 14:42:51 Error: Fatal Error (1): Unsupported operand types in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\CakePlugin.php, line 78]
+2014-12-18 14:42:51 Error: [InternalErrorException] Internal Server Error
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'C:\Users\Admini...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'C:\Users\Admini...', 78, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'C:\Users\Admini...', 78, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-18 14:43:12 Error: Fatal Error (1): Unsupported operand types in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\CakePlugin.php, line 78]
+2014-12-18 14:43:12 Error: [InternalErrorException] Internal Server Error
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'C:\Users\Admini...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'C:\Users\Admini...', 78, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'C:\Users\Admini...', 78, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-18 14:45:51 Error: Fatal Error (1): Unsupported operand types in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\CakePlugin.php, line 78]
+2014-12-18 14:45:51 Error: [InternalErrorException] Internal Server Error
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'C:\Users\Admini...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'C:\Users\Admini...', 78, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'C:\Users\Admini...', 78, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-18 14:46:22 Error: [MissingPluginException] Plugin AjaxMultipUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultipUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultipUploa...')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2014-12-18 14:46:35 Error: [MissingPluginException] Plugin AjaxMultipUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultipUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultipUploa...')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2014-12-18 14:47:33 Error: [MissingPluginException] Plugin AjaxMultipUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultipUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultipUploa...')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2014-12-18 14:59:03 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\admin_edit.ctp, line 147]
+2014-12-18 14:59:03 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 147)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 147, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 147, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-18 15:22:28 Error: Fatal Error (4): syntax error, unexpected '>' in [C:\Users\Administrator\Documents\klu\zs_new\app\Plugin\AjaxMultiUpload\View\Helper\UploadHelper.php, line 37]
+2014-12-18 15:22:28 Error: [FatalErrorException] syntax error, unexpected '>'
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 37, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 37, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-18 15:23:10 Error: Fatal Error (4): syntax error, unexpected '$url' (T_VARIABLE) in [C:\Users\Administrator\Documents\klu\zs_new\app\Plugin\AjaxMultiUpload\View\Helper\UploadHelper.php, line 38]
+2014-12-18 15:23:10 Error: [FatalErrorException] syntax error, unexpected '$url' (T_VARIABLE)
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 38, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 38, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-18 15:42:48 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/files/University/394/1418913717Hydrangeas.jpg  WHERE `UniversitiesPhoto`.`unive' at line 1
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('UPDATE `zs_new`...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\Database\Mysql.php(382): DboSource->execute('UPDATE `zs_new`...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2380): Mysql->update(Object(UniversitiesPhoto), Array, NULL, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(595): Model->updateAll(Array, Array)
+#5 [internal function]: UniversitiesController->admin_edit('394')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-12-18 15:43:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '$plik' in 'field list'
+Request URL: /admin/universities/edit/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('UPDATE `zs_new`...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\Database\Mysql.php(382): DboSource->execute('UPDATE `zs_new`...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2380): Mysql->update(Object(UniversitiesPhoto), Array, NULL, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(595): Model->updateAll(Array, Array)
+#5 [internal function]: UniversitiesController->admin_edit('394')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

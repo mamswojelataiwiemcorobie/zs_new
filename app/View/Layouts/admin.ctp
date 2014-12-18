@@ -8,7 +8,7 @@
 		echo $this->Html->css('bootstrap.css');
         echo $this->Html->css(array('admin'));
         echo $this->fetch('css');
-				echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js');
+		echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js');
 		echo $this->Html->script('/js/tinymce/tinymce.min');
     ?>
 	<script type="text/javascript">
@@ -46,8 +46,9 @@
     </div>
             
     </div>
+
 	<?php
-		echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js');
+		//echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js');
 		echo $this->Html->script('https://www.google.com/jsapi');
 		echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js');
 
@@ -58,7 +59,7 @@
 		echo $this->Html->script('bootstrap.js');
 	?>
 	
-	<script type="text/javascript" src="/js/admin/jquery.form.js"></script>
 	<script type="text/javascript" src="/js/admin.js"></script>
+
 </body>
 </html>

@@ -30,7 +30,7 @@
 			<?php echo $this->Form->hidden('UniversitiesParameter.id', array('value' => $this->data['UniversitiesParameter']['id']));
 			echo $this->Form->hidden('UniversitiesParameter.university_id', array('value' => $this->data['University']['id']));?>
 			<label class="col-sm-2 control-label">www</label>
-			<?php echo $this->Form->input('UniversitiesParameter.www', array( 'label' => false, 'div' => 'col-sm-10', 'type' => 'url', 'class'=> 'form-control'));?>
+			<?php //echo $this->Form->input('UniversitiesParameter.www', array( 'label' => false, 'div' => 'col-sm-10', 'type' => 'url', 'class'=> 'form-control'));?>
 		</div>
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Adres</label>
@@ -98,6 +98,18 @@
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Galeria</label>
 			<div class="col-sm-10">
+				<?php if (isset($this->request->data['galeria'])) :?>
+					<?php foreach($this->request->data['galeria'] as $image):?>
+						<img src="/miniatura/200x200/uploads/<?php echo  $image; ?>"/>
+					<?php endforeach;?>
+				<?php endif;?>
+				<?php echo $this->Upload->edit('University', $this->Form->fields['University.id']);?>
+			</div>
+		</div>
+
+		<!-- <div class="form-group">
+			<label class="col-sm-2 control-label">Galeria</label>
+			<div class="col-sm-10">
 				<div class="jsimageupload_multi">
 				<?php if (!empty($this->request->data['galeria'])) :
 					foreach ($this->request->data['galeria'] as $gal) :?>
@@ -108,7 +120,7 @@
 					<?php endforeach;?>
 				<?php endif;?>
 			</div>
-		</div>
+		</div> -->
 		<div class="form-group">
 			<label class="col-sm-2">Stypendium sportowe</label>
 			<?php echo $this->Form->input('UniversitiesParameter.s_sport', array( 'label' => false, 'div' => 'col-sm-10'));?>

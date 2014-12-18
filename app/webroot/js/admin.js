@@ -1,9 +1,8 @@
 $(function(){
 	if ($('input.date').size() > 0) $('input.date').not('.hasDatepicker').datepicker({dateFormat:'dd/mm/yy'});
-	if ($('.jsimageupload_single, .jsimageupload_multi').size() > 0) {
+	/*if ($('.jsimageupload_single, .jsimageupload_multi').size() > 0) {
 		imageupload.init();
-	}
-	if ($('a.addRow').size() > 0) $('a.addRow').click(formularzObiektu.dodajWiersz);
+	}*/
 	$('.delimage').click(imageupload.delimage);
 });
 
@@ -22,15 +21,22 @@ var imageupload = {
 	},
 	prepare_upload_multi: function(_input) {
 		_input.live('change', function(){
+			alert('hoho');
 			_input.parent().after('<img src="/loader.gif"/>');
+			$.getJSON( "/ajaximage.php", function( data ) { console.log(data);});
 			$(".imageform_multi").ajaxForm(function(a,b,c){
+				//$.getJSON( "/ajaximage.php", function( data ) { console.log(data);});
+				alert('koko');
 				_input.parents('form').get(0).reset();
+				alert('jojoo');
 				$(_input.parent().get(0).nextSibling).remove();
+				alert('kojkhjkjkko');
 				if (a.status && a.status == 1)  {
+					alert('kkkkokjhvjo');
 					_input.parent().parent().after('<div class="uimage"><input type="hidden" name="galeria[]" value="'+a.imagename+'"/><img src="/miniatura/200x200/uploads/'+a.imagename+'"/><div class="buttons"><span class="leftimage"> &laquo; </span><span class="delimage">usuń</span><span class="rightimage"> &raquo; </span></div></div>');
 					imageupload.prepare_buttons();
 				} else {
-					alert('Błąd: '+a.msg);
+					alert('Błąd: '+a);
 				}
 			}).submit();
 		});
@@ -76,37 +82,6 @@ function potwierdz_usuniecie() {
 	return confirm('Czy na pewno chcesz usunąć?');
 }
 
-
-var formularzObiektu = {
-	dodajWiersz:function(e){
-		var mrow = $(e.target).parents('tr').eq(0);
-		var ls = mrow.parent().children('.'+mrow.attr('class')).eq(-1);
-		var nrow = ls.clone();
-		nrow.find('a.addRow').remove();
-		nrow.children().eq(0).text('');
-		nrow.find('input,textarea,select').not('input[type="radio"],input[type="checkbox"]').val('');
-		nrow.find('input[type="radio"],input[type="checkbox"]').attr('checked',false);
-		nrow.find('input,textarea').each(function(i){
-			if (this.id) this.id = this.id.replace(/(par[0-9]+_)([0-9]+)/,'$1'+(parseInt(this.id.match(/par[0-9]+_([0-9]+)/)[1])+1));
-			if (this.name) this.name = this.name.replace(/(parametry\[[0-9]+\])(\[[0-9]+\])/,'$1['+(parseInt(this.name.match(/parametry\[[0-9]+\]\[([0-9]+)\]/)[1])+1)+']');
-		});
-		nrow.find('label').each(function(i){
-			if ($(this).attr('for')) //$(this).attr('for',$(this).attr('for').replace(/(par[0-9]+_)([0-9]+)/,'$1'+$(this).attr('for').match(/par[0-9]+_([0-9]+)/)[1]+1));
-			$(this).attr('for',$(this).attr('for').replace(/(par[0-9]+_)([0-9]+)/,'$1'+(parseInt($(this).attr('for').match(/par[0-9]+_([0-9]+)/)[1])+1)));
-		});
-		nrow.find('.hasDatepicker').removeClass('hasDatepicker');
-		/*var nfs = nrow.find('input[class="fi-multi"]');
-		if (nfs.size() > 0) nfs.each(function(){
-			var _name = $(this).attr('name');
-			var nm = _name.match(/(^.*)((?:\[([0-9]+)\]\[\]$)|(?:\[([0-9]+)\]$))/);
-			var nkey = parseInt(nm[2].match(/[0-9]+/)) + 1;
-			var sn = nm[1]+nm[2].replace(/[0-9]+/,nkey);
-			$(this).attr('name',sn);
-		});*/
-		nrow.insertAfter(ls);
-		$('input.date').not('.hasDatepicker').datepicker({dateFormat:'dd/mm/yy'});
-	}
-}
 
 $(function(){
 	$('.gmap-overflow-call').click(m_gmap.call);

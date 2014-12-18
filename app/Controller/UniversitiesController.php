@@ -2,13 +2,15 @@
 App::uses('AppController', 'Controller', 'UniversitiesController', 'CourseonUniversity');
 
 class UniversitiesController extends AppController {
-	public $helpers = array('Cache');
-	public $components = array('Paginator',  'Search.Prg');
+	public $helpers = array('Cache', 'AjaxMultiUpload.Upload');
+	public $components = array('Paginator');
 	public $cacheAction = array(
 	    'view' => 36000,
 	    'index'  => 48000
 	);
 	//public $components = array('DataTable');
+
+
 
 	public function index() {
 	
@@ -585,6 +587,14 @@ class UniversitiesController extends AppController {
 				} else { 
 					$this->request->data['logo'] = $university['logo'];
 				}
+				if (!empty($this->request->data['galeria'])) {
+					foreach ($this->request->data['galeria'] as $plik) {
+						$this->University->UniversitiesPhoto->updateAll(
+						    array('UniversitiesPhoto.typ' => "'galeria'", 'UniversitiesPhoto.path' => "'".$plik."'"),
+						    array('UniversitiesPhoto.university_id' => $id)
+						);
+					}
+				}
 				//unlink($photo['tmp_name']); 
 
                 if ($this->University->saveAssociated($this->request->data)) {
@@ -596,7 +606,7 @@ class UniversitiesController extends AppController {
             } 
            
             $this->request->data = $university;
-            //Debugger::dump( $this->request->data);
+            Debugger::dump( $this->request->data);
     }
 	
 	public function admin_add() {

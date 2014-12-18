@@ -7,6 +7,7 @@ class UsersController extends AppController {
         parent::beforeFilter();
          // Allow users to register and logout.
 		$this->Auth->allow('login');
+        $this->Session->write('uida', 1);
     }
 
     public function index() {

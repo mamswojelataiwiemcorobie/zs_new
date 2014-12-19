@@ -13,7 +13,7 @@
     ?>
 	<script type="text/javascript">
 	tinymce.init({
-		selector: "textarea",
+		selector: "textarea.wysiwig",
 		 plugins: "code",
 		toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons",
 	 });

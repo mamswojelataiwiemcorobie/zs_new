@@ -9,7 +9,8 @@ class University extends AppModel {
 	public $hasMany = array('UniversitiesPhoto' => array('className' => 'UniversitiesPhoto',
             											'foreignKey' => 'university_id'),
             				'CourseonUniversity'  => array('className' => 'CourseonUniversity',
-            											'foreignKey' => 'university_id'));
+            											'foreignKey' => 'university_id'),
+            				'Faculty');
 	//public $displayField = 'nazwa';
 
 	public $filterArgs = array(
@@ -31,6 +32,25 @@ class University extends AppModel {
             )
         );
         return $condition;
+    }
+
+    public function saveFile($photo, $path, $university_id) {
+    	//Debugger::dump($photo);
+		if ($this->saveF($photo, $path)) {
+			$this->UniversitiesPhoto->create();
+			if ($this->UniversitiesPhoto->save(
+				    array('UniversitiesPhoto.typ' => "'logo'", 'UniversitiesPhoto.path' => "'".$path."'",'UniversitiesPhoto.university_id' => $university_id)
+			)) Debugger::dump('aaa');
+			else Debugger::dump($this->UniversitiesPhoto->validationErrors);Debugger::dump($this->UniversitiesPhoto->invalidFields());
+			return true;
+		} else return false;
+	}
+
+	 public function saveF($photo, $path) {
+		if(!move_uploaded_file($photo['tmp_name'], $path)){
+            return false;
+        }
+        return true;
     }
 
 	function szukajUczelniQuery($p) {

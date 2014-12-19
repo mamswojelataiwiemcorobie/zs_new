@@ -176,39 +176,23 @@ class CourseonUniversitiesController extends AppController {
 			throw new NotFoundException(__('Invalid post'));
 		}			
 		$this->CourseonUniversity->contain('Course');
-				$db = $this->CourseonUniversity->find('all', array(
-				'order' => array('Course.nazwa', 'CourseonUniversity.typ_course_id'), 
-				'conditions' => array('CourseonUniversity.university_id' => $university_id)));
-				foreach ($db as $d) {
-					switch ($d['Course']['courses_type_id']) {
-						case 1:
-							$typ='Artystyczne'; break;
-						case 2:
-							$typ='Ekonomiczne'; break;
-						case 3:
-							$typ='Humanistyczne'; break;
-						case 4:
-							$typ='Przyrodnicze'; break;
-						case 5:
-							$typ='Techniczne'; break;
-						case 6:
-							$typ='Inne'; break;
-						default:
-							$typ = ''; break;
-					}
-					//$kursy[$d['Course']['courses_type_id']]['nazwa_typ']= $typ;
-					$kursy[$d['Course']['id']]['course_id']['course_id']= $d['Course']['id'];
-					$kursy[$d['Course']['id']]['nazwa']['nazwa']= $d['Course']['nazwa'];
-					
-					$kursy[$d['Course']['id']][$d['CourseonUniversity']['id']]['id']= $d['CourseonUniversity']['id'];
-					$kursy[$d['Course']['id']][$d['CourseonUniversity']['id']]['typ_course_id']= $d['CourseonUniversity']['typ_course_id'];
-					$kursy[$d['Course']['id']][$d['CourseonUniversity']['id']]['tryb_course_id']= $d['CourseonUniversity']['tryb_course_id'];
-					$kursy[$d['Course']['id']][$d['CourseonUniversity']['id']]['cena']= $d['CourseonUniversity']['cena'];
-					$kursy[$d['Course']['id']][$d['CourseonUniversity']['id']]['pakiet']= $d['CourseonUniversity']['pakiet'];
-					$kursy[$d['Course']['id']][$d['CourseonUniversity']['id']]['srednia']= $d['CourseonUniversity']['srednia'];
-				}
+		$db = $this->CourseonUniversity->find('all', array('limit'=>10,
+			'order' => array('Course.nazwa', 'CourseonUniversity.faculty_id'), 
+			'conditions' => array('CourseonUniversity.university_id' => $university_id)));
+		$this->CourseonUniversity->University->Faculty->contain();
+		$wydzialy = $this->CourseonUniversity->University->Faculty->find('all', array('fields'=>array('id', 'nazwa'),
+																						'conditions'=>array('Faculty.university_id'=>$university_id)));
+		$wydzialy = Hash::combine($wydzialy, '{n}.Faculty.id', '{n}.Faculty.nazwa');
+		//$kursy_nazwy = $this->CourseonUniversity->Course->find('all', array('conditions'=>array('university_id'=>$university_id)));
+		foreach ($db as $d) {
+			$nazwy_kursow[$d['Course']['id']] = $d['Course']['nazwa'];
+			
+			$kursy[$d['CourseonUniversity']['faculty_id']][$d['Course']['id']][$d['CourseonUniversity']['course_type_id']][$d['CourseonUniversity']['course_mode_id']]= 1;
+		}
 				
 		$this->set('kursy', $kursy);
+		$this->set('wydzialy', $wydzialy);
+		$this->set('nazwy_kursow', $nazwy_kursow);
 		$this->set('university', $university_id);
 	}
 	

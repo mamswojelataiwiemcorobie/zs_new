@@ -30,7 +30,7 @@
 			<?php echo $this->Form->hidden('UniversitiesParameter.id', array('value' => $this->data['UniversitiesParameter']['id']));
 			echo $this->Form->hidden('UniversitiesParameter.university_id', array('value' => $this->data['University']['id']));?>
 			<label class="col-sm-2 control-label">www</label>
-			<?php //echo $this->Form->input('UniversitiesParameter.www', array( 'label' => false, 'div' => 'col-sm-10', 'type' => 'url', 'class'=> 'form-control'));?>
+			<?php echo $this->Form->input('UniversitiesParameter.www', array( 'label' => false, 'div' => 'col-sm-10', 'type' => 'url', 'class'=> 'form-control'));?>
 		</div>
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Adres</label>
@@ -84,14 +84,19 @@
 				<?php echo $this->Form->input('UniversitiesParameter.lokalizacja_y', array( 'label' => false, 'div' => 'col-sm-8', 'class'=> 'gmap-lat form-control'));?>
 			</div>
 		</div>
-		<div class="form-group">
+		<!-- <div class="form-group">
 			<label class="col-sm-2 control-label">Logo</label>
 			<div class="col-sm-10">
 				<?php $this->Form->error( 'avatar' );?>
-				<div class="jsimageupload_single"></div>
-				<div class="uimage">
-					<input type="hidden" name="logo" value="<?php echo  $this->request->data['logo']; ?>"/>
-					<img src="/miniatura/200x200/uploads/<?php echo  $this->request->data['logo']; ?>"/><span class="delimage">x</span>
+				<?php
+				if(!empty( $this->request->data['logo'])): ?>
+					<div class="input col-sm-6">
+						<label>Obecne logo:</label>
+						<img src="/uploads/<?php echo  $this->request->data['logo']; ?>" width="200" />
+					</div>
+				<?php endif;?>
+				<div class="col-sm-6">
+					<?php echo  $this->Form->input('Loga.logo', array('label'=>'Załaduj inne logo:', 'type'=>'file'));	?>
 				</div>
 			</div>
 		</div>
@@ -105,7 +110,7 @@
 				<?php endif;?>
 				<?php echo $this->Upload->edit('University', $this->Form->fields['University.id']);?>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- <div class="form-group">
 			<label class="col-sm-2 control-label">Galeria</label>
@@ -122,16 +127,60 @@
 			</div>
 		</div> -->
 		<div class="form-group">
-			<label class="col-sm-2">Stypendium sportowe</label>
-			<?php echo $this->Form->input('UniversitiesParameter.s_sport', array( 'label' => false, 'div' => 'col-sm-10'));?>
+			<label class="col-sm-2 control-label">Zakladka1</label>
+			<?php echo $this->Form->input('UniversitiesParameter.zakladka1', array( 
+				'label' => false, 'type'=>'textarea', 'div' => 'col-sm-10', 'class'=> 'form-control wysiwig'
+				) 
+			); ?>
 		</div>
 		<div class="form-group">
-			<label class="col-sm-2">Stypendium rektora</label>
-			<?php echo $this->Form->input('UniversitiesParameter.s_rektora', array( 'label' => false, 'div' => 'col-sm-10'));?>
+			<label class="col-sm-2 control-label">Zakladka2</label>
+			<?php echo $this->Form->input('UniversitiesParameter.zakladka2', array( 
+				'label' => false, 'type'=>'textarea', 'div' => 'col-sm-10', 'class'=> 'form-control wysiwig'
+				) 
+			); ?>
 		</div>
 		<div class="form-group">
-			<label class="col-sm-2">Ranking</label>
-			<?php echo $this->Form->input('UniversitiesParameter.ranking', array( 'label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
+			<label class="col-sm-2 control-label">Zakladka3</label>
+			<?php echo $this->Form->input('UniversitiesParameter.zakladka3', array( 
+				'label' => false, 'type'=>'textarea', 'div' => 'col-sm-10', 'class'=> 'form-control wysiwig'
+				) 
+			); ?>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Zakladka4</label>
+			<?php echo $this->Form->input('UniversitiesParameter.zakladka4', array( 
+				'label' => false, 'type'=>'textarea', 'div' => 'col-sm-10', 'class'=> 'form-control wysiwig'
+				) 
+			); ?>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2">Nazwa zakładki 1</label>
+			<?php echo $this->Form->input('UniversitiesParameter.nzakladki1', array( 'label' => false, 'div' => 'col-sm-10'));?>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2">Nazwa zakładki 2</label>
+			<?php echo $this->Form->input('UniversitiesParameter.nzakladki2', array( 'label' => false, 'div' => 'col-sm-10'));?>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2">Nazwa zakładki 3</label>
+			<?php echo $this->Form->input('UniversitiesParameter.nzakladki3', array( 'label' => false, 'div' => 'col-sm-10'));?>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2">Nazwa zakładki 4</label>
+			<?php echo $this->Form->input('UniversitiesParameter.nzakladki4', array( 'label' => false, 'div' => 'col-sm-10'));?>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2">Tagi</label>
+			<?php echo $this->Form->input('UniversitiesParameter.tagi', array( 'label' => false, 'type'=>'textarea', 'div' => 'col-sm-10'));?>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2">Meta description</label>
+			<?php echo $this->Form->input('UniversitiesParameter.meta_description', array( 'label' => false, 'type'=>'textarea', 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2">Meta keywords</label>
+			<?php echo $this->Form->input('UniversitiesParameter.meta_keywords', array( 'label' => false, 'type'=>'textarea', 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
 		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">

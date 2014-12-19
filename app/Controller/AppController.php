@@ -51,7 +51,7 @@ class AppController extends Controller {
 		'Cookie',
     );
 
-	function beforeFilter() {
+	public function beforeFilter() {
         parent::beforeFilter();
 		if ((isset($this->params['prefix']) && ($this->params['prefix'] == 'admin')) || ($this->params['controller'] == 'users')) {
 			$this->layout = 'admin';

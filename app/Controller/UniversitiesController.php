@@ -561,40 +561,35 @@ class UniversitiesController extends AppController {
 					array_push($university['galeria'], $photo['path']);
 				}
 			}
-			$university = Set::remove($university, 'UniversitiesPhoto');
+			//$university = Set::remove($university, 'UniversitiesPhoto');
+			//Debugger::dump( $university);
 
 			
             if ($this->request->is('post') || $this->request->is('put')) {
 				//Debugger::dump($this->request->data);
                 $filename = strtotime('now');
                 
-				$photo = $this->request->data['logo'];
-				
-				
-				$path = "/img/uczelnie_min/";
+							
+				$path = "/uploads/";
 				$dir = getcwd().$path;
-				
-				if(!empty($photo['name'])) {
-					if (in_array($photo['type'], array('image/jpeg','image/pjpeg','image/png'))) {
-					
-						$img = $this->University->resize_image($photo, 200, 200);
-						$photoFile = "$dir$id.png";
-						imagepng($img, $photoFile);	
-						$this->request->data['logo'] = $id.'.png';				
-					} else {
-						$this->Session->setFlash(__('Proszę przesłać plik w formacie JPG albo PNG'));
-					}
-				} else { 
-					$this->request->data['logo'] = $university['logo'];
-				}
+				$this->University->UniversitiesPhoto->deleteAll(array('UniversitiesPhoto.university_id' => $id), false);
+				/*if(!empty($this->request->data['Loga']['logo'])) {
+					$photo = $this->request->data['Loga']['logo'];
+					$filename = time().$photo['name'];
+					$photo_path= WWW_ROOT . $path . $filename;
+					//Debugger::dump($photo_path);
+					if(!($this->University->saveFile($photo, $photo_path, $id)) )$this->Session->setFlash(__('Nie udało się zapisać loga'));;
+				} 
 				if (!empty($this->request->data['galeria'])) {
 					foreach ($this->request->data['galeria'] as $plik) {
-						$this->University->UniversitiesPhoto->updateAll(
-						    array('UniversitiesPhoto.typ' => "'galeria'", 'UniversitiesPhoto.path' => "'".$plik."'"),
-						    array('UniversitiesPhoto.university_id' => $id)
-						);
+						//Debugger::dump($plik);
+						$this->University->UniversitiesPhoto->create();
+						if ($this->University->UniversitiesPhoto->save(
+						    array('UniversitiesPhoto.university_id' => $id, 'typ' => 'galeria', 'UniversitiesPhoto.path' => "'".$plik."'"))) {
+								//$this->Session->setFlash('Recipe Saved!');
+						} else $this->Session->setFlash('nooooo!');
 					}
-				}
+				}*/
 				//unlink($photo['tmp_name']); 
 
                 if ($this->University->saveAssociated($this->request->data)) {
@@ -606,7 +601,7 @@ class UniversitiesController extends AppController {
             } 
            
             $this->request->data = $university;
-            Debugger::dump( $this->request->data);
+            //Debugger::dump( $this->request->data);
     }
 	
 	public function admin_add() {

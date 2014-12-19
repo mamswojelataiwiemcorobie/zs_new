@@ -18,6 +18,7 @@ class UploadHelper extends AppHelper {
 				
 		$directory = $results['directory'];
 		$baseUrl = $results['baseUrl'];
+		$baseUrl_baza = $results['baseUrl2'];
 		$files = $results['files'];
 
 		$str = "<dt>" . __("Files") . "</dt>\n<dd>";
@@ -26,16 +27,17 @@ class UploadHelper extends AppHelper {
 		foreach ($files as $file) {
 			$type = pathinfo($file, PATHINFO_EXTENSION);
 			$filesize = $this->format_bytes (filesize ($file));
-			$f = time().basename($file);
+			$f = basename($file);
 			$url = $baseUrl . "/$f";
+			$url_baza = $baseUrl_baza . "/$f";
 			if ($edit) {
 				$baseEncFile = base64_encode ($file);
 				$delUrl = "$webroot/uploads/delete/$baseEncFile/";			
 				$str .= "<a href='$delUrl'><img src='" . Router::url("/") . 
 					"ajax_multi_upload/img/delete.png' alt='Delete' /></a> ";
 			}
-			$str .= '<input type="hidden" name="galeria[]" value="'.$url .'"/>';
-			$str .= "<img src='" . Router::url("/") . "miniatura/200x200/".$url  ."'/> ";
+			$str .= '<input type="hidden" name="galeria[]" value="'.$url_baza .'"/>';
+			$str .= "<img src='/miniatura/200x200".$url  ."'/> ";
 			$str .= "<a href='$url'>" . $f . "</a> ($filesize)";
 			$str .= "<br />\n";
 		}
@@ -50,8 +52,9 @@ class UploadHelper extends AppHelper {
 		$lastDir = $this->last_dir ($model, $id);
 		$directory = WWW_ROOT . DS . $dir . DS . $lastDir;
 		$baseUrl = Router::url("/") . $dir . "/" . $lastDir;
+		$baseUrl2 = $dir . "/" . $lastDir;
 		$files = glob ("$directory/*");
-		return array("baseUrl" => $baseUrl, "directory" => $directory, "files" => $files);
+		return array("baseUrl" => $baseUrl, "baseUrl2" => $baseUrl2, "directory" => $directory, "files" => $files);
 	}
 
 	public function edit ($model, $id) {

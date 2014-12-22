@@ -3,9 +3,17 @@
 	<h1><?php echo __('Dodaj kierunek uczelni'); ?></h1>
 
 <?php echo $this->Form->create('CourseonUniversity'); ?>
-
 	<div class="form-horizontal" role="form">	
+			<div class="form-group">
+				<label class="col-sm-2">Wydział</label>
 
+				<?php echo $this->Form->select('CourseonUniversity.faculty_id', $faculties,array('size' => 12) );?>
+			</div> 
+			<div class="col-sm-offset-2 col-sm-10">
+
+				<?php	echo $this->Html->link("Dodaj wydział", array('action'=>'add_faculties', $university)); ?>
+
+			</div>
 			<div class="form-group">
 
 				<?php echo $this->Form->hidden('university_id', array('value' => $university));?>

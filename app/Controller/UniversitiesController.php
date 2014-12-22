@@ -524,13 +524,14 @@ class UniversitiesController extends AppController {
             $keywords = mb_strtolower($this->passedArgs['Search.keywords'], 'UTF-8');
 			//Debugger::dump($keywords);
             $this->paginate = array(
+            	'limit' =>10,
                 'conditions' => array(
                     'LOWER(University.nazwa) LIKE' => "%$keywords%",
                 )
             );
         } else { 
 			$this->paginate = array(
-				'limit' => 15,
+				'limit' => 2,
 				'order' => array('University.abonament'=> 'desc', 'University.nazwa' => 'asc' ),
 				'contain' => array('UniversitiesParameter', 'UniversityType')
 			);

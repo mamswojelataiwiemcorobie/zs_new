@@ -6,11 +6,10 @@
 				<tr>
 					<th>ID</th>
 					<th><?php echo $this->Paginator->sort('nazwa', 'Nazwa');?>  </th>
-					<th><?php echo $this->Paginator->sort('CoursesType.nazwa', 'Typ');?>  </th>
-					<th><?php echo $this->Paginator->sort('placa', 'Płaca');?></th>
-					<th><?php echo $this->Paginator->sort('opis', 'Opis');?></th>
-					<th><?php echo $this->Paginator->sort('srednia', 'średnia');?></th>
-					<th><?php echo $this->Paginator->sort('rank', 'rank');?></th>
+					<th><?php echo $this->Paginator->sort('CoursesCategory.nazwa', 'kategoria');?>  </th>
+					<th><?php echo $this->Paginator->sort('UniversityType.nazwa', 'Typ');?>  </th>
+					<!-- <th><?php echo $this->Paginator->sort('opis1', 'Opis');?></th>
+					<th><?php echo $this->Paginator->sort('opis2', 'Opis2');?></th> -->
 					<th>Actions</th>
 				</tr>
 			</thead>
@@ -18,15 +17,13 @@
 				<?php foreach($courses as $course): ?>                
 					<td><?php echo $course['Course']['id']; ?></td>
 					<td><?php echo $this->Html->link( $course['Course']['nazwa']  ,   array('action'=>'edit', $course['Course']['id']),array('escape' => false) );?></td>
-					<td><?php echo $course['CoursesType']['nazwa']; ?></td>
-					<td><?php echo $course['Course']['placa']; ?></td>
-					<td><?php echo $course['Course']['opis']; ?></td>
-					<td><?php echo $course['Course']['srednia']; ?></td>
-					<td><?php echo $course['Course']['rank']; ?></td>
+					<td><?php echo $course['CoursesCategory']['nazwa']; ?></td>
+					<td><?php echo $course['UniversityType']['nazwa']; ?></td>
+					<!-- <td><?php echo $course['Course']['opis1']; ?></td>
+					<td><?php echo $course['Course']['opis2']; ?></td> -->
 					<td >
 					<?php 	echo $this->Html->link(    "Edit",   array('action'=>'edit', $course['Course']['id']) ); ?> | 
-					<?php	echo $this->Html->link(    "Delete", array('action'=>'delete', $course['Course']['id'])); ?> |
-					<?php 	echo $this->Html->link(    "Zawody", array('controller'=> 'professions_courses', 'action'=>'lista', $course['Course']['id']));	?>
+					<?php	echo $this->Html->link(    "Delete", array('action'=>'delete', $course['Course']['id'])); ?> 
 					</td>
 				</tr>
 				<?php endforeach; ?>

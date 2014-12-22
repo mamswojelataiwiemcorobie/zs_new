@@ -46429,3 +46429,838 @@ Stack Trace:
 #3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-12-22 09:10:03 Error: [NotFoundException] Invalid post
+Request URL: /admin/courseon_universities/lista
+Stack Trace:
+#0 [internal function]: CourseonUniversitiesController->admin_lista()
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(CourseonUniversitiesController), Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 10:31:53 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php, line 242]
+2014-12-22 10:31:53 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 242)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 242, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 242, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 10:32:20 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'university_id' in where clause is ambiguous
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('DELETE `Courseo...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\Database\Mysql.php(422): DboSource->execute('DELETE `Courseo...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2532): Mysql->delete(Object(CourseonUniversity), Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php(236): Model->deleteAll(Array, false)
+#5 [internal function]: CourseonUniversitiesController->admin_update()
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(CourseonUniversitiesController), Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-12-22 10:34:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'university_id' in where clause is ambiguous
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('DELETE `Courseo...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\Database\Mysql.php(422): DboSource->execute('DELETE `Courseo...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2532): Mysql->delete(Object(CourseonUniversity), Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php(236): Model->deleteAll(Array, false)
+#5 [internal function]: CourseonUniversitiesController->admin_update()
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(CourseonUniversitiesController), Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-12-22 10:45:49 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php, line 249]
+2014-12-22 10:45:49 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 249)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 249, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 249, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 10:48:32 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 10:57:49 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php, line 248]
+2014-12-22 10:57:49 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 248)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 248, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 248, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 10:58:02 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:04:37 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:05:03 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:06:12 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:07:07 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:09:08 Error: Fatal Error (1): Call to undefined function clear() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php, line 250]
+2014-12-22 11:09:08 Error: [FatalErrorException] Call to undefined function clear()
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 250)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 250, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 250, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 11:09:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'clear' at line 1
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('clear', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('clear', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('clear', Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(799): DboSource->query('clear', Array, Object(CourseonUniversity))
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php(250): Model->__call('clear', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php(250): CourseonUniversity->clear()
+#7 [internal function]: CourseonUniversitiesController->admin_update()
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(CourseonUniversitiesController), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-22 11:13:28 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:15:35 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php, line 244]
+2014-12-22 11:15:35 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 244)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 244, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 244, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 11:15:50 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:17:14 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:18:57 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:19:42 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:20:06 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:22:04 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:23:14 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:30:23 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'id_jezyk' doesn't have a default value
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `zs...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `zs...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1744): DboSource->create(Object(CourseonUniversity), Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php(246): Model->save(Array)
+#5 [internal function]: CourseonUniversitiesController->admin_update()
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(CourseonUniversitiesController), Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-12-22 11:31:03 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:31:56 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:34:53 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php, line 231]
+2014-12-22 11:34:53 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /admin/courseon_universities/lista/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 231)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 231, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 231, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 11:47:26 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:49:29 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:49:39 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:49:56 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:53:53 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:54:28 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:55:20 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 11:55:42 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\CourseonUniversities\\admin_update.ctp',
+)
+Request URL: /admin/courseon_universities/update
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-22 12:01:52 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php, line 339]
+2014-12-22 12:01:52 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /admin/courseon_universities/addm/394/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 339)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 339, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 339, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 12:04:06 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php, line 338]
+2014-12-22 12:04:06 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /admin/courseon_universities/addm/394/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 338)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 338, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 338, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 12:20:42 Error: [MissingActionException] Action CourseonUniversitiesController::admin_deletefaculty() could not be found.
+Exception Attributes: array (
+  'controller' => 'CourseonUniversitiesController',
+  'action' => 'admin_deletefaculty',
+)
+Request URL: /admin/courseon_universities/deletefaculty/32/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-22 12:20:53 Error: [MissingActionException] Action CourseonUniversitiesController::admin_delete_course() could not be found.
+Exception Attributes: array (
+  'controller' => 'CourseonUniversitiesController',
+  'action' => 'admin_delete_course',
+)
+Request URL: /admin/courseon_universities/delete_course/32/1035/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-22 12:45:08 Error: [MissingActionException] Action CourseonUniversitiesController::admin_add_faculties() could not be found.
+Exception Attributes: array (
+  'controller' => 'CourseonUniversitiesController',
+  'action' => 'admin_add_faculties',
+)
+Request URL: /admin/courseon_universities/add_faculties/394/model:University
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-22 12:50:29 Error: [MissingControllerException] Controller class UniversityController could not be found.
+Exception Attributes: array (
+  'class' => 'UniversityController',
+  'plugin' => NULL,
+)
+Request URL: /admin/University/add_faculties/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 12:59:03 Error: [MissingControllerException] Controller class UniversityController could not be found.
+Exception Attributes: array (
+  'class' => 'UniversityController',
+  'plugin' => NULL,
+)
+Request URL: /admin/University/add_faculties/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 12:59:51 Error: [MissingControllerException] Controller class UniversityController could not be found.
+Exception Attributes: array (
+  'class' => 'UniversityController',
+  'plugin' => NULL,
+)
+Request URL: /admin/University/add_faculties/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 13:01:00 Error: [MissingControllerException] Controller class UniversityController could not be found.
+Exception Attributes: array (
+  'class' => 'UniversityController',
+  'plugin' => NULL,
+)
+Request URL: /admin/University/add_faculties/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 13:01:40 Error: [MissingActionException] Action UniversitiesController::admin_add_faculties() could not be found.
+Exception Attributes: array (
+  'controller' => 'UniversitiesController',
+  'action' => 'admin_add_faculties',
+)
+Request URL: /admin/Universities/add_faculties/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-22 13:01:59 Error: [MissingActionException] Action UniversitiesController::admin_add_faculties() could not be found.
+Exception Attributes: array (
+  'controller' => 'UniversitiesController',
+  'action' => 'admin_add_faculties',
+)
+Request URL: /admin/universities/add_faculties/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-22 13:13:10 Error: [MissingActionException] Action UniversitiesController::admin_add_faculties() could not be found.
+Exception Attributes: array (
+  'controller' => 'UniversitiesController',
+  'action' => 'admin_add_faculties',
+)
+Request URL: /admin/universities/add_faculties/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-22 13:14:13 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php, line 354]
+2014-12-22 13:14:13 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /admin/courseon_universities/lista/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 354)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 354, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 354, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 13:27:35 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php, line 387]
+2014-12-22 13:27:35 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /admin/courseon_universities/add_faculties/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 387)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 387, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 387, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 13:49:00 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php, line 356]
+2014-12-22 13:49:00 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /admin/courseon_universities/add_faculties/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 356)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 356, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 356, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 13:54:10 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php, line 12]
+2014-12-22 13:54:10 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /admin/faculties/add_faculties/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 12, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 12, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 13:55:45 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php, line 11]
+2014-12-22 13:55:45 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /admin/faculties/add_faculties/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 11, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 11, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 13:56:11 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'meta_title' doesn't have a default value
+Request URL: /admin/faculties/add_faculties/394
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `zs...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `zs...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1744): DboSource->create(Object(Faculty), Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php(12): Model->save(Array)
+#5 [internal function]: FacultiesController->admin_add_faculties('394')
+#6 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-12-22 14:11:09 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 807]
+2014-12-22 14:11:09 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /admin/courses
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 807)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 14:13:18 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Utility\Debugger.php, line 807]
+2014-12-22 14:13:18 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /admin/courses
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 807)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 807, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 14:23:06 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php, line 360]
+2014-12-22 14:23:06 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /admin/courses/edit/1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 360)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 360, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 360, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 14:29:56 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php, line 360]
+2014-12-22 14:29:56 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /admin/courses/edit/1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 360)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 360, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 360, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 14:30:30 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php, line 360]
+2014-12-22 14:30:30 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /admin/courses/edit/1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 360)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 360, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 360, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 14:30:57 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php, line 360]
+2014-12-22 14:30:57 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /admin/courses/edit/1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 360)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 360, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 360, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 14:57:04 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php, line 360]
+2014-12-22 14:57:04 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /admin/courses/edit/1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 360)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 360, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 360, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 15:03:03 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php, line 360]
+2014-12-22 15:03:03 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /admin/courses/edit/1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 360)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 360, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 360, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 15:06:14 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'srednia' at line 1
+Request URL: /admin/courses/edit/1
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('srednia', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('srednia', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('srednia', Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(799): DboSource->query('srednia', Array, Object(Course))
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php(345): Model->__call('srednia', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CoursesController.php(345): Course->srednia('1')
+#7 [internal function]: CoursesController->admin_edit('1')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(CoursesController), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CoursesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-22 15:33:45 Error: [MissingControllerException] Controller class CoursesCategoriesController could not be found.
+Exception Attributes: array (
+  'class' => 'CoursesCategoriesController',
+  'plugin' => NULL,
+)
+Request URL: /admin/courses_categories
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 15:33:53 Error: [MissingActionException] Action CourseonUniversitiesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'CourseonUniversitiesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin/courseon_universities/
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-22 15:33:55 Error: [MissingControllerException] Controller class CoursesCategoriesController could not be found.
+Exception Attributes: array (
+  'class' => 'CoursesCategoriesController',
+  'plugin' => NULL,
+)
+Request URL: /admin/courses_categories
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 15:34:03 Error: [MissingActionException] Action CourseonUniversitiesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'CourseonUniversitiesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin/courseon_universities/
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-22 15:34:04 Error: [MissingControllerException] Controller class CoursesCategoriesController could not be found.
+Exception Attributes: array (
+  'class' => 'CoursesCategoriesController',
+  'plugin' => NULL,
+)
+Request URL: /admin/courses_categories
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 15:34:07 Error: [MissingControllerException] Controller class CoursesCategoriesController could not be found.
+Exception Attributes: array (
+  'class' => 'CoursesCategoriesController',
+  'plugin' => NULL,
+)
+Request URL: /admin/courses_categories
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-22 15:34:50 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-22 15:34:50 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /admin/universities
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 15:35:37 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-22 15:35:37 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /admin/universities
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 15:42:28 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-22 15:42:28 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /admin/universities
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 15:51:59 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Route\CakeRoute.php, line 476]
+2014-12-22 15:51:59 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /admin/universities
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 476)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 476, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 476, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 15:59:53 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-22 15:59:53 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /admin/universities
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 16:00:28 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-22 16:00:28 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /admin/universities
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 16:03:49 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-22 16:03:49 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /admin/universities
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-22 16:10:34 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-12-22 16:10:34 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /admin/universities
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -225,80 +225,67 @@ class CourseonUniversitiesController extends AppController {
     }
 	
 	public function admin_update() {
-		$course = $this->request->data['c'];
-		$university_id = $this->request->data['course']['university_id'];
-		$course_id = $this->request->data['course']['course_id'];
-
-		foreach ($course as $conu_id => $cc) {
-			$i=0;
-			foreach ($cc as $c) {
-				if(($c['tryb_course_id'] == 0) or  ($c['typ_course_id'] == 0)) {
-				}else {
-					$i++;
-					$this->CourseonUniversity->contain();
-					$tenc =  $this->CourseonUniversity->findById($conu_id);
-					//Debugger::dump($tenc);
-					if ($i==1) {
-						if ($c['typ_course_id']==$tenc['CourseonUniversity']['typ_course_id'] && $c['tryb_course_id']==$tenc['CourseonUniversity']['tryb_course_id']) {
-							
-						} else {
-							$this->CourseonUniversity->id = $tenc['CourseonUniversity']['id'];
-							if($this->CourseonUniversity->save(
-								array('CourseonUniversity' => array('typ_course_id' => $c['typ_course_id'], 
-									'tryb_course_id' => $c['tryb_course_id']))
-							)) {
-								$this->Session->setFlash(__('Kierunek uczelni zaktualizowany'));
-							} else {
-								$this->Session->setFlash(__('NIe można zaktualizować kierunku'));
-							}
+		$faculties = $this->request->data['Faculties'];
+		$university_id = $this->request->data['CourseonUniversity']['university_id'];
+		//Debugger::dump($this->request->data['Faculties']);
+		$alldata =array();
+		foreach ($faculties as $faculty_id => $faculty) {
+			foreach ($faculty as $course_id => $course) {
+				foreach ($course as $course_type_id => $course_modes) {
+					foreach($course_modes as $course_mode_id => $reszta) {
+					
+						$this->CourseonUniversity->deleteAll(array('CourseonUniversity.university_id' =>$university_id, 'faculty_id' => $faculty_id), false);
+						
+						if ($reszta != 0) {
+							//$this->CourseonUniversity->create();
+							$data[] = array('CourseonUniversity'=> array('university_id'=>$university_id,
+																		'faculty_id' => $faculty_id,
+																		'course_id' => $course_id,
+																		'course_type_id' => $course_type_id,
+																		'course_mode_id' => $course_mode_id));
+							//$alldata = array_merge($alldata, $data);
 						}
-					} else {
-						//Debugger::dump(array($c['typ_course_id'], $c['tryb_course_id']));
-						$this->CourseonUniversity->create();
-						$data = array('CourseonUniversity' => array(
-												'university_id' => $university_id, 
-												'course_id' => $course_id, 
-												'typ_course_id' => $c['typ_course_id'], 
-												'tryb_course_id' => $c['tryb_course_id'],
-												'cena' => 0,
-												'srednia' => 0));
-						if ($this->CourseonUniversity->save($data)) {
-							$this->Session->setFlash(__('Kierunek uczelni został utworzony'));
-						} else {
-							$this->Session->setFlash(__('The user could not be created. Please, try again.'));
-						}   
 					}
 				}
 			}
 		}	
+		Debugger::dump($data);
+		if($this->CourseonUniversity->saveMany($data)) {
+				$this->Session->setFlash(__('Kierunek uczelni zaktualizowany'));
+		} else {
+				$this->Session->setFlash(__('NIe można zaktualizować kierunku'));
+		} //$this->CourseonUniversity->clear();
 		//Debugger::dump($course);
 		$this->redirect(array('action' => 'lista', $university_id));
     }
 	
 
-	public function admin_delete($courseonuniversity_id, $uni_id = null) {
+	public function admin_delete_faculty($faculty_id, $uni_id = null) {
          
-        if (!$courseonuniversity_id) {
-            $this->Session->setFlash('Please provide a user id');
+         if (!$faculty_id) {
+            $this->Session->setFlash('Proszę podać numer wydziału');
             $this->redirect(array('action'=>'lista',$uni_id));
         }
 
-        if ($this->CourseonUniversity->delete(array('CourseonUniversity.courseonuniversity_id' => $courseonuniversity_id))) {
-            $this->Session->setFlash(__('User deleted'));
+        if ($this->CourseonUniversity->deleteAll(array('CourseonUniversity.university_id' => $uni_id, 'CourseonUniversity.faculty_id' => $faculty_id))) {
+            $this->Session->setFlash(__('Wydział na uczelni usunięty'));
             $this->redirect(array('action' => 'lista',$uni_id));
         }
-        $this->Session->setFlash(__('Kierunek został usunięty'));
+        $this->Session->setFlash(__('Kierunek nie mógł być usunięty'));
         $this->redirect(array('action' => 'lista', $uni_id));
     }
 	
-	public function admin_deletem($course_id, $uni_id = null) {
+	public function admin_delete_course($faculty_id=null, $course_id, $uni_id = null) {
          
         if (!$course_id) {
             $this->Session->setFlash('Please provide a user id');
             $this->redirect(array('action'=>'lista',$uni_id));
         }
+         if (!$faculty_id) {
+            $faculty_id = NULL;
+        }
 
-        if ($this->CourseonUniversity->deleteAll(array('CourseonUniversity.university_id' => $uni_id, 'CourseonUniversity.course_id' => $course_id))) {
+        if ($this->CourseonUniversity->deleteAll(array('CourseonUniversity.university_id' => $uni_id, 'CourseonUniversity.faculty_id' => $faculty_id, 'CourseonUniversity.course_id' => $course_id))) {
             $this->Session->setFlash(__('Kierunek na uczelni usunięty'));
             $this->redirect(array('action' => 'lista',$uni_id));
         }
@@ -331,14 +318,18 @@ class CourseonUniversitiesController extends AppController {
     public function admin_addm($university_id) {
         if ($this->request->is('post')) {
 			$university_id = $this->request->data['CourseonUniversity']['university_id'];
+			Debugger::dump($this->request->data);
+
 			$kierunki = $this->request->data['CourseonUniversity']['course_id'];
 			foreach ($kierunki as $kierunek) {
 				$this->CourseonUniversity->create();
-				if ($this->CourseonUniversity->save(array('CourseonUniversity'=> array('university_id' => $university_id, 'course_id'=>$kierunek,
-																'typ_course_id' => 0, 
-												'tryb_course_id' => 0,
-												'cena' => 0,
-												'srednia' => 0)))) {
+				if ($this->CourseonUniversity->save(array('CourseonUniversity'=> array(
+																					'university_id' => $university_id, 
+																					'faculty_id'=>$this->request->data['CourseonUniversity']['faculty_id'], 
+																					'course_id'=>$kierunek,
+																					'typ_course_id' => 0, 
+																					'tryb_course_id' => 0,
+												)))) {
 					$this->Session->setFlash(__('Kierunek uczelni został utworzony'));
 				} else {
 					$this->Session->setFlash(__('The user could not be created. Please, try again.'));
@@ -349,6 +340,8 @@ class CourseonUniversitiesController extends AppController {
 		
 			$this->set('courses', $this->CourseonUniversity->Course->find('list', array(
 					'order' => array('nazwa'))));
+			$this->set('faculties', $this->CourseonUniversity->University->Faculty->find('list', array('fields'=>array('id', 'nazwa'),
+																						'conditions'=>array('Faculty.university_id'=>$university_id))));
 			$this->set('university', $university_id);
 		
     }

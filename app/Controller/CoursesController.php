@@ -169,58 +169,7 @@ class CoursesController extends AppController {
 						array( 'Course.id' => $city['Course']['id']));
 		}
 	}
-	public function sxc() {
-		$this->Profession = ClassRegistry::init('Profession');
-		$this->ProfessionsCourse = ClassRegistry::init('ProfessionsCourse');
-
-		$cities = $this->Course->find('list',array (
-			'fields' => array('Course.nazwa', 'Course.id'),
-			'conditions' => array('Course.rank > '=>'342'),
-			'order' => array('Course.rank' => 'desc')));
-
-		
-		foreach ($cities as $key => $c_id) {
-			$prof_ids = $this->ProfessionsCourse->find('list',array (
-				'fields' => array('ProfessionsCourse.profession_id','ProfessionsCourse.course_id'),
-				'conditions' => array('ProfessionsCourse.course_id' => $c_id)
-				//'order' => array('ProfessionsCourse.profession_c_id' => 'asc')
-			));
-			$max_placa = 0;
-			foreach ($prof_ids as $p_id => $cc_id) {
-				$prof_n_p = $this->Profession->find('list',array (
-					'fields' => array('Profession.nazwa','Profession.placa'),
-					'conditions' => array('Profession.id' => $p_id)
-					//'order' => array('ProfessionsCourse.profession_c_id' => 'asc')
-				));
-				$placa = reset($prof_n_p);
-				if ($placa > $max_placa ) {
-					$max_placa = $placa ;
-					$max_placa_id = $p_id ;
-				} 
-				echo '<br>';
-			}
-				
-			echo $max_placa;
-			$max_prof_n_p = $this->Profession->find('list',array (
-					'fields' => array('Profession.nazwa','Profession.placa'),
-					'conditions' => array('Profession.id' => $max_placa_id)
-					//'order' => array('ProfessionsCourse.profession_c_id' => 'asc')
-				));
-			pr($max_prof_n_p);
-			echo '<br>';
-			
-			echo 'zawod:'. $z = key($max_prof_n_p) ;
-			echo ' placa:'. $p = reset($max_prof_n_p);
-			echo '<br>';
-
-			$this->Course->id = $c_id;
-			//$this->Course->saveField('courses_type_c_id', 'zawód' );
-			$this->Course->saveField('zawod', $z);
-			$this->Course->saveField('placa', $p );
-			
-		}
-
-	}
+	
 	public function zapis() {
 		# Open the File.
 		if (($handle = fopen("k.csv", "r")) !== FALSE) {
@@ -327,22 +276,7 @@ class CoursesController extends AppController {
 			$this->Course ->saveField('rank', $i);
 		} 
 	}
-	public function rank_old1() {
-		$Model = 'Course';
-
-		echo '<br><br><br><br><br><br><br><br>';
-		echo 'id | srednia | rank<br>';
-		$PartArray = $this->$Model->find('all', array ('fields' => array($Model.'.id',$Model.'.srednia'),'order' => array($Model.'.srednia' => 'desc')));
-		$i=0;
-		foreach ($PartArray as $Record) {
-			echo $i = $i + 1;
-			echo $id = $Record[$Model ]['id'].' | ';
-			echo $Record[$Model ]['srednia'].' | ';
-			echo $i . '<br>';
-			$this->$Model ->id = $id;
-			$this->$Model ->saveField('rank', $i);
-		}    
-	}
+	
 	public function rank() {
 		$Model = 'Course';
 
@@ -371,65 +305,12 @@ class CoursesController extends AppController {
 			$this-> set ('placa_prof', $placa_prof);
 			$this-> set ('placa_Course', $placa_Course);
 	}
-	public function prof_cours(){
-		$this->ProfessionsCourse = ClassRegistry::init('ProfessionsCourse');
-		$this->Profession = ClassRegistry::init('Profession');
-		/*
-		$placa_prof = $this->ProfessionsCourse->find('list', array('fields'=>array('ProfessionsCourse.profession_id', 'ProfessionsCourse.course_id',  'ProfessionsCourse.id' )));
-		foreach ($placa_prof as $id => $prof_cours) {
-			echo 'id:';
-			echo $id;
-			echo ' | ';
-			//pr($id);
-			echo 'prof_cours:';
-		
-			//pr($prof_cours);
-			echo $prof_id = key($prof_cours);
-			echo ' | ';
-			echo $cours_id = reset($prof_cours);
-			echo '<br>';
-		}
-		*/
-		$a = $this->ProfessionsCourse->find('list', array('order' => array('ProfessionsCourse.course_id' => 'asc'), 'fields'=>array(  'ProfessionsCourse.id', 'ProfessionsCourse.profession_id', 'ProfessionsCourse.course_id')));
-		//pr($a);
-		foreach ($a as $cours => $prof_id) {
-			$pensja = 0;
-			$pensjaA = 0;
-			$i = 0;
-			foreach($prof_id as $id => $prof) {
-				echo 'cours:';
-				echo $cours;
-				echo ' | ';
-				//pr($id);
-				echo 'id:';
-			
-				//pr($prof_cours);
-				echo $id ;
-				echo ' | prof:';
-				echo $prof ;
-				echo ' | ';
-				$proff = $this->Profession->find('list', array(
-					'order' => array('Profession.id' => 'asc'), 
-					'fields'=>array( 'Profession.placa'),
-					'conditions' => array('Profession.id' => $prof)
-				));
-				//pr($proff);
-				echo $pensja = reset($proff);
-				echo '<br>';
-				//pr($proff);
-				$pensjaA = $pensjaA + $pensja;
-				$i = $i + 1;
-			}
-			echo round($pensjaA/$i, -1);
-			echo '<br>';
-		}
-	}
 	
 	public function admin_index() {
 		$this->paginate = array(
-            'limit' => 60,
+            'limit' => 20,
             'order' => array('Course.nazwa' => 'asc' ),
-			'contain' => array('CoursesType')
+			'contain' => array('CoursesCategory', 'UniversityType')
         );
         $courses = $this->paginate('Course');
 		//Debugger::dump($courses);
@@ -447,7 +328,7 @@ class CoursesController extends AppController {
                 $this->Session->setFlash(__('The user could not be created. Please, try again.'));
             }   
         }
-		$this->set('coursesTypes', $this->Course->CoursesType->find('list'));
+		$this->set('courses_categories', $this->Course->CoursesCategory->find('list'));
     }
 	
 	public function admin_edit($id = null) {
@@ -460,14 +341,11 @@ class CoursesController extends AppController {
 		//Debugger::dump($course);
 
 		if ($this->request->is('post') || $this->request->is('put')) {
-			if(empty($this->request->data['Course']['srednia'])) {
-				$this->request->data['Course']['srednia'] = $this->Course->srednia($id);
-			}
 			$this->Course->id = $id;
 			if ($this->Course->save($this->request->data)) {
 				$this->Session->setFlash(__('Zaktualizowano kierunek'));
 				$this->redirect(array('action' => 'index'));
-			}else{
+			} else {
 				$this->Session->setFlash(__('Unable to update your user.'));
 			}
 		}
@@ -476,7 +354,8 @@ class CoursesController extends AppController {
 			$this->request->data = $course;
 		}
 		
-		$this->set('coursesTypes', $this->Course->CoursesType->find('list'));
+		$this->set('coursesCategories', $this->Course->CoursesCategory->find('list'));
+		$this->set('universityTypes', $this->Course->UniversityType->find('list'));
     }
 	
 	public function admin_delete($kierunek_id) {

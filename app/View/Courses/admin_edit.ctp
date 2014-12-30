@@ -13,7 +13,7 @@
 			); ?>
 		</div>
 		<div class="form-group">
-			<label class="col-sm-2 control-label">Opis</label>
+			<label class="col-sm-2 control-label">Perspektywy zawodowe</label>
 			<?php echo $this->Form->input('opis2', array( 
 				'label' => false, 'type'=>'textarea', 'div' => 'col-sm-10', 'class'=> 'form-control wysiwig'
 				) 

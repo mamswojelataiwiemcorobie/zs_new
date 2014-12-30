@@ -305,13 +305,41 @@ class CoursesController extends AppController {
 			$this-> set ('placa_prof', $placa_prof);
 			$this-> set ('placa_Course', $placa_Course);
 	}
+
+
+	public function admin_search() {
+        // the page we will redirect to
+        $url['action'] = 'index';
+         
+        // build a URL will all the search elements in it
+        // the resulting URL will be
+        // example.com/cake/posts/index/Search.keywords:mykeyword/Search.tag_id:3
+        foreach ($this->data as $k=>$v){
+            foreach ($v as $kk=>$vv){
+                $url[$k.'.'.$kk]=$vv;
+            }
+        }
+ 
+        // redirect the user to the url
+        $this->redirect($url, null, true);
+    }
 	
 	public function admin_index() {
-		$this->paginate = array(
+		if(isset($this->passedArgs['Search.keywords'])) {
+            $keywords = mb_strtolower($this->passedArgs['Search.keywords'], 'UTF-8');
+			//Debugger::dump($keywords);
+            $this->paginate = array(
+            	'limit' =>10,
+                'conditions' => array(
+                    'LOWER(Course.nazwa) LIKE' => "%$keywords%",
+                )
+            );
+        } else { $this->paginate = array(
             'limit' => 20,
             'order' => array('Course.nazwa' => 'asc' ),
 			'contain' => array('CoursesCategory', 'UniversityType')
-        );
+	        );
+	    }
         $courses = $this->paginate('Course');
 		//Debugger::dump($courses);
         $this->set('courses', $courses);

@@ -2,7 +2,7 @@
 App::uses('AppController', 'Controller', 'UniversitiesController', 'CourseonUniversity');
 
 class UniversitiesController extends AppController {
-	public $helpers = array('Cache', 'AjaxMultiUpload.Upload');
+	public $helpers = array('Cache');
 	public $components = array('Paginator');
 	public $cacheAction = array(
 	    'view' => 36000,
@@ -531,9 +531,9 @@ class UniversitiesController extends AppController {
             );
         } else { 
 			$this->paginate = array(
-				'limit' => 2,
+				'limit' => 15,
 				'order' => array('University.abonament'=> 'desc', 'University.nazwa' => 'asc' ),
-				'contain' => array('UniversitiesParameter', 'UniversityType')
+				'contain' => array('UniversityType')
 			);
 		}
         $universities = $this->paginate('University');
@@ -568,30 +568,31 @@ class UniversitiesController extends AppController {
 			
             if ($this->request->is('post') || $this->request->is('put')) {
 				//Debugger::dump($this->request->data);
-                $filename = strtotime('now');
-                
-							
-				$path = "/uploads/";
-				$dir = getcwd().$path;
-				$this->University->UniversitiesPhoto->deleteAll(array('UniversitiesPhoto.university_id' => $id), false);
-				/*if(!empty($this->request->data['Loga']['logo'])) {
-					$photo = $this->request->data['Loga']['logo'];
-					$filename = time().$photo['name'];
-					$photo_path= WWW_ROOT . $path . $filename;
+            
+				//$this->University->UniversitiesPhoto->deleteAll(array('UniversitiesPhoto.university_id' => $id), false);
+				if(!empty($this->request->data['logo'])) {
+					$photo = $this->request->data['logo'];
 					//Debugger::dump($photo_path);
-					if(!($this->University->saveFile($photo, $photo_path, $id)) )$this->Session->setFlash(__('Nie udało się zapisać loga'));;
+					//if(!($this->University->saveFile($photo, $id)) )$this->Session->setFlash(__('Nie udało się zapisać loga'));;
+					 $this->request->data['UniversitiesPhoto'][0]['path'] = $photo;
+					$this->request->data['UniversitiesPhoto'][0]['typ'] = 'logo';
+					$this->request->data['UniversitiesPhoto'][0]['university_id'] = $id;
 				} 
 				if (!empty($this->request->data['galeria'])) {
-					foreach ($this->request->data['galeria'] as $plik) {
+					foreach ($this->request->data['galeria'] as $key =>$plik) {
 						//Debugger::dump($plik);
-						$this->University->UniversitiesPhoto->create();
+						/*$this->University->UniversitiesPhoto->create();
 						if ($this->University->UniversitiesPhoto->save(
 						    array('UniversitiesPhoto.university_id' => $id, 'typ' => 'galeria', 'UniversitiesPhoto.path' => "'".$plik."'"))) {
 								//$this->Session->setFlash('Recipe Saved!');
-						} else $this->Session->setFlash('nooooo!');
+						} else $this->Session->setFlash('nooooo!');*/
+						$this->request->data['UniversitiesPhoto'][$key+1]['path'] = $plik;
+						$this->request->data['UniversitiesPhoto'][$key+1]['typ'] = 'galeria';
+						$this->request->data['UniversitiesPhoto'][$key+1]['university_id'] = $id;
 					}
-				}*/
-				//unlink($photo['tmp_name']); 
+				}
+				//unlink($photo['tmp_name']);
+				//Debugger::dump( $this->request->data);
 
                 if ($this->University->saveAssociated($this->request->data)) {
                     $this->Session->setFlash(__('The user has been updated'));

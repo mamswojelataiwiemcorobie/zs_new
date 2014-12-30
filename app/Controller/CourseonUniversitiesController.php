@@ -189,10 +189,12 @@ class CourseonUniversitiesController extends AppController {
 			
 			$kursy[$d['CourseonUniversity']['faculty_id']][$d['Course']['id']][$d['CourseonUniversity']['course_type_id']][$d['CourseonUniversity']['course_mode_id']]= 1;
 		}
-				
-		$this->set('kursy', $kursy);
-		$this->set('wydzialy', $wydzialy);
-		$this->set('nazwy_kursow', $nazwy_kursow);
+		
+		if (!empty($kursy)) {		
+			$this->set('kursy', $kursy);
+			$this->set('wydzialy', $wydzialy);
+			$this->set('nazwy_kursow', $nazwy_kursow);
+		}
 		$this->set('university', $university_id);
 	}
 	
@@ -275,7 +277,7 @@ class CourseonUniversitiesController extends AppController {
         $this->redirect(array('action' => 'lista', $uni_id));
     }
 	
-	public function admin_delete_course($faculty_id=null, $course_id, $uni_id = null) {
+	public function admin_delete_course($course_id, $uni_id = null, $faculty_id=null) {
          
         if (!$course_id) {
             $this->Session->setFlash('Please provide a user id');
@@ -315,17 +317,19 @@ class CourseonUniversitiesController extends AppController {
 		
     }
 
+
+    /*Funkcja dodaje kierunki do uczelni*/
     public function admin_addm($university_id) {
         if ($this->request->is('post')) {
 			$university_id = $this->request->data['CourseonUniversity']['university_id'];
-			Debugger::dump($this->request->data);
 
 			$kierunki = $this->request->data['CourseonUniversity']['course_id'];
 			foreach ($kierunki as $kierunek) {
 				$this->CourseonUniversity->create();
+				if (!isset($this->request->data['CourseonUniversity']['faculty_id'])) $this->request->data['CourseonUniversity']['faculty_id'] = NULL;
 				if ($this->CourseonUniversity->save(array('CourseonUniversity'=> array(
 																					'university_id' => $university_id, 
-																					'faculty_id'=>$this->request->data['CourseonUniversity']['faculty_id'], 
+																					'faculty_id'=> $this->request->data['CourseonUniversity']['faculty_id'], 
 																					'course_id'=>$kierunek,
 																					'typ_course_id' => 0, 
 																					'tryb_course_id' => 0,

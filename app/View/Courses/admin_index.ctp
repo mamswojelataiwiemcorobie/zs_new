@@ -1,5 +1,18 @@
 <div class="courses form">
 	<h1>Kierunki</h1>
+	<div class="pull-right">
+		<?php echo $this->Form->create('Course',array('action'=>'search','class'=>'form-inline', 'role'=>'form'));?>
+			<div class="form-group">
+				<label class="sr-only"></label>
+			<?php
+				echo $this->Form->input('Search.keywords', array('label'=>false, 'class'=> 'form-control'));?>
+			</div>
+			<div class="form-group">
+				<?php echo $this->Form->submit('Szukaj', array('class'=> 'btn btn-default'));
+			?>
+			</div>
+		<?php echo $this->Form->end();?>
+	</div>
 	<div class="table-responsive">
 		<table class="table table-striped table-hover">
 			<thead>

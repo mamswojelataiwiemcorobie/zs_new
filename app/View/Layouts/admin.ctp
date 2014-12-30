@@ -58,7 +58,8 @@
 
 		echo $this->Html->script('bootstrap.js');
 	?>
-	
+	<script src="/js/jquery.form.js" type="text/javascript"></script>
+
 	<script type="text/javascript" src="/js/admin.js"></script>
 
 </body>

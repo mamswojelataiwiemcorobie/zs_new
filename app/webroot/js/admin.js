@@ -1,8 +1,8 @@
 $(function(){
 	if ($('input.date').size() > 0) $('input.date').not('.hasDatepicker').datepicker({dateFormat:'dd/mm/yy'});
-	/*if ($('.jsimageupload_single, .jsimageupload_multi').size() > 0) {
+	if ($('.jsimageupload_single, .jsimageupload_multi').size() > 0) {
 		imageupload.init();
-	}*/
+	}
 	$('.delimage').click(imageupload.delimage);
 });
 
@@ -25,14 +25,12 @@ var imageupload = {
 			_input.parent().after('<img src="/loader.gif"/>');
 			$.getJSON( "/ajaximage.php", function( data ) { console.log(data);});
 			$(".imageform_multi").ajaxForm(function(a,b,c){
-				//$.getJSON( "/ajaximage.php", function( data ) { console.log(data);});
-				alert('koko');
+
 				_input.parents('form').get(0).reset();
-				alert('jojoo');
+				
 				$(_input.parent().get(0).nextSibling).remove();
-				alert('kojkhjkjkko');
+
 				if (a.status && a.status == 1)  {
-					alert('kkkkokjhvjo');
 					_input.parent().parent().after('<div class="uimage"><input type="hidden" name="galeria[]" value="'+a.imagename+'"/><img src="/miniatura/200x200/uploads/'+a.imagename+'"/><div class="buttons"><span class="leftimage"> &laquo; </span><span class="delimage">usuń</span><span class="rightimage"> &raquo; </span></div></div>');
 					imageupload.prepare_buttons();
 				} else {
@@ -145,7 +143,7 @@ var m_gmap = {
 	},
 	hide: function() {
 		var go = $('#gmap-overflow');
-		go.hide();
+		go.modal('hide');
 		m_gmap.currentTarget = false;
 		m_gmap.isHidden = true;
 	},

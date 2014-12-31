@@ -133,6 +133,17 @@
             'slug'=>'.+'
         ));
 
+    Router::connect(
+        '/najczesciej_szukane/:slug-:tid/*',
+        array(
+            'controller' => 'universities',
+            'action' => 'najczesciej'),
+        array(
+            'pass' => array('tid'),
+            'tid' => '[0-9]+',
+            'slug'=>'.+'
+        ));
+
 
 
 /**

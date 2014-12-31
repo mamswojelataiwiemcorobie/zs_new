@@ -48266,3 +48266,154 @@ Request URL: /css/slf.png
 Stack Trace:
 #0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-12-31 14:19:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/slf.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 14:48:07 Error: [MissingControllerException] Controller class NajczesciejSzukaneController could not be found.
+Exception Attributes: array (
+  'class' => 'NajczesciejSzukaneController',
+  'plugin' => NULL,
+)
+Request URL: /najczesciej_szukane/Uniwersytet-Kazimierza-Wielkiego-2517.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 14:59:10 Error: [MissingControllerException] Controller class NajczesciejSzukaneController could not be found.
+Exception Attributes: array (
+  'class' => 'NajczesciejSzukaneController',
+  'plugin' => NULL,
+)
+Request URL: /najczesciej_szukane/krakowska-akademia-1914.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 14:59:38 Error: [MissingControllerException] Controller class NajczesciejSzukaneController could not be found.
+Exception Attributes: array (
+  'class' => 'NajczesciejSzukaneController',
+  'plugin' => NULL,
+)
+Request URL: /najczesciej_szukane/krakowska-akademia-1914.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 15:00:22 Error: [MissingControllerException] Controller class NajczesciejSzukaneController could not be found.
+Exception Attributes: array (
+  'class' => 'NajczesciejSzukaneController',
+  'plugin' => NULL,
+)
+Request URL: /najczesciej_szukane/krakowska-akademia-1914.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 15:03:19 Error: [MissingControllerException] Controller class NajczesciejSzukaneController could not be found.
+Exception Attributes: array (
+  'class' => 'NajczesciejSzukaneController',
+  'plugin' => NULL,
+)
+Request URL: /najczesciej_szukane/krakowska-akademia-1914.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 15:03:58 Error: [MissingControllerException] Controller class NajczesciejSzukaneController could not be found.
+Exception Attributes: array (
+  'class' => 'NajczesciejSzukaneController',
+  'plugin' => NULL,
+)
+Request URL: /najczesciej_szukane/krakowska-akademia-1914.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 15:04:25 Error: [MissingControllerException] Controller class NajczesciejSzukaneController could not be found.
+Exception Attributes: array (
+  'class' => 'NajczesciejSzukaneController',
+  'plugin' => NULL,
+)
+Request URL: /najczesciej_szukane/krakowska-akademia-1914.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 15:04:31 Error: [MissingControllerException] Controller class NajczesciejSzukaneController could not be found.
+Exception Attributes: array (
+  'class' => 'NajczesciejSzukaneController',
+  'plugin' => NULL,
+)
+Request URL: /najczesciej_szukane/krakowska-akademia-2.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 15:04:53 Error: Fatal Error (1): Call to undefined method UniversitiesController::getDataSource() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 413]
+2014-12-31 15:04:53 Error: [FatalErrorException] Call to undefined method UniversitiesController::getDataSource()
+Request URL: /najczesciej_szukane/krakowska-akademia-2.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 413)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 413, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 413, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-31 15:08:05 Error: Fatal Error (1): Call to undefined method UniversitiesController::query() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 414]
+2014-12-31 15:08:05 Error: [FatalErrorException] Call to undefined method UniversitiesController::query()
+Request URL: /najczesciej_szukane/krakowska-akademia-2.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 414)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 414, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 414, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-31 15:10:44 Error: Fatal Error (1): Call to undefined method UniversitiesController::getDataSource() in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 413]
+2014-12-31 15:10:44 Error: [FatalErrorException] Call to undefined method UniversitiesController::getDataSource()
+Request URL: /najczesciej_szukane/krakowska-akademia-2.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 413)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 413, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 413, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-31 15:12:14 Error: Fatal Error (1): Call to a member function query() on a non-object in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 414]
+2014-12-31 15:12:14 Error: [FatalErrorException] Call to a member function query() on a non-object
+Request URL: /najczesciej_szukane/krakowska-akademia-2.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Admini...', 414)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Admini...', 414, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Admini...', 414, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-31 15:12:27 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\najczesciej.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\najczesciej.ctp',
+)
+Request URL: /najczesciej_szukane/krakowska-akademia-2.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-31 15:28:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 15:28:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -17,7 +17,7 @@
 					</address>
 				</div>
 				<div class="mbr">
-					<?php if ($university['University']['abonament'] < 2):?>
+					<?php if ($university['University']['abonament_id'] < 2):?>
 						<a href="/info/kontakt-1.html" class="uzupelnij-profil"></a>
 					<?php else : ?>
 						<span rel="{$uczelnia.id}" class="uczelnia-schowek"></span>
@@ -78,7 +78,7 @@
 					<?php if ($zakladka_page === 0) : ?>
 						<div id="accordion-container" style="display: block; "?>
 							<!-- GALERIA -->
-							<?php if ($university['University']['abonament'] > 2):?>
+							<?php if ($university['University']['abonament_id'] > 2):?>
 							<div class="row galeria">
 								<h2 class="accordion-header">Galeria</h2>
 								<?php if (count($university['galeria'])>0) :?>
@@ -115,9 +115,9 @@
 									<div class="row">
 										<div class="col-md-12 animated fadeInLeft notransition">
 											<div class="info"><?php echo $university['UniversitiesParameter']['opis'];?>
-												<?php if ($university['University']['abonament'] < 2 && $university['University']['university_type_id'] == 1):?>. Kierunki studiów. Studia dzienne (stacjonarne) i zaoczne (niestacjonarne), licencjackie, inżynierskie, magisterskie. Jakie studia wybrać? Czy warto tu studiować twój wymarzony kierunek. <?php endif;?>
-												<?php if ($university['University']['abonament'] < 2 && $university['University']['university_type_id'] == 2):?>. Szkoła policealna - kursy roczne i dwuletnie po których jest pewna praca.<?php endif;?>
-												<?php if ($university['University']['abonament'] < 2 && $university['University']['university_type_id'] == 3):?>. Szkoła językowa - angielski, niemiecki, rosyjski, hiszpański, japoński<?php endif;?>
+												<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 1):?>. Kierunki studiów. Studia dzienne (stacjonarne) i zaoczne (niestacjonarne), licencjackie, inżynierskie, magisterskie. Jakie studia wybrać? Czy warto tu studiować twój wymarzony kierunek. <?php endif;?>
+												<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 2):?>. Szkoła policealna - kursy roczne i dwuletnie po których jest pewna praca.<?php endif;?>
+												<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 3):?>. Szkoła językowa - angielski, niemiecki, rosyjski, hiszpański, japoński<?php endif;?>
 											</div>
 										</div>
 									</div>

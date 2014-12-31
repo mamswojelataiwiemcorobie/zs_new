@@ -1202,6 +1202,68 @@ float: right;
 }
 /*--------------------------------------------------	MISC---------------------------------------------------*/
 
+.qlist {
+width:312px;
+margin-bottom:10px;
+}
+.qlist .header {
+padding: 5px 0;
+padding-left: 14px;
+font: 15px/24px 'Lato', sans-serif;
+font-weight: 400;
+color:white;
+margin: auto;
+}
+.qlist ul {
+	list-style: none;
+}
+.qlist li {
+	padding: 5px;
+}
+.qlist .cont li:before {
+font-family: FontAwesome;
+margin: 5px 10px;
+}
+
+.qlist-red .header {
+background-color: rgb(255,102,52);
+}
+.qlist-red .cont {
+background:#dde7ee;
+}
+.qlist-red .cont li {
+	background:#DDE7EE;
+}
+.qlist-red .cont li:before {
+	content: "\f002 ";
+	color: #3a83b2;
+}
+.qlist-red .cont li a {
+	color: #3a83b2;
+}
+.qlist-red .cont li:nth-child(odd) {
+	background:#f9f9f9;
+}
+.qlist-red .cont li:nth-child(odd) a, .qlist-red .cont li:nth-child(odd):before {
+	color:#e56700;
+}
+
+.qlist-blue .header {
+background-color:rgb(51,152,204) ;
+}
+.qlist-blue .cont {
+background:#edf4ff;
+}
+.qlist-blue .cont p {
+background:#d2e3f4 url('/slf.png') -1170px -246px no-repeat;
+}
+.qlist-blue .cont p a {
+color:#3a83b2;
+}
+.qlist-blue .cont p.sec {
+background:url('/slf.png') -1170px -273px no-repeat;
+}
+
 .show-grid [class^="col-"] {
 background-color: #ebebeb;
 text-align: center;

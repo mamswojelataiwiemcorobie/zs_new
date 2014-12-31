@@ -19,11 +19,7 @@
 							</address>
 						</div>
 						<div class="mbr">
-							<?php if ($university['University']['abonament'] < 2):?>
-								<a href="/info/kontakt-1.html" class="uzupelnij-profil"></a>
-							<?php else : ?>
-								<span rel="{$uczelnia.id}" class="uczelnia-schowek"></span>
-							<?php endif;?>
+							<a href="/info/kontakt-1.html" class="uzupelnij-profil"></a>
 							<?php if ($university['University']['link_rejestracji']): ?><a href="<?php echo $university['University']['link_rejestracji']; ?>" class="uczelnia-rekrutuj" target="_blank"></a><?php endif;?>
 							<?php if($university['UniversitiesParameter']['fb'] || $university['UniversitiesParameter']['gplus'] || $university['UniversitiesParameter']['yt']):?>
 								<ul class="social">
@@ -84,9 +80,9 @@
 									</h1>
 									<section>
 										<div class="info"><?php echo $university['UniversitiesParameter']['opis'];?>
-											<?php if ($university['University']['abonament'] < 2 && $university['University']['university_type_id'] == 1):?>. Kierunki studiów. Studia dzienne (stacjonarne) i zaoczne (niestacjonarne), licencjackie, inżynierskie, magisterskie. Jakie studia wybrać? Czy warto tu studiować twój wymarzony kierunek. <?php endif;?>
-											<?php if ($university['University']['abonament'] < 2 && $university['University']['university_type_id'] == 2):?>. Szkoła policealna - kursy roczne i dwuletnie po których jest pewna praca.<?php endif;?>
-											<?php if ($university['University']['abonament'] < 2 && $university['University']['university_type_id'] == 3):?>. Szkoła językowa - angielski, niemiecki, rosyjski, hiszpański, japoński<?php endif;?>
+											<?php if ($university['University']['university_type_id'] == 1):?>. Kierunki studiów. Studia dzienne (stacjonarne) i zaoczne (niestacjonarne), licencjackie, inżynierskie, magisterskie. Jakie studia wybrać? Czy warto tu studiować twój wymarzony kierunek. <?php endif;?>
+											<?php if ($university['University']['university_type_id'] == 2):?>. Szkoła policealna - kursy roczne i dwuletnie po których jest pewna praca.<?php endif;?>
+											<?php if ($university['University']['university_type_id'] == 3):?>. Szkoła językowa - angielski, niemiecki, rosyjski, hiszpański, japoński<?php endif;?>
 										</div>
 									</section>
 								<?php endif;?>
@@ -108,7 +104,7 @@
 										<div class="cl"></div>
 									</div>
 								<?php endif;?>
-								<?php if ($university['University']['abonament'] < 2 and $university['University']['university_type_id'] != 3) :?>
+								<?php if ($university['University']['university_type_id'] != 3) :?>
 									<div class="lista_kierunkow">
 										<h1 class="smalltitle">
 											<span>KIERUNKI</span>

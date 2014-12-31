@@ -409,6 +409,108 @@ class UniversitiesController extends AppController {
 		}
 	}
 
+	public function najczesciej($id) {
+		//$db = $this->getDataSource();
+		$r= $this->University->query("SELECT * FROM search_keywords WHERE id = ?",array($id));
+		//Debugger::dump($r);
+		$tid = 1;
+		$this->set('tid',$tid);
+
+		if(!empty($r)) {
+            $keywords = mysql_escape_string(mb_strtolower($r[0]['search_keywords']['keyword'], 'UTF-8'));
+            $this->University->countSearchKeywords($keywords);
+            $keywords = explode(' ', $keywords);
+			if (isset($keywords[1])) {
+						$conditions = array(
+						    'OR' => array(
+						        array('University.all_courses LIKE' => "%$keywords[0]%"),
+						        array('University.nazwa LIKE' => "%$keywords[0]%"),
+						        array('University.miasto LIKE' => "%$keywords[0]%"),
+						         array('UniversitiesParameter.tagi LIKE' => "%$keywords[0]%"),
+						    ),
+						    'AND' => array(
+						    	array('University.university_type_id' => $tid),
+						    		'OR' => array(
+						                 array('University.all_courses LIKE' => "%$keywords[1]%"),
+									    array('University.nazwa LIKE' => "%$keywords[1]%"),
+									    array('University.miasto LIKE' => "%$keywords[1]%"),
+									     array('UniversitiesParameter.tagi LIKE' => "%$keywords[1]%"),
+								)
+						    ),
+						    
+						);
+			} else {
+				$conditions = array(
+						    'OR' => array(
+						        array('University.all_courses LIKE' => "%$keywords[0]%"),
+						        array('University.nazwa LIKE' => "%$keywords[0]%"),
+						        array('University.miasto LIKE' => "%$keywords[0]%"),
+						         array('UniversitiesParameter.tagi LIKE' => "%$keywords[0]%"),
+						    ),
+						    'AND' => array(
+						    	array('University.university_type_id' => $tid),
+						    		
+						    ),
+						    
+						);
+			}		
+			
+				//$this->University->contain('CourseonUniversity');
+				$this->paginate = array(
+					'University' => array(
+						'order' => array('University.abonament_id'=> 'desc', 'University.nazwa' => 'asc' ),				 
+						'limit' => 5,
+						'recursive' => 0,
+						'conditions' => 
+		        			$conditions
+,						//'joins' => $joins,
+						'group' => 'University.id',
+						'contain' => array('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
+						
+					)
+				);
+        } else { 
+			$this->Paginator->settings = array(
+		        'conditions' => array('University.university_type_id' => $tid),
+				'order' => array('University.abonament_id'=> 'desc', 'UniversityParameter.nazwa' => 'asc' ),
+				'limit' => 5,
+				'contain' => array('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
+		    );
+		}
+        $data =  $this->Paginator->paginate();
+
+			if (count($data)>0) {
+				$uczelnie_promo = array();
+				$uczelnie = array();
+				foreach ($data as $uczelnia) {
+					if ($uczelnia['University']['abonament_id'] > 1) {
+						foreach ($uczelnia['UniversitiesPhoto'] as $photo) {
+							if($photo['typ']=='logo') {
+								$uczelnia['logo'] = $photo['path'];
+							} 
+						}
+						$uczelnia = Set::remove($uczelnia, 'UniversitiesPhoto');
+						$uczelnie_promo[] = $uczelnia;
+					} else {
+						$uczelnie[] = $uczelnia;
+					}
+				}
+				//Debugger::dump($uczelnie_promo);
+				$this->set('uczelnie_wyniki',$uczelnie_promo);
+				$this->set('uczelnie_wyniki_demo',$uczelnie);
+			} else {
+				$this->set('uczelnie_wyniki_brak',1);
+			}
+			
+		$this->set('title_for_layout', 'Wyszukiwarka - Szkoły wyższe - policelane - językowe | Zostań Studentem');
+
+		$this->set('title_for_slider2','Znajdź uczelnie');
+
+		$this->set('description_for_layout', 'Znajdź szkołę, uczelnie, uniwersytet i kierunek studiów który Cię interesuje');
+		$this->set('keywords_for_layout', 'szkoła, wyższa, policealna, językowa, uczelnia, kierunek, studia');
+
+	}
+
 	public function slider_2() {
 	return $this->ff;
 	}

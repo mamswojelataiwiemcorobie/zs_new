@@ -89,7 +89,6 @@
 			<div class="col-sm-offset-2 col-sm-10">
 			  <?php echo $this->Form->button('Edytuj uczelnie', array('type' => 'submit', 'class'=> 'btn btn-default'));?>
 			</div>
-		  </div>
 		</div>
 		<div class="form-group">
 			<label class="col-sm-2">Kierunki</label>
@@ -107,11 +106,11 @@
 							<td><?php echo $course['Course']['id']; ?></td>
 							<td><?php echo  $course['Course']['nazwa'];?></td>
 							<td >
-							<?php echo $this->Html->link("Delete", array('action'=>'delete_kurs', $course['Course']['id'])); ?> 
+							<?php echo $this->Html->link("Delete", array('action'=>'delete_kurs', $this->data['Faculty']['id'], $course['Course']['id'])); ?> 
 							</td>
 						</tr>
 						<?php endforeach; ?>
-						<?php echo $this->Html->link("Dodaj kursy na wydziale", array('action'=>'add_course', $this->data['Faculty']['id'])); ?> 
+						<?php echo $this->Html->link("Dodaj kursy na wydziale", array('action'=>'add_courses', $this->data['Faculty']['id'])); ?> 
 					</tbody>
 				</table>
 			</div>			

@@ -47899,3 +47899,370 @@ Stack Trace:
 #3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
 #4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-12-31 10:14:36 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Universities\admin_add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Universities\\admin_add.ctp',
+)
+Request URL: /admin/universities/add
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-31 10:46:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'findbyId' at line 1
+Request URL: /admin/courseon_universities/lista/767
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('findbyId', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('findbyId', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('findbyId', Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(799): DboSource->query('findbyId', Array, Object(University))
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php(199): Model->__call('findbyId', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php(199): University->findbyId('767')
+#7 [internal function]: CourseonUniversitiesController->admin_lista('767')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(CourseonUniversitiesController), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-31 10:47:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'findbyId' at line 1
+Request URL: /admin/courseon_universities/lista/767
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('findbyId', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('findbyId', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('findbyId', Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(799): DboSource->query('findbyId', Array, Object(University))
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php(199): Model->__call('findbyId', Array)
+#6 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\CourseonUniversitiesController.php(199): University->findbyId('767')
+#7 [internal function]: CourseonUniversitiesController->admin_lista('767')
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(CourseonUniversitiesController), Array)
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-31 11:00:25 Error: Fatal Error (4): syntax error, unexpected '=' in [C:\Users\Administrator\Documents\klu\zs_new\app\View\CourseonUniversities\admin_lista.ctp, line 93]
+2014-12-31 11:00:25 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /admin/courseon_universities/lista/767
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 93)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 93, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 93, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-31 11:35:04 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Faculties\admin_add_course.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Faculties\\admin_add_course.ctp',
+)
+Request URL: /admin/faculties/add_course/30
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-31 12:09:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /admin/faculties/add_courses/30
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `zs...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `zs...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1744): DboSource->create(Object(CourseonUniversity), Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2112): Model->save(Array, Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php(103): Model->saveMany(Array)
+#6 [internal function]: FacultiesController->admin_add_courses('30')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-31 12:10:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /admin/faculties/add_courses/30
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `zs...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `zs...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1744): DboSource->create(Object(CourseonUniversity), Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2112): Model->save(Array, Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php(104): Model->saveMany(Array)
+#6 [internal function]: FacultiesController->admin_add_courses('30')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-31 12:22:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /admin/faculties/add_courses/30
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `zs...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `zs...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1744): DboSource->create(Object(CourseonUniversity), Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2112): Model->save(Array, Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php(106): Model->saveMany(Array)
+#6 [internal function]: FacultiesController->admin_add_courses('30')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-31 12:22:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /admin/faculties/add_courses/30
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `zs...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `zs...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1744): DboSource->create(Object(CourseonUniversity), Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2112): Model->save(Array, Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php(106): Model->saveMany(Array)
+#6 [internal function]: FacultiesController->admin_add_courses('30')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-31 12:22:59 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /admin/faculties/add_courses/30
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `zs...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `zs...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1744): DboSource->create(Object(CourseonUniversity), Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2112): Model->save(Array, Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php(106): Model->saveMany(Array)
+#6 [internal function]: FacultiesController->admin_add_courses('30')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-31 12:23:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /admin/faculties/add_courses/30
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `zs...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `zs...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1744): DboSource->create(Object(CourseonUniversity), Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2112): Model->save(Array, Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php(106): Model->saveMany(Array)
+#6 [internal function]: FacultiesController->admin_add_courses('30')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-31 12:26:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /admin/faculties/add_courses/30
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `zs...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `zs...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1744): DboSource->create(Object(CourseonUniversity), Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2112): Model->save(Array, Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php(115): Model->saveMany(Array)
+#6 [internal function]: FacultiesController->admin_add_courses('30')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-31 12:26:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /admin/faculties/add_courses/30
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `zs...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `zs...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1744): DboSource->create(Object(CourseonUniversity), Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2112): Model->save(Array, Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php(115): Model->saveMany(Array)
+#6 [internal function]: FacultiesController->admin_add_courses('30')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-31 12:26:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /admin/faculties/add_courses/30
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `zs...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `zs...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1744): DboSource->create(Object(CourseonUniversity), Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2112): Model->save(Array, Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php(115): Model->saveMany(Array)
+#6 [internal function]: FacultiesController->admin_add_courses('30')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-31 12:53:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /admin/faculties/add_courses/30
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `zs...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `zs...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1744): DboSource->create(Object(CourseonUniversity), Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2112): Model->save(Array, Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php(116): Model->saveMany(Array)
+#6 [internal function]: FacultiesController->admin_add_courses('30')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-31 12:53:51 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Faculties\admin_add_courses.ctp, line 7]
+2014-12-31 12:53:51 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /admin/faculties/add_courses/30
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 7, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 7, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-31 12:59:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /admin/faculties/add_courses/30
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `zs...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `zs...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1744): DboSource->create(Object(CourseonUniversity), Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2112): Model->save(Array, Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php(116): Model->saveMany(Array)
+#6 [internal function]: FacultiesController->admin_add_courses('30')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-31 13:00:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /admin/faculties/add_courses/30
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `zs...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `zs...')
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(1744): DboSource->create(Object(CourseonUniversity), Array, Array)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2112): Model->save(Array, Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\FacultiesController.php(116): Model->saveMany(Array)
+#6 [internal function]: FacultiesController->admin_add_courses('30')
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-12-31 13:41:00 Error: [NotFoundException] Invalid post
+Request URL: /admin/faculties/lista
+Stack Trace:
+#0 [internal function]: FacultiesController->admin_lista()
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-31 13:42:09 Error: [NotFoundException] Invalid post
+Request URL: /admin/faculties/lista
+Stack Trace:
+#0 [internal function]: FacultiesController->admin_lista()
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(FacultiesController), Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(FacultiesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-31 13:55:00 Error: [MissingActionException] Action CourseonUniversitiesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'CourseonUniversitiesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin/courseon_universities/
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CourseonUniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-31 13:55:03 Error: [MissingControllerException] Controller class CoursesCategoriesController could not be found.
+Exception Attributes: array (
+  'class' => 'CoursesCategoriesController',
+  'plugin' => NULL,
+)
+Request URL: /admin/courses_categories
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 13:55:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'University.abonament' in 'where clause'
+Request URL: /
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Univers...', Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Univers...', Array, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Univers...', false)
+#4 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Model.php(2696): DboSource->read(Object(UniversitiesPhoto), Array)
+#5 C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php(374): Model->find('all', Array)
+#6 [internal function]: UniversitiesController->home_slider()
+#7 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UniversitiesController), Array)
+#8 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Object.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\Users\Administrator\Documents\klu\zs_new\app\View\Elements\home_uni_logos_slider.ctp(17): Object->requestAction(Array)
+#12 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#13 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#14 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(1208): View->_render('C:\Users\Admini...', Array)
+#15 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Admini...', Array, Array)
+#16 C:\Users\Administrator\Documents\klu\zs_new\app\View\Pages\home.ctp(26): View->element('home_uni_logos_...', Array, Array)
+#17 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(945): include('C:\Users\Admini...')
+#18 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Admini...', Array)
+#19 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(471): View->_render('C:\Users\Admini...')
+#20 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#21 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#22 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2014-12-31 13:59:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 14:01:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 14:03:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 14:14:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/slf.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 14:18:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/slf.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -2,9 +2,8 @@
 <?php echo $this->Form->create('University', array('type' => 'file', 'class'=>'form-horizontal', 'role'=>'form')); ?>
     <form class="form-horizontal" role="form">
 		
-        <legend><?php echo __('Edit University'); ?></legend>
+        <legend><?php echo __('Dodaj nowy uniwersytet'); ?></legend>
 		<div class="form-group">
-		<?php 	echo $this->Form->hidden('id', array('value' => $this->data['University']['id']));?>
 			<label class="col-sm-2 control-label">Nazwa</label>			
 			<?php echo $this->Form->input('nazwa', array('label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
 		</div>
@@ -33,8 +32,6 @@
 			</div>
 		</div>
 		<div class="form-group">
-			<?php echo $this->Form->hidden('UniversitiesParameter.id', array('value' => $this->data['UniversitiesParameter']['id']));
-			echo $this->Form->hidden('UniversitiesParameter.university_id', array('value' => $this->data['University']['id']));?>
 			<label class="col-sm-2 control-label">www</label>
 			<?php echo $this->Form->input('UniversitiesParameter.www', array( 'label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
 		</div>
@@ -94,10 +91,6 @@
 			<label class="col-sm-2 control-label">Logo</label>
 			<div class="col-sm-10">
 				<div class="jsimageupload_single">
-				<?php if (!empty($this->request->data['logo'])) :?>
-					<div class="uimage"><input type="hidden" name="logo" value="<?php echo $this->request->data['logo']?>"/><img src="/miniatura/200x200/uploads/<?php echo $this->request->data['logo']?>"/>
-					</div>
-				<?php endif;?>
 				</div>
 			</div>
 		</div>
@@ -106,14 +99,6 @@
 			<label class="col-sm-2 control-label">Galeria</label>
 			<div class="col-sm-10">
 				<div class="jsimageupload_multi">
-				<?php if (!empty($this->request->data['galeria'])) :
-					foreach ($this->request->data['galeria'] as $gal) :?>
-						<div class="uimage">
-							<input type="hidden" name="galeria[]" value="<?php echo $gal;?>"/>
-							<img src="/miniatura/200x200/uploads/<?php echo $gal;?>"/>
-							<div class="buttons"><span class="leftimage"> &laquo; </span><span class="delimage">usuń</span><span class="rightimage"> &raquo; </span></div></div>
-					<?php endforeach;?>
-				<?php endif;?>
 			</div>
 		</div>
 		<div class="form-group">
@@ -170,7 +155,7 @@
 		</div>
 		<div class="form-group">
 			<label class="col-sm-2">Meta keywords</label>
-			<?php echo $this->Form->input('UniversitiesParameter.meta_keywords', array( 'label' => false, 'type'=>'textarea', 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
+			<?php echo $this->Form->input('UniversitiesParameter.meta_keywords', array( 'label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
 		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">

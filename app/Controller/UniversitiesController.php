@@ -69,7 +69,7 @@ class UniversitiesController extends AppController {
 			}
 		}
 		$university = Set::remove($university, 'UniversitiesPhoto');
-		if ($university['University']['abonament'] < 2) {
+		if ($university['University']['abonament_id'] < 2) {
 			$university['logo'] = 'no-photo.jpg';
 			//$u['kierunki'] = $u['kierunki_full'] = array();
 			$uuniversity['zakladka1'] = $university['zakladka2'] = $university['zakladka3'] = $university['zakladka4'] = '';
@@ -80,7 +80,7 @@ class UniversitiesController extends AppController {
 
 		$this->set('title_for_layout', $university['University']['nazwa']);
 
-		if ($university['University']['abonament'] < 2) {
+		if ($university['University']['abonament_id'] < 2) {
 			$this->University->CourseonUniversity->contain('Course.id', 'Course.nazwa');
 			$kierunki = $this->University->CourseonUniversity->find('all', array('conditions'=>array('CourseonUniversity.university_id'=>$id), 																
 																				'order'=>array('Course.nazwa')));
@@ -181,7 +181,7 @@ class UniversitiesController extends AppController {
 				//$this->University->contain('CourseonUniversity');
 				$this->paginate = array(
 					'University' => array(
-						'order' => array('University.abonament'=> 'desc', 'University.nazwa' => 'asc' ),				 
+						'order' => array('University.abonament_id'=> 'desc', 'University.nazwa' => 'asc' ),				 
 						'limit' => 5,
 						'recursive' => 0,
 						'conditions' => 
@@ -195,7 +195,7 @@ class UniversitiesController extends AppController {
 		} elseif (isset($this->request->query['miasto'])) {
 			$this->paginate = array(
 					'University' => array(
-						'order' => array('University.abonament'=> 'desc', 'University.nazwa' => 'asc' ),				 
+						'order' => array('University.abonament_id'=> 'desc', 'University.nazwa' => 'asc' ),				 
 						'limit' => 5,
 						'recursive' => 0,
 						'conditions' => array('University.university_type_id' => $tid, 'University.miasto LIKE' => '%'.$this->request->query['miasto'].'%'),
@@ -208,7 +208,7 @@ class UniversitiesController extends AppController {
 		} elseif (isset($this->request->query['kierunek'])) {
 			$this->paginate = array(
 					'University' => array(
-						'order' => array('University.abonament'=> 'desc', 'University.nazwa' => 'asc' ),				 
+						'order' => array('University.abonament_id'=> 'desc', 'University.nazwa' => 'asc' ),				 
 						'limit' => 5,
 						'recursive' => 0,
 						'conditions' => array('University.university_type_id' => $tid, 'University.all_courses LIKE' => '%' .$this->request->query['miasto'].'%'),
@@ -221,7 +221,7 @@ class UniversitiesController extends AppController {
         } else { 
 			$this->Paginator->settings = array(
 		        'conditions' => array('University.university_type_id' => $tid),
-				'order' => array('University.abonament'=> 'desc', 'UniversityParameter.nazwa' => 'asc' ),
+				'order' => array('University.abonament_id'=> 'desc', 'UniversityParameter.nazwa' => 'asc' ),
 				'limit' => 5,
 				'contain' => array('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
 		    );
@@ -232,7 +232,7 @@ class UniversitiesController extends AppController {
 				$uczelnie_promo = array();
 				$uczelnie = array();
 				foreach ($data as $uczelnia) {
-					if ($uczelnia['University']['abonament'] > 1) {
+					if ($uczelnia['University']['abonament_id'] > 1) {
 						foreach ($uczelnia['UniversitiesPhoto'] as $photo) {
 							if($photo['typ']=='logo') {
 								$uczelnia['logo'] = $photo['path'];
@@ -371,7 +371,7 @@ class UniversitiesController extends AppController {
 	
 	public function home_slider() {
 		//$this->University->contain();
-		$universities = $this->University->UniversitiesPhoto->find('all', array('conditions' => array('UniversitiesPhoto.typ' => 'logo', 'University.university_type_id' => 1, 'University.abonament >=' => 2), 'limit'=> 5));
+		$universities = $this->University->UniversitiesPhoto->find('all', array('conditions' => array('UniversitiesPhoto.typ' => 'logo', 'University.university_type_id' => 1, 'University.abonament_id >=' => 2), 'limit'=> 5));
 		//Debugger::dump($universities);
 		if (!empty($this -> request -> params['requested'])) {
 		   return $universities;
@@ -382,7 +382,7 @@ class UniversitiesController extends AppController {
 
 	public function home_slider_poli() {
 		//$this->University->contain();
-		$universities = $this->University->UniversitiesPhoto->find('all', array('conditions' => array('UniversitiesPhoto.typ' => 'logo', 'University.university_type_id' => 2, 'University.abonament >=' => 2), 'limit'=> 5));
+		$universities = $this->University->UniversitiesPhoto->find('all', array('conditions' => array('UniversitiesPhoto.typ' => 'logo', 'University.university_type_id' => 2, 'University.abonament_id >=' => 2), 'limit'=> 5));
 		//Debugger::dump($universities);
 		if (!empty($this -> request -> params['requested'])) {
 		   return $universities;
@@ -468,7 +468,7 @@ class UniversitiesController extends AppController {
 	
 	public function update_all_courses_name(){
 		$this->University->contain();
-		$universities = $this->University->find('all', array('fields' => array('University.id'), 'order' => array('University.abonament' => 'DESC')));	
+		$universities = $this->University->find('all', array('fields' => array('University.id'), 'order' => array('University.abonament_id' => 'DESC')));	
 		foreach ($universities as $university) {
 			$this->University->CourseonUniversity->contain('Course.nazwa');
 			$courses = $this->University->CourseonUniversity->find('list', 
@@ -532,8 +532,8 @@ class UniversitiesController extends AppController {
         } else { 
 			$this->paginate = array(
 				'limit' => 15,
-				'order' => array('University.abonament'=> 'desc', 'University.nazwa' => 'asc' ),
-				'contain' => array('UniversityType')
+				'order' => array('Abonament.id'=> 'desc', 'UniversityType.id_typ'=>'asc', 'University.nazwa' => 'asc' ),
+				'contain' => array('UniversityType', 'Abonament')
 			);
 		}
         $universities = $this->paginate('University');
@@ -547,48 +547,26 @@ class UniversitiesController extends AppController {
                 $this->Session->setFlash('Please provide a user id');
                 $this->redirect(array('action'=>'index'));
             }
-			$this->University->contain('UniversitiesParameter', 'UniversityType', 'UniversitiesPhoto');
-            $university = $this->University->findById($id);
-
-			$this->set('type', $this->University->UniversityType->find('list'));
-			$this->set('district', $this->University->District->find('list', array('fields'=>array('id', 'nazwa'))));
-
-			//Debugger::dump($university);
-			$university['galeria'] = array();
-			foreach ($university['UniversitiesPhoto'] as $photo) {
-				if($photo['typ']=='logo') {
-					$university['logo'] = $photo['path'];
-				} elseif($photo['typ']=='galeria') {
-					array_push($university['galeria'], $photo['path']);
-				}
-			}
-			//$university = Set::remove($university, 'UniversitiesPhoto');
-			//Debugger::dump( $university);
-
 			
             if ($this->request->is('post') || $this->request->is('put')) {
 				//Debugger::dump($this->request->data);
             
-				//$this->University->UniversitiesPhoto->deleteAll(array('UniversitiesPhoto.university_id' => $id), false);
+				$this->University->UniversitiesPhoto->deleteAll(array('UniversitiesPhoto.university_id' => $id), false);
 				if(!empty($this->request->data['logo'])) {
 					$photo = $this->request->data['logo'];
 					//Debugger::dump($photo_path);
 					//if(!($this->University->saveFile($photo, $id)) )$this->Session->setFlash(__('Nie udało się zapisać loga'));;
-					 $this->request->data['UniversitiesPhoto'][0]['path'] = $photo;
+					$this->request->data['UniversitiesPhoto'][0]['path'] = $photo;
 					$this->request->data['UniversitiesPhoto'][0]['typ'] = 'logo';
 					$this->request->data['UniversitiesPhoto'][0]['university_id'] = $id;
 				} 
 				if (!empty($this->request->data['galeria'])) {
 					foreach ($this->request->data['galeria'] as $key =>$plik) {
-						//Debugger::dump($plik);
-						/*$this->University->UniversitiesPhoto->create();
-						if ($this->University->UniversitiesPhoto->save(
-						    array('UniversitiesPhoto.university_id' => $id, 'typ' => 'galeria', 'UniversitiesPhoto.path' => "'".$plik."'"))) {
-								//$this->Session->setFlash('Recipe Saved!');
-						} else $this->Session->setFlash('nooooo!');*/
-						$this->request->data['UniversitiesPhoto'][$key+1]['path'] = $plik;
-						$this->request->data['UniversitiesPhoto'][$key+1]['typ'] = 'galeria';
-						$this->request->data['UniversitiesPhoto'][$key+1]['university_id'] = $id;
+						if(!empty($plik)) {
+							$this->request->data['UniversitiesPhoto'][$key+1]['path'] = $plik;
+							$this->request->data['UniversitiesPhoto'][$key+1]['typ'] = 'galeria';
+							$this->request->data['UniversitiesPhoto'][$key+1]['university_id'] = $id;
+						}
 					}
 				}
 				//unlink($photo['tmp_name']);
@@ -602,32 +580,56 @@ class UniversitiesController extends AppController {
                 }
             } 
            
+        	$this->University->contain('UniversitiesParameter', 'UniversityType', 'UniversitiesPhoto');
+            $university = $this->University->findById($id);
+
+            $this->set('abonament', $this->University->Abonament->find('list'));
+			$this->set('type', $this->University->UniversityType->find('list'));
+			$this->set('district', $this->University->District->find('list', array('fields'=>array('id', 'nazwa'))));
+
+			//Debugger::dump($university);
+			$university['galeria'] = array();
+			foreach ($university['UniversitiesPhoto'] as $photo) {
+				if($photo['typ']=='logo') {
+					$university['logo'] = $photo['path'];
+				} elseif($photo['typ']=='galeria') {
+					array_push($university['galeria'], $photo['path']);
+				}
+			}
+			//Debugger::dump( $university);
             $this->request->data = $university;
             //Debugger::dump( $this->request->data);
     }
 	
 	public function admin_add() {
 		//Debugger::dump($this->request->data);
-        if ($this->request->is('post')) {
-			$filename = strtotime('now');
-			$photo = $this->request->data['University']['photo'];
-			
-			$path = "/img/uczelnie_min/";
-				$dir = getcwd().$path;
-			if (in_array($photo['type'], array('image/jpeg','image/pjpeg','image/png'))) {
+		$this->set('abonament', $this->University->Abonament->find('list'));
+		$this->set('type', $this->University->UniversityType->find('list'));
+		$this->set('district', $this->University->District->find('list', array('fields'=>array('id', 'nazwa'))));
 
-				$img = $this->University->resize_image($photo['tmp_name'], 400, 400);
-				$photoFile = "$dir$id.png";
-				imagepng($img, $photoFile);	
-				$this->request->data['University']['photo'] = $id.'.png';			
-			
-			} else {
-				$this->University->invalidate('photo', __("Only JPG or PNG accepted.",true));
+
+        if ($this->request->is('post')) {
+			if(!empty($this->request->data['logo'])) {
+				$photo = $this->request->data['logo'];
+				//Debugger::dump($photo_path);
+				//if(!($this->University->saveFile($photo, $id)) )$this->Session->setFlash(__('Nie udało się zapisać loga'));;
+				$this->request->data['UniversitiesPhoto'][0]['path'] = $photo;
+				$this->request->data['UniversitiesPhoto'][0]['typ'] = 'logo';
+				$this->request->data['UniversitiesPhoto'][0]['university_id'] = $id;
+			} 
+			if (!empty($this->request->data['galeria'])) {
+				foreach ($this->request->data['galeria'] as $key =>$plik) {
+					if(!empty($plik)) {
+						$this->request->data['UniversitiesPhoto'][$key+1]['path'] = $plik;
+						$this->request->data['UniversitiesPhoto'][$key+1]['typ'] = 'galeria';
+						$this->request->data['UniversitiesPhoto'][$key+1]['university_id'] = $id;
+					}
+				}
 			}
 			
 			$this->University->create();
-            if ($this->University->save($this->request->data, array('validate' => 'only'))) {
-                $this->Session->setFlash(__('Utworzono kierunek'));
+            if ($this->University->saveAssociated($this->request->data, array('validate' => 'only'))) {
+                $this->Session->setFlash(__('Utworzono nowy uniwersytet'));
                 $this->redirect(array('action' => 'index'));
             } else {
                 $this->Session->setFlash(__('The user could not be created. Please, try again.'));

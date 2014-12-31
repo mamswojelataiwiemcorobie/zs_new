@@ -21,7 +21,7 @@
 					<th><?php echo $this->Paginator->sort('nazwa', 'Nazwa');?>  </th>
 					<th><?php echo $this->Paginator->sort('UniversityType.nazwa', 'Typ');?>  </th>
 					<th><?php echo $this->Paginator->sort('University.miasta', 'Miasto');?></th>
-					<th><?php echo $this->Paginator->sort('abonament', 'Pakiet');?></th>
+					<th><?php echo $this->Paginator->sort('Abonament.nazwa', 'Pakiet');?></th>
 					<th>Actions</th>
 				</tr>
 			</thead>
@@ -31,7 +31,7 @@
 					<td><?php echo $this->Html->link( $university['University']['nazwa']  ,   array('action'=>'edit', $university['University']['id']),array('escape' => false) );?></td>
 					<td><?php echo $university['UniversityType']['nazwa']; ?></td>
 					<td><?php echo $university['University']['miasto']; ?></td>
-					<td><?php echo $university['University']['abonament']; ?></td>
+					<td><?php echo $university['Abonament']['nazwa']; ?></td>
 					<td >
 					<?php 	echo $this->Html->link("Edit",   array('action'=>'edit', $university['University']['id']) ); ?> | 
 					<?php	echo $this->Html->link("Delete", array('action'=>'delete', $university['University']['id'])); ?> |

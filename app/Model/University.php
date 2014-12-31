@@ -4,7 +4,7 @@ class University extends AppModel {
 		'Containable', 'Search.Searchable'
 	);	
 
-	public $belongsTo = array('UniversityType', 'District');
+	public $belongsTo = array('UniversityType', 'District', 'Abonament');
 	public $hasOne = array('UniversitiesParameter');
 	public $hasMany = array('UniversitiesPhoto' => array('className' => 'UniversitiesPhoto',
             											'foreignKey' => 'university_id'),

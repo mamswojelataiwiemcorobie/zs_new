@@ -77,19 +77,45 @@ class FacultiesController extends AppController {
             $this->redirect(array('action'=>'index'));
         }
 
-        if ($this->University->deleteAll(array('Faculty.id' => $id), true)) {
+        if ($this->Faculty->deleteAll(array('Faculty.id' => $id), true)) {
             $this->Session->setFlash(__('Wydział usunięty'));
-            $this->redirect(array('action' => 'lista'));
+            $this->redirect(array('action' => 'edit', $id));
         }
         $this->Session->setFlash(__('Wydział nie mógł być usunięty'));
-        $this->redirect(array('action' => 'lista'));
+        $this->redirect(array('action' => 'edit', $id));
     }
 
-    public function admin_delete_kurs($course_id = null) {
-
+    public function admin_delete_kurs($faculty_id, $course_id = null) {
+    	if ($this->Faculty->CourseonUniversity->deleteAll(array('CourseonUniversity.faculty_id'=>$faculty_id, 'CourseonUniversity.course_id' => $course_id), false)) {
+            $this->Session->setFlash(__('Kierunek wydziału usunięty'));
+            $this->redirect(array('action' => 'edit', $faculty_id));
+        }
+        $this->Session->setFlash(__('Wydział nie mógł być usunięty'));
+        $this->redirect(array('action' => 'edit', $faculty_id));
     }
 
-    public function admin_add_course($course_id = null) {
+    public function admin_add_courses($faculty_id) {
+    	$this->Faculty->contain();
+        $faculty = $this->Faculty->findById($faculty_id);
 
+    	if ($this->request->is('post')) {
+    		$kierunki = $this->request->data['CourseonUniversity']['course_id'];
+			foreach ($kierunki as $kierunek) {
+				$this->Faculty->CourseonUniversity->create();
+				if ($this->Faculty->CourseonUniversity->save(array('CourseonUniversity'=> array('university_id' => $faculty['Faculty']['university_id'], 'faculty_id' => $faculty_id, 'course_id'=>$kierunek,
+																'typ_course_id' => 0, 
+												'tryb_course_id' => 0,
+												)))) {
+					$this->Session->setFlash(__('Kierunek uczelni został utworzony'));
+					 $this->redirect(array('controller'=>'courseon_universities', 'action' => 'lista', $faculty['Faculty']['university_id']));
+				} else {
+					$this->Session->setFlash(__('The user could not be created. Please, try again.'));
+				}   
+			}
+        } 
+		
+		$this->set('faculty', $faculty);
+		$this->set('courses', $this->Faculty->CourseonUniversity->Course->find('list', array(
+					'order' => array('nazwa'))));
     }
 }

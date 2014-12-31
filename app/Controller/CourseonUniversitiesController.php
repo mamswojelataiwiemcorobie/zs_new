@@ -176,7 +176,7 @@ class CourseonUniversitiesController extends AppController {
 			throw new NotFoundException(__('Invalid post'));
 		}			
 		$this->CourseonUniversity->contain('Course');
-		$db = $this->CourseonUniversity->find('all', array('limit'=>10,
+		$db = $this->CourseonUniversity->find('all', array(
 			'order' => array('Course.nazwa', 'CourseonUniversity.faculty_id'), 
 			'conditions' => array('CourseonUniversity.university_id' => $university_id)));
 		$this->CourseonUniversity->University->Faculty->contain();
@@ -195,10 +195,13 @@ class CourseonUniversitiesController extends AppController {
 			$this->set('wydzialy', $wydzialy);
 			$this->set('nazwy_kursow', $nazwy_kursow);
 		}
-		$this->set('university', $university_id);
+		$this->CourseonUniversity->University->contain();
+		$university = $this->CourseonUniversity->University->findById($university_id);
+		//Debugger::dump($kursy[0]);
+		$this->set('university', $university);
 	}
 	
-	 public function admin_edit($id = null) {
+	public function admin_edit($id = null) {
 		if (!$id) {
 			$this->Session->setFlash('Please provide a user id');
 			$this->redirect(array('action'=>'index'));

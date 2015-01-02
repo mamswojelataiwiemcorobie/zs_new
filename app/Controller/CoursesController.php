@@ -52,7 +52,7 @@ class CoursesController extends AppController {
 						'limit' => 5,
 						'recursive' => -1,
 						'fields' => array('DISTINCT CourseonUniversity.university_id'),
-						'conditions' => array('Course.id'=>$id, 'University.abonament >' => 1),
+						'conditions' => array('Course.id'=>$id, 'University.abonament_id >' => 1),
 						'order' => array('University.id', 'University.nazwa'),
 						'joins' => array(
 					        array(
@@ -79,7 +79,7 @@ class CoursesController extends AppController {
 				$this->Course->CourseonUniversity->University->contain('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto');
 						
 				$uczelnia_c = $this->Course->CourseonUniversity->University->find('first', array('conditions' => array('University.id'=> $uczelnia['CourseonUniversity']['university_id'], 
-																														'University.abonament >' => '1')));
+																														'University.abonament_id >' => '1')));
 				if($uczelnia_c) {
 					foreach ($uczelnia_c['UniversitiesPhoto'] as $photo) {
 						if($photo['typ']=='logo') {

@@ -1,14 +1,10 @@
 <div id="searchpage" class="row <?php if ($tid == '2'):?>znajdz-szkole-policealna<?php elseif ($tid == '3'):?>znajdz-szkole-jezykowa<?php endif;?>">
-	<h1 class="large text-center topspace0">WYSZUKIWARKA</h1>
-	<p class="animated fadeInRightNow notransition text-center topspace20 fadeInRight">
-					Znajdź uczelnie których szukasz</p>
-	<?php echo $this->Form->create('University',array('class'=>'form input-append wyszukiwarka', 'role'=>'form', 'type' => 'GET'));?>
-			<input type="text" name="keywords" placeholder="Wpisz nazwe uczelni, miasto…" class="input-medium form-control">
-			<button class="btn center btn-lg btn-success" type="submit" >Szukaj</button>
-			<!-- <button class="btn" type="button">Options</button> -->
-		<?php echo $this->Form->end();?>
 	<div class="col-md-8 l">
-		
+		<?php echo $this->Form->create('University',array('class'=>'form-inline input-append', 'role'=>'form', 'type' => 'GET'));?>
+			<input type="text" name="keywords" placeholder="Type something…" class="input-medium">
+			<button class="btn" type="submit" >Search</button>
+			<button class="btn" type="button">Options</button>
+		<?php echo $this->Form->end();?>
 		
 		<?php if (!isset($uczelnie_nosearch)):?>
 		<div class="znajdz-paginacja-c{if !isset($uczelnie_wyniki) || $uczelnie_wyniki|@count == 0} no-data{/if}"><div class="znajdz-paginacja">

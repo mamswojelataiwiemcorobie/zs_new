@@ -28,9 +28,9 @@
 					</div>
 				</div>
 				<div>
-					<h1 class="smalltitle">
+					<h2 class="subtitle fancy">
 						<span><?php echo $kategoria['CoursesCategory']['nazwa'];?></span>
-					</h1>
+					</h2>
 					<div class="box effect4">
 						<?php if (!empty($kategoria['CoursesCategory']['opis1'])):?><div><h3>Charakterystyka</h3></div>
 							<div class="descr"><?php echo $kategoria['CoursesCategory']['opis1'];?></div><?php endif;?>

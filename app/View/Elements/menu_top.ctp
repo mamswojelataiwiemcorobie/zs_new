@@ -31,13 +31,18 @@
 
 		<ul id="nav" class="nav navbar-nav pull-right l_tinynav1">
 			<li><a href="/">Strona główna</a></li>
+			<li>	<a href="http://blog.zostanstudentem.pl/">AKTUALNOŚCI</a></li>
 			<li class="dropdown">
-			<li class="dropdown"><?php echo $this->Html->link('SZKOŁY WYŻSZE', '/wyszukiwarka/szkoly-wyzsze-1', array('escape' => false, 'ext' => 'html')); ?></li>
-			<li class="dropdown"><?php echo $this->Html->link('KIERUNKI', '/kierunki/artystyczne-1.html', array('escape' => false)); ?></li>
-			<li class="dropdown"><?php echo $this->Html->link('MIASTA', '/miasta', array('escape' => false)); ?></li>
-			<li class="dropdown"><?php echo $this->Html->link('ZAWODY', '/zawody', array('escape' => false)); ?></li>
-			<li class="dropdown"><?php echo $this->Html->link('ERASMUS', '/erazmusy', array('escape' => false)); ?></li>
-			<li class="dropdown"><?php echo $this->Html->link('KONTAKT', '/kontakt', array('escape' => false)); ?></li>
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">WYSZUKIWARKA<i class="icon-angle-down"></i></a>
+			<ul class="dropdown-menu">
+				<li class="dropdown"><?php echo $this->Html->link('SZKOŁY WYŻSZE', '/wyszukiwarka/szkoly-wyzsze-1.html', array('escape' => false)); ?></li>
+				<li class="dropdown"><a href="/wyszukiwarka/szkoly-policealne-2.html">SZKOŁY POLICEALNE</a></li>
+				<li>	<a href="/wyszukiwarka/szkoly-jezykowe-3.html">SZKOŁY JĘZYKOWE</a></li>
+			</ul>
+			</li>
+			<li>	<a href="/rekomendowane.html">REKOMENDOWANE</a></li>
+			<li>	<a href="/kierunki/artystyczne-1.html">KIERUNKI STUDIÓW</a></li>
+			<li>	<a href="/info/informator-2014-9.html">INFORMATOR</a></li>
 		</ul>
 	</div>
 </nav>

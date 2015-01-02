@@ -1,5 +1,5 @@
-<div class="znajdz-wyniki"><?php $fstart=1;?>
-	<?php foreach ($uczelnie_wyniki as $uw): ?><?php if ($fstart==1): $fstart=0; else:?><hr/><?php endif;?>
+<div class="znajdz-wyniki">
+	<?php foreach ($uczelnie_wyniki as $uw): ?>
 	<div class="item">
 		<div class="image"<?php if ($uw['logo']):?> style="background-image:url('/miniatura/160x125/uploads/<?php echo $uw['logo'];?>')"<?php endif;?>>
 		</div>
@@ -26,12 +26,11 @@
 					<a href="<?php echo $uw['University']['link_rejestracji'];?>" class="uczelnia-rekrutuj btn btn-success" target="_blank" rel="nofollow">
 						<i class="icon-plus"></i> Rekrutuj
 					</a><?php endif;?>
-				<a href="/uczelnia/<?php echo $slug=Inflector::slug($uw['University']['nazwa'],'-').'-'.  $uw['University']['id'];?>.html#kierunki" class="btn btn-large btn-primary">
+				<a href="/uczelnia/<?php echo $slug=Inflector::slug($uw['University']['nazwa'],'-').'-'.  $uw['University']['id'];?>.html#kierunki" class="uczelnia-kierunki btn btn-large btn-primary">
 					<i class="icon-ok-sign"></i> Kierunki
 				</a>
 			</div>
 		</div></div>
 	</div>
 	<?php endforeach;?>
-	<hr class="lst"/>
 </div>

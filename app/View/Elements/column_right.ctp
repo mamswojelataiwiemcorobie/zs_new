@@ -19,8 +19,11 @@
 <?php if (count($ostatnio_odwiedzane) > 0):?><div class="qlist qlist-blue">
 	<div class="header">OSTATNIO ODWIEDZANE</div>
 	<div class="cont">
+		<ul>
 		<?php foreach($ostatnio_odwiedzane as $fit):?>
-		<p{cycle values=', class="sec"'}><a href="{$fit.url}"></a><?php echo $fit['name'];?></a></p><?php endforeach;?>
+			<li><a href="<?php echo $fit['url']; ?>"><?php echo $fit['name'];?></a></li>
+		<?php endforeach;?>
+		</ul>
 	</div>
 </div><?php endif;?>
 <!-- {if $act!=='wyszukiwarka'}<div id="znajdz-uczelnie-mini"><div><form method="get" action="/wyszukiwarka/szukaj-4.html">

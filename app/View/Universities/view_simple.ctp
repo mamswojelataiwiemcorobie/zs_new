@@ -5,7 +5,7 @@
 				<section class="animated fadeInUp notransitioncont main">
 					<?php if ($university['logo']): ?>
 						<div class="ml">
-							<img itemprop="logo" src="/img/uczelnie/<?php echo $university['logo'];?>" alt="Logo uczelni <?php echo $university['University']['nazwa'];?>"/>
+							<img itemprop="logo" src="/miniatura/180x260/uploads/<?php echo $university['logo'];?>" alt="Logo uczelni <?php echo $university['University']['nazwa'];?>"/>
 						</div>
 					<?php endif; ?>
 					<div class="mr<?php if (!($university['logo'])): ?> mr-noimage <?php endif; ?>">

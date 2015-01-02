@@ -16,8 +16,8 @@
 						  display: -webkit-flex;
 						  display: flex; 
 						  -webkit-flex-flow: row wrap;">	
-					<h1 class="smalltitle">
-						<span><?php echo $kierunek['Course']['nazwa'];?></span>
+					<h1>
+						<?php echo $kierunek['Course']['nazwa'];?>
 					</h1>
 					<?php if (!empty($kierunek['Course']['opis1'])):?><div><h3>Charakterystyka</h3></div>
 						<div class="descr"><?php echo $kierunek['Course']['opis1'];?></div><?php endif;?>
@@ -26,12 +26,13 @@
 				</div>
 
 			</div>
-			<div >
+			<div class="rekomendowane">
 				<?php if (!isset($uczelnie_nosearch)):?>
-					<div class="znajdz-paginacja-c{if !isset($uczelnie_wyniki) || $uczelnie_wyniki|@count == 0} no-data{/if}"><div class="znajdz-paginacja">
-						<h1 class="smalltitle">
-							<span>REKOMENDOWANE</span>
-						</h1>
+					<h2 class="subtitle fancy">
+						<span>REKOMENDOWANE</span>
+					</h2>
+					<div class="znajdz-paginacja-cv<?php if (!isset($uczelnie_wyniki) || count($uczelnie_wyniki) == 0):?> no-data<?php endif; ?>"><div class="znajdz-paginacja">
+						
 						<?php if (!isset($uczelnie_wyniki_brak)):?>
 						<ul class="pagination pagination-lg">
 							<?php $this->Paginator->options(array('url' => array('controller'=>'/kierunek/',

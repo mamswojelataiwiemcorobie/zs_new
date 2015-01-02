@@ -127,6 +127,7 @@ font-weight: 500;}
 	margin-left:2px;
 }
 .navbar-nav>li>a {
+	padding: 10px 14px;
 	color:#555;
 	border-radius:0px;
 	margin-top:-26px;
@@ -849,6 +850,9 @@ background:url('../images/partnerzy.jpg') left center repeat-x;
 }
 
 /*--------------------------------------------------	Uczelnia---------------------------------------------------*/
+#uczelnia .icon-lg {
+	font-size: 2em;
+}
 #uczelnia .lista_kierunkow li {
 float:left;
 width:141px;
@@ -872,13 +876,20 @@ text-transform: uppercase;
 }
 #uczelnia .main {
 padding:8% 30px;
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
 }
 #uczelnia .main .ml {
 float:left;
 min-width:180px;
-margin-bottom:20px;
 text-align:center;
 width:35%;
+margin: auto;
 }
 #uczelnia .main .ml img{
 	max-height: 200px;
@@ -889,7 +900,6 @@ width:375px;
 #uczelnia .main .mr {
 float:left;
 margin-left:5%;
-margin-bottom:10px;
 width:60%;
 }
 #uczelnia .main .mbrl {
@@ -907,9 +917,8 @@ background:url('spacer.png') left top repeat-x;
 }
 #uczelnia .main h1 {
 float:left;
-padding: 10px 0;
+margin-top: 0;
 margin-bottom:10px;
-font:22px/28px 'Lato', sans-serif;
 font-weight: 300;
 text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 background:url('spacer.png') left bottom repeat-x;
@@ -922,40 +931,12 @@ float:left;
 clear:both;
 }
 #uczelnia .social{
-height: 33px;
+display: flex;
+list-style: none;
 padding: 0;
 border: 0;
 margin-top: 9px;
 margin-left:0px;
-}
-#uczelnia .social li a { 
-display:block; width:32px; height:32px;float:left;margin-right: 7px;
-margin-bottom: 7px;
-}
-#uczelnia .social .fb{
-background-image: url("social_sprite.png");
-background-position: 0 0;
-}
-#uczelnia .social .gp{
-background-image: url("social_sprite.png");
-background-position: 0px -33px;
-}
-#uczelnia .social .yt{
-background-image: url("social_sprite.png");
-background-position: 0 -66px;
-}
-#uczelnia .social .twitter{
-background-image: url("social_sprite.png");
-background-position: 0 -99px;
-}
-#uczelnia .social li{
-display:inline;
-}
-#uczelnia .main span {
-font:normal 10px/16px 'Lato';
-}
-#uczelnia .main span a {
-font:normal 10px 'Lato';
 }
 #uczelnia .main .mb .mbl {
 clear:both;
@@ -971,10 +952,14 @@ display:none;
 }
 #uczelnia .main .uczelnia-rekrutuj {
 display:block;
+background: #FF6633;
+color: white;
 }
 #uczelnia .main .uczelnia-schowek {
 display:block;
 margin-bottom: 9px;
+background: #1ABC9C;
+color: white;
 }
 #uczelnia .main .uzupelnij-profil {
 display:block;
@@ -991,7 +976,8 @@ padding: 1px;
 margin: 0 0 20px 0;
 }
 #searchpage .l {
-float:left;
+display: flex;
+flex-flow: column wrap;
 min-width: 600px;
 width: 65%;
 }
@@ -1053,9 +1039,13 @@ height:30px;
 cursor:pointer;
 background:transparent;
 }
-
-.no-data {
-height:63px !important;
+.flex-row {
+display: -webkit-box;
+						  display: -moz-box;
+						  display: -ms-flexbox;
+						  display: -webkit-flex;
+						  display: flex; 
+						  -webkit-flex-flow: row wrap;
 }
 .no-data-info {
 text-align:center;
@@ -1112,28 +1102,37 @@ font:normal 12px/18px Arial;
 float:left;
 min-width: 192px;
 width: 35%;
-height:160px;
 background-repeat:no-repeat;
 background-position:center center;
 }
 .item {
-clear:both;
-height:145px;
+padding: 20px 0;
+border-bottom: 1px solid gray;
+display: flex;
+flex-flow: row wrap;
 }
 .item .data-c {
 float:left;
 width:65%;
 padding-top:9px;
 }
-.item .data {
-height:109px;
+.znajdz-wyniki {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.data-r a [class^="icon-"], a [class*=" icon-"] {
+	padding-right: 5px;
 }
 .item .data-l {
-float:left;
-width:65%;
-padding-top:12px;
-height:84px;
+float: left; 
+width: 65%;
+padding-top: 12px;
+/* height: 84px; */
 clear: both;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
 }
 .item .title  a{
 overflow:hidden;
@@ -1160,6 +1159,13 @@ min-width: 113px;
 width: 30%;
 padding-top: 14px;
 margin-left: 5%;
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: column wrap;
 }
 .item .uczelnia-schowek {
 float:left;
@@ -1168,9 +1174,11 @@ margin-bottom:9px;
 .item .uczelnia-rekrutuj {
 float:left;
 margin-bottom:9px;
+text-transform: uppercase;
 }
 .item .uczelnia-kierunki {
 float:left;
+text-transform: uppercase;
 }
 .item .uczelnia-jezyki {
 float:left;
@@ -1186,6 +1194,9 @@ display: block;
 }
 
 /*--------------------------------------------------	KIERUNKI---------------------------------------------------*/
+#kierunek, #kierunki {
+padding-top: 10px;
+}
 #kierunki .lista_kierunkow li{
 width: 50%;
 float: left;
@@ -1194,14 +1205,15 @@ float: left;
 #kierunek .smalltitle {
 margin-top: 0;
 }
-#kierunek ul.resp-tabs-list, #kierunki ul.resp-tabs-list {
-margin-top: 10px;
-}
 .pagination {
 float: right;
 }
 /*--------------------------------------------------	MISC---------------------------------------------------*/
-
+.rekomendowane {
+	background: white;
+	display: flex;
+flex-flow: column wrap;
+}
 .qlist {
 width:312px;
 margin-bottom:10px;
@@ -1252,16 +1264,22 @@ background:#dde7ee;
 background-color:rgb(51,152,204) ;
 }
 .qlist-blue .cont {
-background:#edf4ff;
+background:#EDF4FF;
 }
-.qlist-blue .cont p {
-background:#d2e3f4 url('/slf.png') -1170px -246px no-repeat;
+.qlist-blue .cont li a {
+	color: #3a83b2;
 }
-.qlist-blue .cont p a {
-color:#3a83b2;
+.qlist-blue .cont li:before {
+	content: "\f06e";
+	color: #edf4ff;
+	color:#e56700;
 }
-.qlist-blue .cont p.sec {
-background:url('/slf.png') -1170px -273px no-repeat;
+
+.qlist-blue .cont li:nth-child(odd) {
+	background:#D2E3F4;
+}
+.qlist-blue .cont li:nth-child(odd) a, .qlist-blue .cont li:nth-child(odd):before {
+	color: #3399CC;
 }
 
 .show-grid [class^="col-"] {
@@ -1315,20 +1333,49 @@ input,button,select,textarea {
 .allradius {
 	border-radius:3px;
 }
+.title {
+	color: #16A085;
+font-size: 15px;
+float: left;
+}
 h1.big {
 	font-size:27px;
 }
 h1.small {
 	font-size:24px;
 }
+h2.fancy{
+  padding-top: 20px;
+padding-bottom: 10px;
+	margin:0;
+	background: white
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 18px;
+  border-bottom: 1px solid gray;
+  top: 0;
+  width: 100%;
+}
+
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
 .smalltitle span {
-	display:inline-block;
+	/*display:inline-block;*/
 	background-color:#fff;
 	padding:1px 12px;
 	position:relative;
 	color:#444;
 	font-size:20px;
-	top:12px;
+	top:-7px;
 	padding-left:0 !important;
 	font-weight:700;
 	text-transform:uppercase;
@@ -1338,6 +1385,7 @@ h1.small {
 	flex-basis: 100%;
 	border-bottom:1px solid #ebebeb;
 	margin-bottom:35px;
+	line-height: 0;
 }
 .text-center.smalltitle span {
 	padding-left:12px !important;
@@ -2261,7 +2309,6 @@ ul.social-icons li a:hover {
 	-moz-background-size:cover !Important;
 	-o-background-size:cover !Important;
 	background-size:cover !Important;
-	background:url(/img/demo/3.jpg);
 	color:#fff;
 	background-attachment:fixed;
 }
@@ -9167,6 +9214,9 @@ body {
 	width: auto !Important;
 }
 /* Responsive Tabs================================================== */
+#horizontalTab {
+	background: #E7EBEC;
+}
 ul.resp-tabs-list,ul.resp-tabs-list p {
 	margin:0px;
 	padding:0px;
@@ -9181,6 +9231,21 @@ ul.resp-tabs-list,ul.resp-tabs-list p {
 	list-style:none;
 	cursor:pointer;
 	float:left;
+	border-right: 1px solid white;
+}
+.resp-tabs-list li:last-child {
+	border-right: none;
+}
+.resp-tabs-list li a{
+	color: #7F8C8D;
+}
+.resp-tabs-list li a:hover{
+	color:  #27AE60;
+	background: white;
+}
+.resp-tabs-list li:hover{
+	background: white;
+	border-bottom: none;
 }
 .resp-tabs-container {
 	padding:0px;
@@ -9194,17 +9259,24 @@ h2.resp-accordion {
 }
 .resp-tab-content {
 	display:none;
-	padding:15px;
+	padding:20px;
 }
 .resp-tab-active {
 	border:1px solid #ebebeb;
 	border-bottom:none;
 	margin-bottom:-1px !important;
-	padding:12px 14px 14px 14px !important;
+	padding: 12px 13px 14px 12px !important;
 }
-.resp-tab-active {
-	border-bottom:none;
-	background-color:#fff;
+
+.resp-tabs-list li.resp-tab-active {
+	border-bottom: none;
+	background-color: #27AE60;
+	font-weight: 700;
+	border-right: none;
+}
+.resp-tabs-list li.resp-tab-active a {
+	color: white;
+background: transparent;
 }
 .resp-content-active,.resp-accordion-active {
 	display:block;

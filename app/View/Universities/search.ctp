@@ -1,12 +1,13 @@
 <div id="searchpage" class="row <?php if ($tid == '2'):?>znajdz-szkole-policealna<?php elseif ($tid == '3'):?>znajdz-szkole-jezykowa<?php endif;?>">
 	<h1 class="large text-center topspace0">WYSZUKIWARKA</h1>
-	<p class="animated fadeInRightNow notransition text-center topspace20 fadeInRight">
-					Znajdź uczelnie których szukasz</p>
-	<?php echo $this->Form->create('University',array('class'=>'form input-append wyszukiwarka', 'role'=>'form', 'type' => 'GET'));?>
-			<input type="text" name="keywords" placeholder="Wpisz nazwe uczelni, miasto…" class="input-medium form-control">
-			<button class="btn center btn-lg btn-success" type="submit" >Szukaj</button>
-			<!-- <button class="btn" type="button">Options</button> -->
-		<?php echo $this->Form->end();?>
+	<p class="animated fadeInRightNow notransition text-center topspace20 fadeInRight">Znajdź uczelnie których szukasz</p>
+	<div class="szukaj">
+		<?php echo $this->Form->create('University',array('class'=>'form input-append wyszukiwarka', 'role'=>'form', 'type' => 'GET'));?>
+				<input type="text" name="keywords" placeholder="Wpisz nazwe uczelni, miasto…" class="input-medium form-control">
+				<button class="btn center btn-lg btn-success" type="submit" >Szukaj</button>
+				<!-- <button class="btn" type="button">Options</button> -->
+			<?php echo $this->Form->end();?>
+	</div>
 	<div class="col-md-8 l">
 		
 		

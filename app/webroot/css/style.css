@@ -848,7 +848,11 @@ background:url('../images/partnerzy.jpg') left center repeat-x;
 	margin-right:5px;
 	color: #fff;
 }
-
+.szukaj {
+width: 80%;
+margin: auto;
+margin-bottom: 50px;
+}
 /*--------------------------------------------------	Uczelnia---------------------------------------------------*/
 #uczelnia .icon-lg {
 	font-size: 2em;

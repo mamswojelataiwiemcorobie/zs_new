@@ -16,6 +16,7 @@
 						  display: -webkit-flex;
 						  display: flex; 
 						  -webkit-flex-flow: column wrap;
+						  flex-flow: column wrap;
 							align-items: flex-start;">	
 					<h1>
 						<?php echo $kierunek['Course']['nazwa'];?>

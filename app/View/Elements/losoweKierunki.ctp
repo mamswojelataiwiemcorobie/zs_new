@@ -19,7 +19,7 @@ $losowe = $this->requestAction(array('controller' => 'courses',
 												);?>
 					</p>
 					<p class="fontupper">
-						<a href="#" class="readmore">Read More <i class="icon-double-angle-right"></i></a>
+						<a href="/kierunek/<?php echo Inflector::slug($losowe[0]['Course']['nazwa'],'-').'-'.  $losowe[0]['Course']['id'];?>.html" class="readmore">więcej <i class="icon-double-angle-right"></i></a>
 					</p>
 				</div>
 			</div>
@@ -37,7 +37,7 @@ $losowe = $this->requestAction(array('controller' => 'courses',
 												);?>
 					</p>
 					<p class="fontupper">
-						<a href="#" class="readmore">Read More <i class="icon-double-angle-right"></i></a>
+						<a href="/kierunek/<?php echo Inflector::slug($losowe[1]['Course']['nazwa'],'-').'-'.  $losowe[1]['Course']['id'];?>.html" class="readmore">więcej <i class="icon-double-angle-right"></i></a>
 					</p>        
 	          </div>
 	        </div>
@@ -55,7 +55,7 @@ $losowe = $this->requestAction(array('controller' => 'courses',
 												);?>
 					</p>
 					<p class="fontupper">
-						<a href="#" class="readmore">Read More <i class="icon-double-angle-right"></i></a>
+						<a href="/kierunek/<?php echo Inflector::slug($losowe[2]['Course']['nazwa'],'-').'-'.  $losowe[2]['Course']['id'];?>.html" class="readmore">więcej <i class="icon-double-angle-right"></i></a>
 					</p>            
 	        	</div>
 	        </div>

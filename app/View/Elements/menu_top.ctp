@@ -39,10 +39,9 @@
 				<li class="dropdown"><a href="/wyszukiwarka/szkoly-policealne-2.html">SZKOŁY POLICEALNE</a></li>
 				<li>	<a href="/wyszukiwarka/szkoly-jezykowe-3.html">SZKOŁY JĘZYKOWE</a></li>
 			</ul>
-			</li>
-			<li>	<a href="/rekomendowane.html">REKOMENDOWANE</a></li>
 			<li>	<a href="/kierunki/artystyczne-1.html">KIERUNKI STUDIÓW</a></li>
 			<li>	<a href="/info/informator-2014-9.html">INFORMATOR</a></li>
+			<li><a href="kontakt.html">KONTAKT</a></li>
 		</ul>
 	</div>
 </nav>

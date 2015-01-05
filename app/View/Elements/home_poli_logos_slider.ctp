@@ -4,11 +4,6 @@
 			<div class="text-center smalltitle"></div>
 			<div class="col-md-12">
 				<div class="list_carousel text-center">
-					<div class="carousel_nav">
-						<a class="prev" id="car_prev" href="#" style="display: block;"><span>prev</span></a>
-						<a class="next" id="car_next" href="#" style="display: block;"><span>next</span></a>
-					</div>
-					<div class="clearfix"></div>
 					<ul id="carousel-projects">
 						<?php 
 							$universities = $this->requestAction(array('controller' => 'universities',
@@ -40,6 +35,11 @@
 						</li>
 						<?php endforeach;?>
 					</ul>
+					<div class="carousel_nav">
+						<a class="prev" id="car_prev" href="#" style="display: block;"><span>prev</span></a>
+						<a class="next" id="car_next" href="#" style="display: block;"><span>next</span></a>
+					</div>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>

@@ -34,7 +34,8 @@ App::uses('Model', 'Model');
 class AppModel extends Model {
 	public function countSearchKeywords($keyword) {
 		$db = $this->getDataSource();
-		$db->fetchAll("INSERT INTO search_keywords (id,keyword,counter) VALUES (NULL,?,1) ON DUPLICATE KEY UPDATE counter = counter+1",array($keyword));
+		$query = 'INSERT INTO search_keywords (id,keyword,counter) VALUES (NULL,"'.$keyword.'",1) ON DUPLICATE KEY UPDATE counter = counter+1';
+		$db->fetchAll($query);
 	}
 
 	public function getSearchKeyword($id) {

@@ -41,7 +41,7 @@
 			</ul>
 			<li>	<a href="/kierunki/artystyczne-1.html">KIERUNKI STUDIÓW</a></li>
 			<li>	<a href="/info/informator-2014-9.html">INFORMATOR</a></li>
-			<li><a href="kontakt.html">KONTAKT</a></li>
+			<li><a href="/kontakt.html">KONTAKT</a></li>
 		</ul>
 	</div>
 </nav>

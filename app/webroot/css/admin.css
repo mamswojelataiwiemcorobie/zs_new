@@ -28,3 +28,6 @@ display: none;
 .uimage {
 	float:left;
 }
+.check {
+	background: lightsteelblue;
+}

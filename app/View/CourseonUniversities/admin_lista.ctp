@@ -116,7 +116,7 @@
 												</td>
 											</tr>
 											<?php endforeach; ?>
-											<tr class=\"check\">
+											<tr class="check">
 												<td> Check all</td>
 												<?php if ($university['University']['university_type_id'] == 1):?>
 													<td><input type="checkbox" onclick="toggleCheckedlic(this.checked)"/></td><td><input type="checkbox" onclick="toggleCheckedmgr(this.checked)"/></td><td><input type="checkbox" onclick=\"toggleChecked3(this.checked)"/></td><td><input type="checkbox" onclick="toggleChecked4(this.checked)"/></td><td><input type="checkbox" onclick="toggleChecked5(this.checked)"/></td><td><input type="checkbox" onclick="toggleChecked6(this.checked)"/></td><td><input type="checkbox" onclick="toggleChecked7(this.checked)"/></td><td><input type="checkbox" onclick="toggleChecked8(this.checked)"/></td><td><input type="checkbox" onclick="toggleChecked9(this.checked)"/></td><td><input type="checkbox" onclick="toggleChecked10(this.checked)"/></td>

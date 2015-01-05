@@ -435,7 +435,9 @@ class UniversitiesController extends AppController {
 	
 	public function home_slider() {
 		//$this->University->contain();
-		$universities = $this->University->UniversitiesPhoto->find('all', array('conditions' => array('UniversitiesPhoto.typ' => 'logo', 'University.university_type_id' => 1, 'University.abonament_id >=' => 2), 'limit'=> 5));
+		$universities = $this->University->UniversitiesPhoto->find('all', array('order'=> array('University.abonament_id', 'University.nazwa'),
+																			'conditions' => array('UniversitiesPhoto.typ' => 'logo', 'University.university_type_id' => 1, 'University.abonament_id >=' => 2), 
+																			'limit'=> 100));
 		//Debugger::dump($universities);
 		if (!empty($this -> request -> params['requested'])) {
 		   return $universities;
@@ -446,7 +448,8 @@ class UniversitiesController extends AppController {
 
 	public function home_slider_poli() {
 		//$this->University->contain();
-		$universities = $this->University->UniversitiesPhoto->find('all', array('conditions' => array('UniversitiesPhoto.typ' => 'logo', 'University.university_type_id' => 2, 'University.abonament_id >=' => 2), 'limit'=> 5));
+		$universities = $this->University->UniversitiesPhoto->find('all', array('conditions' => array('UniversitiesPhoto.typ' => 'logo', 'University.university_type_id' => 2, 'University.abonament_id >=' => 2), 
+																			'limit'=> 100));
 		//Debugger::dump($universities);
 		if (!empty($this -> request -> params['requested'])) {
 		   return $universities;

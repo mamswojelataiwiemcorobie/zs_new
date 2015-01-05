@@ -1,7 +1,8 @@
 <section class="grayarea recent-projects-home topspace30 animated fadeInUpNow notransition fadeInUp">
 	<div class="container">
 		<div class="row">
-			<div class="text-center smalltitle"></div>
+			<div class="text-center smalltitle">
+				</div>
 			<div class="col-md-12">
 				<div class="list_carousel text-center">
 					<div class="carousel_nav">
@@ -9,8 +10,8 @@
 						<a class="next" id="car_next" href="#" style="display: block;"><span>next</span></a>
 					</div>
 					<div class="clearfix"></div>
-					<div class="caroufredsel_wrapper" style="display: block; text-align: center; float: none; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; margin: 0px; overflow: hidden; position: relative; width: 1120px; height: 295px;">
-						<ul id="carousel-projects" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; z-index: 1; margin: 0px; width: 5600px; height: 295px; left: 0px;">
+					
+						<ul id="carousel-projects_uni">
 							<?php 
 								$universities = $this->requestAction(array('controller' => 'universities',
 
@@ -20,7 +21,7 @@
 							<li>
 								<div class="boxcontainer">
 									<div class="wrap">
-										<img src="/uploads/<?php echo $university['UniversitiesPhoto']['path']; ?>" alt="Logo">
+										<img src="miniatura/500x333/uploads/<?php echo $university['UniversitiesPhoto']['path']; ?>" alt="Logo">
 									</div>
 									<div class="roll" style="opacity: 0;">
 										<div class="wrapcaption">
@@ -41,7 +42,7 @@
 							</li>
 							<?php endforeach;?>
 						</ul>
-					</div>
+					
 				</div>
 			</div>
 		</div>

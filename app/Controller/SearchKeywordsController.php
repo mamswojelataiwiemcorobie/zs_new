@@ -9,7 +9,7 @@ class SearchKeywordsController extends AppController {
 	);
 
 	public function najczesciej() {
-		$najczesciej = $this->SearchKeyword->find('all',array('order' => 'SearchKeyword.counter', 'limit' =>10));
+		$najczesciej = $this->SearchKeyword->find('all',array('order' => array('SearchKeyword.counter'=> 'desc'), 'limit' =>10));
 		return $najczesciej;
 	}
 

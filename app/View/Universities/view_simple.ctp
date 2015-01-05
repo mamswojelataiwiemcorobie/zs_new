@@ -73,7 +73,7 @@
 					</ul>
 					<div class="resp-tabs-container cont">
 						<?php if ($zakladka_page === 0) : ?>
-							<div>
+							<div style="display:block;">
 								<?php if (strlen($university['UniversitiesParameter']['opis']) > 0):?>
 									<h1 class="smalltitle">
 									<span>Opis</span>
@@ -89,7 +89,7 @@
 							</div>
 						<!-- KIERUNKI -->
 						<?php elseif ($zakladka_page === 5) :?>
-							<section >
+							<div style="display:block;">
 								<?php if($university['University']['university_type_id'] == 3): ?>
 									<div class="lista_jezykow">
 										<h1 class="smalltitle">
@@ -111,13 +111,13 @@
 										</h1>
 										<div class="info">
 											<?php foreach ($kierunki as $kierunek) :?>
-												<a href="kierunek/<?php echo Inflector::slug($kierunek['Course']['nazwa'],'-').'-'. $kierunek['Course']['id'];?>"><?php echo $kierunek['Course']['nazwa'];?></a> | 
+												<a href="/kierunek/<?php echo Inflector::slug($kierunek['Course']['nazwa'],'-').'-'. $kierunek['Course']['id'];?>"><?php echo $kierunek['Course']['nazwa'];?></a> | 
 											<?php endforeach;?>
 										</div>
 										<div class="cl"></div>
 									</div>
 								<?php endif;?>
-							</section>
+							</div>
 						<?php endif;?>
 					</div>
 				</div>
@@ -132,11 +132,6 @@
 						</div>
 					</div>
 				<?php endif;?>
-				<div class="row">
-						<div class="col-md-12 animated fadeInLeft notransition">
-							<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fzostanstudentem&amp;width=320&amp;height=480&amp;colorscheme=light&amp;show_faces=true&amp;border_color=white&amp;stream=true&amp;header=false&amp;appId=290331384356620" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:480px;" allowTransparency="true"></iframe></div>
-				</div>
-				</br>
 			</div>
 		</div>
 	</div>

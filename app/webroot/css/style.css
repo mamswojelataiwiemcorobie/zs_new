@@ -853,6 +853,17 @@ width: 80%;
 margin: auto;
 margin-bottom: 50px;
 }
+.wyszukiwarka {
+	display: flex;
+	flex-flow: column wrap;
+	/* justify-content: center; */
+	align-items: center;
+}
+.wyszukiwarka button{
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+}
 /*--------------------------------------------------	Uczelnia---------------------------------------------------*/
 #uczelnia .icon-lg {
 	font-size: 2em;

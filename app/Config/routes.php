@@ -133,6 +133,12 @@
             'slug'=>'.+'
         ));
 
+     Router::connect(
+        '/rekomendowane',
+        array(
+            'controller' => 'universities',
+            'action' => 'rekomendowane'));
+
     Router::connect(
         '/najczesciej_szukane/:slug-:tid/*',
         array(

@@ -83,7 +83,8 @@ class UniversitiesController extends AppController {
 		if ($university['University']['abonament_id'] < 2) {
 			$this->University->CourseonUniversity->contain('Course.id', 'Course.nazwa');
 			$kierunki = $this->University->CourseonUniversity->find('all', array('conditions'=>array('CourseonUniversity.university_id'=>$id), 																
-																				'order'=>array('Course.nazwa')));
+																				'order'=>array('Course.nazwa'),
+																				'group'=>'Course.nazwa'));
 			$this->set('kierunki', $kierunki);
 			$this->set('university', $university);
 			$this->render('view_simple');
@@ -221,11 +222,74 @@ class UniversitiesController extends AppController {
         } else { 
 			$this->Paginator->settings = array(
 		        'conditions' => array('University.university_type_id' => $tid),
-				'order' => array('University.abonament_id'=> 'desc', 'UniversityParameter.nazwa' => 'asc' ),
+				'order' => array('University.abonament_id'=> 'desc', 'University.nazwa' => 'asc' ),
 				'limit' => 5,
 				'contain' => array('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
 		    );
 		}
+        $data =  $this->Paginator->paginate();
+
+			if (count($data)>0) {
+				$uczelnie_promo = array();
+				$uczelnie = array();
+				foreach ($data as $uczelnia) {
+					if ($uczelnia['University']['abonament_id'] > 1) {
+						foreach ($uczelnia['UniversitiesPhoto'] as $photo) {
+							if($photo['typ']=='logo') {
+								$uczelnia['logo'] = $photo['path'];
+							} 
+						}
+						$uczelnia = Set::remove($uczelnia, 'UniversitiesPhoto');
+						$uczelnie_promo[] = $uczelnia;
+					} else {
+						$uczelnie[] = $uczelnia;
+					}
+				}
+				//Debugger::dump($uczelnie_promo);
+				$this->set('uczelnie_wyniki',$uczelnie_promo);
+				$this->set('uczelnie_wyniki_demo',$uczelnie);
+			} else {
+				$this->set('uczelnie_wyniki_brak',1);
+			}
+			
+		//} else {
+			//$this->av('uczelnie_nosearch',1);
+		//}
+		//$this->av('uczelnie_searchurl',$this->wyszukiwarka_cleanurl());
+		/*$this->set('sf',$sf);
+		
+		if (isset($_req['rodzaj'])) {
+			switch ($_req['rodzaj']) {
+			case 1:
+				$r = 'Szkoła wyższa, uniwersytet'; break;
+			case 2:
+				$r = 'Szkoła policealna'; break;
+			case 3:
+				$r = 'Szkoła językowa'; break;
+			}
+		}
+		if (!empty($_req['miasto'])) {$this->set('title_for_layout', $_req['miasto']. ' - ' .$r. ' | Zostań Studentem');
+			if (!empty($_req['kierunek'])) $this->set('title_for_layout',  $_req['kierunek']. ' - ' .$_req['miasto']. ' - ' .$r. ' | Zostań Studentem');
+		} elseif (!empty($_req['kierunek'])) $this->set('title_for_layout', $_req['kierunek']. ' - ' .$r. ' | Zostań Studentem');*/
+		$this->set('title_for_layout', 'Wyszukiwarka - Szkoły wyższe - policelane - językowe | Zostań Studentem');
+
+		$this->set('title_for_slider2','Znajdź uczelnie');
+
+		$this->set('description_for_layout', 'Znajdź szkołę, uczelnie, uniwersytet i kierunek studiów który Cię interesuje');
+		$this->set('keywords_for_layout', 'szkoła, wyższa, policealna, językowa, uczelnia, kierunek, studia');
+
+	}	
+
+	public function rekomendowane() {
+
+		
+		$this->Paginator->settings = array(
+	        'conditions' => array('University.university_type_id' => 1, 'University.abonament_id >=' => 2),
+			'order' => array('University.abonament_id'=> 'desc', 'UniversityParameter.nazwa' => 'asc' ),
+			'limit' => 5,
+			'contain' => array('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
+	    );
+
         $data =  $this->Paginator->paginate();
 
 			if (count($data)>0) {

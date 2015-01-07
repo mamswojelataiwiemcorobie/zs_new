@@ -150,6 +150,17 @@
             'slug'=>'.+'
         ));
 
+     Router::connect(
+        '/info/:slug-:tid/*',
+        array(
+            'controller' => 'subsites',
+            'action' => 'info'),
+        array(
+            'pass' => array('tid'),
+            'tid' => '[0-9]+',
+            'slug'=>'.+'
+        ));
+
 
 
 /**

@@ -6,5 +6,8 @@ class SubsitesController extends AppController {
 			$site = $this->Subsite->findById($tid);
 			//Debugger::dump($site);
 			$this->set('site', $site['Subsite']);
+			$this->set('title_for_layout', $site['Subsite']['meta_title']);
+			$this->set('description_for_layout', $site['Subsite']['meta_description']);
+			$this->set('keywords_for_layout', $site['Subsite']['meta_keywords']);
 		}
 	}

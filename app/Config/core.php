@@ -345,3 +345,9 @@ Cache::config('_cake_model_', array(
 	'serialize' => ($engine === 'File'),
 	'duration' => $duration
 ));
+
+Cache::config('common_paginator_cache_redis', array(
+    'engine' => $engine,
+    'duration' => '+15 minutes',
+    'probability' => 70
+));

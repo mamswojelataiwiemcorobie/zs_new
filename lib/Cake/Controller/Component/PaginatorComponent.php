@@ -191,11 +191,19 @@ class PaginatorComponent extends Component {
 				$conditions, $fields, $order, $limit, $page, $recursive, $extra
 			);
 		} else {
-			$parameters = compact('conditions', 'fields', 'order', 'limit', 'page');
+			$parameters = compact('conditions', 'fields', 'order', 'limit', 'page', 'cache_config');
 			if ($recursive != $object->recursive) {
 				$parameters['recursive'] = $recursive;
 			}
-			$results = $object->find($type, array_merge($parameters, $extra));
+			if(!isset($options['cache_config'])){
+			    $results = $object->find($type, array_merge($parameters, $extra));
+			}
+			else{
+			    $cache_key = 'paginator_cache_'.$object->name.'_page_'.$page;
+			    $results = Cache::remember($cache_key, function() use ($object,$type,$parameters,$extra){
+			                   return $object->find($type,array_merge($parameters, $extra));
+			               },$options['cache_config']);
+			}
 		}
 		$defaults = $this->getDefaults($object->alias);
 		unset($defaults[0]);

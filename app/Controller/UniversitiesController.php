@@ -535,8 +535,8 @@ class UniversitiesController extends AppController {
 		        			$conditions
 ,						//'joins' => $joins,
 						'group' => 'University.id',
-						'contain' => array('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
-						
+						'contain' => array('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto'),
+						'cache_config'=>'common_paginator_cache_redis'
 					)
 				);
         } else { 
@@ -544,7 +544,8 @@ class UniversitiesController extends AppController {
 		        'conditions' => array('University.university_type_id' => $tid),
 				'order' => array('University.abonament_id'=> 'desc', 'UniversityParameter.nazwa' => 'asc' ),
 				'limit' => 5,
-				'contain' => array('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
+				'contain' => array('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto'),
+				'cache_config'=>'common_paginator_cache_redis'
 		    );
 		}
         $data =  $this->Paginator->paginate();

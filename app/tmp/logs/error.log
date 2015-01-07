@@ -52297,3 +52297,43 @@ Request URL: /css/spacer.png
 Stack Trace:
 #0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-01-07 15:36:18 Error: Fatal Error (4): syntax error, unexpected ''cache_config'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 539]
+2015-01-07 15:36:18 Error: [FatalErrorException] syntax error, unexpected ''cache_config'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /najczesciej_szukane/akademia-60.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 539)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 539, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 539, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-07 15:37:39 Error: Fatal Error (4): syntax error, unexpected ''cache_config'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 539]
+2015-01-07 15:37:39 Error: [FatalErrorException] syntax error, unexpected ''cache_config'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /najczesciej_szukane/akademia-60.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 539)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 539, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 539, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-07 15:37:51 Error: Fatal Error (4): syntax error, unexpected ''cache_config'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\Users\Administrator\Documents\klu\zs_new\app\Controller\UniversitiesController.php, line 539]
+2015-01-07 15:37:51 Error: [FatalErrorException] syntax error, unexpected ''cache_config'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /najczesciej_szukane/akademia-60.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 539)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 539, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 539, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-07 15:38:21 Error: Fatal Error (1): Call to undefined method Cache::remember() in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Component\PaginatorComponent.php, line 203]
+2015-01-07 15:38:21 Error: [FatalErrorException] Call to undefined method Cache::remember()
+Request URL: /najczesciej_szukane/akademia-60.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Admini...', 203)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Admini...', 203, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Admini...', 203, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -477,11 +477,14 @@ class UniversitiesController extends AppController {
 	}
 
 	public function najczesciej($id) {
+
 		//$db = $this->getDataSource();
 		$r= $this->University->query("SELECT * FROM search_keywords WHERE id = ?",array($id));
 		//Debugger::dump($r);
 		$tid = 1;
 		$this->set('tid',$tid);
+
+		 if ($this->request->is('post')) redirect(array('action' => 'search', $tid)); 
 
 		if(!empty($r)) {
             $keywords = mysql_escape_string(mb_strtolower($r[0]['search_keywords']['keyword'], 'UTF-8'));

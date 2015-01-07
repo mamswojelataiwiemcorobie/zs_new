@@ -43,4 +43,12 @@ class AppModel extends Model {
 		$r= $db->fetchAll("SELECT * FROM search_keywords WHERE id = ?",array($id));
 		return $r;
 	}
+
+	function afterSave($created) {
+	    clearCache();
+	}
+
+	public function afterDelete() {
+	    clearCache();
+	}
 }

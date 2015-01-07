@@ -80,7 +80,7 @@ class UniversitiesController extends AppController {
 
 		$this->set('title_for_layout', $university['University']['nazwa']);
 
-		if ($university['University']['abonament_id'] < 2) {
+		if ($university['University']['abonament_id'] < 2 || $university['University']['university_type_id'] == 3) {
 			$this->University->CourseonUniversity->contain('Course.id', 'Course.nazwa');
 			$kierunki = $this->University->CourseonUniversity->find('all', array('conditions'=>array('CourseonUniversity.university_id'=>$id), 																
 																				'order'=>array('Course.nazwa'),

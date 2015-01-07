@@ -104,21 +104,20 @@
 							<div class="col-sm-6">
 								<div id="accordion-container" style="display: block; "?>
 									<!-- GALERIA -->
-									<?php if ($university['University']['abonament_id'] > 2):?>
+									<?php if ($university['University']['abonament_id'] > 2 && count($university['galeria'])>0):?>
 									<div class="row galeria">
 										<h2 class="accordion-header">Galeria</h2>
-										<?php if (count($university['galeria'])>0) :?>
 										<div class="col-md-12 accordion-content">
 											<div class="list_carousel text-center">
-												<ul id="carousel-projects">
+												<ul id="carousel-projects_gallery">
 													<!--featured-projects 1-->
 													<?php foreach ($university['galeria'] as $image) : ?>
 													<li>
 														<div class="boxcontainer">
-															<img src="/uploads/min/<?php echo $image;?>" alt="" />
+															<img src="/miniatura/300x200/uploads/<?php echo $image;?>" alt="" />
 															<div class="roll">
 																<div class="wrapcaption">
-																	<a data-gal="prettyPhoto[gallery1]" href="/uploads/min/<?php echo $image;?>"><i class="icon-zoom-in captionicons"></i></a>
+																	<a data-gal="prettyPhoto[gallery1]" href="/miniatura/800x600/uploads/<?php echo $image;?>"><i class="icon-zoom-in captionicons"></i></a>
 																</div>
 															</div>
 														</div>
@@ -132,7 +131,6 @@
 												<div class="clearfix"></div>
 											</div>
 										</div>
-										<?php endif;?>
 									</div>
 									<?php endif;?>
 									
@@ -143,7 +141,7 @@
 												<ul class="icons chevronlist">	
 													<?php foreach($wydzialy as $wydzial) : ?>											
 														<li>
-															<a href="/wydzial<?php echo Inflector::slug($wydzial['Faculty']['nazwa'],'-').'-'. $wydzial['Faculty']['id'];?>"><?php echo $wydzial['Faculty']['nazwa'];?></a>
+															<a href="/wydzial<?php echo Inflector::slug($wydzial['Faculty']['nazwa'],'-').'-'. $wydzial['Faculty']['id'];?>.html"><?php echo $wydzial['Faculty']['nazwa'];?></a>
 														</li>
 													<?php endforeach;?>
 												</ul>

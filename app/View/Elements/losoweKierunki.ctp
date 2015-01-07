@@ -10,7 +10,7 @@ $losowe = $this->requestAction(array('controller' => 'courses',
 					<i class="fontawesome-icon medium circle-white center icon-rocket"></i>
 					<h1><?php echo $losowe[0]['Course']['nazwa']?></h1>
 					<p><?php echo $this->Text->truncate(
-												    $losowe[0]['Course']['opis1'],
+												    strip_tags($losowe[0]['Course']['opis1']),
 												    202,
 												    array(
 												        'ellipsis' => '...',

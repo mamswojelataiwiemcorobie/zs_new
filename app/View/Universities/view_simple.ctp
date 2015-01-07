@@ -50,26 +50,6 @@
 						<li class="<?php if ($zakladka_page === 5): ?>resp-tab-active<?php endif;?>">
 							<a href="<?php echo $university['url'];?>/KIERUNKI-5">KIERUNKI</a>
 						</li>
-						<?php if($university['UniversitiesParameter']['zakladka1']):?>
-							<li class="<?php if ($zakladka_page === 1): ?>resp-tab-active<?php endif;?>">
-								<a href="<?php echo $university['zakladka1url'];?>"><?php echo $university['UniversitiesParameter']['nzakladki1'];?></a>
-							</li>
-						<?php endif;?>
-						<?php if($university['UniversitiesParameter']['zakladka2']):?>
-							<li class="<?php if ($zakladka_page === 2): ?>resp-tab-active<?php endif;?>">
-								<a href="<?php echo $university['zakladka2url'];?>"><?php echo $university['UniversitiesParameter']['nzakladki2'];?></a>
-							</li>
-						<?php endif;?>
-						<?php if($university['UniversitiesParameter']['zakladka3']):?>
-							<li class="<?php if ($zakladka_page === 3): ?>resp-tab-active<?php endif;?>">
-								<a href="<?php echo $university['zakladka3url'];?>"><?php echo $university['UniversitiesParameter']['nzakladki3'];?></a>
-							</li>
-						<?php endif;?>
-						<?php if($university['UniversitiesParameter']['zakladka4']):?>
-							<li class="<?php if ($zakladka_page === 4) : ?>resp-tab-active<?php endif;?>">
-								<a href="<?php echo $university['zakladka4url'];?>"><?php echo $university['UniversitiesParameter']['nzakladki4'];?></a>
-							</li>
-						<?php endif;?>
 					</ul>
 					<div class="resp-tabs-container cont">
 						<?php if ($zakladka_page === 0) : ?>
@@ -111,7 +91,8 @@
 										</h1>
 										<div class="info">
 											<?php foreach ($kierunki as $kierunek) :?>
-												<a href="/kierunek/<?php echo Inflector::slug($kierunek['Course']['nazwa'],'-').'-'. $kierunek['Course']['id'];?>"><?php echo $kierunek['Course']['nazwa'];?></a> | 
+												<a href="/kierunek/<?php echo Inflector::slug($kierunek['Course']['nazwa'],'-').'-'. $kierunek['Course']['id'];?>.html">
+													<?php echo $kierunek['Course']['nazwa'];?></a> | 
 											<?php endforeach;?>
 										</div>
 										<div class="cl"></div>

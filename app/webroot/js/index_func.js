@@ -54,6 +54,40 @@ $(function(){
 			    }
 			});
 			}
+			if ($('#carousel-projects_gallery').size() > 0) {		
+				$('#carousel-projects_gallery').carouFredSel({
+					responsive: true,
+					items       : {
+			        width       : 250,
+			        height      : 200,
+			        visible     : {
+			            min         : 1,
+			            max         : 4
+			        }
+			    },
+				width: '250px',
+				height: '200px',
+				auto: true, 
+				circular	: true,
+				infinite	: false,
+				prev : {
+					button		: "#car_prev",
+					key			: "left",
+						},
+				next : {
+					button		: "#car_next",
+					key			: "right",
+							},
+				swipe: {
+					onMouse: true,
+					onTouch: true
+					},
+				scroll: {
+			        easing: "",
+			        duration: 1200
+			    }
+			});
+			}
 			if ($('#carousel-projects_uni').size() > 0) {	
 				$('#carousel-projects_uni').carouFredSel({
 				responsive: true,

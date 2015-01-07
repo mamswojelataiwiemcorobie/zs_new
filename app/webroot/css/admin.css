@@ -28,6 +28,6 @@ display: none;
 .uimage {
 	float:left;
 }
-.check {
+.check , .table-striped>tbody>tr.check:nth-child(odd)>td, .table-striped>tbody>tr.check:nth-child(odd)>th {
 	background: lightsteelblue;
 }

@@ -639,34 +639,35 @@ class UniversitiesController extends AppController {
 		$this->University->contain();
 		$universities = $this->University->find('all', array('fields' => array('University.id'), 'order' => array('University.abonament_id' => 'DESC')));	
 		foreach ($universities as $university) {
-			$this->University->CourseonUniversity->contain('Course.nazwa');
-			$courses = $this->University->CourseonUniversity->find('list', 
-																					array(
-																						'conditions'=>array(
-																							'CourseonUniversity.university_id'=>$university['University']['id']), 
-																						'fields' => array('Course.nazwa'),
-																						'group' => 'Course.nazwa',
-																						//'limit' => 8,
-																						'order'=>'Course.nazwa'));	
-			$courses_names = implode(',', $courses);
-			//Debugger::dump($courses_names);
-			$this->University->id = $university['University']['id'];
-			$this->University->saveField('all_courses', $courses_names);		
+			if(empty($university['University']['all_courses'])) {
+				$this->University->CourseonUniversity->contain('Course.nazwa');
+				$courses = $this->University->CourseonUniversity->find('list', array(
+																				'conditions'=>array(
+																					'CourseonUniversity.university_id'=>$university['University']['id']), 
+																				'fields' => array('Course.nazwa'),
+																				'group' => 'Course.nazwa',
+																				//'limit' => 8,
+																				'order'=>'Course.nazwa'));	
+				$courses_names = implode(',', $courses);
+				//Debugger::dump($courses_names);
+				$this->University->id = $university['University']['id'];
+				$this->University->saveField('all_courses', $courses_names);	
+			}	
 		}
 		
 		
 		
 	}
 	public function nazwy(){
-		$this->University->contain('UniversitiesParameter.miasto');
+		$this->University->contain('UniversitiesParameter.nazwa');
 		$universities = $this->University->find('all');
 		//Debugger::dump($universities);
 		foreach($universities as $uni) {
-			if ($uni['University']['miasto'] == $uni['UniversitiesParameter']['miasto']) {
+			if ($uni['University']['nazwa'] == $uni['UniversitiesParameter']['nazwa']) {
 
 			} else {
 				$this->University->id = $uni['University']['id'];
-				$this->University->saveField('miasto', $uni['UniversitiesParameter']['miasto']);
+				$this->University->saveField('nazwa', $uni['UniversitiesParameter']['nazwa']);
 			}
 		}
 	}

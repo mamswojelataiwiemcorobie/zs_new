@@ -327,6 +327,7 @@ class CourseonUniversitiesController extends AppController {
 			$university_id = $this->request->data['CourseonUniversity']['university_id'];
 
 			$kierunki = $this->request->data['CourseonUniversity']['course_id'];
+			$nazwy = '';
 			foreach ($kierunki as $kierunek) {
 				$this->CourseonUniversity->create();
 				if (!isset($this->request->data['CourseonUniversity']['faculty_id'])) $this->request->data['CourseonUniversity']['faculty_id'] = NULL;
@@ -337,10 +338,14 @@ class CourseonUniversitiesController extends AppController {
 																					'typ_course_id' => 0, 
 																					'tryb_course_id' => 0,
 												)))) {
+					$nazwa = $this->CourseonUniversity->Course->find('first', array('conditions'=>array('course_id'=>$kierunek)));
+					$nazwy .= ', '. $nazwa['Course']['nazwa'];
 					$this->Session->setFlash(__('Kierunek uczelni został utworzony'));
 				} else {
 					$this->Session->setFlash(__('The user could not be created. Please, try again.'));
-				}   
+				}  
+				$this->CourseonUniversity->University->id = $university_id;
+				$this->CourseonUniversity->University->savefield('all_courses', $nazwy);
 			}
 			$this->redirect(array('action' => 'lista', $university_id));
         } 

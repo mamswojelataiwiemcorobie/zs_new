@@ -161,13 +161,13 @@
 			<div class="row">
 				<div class="col-md-4">
 					<p class="pull-left">
-						 © Copyright 2014 PorownywarkaUczelni.pl 
+						 © Copyright 2015 Zostanstudentem.pl 
 						
 					</p>
 				</div>
 				<div class="col-md-8">
 					<ul class="footermenu pull-right">
-						<li><a href="#">Porownywarka Uczelni</a></li>
+						<!-- <li><a href="#">Porownywarka Uczelni</a></li> -->
 						<li><a href="http://www.zostanstudentem.pl/">Zostań Studentem</a></li>
 						<li><a href="http://blog.zostanstudentem.pl/">Blog</a></li>
 						<li><a href="http://blog.zostanstudentem.pl/kontakt/">Kontakt</a></li>

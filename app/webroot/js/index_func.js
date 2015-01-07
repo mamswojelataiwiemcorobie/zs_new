@@ -19,76 +19,76 @@ $(function(){
 		/* ---------------------------------------------------------------------- */
 		/*	Carousel
 		/* ---------------------------------------------------------------------- */
-		$(window).load(function(){			
-			$('#carousel-projects').carouFredSel({
-			responsive: true,
-			items       : {
-	        width       : 200,
-	        height      : 380,
-	        visible     : {
-	            min         : 1,
-	            max         : 4
-	        }
-	    },
-			width: '200px',
-			height: '380px',
-			auto: true, 
-			circular	: true,
-			infinite	: false,
-			prev : {
-				button		: "#car_prev",
-				key			: "left",
-					},
-			next : {
-				button		: "#car_next",
-				key			: "right",
+		$(window).load(function(){	
+			if ($('#carousel-projects').size() > 0) {		
+				$('#carousel-projects').carouFredSel({
+					responsive: true,
+					items       : {
+			        width       : 200,
+			        height      : 380,
+			        visible     : {
+			            min         : 1,
+			            max         : 4
+			        }
+			    },
+				width: '200px',
+				height: '380px',
+				auto: true, 
+				circular	: true,
+				infinite	: false,
+				prev : {
+					button		: "#car_prev",
+					key			: "left",
 						},
-			swipe: {
-				onMouse: true,
-				onTouch: true
-				},
-			scroll: {
-	        easing: "",
-	        duration: 1200
-	    }
-		});
-		});
-
-		$(window).load(function(){			
-			$('#carousel-projects_uni').carouFredSel({
-			responsive: true,
-			items       : {
-	        width       : 150,
-	        height      : 350,
-	        visible     : {
-	            min         : 1,
-	            max         : 4
-	        }
-	    },
-			width: '150px',
-			height: '350px',
-			auto: true, 
-			circular	: true,
-			infinite	: false,
-			prev : {
-				button		: "#car_prev",
-				key			: "left",
+				next : {
+					button		: "#car_next",
+					key			: "right",
+							},
+				swipe: {
+					onMouse: true,
+					onTouch: true
 					},
-			next : {
-				button		: "#car_next",
-				key			: "right",
+				scroll: {
+			        easing: "",
+			        duration: 1200
+			    }
+			});
+			}
+			if ($('#carousel-projects_uni').size() > 0) {	
+				$('#carousel-projects_uni').carouFredSel({
+				responsive: true,
+				items       : {
+		        width       : 150,
+		        height      : 350,
+		        visible     : {
+		            min         : 1,
+		            max         : 4
+		        }
+		    },
+				width: '150px',
+				height: '350px',
+				auto: true, 
+				circular	: true,
+				infinite	: false,
+				prev : {
+					button		: "#car_prev",
+					key			: "left",
 						},
-			swipe: {
-				onMouse: true,
-				onTouch: true
-				},
-			scroll: {
-	        easing: "",
-	        duration: 1200
-	    }
+				next : {
+					button		: "#car_next",
+					key			: "right",
+							},
+				swipe: {
+					onMouse: true,
+					onTouch: true
+					},
+				scroll: {
+		        easing: "",
+		        duration: 1200
+		    }
+			});
+			}
 		});
-		});
-
 		//CALL PRETTY PHOTO
 		$(document).ready(function(){
 			$("a[data-gal^='prettyPhoto']").prettyPhoto({social_tools:'', animation_speed: 'normal' , theme: 'dark_rounded'});

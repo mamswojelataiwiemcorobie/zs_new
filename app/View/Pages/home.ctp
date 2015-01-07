@@ -84,7 +84,6 @@
   <!-- Bla bla -->
   <section class="home-features topspace30">
     <div class="container animated fadeInUpNow notransition fadeInUp">
-      <div class="col-md-10 col-md-offset-1 animated slidea notransition anim-slide">
         <div class="row">
           <div class="col-md-4">
             <h4><i class="icon icon-microphone">
@@ -106,6 +105,5 @@
           </div>
         </div>
          <?php echo $this->element('top', array(), array('cache' => true)); ?>
-      </div>
     </div>
   </section>  

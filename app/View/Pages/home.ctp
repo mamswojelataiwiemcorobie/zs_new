@@ -73,7 +73,6 @@
 
 <!-- PARTNERZY slider ================================================= -->
     <section class="service-box topspace30" id="service-top">
-	    <div class="container">
 		  <div class="nasi-partnerzy">
 		    <h2>NASI PARTNERZY</h2>
 		    <div class="slider">
@@ -84,21 +83,21 @@
 								<li>
 									<div class="featured-projects">
 										<div class="featured-projects-image">
-											<a href="http://www.sp.edu.pl/"><div class="wrap"><img src="/images/loga/smart_prospects.jpg" class="imgOpa grayimage grayimage" alt="Smart Projects" /></div></a>
+											<a href="http://www.sp.edu.pl/"><div class="wrap"><img src="/images/loga/smart_prospects.jpg" class="imgOpa" alt="Smart Projects" /></div></a>
 										</div>
 									</div>
 								</li>
 								<li>
 									<div class="featured-projects">
 										<div class="featured-projects-image">
-											<a href="http://www.interia.pl/"><div class="wrap"><img src="/images/loga/interia-logo-2-0.svg" class="imgOpa grayimage grayimage" alt="Interia" /></div></a>
+											<a href="http://www.interia.pl/"><div class="wrap"><img src="/images/loga/interia-logo-2-0.svg" class="imgOpa" alt="Interia" /></div></a>
 										</div>
 									</div>
 								</li>
 								<li>
 									<div class="featured-projects">
 										<div class="featured-projects-image">
-											<a href="http://www.notatek.pl/"><div class="wrap"><img src="/images/loga/logo-fb-new.jpg" class="imgOpa grayimage grayimage" alt="Notatek" /></div></a>
+											<a href="http://www.notatek.pl/"><div class="wrap"><img src="/images/loga/logo-fb-new.jpg" class="imgOpa" alt="Notatek" /></div></a>
 										</div>
 									</div>
 								</li>
@@ -107,7 +106,7 @@
 										<div class="featured-projects-image">
 											<a href="http://www.youngtalentmanagement.pl/YTM/Young_Talent_Management.html">
                       <div class="wrap">
-												<img src="/images/loga/YTM.jpg" class="imgOpa grayimage grayimage" alt="Young_Talent_Management" />
+												<img src="/images/loga/YTM.jpg" class="imgOpa" alt="Young_Talent_Management" />
                       </div>
 											</a>
 										</div>
@@ -118,7 +117,7 @@
 										<div class="featured-projects-image">
 											<a href="http://www.happinate.com/">
                       <div class="wrap">
-												<img src="/images/loga/logo-happinate.png" class="imgOpa grayimage grayimage" alt="Happinate" />
+												<img src="/images/loga/logo-happinate.png" class="imgOpa " alt="Happinate" />
                         </div>
 											</a>
 										</div>
@@ -128,7 +127,6 @@
 						</div>
 					</div>
 				</div>
-		    </div>
 		  </div>
 		</div>
 	</section>

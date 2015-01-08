@@ -478,8 +478,7 @@ class UniversitiesController extends AppController {
 	}
 
 	public function najczesciej($id) {
-
-		//$db = $this->getDataSource();
+		$this->set('title_for_slider2', 'Znajdź uczelnię');
 		$r= $this->University->query("SELECT * FROM search_keywords WHERE id = ?",array($id));
 		//Debugger::dump($r);
 		$tid = 1;

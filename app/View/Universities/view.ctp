@@ -1,14 +1,14 @@
 <div id="uczelnia" class="container">
 	<div id="content">
-		<section class="animated fadeInUp notransitioncont main">
+		<section class="animated fadeInUp notransitioncont main row">
 			<?php if ($university['logo']): ?>
-				<div class="ml">
+				<div class="ml col-sm-4">
 					<img itemprop="logo" src="/miniatura/180x260/uploads/<?php echo $university['logo'];?>" alt="Logo uczelni <?php echo $university['University']['nazwa'];?>"/>
 				</div>
 			<?php endif; ?>
-			<div class="mr<?php if (!($university['logo'])): ?> mr-noimage <?php endif; ?>">
+			<div class="mr row <?php if (!($university['logo'])): ?> mr-noimage<?php else: ?>col-sm-8<?php endif; ?>">
 				<h1 itemprop="legalname"><?php echo $university['University']['nazwa'];?></h1>
-				<div class="mbrl">
+				<div class="mbrl col-sm-8">
 					<a href="http://<?php echo $university['UniversitiesParameter']['www'];?>" itemprop="url" class="url" target="_blank"><?php echo $university['UniversitiesParameter']['www'];?></a>
 					<address itemprop="address">
 						<?php echo $university['UniversitiesParameter']['adres'];?>
@@ -17,7 +17,7 @@
 					</address>
 					<p>Zobacz tą uczelnię w naszej porównywarce >><a href="http://porownywarkauczelni.pl/uczelnia<?php echo Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];?>"><?php echo $university['University']['nazwa'];?></a></p>
 				</div>
-				<div class="mbr">
+				<div class="mbr col-sm-4">
 					<?php if ($university['University']['abonament_id'] < 2):?>
 						<a href="/info/kontakt-1.html" class="uzupelnij-profil"></a>
 					<?php else : ?>
@@ -184,7 +184,8 @@
 								<?php if (count($kierunki_full) > 0): if($university['University']['university_type_id'] != 3):?>
 									<div class="lista_kierunkow" id="kierunki">
 										<div class="info">
-											<table class="kierunki-full">
+										<div class="table-responsive">
+											<table class="kierunki-full table">
 												<thead>
 													<tr><th rowspan="2" class="tal">Kierunek</th>
 														<?php if (in_array('11',$kierunki_types) || in_array('21',$kierunki_types) || in_array('31',$kierunki_types) || in_array('41',$kierunki_types) || in_array('71',$kierunki_types)):?>
@@ -244,6 +245,7 @@
 													<?php $i++; endforeach;?>
 												
 											</table>
+										</div>
 										</div>
 										<div class="cl"></div>
 									</div>

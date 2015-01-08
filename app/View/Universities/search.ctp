@@ -7,8 +7,7 @@
 				<!-- <button class="btn" type="button">Options</button> -->
 			<?php echo $this->Form->end();?>
 	</div>
-	<div class="col-md-8 l">
-		
+	<div class="col-sm-8 l">	
 		
 		<?php if (!isset($uczelnie_nosearch)):?>
 		<div class="znajdz-paginacja-c{if !isset($uczelnie_wyniki) || $uczelnie_wyniki|@count == 0} no-data{/if}"><div class="znajdz-paginacja">

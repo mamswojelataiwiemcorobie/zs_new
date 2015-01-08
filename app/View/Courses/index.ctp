@@ -19,7 +19,7 @@
 					<p>
 						<ul class="icons chevronlist lista_kierunkow">
 							<?php foreach ($kierunki as $ki):?>
-								<li>
+								<li class="col-sm-6">
 									<a href="/kierunek/<?php echo $slug=Inflector::slug($ki['Course']['nazwa'],'-').'-'. $ki['Course']['id'];?>.html"><?php echo $ki['Course']['nazwa'];?></a>
 								</li>
 							<?php endforeach;?>

@@ -10,7 +10,7 @@ body {
 	overflow-y:hidden;
 }
 .wrapsemibox {padding-top: 40px;}
-.row {
+#recent_post .row {
 	margin-left:0;
 	margin-right:0;
 }
@@ -898,7 +898,6 @@ padding:8% 30px;
 float:left;
 min-width:180px;
 text-align:center;
-width:35%;
 margin: auto;
 }
 #uczelnia .main .ml img{
@@ -910,11 +909,9 @@ width:375px;
 #uczelnia .main .mr {
 float:left;
 margin-left:5%;
-width:60%;
 }
 #uczelnia .main .mbrl {
 float:left;
-width:80%;
 clear: both;
 }
 #uczelnia .main .mbr {
@@ -977,7 +974,7 @@ margin-bottom: 9px;
 }
 /*--------------------------------------------------	WYSZUKIWARKA---------------------------------------------------*/
 #searchpage {
-padding:18px 0;
+padding:18px 0px;
 }
 #searchpage form > div {
 clear: both;
@@ -988,13 +985,9 @@ margin: 0 0 20px 0;
 #searchpage .l {
 display: flex;
 flex-flow: column wrap;
-min-width: 600px;
-width: 65%;
 }
 #searchpage .r {
 float:right;
-min-width:300px;
-width: 30%;
 padding-top:4px;
 }
 #searchpage .znajdz-uczelnie {
@@ -1110,20 +1103,19 @@ font:normal 12px/18px Arial;
 }
 .item .image {
 float:left;
-min-width: 192px;
-width: 35%;
+min-width: 160px;
+min-height: 125px;
 background-repeat:no-repeat;
 background-position:center center;
 }
+hr {
+width: 100%;
+}
 .item {
-padding: 20px 0;
-border-bottom: 1px solid gray;
 display: flex;
 flex-flow: row wrap;
 }
 .item .data-c {
-float:left;
-width:65%;
 padding-top:9px;
 }
 .znajdz-wyniki {
@@ -1136,7 +1128,6 @@ padding-top:9px;
 }
 .item .data-l {
 float: left; 
-width: 65%;
 padding-top: 12px;
 /* height: 84px; */
 clear: both;
@@ -1153,7 +1144,6 @@ color:#12537c;
 float: left;
 text-align:left;
 padding-bottom: 10px;
-background: url('spacer.png') left bottom repeat-x;
 }
 .item .data-l a.url {
 color:#3a83b2;
@@ -1166,9 +1156,7 @@ color:#676767;
 .item .data-r {
 float:left;
 min-width: 113px;
-width: 30%;
 padding-top: 14px;
-margin-left: 5%;
 display: -webkit-box;
 display: -moz-box;
 display: -ms-flexbox;
@@ -1208,12 +1196,11 @@ display: block;
 padding-top: 10px;
 }
 #kierunki .lista_kierunkow li{
-width: 50%;
 float: left;
 clear: none;
 }
 #kierunki .nav-tabs li a, #kierunek .nav-tabs li a {
-padding: 15px 8.2px;
+padding: 15px 6.7px;
 }
 
 #kierunek .smalltitle {
@@ -1225,11 +1212,15 @@ float: right;
 /*--------------------------------------------------	MISC---------------------------------------------------*/
 .rekomendowane {
 	background: white;
+	display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;   
 	display: flex;
 	flex-flow: column wrap;
 }
 .qlist {
-width:312px;
 margin-bottom:10px;
 }
 .qlist .header {

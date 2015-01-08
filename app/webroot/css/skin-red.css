@@ -9,20 +9,20 @@ a {	color:#6A6D6E;}
 .car-highlight1 {background-color:#2980B9;}
 .car-smallcircle {background:#f54828;}
 .carouselText2 {	background:#f54828;}
-.icon-box-top i:hover {background-color:#f54828;}
-.fontawesome-icon.circle-white {	color:#f54828;}
-.grey-box-icon:hover .fontawesome-icon.circle-white,.grey-box-icon.active .fontawesome-icon.circle-white,.active i.fontawesome-icon {background-color:#f54828;}
-.home-features .icon {background:#f54828;}
+.icon-box-top i:hover {background-color:#2980B9;}
+.fontawesome-icon.circle-white {	color:#2980B9;}
+.grey-box-icon:hover .fontawesome-icon.circle-white,.grey-box-icon.active .fontawesome-icon.circle-white,.active i.fontawesome-icon {background-color:#2980B9;}
+.home-features .icon {background:#2980B9;}
 .copyright {	background-color:#2980b9;}
 .panel1 {border-left:6px solid #f54828;}
 .buttoncolor {background:#f54828;}
 .panel,.panel2 {	border-left:8px solid #f54828;}
 .btn-default {background-color:#f54828;}
-.btn-minimal:hover {	color: #f54828;}
+.btn-minimal:hover {color: #f54828;}
 #accordion div h4:before {	background:#f54828 url('../img/plus.png') center center no-repeat;}
 #accordion div.active h4:before {background:#f54828 url('../img/minus.png') center center no-repeat;}
 .sidebar h4 {color:#f54828;}
-.nav-tabs>.active>a,.nav-tabs>.active>a:hover {color: #f54828 !important;}
+.nav-tabs>.active>a,.nav-tabs>.active>a:hover {color: #2980B9 !important;}
 blockquote {border-left:5px solid #f54828;}
 #skill i {background:#f54828;}
 .service-fancybox:hover i {color:#f54828;}
@@ -32,7 +32,7 @@ blockquote {border-left:5px solid #f54828;}
 .service-fancybox.black .circleicon i {color:#f54828;}
 .cbp_tmtimeline>li .cbp_tmicon {background:#f54828;}
 .services i {	color:#f54828;}
-.pagination>.active>a,.pagination>.active>span,.pagination>.active>a:hover,.pagination>.active>span:hover,.pagination>.active>a:focus,.pagination>.active>span:focus {background-color:#f54828;	border-color:#f54828;}
+.pagination>.active>a,.pagination>.active>span,.pagination>.active>a:hover,.pagination>.active>span:hover,.pagination>.active>a:focus,.pagination>.active>span:focus {background-color:#2980B9;	border-color:#2980B9;}
 .landingpage-button {color:#f54828;}
 .landingpage-button {color:#f54828;}
 .landingpage-button span {color:#f54828;}

@@ -5,7 +5,7 @@
 	
 		<iframe 
 			class="gmap" 
-			style="width:105.3%;height:370px;border: 0;margin-top:-40px;margin-left:-30px;z-index: 11;position: relative;" 
+			style="width:100%;height:370px;border: 0;z-index: 11;position: relative;" 
 			src="https://maps.google.com/maps?
 				f=q&amp;
 				source=s_q&amp;

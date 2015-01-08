@@ -762,11 +762,6 @@ font-weight: 500;}
 	font-size: 15px;
 }
 
-/*--------------------------------------------------	partnerzy---------------------------------------------------*/
-.nasi-partnerzy .slider {
-height:105px;
-background:url('../images/partnerzy.jpg') left center repeat-x;
-}
 /*--------------------------------------------------	service-box---------------------------------------------------*/
 .service-box h1 {
 		text-transform:uppercase;
@@ -919,7 +914,7 @@ width:60%;
 }
 #uczelnia .main .mbrl {
 float:left;
-width:194px;
+width:80%;
 clear: both;
 }
 #uczelnia .main .mbr {
@@ -1174,13 +1169,13 @@ min-width: 113px;
 width: 30%;
 padding-top: 14px;
 margin-left: 5%;
-	display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;   
   -webkit-flex-flow: column wrap;
+flex-flow: column wrap;
 }
 .item .uczelnia-schowek {
 float:left;
@@ -1215,6 +1210,10 @@ padding-top: 10px;
 #kierunki .lista_kierunkow li{
 width: 50%;
 float: left;
+clear: none;
+}
+#kierunki .nav-tabs li a, #kierunek .nav-tabs li a {
+padding: 15px 8.2px;
 }
 
 #kierunek .smalltitle {
@@ -1227,7 +1226,7 @@ float: right;
 .rekomendowane {
 	background: white;
 	display: flex;
-flex-flow: column wrap;
+	flex-flow: column wrap;
 }
 .qlist {
 width:312px;
@@ -2446,7 +2445,7 @@ ul.social-icons li a:hover {
 	color:#444;
 	background:#F8F8F8;
 	font-weight:300;
-	font-size:13px;
+	font-size:15px;
 	padding:15px 25px;
 	margin-right:0px;
 	-webkit-border-radius:0px;
@@ -2865,6 +2864,8 @@ ul#skill {
 	padding:0;
 	list-style:none;
 	display:block;
+	height:300px;
+	overflow: hidden;
 }
 .list_carousel li {
 	
@@ -2873,6 +2874,7 @@ ul#skill {
 	margin-left:10px;
 	cursor:default !important;
 	height:auto;
+	clear: none;
 }
 .list_carousel.responsive {
 	width:auto;
@@ -2892,6 +2894,7 @@ ul#skill {
 	clear:both;
 	display:inline-block;
 	background:#fff;
+	margin-top: 10px;
 }
 .grayarea .list_carousel .carousel_nav {
 	background:#f9f9f9;
@@ -2984,6 +2987,13 @@ a.prev span,a.next span {
 	-webkit-box-sizing:content-box;
 	-moz-box-sizing:content-box;
 	box-sizing:content-box;
+	max-height: 100%;
+	max-width: 100%;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 .featured-projects-image a {
 	display:block
@@ -3497,6 +3507,15 @@ a.prev span,a.next span {
 }
 .boxcontainer img {
 	position:relative;
+	max-width: none;
+	margin: auto;
+	max-height: 100%;
+	max-width: 100%;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 .recent-projects-home .boxcontainer img {
 	max-height: 100%;
@@ -3550,10 +3569,6 @@ a.prev span,a.next span {
 }
 .boxportfolio2 .captionicons {
 	top: 57%;
-}
-
-.galeria .boxcontainer img {
-height: 185px;
 }
 /*================================================== BLOG ===============================================*/
 .aligncenter {
@@ -9229,9 +9244,6 @@ body {
 	width: auto !Important;
 }
 /* Responsive Tabs================================================== */
-#horizontalTab {
-	background: #E7EBEC;
-}
 ul.resp-tabs-list,ul.resp-tabs-list p {
 	margin:0px;
 	padding:0px;
@@ -10254,8 +10266,9 @@ color:#e7402f;
 .fancyy-box.black:hover .circleicon i {
 color:#444;
 }
-
-
+.slider .caroufredsel_wrapper, #carousel-projects_services {
+	min-height: 210px;
+}
 
 /******************************************************************************************************************** 
 Animated Boxes

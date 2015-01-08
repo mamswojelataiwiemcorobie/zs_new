@@ -138,6 +138,7 @@ class UniversitiesController extends AppController {
 	}
 
 	public function search($tid) {
+		$this->set('title_for_slider2', 'Znajdź uczelnię');
 		$this->set('tid',$tid);
 
 		if(isset($this->request->query['keywords'])) {

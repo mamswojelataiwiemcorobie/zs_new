@@ -52,25 +52,25 @@
 					$DATE_TIME = $this->data['Contact']['DATE_TIME'];
 					$PATH = $this->data['Contact']['PATH'];
 					
-					$wiadomosc = 'Wiadomość z serwisu szkolywyzsze.edu.pl na temat - ' .$thema. "\r\n\r\n";
+					$wiadomosc = 'Wiadomość z serwisu zostanstudentem.pl na temat - ' .$thema. "\r\n\r\n";
 					$wiadomosc .= 'Od - ' .$name. ' (adres email: ' .$email. ") \r\n\r\n";
 					$wiadomosc .= 'Wysłana ' .$DATE_TIME. "\r\n\r\n";
 					$wiadomosc .=  $message;
 	 
 					// send email with CakeEmail
 					$Email = new CakeEmail();
-					$Email->from(array('szkolywyzsze@edu.pl' => 'Porównywarka'))
+					$Email->from(array('kontakt@zostanstudentem.pl' => 'Zostanstudentem'))
 						->to('redakcja@zostanstudentem.pl')
 						->subject('Formularz kontaktowy - ' .$thema);
 					//response to user
 					$Email2 = new CakeEmail();
-					$Email2->from(array('no-reply@szkolywyzsze.edu.pl' => 'Porównywarka uczelni'))
+					$Email2->from(array('no-reply@zostanstudentem.pl' => 'Zostanstudentem'))
 						->to($email)
 						->emailFormat('html')
-						->subject('Potwierdzenie wysłania formularza kontaktowego szkolywyzsze.edu.pl - ' .$thema);
+						->subject('Potwierdzenie wysłania formularza kontaktowego zostanstudentem.pl - ' .$thema);
 					$potwierdzenie = "Dziękujemy za wysłanie formularza kontaktowego. <br/><br/>
 										Postaramy się odpowiedzieć na niego jak najszybciej. <br/><br/>
-										Zespół szkolywysze.edu.pl";
+										Zespół zostanstudentem.pl";
 										
 					if($Email->send($wiadomosc) && $Email2->send($potwierdzenie)){
 							$record = array('name' => $name,'email' => $email,'temat' => $thema,'message' => $message,'IP' => $IP,'DATE_TIME' => $DATE_TIME,'PATH' => $PATH);

@@ -1,9 +1,8 @@
 <div id="searchpage" class="row <?php if ($tid == '2'):?>znajdz-szkole-policealna<?php elseif ($tid == '3'):?>znajdz-szkole-jezykowa<?php endif;?>">
-	<h1 class="large text-center">ZNAJDŹ UCZELNIĘ</h1>
 	<p class="animated fadeInRightNow notransition text-center topspace20 fadeInRight">Wpisz nazwę uczelni, miasto, kierunek</p>
 	<div class="szukaj">
 		<?php echo $this->Form->create('University',array('class'=>'form input-append wyszukiwarka', 'role'=>'form', 'type' => 'GET'));?>
-				<input type="text" name="keywords" placeholder="Wpisz nazwe uczelni, miasto…" class="input-medium form-control">
+				<input type="text" name="keywords" placeholder="Wpisz nazwe uczelni, miasto, kierunek…" class="input-medium form-control">
 				<button class="btn-lg btn btn-info" type="submit" ><i class="icon-search"></i> Szukaj</button>
 				<!-- <button class="btn" type="button">Options</button> -->
 			<?php echo $this->Form->end();?>

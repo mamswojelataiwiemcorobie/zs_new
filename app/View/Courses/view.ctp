@@ -2,15 +2,15 @@
 	<div class="col-md-8 l">
 		<!--Begin Tabs 1-->
 		<div id="horizontalTab">
-			<ul class="resp-tabs-list">
+			<ul class="nav nav-tabs">
 				<?php foreach($kategorie as $kik =>$ki):?>
-					<li class="<?php if ($kik==$kierunek['CoursesCategory']['id']-1):?>resp-tab-active<?php endif;?>">
+					<li class="<?php if ($kik==$kierunek['CoursesCategory']['id']-1):?>active<?php endif;?>">
 						<a href="/kierunki/<?php echo $slug=Inflector::slug($ki['CoursesCategory']['nazwa'],'-').'-'. $ki['CoursesCategory']['id'];?>.html" ><?php echo $ki['CoursesCategory']['nazwa'];?></a>
 					</li>
 				<?php endforeach;?>
 			</ul>
-			<div class="resp-tabs-container" >	
-				<div style="display: -webkit-box;
+			<div class="tab-content" >	
+				<div class="tab-pane active" style="display: -webkit-box;
 						  display: -moz-box;
 						  display: -ms-flexbox;
 						  display: -webkit-flex;

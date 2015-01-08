@@ -65,18 +65,70 @@
   <?php echo $this->element('home_poli_logos_slider', array(), array('cache' => true)); ?>
 
   <!-- Wp_posts -->
-  <?php echo $this->element('recent_post', array(), array('cache' => true)); ?>
+  <?php echo $this->element('recent_post', array(), array('cache' => false)); ?>
 
   <!-- KIERUNKI ================================================== -->
-    <?php echo $this->element('losoweKierunki', array(), array('cache' => true)); ?>
+    <?php echo $this->element('losoweKierunki', array(), array('cache' => false)); ?>
     <!-- /.kierunki end-->
 
 <!-- PARTNERZY slider ================================================= -->
     <section class="service-box topspace30" id="service-top">
 	    <div class="container">
 		  <div class="nasi-partnerzy">
-		    <div class="header">NASI PARTNERZY</div>
-		    <div class="slider"></div>
+		    <h2>NASI PARTNERZY</h2>
+		    <div class="slider">
+		    	<div class="col-md-12">
+					<div class="list_carousel">
+						<div class="caroufredsel_wrapper">
+							<ul id="carousel-projects_services">
+								<li>
+									<div class="featured-projects">
+										<div class="featured-projects-image">
+											<a href="http://www.sp.edu.pl/"><div class="wrap"><img src="/images/loga/smart_prospects.jpg" class="imgOpa grayimage grayimage" alt="Smart Projects" /></div></a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="featured-projects">
+										<div class="featured-projects-image">
+											<a href="http://www.interia.pl/"><div class="wrap"><img src="/images/loga/interia-logo-2-0.svg" class="imgOpa grayimage grayimage" alt="Interia" /></div></a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="featured-projects">
+										<div class="featured-projects-image">
+											<a href="http://www.notatek.pl/"><div class="wrap"><img src="/images/loga/logo-fb-new.jpg" class="imgOpa grayimage grayimage" alt="Notatek" /></div></a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="featured-projects">
+										<div class="featured-projects-image">
+											<a href="http://www.youngtalentmanagement.pl/YTM/Young_Talent_Management.html">
+                      <div class="wrap">
+												<img src="/images/loga/YTM.jpg" class="imgOpa grayimage grayimage" alt="Young_Talent_Management" />
+                      </div>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="featured-projects">
+										<div class="featured-projects-image">
+											<a href="http://www.happinate.com/">
+                      <div class="wrap">
+												<img src="/images/loga/logo-happinate.png" class="imgOpa grayimage grayimage" alt="Happinate" />
+                        </div>
+											</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		    </div>
 		  </div>
 		</div>
 	</section>

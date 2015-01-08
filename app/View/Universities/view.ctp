@@ -15,6 +15,7 @@
 						<?php if($university['UniversitiesParameter']['telefon']):?><br/>tel: <?php echo $university['UniversitiesParameter']['telefon']; endif; ?>
 						<?php if($university['UniversitiesParameter']['email']):?><br/>e-mail: <?php echo $university['UniversitiesParameter']['email']; endif; ?>
 					</address>
+					<p>Zobacz tą uczelnię w naszej porównywarce >><a href="http://porownywarkauczelni.pl/uczelnia<?php echo Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];?>"><?php echo $university['University']['nazwa'];?></a></p>
 				</div>
 				<div class="mbr">
 					<?php if ($university['University']['abonament_id'] < 2):?>
@@ -52,37 +53,37 @@
 		<div class="">
 			<!--Begin Tabs 1-->
 			<div id="horizontalTab">
-				<ul class="resp-tabs-list">
-					<li class="<?php if ($zakladka_page === 0) : ?>resp-tab-active<?php endif;?>">
+				<ul class="nav nav-tabs">
+					<li class="<?php if ($zakladka_page === 0) : ?>active<?php endif;?>">
 						<a href="<?php echo $university['url'];?>"><?php if($university['University']['university_type_id'] == 1):?>O UCZELNI<?php else : ?>O SZKOLE<?php endif;?></a>
 					</li>
-					<li class="<?php if ($zakladka_page === 5): ?>resp-tab-active<?php endif;?>">
+					<li class="<?php if ($zakladka_page === 5): ?>active<?php endif;?>">
 						<a href="<?php echo $university['url'];?>/KIERUNKI-5">KIERUNKI</a>
 					</li>
 					<?php if($university['UniversitiesParameter']['zakladka1']):?>
-						<li class="<?php if ($zakladka_page === 1): ?>resp-tab-active<?php endif;?>">
+						<li class="<?php if ($zakladka_page === 1): ?>active<?php endif;?>">
 							<a href="<?php echo $university['zakladka1url'];?>"><?php echo $university['UniversitiesParameter']['nzakladki1'];?></a>
 						</li>
 					<?php endif;?>
 					<?php if($university['UniversitiesParameter']['zakladka2']):?>
-						<li class="<?php if ($zakladka_page === 2): ?>resp-tab-active<?php endif;?>">
+						<li class="<?php if ($zakladka_page === 2): ?>active<?php endif;?>">
 							<a href="<?php echo $university['zakladka2url'];?>"><?php echo $university['UniversitiesParameter']['nzakladki2'];?></a>
 						</li>
 					<?php endif;?>
 					<?php if($university['UniversitiesParameter']['zakladka3']):?>
-						<li class="<?php if ($zakladka_page === 3): ?>resp-tab-active<?php endif;?>">
+						<li class="<?php if ($zakladka_page === 3): ?>active<?php endif;?>">
 							<a href="<?php echo $university['zakladka3url'];?>"><?php echo $university['UniversitiesParameter']['nzakladki3'];?></a>
 						</li>
 					<?php endif;?>
 					<?php if($university['UniversitiesParameter']['zakladka4']):?>
-						<li class="<?php if ($zakladka_page === 4) : ?>resp-tab-active<?php endif;?>">
+						<li class="<?php if ($zakladka_page === 4) : ?>active<?php endif;?>">
 							<a href="<?php echo $university['zakladka4url'];?>"><?php echo $university['UniversitiesParameter']['nzakladki4'];?></a>
 						</li>
 					<?php endif;?>
 				</ul>
-				<div class="resp-tabs-container cont">
+				<div class="tab-content cont">
 					<?php if ($zakladka_page === 0) : ?>
-						<div class="row" style="display:block;">
+						<div class="tab-pane active row">
 							<div class="col-sm-6">
 								<?php if (strlen($university['UniversitiesParameter']['opis']) > 0):?>
 									<h1 class="smalltitle">
@@ -114,7 +115,9 @@
 													<?php foreach ($university['galeria'] as $image) : ?>
 													<li>
 														<div class="boxcontainer">
-															<img src="/miniatura/300x200/uploads/<?php echo $image;?>" alt="" />
+															<div class="wrap">
+																<img src="/miniatura/250x200/uploads/<?php echo $image;?>" alt="" />
+															</div>
 															<div class="roll">
 																<div class="wrapcaption">
 																	<a data-gal="prettyPhoto[gallery1]" href="/miniatura/800x600/uploads/<?php echo $image;?>"><i class="icon-zoom-in captionicons"></i></a>
@@ -162,7 +165,7 @@
 					<!-- KIERUNKI -->
 					<?php elseif ($zakladka_page === 5) :?>
 						
-							<div class="row" style="display:block;">
+							<div class="tab-pane active row">
 								<div class="col-md-12 animated fadeInLeft notransition">
 								<?php if($university['University']['university_type_id'] == 3): ?>
 									<div class="cont lista_jezykow">
@@ -199,15 +202,15 @@
 													<tr>
 														<?php if (in_array('11',$kierunki_types)):?><th>I st. lic</th><?php endif;?>
 														<?php if (in_array('21',$kierunki_types)):?><th>I st. inż</th><?php endif;?>
-														<?php if (in_array('31',$kierunki_types)):?><th>II st.</th><?php endif;?>
-														<?php if (in_array('71',$kierunki_types)):?><th>j.m.</th><?php endif;?>
+														<?php if (in_array('31',$kierunki_types)):?><th>  II st. </th><?php endif;?>
+														<?php if (in_array('71',$kierunki_types)):?><th>  j.mgr  </th><?php endif;?>
 														<?php if (in_array('12',$kierunki_types)):?><th>I st. lic</th><?php endif;?>
 														<?php if (in_array('22',$kierunki_types)):?><th>I st. inż</th><?php endif;?>
-														<?php if (in_array('32',$kierunki_types)):?><th>II st.</th><?php endif;?>
-														<?php if (in_array('72',$kierunki_types)):?><th>j.m.</th><?php endif;?>
-														<?php if (in_array('61',$kierunki_types)):?><th>st</th><?php endif;?>
+														<?php if (in_array('32',$kierunki_types)):?><th>  II st. </th><?php endif;?>
+														<?php if (in_array('72',$kierunki_types)):?><th>  j.mgr  </th><?php endif;?>
+														<?php if (in_array('61',$kierunki_types)):?><th>  st </th><?php endif;?>
 														<?php if (in_array('62',$kierunki_types)):?><th>niest</th><?php endif;?>
-														<?php if (in_array('51',$kierunki_types)):?><th>st</th><?php endif;?>
+														<?php if (in_array('51',$kierunki_types)):?><th>  st </th><?php endif;?>
 														<?php if (in_array('52',$kierunki_types)):?><th>niest</th><?php endif;?>
 													</tr>
 												</thead>
@@ -250,15 +253,15 @@
 							</div>
 					
 					<?php elseif ($zakladka_page === 1) : if ($university['UniversitiesParameter']['zakladka1']) :?>
-						<div class="cont-c zakladka" style="display:block"><?php echo $university['UniversitiesParameter']['zakladka1'];?></div>
+						<div class="tab-pane active cont-c zakladka" ><?php echo $university['UniversitiesParameter']['zakladka1'];?></div>
 					<?php endif;?>
 					<?php elseif ($zakladka_page === 2) : if ($university['UniversitiesParameter']['zakladka2']) :?>
-						<div class="cont-c zakladka" style="display:block"><?php echo $university['UniversitiesParameter']['zakladka2'];?></div><?php endif;?>
+						<div class="tab-pane active cont-c zakladka" ><?php echo $university['UniversitiesParameter']['zakladka2'];?></div><?php endif;?>
 					<?php elseif ($zakladka_page === 3) : if ($university['UniversitiesParameter']['zakladka3']) :?>
-						<div class="cont-c zakladka" style="display:block"><?php echo $university['UniversitiesParameter']['zakladka3'];?></div>
+						<div class="tab-pane active cont-c zakladka" ><?php echo $university['UniversitiesParameter']['zakladka3'];?></div>
 					<?php endif;?>
 					<?php elseif ($zakladka_page === 4) : if ($university['UniversitiesParameter']['zakladka4']) :?>
-						<div class="cont-c zakladka" style="display:block"><?php echo $university['UniversitiesParameter']['zakladka4'];?></div>
+						<div class="tab-pane active cont-c zakladka" ><?php echo $university['UniversitiesParameter']['zakladka4'];?></div>
 					<?php endif;?>
 					<?php endif;?>
 				</div>

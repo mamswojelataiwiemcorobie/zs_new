@@ -17,6 +17,7 @@
 								<?php if($university['UniversitiesParameter']['telefon']):?><br/>tel: <?php echo $university['UniversitiesParameter']['telefon']; endif; ?>
 								<?php if($university['UniversitiesParameter']['email']):?><br/>e-mail: <?php echo $university['UniversitiesParameter']['email']; endif; ?>
 							</address>
+							<p>Zobacz tą uczelnię w naszej porównywarce >><a href="http://porownywarkauczelni.pl/uczelnia<?php echo Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];?>"><?php echo $university['University']['nazwa'];?></a></p>
 						</div>
 						<div class="mbr">
 							<a href="/info/kontakt-1.html" class="uzupelnij-profil"></a>
@@ -43,17 +44,17 @@
 				</section>
 				<!--Begin Tabs 1-->
 				<div id="horizontalTab">
-					<ul class="resp-tabs-list">
-						<li class="<?php if ($zakladka_page === 0) : ?>resp-tab-active<?php endif;?>">
+					<ul class="nav nav-tabs">
+						<li class="<?php if ($zakladka_page === 0) : ?>active<?php endif;?>">
 							<a href="<?php echo $university['url'];?>"><?php if($university['University']['university_type_id'] == 1):?>O UCZELNI<?php else : ?>O SZKOLE<?php endif;?></a>
 						</li>
-						<li class="<?php if ($zakladka_page === 5): ?>resp-tab-active<?php endif;?>">
+						<li class="<?php if ($zakladka_page === 5): ?>active<?php endif;?>">
 							<a href="<?php echo $university['url'];?>/KIERUNKI-5">KIERUNKI</a>
 						</li>
 					</ul>
-					<div class="resp-tabs-container cont">
+					<div class="tab-content cont">
 						<?php if ($zakladka_page === 0) : ?>
-							<div style="display:block;">
+							<div class="tab-pane active">
 								<?php if (strlen($university['UniversitiesParameter']['opis']) > 0):?>
 									<h1 class="smalltitle">
 									<span>Opis</span>
@@ -69,7 +70,7 @@
 							</div>
 						<!-- KIERUNKI -->
 						<?php elseif ($zakladka_page === 5) :?>
-							<div style="display:block;">
+							<div class="tab-pane active">
 								<?php if($university['University']['university_type_id'] == 3): ?>
 									<div class="lista_jezykow">
 										<h1 class="smalltitle">

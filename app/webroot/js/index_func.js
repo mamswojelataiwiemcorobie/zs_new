@@ -20,6 +20,40 @@ $(function(){
 		/*	Carousel
 		/* ---------------------------------------------------------------------- */
 		$(window).load(function(){	
+			if ($('#carousel-projects_services').size() > 0) {	
+				$('#carousel-projects_services').carouFredSel({
+					responsive: true,
+					items       : {
+			        width       : 200,
+			        height      : 150,
+			        visible     : {
+			            min         : 1,
+			            max         : 4
+			        }
+			    },
+					width: '200px',
+					height: '150px',
+					auto: true,
+					circular	: true,
+					infinite	: false,
+					prev : {
+						button		: "#car_prev",
+						key			: "left",
+							},
+					next : {
+						button		: "#car_next",
+						key			: "right",
+								},
+					swipe: {
+						onMouse: true,
+						onTouch: true
+						},
+					scroll: {
+			        easing: "",
+			        duration: 1200
+			    }
+				});	
+			}
 			if ($('#carousel-projects').size() > 0) {		
 				$('#carousel-projects').carouFredSel({
 					responsive: true,
@@ -59,7 +93,7 @@ $(function(){
 					responsive: true,
 					items       : {
 			        width       : 250,
-			        height      : 200,
+			        height      : 210,
 			        visible     : {
 			            min         : 1,
 			            max         : 4
@@ -226,27 +260,6 @@ $(function(){
 		}, "slow");
 		});
 		});
-
-	//PARTNERZY
-	$('.nasi-partnerzy .slider').click(function(e){
-		// SLIDER CONFIGURATION FOR PARNER LINKS
-		var cfg = {
-			image_width:2570,
-			link_endings:[118,214,559,784,904,1061,1298,1403,1550,1725,1820,1970,2140,2340,2470,2570],
-			link_adressess:['http://www.krakow.pl','http://www.bialystok.pl','http://www.lublin.eu/ua','http://www.gdansk.pl','http://www.opole.pl','http://www.olsztyn.com.pl','http://www.rzeszow.pl','http://www.zielona-gora.pl/','http://www.interia.pl/','http://www.notatek.pl/','http://study.lublin.eu/pl/', 'http://www.youngtalentmanagement.pl/YTM/Young_Talent_Management.html','http://www.m-ekspert.pl/','http://www.happinate.com/','http://www.um.kielce.pl/','http://www.happinate.com/'],
-		};
-		var tg = $(e.target);
-		var _x = e.pageX - tg.offset().left;
-		var bgp = parseInt(tg.css('background-position').match(/[0-9]+/)[0]);
-		var cpos = (_x + (cfg.image_width - bgp % cfg.image_width)) % cfg.image_width;
-		for (var i in cfg.link_endings) {
-			if (cfg.link_endings[i] > cpos) {
-				if (cfg.link_adressess[i]) 
-					window.open(cfg.link_adressess[i],'_blank');
-				return;
-			}
-		}
-	});
 
 var searchpage = {
 	init: function(tel) {

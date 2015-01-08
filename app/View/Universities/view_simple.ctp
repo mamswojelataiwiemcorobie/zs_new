@@ -2,15 +2,15 @@
 	<div id="content">
 		<div class="row">
 			<div class="col-md-8">
-				<section class="animated fadeInUp notransitioncont main">
+				<section class="animated fadeInUp notransitioncont main row">
 					<?php if ($university['logo']): ?>
-						<div class="ml">
+						<div class="ml col-sm-4">
 							<img itemprop="logo" src="/miniatura/180x260/uploads/<?php echo $university['logo'];?>" alt="Logo uczelni <?php echo $university['University']['nazwa'];?>"/>
 						</div>
 					<?php endif; ?>
-					<div class="mr<?php if (!($university['logo'])): ?> mr-noimage <?php endif; ?>">
+					<div class="mr row <?php if (!($university['logo'])): ?> mr-noimage<?php else: ?>col-sm-8<?php endif; ?>">
 						<h1 itemprop="legalname"><?php echo $university['University']['nazwa'];?></h1>
-						<div class="mbrl">
+						<div class="mbrl col-sm-8">
 							<a href="http://<?php echo $university['UniversitiesParameter']['www'];?>" itemprop="url" class="url" target="_blank"><?php echo $university['UniversitiesParameter']['www'];?></a>
 							<address itemprop="address">
 								<?php echo $university['UniversitiesParameter']['adres'];?>
@@ -19,9 +19,8 @@
 							</address>
 							<p>Zobacz tą uczelnię w naszej porównywarce >><a href="http://porownywarkauczelni.pl/uczelnia<?php echo Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];?>"><?php echo $university['University']['nazwa'];?></a></p>
 						</div>
-						<div class="mbr">
-							<a href="/info/kontakt-1.html" class="uzupelnij-profil"></a>
-							<?php if ($university['University']['link_rejestracji']): ?><a href="<?php echo $university['University']['link_rejestracji']; ?>" class="uczelnia-rekrutuj" target="_blank"></a><?php endif;?>
+						<div class="mbr col-sm-4">
+							<a href="/info/kontakt-1.html" class="uzupelnij-profil btn btn-danger" target="_blank"><i class="icon-plus"></i> UZUPEŁNIJ</a>
 							<?php if($university['UniversitiesParameter']['fb'] || $university['UniversitiesParameter']['gplus'] || $university['UniversitiesParameter']['yt']):?>
 								<ul class="social">
 									<?php if($university['UniversitiesParameter']['fb']):?>

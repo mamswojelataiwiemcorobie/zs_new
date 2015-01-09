@@ -10,6 +10,10 @@ class SearchKeywordsController extends AppController {
 
 	public function najczesciej() {
 		$najczesciej = $this->SearchKeyword->find('all',array('order' => array('SearchKeyword.counter'=> 'desc'), 'limit' =>10));
+		foreach ($najczesciej as $key => $value) {
+			$najczesciej[$key]['SearchKeyword']['rank'] = $key+1;
+		}
+		shuffle($najczesciej);
 		return $najczesciej;
 	}
 

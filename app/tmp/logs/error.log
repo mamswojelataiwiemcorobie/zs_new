@@ -53562,3 +53562,30 @@ Stack Trace:
 #1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2015-01-09 15:42:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 15:42:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 15:43:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

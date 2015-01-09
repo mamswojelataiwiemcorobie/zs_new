@@ -3,11 +3,15 @@
 									'action' => 'najczesciej'));
 							?>		
 <div class="qlist qlist-red">
-	<div class="header">NAJCZĘŚCIEJ WYSZUKIWANE</div>
+	<h3>NAJCZĘŚCIEJ WYSZUKIWANE</h3>
 	<div class="cont">
-		<ul>
+		<ul id="cloud">
 			<?php foreach ($najczesciej_wyszukiwane as $fit):?>
-				<li><a href="/najczesciej_szukane/<?php echo Inflector::slug($fit['SearchKeyword']['keyword'],'-').'-'.  $fit['SearchKeyword']['id'];?>.html"><?php echo $fit['SearchKeyword']['keyword'];?></a></li>
+				<li>
+					<a href="/najczesciej_szukane/<?php echo Inflector::slug($fit['SearchKeyword']['keyword'],'-').'-'.  $fit['SearchKeyword']['id'];?>.html" class="tag<?php echo $fit['SearchKeyword']['rank'];?>">
+						<?php echo $fit['SearchKeyword']['keyword']; ?>
+					</a>
+				</li>
 			<?php endforeach;?>
 		</ul>
 	</div>

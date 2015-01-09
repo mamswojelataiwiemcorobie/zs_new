@@ -1,6 +1,4 @@
-<div id= "kierunek" class="row">
-	<div class="col-md-8 l">
-		<!--Begin Tabs 1-->
+<div id= "kierunek">
 		<div id="horizontalTab">
 			<ul class="nav nav-tabs">
 				<?php foreach($kategorie as $kik =>$ki):?>
@@ -56,5 +54,5 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-md-4 r"><?php echo $this->element('column_right');?></div>
+	<!-- <div class="col-md-4 r"><?php echo $this->element('column_right');?></div> -->
 </div>

@@ -1195,9 +1195,6 @@ padding-top: 10px;
 float: left;
 clear: none;
 }
-#kierunki .nav-tabs li a, #kierunek .nav-tabs li a {
-padding: 15px 6.7px;
-}
 
 #kierunek .smalltitle {
 margin-top: 0;
@@ -1215,72 +1212,6 @@ display: -webkit-flex;
 display: flex;   
 	display: flex;
 	flex-flow: column wrap;
-}
-.qlist {
-margin-bottom:10px;
-}
-.qlist .header {
-padding: 5px 0;
-padding-left: 14px;
-font: 15px/24px 'Lato', sans-serif;
-font-weight: 400;
-color:white;
-margin: auto;
-}
-.qlist ul {
-	list-style: none;
-}
-.qlist li {
-	padding: 5px;
-}
-.qlist .cont li:before {
-font-family: FontAwesome;
-margin: 5px 10px;
-}
-
-.qlist-red .header {
-background-color: rgb(255,102,52);
-}
-.qlist-red .cont {
-background:#dde7ee;
-}
-.qlist-red .cont li {
-	background:#DDE7EE;
-}
-.qlist-red .cont li:before {
-	content: "\f002 ";
-	color: #3a83b2;
-}
-.qlist-red .cont li a {
-	color: #3a83b2;
-}
-.qlist-red .cont li:nth-child(odd) {
-	background:#f9f9f9;
-}
-.qlist-red .cont li:nth-child(odd) a, .qlist-red .cont li:nth-child(odd):before {
-	color:#e56700;
-}
-
-.qlist-blue .header {
-background-color:rgb(51,152,204) ;
-}
-.qlist-blue .cont {
-background:#EDF4FF;
-}
-.qlist-blue .cont li a {
-	color: #3a83b2;
-}
-.qlist-blue .cont li:before {
-	content: "\f06e";
-	color: #edf4ff;
-	color:#e56700;
-}
-
-.qlist-blue .cont li:nth-child(odd) {
-	background:#D2E3F4;
-}
-.qlist-blue .cont li:nth-child(odd) a, .qlist-blue .cont li:nth-child(odd):before {
-	color: #3399CC;
 }
 
 .show-grid [class^="col-"] {
@@ -2274,6 +2205,34 @@ ul.social-icons li a:hover {
 	margin:0;facul
 	padding:0;
 }
+
+/***CLOUD***/
+#cloud { 
+	padding: 2px; line-height: 3em; text-align: center;
+	margin: 0;
+	display: flex;
+flex-flow: row wrap;
+align-content: stretch;
+align-items: center;
+justify-content: center;
+ } 
+#cloud a { 
+	padding: 0px 3px;
+}
+#cloud li { 
+	display: inline; 
+}
+
+#cloud a.tag1 { font-size: 0.7em; font-weight: 100; color: #428BCA;} 
+#cloud a.tag2 { font-size: 0.8em; font-weight: 200; color: #5CB85C;} 
+#cloud a.tag3 { font-size: 0.9em; font-weight: 300; color: #D9534F;} 
+#cloud a.tag4 { font-size: 1.0em; font-weight: 400; color: #567E95;} 
+#cloud a.tag5 { font-size: 1.2em; font-weight: 500; color: #428bca;} 
+#cloud a.tag6 { font-size: 1.4em; font-weight: 600; color: #00ABA9;} 
+#cloud a.tag7 { font-size: 1.6em; font-weight: 700; color: #B37333;} 
+#cloud a.tag8 { font-size: 1.8em; font-weight: 800; color: #FF6600;} 
+#cloud a.tag9 { font-size: 2.2em; font-weight: 900; color: #4A4A4A;} 
+#cloud a.tag10 { font-size: 2.5em; font-weight: 900; }
 
 /*--------------------------------------------------	PAGE HEADER STYLES---------------------------------------------------*/
 .breadcr {

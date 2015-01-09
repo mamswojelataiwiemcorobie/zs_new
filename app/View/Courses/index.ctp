@@ -1,5 +1,5 @@
-<div id= "kierunki" class="row">
-	<div class="col-md-8 l">
+<div id= "kierunki">
+	
 		<!--Begin Tabs 1-->
 		<div id="horizontalTab">
 			<ul class="nav nav-tabs">
@@ -41,5 +41,5 @@
 			<?php endif;?>
 		</div>
 	</div>
-	<div class="col-md-4 r"><?php echo $this->element('column_right');?></div>
+	<!-- <div class="col-md-4 r"><?php echo $this->element('column_right');?></div> -->
 </div>

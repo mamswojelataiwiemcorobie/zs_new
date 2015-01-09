@@ -1,4 +1,4 @@
-<div id="uczelnia" class="container">
+<div id="uczelnia">
 	<div id="content">
 		<section class="animated fadeInUp notransitioncont main row">
 			<?php if ($university['logo']): ?>
@@ -90,13 +90,11 @@
 										<span>OPIS</span>
 									</h1>
 									<section >
-										<div class="row">
-											<div class="col-md-12 animated fadeInLeft notransition">
-												<div class="info"><?php echo $university['UniversitiesParameter']['opis'];?>
-													<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 1):?>. Kierunki studiów. Studia dzienne (stacjonarne) i zaoczne (niestacjonarne), licencjackie, inżynierskie, magisterskie. Jakie studia wybrać? Czy warto tu studiować twój wymarzony kierunek. <?php endif;?>
-													<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 2):?>. Szkoła policealna - kursy roczne i dwuletnie po których jest pewna praca.<?php endif;?>
-													<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 3):?>. Szkoła językowa - angielski, niemiecki, rosyjski, hiszpański, japoński<?php endif;?>
-												</div>
+										<div class="animated fadeInLeft notransition">
+											<div class="info"><?php echo $university['UniversitiesParameter']['opis'];?>
+												<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 1):?>. Kierunki studiów. Studia dzienne (stacjonarne) i zaoczne (niestacjonarne), licencjackie, inżynierskie, magisterskie. Jakie studia wybrać? Czy warto tu studiować twój wymarzony kierunek. <?php endif;?>
+												<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 2):?>. Szkoła policealna - kursy roczne i dwuletnie po których jest pewna praca.<?php endif;?>
+												<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 3):?>. Szkoła językowa - angielski, niemiecki, rosyjski, hiszpański, japoński<?php endif;?>
 											</div>
 										</div>
 									</section>
@@ -106,9 +104,8 @@
 								<div id="accordion-container" style="display: block; "?>
 									<!-- GALERIA -->
 									<?php if ($university['University']['abonament_id'] > 2 && count($university['galeria'])>0):?>
-									<div class="row galeria">
 										<h2 class="accordion-header">Galeria</h2>
-										<div class="col-md-12 accordion-content">
+										<div class="accordion-content">
 											<div class="list_carousel text-center">
 												<ul id="carousel-projects_gallery">
 													<!--featured-projects 1-->
@@ -134,17 +131,16 @@
 												<div class="clearfix"></div>
 											</div>
 										</div>
-									</div>
 									<?php endif;?>
 									
 									<?php if ($wydzialy) :?>
 										<h2 class="accordion-header">Wydziały</h2>
-										<div class="row accordion-content">
-											<div class="col-md-12 animated fadeInLeft notransition">
+										<div class="accordion-content">
+											<div class="animated fadeInLeft notransition">
 												<ul class="icons chevronlist">	
 													<?php foreach($wydzialy as $wydzial) : ?>											
 														<li>
-															<a href="/wydzial<?php echo Inflector::slug($wydzial['Faculty']['nazwa'],'-').'-'. $wydzial['Faculty']['id'];?>.html"><?php echo $wydzial['Faculty']['nazwa'];?></a>
+															<a href="/wydzial/<?php echo Inflector::slug($wydzial['Faculty']['nazwa'],'-').'-'. $wydzial['Faculty']['id'];?>.html"><?php echo $wydzial['Faculty']['nazwa'];?></a>
 														</li>
 													<?php endforeach;?>
 												</ul>
@@ -153,8 +149,8 @@
 									<?php endif;?>
 									<?php if ($lokalizacja_poparawna) :?>
 										<h2 id= "lokalizacja"class="accordion-header">Lokalizacja</h2>
-										<div class="row accordion-content">
-											<div class="col-md-12 animated fadeInLeft notransition">
+										<div class="accordion-content">
+											<div class="animated fadeInLeft notransition">
 												<div class="info" id="map-canvas" style="width: 100%; height: 266px; margin-bottom: 5%;"></div>
 											</div>
 										</div>

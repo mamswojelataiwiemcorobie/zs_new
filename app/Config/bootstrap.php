@@ -71,6 +71,7 @@ Cache::config('default', array('engine' => 'File'));
  * CakePlugin::load('DebugKit'); //Loads a single plugin named DebugKit
  *
  */
+CakePlugin::load('Search');
  Configure::write('debug', 2);
  //CakePlugin::load('Admin2',array('bootstrap' => true));
 

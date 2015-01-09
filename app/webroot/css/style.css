@@ -885,7 +885,7 @@ text-align:left;
 text-transform: uppercase;
 }
 #uczelnia .main {
-padding:8% 30px;
+padding:20px 30px;
 	display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -2270,6 +2270,11 @@ ul.social-icons li a:hover {
 #accordion div:last-child.active p {
 	border-bottom: 1px solid #ebebeb;
 }
+.tab-content .col-sm-6, .mapa {
+	margin:0;facul
+	padding:0;
+}
+
 /*--------------------------------------------------	PAGE HEADER STYLES---------------------------------------------------*/
 .breadcr {
 	margin-top:28px;

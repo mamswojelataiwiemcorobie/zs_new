@@ -178,6 +178,36 @@
             'slug'=>'.+'
         ));
 
+     Router::connect(
+        '/wydzialy',
+        array(
+            'controller' => 'faculties',
+            'action' => 'index'));
+
+     Router::connect(
+        '/wydzial/:slug-:id/:zakladka-:nrzakladki',
+        array(
+            'controller' => 'faculties',
+            'action' => 'view'),
+        array(
+            'pass' => array('id', 'nrzakladki'),
+            'id' => '[0-9]+',
+            'slug'=>'.+',
+            'zakladka'=>'.+',
+            'nrzakladki' => '[0-9]+',
+        ));
+
+     Router::connect(
+        '/wydzial/:slug-:tid',
+        array(
+            'controller' => 'faculties',
+            'action' => 'view'),
+        array(
+            'pass' => array('tid'),
+            'tid' => '[0-9]+',
+            'slug'=>'.+'
+        ));
+
 
 
 /**

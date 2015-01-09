@@ -110,7 +110,9 @@
 		}  
 	?>
 	<div class="wrapsemibox">
-    	<div class="semiboxshadow text-center">	</div>
+    	<div class="semiboxshadow text-center">
+    		
+    	</div>
     	<div class="container">
 			<?php echo $this->fetch('content'); ?>
 		</div>

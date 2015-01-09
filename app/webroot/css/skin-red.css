@@ -17,7 +17,7 @@ a {	color:#6A6D6E;}
 .panel1 {border-left:6px solid #f54828;}
 .buttoncolor {background:#f54828;}
 .panel,.panel2 {	border-left:8px solid #f54828;}
-.btn-default {background-color:#f54828;}
+.btn-default {background-color:#2980B9;}
 .btn-minimal:hover {color: #f54828;}
 #accordion div h4:before {	background:#f54828 url('../img/plus.png') center center no-repeat;}
 #accordion div.active h4:before {background:#f54828 url('../img/minus.png') center center no-repeat;}

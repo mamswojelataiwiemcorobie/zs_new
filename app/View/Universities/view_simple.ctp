@@ -56,7 +56,7 @@
 							<div class="tab-pane active">
 								<?php if (strlen($university['UniversitiesParameter']['opis']) > 0):?>
 									<h1 class="smalltitle">
-									<span>Opis</span>
+										<span>Opis</span>
 									</h1>
 									<section>
 										<div class="info"><?php echo $university['UniversitiesParameter']['opis'];?>

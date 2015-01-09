@@ -151,10 +151,27 @@
         ));
 
      Router::connect(
-        '/info/:slug-:tid/*',
+        '/info/:slug-:tid',
         array(
             'controller' => 'subsites',
             'action' => 'info'),
+        array(
+            'pass' => array('tid'),
+            'tid' => '[0-9]+',
+            'slug'=>'.+'
+        ));
+
+    Router::connect(
+        '/artykuly',
+        array(
+            'controller' => 'articles',
+            'action' => 'index'));
+
+     Router::connect(
+        '/artykul/:slug-:tid',
+        array(
+            'controller' => 'articles',
+            'action' => 'view'),
         array(
             'pass' => array('tid'),
             'tid' => '[0-9]+',

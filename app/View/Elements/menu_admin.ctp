@@ -13,10 +13,12 @@
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 				  Lista stron: <span class="caret"></span>
 				</a>
-				<ul class="dropdown-menu" role="menu">
-					
+				<ul class="dropdown-menu" role="menu">					
 					<li>
-						<?php echo $this->html->link('Lista kieruków na uczelniach', '/admin/courseon_universities/'); ?>
+						<?php echo $this->html->link('Podstrony info', '/admin/subsites/'); ?>
+					</li>
+					<li>
+						<?php echo $this->html->link('Artykuły', '/admin/articles/'); ?>
 					</li>
 				</ul>
 			</li>

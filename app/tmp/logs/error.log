@@ -52916,3 +52916,649 @@ Request URL: /css/spacer.png
 Stack Trace:
 #0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-01-08 16:02:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 08:35:56 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2015-01-09 08:35:56 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /uczelnia/Inter-Lang-Text-Szkola-Jezykow-Obcych-Krakow-975
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Users\Admini...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Users\Admini...', 460, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-09 08:36:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/spacer.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 09:26:12 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /admin/images/komputer.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 09:26:12 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /admin/images/informatior.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 09:26:12 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /admin/images/konakt.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 09:26:13 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /admin/images/konakt.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 09:33:19 Error: [MissingActionException] Action SubsitesController::admin_images() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'admin_images',
+)
+Request URL: /admin/subsites/images/komputer.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 09:33:19 Error: [MissingActionException] Action SubsitesController::admin_images() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'admin_images',
+)
+Request URL: /admin/subsites/images/informatior.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 09:33:40 Error: [MissingActionException] Action SubsitesController::admin_images() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'admin_images',
+)
+Request URL: /admin/subsites/images/komputer.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 09:33:40 Error: [MissingActionException] Action SubsitesController::admin_images() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'admin_images',
+)
+Request URL: /admin/subsites/images/informatior.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 09:34:29 Error: [MissingActionException] Action SubsitesController::admin_images() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'admin_images',
+)
+Request URL: /admin/subsites/images/komputer.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 09:34:29 Error: [MissingActionException] Action SubsitesController::admin_images() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'admin_images',
+)
+Request URL: /admin/subsites/images/informatior.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 09:34:42 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/komputer.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 09:34:42 Error: [MissingActionException] Action SubsitesController::admin_images() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'admin_images',
+)
+Request URL: /admin/subsites/images/informatior.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 09:35:54 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/informatior.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 09:35:54 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/komputer.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 09:36:29 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/komputer.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 09:41:42 Error: [MissingActionException] Action SubsitesController::admin_images() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'admin_images',
+)
+Request URL: /admin/subsites/images/informatior.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 09:43:37 Error: [MissingActionException] Action SubsitesController::admin_images() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'admin_images',
+)
+Request URL: /admin/subsites/images/informatior.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 09:43:37 Error: [MissingActionException] Action SubsitesController::admin_images() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'admin_images',
+)
+Request URL: /admin/subsites/images/komputer.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 09:44:06 Error: [MissingActionException] Action SubsitesController::admin_images() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'admin_images',
+)
+Request URL: /admin/subsites/images/komputer.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 09:44:06 Error: [MissingActionException] Action SubsitesController::admin_images() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'admin_images',
+)
+Request URL: /admin/subsites/images/informatior.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 09:44:10 Error: [MissingActionException] Action SubsitesController::admin_images() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'admin_images',
+)
+Request URL: /admin/subsites/images/informatior.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 09:44:10 Error: [MissingActionException] Action SubsitesController::admin_images() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'admin_images',
+)
+Request URL: /admin/subsites/images/komputer.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 10:07:33 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:10:28 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:13:02 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:13:11 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:13:20 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:13:27 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:13:34 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:13:37 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:15:05 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:15:35 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:15:45 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:15:55 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:17:16 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:18:28 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:18:41 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:18:43 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:18:49 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:23:14 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:24:25 Error: [MissingPluginException] Plugin AjaxMultiUpload could not be found.
+Exception Attributes: array (
+  'plugin' => 'AjaxMultiUpload',
+)
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\Config\bootstrap.php(75): CakePlugin::load('AjaxMultiUpload')
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\Configure.php(94): include('C:\Users\Admini...')
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\bootstrap.php(171): Configure::bootstrap(true)
+#3 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(93): include('C:\Users\Admini...')
+#4 {main}
+2015-01-09 10:24:57 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Articles\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Articles\\index.ctp',
+)
+Request URL: /articles
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-09 10:39:32 Error: [MissingControllerException] Controller class ArtykulController could not be found.
+Exception Attributes: array (
+  'class' => 'ArtykulController',
+  'plugin' => NULL,
+)
+Request URL: /artykul/img/shp.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 10:43:59 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Articles\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Articles\\index.ctp',
+)
+Request URL: /artykuly.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-09 10:44:26 Error: [MissingControllerException] Controller class CanvasController could not be found.
+Exception Attributes: array (
+  'class' => 'CanvasController',
+  'plugin' => NULL,
+)
+Request URL: /canvas/320x280/uploads/13757812298702.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 10:44:59 Error: [MissingViewException] View file "C:\Users\Administrator\Documents\klu\zs_new\app\View\Articles\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Administrator\\Documents\\klu\\zs_new\\app\\View\\Articles\\index.ctp',
+)
+Request URL: /artykuly.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-09 11:03:07 Error: Fatal Error (4): syntax error, unexpected 'endforeach' (T_ENDFOREACH) in [C:\Users\Administrator\Documents\klu\zs_new\app\View\Articles\index.ctp, line 28]
+2015-01-09 11:03:07 Error: [FatalErrorException] syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+Request URL: /artykuly.html
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Admini...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Admini...', 28, Array)
+#2 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Admini...', 28, Array)
+#3 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-09 11:03:27 Error: [MissingControllerException] Controller class CanvasController could not be found.
+Exception Attributes: array (
+  'class' => 'CanvasController',
+  'plugin' => NULL,
+)
+Request URL: /canvas/320x280/uploads/%3Cpre%20class=
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 11:03:32 Error: [MissingControllerException] Controller class CanvasController could not be found.
+Exception Attributes: array (
+  'class' => 'CanvasController',
+  'plugin' => NULL,
+)
+Request URL: /canvas/320x280/uploads/%3Cpre%20class=
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 11:04:30 Error: [MissingControllerException] Controller class CanvasController could not be found.
+Exception Attributes: array (
+  'class' => 'CanvasController',
+  'plugin' => NULL,
+)
+Request URL: /canvas/320x280/uploads/13826998589076.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 11:04:30 Error: [MissingControllerException] Controller class CanvasController could not be found.
+Exception Attributes: array (
+  'class' => 'CanvasController',
+  'plugin' => NULL,
+)
+Request URL: /canvas/320x280/uploads/13825393416529.png
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 11:04:30 Error: [MissingControllerException] Controller class CanvasController could not be found.
+Exception Attributes: array (
+  'class' => 'CanvasController',
+  'plugin' => NULL,
+)
+Request URL: /canvas/320x280/uploads/13824464215590.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 11:04:31 Error: [MissingControllerException] Controller class CanvasController could not be found.
+Exception Attributes: array (
+  'class' => 'CanvasController',
+  'plugin' => NULL,
+)
+Request URL: /canvas/320x280/uploads/13818236525930.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 11:04:31 Error: [MissingControllerException] Controller class CanvasController could not be found.
+Exception Attributes: array (
+  'class' => 'CanvasController',
+  'plugin' => NULL,
+)
+Request URL: /canvas/320x280/uploads/13814114089657.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 11:05:32 Error: [MissingControllerException] Controller class CanvasController could not be found.
+Exception Attributes: array (
+  'class' => 'CanvasController',
+  'plugin' => NULL,
+)
+Request URL: /canvas/320x280/uploads/13826998589076.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-09 11:48:19 Error: [MissingActionException] Action ArticlesController::admin_miniatura() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'admin_miniatura',
+)
+Request URL: /admin/articles/miniatura/200x200/uploads/13643110637571.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 11:48:42 Error: [MissingActionException] Action ArticlesController::admin_miniatura() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'admin_miniatura',
+)
+Request URL: /admin/articles/miniatura/200x200/uploads/13643110637571.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 11:48:56 Error: [MissingActionException] Action ArticlesController::admin_miniatura() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'admin_miniatura',
+)
+Request URL: /admin/articles/miniatura/200x200/uploads/13643110637571.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 11:49:15 Error: [MissingActionException] Action ArticlesController::admin_miniatura() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'admin_miniatura',
+)
+Request URL: /admin/articles/miniatura/200x200/uploads/13643110637571.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 11:49:39 Error: [MissingActionException] Action ArticlesController::admin_miniatura() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'admin_miniatura',
+)
+Request URL: /admin/articles/miniatura/200x200/uploads/13643110637571.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-09 11:49:43 Error: [MissingActionException] Action ArticlesController::admin_miniatura() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'admin_miniatura',
+)
+Request URL: /admin/articles/miniatura/200x200/uploads/13643110637571.jpg
+Stack Trace:
+#0 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Administrator\Documents\klu\zs_new\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Administrator\Documents\klu\zs_new\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

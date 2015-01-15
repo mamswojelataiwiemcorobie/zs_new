@@ -18,14 +18,11 @@
 				echo $this->Paginator->counter(array(
 				  'format' => __('Strona {:page} z {:pages}, Znaleziono {:count} wyników')
 				));
-				switch ($tid) {
-					case 1:
-						$r = 'szkoly-wyzsze'; break;
-					case 2:
-						$r = 'Szkoły-policealna'; break;
-					case 3:
-						$r = 'Szkoły-językowa'; break;
-				}
+				$this->Paginator->options(
+    array(
+        'url' => $this->passedArgs
+    )
+);
 				
 				/*if (isset($this->request->query['keywords'])) {
 					$this->Paginator->options(array(

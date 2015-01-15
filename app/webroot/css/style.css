@@ -2206,15 +2206,25 @@ ul.social-icons li a:hover {
 	padding:0;
 }
 
+.mapa {
+	background-image: url('/img/siatka.jpg');
+padding: 100px 0;
+padding-bottom: 20px;
+padding-top: 40px;
+background-clip: padding-box;
+background-size: cover;
+}
+
 /***CLOUD***/
 #cloud { 
-	padding: 2px; line-height: 3em; text-align: center;
+	padding: 2px; text-align: center;
 	margin: 0;
 	display: flex;
 flex-flow: row wrap;
 align-content: stretch;
 align-items: center;
 justify-content: center;
+	padding-top: 20px;
  } 
 #cloud a { 
 	padding: 0px 3px;
@@ -2223,16 +2233,16 @@ justify-content: center;
 	display: inline; 
 }
 
-#cloud a.tag1 { font-size: 0.7em; font-weight: 100; color: #428BCA;} 
-#cloud a.tag2 { font-size: 0.8em; font-weight: 200; color: #5CB85C;} 
-#cloud a.tag3 { font-size: 0.9em; font-weight: 300; color: #D9534F;} 
-#cloud a.tag4 { font-size: 1.0em; font-weight: 400; color: #567E95;} 
-#cloud a.tag5 { font-size: 1.2em; font-weight: 500; color: #428bca;} 
-#cloud a.tag6 { font-size: 1.4em; font-weight: 600; color: #00ABA9;} 
-#cloud a.tag7 { font-size: 1.6em; font-weight: 700; color: #B37333;} 
-#cloud a.tag8 { font-size: 1.8em; font-weight: 800; color: #FF6600;} 
-#cloud a.tag9 { font-size: 2.2em; font-weight: 900; color: #4A4A4A;} 
-#cloud a.tag10 { font-size: 2.5em; font-weight: 900; }
+#cloud a.tag1 { font-size: 0.9em; font-weight: 100; color: #2980B9;} 
+#cloud a.tag2 { font-size: 1.1em; font-weight: 900; color: #096EB0;} 
+#cloud a.tag3 { font-size: 1.5em; font-weight: 500; color: #22C476;} 
+#cloud a.tag4 { font-size: 1.7em; font-weight: 400; color: #4995C7;} 
+#cloud a.tag5 { font-size: 1.9em; font-weight: 500; color: #07507F;} 
+#cloud a.tag6 { font-size: 2.6em; font-weight: 600; color: #6FDFA9;} 
+#cloud a.tag7 { font-size: 2.5em; font-weight: 200; color: #72B0D9;} 
+#cloud a.tag8 { font-size: 3.6em; font-weight: 900; color: #FF622C;} 
+#cloud a.tag9 { font-size: 4.8em; font-weight: 300; color: #FFC82C;} 
+#cloud a.tag10 { font-size: 5em; font-weight: 500; }
 
 /*--------------------------------------------------	PAGE HEADER STYLES---------------------------------------------------*/
 .breadcr {

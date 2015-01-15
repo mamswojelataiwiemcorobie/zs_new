@@ -101,6 +101,56 @@ class CoursesController extends AppController {
 		/*
 		$this->av('uczelnie_searchurl',$this->wyszukiwarka_cleanurl());*/
 	}
+
+	public function znajdz_kierunki($tid) {
+		$this->set('tid',$tid);
+		$_req = isset($_GET) ? $_GET : array();
+		if (isset($_req['kierunek']) && $_req['kierunek'] === 'KIERUNEK') $_req['kierunek'] = '';
+		
+		$kierunki = $this->Course->szukajUczelniQuery($_req);
+		//Debugger::dump($kierunki);
+			
+		$this->set('kierunki',$kierunki);
+
+		$this->set('title_for_slider2', 'Szukaj '. $_req['kierunek']);
+		$this->set('title_for_layout', 'Szukaj:'. $_req['kierunek'] .' | Zostań Studentem');
+		$this->set('description_for_layout', 'Wybierz kierunek studiów który najbardziej Cię interesuje. Nowe kierunki humanistyczne, artystyczne, ekonomiczne, techniczne, przyrodnicze');
+		$this->set('keywords_for_layout', 'kierunki, studia, studiów, '.$_req['kierunek']);
+	}
+
+	public function ajax() {
+		$tid = $this->request->pass[0];
+		$r = array();
+		switch ($tid) {
+			
+			case "3":
+				if (!preg_match('/\/(kierunek)|(kierunki)\//',$_SERVER['HTTP_REFERER'])) {
+					preg_match('/([0-9]+)/',$_SERVER['HTTP_REFERER'],$ref);
+					$ref = $ref[1];
+				} else {
+					$ref = 1;
+				}
+				$txt = mysql_escape_string(mb_strtolower($_POST['txt']));
+				$this->Course->contain();
+				$rq = $this->Course->find('all', array('conditions'=> array('OR'=>array(
+																						array('LOWER(Course.nazwa) LIKE ' => '%'.$txt.'%')),
+																			'AND' => array(array('Course.university_type_id' => $ref))
+																				),
+														'order' => array('Course.nazwa'),
+														'fields' => array('Course.nazwa', 'Course.id'), 
+														'limit' => 8));
+				Debugger::dump($rq);
+				foreach ($rq as $ri) {
+					$r[] = array(
+						'label'=>$ri['Course']['nazwa'],
+						'value'=>$ri['Course']['id'],
+					);
+				}
+				break;
+		}
+		
+		$this->output_json($r);
+	}
 	
 	public function topKierunki() {
 		$courses = Cache::read('top_courses', 'long');

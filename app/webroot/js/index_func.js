@@ -399,7 +399,7 @@ var searchpage = {
 		var txt = d.term;
 		$.ajax({
 			type: "POST",
-			url: "/universities/ajax/3",
+			url: "/courses/ajax/3",
 			data: {txt:txt},
 			dataType: "json",
 			success:function(r){

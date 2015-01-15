@@ -1,5 +1,12 @@
 <div id= "kierunki">
-	
+	<div id="searchpage">
+		<div id="kierser">
+			<form method="get" action="/courses/znajdz_kierunki/1">
+				<input type="hidden" name="kierunek_id" />
+				<input type="text" name="kierunek" class="s kieronly input-medium form-control"/>
+			</form>
+		</div>
+	</div>
 		<!--Begin Tabs 1-->
 		<div id="horizontalTab">
 			<ul class="nav nav-tabs">

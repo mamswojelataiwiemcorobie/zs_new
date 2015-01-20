@@ -477,6 +477,7 @@ var searchpage = {
 		//console.log('trigger click');
 		if (!tg.value) $(tg).autocomplete("search",tg.value);
 	}
+}
 
 schowek = function() {
 	var x = {};
@@ -573,5 +574,4 @@ schowek = function() {
 		});
 	}
 	x.init();
-}
 }

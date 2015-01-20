@@ -97,6 +97,10 @@ class UsersController extends AppController {
                 $this -> Session -> Setflash('Error: Access Denied');
         }
     }
+
+    public function logout() {
+        return $this->redirect($this->Auth->logout());
+    }
 	
     function admin_login() {
 		$this->layout = 'login';
@@ -150,4 +154,5 @@ class UsersController extends AppController {
 	public function admin_logout() {
 		return $this->redirect($this->Auth->logout());
 	}
+
 }

@@ -477,4 +477,101 @@ var searchpage = {
 		//console.log('trigger click');
 		if (!tg.value) $(tg).autocomplete("search",tg.value);
 	}
+
+schowek = function() {
+	var x = {};
+	x.initialized = false;
+
+	x.init = function() {
+		x.load();
+		$('.uczelnia-schowek').bind('click',x.eadd);
+		$('.schowek-call').bind('click',x.wysun);
+	}
+	x.show = function() {
+		if (!x.initialized) {
+			$('body').append($('<div/>').attr('id','schowek'));
+			x.jel = $('#schowek');
+			x.create();
+			$("#schowek .slidec").scrollable({
+			});	
+			x.initialized = true;
+		}
+	}
+	x.create = function() {
+		x.jel.append('<div class="wysun">wysuń schowek</div>');
+		x.jel.find('.wysun').click(x.wysun);
+		x.jel.append('<div class="menu"><div class="schowaj">schowaj schowek</div><div class="cl"></div><div class="slidec"><div class="slide"></div></div></div>');
+		x.jel.find('.schowaj').click(x.schowaj);
+		x.smenu = x.jel.find('.menu');
+		x.smenu.hide();
+	}
+	x.schowaj = function() {
+		x.smenu.hide();
+	}
+	x.wysun = function() {
+		x.smenu.show();
+	}
+	x.eadd = function(e) {
+		x.add(event.target.getAttribute('rel'));
+	}
+	x.addItem = function(r) {
+		if (r.image !== false) x.smenu.find('.slide').append($('<div class="image"><a href="'+r.link+'"><img src="'+r.image+'" alt="'+r.name+'" /></a><span>usuń</span></div>'));
+		else x.smenu.find('.slide').append($('<div class="image"><a href="'+r.link+'">'+r.name+'</a><span>usuń</span></div>'));
+		x.smenu.find('.image span').unbind('click',x.usun).bind('click',x.usun);
+	}
+	x.add = function(_id) {
+		var d = {id:_id};
+		$.ajax({
+			type: "POST",
+			url: "/storages/ajax/5",
+			dataType: "json",
+			data:d,
+			success:function(r){
+				if (r) {
+					x.show();
+					x.addItem(r[0]);
+					x.wysun();
+				}
+			}
+		});
+	}
+	x.load = function() {
+		$.ajax({
+			type: "POST",
+			url: "/storages/ajax/6",
+			dataType: "json",
+			data: {},
+			success:function(r){
+				if (r) {
+					x.show();
+					for (var i in r[0].schowek) {
+						x.addItem(r[0].schowek[i]);
+					}
+					hslider();
+				}
+			}
+		});
+	}
+	x.usun = function(e) {
+		var tid = e.target.previousSibling.href.match(/\-([0-9]+)\.html/);
+		tid = tid[1];
+		$(e.target.parentNode).remove();
+		$.ajax({
+			type: "POST",
+			url: "/storages/ajax/7",
+			dataType: "json",
+			data: {id:tid},
+			success:function(r){
+				if (r) {
+					x.show();
+					for (var i in r[0].schowek) {
+						x.addItem(r[0].schowek[i]);
+					}
+					hslider();
+				}
+			}
+		});
+	}
+	x.init();
+}
 }

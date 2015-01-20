@@ -1,8 +1,10 @@
 {
-   "config": {
-      "vendor-dir": "Vendor"
-   },
-   "require": {
-      "mjohnson/forum": "5.*"
-   }
+    "name": "zs-new",
+    "require": {
+        "cakephp/cakephp": "2.5.*",
+        "facebook/php-sdk-v4" : "4.0.*"
+    },
+    "config": {
+        "vendor-dir": "Vendor/"
+    }
 }

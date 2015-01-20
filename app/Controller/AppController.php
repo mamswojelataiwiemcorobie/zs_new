@@ -36,16 +36,7 @@ class AppController extends Controller {
 	public $helpers = array('Js', 'Html', 'Form', 'Captcha');
 	public $components = array(
 		'Session',
-        'Auth' => array(
-            'loginRedirect' => array(
-                'controller' => 'users',
-                'action' => 'dashboard'
-            ),
-            'logoutRedirect' => array(
-                'controller' => 'users',
-                'action' => 'login'
-            )
-        ),
+        'Auth',
         'RequestHandler',
 		'Paginator',
 		'Cookie',
@@ -53,20 +44,58 @@ class AppController extends Controller {
 
 	public function beforeFilter() {
         parent::beforeFilter();
-		if ((isset($this->params['prefix']) && ($this->params['prefix'] == 'admin')) || ($this->params['controller'] == 'users')) {
-			$this->layout = 'admin';
-			$this->Auth->allow('login');
+		//session_start();
+
+		 if ((isset($this->params['prefix']) && ($this->params['prefix'] == 'admin')) || ($this->params['controller'] == 'users') || ($this->params['controller'] == 'clients' && $this->params['action'] == 'index')) {
+		  
+		    //$this->Auth->userModel = 'User';
+		    $this->layout = 'admin';
+		    AuthComponent::$sessionKey = 'Auth.Admin';
+		    $this->Auth->loginAction = array('controller' => 'users', 'action' => 'login');
+		    $this->Auth->loginRedirect = array('controller' => 'users', 'action' => 'dashboard');
+		    $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login');
+		     $this->Auth->authenticate = array(
+                'Form' => array(
+                    'userModel' => 'User',
+                )
+            );
+		    $this->Auth->allow('login');
+		    //$this->Auth->authorize = array('Controller');
+		    $this->Auth->userScope = array('User.is_active' => 1);
+		   
+		    //$this->Session->write('Auth.redirect','/users/dashboard');
+		    
+		} elseif(($this->params['controller'] == 'clients') or ($this->params['controller'] == 'storages')) {
+		  	
+		    AuthComponent::$sessionKey = 'Auth.Client';
+		    $this->Auth->loginAction = array('controller' => 'clients', 'action' => 'login');
+		    //$this->Auth->loginRedirect = array('controller' => 'client_users', 'action' => 'index');
+		    //$this->Auth->logoutRedirect = array('controller' => 'client_users', 'action' => 'logout');
+		    $this->Auth->authenticate = array(
+                'Form' => array(
+                    'userModel' => 'Client',
+                 	'fields' => array(
+	                    'username' => 'login',
+	                    'password' => 'password'
+	                )
+                )
+            );
+		    $this->Auth->allow('login', 'facebook_login');
+		    //$this->Auth->authorize = array('Controller');
+		    
 		} else {
 			$this->Auth->allow();
 		}
-		//session_start();
-
-		
         //$this->set('tracks', ClassRegistry::init('Track')->find('first');
 		$this->set('init', false);
 		$this->set('tabele', false);
 		$this->set('mapy', false);
     }
+
+   function isAuthorized() {
+	    return true;
+	}
+
 
 	public function beforeRender(){
         parent::beforeFilter();

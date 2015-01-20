@@ -9,6 +9,8 @@
 				<?php echo $this->Html->link('Ta strona wykorzystuje pliki cookie x','', array('style'=>'color:#444'));	?>
 			</div>
 
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+
 			<div class="col-md-6 text-right animated fadeInRight">
 				<div class="social-icons">
 					<a class="icon icon-facebook" href="https://www.facebook.com/zostanstudentem"></a>

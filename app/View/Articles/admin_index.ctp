@@ -20,7 +20,7 @@
 					<th>ID</th>
 					<th><?php echo $this->Paginator->sort('tytul', 'Tytul');?>  </th>
 					<th><?php echo $this->Paginator->sort('html', 'Treść');?>  </th>
-					<th><?php echo $this->Paginator->sort('date', 'Data');?>  </th>
+					<th><?php echo $this->Paginator->sort('created', 'Data');?>  </th>
 					<th>Actions</th>
 				</tr>
 			</thead>
@@ -35,7 +35,7 @@
 														        'exact' => false
 														    )
 														);?>
-					<td><?php echo $university['Article']['date']; ?></td>
+					<td><?php echo $university['Article']['created']; ?></td>
 					<td >
 					<?php 	echo $this->Html->link("Edit",   array('action'=>'edit', $university['Article']['id']) ); ?> | 
 					<?php	echo $this->Html->link("Delete", array('action'=>'delete', $university['Article']['id'])); ?> |

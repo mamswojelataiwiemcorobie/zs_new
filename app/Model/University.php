@@ -10,6 +10,8 @@ class University extends AppModel {
             											'foreignKey' => 'university_id'),
             				'CourseonUniversity'  => array('className' => 'CourseonUniversity',
             											'foreignKey' => 'university_id'),
+            				'Starage'  => array('className' => 'Storage',
+            											'foreignKey' => 'university_id'),
             				'Faculty');
 	//public $displayField = 'nazwa';
 

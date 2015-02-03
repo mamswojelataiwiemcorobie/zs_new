@@ -27,7 +27,7 @@ class UniversitiesController extends AppController {
 			$this->paginate = array(
 				'order' => array('University.rank' => 'asc'),//'order' => array('University.srednia' => 'desc'),
 				'contain' => array('City', 'UniversityType'),
-				'fields' => array(  'University.rank',
+				'fields' => array( 'University.rank',
 									'University.photo',
 									'University.nazwa',
 									'University.publiczna',
@@ -583,7 +583,7 @@ class UniversitiesController extends AppController {
 	}
 
 	public function slider_2() {
-	return $this->ff;
+		return $this->ff;
 	}
 
 	
@@ -636,7 +636,6 @@ class UniversitiesController extends AppController {
 			}
 		}
 	}
-
 	
 	
 	public function update_all_courses_name(){
@@ -657,11 +656,9 @@ class UniversitiesController extends AppController {
 				$this->University->id = $university['University']['id'];
 				$this->University->saveField('all_courses', $courses_names);	
 			}	
-		}
-		
-		
-		
+		}		
 	}
+
 	public function nazwy(){
 		$this->University->contain('UniversitiesParameter.nazwa');
 		$universities = $this->University->find('all');

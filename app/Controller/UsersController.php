@@ -6,7 +6,22 @@ class UsersController extends AppController {
     public function beforeFilter() {
         parent::beforeFilter();
          // Allow users to register and logout.
-		$this->Auth->allow('login');
+		$this->Auth->allow('login', 'admin_login');
+    }
+
+    public function isAuthorized($user) {
+        if ($this->action === 'login') {
+            return true;
+        }
+
+        // The owner of a post can edit and delete it
+        if (in_array($this->action, array('edit', 'delete', 'view'))) {
+            if ($this->Client->findById($user['id'])) {
+                return true;
+            }
+        }
+
+        return parent::isAuthorized($user);
     }
 
     public function index() {

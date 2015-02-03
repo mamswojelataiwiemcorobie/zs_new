@@ -4,6 +4,8 @@ App::uses('AuthComponent', 'Controller/Component');
 
 class Client extends AppModel {
 
+    public $hasOne = array('ClientUsersData');
+
     public $validate = array(
         'login' => array(
             'required' => array(

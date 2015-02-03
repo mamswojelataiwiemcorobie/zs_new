@@ -3,6 +3,17 @@ App::uses('AppController', 'Controller');
 
 class StoragesController extends AppController {
 
+     public function isAuthorized($user) {
+        // The owner of a post can edit and delete it
+        if (in_array($this->action, array('edit', 'delete', 'view'))) {
+            if ($this->Storage->findByClientId($user['id'])) {
+                return true;
+            }
+        }
+
+        return parent::isAuthorized($user);
+    }
+
     public function index() {
         //$articles = $this->Storage->find('all');
         $this->Paginator->settings = array(
@@ -33,27 +44,39 @@ class StoragesController extends AppController {
         $r = array();
         switch ($tid) {
             case "5":
+                $tr = array();
                 $id = $_POST['id'];
-                list($u) = szukajUczelniQuery(array("id"=>$id));
+                $this->Storage->University->contain();
+                $u = $this->Storage->University->find('first', array('conditions' => array('University.id' => $id)));
                 if (!empty($u)) {
-                    dodajDoSchowkaQuery($id);
-                    $r[] = array(
-                        "id"=>$u['id'],
-                        "link"=>$u['url'],
-                        "name"=>$u['nazwa'],
-                        "image"=>$u['logo']?'/miniatura/160x125/uploads/'.$u['logo']:false,
-                    );
+                    $check = $this->Storage->find('first', array('conditions' => array('Storage.university_id' => $id)));
+                    if(empty($check)) { 
+                        $this->Storage->dodajDoSchowkaQuery($id);
+                        $photo = $this->Storage->University->UniversitiesPhoto->find('first', array(
+                                                                                            'conditions' => array('UniversitiesPhoto.typ' => 'logo', 'UniversitiesPhoto.university_id' => $id)));
+                        $tr[] = array(
+                            "id"=>$u['University']['id'],
+                            "link"=>"/uczelnia/". Inflector::slug($u['University']['nazwa'],'-').'-'.  $id,
+                            "name"=>$u['University']['nazwa'],
+                            "image"=>$photo['UniversitiesPhoto']['path']?'/miniatura/160x125/uploads/'.$photo['UniversitiesPhoto']['path']:false,
+                        );
+                    } 
                 }
+                 $r[] = array(
+                    "schowek"=>$tr,
+                );
                 break;
             case "6":
-                $s = wczytajSchowekQuery();
+                $s = $this->Storage->wczytajSchowekQuery();
                 $tr = array();
                 foreach ($s as $ts) {
+                    $photo = $this->Storage->University->UniversitiesPhoto->find('first', array(
+                                                                                        'conditions' => array('UniversitiesPhoto.typ' => 'logo', 'UniversitiesPhoto.university_id' => $ts['University']['id'])));
                     $tr[] = array(
-                        "id"=>$ts['id'],
-                        "link"=>$ts['url'],
-                        "name"=>$ts['nazwa'],
-                        "image"=>$ts['logo']?'/miniatura/160x125/uploads/'.$ts['logo']:false,
+                        "id"=>$ts['University']['id'],
+                        "link"=>"/uczelnia/". Inflector::slug($ts['University']['nazwa'],'-').'-'.  $ts['University']['id'],
+                        "name"=>$ts['University']['nazwa'],
+                        "image"=>$photo['UniversitiesPhoto']['path']?'/miniatura/160x125/uploads/'.$photo['UniversitiesPhoto']['path']:false,
                     );
                 }
                 $r[] = array(
@@ -61,7 +84,7 @@ class StoragesController extends AppController {
                 );
                 break;
             case "7":
-                usunZeSchowkaQuery($_POST['id']);
+                $this->Storage->usunZeSchowkaQuery($_POST['id']);
                 break;
         }
         

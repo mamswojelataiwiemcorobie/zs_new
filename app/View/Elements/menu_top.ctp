@@ -1,15 +1,17 @@
 <section class="toparea">
 	<div class="container">
 		<div id="gora" class="row">
-
 			<div class="col-md-6 top-text pull-left animated fadeInLeft">
+				<div id="fb-root">
+					<div id="welcome">
+						<div id="fb-login-button" class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false"></div>
+					</div>
+				</div>
 				<!--
 				<i class="icon-phone"></i><span class="separator"></span><i class="icon-envelope"></i> Ta strona używa ciasteczek (cookies), dzięki którym nasz serwis może działać lepiej. 
 				-->
 				<?php echo $this->Html->link('Ta strona wykorzystuje pliki cookie x','', array('style'=>'color:#444'));	?>
 			</div>
-
-			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
 
 			<div class="col-md-6 text-right animated fadeInRight">
 				<div class="social-icons">

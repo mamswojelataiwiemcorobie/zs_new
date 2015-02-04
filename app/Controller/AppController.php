@@ -36,7 +36,11 @@ class AppController extends Controller {
 	public $helpers = array('Js', 'Html', 'Form', 'Captcha');
 	public $components = array(
 		'Session',
-        'Auth',
+        'Auth' => array('authenticate' => array(
+                'Form' => array(
+                    'passwordHasher' => 'Blowfish'
+                )
+            )),
         'RequestHandler',
 		'Paginator',
 		'Cookie',
@@ -69,33 +73,46 @@ class AppController extends Controller {
 		  	
 		    AuthComponent::$sessionKey = 'Auth.Client';
 		    $this->Auth->loginAction = array('controller' => 'clients', 'action' => 'login');
-		    //$this->Auth->loginRedirect = array('controller' => 'client_users', 'action' => 'index');
-		    //$this->Auth->logoutRedirect = array('controller' => 'client_users', 'action' => 'logout');
+		    $this->Auth->loginRedirect = '/';
+		    $this->Auth->logoutRedirect = array('controller' => 'clients', 'action' => 'login');
 		    $this->Auth->authenticate = array(
                 'Form' => array(
                     'userModel' => 'Client',
                  	'fields' => array(
 	                    'username' => 'login',
 	                    'password' => 'password'
-	                )
+	                ),
+	                
                 )
             );
-		    $this->Auth->allow('login', 'facebook_login');
-		    //$this->Auth->authorize = array('Controller');
+		    $this->Auth->allow('login', 'check_log', 'ajax', 'rejestracja');
+		    $this->Auth->authorize = array('Controller');
 		    
 		} else {
 			$this->Auth->allow();
 		}
-        //$this->set('tracks', ClassRegistry::init('Track')->find('first');
+		if($this->Auth->user()) {
+            $user =  ClassRegistry::init('Client')->find('first', array(   'conditions' => array('Client.id' => $this->Auth->user('id')),
+                                                                                                    'fields'=>array('Client.id', 'Client.login'),
+                                                                                                    'contain' => ''));
+            //$this->writelog($user);
+            $this->set('user',$user);
+        }
+        //$this->set('user', ClassRegistry::init('Track')->find('first');
 		$this->set('init', false);
 		$this->set('tabele', false);
 		$this->set('mapy', false);
     }
 
-   function isAuthorized() {
-	    return true;
-	}
+	public function isAuthorized($user) {
+	    // Admin can access every action
+	    if (isset($user['role']) && $user['role'] === 'admin') {
+	        return true;
+	    }
 
+	    // Default deny
+	    return false;
+	}
 
 	public function beforeRender(){
         parent::beforeFilter();
@@ -118,7 +135,7 @@ class AppController extends Controller {
 		return $r;
 	}
 	public function output_json($r) {
-		ob_end_clean();
+		//ob_end_clean();
 		echo json_encode($r);
 		exit();
 	}

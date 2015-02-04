@@ -5,6 +5,11 @@ $(function(){
 	if ($('#znajdz-uczelnie-mini').size() > 0) {
 		searchpage.init('#znajdz-uczelnie-mini');
 	}
+	if ($('#welcome').size() > 0) {
+		enable_facebook();
+		
+	}
+	
 });
 
 //podświetlenie aktywnej strony w menu
@@ -479,6 +484,18 @@ var searchpage = {
 	}
 }
 
+hslider = function() {
+	var x = {};
+	x.init = function() {
+		x.jel = $('.slide');
+		x.setWidth();
+	}
+	x.setWidth = function() {
+		var pos = x.jel.find('.image').eq(-1).position();
+	}
+	x.init();
+}
+
 schowek = function() {
 	var x = {};
 	x.initialized = false;
@@ -501,7 +518,7 @@ schowek = function() {
 	x.create = function() {
 		x.jel.append('<div class="wysun">wysuń schowek</div>');
 		x.jel.find('.wysun').click(x.wysun);
-		x.jel.append('<div class="menu"><div class="schowaj">schowaj schowek</div><div class="cl"></div><div class="slidec"><div class="slide"></div></div></div>');
+		x.jel.append('<div class="menu"><div class="schowaj">schowaj schowek</div><div class="cl"></div><a class="prev browse left"></a><div class="slidec"><div class="slide items"></div></div><a class="next browse right"></a></div>');
 		x.jel.find('.schowaj').click(x.schowaj);
 		x.smenu = x.jel.find('.menu');
 		x.smenu.hide();
@@ -554,8 +571,9 @@ schowek = function() {
 		});
 	}
 	x.usun = function(e) {
-		var tid = e.target.previousSibling.href.match(/\-([0-9]+)\.html/);
-		tid = tid[1];
+		var tid = e.target.previousSibling.href.match(/\d+$/);
+		console.log(tid[0]);
+		tid = tid[0];
 		$(e.target.parentNode).remove();
 		$.ajax({
 			type: "POST",
@@ -574,4 +592,123 @@ schowek = function() {
 		});
 	}
 	x.init();
+}
+
+function checkStatus() {
+	FB.getLoginStatus(function(response) {
+	     FB.api('/me', function(response) {
+	    	$.ajax({
+				type: "POST",
+				url: "/clients/check_log",
+				data: {email:response.email,
+						fb_id:response.id,},
+				dataType: "html",
+				success:function(r){
+					if (r == 0) {					
+					} else {
+						window.location.replace(document.referrer);					
+					}
+
+				}
+			});
+	    });
+	});
+}
+
+function check_status() {
+	$.ajax({
+			type: "POST",
+			url: "/clients/check_log",
+			success:function(r){
+				var x = {};
+					x.jel = $('#welcome');
+				if (r == 0) {					
+						$('.uczelnia-schowek').bind('click',function(){
+						window.location.href = '/clients/rejestracja';
+						});
+						x.jel.append('<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#logowanie" aria-expanded="false" aria-controls="logowanie">Logowanie</button><div class="collapse" id="logowanie"><form method="post" action="/clients/login" class="form-inline"> <input type="text" name="login" placeholder="Login"/> <input type="password" name="password" placeholder="Hasło"/> <input type="submit" value="Login"/> </form> </div> <a href="/clients/rejestracja" class="btn btn-primary" type="button"> Rejestracja </a>');
+					} else {
+						x.jel.append('<div class="witaj">Witaj '+r);
+						x.jel.append('<a href="/clients/edit" class="btn btn-primary" type="button">Zmień dane</a></div>');
+						schowek();
+						
+					}
+
+			}
+	});
+}
+
+var myEl = document.getElementById('fb-login-button');
+
+myEl.addEventListener('click', function() {
+	    FB.getLoginStatus(function(response) {
+	      statusCallback(response);
+	    });
+	  }, false);
+
+
+function statusCallback(response) {
+	    // The response object is returned with a status field that lets the
+	    // app know the current login status of the person.
+	    // Full docs on the response object can be found in the documentation
+	    // for FB.getLoginStatus().
+	    if (response.status === 'connected') {
+	      // Logged into your app and Facebook.
+	      //testAPI();
+	      FB.api('/me', function(response) {
+	    	$.ajax({
+				type: "POST",
+				url: "/clients/check_log",
+				data: {email:response.email,
+						fb_id:response.id,},
+				dataType: "html",
+				success:function(r){
+					var x = {};
+					x.jel = $('#welcome');
+					if (r ==0) {					
+						$('.uczelnia-schowek').bind('click',function(){
+						window.location.href = '/users/rejestracja';
+						});
+						x.jel.append('<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#logowanie" aria-expanded="false" aria-controls="logowanie">Logowanie</button><div class="collapse" id="logowanie"><form method="post" action="/clients/login" class="form-inline"> <input type="text" name="login" placeholder="Login"/> <input type="password" name="password" placeholder="Hasło"/> <input type="submit" value="Login"/> </form> </div> <a href="/clients/rejestracja" class="btn btn-primary" type="button"> Rejestracja </a>');
+					} else {
+						x.jel.append('<div class="witaj">Witaj '+r);
+						x.jel.append('<a href="/clients/edit" class="btn btn-primary" type="button">Zmień dane</a></div>');
+						schowek();
+						
+					}
+				}
+			});
+		});
+	    } else {
+	      // The person is not logged into Facebook, so we're not sure if
+	      // they are logged into this app or not.
+	      check_status();
+
+	    }
+	  }
+
+function enable_facebook() {
+	 window.fbAsyncInit = function() {
+	  FB.init({
+	    appId      : '192030964309734',
+	    cookie     : true,  // enable cookies to allow the server to access 
+	                        // the session
+	    xfbml      : true,  // parse social plugins on this page
+	    version    : 'v2.1' // use version 2.1
+	  });
+
+		 FB.getLoginStatus(function(response) {
+	      statusCallback(response);
+	    });
+		 FB.Event.subscribe("auth.logout", function() {window.location = '/clients/logout'});
+	 };
+
+	  // Load the SDK asynchronously
+	  (function(d, s, id) {
+	    var js, fjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) return;
+	    js = d.createElement(s); js.id = id;
+	    js.src = "//connect.facebook.net/pl_PL/sdk.js";
+	    fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));
 }

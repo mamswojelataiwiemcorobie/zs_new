@@ -72,7 +72,6 @@ Cache::config('default', array('engine' => 'File'));
  *
  */
 CakePlugin::load('Search');
-Configure::load('facebook');
  Configure::write('debug', 2);
  //CakePlugin::load('Admin2',array('bootstrap' => true));
 

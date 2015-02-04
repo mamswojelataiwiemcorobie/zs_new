@@ -4,10 +4,25 @@ App::uses('AppController', 'Controller');
 
 class ClientsController extends AppController {
 
+    public function isAuthorized($user) {
+        if ($this->action === 'check_log' || $this->action === 'login' || $this->action === 'rejestracja') {
+            return true;
+        }
+
+        // The owner of a post can edit and delete it
+        if (in_array($this->action, array('edit', 'delete', 'view'))) {
+            if ($this->Client->findById($user['id'])) {
+                return true;
+            }
+        }
+
+        return parent::isAuthorized($user);
+    }
+
     public function beforeFilter() {
         parent::beforeFilter();
          // Allow users to register and logout.
-		$this->Auth->allow('login', 'facebook_login');
+		$this->Auth->allow('login', 'facebook_login', 'check_log');
     }
 
     public function index() {
@@ -21,16 +36,17 @@ class ClientsController extends AppController {
     }
 
     public function view($id = null) {
-        $this->ClientUser->id = $id;
-        if (!$this->Client->exists()) {
-            throw new NotFoundException(__('Invalid user'));
-        }
-        $this->set('user', $this->Client->read(null, $id));
+             
+            $this->Client->id = $id;
+            if (!$this->Client->exists()) {
+                throw new NotFoundException(__('Invalid user'));
+            }
+            $this->set('user', $this->Client->read(null, $id));
     }
 
     public function add() {
         if ($this->request->is('post')) {
-            $this->ClientUser->create();
+            $this->Client->create();
 			//Debugger::dump($this->request->data);
             if ($this->ClientUser->save($this->request->data)) {
                 $this->Session->setFlash(__('The user has been saved'));
@@ -42,29 +58,47 @@ class ClientsController extends AppController {
         }
     }
 
-    public function edit($id = null) {
-        $this->ClientUser->id = $id;
-        if (!$this->ClientUser->exists()) {
+
+    public function rejestracja() {
+        if ($this->request->is('post')) {
+            $this->Client->create();
+            //Debugger::dump($this->request->data);
+            if ($this->Client->save($this->request->data)) {
+                $this->Session->setFlash(__('The user has been saved'));
+                return $this->redirect('/');
+            }
+            $this->Session->setFlash(
+                __('The user could not be saved. Please, try again.')
+            );
+        }
+    }
+
+    public function edit() {
+        $id = $this->Auth->user('id');
+        $this->Client->id= $id;
+        $this->Client->ClientUsersData->client_id= $id;
+        if (!$this->Client->exists()) {
             throw new NotFoundException(__('Invalid user'));
         }
         if ($this->request->is('post') || $this->request->is('put')) {
-            if ($this->ClientUser->save($this->request->data)) {
+            //$this->request->data['Client']['id'] = $id;
+            if ($this->Client->saveAssociated($this->request->data)) {
                 $this->Session->setFlash(__('The user has been saved'));
-                return $this->redirect(array('action' => 'index'));
+                return $this->redirect('/');
             }
             $this->Session->setFlash(
                 __('The user could not be saved. Please, try again.')
             );
         } else {
-            $this->request->data = $this->ClientUser->read(null, $id);
-            unset($this->request->data['ClientUser']['password']);
+            $this->request->data = $this->Client->read(null, $id);
+            unset($this->request->data['Client']['password']);
         }
     }
 
     public function delete($id = null) {
         //$this->request->onlyAllow('post');
 
-        $this->ClientUser->id = $id;
+        $this->Client->id = $id;
         if (!$this->ClientUser->exists()) {
             throw new NotFoundException(__('Invalid user'));
         }
@@ -98,33 +132,48 @@ class ClientsController extends AppController {
         return $this->redirect($this->Auth->logout());
     }
 
-    public function facebook_login() {
+    public function check_log() {
         //$this->layout = 'login';
         //Debugger::dump(json_encode($_POST));
         
         if ($this->request->is('post')) {
             //$this->Session->setFlash($this->request->pass);
-            $client = $this->Client-> findByLogin($this->request->data['email']);
-            if (empty($client)) {
-                $this->request->data['login'] = $this->request->data['email'] ; 
-                $this->request->data['password'] = $this->request->data['id'];
-                $this->request->data['status'] = 1;
-                $this->ClientUser->create();
-            //Debugger::dump($this->request->data);
-                if ($this->ClientUser->save($this->request->data)) {
+            if(isset($this->request->data['email'])) {
+                $client = $this->Client-> findByLogin($this->request->data['email']);
+                if (empty($client)) {
+                    $this->request->data['login'] = $this->request->data['email'] ; 
+                    $this->request->data['password'] = $this->request->data['fb_id'];
+                     $this->request->data['ClientUsersData']['email'] = $this->request->data['email'];
+                     $this->request->data['ClientUsersData']['facebook_id'] = $this->request->data['fb_id'];
+                    $this->request->data['status'] = 1;
+                    $this->Client->create();
+                //Debugger::dump($this->request->data);
+                    if ($this->Client->save($this->request->data)) {
+                        $this->Auth->login($client['Client']);
+                        //return $this->redirect(array('action' => 'index'));
+                    }
+                     $id = $this->Auth->user('id');
+                    $r = $this->Client->findById($id);
+                    $r= $r['Client']['login'];
+                    
+                } else {
                     $this->Auth->login($client['Client']);
+                     $id = $this->Auth->user('id');
+                    $r = $this->Client->findById($id);
+                    $r= $r['Client']['login'];
                     //return $this->redirect(array('action' => 'index'));
                 }
-                $this->Session->setFlash(__('The user could not be saved. Please, try again.'));
-            } else {
-                $this->Auth->login($client['Client']);
-                //return $this->redirect(array('action' => 'index'));
+            } elseif (!($this->Auth->loggedIn())) {
+               $r=0;
+            } else  {
+                $id = $this->Auth->user('id');
+                $r = $this->Client->findById($id);
+                $r= $r['Client']['login'];
             }
+            $this->output_json($r);
+           
            
            // $this->redirect($this->Auth->redirectUrl());
-        } else{
-                $this -> Session -> Setflash('Error: Access Denied');
-        }
-        //$this->output_json($this->request->pass);
+        } 
     }
 }

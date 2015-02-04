@@ -53,10 +53,6 @@ class AppModel extends Model {
 	}
 
 	function getCurrentUser() {
-	  // for CakePHP 1.x:
-	  App::import('Component','Session');
-	  $Session = new SessionComponent();
-
 	  // for CakePHP 2.x:
 	  App::uses('CakeSession', 'Model/Datasource');
 	  $Session = new CakeSession();

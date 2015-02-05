@@ -30,14 +30,14 @@ class StoragesController extends AppController {
         $this->set('keywords_for_layout', 'wiadomości , artykuły , studia, w, anglii');
     }
 
-	public function view($tid) {
-		$article = $this->Storage->findById($tid);
-		//Debugger::dump($site);
-		$this->set('article', $article['Storage']);
-		$this->set('title_for_layout', $article['Storage']['meta_title']);
-		$this->set('description_for_layout', $article['Storage']['meta_description']);
-		$this->set('keywords_for_layout', $article['Storage']['meta_keywords']);
-	}
+    public function view($tid) {
+        $article = $this->Storage->findById($tid);
+        //Debugger::dump($site);
+        $this->set('article', $article['Storage']);
+        $this->set('title_for_layout', $article['Storage']['meta_title']);
+        $this->set('description_for_layout', $article['Storage']['meta_description']);
+        $this->set('keywords_for_layout', $article['Storage']['meta_keywords']);
+    }
 
     function ajax($tid) {
         $tid = $this->request->pass[0];
@@ -92,29 +92,29 @@ class StoragesController extends AppController {
         $this->output_json($r);
     }
 
-	/***ADMIN***/
-	public function admin_index() {
-		if(isset($this->passedArgs['Search.keywords'])) {
+    /***ADMIN***/
+    public function admin_index() {
+        if(isset($this->passedArgs['Search.keywords'])) {
             $keywords = mb_strtolower($this->passedArgs['Search.keywords'], 'UTF-8');
-			//Debugger::dump($keywords);
+            //Debugger::dump($keywords);
             $this->paginate = array(
-            	'limit' =>10,
+                'limit' =>10,
                 'conditions' => array(
                     'LOWER(Storage.tytul) LIKE' => "%$keywords%",
                 )
             );
         } else { 
-			$this->paginate = array(
-				'limit' => 15,
-				'order' => array('Storage.created' => 'asc' ),
-			);
-		}
+            $this->paginate = array(
+                'limit' => 15,
+                'order' => array('Storage.created' => 'asc' ),
+            );
+        }
         $universities = $this->paginate('Storage');
-		//Debugger::dump($universities);
+        //Debugger::dump($universities);
         $this->set('articles', $universities);
-	}
+    }
 
-	public function admin_search() {
+    public function admin_search() {
         // the page we will redirect to
         $url['action'] = 'index';
          
@@ -130,16 +130,16 @@ class StoragesController extends AppController {
         // redirect the user to the url
         $this->redirect($url, null, true);
     }
-	
-	public function admin_edit($id = null) {
+    
+    public function admin_edit($id = null) {
  
         if (!$id) {
             $this->Session->setFlash('Please provide a user id');
             $this->redirect(array('action'=>'index'));
         }
-		
+        
         if ($this->request->is('post') || $this->request->is('put')) {
-			//Debugger::dump($this->request->data);
+            //Debugger::dump($this->request->data);
 
             if ($this->Storage->saveAssociated($this->request->data)) {
                 $this->Session->setFlash(__('Podstrona została uaktualniona'));
@@ -151,17 +151,17 @@ class StoragesController extends AppController {
        
         $subsite = $this->Storage->findById($id);
 
-		//Debugger::dump( $university);
+        //Debugger::dump( $university);
         $this->request->data = $subsite;
         //Debugger::dump( $this->request->data);
     }
-	
-	public function admin_add() {
-		//Debugger::dump($this->request->data);
-		
+    
+    public function admin_add() {
+        //Debugger::dump($this->request->data);
+        
         if ($this->request->is('post')) {
-			
-			$this->Storage->create();
+            
+            $this->Storage->create();
             if ($this->Storage->saveAssociated($this->request->data, array('validate' => 'only'))) {
                 $this->Session->setFlash(__('Utworzono nową podstronę'));
                 $this->redirect(array('action' => 'index'));
@@ -169,10 +169,10 @@ class StoragesController extends AppController {
                 $this->Session->setFlash(__('The user could not be created. Please, try again.'));
             }   
         }
-		//$this->set('coursesTypes', $this->Course->CoursesType->find('list'));
+        //$this->set('coursesTypes', $this->Course->CoursesType->find('list'));
     }
-	
-	public function admin_delete($kierunek_id) {
+    
+    public function admin_delete($kierunek_id) {
          
         if (!$kierunek_id) {
             $this->Session->setFlash('Please provide a user id');

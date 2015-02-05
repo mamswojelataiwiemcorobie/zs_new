@@ -12,6 +12,7 @@ $(function(){
 	
 });
 
+
 //podświetlenie aktywnej strony w menu
 		$("#nav a").each(function () {
 			var path = window.location.pathname;
@@ -217,14 +218,24 @@ $(function(){
 	//Open The First Accordion Section When Page Loads
 	$('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');
 	$('.accordion-content').first().slideDown().toggleClass('open-content');
+	if($('#lokalizacja.active-header')){
+			   initialize();
+			}
 	// The Accordion Effect
 	$('.accordion-header').click(function () {
 		if($(this).is('.inactive-header')) {
 			$('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
 			$(this).toggleClass('active-header').toggleClass('inactive-header');
 			$(this).next().slideToggle().toggleClass('open-content');
-			if($(this).is('#lokalizacja')){
-			    initialize();
+			
+        	$(this).toggleClass('open-content');
+			if($(this).is('#lokalizacja.active-header')){
+				setTimeout(function() {					 
+				   var center = map.getCenter(); 
+				    google.maps.event.trigger(map, 'resize');         // fixes map display
+				    map.setCenter(center);   
+				}, 100);
+				
 			}
 		}
 		else {
@@ -235,22 +246,7 @@ $(function(){
 	return false;
 	});
 
-	/* ---------------------------------------------------------------------- */
-	/*	Tabs1&2
-	/* ---------------------------------------------------------------------- */
-	$(document).ready(function () {
-		$('#horizontalTab').easyResponsiveTabs({
-			type: 'default', //Types: default, vertical, accordion           
-			width: 'auto', //auto or any width like 600px
-			fit: true   // 100% fit in a container
-		});
-		$('#verticalTab').easyResponsiveTabs({
-			type: 'vertical',
-			width: 'auto',
-			fit: true
-		});
-	});
-
+	
 	//ROLL ON HOVER
 		$(function() {
 		$(".roll").css("opacity","0");

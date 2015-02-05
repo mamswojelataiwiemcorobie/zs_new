@@ -81,9 +81,9 @@
 						</li>
 					<?php endif;?>
 				</ul>
-				<div class="tab-content cont">
-					<?php if ($zakladka_page === 0) : ?>
-						<div class="tab-pane active row">
+				<div class="tab-cont" >
+					<?php if ($zakladka_page === 0) : ?>						
+						<div class="row">
 							<div class="col-sm-6">
 								<?php if (strlen($university['UniversitiesParameter']['opis']) > 0):?>
 									<h1 class="smalltitle">
@@ -150,9 +150,7 @@
 									<?php if ($lokalizacja_poparawna) :?>
 										<h2 id= "lokalizacja"class="accordion-header">Lokalizacja</h2>
 										<div class="accordion-content">
-											<div class="animated fadeInLeft notransition">
-												<div class="info" id="map-canvas" style="width: 100%; height: 266px; margin-bottom: 5%;"></div>
-											</div>
+												<div class="info" id="map-canvas" class="accordion-content" style="height: 266px;"></div>
 										</div>
 									<?php endif;?>
 								</div>
@@ -327,7 +325,7 @@
 
 			}
 		});
-
 	}
+
 	</script>
 <?php endif;?>

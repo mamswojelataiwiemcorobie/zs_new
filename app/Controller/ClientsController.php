@@ -22,7 +22,7 @@ class ClientsController extends AppController {
     public function beforeFilter() {
         parent::beforeFilter();
          // Allow users to register and logout.
-		$this->Auth->allow('login', 'facebook_login', 'check_log');
+        $this->Auth->allow('login', 'facebook_login', 'check_log');
     }
 
     public function index() {
@@ -47,7 +47,7 @@ class ClientsController extends AppController {
     public function add() {
         if ($this->request->is('post')) {
             $this->Client->create();
-			//Debugger::dump($this->request->data);
+            //Debugger::dump($this->request->data);
             if ($this->ClientUser->save($this->request->data)) {
                 $this->Session->setFlash(__('The user has been saved'));
                 return $this->redirect(array('action' => 'index'));
@@ -109,21 +109,21 @@ class ClientsController extends AppController {
         $this->Session->setFlash(__('ClientUser was not deleted'));
         return $this->redirect(array('action' => 'index'));
     }
-	
+    
     var $helpers = array('Form');
-	
-	public function login() {
-		$this->layout = 'login';
-		
-		if ($this->request->is('post')) {
-			if ($_SERVER['REMOTE_ADDR'] == '192.162.147.207' || $_SERVER['REMOTE_ADDR'] == '192.162.147.193' || $_SERVER['REMOTE_ADDR'] == '89.66.128.54' || $_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
-				if ($this->Auth->login()) {
-					$this->Session->setFlash(__('Welcome, '. $this->Auth->user('login')));
-					$this->redirect($this->Auth->redirectUrl());
-				}
-				$this->Session->setFlash(__('Invalid login or password, try again'));
-			}
-		} else{
+    
+    public function login() {
+        $this->layout = 'login';
+        
+        if ($this->request->is('post')) {
+            if ($_SERVER['REMOTE_ADDR'] == '192.162.147.207' || $_SERVER['REMOTE_ADDR'] == '192.162.147.193' || $_SERVER['REMOTE_ADDR'] == '89.66.128.54' || $_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
+                if ($this->Auth->login()) {
+                    $this->Session->setFlash(__('Welcome, '. $this->Auth->user('login')));
+                    $this->redirect($this->Auth->redirectUrl());
+                }
+                $this->Session->setFlash(__('Invalid login or password, try again'));
+            }
+        } else{
                 $this -> Session -> Setflash('Error: Access Denied');
         }
     }

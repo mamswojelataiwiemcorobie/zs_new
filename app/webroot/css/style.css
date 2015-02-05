@@ -2218,6 +2218,12 @@ ul.social-icons li a:hover {
 	padding:0;
 }
 
+.tab-cont {
+background: #ffffff;
+border: 1px solid #e5e5e5;
+padding: 25px;
+}
+
 .mapa {
 	background-image: url('/img/siatka.jpg');
 padding: 100px 0;

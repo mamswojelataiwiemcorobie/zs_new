@@ -10,7 +10,7 @@
 		</div>
 		<div class="form-group">		
 			<label class="col-sm-2 control-label">Hasło</label>			
-			<?php echo $this->Form->input('password', array('label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control', 'type' => 'password'));?>
+			<?php echo $this->Form->input('password', array('label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
 		</div>
 		<div class="form-group">		
 			<label class="col-sm-2 control-label">Imie</label>			
@@ -32,7 +32,6 @@
 			<label class="col-sm-2 control-label">Województwo</label>			
 			<?php echo $this->Form->input('ClientUsersData.district_id', array('label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
 		</div>
-		<?php echo $this->Form->submit('edytuj', array('div'=>true));	?>
 	</form>
 <?php echo $this->Form->end(); ?>
 </div>

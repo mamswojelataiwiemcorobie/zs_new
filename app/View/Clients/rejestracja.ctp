@@ -30,12 +30,9 @@
 			<label class="col-sm-2 control-label">Województwo</label>			
 			<?php echo $this->Form->input('ClientUsersData.district_id', array('label' => false, 'div' => 'col-sm-10', 'class'=> 'form-control'));?>
 		</div>
-		<?php echo $this->Form->submit('Zapisz', array('div'=>true));	?>
 	</form>
 <?php echo $this->Form->end(); ?>
 </div>
-<p> lub </p>
-<fb:login-button scope="public_profile,email" onlogin="checkStatus();"></fb:login-button>
 <div class="clearfix"></div>
 <?php 
 echo $this->Html->link( "Powrót",   array('action'=>'view') ); 

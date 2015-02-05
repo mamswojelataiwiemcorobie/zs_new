@@ -55,9 +55,9 @@
 						<a href="<?php echo $university['url'];?>/KIERUNKI-5">KIERUNKI</a>
 					</li>
 				</ul>
-				<div class="tab-content cont">
+				<div class="tab-cont cont">
 					<?php if ($zakladka_page === 0) : ?>
-						<div class="tab-pane active row">
+						<div class="row">
 							<div class="col-sm-6">
 								<?php if (strlen($university['Faculty']['opis']) > 0):?>
 									<h1 class="smalltitle">
@@ -93,7 +93,7 @@
 										<h2 id= "lokalizacja"class="accordion-header">Lokalizacja</h2>
 										<div class="accordion-content mapa">
 											<div class="animated fadeInLeft notransition">
-												<div class="info" id="map-canvas" style="width: 100%; height: 266px; margin-bottom: 5%;"></div>
+												<div class="info" id="map-canvas" style="width: 100%; height: 266px;"></div>
 											</div>
 										</div>
 									<?php endif;?>

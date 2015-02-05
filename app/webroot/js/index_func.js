@@ -218,7 +218,7 @@ $(function(){
 	//Open The First Accordion Section When Page Loads
 	$('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');
 	$('.accordion-content').first().slideDown().toggleClass('open-content');
-	if($('#lokalizacja.active-header')){
+	if($('#lokalizacja').size() > 0){
 			   initialize();
 			}
 	// The Accordion Effect
@@ -226,19 +226,16 @@ $(function(){
 		if($(this).is('.inactive-header')) {
 			$('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
 			$(this).toggleClass('active-header').toggleClass('inactive-header');
-			$(this).next().slideToggle().toggleClass('open-content');
-			
+			$(this).next().slideToggle().toggleClass('open-content');			
         	$(this).toggleClass('open-content');
 			if($(this).is('#lokalizacja.active-header')){
 				setTimeout(function() {					 
 				   var center = map.getCenter(); 
 				    google.maps.event.trigger(map, 'resize');         // fixes map display
 				    map.setCenter(center);   
-				}, 100);
-				
+				}, 100);				
 			}
-		}
-		else {
+		} else {
 			$(this).toggleClass('active-header').toggleClass('inactive-header');
 			$(this).next().slideToggle().toggleClass('open-content');
 		}

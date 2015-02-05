@@ -49,7 +49,8 @@ class StoragesController extends AppController {
                 $this->Storage->University->contain();
                 $u = $this->Storage->University->find('first', array('conditions' => array('University.id' => $id)));
                 if (!empty($u)) {
-                    $check = $this->Storage->find('first', array('conditions' => array('Storage.university_id' => $id)));
+                    $user = $this->Auth->user();
+                    $check = $this->Storage->find('first', array('conditions' => array('Storage.client_id' => $user['id'], 'Storage.university_id' => $id)));
                     if(empty($check)) { 
                         $this->Storage->dodajDoSchowkaQuery($id);
                         $photo = $this->Storage->University->UniversitiesPhoto->find('first', array(

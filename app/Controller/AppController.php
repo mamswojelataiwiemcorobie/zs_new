@@ -36,7 +36,11 @@ class AppController extends Controller {
 	public $helpers = array('Js', 'Html', 'Form', 'Captcha');
 	public $components = array(
 		'Session',
-        'Auth',
+        'Auth' => array('authenticate' => array(
+                'Form' => array(
+                    'passwordHasher' => 'Blowfish'
+                )
+            )),
         'RequestHandler',
 		'Paginator',
 		'Cookie',
@@ -69,7 +73,7 @@ class AppController extends Controller {
 		  	
 		    AuthComponent::$sessionKey = 'Auth.Client';
 		    $this->Auth->loginAction = array('controller' => 'clients', 'action' => 'login');
-		    //$this->Auth->loginRedirect = array('controller' => 'client_users', 'action' => 'index');
+		    $this->Auth->loginRedirect = '/';
 		    $this->Auth->logoutRedirect = array('controller' => 'clients', 'action' => 'login');
 		    $this->Auth->authenticate = array(
                 'Form' => array(
@@ -77,10 +81,11 @@ class AppController extends Controller {
                  	'fields' => array(
 	                    'username' => 'login',
 	                    'password' => 'password'
-	                )
+	                ),
+	                
                 )
             );
-		    $this->Auth->allow('login', 'check_log', 'ajax');
+		    $this->Auth->allow('login', 'check_log', 'ajax', 'rejestracja');
 		    $this->Auth->authorize = array('Controller');
 		    
 		} else {

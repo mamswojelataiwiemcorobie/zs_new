@@ -65,7 +65,7 @@ class ClientsController extends AppController {
             //Debugger::dump($this->request->data);
             if ($this->Client->save($this->request->data)) {
                 $this->Session->setFlash(__('The user has been saved'));
-                return $this->redirect(array('action' => 'index'));
+                return $this->redirect('/');
             }
             $this->Session->setFlash(
                 __('The user could not be saved. Please, try again.')
@@ -76,20 +76,22 @@ class ClientsController extends AppController {
     public function edit() {
         $id = $this->Auth->user('id');
         $this->Client->id= $id;
+        $this->Client->ClientUsersData->client_id= $id;
         if (!$this->Client->exists()) {
             throw new NotFoundException(__('Invalid user'));
         }
         if ($this->request->is('post') || $this->request->is('put')) {
-            if ($this->Client->save($this->request->data)) {
+            //$this->request->data['Client']['id'] = $id;
+            if ($this->Client->saveAssociated($this->request->data)) {
                 $this->Session->setFlash(__('The user has been saved'));
-                return $this->redirect(array('action' => 'index'));
+                return $this->redirect('/');
             }
             $this->Session->setFlash(
                 __('The user could not be saved. Please, try again.')
             );
         } else {
             $this->request->data = $this->Client->read(null, $id);
-            //unset($this->request->data['Client']['password']);
+            unset($this->request->data['Client']['password']);
         }
     }
 
@@ -152,20 +154,23 @@ class ClientsController extends AppController {
                     }
                      $id = $this->Auth->user('id');
                     $r = $this->Client->findById($id);
+                    $r= $r['Client']['login'];
                     
                 } else {
                     $this->Auth->login($client['Client']);
                      $id = $this->Auth->user('id');
                     $r = $this->Client->findById($id);
+                    $r= $r['Client']['login'];
                     //return $this->redirect(array('action' => 'index'));
                 }
-            } elseif (!$this->Auth->loggedIn()) {
-               $r===false;
+            } elseif (!($this->Auth->loggedIn())) {
+               $r=0;
             } else  {
                 $id = $this->Auth->user('id');
                 $r = $this->Client->findById($id);
+                $r= $r['Client']['login'];
             }
-            $this->output_json($r['Client']['login']);
+            $this->output_json($r);
            
            
            // $this->redirect($this->Auth->redirectUrl());

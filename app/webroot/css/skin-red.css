@@ -7,7 +7,7 @@ a {	color:#6A6D6E;}
 .navbar-nav>li>a:hover,.navbar-nav>li>a:focus {	background-color:#2980B9;}
 .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {background-color:#2980B9 !Important;}
 .car-highlight1 {background-color:#2980B9;}
-.car-smallcircle {background:#f54828;}
+.car-smallcircle {background:#2980B9;}
 .carouselText2 {	background:#f54828;}
 .icon-box-top i:hover {background-color:#2980B9;}
 .fontawesome-icon.circle-white {	color:#2980B9;}
@@ -42,5 +42,5 @@ blockquote {border-left:5px solid #f54828;}
 .active-header:hover {background:#1469A0;}
 #filter ul li .selected {background: #f54828 !Important;}
 .drop-cap, .captionicons {background:#f54828;}
-.pageheader-default .semitransparentbg, .bgarea-semitransparent {background: #2980B9 !important;}
+.pageheader-default .semitransparentbg {background: #2980B9 !important;}
 

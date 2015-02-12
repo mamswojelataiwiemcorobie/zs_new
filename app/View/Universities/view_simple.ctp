@@ -53,19 +53,19 @@
 					</ul>
 					<div class="tab-content cont">
 						<?php if ($zakladka_page === 0) : ?>
-							<div class="tab-pane active">
-								<?php if (strlen($university['UniversitiesParameter']['opis']) > 0):?>
-									<h1 class="smalltitle">
-										<span>Opis</span>
-									</h1>
-									<section>
-										<div class="info">
-											<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 1):?>. Kierunki studiów. Studia dzienne (stacjonarne) i zaoczne (niestacjonarne), licencjackie, inżynierskie, magisterskie. Jakie studia wybrać? Czy warto tu studiować twój wymarzony kierunek. <?php endif;?>
-											<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 2):?>. Szkoła policealna - kursy roczne i dwuletnie po których jest pewna praca.<?php endif;?>
-											<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 3):?>. Szkoła językowa - angielski, niemiecki, rosyjski, hiszpański, japoński<?php endif;?>
-										</div>
-									</section>
-								<?php endif;?>
+							<div class="tab-pane active">								
+								<h1 class="smalltitle">
+									<span>Opis</span>
+								</h1>
+								<section>
+									<div class="info">									
+										<?php echo $university['University']['nazwa'];?>
+										<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 1):?>. Kierunki studiów. Studia dzienne (stacjonarne) i zaoczne (niestacjonarne), licencjackie, inżynierskie, magisterskie. Jakie studia wybrać? Czy warto tu studiować twój wymarzony kierunek. <?php endif;?>
+										<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 2):?>. Szkoła policealna - kursy roczne i dwuletnie po których jest pewna praca.<?php endif;?>
+										<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 3):?>. Szkoła językowa - angielski, niemiecki, rosyjski, hiszpański, japoński<?php endif;?>
+									</div>
+								</section>
+								
 							</div>
 						<!-- KIERUNKI -->
 						<?php elseif ($zakladka_page === 5) :?>

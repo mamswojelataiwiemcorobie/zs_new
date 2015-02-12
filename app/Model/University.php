@@ -25,6 +25,18 @@ class University extends AppModel {
         ),
     );
 
+    public function uni_slider(){
+    	$universities = Cache::read('universities_slider', 'long');
+        if (!$universities) {
+        	$this->contain('UniversitiesPhoto');
+            $universities = $this->UniversitiesPhoto->find('all', array('order'=> array('University.abonament_id', 'University.nazwa'),
+																			'conditions' => array('UniversitiesPhoto.typ' => 'logo', 'University.university_type_id' => 1, 'University.abonament_id >=' => 3), 
+																			'limit'=> 100));
+            Cache::write('universities_slider', $universities, 'long');
+        }
+        return $universities;
+    }
+
 	public function orConditions($data = array()) {
         $filter = $data['filter'];
         $condition = array(

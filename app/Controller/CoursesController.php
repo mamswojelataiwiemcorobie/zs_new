@@ -6,7 +6,7 @@ class CoursesController extends AppController {
 	
 	public function index() {
 
-		$this->set('title_for_layout', 'Kierunki studiów | Zostań Studentem');
+		$this->set('title_for_layout', 'Kierunki studiów');
 		$this->set('description_for_layout', 'Wybierz kierunek studiów który najbardziej Cię interesuje. Nowe kierunki humanistyczne, artystyczne, ekonomiczne, techniczne, przyrodnicze');
 		$this->set('keywords_for_layout', 'kierunki, studia, studiów');
 		$this->set('title_for_slider2','Kierunki');
@@ -39,7 +39,7 @@ class CoursesController extends AppController {
 		$this->Course->contain('CoursesCategory');
 		$kierunek = $this->Course->find('first', array('conditions'=> array('Course.id'=> $id)));
 
-		$this->set('title_for_layout', 'Kierunek '.$kierunek['Course']['nazwa'].' | Zostań Studentem');
+		$this->set('title_for_layout', 'Kierunek '.$kierunek['Course']['nazwa']);
 		$this->set('description_for_layout', substr(html_entity_decode(strip_tags($kierunek['Course']['opis1']),ENT_COMPAT,'UTF-8'),0,160));
 		$this->set('keywords_for_layout', $kierunek['Course']['nazwa'].' , kierunek , studia');
 		$this->set('title_for_slider2',$kierunek['Course']['nazwa']);
@@ -206,19 +206,6 @@ class CoursesController extends AppController {
 		}
 		$this->redirect(array('controller' => 'courses','action' => 'index'));
 	}
-	public function rank_old() {
-		
-		$cities = $this->Course->find('all',array ('fields' => array('Course.nazwa', 'Course.srednia'),'order' => array('Course.srednia' => 'desc')));
-		$i=0;
-		foreach ($cities as $city) {
-			echo $i=$i + 1;
-			echo $city['Course']['nazwa'];
-			echo $city['Course']['srednia'].'<br>';
-			$this->Course->updateAll( 
-						array( 'Course.rank' => $i), 
-						array( 'Course.id' => $city['Course']['id']));
-		}
-	}
 	
 	public function zapis() {
 		# Open the File.
@@ -256,107 +243,7 @@ class CoursesController extends AppController {
 			}
 		}
 	}
-	public function sredniacourses() {
-		echo '<br><br><br><br><br><br><br><br>';
-		$this->ProfessionsCourse = ClassRegistry::init('ProfessionsCourse');
-		//$prof_ids = $this->ProfessionsCourse->find('list',array('fields'=>array('ProfessionsCourse.profession_id')));
-		//pr($prof_ids);
-
-		$list_ids = $this->Course->find('list', array ('order' => array('id' => 'ASC'), 'fields'=>array('Course.id')));
-		
-		$course_min = $this->Course->find('first' ,array ('fields' => array('MIN(Course.placa) as min_size'  )));//minimalna średnia płaca po kierunku
-		$course_max = $this->Course->find('first' ,array ('fields' => array('MAX(Course.placa) as max_size'  )));//maksymalna średnia płaca po kierunku
-
-		$MAX_il_prof = 0;
-		foreach ($list_ids as $courses_id) {
-			$il_prof = $this->ProfessionsCourse->find('count', array (
-											'order' => array('ProfessionsCourse.course_id' => 'ASC'),
-											'conditions' => array('ProfessionsCourse.course_id' => $courses_id), 
-											'fields'=>array('ProfessionsCourse.profession_id')));
-			if ($il_prof > $MAX_il_prof){
-				$MAX_il_prof = $il_prof;//max ilość zawodów po kierunku
-			}
-		}
-		echo '<br> maX:'.$MAX_il_prof.' : Max<br>'; 
-
-		foreach ($list_ids as $courses_id) {
-
-			echo '<br>'.$courses_id.' :: ';
-
-			$il_prof = $this->ProfessionsCourse->find('count', array (
-											'order' => array('ProfessionsCourse.course_id' => 'ASC'),
-											'conditions' => array('ProfessionsCourse.course_id' => $courses_id), 
-											'fields'=>array('ProfessionsCourse.profession_id')));
-			//pr($prof_ids);
-			echo ' | ';
-
-			$course_czesne = $this->Course->find('first', array ('conditions' => array('Course.id' => $courses_id)));
-			echo $course_czesne = $course_czesne['Course']['placa'].' | ';
-
-			if ( (($course_max - $course_min) == 0) && (($MAX_il_prof) == 0)) {
-				$srednia_kierunku = 0;
-			}else{
-				 $srednia_pensji_zawodow = (($course_czesne - $course_min) / ($course_max - $course_min)) * 10 ;
-				
-				echo $srednia_il_kierunków = ((($il_prof) / ($MAX_il_prof)) * 10 ) ;
-				echo $waga_pensji_zawodow = 1;
-				echo $waga_il_kierunków = 1;
-				
-				echo $srednia_kierunku = (( ($srednia_pensji_zawodow * $waga_pensji_zawodow) + ($srednia_il_kierunków * $waga_il_kierunków) )/($waga_pensji_zawodow + $waga_il_kierunków));
-				echo ' ||';
-			}
-
-			$this->Course->id = $courses_id;
-			$this->Course->saveField('srednia', $srednia_kierunku );
-
-		}
-
-		echo '<br><br><br><br><br><br><br><br>';
-		echo 'id | srednia | rank<br>';
-		$PartArray = $this->Course->find('list', array (
-										'fields' => array('Course.id','Course.srednia'),
-										'order' => array('Course.srednia' => 'desc')));
-		$i=0;
-		//pr($PartArray);
-
-		foreach ($PartArray as $id => $sr) {
-			$i = $i + 1;
-			echo $i . '<br>';
-			$this->Course ->id = $id;
-			$this->Course ->saveField('rank', $i);
-		} 
-	}
 	
-	public function rank() {
-		$Model = 'Course';
-
-		echo '<br><br><br><br><br><br><br><br>';
-		echo 'id | srednia | rank<br>';
-		$PartArray = $this->$Model->find('list', array (
-										'fields' => array($Model.'.id',$Model.'.srednia'),
-										'order' => array($Model.'.srednia' => 'desc')));
-		$i=0;
-		//pr($PartArray);
-
-		foreach ($PartArray as $id => $sr) {
-			echo $i = $i + 1;
-			echo $i . '<br>';
-			$this->$Model ->id = $id;
-			$this->$Model ->saveField('rank', $i);
-		}    
-	}
-	public function prof_placa_check(){
-		$this->Profession = ClassRegistry::init('Profession');
-			$placa_prof = $this->Profession->find('list', array('fields'=>array('Profession.placa', 'Profession.nazwa')));
-			pr($placa_prof);
-			$placa_Course = $this->Course->find('list', array('fields'=>array('Course.placa', 'Course.zawod')));
-			pr($placa_Course);
-
-			$this-> set ('placa_prof', $placa_prof);
-			$this-> set ('placa_Course', $placa_Course);
-	}
-
-
 	public function admin_search() {
         // the page we will redirect to
         $url['action'] = 'index';

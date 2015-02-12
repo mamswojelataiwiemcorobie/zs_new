@@ -21,7 +21,7 @@
 									'action' => 'ostatnio'));
 							?>		
 <?php if (count($ostatnio_odwiedzane) > 0):?><div class="qlist qlist-blue">
-	<div class="header">OSTATNIO ODWIEDZANE</div>
+	<h3>OSTATNIO ODWIEDZANE</h3>
 	<div class="cont">
 		<ul>
 		<?php foreach($ostatnio_odwiedzane as $fit):?>

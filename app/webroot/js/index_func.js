@@ -6,8 +6,7 @@ $(function(){
 		searchpage.init('#znajdz-uczelnie-mini');
 	}
 	if ($('#welcome').size() > 0) {
-		enable_facebook();
-		
+		enable_facebook();		
 	}
 	
 });
@@ -55,9 +54,9 @@ $(function(){
 						onTouch: true
 						},
 					scroll: {
-			        easing: "",
-			        duration: 1200
-			    }
+				        easing: "",
+				        duration: 1200
+				    }
 				});	
 			}
 			if ($('#carousel-projects').size() > 0) {		
@@ -132,15 +131,13 @@ $(function(){
 				$('#carousel-projects_uni').carouFredSel({
 				responsive: true,
 				items       : {
-		        width       : 150,
-		        height      : 350,
+		        width       : 200,
+		        height      : 330,
 		        visible     : {
 		            min         : 1,
 		            max         : 4
 		        }
 		    },
-				width: '150px',
-				height: '350px',
 				auto: true, 
 				circular	: true,
 				infinite	: false,

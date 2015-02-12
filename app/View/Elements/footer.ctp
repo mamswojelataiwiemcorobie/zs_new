@@ -14,9 +14,11 @@
 		<div class="container animated fadeInUpNow notransition fadeInUp">
 			<div class="row">
 				<div class="col-md-3">
-					<img src="/img/logo2.png" width="242"  />
 					<p>
-						Dzięki naszemu serwisowi porównasz wybrane uczelnie, kierunki studiów, czesne, koszty, stypendia, możliwości wyjazdu w ramach programu Erasmus.					</p>
+						<img src="/img/logoZS.png" width="242" height="29" alt="logo Zostaństudentem" />
+					</p>
+					<p>
+						Dzięki naszemu serwisowi szybko znajdziesz informacje na temat interesujących Cię uczelni, kierunków, kursów.</p>
 				</div>
 				<div class="col-md-3">
 						<p>
@@ -39,15 +41,14 @@
 				<div class="col-md-3">
 					<h1 class="title"><span class="colortext">Z</span>głaszanie <span class="font100">uwag</span></h1>
 					<div id="quotes">
-						<div id="quote_wrap" style="height: 120px; width: 200px">
-							<div class="textItem" style="display: block;">
+						<div id="quote_wrap">
+							<div>
 								W razie zaistnienia błedów lub niepoprawnych danych prosimy o ich zgłoszenie przez Formularz Kontaktowy.
 							</div>
 						</div>
 						
 					</div>
-					<div class="clearfix">
-					</div>
+					<div class="clearfix"></div>
 				</div>
 				<div class="col-md-3">
 					<div class="form" >
@@ -79,74 +80,7 @@
 						echo $this->Form->end();
 				?>
 				</div>
-					<?php /*
-						//-------------------------------::TRACKING WVT::----------------------------
-							//GETTING INFORMATION
-								$ip = $_SERVER['REMOTE_ADDR'] ;
-								//$ip = $_SERVER['REMOTE_ADDR'].':'.$_SERVER['SERVER_PORT'] ;
-								
-								$date = date_create();
-								$date = date_format($date, 'd/m/Y H:i:s');
-								#output: 24/03/2012 17:45:12
-								
-								//$path = $this->here;
-								$path = '::'.$this->here; 
-								
-								//set get cookies
-									$vn_nr = NULL;
-													
-									if(!isset($_COOKIE['vnd'])){ 
-										$vn_nr = sha1(microtime());
-										$expire = time()+60*60*24*30;
-										setcookie("vnd", $vn_nr, $expire);
-									}else{
-										$vn_nr = $_COOKIE['vnd'];
-									}
-								
-								$this->requestAction(
-									array('controller' => 'tracks', 'action' => 'send'),
-									array('pass' => array('??', $ip, $date, $path, $vn_nr))
-								);
-						//-------------------------------------------------------------------------
-						?>
-					<h1 class="title"><span class="colortext">S</span>kontaktuj <span class="font100">się z nami</span></h1>
-					<div class="done">
-						<div class="alert alert-success">
-							<button type="button" class="close" data-dismiss="alert">×</button>
-							Twoja wiadomość została przesłana. Dziękujemy!
-						</div>
-					</div>
-					<form method="post" Xaction="messages/sending">
-						<div >
-							<?php
-								echo $this->Form->create('Message', array('action'=>'/index'));
-								echo $this->Form->input('name', array('div' => false, 'label' => false, 'type' => 'text', 'class' => 'col-md-6', 'name' => 'name', 'placeholder' => 'Imie' ));
-								echo $this->Form->input('name', array('div' => false, 'label' => false, 'type' => 'text', 'class' => 'col-md-6', 'name' => 'email', 'placeholder' => 'E-mail' ));
-								echo $this->Form->input('name', array('div' => false, 'label' => false, 'type' => 'textarea', 'class' => 'col-md-12', 'name' => 'message', 'placeholder' => 'Wiadomość', 'style'=>'height:115px;' ));
-								echo $this->Form->input('IP', array('type' => 'hidden', 'value' => $ip));
-								echo $this->Form->input('DATE_TIME', array('type' => 'hidden', 'value' => $date));
-								echo $this->Form->input('PATH', array('type' => 'hidden', 'value' => $path));
-								echo $this->Form->submit('Wyślij', array('div' => false, 'label' => false, 'type' => 'submit', 'class' => 'btn', 'name'=>'button'));
-								//echo $this->Form->end();
-							?>
-						</div>
-						<?php
-						//pr($this->request->data);
-							if(!empty($this->request->data['Message'])){
-
-								$n = $_POST['name'];
-								$e = $_POST['email'];
-								$m = $_POST['message'];
-								$b = $_POST['button'];
-								$this->requestAction(
-									array('controller' => 'messages', 'action' => 'send'),
-									array('pass' => array($n, $e, $m, $ip, $date, $path, $b))
-								);
-							}
-
-						?>
-					</form>
-					*/?>
+					
 				</div>
 			</div>
 		</div>
@@ -168,7 +102,7 @@
 				<div class="col-md-8">
 					<ul class="footermenu pull-right">
 						<!-- <li><a href="#">Porownywarka Uczelni</a></li> -->
-						<li><a href="http://www.zostanstudentem.pl/">Zostań Studentem</a></li>
+						<li><a href="http://www.studiujwuk.pl/">Studiuj w UK</a></li>
 						<li><a href="http://blog.zostanstudentem.pl/">Blog</a></li>
 						<li><a href="http://blog.zostanstudentem.pl/kontakt/">Kontakt</a></li>
 					</ul>

@@ -48,9 +48,12 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 strong, b{
 font-weight: 500;}
 /*--------------------------------------------------	HEADER---------------------------------------------------*/
-#welcome div {
-    display: inline-flex;
-    color: rgb(152, 152, 152);
+#welcome {
+	display: flex;
+}
+#welcome .btn {
+padding: 2px 2px;
+margin: 0 8px;
 }
 #welcome #logowanie {
 
@@ -58,6 +61,7 @@ font-weight: 500;}
 }
 #welcome .witaj {
     padding: 0 8px;
+    color: white;
 }
 .toparea {
 	background:#444;
@@ -667,7 +671,7 @@ font-weight: 500;}
 	padding-left:0;
 	list-style:none;
 	text-align:center;
-    bottom: 57px;
+    bottom: -30px;
 }
 .carousel-indicators li {
 	display:inline-block;
@@ -675,7 +679,7 @@ font-weight: 500;}
 	height:10px;
 	margin:1px;
 	text-indent:-999px;
-	border:1px solid #ffffff;
+	border:1px solid #6A6D6E;
 	border-radius:10px;
 	cursor:pointer;
 }
@@ -683,7 +687,7 @@ font-weight: 500;}
 	margin:0;
 	width:12px;
 	height:12px;
-	background-color:#ffffff;
+	background-color:#6A6D6E;
 }
 .carousel-caption {
 	position:absolute;
@@ -756,6 +760,10 @@ font-weight: 500;}
 }
 #carousel-featuredwork .carousel-indicators {
 	margin-left: -31%;
+}
+#carousel-featuredwork .flex {
+	display:flex;
+	justify-content:center;
 }
 /*--------------------------------------------------	intro-note---------------------------------------------------*/
 .intro-note h1 {
@@ -925,18 +933,12 @@ clear: both;
 #uczelnia .main .mbr {
 float:right;
 }
-#uczelnia .main .mb {
-margin-top:6px;
-clear:both;
-background:url('spacer.png') left top repeat-x;
-}
 #uczelnia .main h1 {
 float:left;
 margin-top: 0;
 margin-bottom:10px;
 font-weight: 300;
 text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-background:url('spacer.png') left bottom repeat-x;
 }
 #uczelnia .main address {
 clear:both;
@@ -979,6 +981,10 @@ color: white;
 #uczelnia .main .uzupelnij-profil {
 display:block;
 margin-bottom: 9px;
+}
+#uczelnia .boxcontainer {
+border: none;
+border-bottom: none;
 }
 /*--------------------------------------------------	WYSZUKIWARKA---------------------------------------------------*/
 #searchpage {
@@ -1095,7 +1101,6 @@ padding-left:38px;
 padding-right:40px;
 }
 .item-low .header {
-margin-bottom:3px;
 color:#606060;
 font:normal 15px/18px 'Lato';
 }
@@ -1419,7 +1424,6 @@ padding-bottom: 10px;
 	z-index:100;
 }
 .bgarea-semitransparent {
-	background:rgba(245,72,40,0.80) !important;
 	padding:30px 0;
 }
 .bgarea h1,.bgarea h2,.bgarea h3,.bgarea h4,.bgarea h5,.bgarea,.bgarea a,.bgarea p {
@@ -1516,9 +1520,6 @@ padding-bottom: 10px;
 	text-align:center;
 	font-weight:300;
 	margin-bottom:30px;
-}
-.cbp-qtrotator blockquote footer:before {
-	content:'â€• ';
 }
 .cbp-qtrotator .cbp-qtcontent img {
 	float:right;
@@ -1685,6 +1686,9 @@ ul.footermenu li a:hover {
 }
 .done {
 	display:none;
+}
+#quotes {
+	float: left;
 }
 .error input,input.error,.error textarea,textarea.error {
 	background-color:#ffffff;
@@ -2955,7 +2959,6 @@ a.prev span,a.next span {
 	-moz-transition:all 1s ease-in-out;
 	-o-transition:all 1s ease-in-out;
 	transition:all 1s ease-in-out;
-	border:1px solid #ebebeb;
 }
 .featured-projects:hover {
 }

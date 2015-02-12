@@ -86,9 +86,6 @@
 						<div class="row">
 							<div class="col-sm-6">
 								<?php if (strlen($university['UniversitiesParameter']['opis']) > 0):?>
-									<h1 class="smalltitle">
-										<span>OPIS</span>
-									</h1>
 									<section >
 										<div class="animated fadeInLeft notransition">
 											<div class="info"><?php echo $university['UniversitiesParameter']['opis'];?>

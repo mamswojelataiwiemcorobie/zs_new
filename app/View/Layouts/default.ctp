@@ -89,21 +89,23 @@
 	?>
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script><!--google chart-->
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<script async type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31696467-1']);
+  _gaq.push(['_trackPageview']);
 
-  ga('create', 'UA-52209637-1', 'auto');
-  ga('send', 'pageview');
-
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 </script>
+<meta name="google-site-verification" content="_sN9VAdYA89dMemv5QW1VtC4NX3q5ZgcYC8UW_NZ2Fk" />
 </head>
 <body class="on" onLoad="" scroll="yes" >
 	<?php 
-		if(isset($user)) echo $this->element('menu_top', array("username"=>$user['Client']['login']), array('cache' => true)); 
-		else echo $this->element('menu_top', array(), array('cache' => true)); 
+		if(isset($user)) echo $this->element('menu_top', array("username"=>$user['Client']['login'])); 
+		else echo $this->element('menu_top'); 
 		if ($this->request->here == '/') 		{
 			echo $this->element('slider', array(), array('cache' => true));
 		} 		else 		{

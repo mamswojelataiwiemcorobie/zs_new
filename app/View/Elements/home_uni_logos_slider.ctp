@@ -1,4 +1,4 @@
-<section class="grayarea recent-projects-home topspace30 animated fadeInUpNow notransition fadeInUp">
+<section class="recent-projects-home topspace30 animated fadeInUpNow notransition fadeInUp">
 	<div class="row">
 		<div class="text-center smalltitle">
 			</div>
@@ -15,7 +15,7 @@
 					<li>
 						<div class="boxcontainer">
 							<div class="wrap">
-								<img src="miniatura/500x333/uploads/<?php echo $university['UniversitiesPhoto']['path']; ?>" alt="Logo">
+								<img src="miniatura/255x185/uploads/<?php echo $university['UniversitiesPhoto']['path']; ?>" alt="Logo">
 							</div>
 							<div class="roll" style="opacity: 0;">
 								<div class="wrapcaption">

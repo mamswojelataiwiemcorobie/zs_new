@@ -28,29 +28,29 @@
 
   <section class="home-features topspace30">
     <div class="container animated fadeInUpNow notransition fadeInUp">
-      <h1 class="small text-center">WHAT THEY SAY</h1>
+      <!-- <h1 class="small text-center">WHAT THEY SAY</h1>
       <div class="br-hr type_short">
         <span class="br-hr-h">
         <i class="icon-pencil"></i>
         </span>
-      </div>
+      </div> -->
       <div id="cbp-qtrotator" class="cbp-qtrotator">
         <div class="cbp-qtcontent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
-          <img src="http://wowthemes.net/demo/biscaya/img/demo/avatar.jpg" alt="">
+          <img src="/img/Albert_Einstein_Head.jpg" alt="Albert Einstein">
           <blockquote>
             <p class="bigquote">
-              <i class="icon-quote-left colortext quoteicon"></i> Lorem ipsum dolor sit adipiscing elit. Praesent tempus eleifend risus ut congue eset nec lacus. Lorem ipsum dolor sit adipiscing elit. Praesent tempus eleifend risus ut congue eset nec lacus. Praesent dignissim sem sapien, a vulputate enim auctor vitae. Duis non lorem porta, adipiscing eros sit amet, tempor sem.
+              <i class="icon-quote-left colortext quoteicon"></i> Fakty nie są najważniejsze. Zresztą, aby je poznać, nie trzeba studiować na uczelni - można się ich nauczyć z książek. Istota kształcenia w szkole wyższej nie polega zatem na wpajaniu wiedzy faktograficznej, lecz na ćwiczeniu umysłu w dochodzeniu do tego, czego nie da się znaleźć w podręcznikach.
             </p>
-            <footer>John Doe / Owner of <a href="#">calypso.com</a></footer>
+            <footer>Albert Einstein</footer>
           </blockquote>
         </div>
         <div class="cbp-qtcontent cbp-qtcurrent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
-          <img src="http://wowthemes.net/demo/biscaya/img/demo/avatar.jpg" alt="">
+          <img src="/img/Antoni_Kepinski.jpg" alt="">
           <blockquote>
             <p class="bigquote">
-              <i class="icon-quote-left colortext quoteicon"></i> Lorem ipsum dolor sit adipiscing elit. Praesent tempus eleifend risus ut congue eset nec lacus. Lorem ipsum dolor sit adipiscing elit. Praesent tempus eleifend risus ut congue eset nec lacus. Praesent dignissim sem sapien, a vulputate enim auctor vitae. Duis non lorem porta, adipiscing eros sit amet, tempor sem.
+              <i class="icon-quote-left colortext quoteicon"></i> Naukę i technikę można uważać za kontynuatorki magii.
             </p>
-            <footer>Pino Caruso / Director of <a href="#">hisweb.com</a></footer>
+            <footer>Antoni Kępiński</footer>
           </blockquote>
         </div>
       <span class="cbp-qtprogress" style="transition: none; -webkit-transition: none; width: 0%;"></span></div>
@@ -59,16 +59,11 @@
     </div>
   </section>
 
-
-
-  <!-- Recent projects - policealne -->
-  <?php echo $this->element('home_poli_logos_slider', array(), array('cache' => true)); ?>
-
   <!-- Wp_posts -->
-  <?php echo $this->element('recent_post', array(), array('cache' => false)); ?>
+  <?php echo $this->element('recent_post'); ?>
 
   <!-- KIERUNKI ================================================== -->
-    <?php echo $this->element('losoweKierunki', array(), array('cache' => false)); ?>
+    <?php echo $this->element('losoweKierunki'); ?>
     <!-- /.kierunki end-->
 
 <!-- PARTNERZY slider ================================================= -->

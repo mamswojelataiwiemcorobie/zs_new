@@ -13,7 +13,7 @@
 					<li>
 						<div class="boxcontainer">
 							<div class="wrap">
-								<img src="/uploads/<?php echo $university['UniversitiesPhoto']['path']; ?>" alt="Logo">
+								<img src="miniatura/255x185/uploads/<?php echo $university['UniversitiesPhoto']['path']; ?>" alt="Logo">
 							</div>
 							<div class="roll" style="opacity: 0;">
 								<div class="wrapcaption">

@@ -62,23 +62,8 @@ $minifile = $minidir.'/'.$w.'x'.$h.'x'.$q.'_'.basename($url);
 #echo getcwd();
 #echo $minidir;
 if (is_file($file)) {
-	if (1==2&&is_file($minifile) && filemtime($minifile) > filemtime($file)) { # jest miniatura i jest starsza od oryginalu
+	if (is_file($minifile) && (filemtime($minifile) > filemtime($file))) { # jest miniatura i jest starsza od oryginalu
 		
-		$last_modified_time = filemtime($minifile);
-		$etag = md5_file($minifile);
-
-		header("Last-Modified: ".gmdate("D, d M Y H:i:s", $last_modified_time)." GMT");
-		header("Etag: $etag");
-
-		if (@strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) == $last_modified_time ||
-			trim($_SERVER['HTTP_IF_NONE_MATCH']) == $etag) {
-			header("HTTP/1.1 304 Not Modified");
-			exit;
-		}
-		
-		$img_info = @getimagesize($minifile);
-		header ("Content-type: ".$img_info['mime']);
-		echo file_get_contents($minifile);
 		exit ();
 	} else {
 		if (!is_dir($minidir)) {

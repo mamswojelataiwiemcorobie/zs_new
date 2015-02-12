@@ -213,7 +213,7 @@ class UniversitiesController extends AppController {
 						'order' => array('University.abonament_id'=> 'desc', 'University.nazwa' => 'asc' ),				 
 						'limit' => 5,
 						'recursive' => 0,
-						'conditions' => array('University.university_type_id' => $tid, 'University.all_courses LIKE' => '%' .$this->request->query['miasto'].'%'),
+						'conditions' => array('University.university_type_id' => $tid, 'University.all_courses LIKE' => '%' .$this->request->query['kierunek'].'%'),
 						//'joins' => $joins,
 						'group' => 'University.id',
 						'contain' => array('UniversitiesParameter.www', 'UniversitiesParameter.adres', 'UniversitiesParameter.email', 'UniversitiesParameter.telefon', 'UniversitiesParameter.opis', 'UniversityType', 'UniversitiesPhoto')
@@ -272,7 +272,11 @@ class UniversitiesController extends AppController {
 		if (!empty($_req['miasto'])) {$this->set('title_for_layout', $_req['miasto']. ' - ' .$r. ' | Zostań Studentem');
 			if (!empty($_req['kierunek'])) $this->set('title_for_layout',  $_req['kierunek']. ' - ' .$_req['miasto']. ' - ' .$r. ' | Zostań Studentem');
 		} elseif (!empty($_req['kierunek'])) $this->set('title_for_layout', $_req['kierunek']. ' - ' .$r. ' | Zostań Studentem');*/
-		$this->set('title_for_layout', 'Wyszukiwarka - Szkoły wyższe - policelane - językowe | Zostań Studentem');
+		if (isset($this->request->query['miasto'])) {
+			$this->set('title_for_layout', $this->request->query['miasto']. ' - Szukaj');
+			if (isset($this->request->query['kierunek'])) $this->set('title_for_layout', $this->request->query['kierunek']. '-'. $this->request->query['miasto']. ' - Szukaj');
+		} elseif (isset($this->request->query['kierunek'])) $this->set('title_for_layout', $this->request->query['kierunek']. ' - Szukaj');
+		else $this->set('title_for_layout', 'Wyszukiwarka - Szkoły wyższe - policelane - językowe');
 
 		$this->set('title_for_slider2','Znajdź uczelnie');
 
@@ -435,10 +439,7 @@ class UniversitiesController extends AppController {
 	}
 	
 	public function home_slider() {
-		//$this->University->contain();
-		$universities = $this->University->UniversitiesPhoto->find('all', array('order'=> array('University.abonament_id', 'University.nazwa'),
-																			'conditions' => array('UniversitiesPhoto.typ' => 'logo', 'University.university_type_id' => 1, 'University.abonament_id >=' => 2), 
-																			'limit'=> 100));
+		$universities = $this->University->uni_slider();
 		//Debugger::dump($universities);
 		if (!empty($this -> request -> params['requested'])) {
 		   return $universities;
@@ -449,7 +450,7 @@ class UniversitiesController extends AppController {
 
 	public function home_slider_poli() {
 		//$this->University->contain();
-		$universities = $this->University->UniversitiesPhoto->find('all', array('conditions' => array('UniversitiesPhoto.typ' => 'logo', 'University.university_type_id' => 2, 'University.abonament_id >=' => 2), 
+		$universities = $this->University->UniversitiesPhoto->find('all', array('conditions' => array('UniversitiesPhoto.typ' => 'logo', 'University.university_type_id' => 2, 'University.abonament_id >=' => 3), 
 																			'limit'=> 100));
 		//Debugger::dump($universities);
 		if (!empty($this -> request -> params['requested'])) {
@@ -660,15 +661,15 @@ class UniversitiesController extends AppController {
 	}
 
 	public function nazwy(){
-		$this->University->contain('UniversitiesParameter.nazwa');
+		$this->University->contain('UniversitiesParameter.miasto');
 		$universities = $this->University->find('all');
 		//Debugger::dump($universities);
 		foreach($universities as $uni) {
-			if ($uni['University']['nazwa'] == $uni['UniversitiesParameter']['nazwa']) {
+			if ($uni['University']['miasto'] == $uni['UniversitiesParameter']['miasto']) {
 
 			} else {
 				$this->University->id = $uni['University']['id'];
-				$this->University->saveField('nazwa', $uni['UniversitiesParameter']['nazwa']);
+				$this->University->saveField('miasto', $uni['UniversitiesParameter']['miasto']);
 			}
 		}
 	}

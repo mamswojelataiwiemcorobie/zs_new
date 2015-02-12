@@ -59,7 +59,8 @@
 			<?php foreach ($uczelnie_wyniki_demo as $uw):?><hr/>
 			<div class="item-low">
 				<div class="header">
-					<a href="/uczelnia/<?php echo $slug=Inflector::slug($uw['University']['nazwa'],'-').'-'.  $uw['University']['id'];?>.html" class="title"><?php echo $uw['University']['nazwa'];?></a>
+					<a href="/uczelnia/<?php echo $slug=Inflector::slug($uw['University']['nazwa'],'-').'-'.  $uw['University']['id'];?>.html" class="title">
+						<h4><?php echo $uw['University']['nazwa'];?></h4></a>
 					<span class="url"><?php echo $uw['UniversitiesParameter']['www'];?></span>
 				</div>
 				<address><?php echo $uw['UniversitiesParameter']['adres'];?><br/><?php if ($uw['UniversitiesParameter']['telefon']):?>tel: <?php echo $uw['UniversitiesParameter']['telefon']; endif;?></address>

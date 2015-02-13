@@ -15,14 +15,14 @@
 						<?php if($university['UniversitiesParameter']['telefon']):?><br/>tel: <?php echo $university['UniversitiesParameter']['telefon']; endif; ?>
 						<?php if($university['UniversitiesParameter']['email']):?><br/>e-mail: <?php echo $university['UniversitiesParameter']['email']; endif; ?>
 					</address>
-					<p>Zobacz tą uczelnię w naszej porównywarce >><a href="http://porownywarkauczelni.pl/uczelnia<?php echo Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];?>"><?php echo $university['University']['nazwa'];?></a></p>
+					<p>
+						<a href="http://porownywarkauczelni.pl/uczelnia/<?php echo Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];?>" class="btn porownywarka" target="_blank">
+							<img src="/img/logo_porownywarka.png"/></a>
+					</p>
 				</div>
 				<div class="mbr col-sm-4">
-					<?php if ($university['University']['abonament_id'] < 2):?>
-						<a href="/info/kontakt-1.html" class="uzupelnij-profil"></a>
-					<?php else : ?>
-						<span rel="<?php echo $university['University']['id'];?>" class="uczelnia-schowek btn btn-large"><i class="icon-heart"></i> ULUBIONE</span>
-					<?php endif;?>
+					<span rel="<?php echo $university['University']['id'];?>" class="uczelnia-schowek btn btn-large"><i class="icon-heart"></i> ULUBIONE</span>
+
 					<?php if ($university['University']['link_rejestracji']): ?>
 						<a href="<?php echo $university['University']['link_rejestracji']; ?>" class="uczelnia-rekrutuj btn" target="_blank"><i class="icon-plus"></i> REKRUTUJ</a>
 					<?php endif;?>

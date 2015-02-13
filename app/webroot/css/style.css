@@ -428,6 +428,14 @@ margin: 0 8px;
 	font-weight:100;
 	font-size:19px;
 }
+.car-middlecircle2 {
+	background:#fff;
+	color:#555;
+}
+.car-smallcircle3 {
+	background:#2980B9;
+	color:#fff;
+}
 .car-middlecircle {
 	background:#fff;
 	width:120px;

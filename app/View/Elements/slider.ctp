@@ -17,10 +17,10 @@
 						<a href="wyszukiwarka/uczelnie-wyzsze-1"><div class="car-widecircle animated fadeInLeftBig notransition">
 							<span>Uczelnie</span>
 						</div></a>
-						<a href="wyszukiwarka/szkoly-policealne-2"><div class="car-middlecircle animated fadeInUpBig notransition">
+						<a href="wyszukiwarka/szkoly-policealne-2"><div class="car-widecircle car-middlecircle2 animated fadeInUpBig notransition">
 							<span>Policealne</span>
 						</div></a>
-						<a href="wyszukiwarka/szkoly-jezykowe-3"><div class="car-smallcircle animated fadeInRightBig notransition">
+						<a href="wyszukiwarka/szkoly-jezykowe-3"><div class="car-widecircle car-smallcircle3 animated fadeInRightBig notransition">
 							<span>Językowe</span>
 						</div></a>
 					</div>

@@ -63421,3 +63421,1110 @@ Stack Trace:
 #3 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
 #4 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2015-02-13 11:22:29 Error: [MissingControllerException] Controller class OfertaZS.pdfController could not be found.
+Exception Attributes: array (
+  'class' => 'OfertaZS.pdfController',
+  'plugin' => NULL,
+)
+Request URL: /ofertaZS.pdf
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:22:30 Error: [MissingControllerException] Controller class WydarzeniaController could not be found.
+Exception Attributes: array (
+  'class' => 'WydarzeniaController',
+  'plugin' => NULL,
+)
+Request URL: /wydarzenia.html
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:22:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:22:31 Error: [MissingActionException] Action ArticlesController::width=device-width, initial-scale=1.0() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'width=device-width, initial-scale=1.0',
+)
+Request URL: /articles/width=device-width,%20initial-scale=1.0
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-13 11:22:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:23:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:23:21 Error: [MissingControllerException] Controller class WydarzeniaController could not be found.
+Exception Attributes: array (
+  'class' => 'WydarzeniaController',
+  'plugin' => NULL,
+)
+Request URL: /wydarzenia/width=device-width,%20initial-scale=1.0
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:23:36 Error: [MissingControllerException] Controller class OfertaZS.pdfController could not be found.
+Exception Attributes: array (
+  'class' => 'OfertaZS.pdfController',
+  'plugin' => NULL,
+)
+Request URL: /oferta_z_s.pdf/width=device-width,%20initial-scale=1.0
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:24:02 Error: [MissingActionException] Action UniversitiesController::width=device-width, initial-scale=1.0() could not be found.
+Exception Attributes: array (
+  'controller' => 'UniversitiesController',
+  'action' => 'width=device-width, initial-scale=1.0',
+)
+Request URL: /universities/width=device-width,%20initial-scale=1.0
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-13 11:24:07 Error: [MissingActionException] Action SubsitesController::width=device-width, initial-scale=1.0() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubsitesController',
+  'action' => 'width=device-width, initial-scale=1.0',
+)
+Request URL: /subsites/width=device-width,%20initial-scale=1.0
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SubsitesController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-13 11:24:37 Error: [MissingActionException] Action CoursesController::width=device-width, initial-scale=1.0() could not be found.
+Exception Attributes: array (
+  'controller' => 'CoursesController',
+  'action' => 'width=device-width, initial-scale=1.0',
+)
+Request URL: /courses/width=device-width,%20initial-scale=1.0
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CoursesController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-13 11:24:50 Error: [MissingViewException] View file "/home/zostanstud/ftp/zs_new/app/View/Pages/width=device-width, initial-scale=1.0.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/zostanstud/ftp/zs_new/app/View/Pages/width=device-width, initial-scale=1.0.ctp',
+)
+Request URL: /pages/width=device-width,%20initial-scale=1.0
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/lib/Cake/View/View.php(468): View->_getViewFileName('width=device-wi...')
+#1 /home/zostanstud/ftp/zs_new/lib/Cake/Controller/Controller.php(948): View->render('width=device-wi...', NULL)
+#2 /home/zostanstud/ftp/zs_new/app/Controller/PagesController.php(73): Controller->render('width=device-wi...')
+#3 [internal function]: PagesController->display('width=device-wi...')
+#4 /home/zostanstud/ftp/zs_new/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-02-13 11:43:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:43:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:45:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:45:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:45:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:45:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:45:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:45:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:46:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:48:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:48:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:49:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:49:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:49:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:51:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:52:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:52:25 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:52:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:52:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:53:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:53:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:53:37 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:53:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:55:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:55:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:56:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:56:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:57:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:57:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:57:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:57:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:58:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:58:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:59:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:59:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:59:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:59:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 11:59:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.ttf?v=3.2.1
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 12:03:45 Error: [MissingActionException] Action ClientsController::facebook_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientsController',
+  'action' => 'facebook_login',
+)
+Request URL: /clients/facebook_login
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ClientsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-13 12:12:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 12:21:04 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 12:21:53 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 12:43:15 Error: [MissingControllerException] Controller class UczelnieController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelnieController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnie/civitas-268
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 12:58:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 13:18:01 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 13:18:01 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 13:25:55 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 13:26:53 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 13:27:09 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 13:27:39 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 13:28:00 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 13:30:45 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 13:57:09 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:00:34 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:05:40 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:11:53 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/wyzsza-szkola-inzynieryjno-ekonomiczna-w-rzeszowie-194/Formularz%20zg%C3%85%E2%80%9Aoszeniowy
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:34:01 Error: [MissingControllerException] Controller class GfxController could not be found.
+Exception Attributes: array (
+  'class' => 'GfxController',
+  'plugin' => NULL,
+)
+Request URL: /_gfx/banners-12.jpg
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:34:01 Error: [MissingControllerException] Controller class GfxController could not be found.
+Exception Attributes: array (
+  'class' => 'GfxController',
+  'plugin' => NULL,
+)
+Request URL: /_gfx/logoUK.png
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:34:01 Error: [MissingControllerException] Controller class GfxController could not be found.
+Exception Attributes: array (
+  'class' => 'GfxController',
+  'plugin' => NULL,
+)
+Request URL: /_gfx/banners-12.jpg
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:34:01 Error: [MissingControllerException] Controller class GfxController could not be found.
+Exception Attributes: array (
+  'class' => 'GfxController',
+  'plugin' => NULL,
+)
+Request URL: /_gfx/logoUK.png
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:35:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/banners-12.jpg
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:35:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/logoUK.png
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:35:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/banners-12.jpg
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:35:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/banners-12.jpg
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:35:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/logoUK.png
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:35:21 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/images/Perspektywy_2013.jpg
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:35:21 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/images/DO_480.jpg
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:35:22 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/images/Konspekt_45.jpg
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:35:22 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/miniatura/200x200/uploads/13424423637009.jpg
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:41:04 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:42:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:42:48 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/js/html5shiv.js
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:42:48 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/js/respond.min.js
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:42:48 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/css/ie8.css
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:42:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:42:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/%3C?php_echo_%24this-%3EHtml-%3Eurl%28%5C%27%2Ffiles%2FSalome_otf%5C%27=
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:42:58 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/js/html5shiv.js
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:42:58 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/js/respond.min.js
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:42:58 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/css/ie8.css
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:43:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:43:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/%3C?php_echo_%24this-%3EHtml-%3Eurl%28%5C%27%2Ffiles%2FSalome_otf%5C%27=
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:43:08 Error: [MissingControllerException] Controller class KierunkiController could not be found.
+Exception Attributes: array (
+  'class' => 'KierunkiController',
+  'plugin' => NULL,
+)
+Request URL: /kierunki/js/html5shiv.js
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:43:08 Error: [MissingControllerException] Controller class KierunkiController could not be found.
+Exception Attributes: array (
+  'class' => 'KierunkiController',
+  'plugin' => NULL,
+)
+Request URL: /kierunki/js/respond.min.js
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:43:08 Error: [MissingControllerException] Controller class KierunkiController could not be found.
+Exception Attributes: array (
+  'class' => 'KierunkiController',
+  'plugin' => NULL,
+)
+Request URL: /kierunki/css/ie8.css
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:43:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/font-awesome/fontawesome-webfont.eot
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:43:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/%3C?php_echo_%24this-%3EHtml-%3Eurl%28%5C%27%2Ffiles%2FSalome_otf%5C%27=
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:44:26 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:44:31 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:46:21 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:46:37 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:46:51 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:47:19 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:47:45 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:48:35 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:48:41 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 14:53:32 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 15:08:39 Error: [MissingControllerException] Controller class KierunekController could not be found.
+Exception Attributes: array (
+  'class' => 'KierunekController',
+  'plugin' => NULL,
+)
+Request URL: /kierunek/-.html
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 15:41:24 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 15:42:56 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/www.ujk.edu.pl/rekrutacja/
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 15:43:18 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/-
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 15:43:45 Error: [MissingControllerException] Controller class KierunekController could not be found.
+Exception Attributes: array (
+  'class' => 'KierunekController',
+  'plugin' => NULL,
+)
+Request URL: /kierunek/www.teb.pl
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 15:43:55 Error: [MissingControllerException] Controller class WyszukiwarkaController could not be found.
+Exception Attributes: array (
+  'class' => 'WyszukiwarkaController',
+  'plugin' => NULL,
+)
+Request URL: /wyszukiwarka/www.ujk.edu.pl/rekrutacja/
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 15:44:36 Error: [MissingControllerException] Controller class WyszukiwarkaController could not be found.
+Exception Attributes: array (
+  'class' => 'WyszukiwarkaController',
+  'plugin' => NULL,
+)
+Request URL: /wyszukiwarka/www.teb.pl
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 15:47:18 Error: [MissingControllerException] Controller class KierunekController could not be found.
+Exception Attributes: array (
+  'class' => 'KierunekController',
+  'plugin' => NULL,
+)
+Request URL: /kierunek/www.ujk.edu.pl/rekrutacja/
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 15:47:19 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/Uniwersytet-Jana-Kochanowskiego-w-Kielcach-333/www.ujk.edu.pl/rekrutacja/
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 15:47:44 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/Uniwersytet-Pedagogiczny-im-Komisji-Edukacji-Narodowej-w-Krakowie-340/ikntm.up.krakow.pl
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 15:47:55 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/www.teb.pl
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 15:47:55 Error: [MissingControllerException] Controller class UczelniaController could not be found.
+Exception Attributes: array (
+  'class' => 'UczelniaController',
+  'plugin' => NULL,
+)
+Request URL: /uczelnia/TEB-Edukacja-w-Poznaniu-974/www.teb.pl
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-13 15:50:07 Error: [MissingActionException] Action UniversitiesController::width=device-width,initial-scale=1.0() could not be found.
+Exception Attributes: array (
+  'controller' => 'UniversitiesController',
+  'action' => 'width=device-width,initial-scale=1.0',
+)
+Request URL: /universities/width=device-width,initial-scale=1.0
+Stack Trace:
+#0 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/zostanstud/ftp/zs_new/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UniversitiesController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/zostanstud/ftp/zs_new/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

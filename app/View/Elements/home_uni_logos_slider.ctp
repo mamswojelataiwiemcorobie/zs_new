@@ -11,21 +11,23 @@
 
 																	'action' => 'home_slider'));
 						foreach ($universities as $university) :
+
+							$slug = Inflector::slug($university['University']['nazwa'],'-');
 					?>						
 					<li>
 						<div class="boxcontainer">
 							<div class="wrap">
-								<img src="miniatura/255x185/uploads/<?php echo $university['UniversitiesPhoto']['path']; ?>" alt="Logo">
+								<img src="miniatura/255x185/uploads/<?php echo $university['UniversitiesPhoto']['path']; ?>" alt="Logo $university['University']['nazwa']">
 							</div>
 							<div class="roll" style="opacity: 0;">
 								<div class="wrapcaption">
-									<a href="/uczelnia/<?php echo Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];?>.html">
+									<a href="/uczelnia/<?php echo $slug.'-'.  $university['University']['id'];?>.html">
 										<i class="icon-link captionicons"></i>
 									</a>
 								</div>
 							</div>
 							<h1>
-								<a href="/uczelnia/<?php echo $slug=Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];?>.html">
+								<a href="/uczelnia/<?php echo $slug.'-'.  $university['University']['id'];?>.html">
 									<?php echo $university['University']['nazwa'];?> 
 								</a>
 							</h1>

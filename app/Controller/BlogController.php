@@ -23,7 +23,9 @@ class BlogController extends AppController {
 					WHERE post_id = ?
 					LIMIT 1";
 				$thumb = $db->fetchAll($db_query3, array($thumb_id[0]['wp_postmeta']['meta_value']));
+				//Debugger::dump($thumb);
 				$recent_posts[$key]['Thumbnail'] = str_replace('.png', '-310x310.png', $thumb[0]['wp_postmeta']['meta_value']);
+				$recent_posts[$key]['Thumbnail'] = str_replace('.jpg', '-310x310.jpg', $thumb[0]['wp_postmeta']['meta_value']);
 			}
 
 			$db_query4 = "SELECT slug FROM wp_terms LEFT JOIN wp_term_relationships ON wp_terms.term_id = wp_term_relationships.term_taxonomy_id WHERE wp_term_relationships.object_id = ? LIMIT 1";

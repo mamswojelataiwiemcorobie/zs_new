@@ -19,7 +19,7 @@ display: table-row;
 }
 ul,menu,dir {
 	display:block;
-	list-style-type:disc;
+	list-style-type:square;
 	-webkit-padding-start:0;
 	-moz-padding-start:0;
 	-khtml-padding-start:0px;
@@ -43,7 +43,13 @@ a:hover {
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	color:#444;
 	font-family:Open Sans,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-weight: 700;
+	font-weight: 300;
+}
+h2, .h2 {
+font-size: 24px;
+}
+h3, .h3 {
+font-size: 21px;
 }
 strong, b{
 font-weight: 500;}
@@ -786,7 +792,20 @@ margin: 0 8px;
 }
 
 /*--------------------------------------------------	recent post---------------------------------------------------*/
-#recent_post p{
+#recent_post a , #recent_post img{
+max-width: 100%;
+max-height: 100%;
+}
+#recent_post .wrap {
+height: 310px;
+margin: 10px;
+margin: auto;
+}
+
+#recent_post h4 {
+	font-weight: 700;
+}
+#recent_post p {
 	font-size: 15px;
 }
 
@@ -802,7 +821,7 @@ margin: 0 8px;
 }
 .service-box p {
 	font-family:Open Sans;
-	font-size:13px;
+	font-size:14px;
 	line-height:22px;
 }
 .grey-box-icon {
@@ -993,6 +1012,12 @@ margin-bottom: 9px;
 #uczelnia .boxcontainer {
 border: none;
 border-bottom: none;
+}
+#uczelnia .info img {
+	max-width: 100%;
+}
+#uczelnia ul {
+padding-left: 10px;
 }
 /*--------------------------------------------------	WYSZUKIWARKA---------------------------------------------------*/
 #searchpage {

@@ -65,9 +65,6 @@
 			//responsive
 			echo $this->Html->css('/css/display/rwd-table.css');
 		}
-		if ($this->name == 'Universities') {
-			echo $this->Html->css('uni_v.css');
-		}
 	?>
 	
 	<!-- IE -->

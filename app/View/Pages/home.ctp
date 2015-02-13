@@ -22,6 +22,13 @@
 
 <!-- Studeo
 ================================================== -->
+  <div class="row intro-note">
+        <div class="col-md-12 text-center">
+          <h1>Szukasz <span class="colortext">uczelni</span> lub kierunku studiów?</h1>
+          <p>
+          Zostań Studentem to serwis w którym znajdziesz aktualne informacje o wszystkich szkołach wyższych, policealnych i językowych w Polsce.        </p>
+        </div>
+  </div>
   <!-- Recent projects - szkoły wyższe -->
   <?php echo $this->element('home_uni_logos_slider', array(), array('cache' => true)); ?>  
   <!-- /szkoly end-->

@@ -60,15 +60,6 @@ class UniversitiesController extends AppController {
 		$this->set('description_for_layout', 'Zostań studentem. Najlepsze szkoły wyższe.');
 		$this->set('keywords_for_layout', 'uniwersytety, szkoły, ranking');
 		
-		$university['galeria'] = array();
-		foreach ($university['UniversitiesPhoto'] as $photo) {
-			if($photo['typ']=='logo') {
-				$university['logo'] = $photo['path'];
-			} elseif($photo['typ']=='galeria') {
-				array_push($university['galeria'], $photo['path']);
-			}
-		}
-		$university = Set::remove($university, 'UniversitiesPhoto');
 		if ($university['University']['abonament_id'] < 2) {
 			$university['logo'] = 'no-photo.jpg';
 			//$u['kierunki'] = $u['kierunki_full'] = array();
@@ -81,42 +72,58 @@ class UniversitiesController extends AppController {
 		$this->set('title_for_layout', $university['University']['nazwa']);
 
 		if ($university['University']['abonament_id'] < 2 || $university['University']['university_type_id'] == 3) {
-			$this->University->CourseonUniversity->contain('Course.id', 'Course.nazwa');
-			$kierunki = $this->University->CourseonUniversity->find('all', array('conditions'=>array('CourseonUniversity.university_id'=>$id), 																
-																				'order'=>array('Course.nazwa'),
-																				'group'=>'Course.nazwa'));
-			$this->set('kierunki', $kierunki);
+			if($zakladka_page==5) {
+				$this->University->CourseonUniversity->contain('Course.id', 'Course.nazwa');
+				$kierunki = $this->University->CourseonUniversity->find('all', array('conditions'=>array('CourseonUniversity.university_id'=>$id), 																
+																					'order'=>array('Course.nazwa'),
+																					'group'=>'Course.nazwa'));
+				$this->set('kierunki', $kierunki);
+			}
 			$this->set('university', $university);
 			$this->render('view_simple');
 		} else {
-			$this->University->CourseonUniversity->contain('Course.id', 'Course.nazwa', 'Faculty.nazwa', 'Faculty.id');
-			$kierunki = $this->University->CourseonUniversity->find('all', array('conditions'=>array('CourseonUniversity.university_id'=>$id), 																
-																				'order'=>array('Course.nazwa')));
-			foreach ($kierunki as $kierunek) {
-				$type= $kierunek['CourseonUniversity']['course_type_id'].$kierunek['CourseonUniversity']['course_mode_id'];
-				$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['nazwa'] = $kierunek['Course']['nazwa'];
-				if (isset($kierunek['Faculty']['nazwa'])) {
-					$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['wydzial_id'] = $kierunek['Faculty']['id'];
-					$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['wydzialnazwa'] = $kierunek['Faculty']['nazwa'];
+			$university['galeria'] = array();
+			foreach ($university['UniversitiesPhoto'] as $photo) {
+				if($photo['typ']=='logo') {
+					$university['logo'] = $photo['path'];
+				} elseif($photo['typ']=='galeria') {
+					array_push($university['galeria'], $photo['path']);
 				}
-				$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']][$type] = true;
-				$kierunki_types[$type] = true;
 			}
-			$types = array('11','21','31','41','61','51','71','12','22','32','42','62','52','72','60','50','70');
-			if (isset($kierunki_types)) {
-				$ttypes = array();
-				foreach ($types as $t) {
-					if (isset($kierunki_types[$t])) $ttypes[] = $t;
-				}
-				$kierunki_types = $ttypes;
-			}
-			$this->set('kierunki_full', $kierunki_full);
-			$this->set('kierunki_types', $kierunki_types);
+			$university = Set::remove($university, 'UniversitiesPhoto');
+		
+			if ($zakladka_page == 0) {
+					
 
-			$this->University->CourseonUniversity->Faculty->contain();
-			$wydzialy = $this->University->CourseonUniversity->Faculty->find('all', array('fields'=>array('Faculty.id', 'Faculty.nazwa', 'Faculty.university_id'),
-																							'conditions'=>array('Faculty.university_id'=>$id)));
-			$this->set('wydzialy', $wydzialy);
+				$this->University->CourseonUniversity->Faculty->contain();
+				$wydzialy = $this->University->CourseonUniversity->Faculty->find('all', array('fields'=>array('Faculty.id', 'Faculty.nazwa', 'Faculty.university_id'),
+																								'conditions'=>array('Faculty.university_id'=>$id)));
+				$this->set('wydzialy', $wydzialy);
+			} elseif($zakladka_page==5) {
+				$this->University->CourseonUniversity->contain('Course.id', 'Course.nazwa', 'Faculty.nazwa', 'Faculty.id');
+				$kierunki = $this->University->CourseonUniversity->find('all', array('conditions'=>array('CourseonUniversity.university_id'=>$id), 																
+																					'order'=>array('Course.nazwa')));
+				foreach ($kierunki as $kierunek) {
+					$type= $kierunek['CourseonUniversity']['course_type_id'].$kierunek['CourseonUniversity']['course_mode_id'];
+					$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['nazwa'] = $kierunek['Course']['nazwa'];
+					if (isset($kierunek['Faculty']['nazwa'])) {
+						$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['wydzial_id'] = $kierunek['Faculty']['id'];
+						$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['wydzialnazwa'] = $kierunek['Faculty']['nazwa'];
+					}
+					$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']][$type] = true;
+					$kierunki_types[$type] = true;
+				}
+				$types = array('11','21','31','41','61','51','71','12','22','32','42','62','52','72','60','50','70');
+				if (isset($kierunki_types)) {
+					$ttypes = array();
+					foreach ($types as $t) {
+						if (isset($kierunki_types[$t])) $ttypes[] = $t;
+					}
+					$kierunki_types = $ttypes;
+				}
+				$this->set('kierunki_full', $kierunki_full);
+				$this->set('kierunki_types', $kierunki_types);
+			}	
 
 			$this->set('university', $university);
 		}

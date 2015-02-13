@@ -43,7 +43,7 @@
 					<div id="quotes">
 						<div id="quote_wrap">
 							<div>
-								W razie zaistnienia błedów lub niepoprawnych danych prosimy o ich zgłoszenie przez Formularz Kontaktowy.
+								W razie zaistnienia błedów lub niepoprawnych danych prosimy o ich zgłoszenie przez <a href="/kontakt">Formularz Kontaktowy</a>.
 							</div>
 						</div>
 						
@@ -51,36 +51,16 @@
 					<div class="clearfix"></div>
 				</div>
 				<div class="col-md-3">
-					<div class="form" >
-					<?php
-						echo $this->Session->flash('flash');
-						
-						echo $this->Form->create('Contact', array('url' => '/contacts/index', 'name' => 'MYFORM', 'id' => 'MYFORM','required' => 'required'));
-
-						echo $this->Form->input('name', array('div' => false, 'label' => false, 'name' => 'name', 'size' => '30', 'required' => 'required', 'type' => 'text', 'id' => 'name', 'class' => 'col-md-6 leftradius', 'placeholder' => 'Imie, Nazwisko' ));
-						echo $this->Form->input('email', array('div' => false, 'label' => false, 'name' => 'email', 'required' => 'required', 'size' => '30', 'id' => 'email', 'class' => 'col-md-6 rightradius', 'placeholder' => 'Twój Mail' ));
-
-						/*echo $this->Form->input('thema', array(
-							'required' => 'required',
-							'div' => false, 
-							'label' => false, 							
-							'class' => 'col-md-12 allradius',
-						    'options' => array('Współpraca PR, materiały prasowe', 'Uzupełnienie profilu uczelni', 'Aktualizacja profilu'),
-						    'empty' => '(Wybierz Temat)'
-						));*/
-						echo $this->Form->input('message', array('div' => false, 'required' => 'required', 'label' => false, 'type' => 'textarea', 'class' => 'col-md-12 allradius', 'name' => 'message', 'placeholder' => 'Wiadomość', 'rows'=>'5' ));
-						echo $this->Form->input('IP', array('type' => 'hidden', 'value' => $ip));
-						echo $this->Form->input('DATE_TIME', array('type' => 'hidden', 'value' => $date));
-						echo $this->Form->input('PATH', array('type' => 'hidden', 'value' => $path));?>
-						
-						<div clas="captcha"><?php //$this->Captcha->render($captchaSettings);?></div>
-						
-						<?php 
-						echo $this->Form->submit('Wyślij', array('div' => true, 'label' => false, 'type' => 'submit', 'id' => 'Send', 'class' => 'btn btn-default btn-md', 'name'=>'button'));
-						echo $this->Form->end();
-				?>
-				</div>
-					
+					<div class="k two-col">
+						<h1>Inne serwisy</h1>
+						<ul>
+							<li><a href="http://studiujwuk.pl/">STUDIUJ W UK</a></li>
+							<li><a href="http://porownywarkauczelni.pl/">PORÓWNYWARKA UCZELNI</a></li>
+							<li><a href="http://studyinpoland.com.ua/">ZOSTAŃ STUDENTEM UA</a></li>
+							<li><a href="http://studyinpoland.com.ru/">ZOSTAŃ STUDENTEM RU</a></li>
+							<li><a href="http://studyinpoland.by/">ZOSTAŃ STUDENTEM BY</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -1,1 +1,1 @@
-<h1>Panel administratora Porównywarki Uczelni</h1>
+<h1>Panel administratora ZostańStudentem.pl</h1>

@@ -1,3 +1,4 @@
+<?php if (isset($university)):?>
 <section id="uczelnia" class="container">
 	<div id="content">
 		<div class="row">
@@ -117,6 +118,7 @@
 		</div>
 	</div>
 </section>
+
 <?php if ($lokalizacja_poparawna) :?>
 	<script type="text/javascript">
 
@@ -177,4 +179,9 @@
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
 	</script>
+<?php endif;?>
+<?php else :?>
+<div>
+	<h2>Nie udało się znaleść podanej uczelni w naszej bazie.</h2>
+</div>
 <?php endif;?>

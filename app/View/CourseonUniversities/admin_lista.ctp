@@ -2,7 +2,8 @@
 	<?php if (!empty($kursy)) :?>
 		<h1>Lista kierunków <?php if ($university['University']['university_type_id'] == 1):?>uniwersytetu <?php else:?>szkoły <?php endif;?><?php echo $university['University']['nazwa']; ?></h1>
 		<div class="panel-group" id="accordion">
-		<?php foreach($kursy as $faculty_id =>$kierunek):?>    
+		<?php foreach($kursy as $faculty_id =>$kierunek):
+				if(empty($faculty_id)) $faculty_id =0;?>    
 		  <?php if (!empty($wydzialy)):?>
 			<div class="panel panel-default">
 				<div class="panel-heading">

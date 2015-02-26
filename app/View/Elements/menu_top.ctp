@@ -12,7 +12,7 @@
 				</div>
 				<div id="fb-root">
 					<div id="welcome">
-						<div id="fb-login-button" class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true"></div>
+						<div id="fb-login-button" scope="public_profile,email" class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true"></div>
 					</div>
 				</div>
 			</div>

@@ -121,8 +121,7 @@ class CoursesController extends AppController {
 	public function ajax() {
 		$tid = $this->request->pass[0];
 		$r = array();
-		switch ($tid) {
-			
+		switch ($tid) {			
 			case "3":
 				if (!preg_match('/\/(kierunek)|(kierunki)\//',$_SERVER['HTTP_REFERER'])) {
 					preg_match('/([0-9]+)/',$_SERVER['HTTP_REFERER'],$ref);
@@ -139,7 +138,7 @@ class CoursesController extends AppController {
 														'order' => array('Course.nazwa'),
 														'fields' => array('Course.nazwa', 'Course.id'), 
 														'limit' => 8));
-				Debugger::dump($rq);
+				//Debugger::dump($rq);
 				foreach ($rq as $ri) {
 					$r[] = array(
 						'label'=>$ri['Course']['nazwa'],
@@ -187,26 +186,19 @@ class CoursesController extends AppController {
 		}
 	}
 	
-	public function srednia() {
-		/*wartosci wspólczynników wp-placa*/
-		$wp=5;
-		$sum = $wp;
-		$courses = $this->Course->find('all');	
-		foreach ($courses as $course) {
-			unset($c);
-			$c=array();
-			$srednias=0;
-			foreach ($course['Profession'] as $profession) array_push($c,$profession['placa']);
-			if (count($c)>0) {
-				$srednias= array_sum($c)/count(array_filter($c));
-				$sr=$srednias*$wp;
-				$srednia= $sr/ $sum;
-				$this->Course->updateAll(array('Course.srednia'=>$srednia), array('Course.id'=> $course['Course']['id']));
-			}
+	public function usunOrange() {
+		$this->Course->contain();
+		$courses = $this->Course->find('all', array('fields'=> array('opis2', 'id'),
+													'conditions' => array('Course.opis2 !='=> '')));
+		foreach ($courses as $key =>$course) {
+			$courses[$key]['Course']['opis2'] = str_replace('style="list-style: square inside url(\'http://www.orange-business.com/content/bridging-ships/Images/orange_square.gif\');"', '', $course['Course']['opis2']);
+			//echo $courses[$key]['Course']['opis1'];
+			$this->Course->id = $course['Course']['id'];
+			$this->Course->saveField('opis2', $courses[$key]['Course']['opis2']);
 		}
-		$this->redirect(array('controller' => 'courses','action' => 'index'));
+
 	}
-	
+
 	public function zapis() {
 		# Open the File.
 		if (($handle = fopen("k.csv", "r")) !== FALSE) {
@@ -283,7 +275,6 @@ class CoursesController extends AppController {
 	}
 	
 	public function admin_add() {
-		Debugger::dump($this->request->data);
         if ($this->request->is('post')) {
 			$this->Course->create();
             if ($this->Course->save($this->request->data)) {
@@ -293,7 +284,8 @@ class CoursesController extends AppController {
                 $this->Session->setFlash(__('The user could not be created. Please, try again.'));
             }   
         }
-		$this->set('courses_categories', $this->Course->CoursesCategory->find('list'));
+		$this->set('coursesCategories', $this->Course->CoursesCategory->find('list'));
+		$this->set('universityTypes', $this->Course->UniversityType->find('list'));
     }
 	
 	public function admin_edit($id = null) {

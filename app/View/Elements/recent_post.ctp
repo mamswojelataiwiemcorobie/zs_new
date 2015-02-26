@@ -10,7 +10,13 @@ $recent_posts = $this->requestAction(array('controller' => 'blog',
 				<?php foreach($recent_posts as $key => $post): ?>
 					<div class="item col-md-4">
 						<div class="wrap">										
-							<a href="<?php echo $post['url'];?>"><img src="http://blog.zostanstudentem.pl/wp-content/uploads/<?php echo $post['Thumbnail'];?>" class="" alt="" target="_blank"/></a>
+							<a href="<?php echo $post['url'];?>">
+								<?php if ($post['Thumbnail'] == 'none') :?>
+									<img src="/img/no-photo.jpg" class="" alt="ZostańStudentem" target="_blank"/>
+								<?php else :?>
+									<img src="http://blog.zostanstudentem.pl/wp-content/uploads/<?php echo $post['Thumbnail'];?>" class="" alt="<?php echo h($post['wp_posts']['post_title']);?>" target="_blank"/>
+								<?php endif;?>
+							</a>
 						</div>
 						<h4 class="animated fadeInRightNow notransition topspace20 fadeInRight pullLeft">
 							 <a href="<?php echo $post['url'];?>"><?php echo h($post['wp_posts']['post_title']);?></a>

@@ -23,13 +23,9 @@
 				<?php echo $this->Form->select('CourseonUniversity.course_id', $courses,array('multiple' => true, 'size' => 12) );?>
 
 			</div> 
+			<div><p>Nie ma kierunku na liscie? <a href="/admin/courses/add">Dodaj całkiem nowy</a></p></div>
 
 	</div>
-
-	<div> 
-
-</div>
-
 <div class="form-group">
 
 	<div class="col-sm-offset-2 col-sm-10">

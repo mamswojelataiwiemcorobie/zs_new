@@ -122,54 +122,7 @@ class CourseonUniversitiesController extends AppController {
 			}
 		}
 	}
-	public function sredniacourseonuniversities() {
-		echo '<br><br><br><br><br><br><br><br>';
-		echo 'id | kierunek | MIN | MAX | cena | srednia<br>';
-
-		$LIST_IDs = $this->CourseonUniversity->find('list', array ('order' => array('id' => 'ASC'), 'fields'=>array('CourseonUniversity.id')));
-    	foreach ($LIST_IDs as $ID) {
-			//$ID = 4;
-	    	echo $ID.' | ';
-
-	//  /*
-	    	$kierunek  = $this->CourseonUniversity->find('list', array ('conditions' => array('CourseonUniversity.id' => $ID), 'fields'=>array('CourseonUniversity.course_id')));
-	    	echo $kierunek  = $kierunek[$ID].' | ';
-	    	$kierunek_MIN = $this->CourseonUniversity->find('first' ,array ('conditions' => array('CourseonUniversity.course_id' => $kierunek ), 'fields' => array('MIN(CourseonUniversity.cena) as min_size'  )));
-	    	echo $kierunek_MIN = $kierunek_MIN[0]['min_size'].' | ';
-	    	$kierunek_MAX = $this->CourseonUniversity->find('first' ,array ('conditions' => array('CourseonUniversity.course_id' => $kierunek ), 'fields' => array('MAX(CourseonUniversity.cena) as max_size'  )));
-	    	echo $kierunek_MAX = $kierunek_MAX[0]['max_size'].' | ';
-	    	$kierunekczesne = $this->CourseonUniversity->find('first', array ('conditions' => array('CourseonUniversity.id' => $ID)));
-	    	echo $kierunekczesne = $kierunekczesne['CourseonUniversity']['cena'].' | ';
-	// */
-
-	    	if ( ($kierunek_MAX - $kierunek_MIN) == 0 ){
-		    	echo $srednia_kierunku = 0;
-		    }else{
-		    	echo $srednia_kierunku = (($kierunekczesne - $kierunek_MIN) / ($kierunek_MAX - $kierunek_MIN)) * 10 ;
-		    }
-		    echo '<br>';
-
-	    	$this->CourseonUniversity->id = $ID;
-		    $this->CourseonUniversity->saveField('srednia', $srednia_kierunku );
-    	
-    	}
-    }
-    public function rank() {
-        $Model = 'CourseonUniversity';
-
-        echo '<br><br><br><br><br><br><br><br>';
-        echo 'id | srednia | rank<br>';
-        $PartArray = $this->$Model->find('all', array ('fields' => array($Model.'.id',$Model.'.srednia', $Model.'.placa'),'order' => array($Model.'.srednia' => 'desc')));
-        $i=0;
-        foreach ($PartArray as $Record) {
-            echo $i = $i + 1;
-            echo $id = $Record[$Model ]['id'].' | ';
-            echo $Record[$Model ]['srednia'].' | ';
-            echo $i . '<br>';
-            $this->$Model ->id = $id;
-            $this->$Model ->saveField('rank', $i);
-        }    
-    }
+	
 	/***ADMIN***/
 	public function admin_lista($university_id = null) {
 		if (!$university_id) {
@@ -234,7 +187,9 @@ class CourseonUniversitiesController extends AppController {
 		$university_id = $this->request->data['CourseonUniversity']['university_id'];
 		//Debugger::dump($this->request->data['Faculties']);
 		$alldata =array();
+		//Debugger::dump($faculties);
 		foreach ($faculties as $faculty_id => $faculty) {
+			//Debugger::dump($faculty_id);
 			foreach ($faculty as $course_id => $course) {
 				foreach ($course as $course_type_id => $course_modes) {
 					foreach($course_modes as $course_mode_id => $reszta) {
@@ -254,7 +209,7 @@ class CourseonUniversitiesController extends AppController {
 				}
 			}
 		}	
-		Debugger::dump($data);
+		//Debugger::dump($data);
 		if($this->CourseonUniversity->saveMany($data)) {
 				$this->Session->setFlash(__('Kierunek uczelni zaktualizowany'));
 		} else {
@@ -287,7 +242,7 @@ class CourseonUniversitiesController extends AppController {
             $this->redirect(array('action'=>'lista',$uni_id));
         }
          if (!$faculty_id) {
-            $faculty_id = NULL;
+            $faculty_id = 0;
         }
 
         if ($this->CourseonUniversity->deleteAll(array('CourseonUniversity.university_id' => $uni_id, 'CourseonUniversity.faculty_id' => $faculty_id, 'CourseonUniversity.course_id' => $course_id))) {
@@ -330,7 +285,7 @@ class CourseonUniversitiesController extends AppController {
 			$nazwy = '';
 			foreach ($kierunki as $kierunek) {
 				$this->CourseonUniversity->create();
-				if (!isset($this->request->data['CourseonUniversity']['faculty_id'])) $this->request->data['CourseonUniversity']['faculty_id'] = NULL;
+				if (!isset($this->request->data['CourseonUniversity']['faculty_id'])) $this->request->data['CourseonUniversity']['faculty_id'] = 0;
 				if ($this->CourseonUniversity->save(array('CourseonUniversity'=> array(
 																					'university_id' => $university_id, 
 																					'faculty_id'=> $this->request->data['CourseonUniversity']['faculty_id'], 

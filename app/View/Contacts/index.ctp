@@ -1,7 +1,4 @@
-
-		
-		<!-- CONTACT
-================================================== -->
+<!-- CONTACT ================================================== -->
 	
 		<iframe 
 			class="gmap" 
@@ -27,7 +24,7 @@
 		</iframe>
 	
 
-		<section >
+		<section  class="container">
 		<div class="row">
 			<div class="col-md-8 animated fadeInLeft notransition">
 				<h1 class="smalltitle">

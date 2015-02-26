@@ -51,8 +51,6 @@
 		echo $this->Html->css('style.css');
 		//Responsive
 		echo $this->Html->css('responsive.css');
-		//Choose Layout
-		echo $this->Html->css('layout-semiboxed.css');
 		//Choose Skin
 		echo $this->Html->css('skin-red.css', null, array('media' => 'screen', 'id' => 'main-color'));
 		//<link rel="stylesheet" href="css/skin-red.css" rel="stylesheet" id="main-color" media="screen" />

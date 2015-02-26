@@ -1,3 +1,4 @@
+<?php if (isset($university)):?>
 <div id="uczelnia">
 	<div id="content">
 		<section class="animated fadeInUp notransitioncont main row">
@@ -263,6 +264,11 @@
 		</div>
 	</div>
 </div>
+<?php else :?>
+<div>
+	<h2>Nie udało się znaleść podanej uczelniw naszej bazie.</h2>
+</div>
+<?php endif;?>
 <?php if ($lokalizacja_poparawna) :?>
 	<script type="text/javascript">
 

@@ -42,7 +42,7 @@ class ArticlesController extends AppController {
         } else { 
 			$this->paginate = array(
 				'limit' => 15,
-				'order' => array('Article.created' => 'asc' ),
+				'order' => array('Article.created' => 'desc' ),
 			);
 		}
         $universities = $this->paginate('Article');

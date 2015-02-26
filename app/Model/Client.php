@@ -1,6 +1,6 @@
 <?php // app/Model/ClientUser.php
 App::uses('AppModel', 'Model');
-App::uses('AuthComponent', 'Controller/Component');
+App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
 class Client extends AppModel {
 

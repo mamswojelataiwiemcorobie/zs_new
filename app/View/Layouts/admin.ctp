@@ -14,8 +14,9 @@
 	<script type="text/javascript">
 	tinymce.init({
 		selector: "textarea.wysiwig",
-		 plugins: "code",
-		toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons",
+		 plugins: "code link image paste",
+		toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+		paste_word_valid_elements: "b,strong,i,em,h1,h2"
 	 });
 	</script>
 

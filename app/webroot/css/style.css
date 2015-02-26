@@ -9,7 +9,19 @@ body {
 	color:#777;
 	overflow-y:hidden;
 }
-.wrapsemibox {padding-top: 40px;}
+.wrapsemibox {
+	max-width: 1200px;
+	margin: 0px auto;
+	background: #fff;
+	margin-top: -40px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+	z-index: 1000;
+	position: relative;
+	margin-bottom: -100px;
+	padding-bottom: 40px;
+	border-bottom: medium double #ccc;
+	padding-top: 0;
+}
 #recent_post .row {
 	margin-left:0;
 	margin-right:0;
@@ -319,8 +331,10 @@ margin: 0 8px;
 	-o-transition:all 0.7s ease;
 }
 .semiboxshadow {
-	display: none;
+	display:block;padding-bottom: 40px;
 }
+.semiboxshadow img{width: 1308px !Important; max-width: 1316px; margin: 0px auto; margin-left: -53px; margin-top: -43px; position: absolute;z-index:0;}
+
 /*--------------------------------------------------	CAROUSEL SLIDER---------------------------------------------------*/
 #c-slide {
 	padding:0px;
@@ -781,9 +795,10 @@ margin: 0 8px;
 }
 /*--------------------------------------------------	intro-note---------------------------------------------------*/
 .intro-note h1 {
-	text-transform:uppercase;
-	font-size:27px;
-	margin-top:0;
+	text-transform: uppercase;
+font-size: 28px;
+margin-top: 0;
+font-weight: 700;
 }
 .intro-note p {
 	font-weight:300;
@@ -1017,7 +1032,7 @@ border-bottom: none;
 	max-width: 100%;
 }
 #uczelnia ul {
-padding-left: 10px;
+list-style-position: inside;
 }
 /*--------------------------------------------------	WYSZUKIWARKA---------------------------------------------------*/
 #searchpage {
@@ -1036,6 +1051,9 @@ flex-flow: column wrap;
 #searchpage .r {
 float:right;
 padding-top:4px;
+}
+.r img {
+margin: 0 auto;
 }
 #searchpage .znajdz-uczelnie {
 padding: 100px 0 0 36px;
@@ -1244,6 +1262,9 @@ padding-top: 10px;
 #kierunki .lista_kierunkow li{
 float: left;
 clear: none;
+}
+#kierunek .descr ul{
+	list-style-position: inside;
 }
 
 #kierunek .smalltitle {
@@ -1602,7 +1623,7 @@ padding-bottom: 10px;
 	background:#222;
 	color:#888;
 	margin-top:50px;
-	padding-top:50px;
+	padding-top:100px;
 	padding-bottom:30px;
 	font-size:13px;
 	line-height:20px;
@@ -2356,7 +2377,7 @@ justify-content: center;
 
 .pageheader-default .semitransparentbg {
 	background:rgba(245,72,40,0.80) !important;
-	padding-bottom:35px;
+	padding-bottom: 75px;
 	padding-top:20px;
 }
 .semitransparentbg {

@@ -83,6 +83,6 @@
 			<?php endif;?>
 		</div></div><?php endif;?>
 	</div>
-	<div class="col-md-4 r"><?php echo $this->element('column_right');?></div>
+	<div class="col-md-4 r"><?php echo $this->element('column_right', array(), array('cache' => true));?></div>
 	<div class="cl"></div>
 </div>

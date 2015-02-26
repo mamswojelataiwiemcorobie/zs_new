@@ -1,6 +1,6 @@
 $(function(){
 	if ($('input.date').size() > 0) $('input.date').not('.hasDatepicker').datepicker({dateFormat:'dd/mm/yy'});
-	if ($('.jsimageupload_single, .jsimageupload_multi').size() > 0) {
+	if ($('.jsimageupload_single,  .jsimageupload_single_article, .jsimageupload_multi').size() > 0) {
 		imageupload.init();
 	}
 	$('.delimage').click(imageupload.delimage);
@@ -11,6 +11,11 @@ var imageupload = {
 		$('.jsimageupload_single').each(function(){
 			$(this).append('<form class="imageform_single" method="post" enctype="multipart/form-data" action="/ajaximage.php">Wybierz zdjęcie z dysku <input type="file" name="photoimg" id="imageform_single" value="wybierz"/></form>');
 			imageupload.prepare_upload_single($('#imageform_single'));
+			imageupload.prepare_buttons();
+		});
+		$('.jsimageupload_single_article').each(function(){
+			$(this).append('<form class="imageform_single" method="post" enctype="multipart/form-data" action="/ajaximage.php">Wybierz zdjęcie z dysku <input type="file" name="photoimg" id="imageform_single" value="wybierz"/></form>');
+			imageupload.prepare_upload_single_article($('#imageform_single'));
 			imageupload.prepare_buttons();
 		});
 		$('.jsimageupload_multi').each(function(){

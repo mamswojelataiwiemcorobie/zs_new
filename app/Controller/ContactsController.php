@@ -24,6 +24,8 @@
 		
 		public function index() {
 
+			$this->layout = 'contact';
+
 			$this->set('title_for_layout', 'Kontakt');
 			$this->set('description_for_layout', 'Kontakt');
 			$this->set('keywords_for_layout', 'Kontakt, mail, address, telephon, message');

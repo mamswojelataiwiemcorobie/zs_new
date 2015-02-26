@@ -11,134 +11,33 @@ $(function(){
 	
 });
 
-
 //podświetlenie aktywnej strony w menu
-		$("#nav a").each(function () {
-			var path = window.location.pathname;
-			var href = $(this).attr('href');
-			if (href ===  path) {
-				$(this).closest('li').addClass('active');
-			}
-		});  
+$("#nav a").each(function () {
+	var path = window.location.pathname;
+	var href = $(this).attr('href');
+	if (href ===  path) {
+		$(this).closest('li').addClass('active');
+	}
+});  
 
-		/* ---------------------------------------------------------------------- */
-		/*	Carousel
-		/* ---------------------------------------------------------------------- */
-		$(window).load(function(){	
-			if ($('#carousel-projects_services').size() > 0) {	
-				$('#carousel-projects_services').carouFredSel({
-					responsive: true,
-					items       : {
-			        width       : 200,
-			        height      : 150,
-			        visible     : {
-			            min         : 1,
-			            max         : 4
-			        }
-			    },
-					width: '200px',
-					height: '150px',
-					auto: true,
-					circular	: true,
-					infinite	: false,
-					prev : {
-						button		: "#car_prev",
-						key			: "left",
-							},
-					next : {
-						button		: "#car_next",
-						key			: "right",
-								},
-					swipe: {
-						onMouse: true,
-						onTouch: true
-						},
-					scroll: {
-				        easing: "",
-				        duration: 1200
-				    }
-				});	
-			}
-			if ($('#carousel-projects').size() > 0) {		
-				$('#carousel-projects').carouFredSel({
-					responsive: true,
-					items       : {
-			        width       : 200,
-			        height      : 380,
-			        visible     : {
-			            min         : 1,
-			            max         : 4
-			        }
-			    },
-				width: '200px',
-				height: '380px',
-				auto: true, 
-				circular	: true,
-				infinite	: false,
-				prev : {
-					button		: "#car_prev",
-					key			: "left",
-						},
-				next : {
-					button		: "#car_next",
-					key			: "right",
-							},
-				swipe: {
-					onMouse: true,
-					onTouch: true
-					},
-				scroll: {
-			        easing: "",
-			        duration: 1200
-			    }
-			});
-			}
-			if ($('#carousel-projects_gallery').size() > 0) {		
-				$('#carousel-projects_gallery').carouFredSel({
-					responsive: true,
-					items       : {
-			        width       : 250,
-			        height      : 210,
-			        visible     : {
-			            min         : 1,
-			            max         : 4
-			        }
-			    },
-				width: '250px',
-				height: '200px',
-				auto: true, 
-				circular	: true,
-				infinite	: false,
-				prev : {
-					button		: "#car_prev",
-					key			: "left",
-						},
-				next : {
-					button		: "#car_next",
-					key			: "right",
-							},
-				swipe: {
-					onMouse: true,
-					onTouch: true
-					},
-				scroll: {
-			        easing: "",
-			        duration: 1200
-			    }
-			});
-			}
-			if ($('#carousel-projects_uni').size() > 0) {	
-				$('#carousel-projects_uni').carouFredSel({
+	/* ---------------------------------------------------------------------- */
+	/*	Carousel
+	/* ---------------------------------------------------------------------- */
+	$(window).load(function(){	
+		if ($('#carousel-projects_services').size() > 0) {	
+			$('#carousel-projects_services').carouFredSel({
 				responsive: true,
 				items       : {
 		        width       : 200,
-		        height      : 330,
+		        height      : 150,
 		        visible     : {
 		            min         : 1,
 		            max         : 4
 		        }
 		    },
-				auto: true, 
+				width: '200px',
+				height: '150px',
+				auto: true,
 				circular	: true,
 				infinite	: false,
 				prev : {
@@ -154,16 +53,116 @@ $(function(){
 					onTouch: true
 					},
 				scroll: {
+			        easing: "",
+			        duration: 1200
+			    }
+			});	
+		}
+		if ($('#carousel-projects').size() > 0) {		
+			$('#carousel-projects').carouFredSel({
+				responsive: true,
+				items       : {
+		        width       : 200,
+		        height      : 380,
+		        visible     : {
+		            min         : 1,
+		            max         : 4
+		        }
+		    },
+			width: '200px',
+			height: '380px',
+			auto: true, 
+			circular	: true,
+			infinite	: false,
+			prev : {
+				button		: "#car_prev",
+				key			: "left",
+					},
+			next : {
+				button		: "#car_next",
+				key			: "right",
+						},
+			swipe: {
+				onMouse: true,
+				onTouch: true
+				},
+			scroll: {
 		        easing: "",
 		        duration: 1200
 		    }
-			});
-			}
 		});
-		//CALL PRETTY PHOTO
-		$(document).ready(function(){
-			$("a[data-gal^='prettyPhoto']").prettyPhoto({social_tools:'', animation_speed: 'normal' , theme: 'dark_rounded'});
+		}
+		if ($('#carousel-projects_gallery').size() > 0) {		
+			$('#carousel-projects_gallery').carouFredSel({
+				responsive: true,
+				items       : {
+		        width       : 250,
+		        height      : 210,
+		        visible     : {
+		            min         : 1,
+		            max         : 4
+		        }
+		    },
+			width: '250px',
+			height: '200px',
+			auto: true, 
+			circular	: true,
+			infinite	: false,
+			prev : {
+				button		: "#car_prev",
+				key			: "left",
+					},
+			next : {
+				button		: "#car_next",
+				key			: "right",
+						},
+			swipe: {
+				onMouse: true,
+				onTouch: true
+				},
+			scroll: {
+		        easing: "",
+		        duration: 1200
+		    }
 		});
+		}
+		if ($('#carousel-projects_uni').size() > 0) {	
+			$('#carousel-projects_uni').carouFredSel({
+			responsive: true,
+			items       : {
+	        width       : 200,
+	        height      : 330,
+	        visible     : {
+	            min         : 1,
+	            max         : 4
+	        }
+	    },
+			auto: true, 
+			circular	: true,
+			infinite	: false,
+			prev : {
+				button		: "#car_prev",
+				key			: "left",
+					},
+			next : {
+				button		: "#car_next",
+				key			: "right",
+						},
+			swipe: {
+				onMouse: true,
+				onTouch: true
+				},
+			scroll: {
+	        easing: "",
+	        duration: 1200
+	    }
+		});
+		}
+	});
+	//CALL PRETTY PHOTO
+	$(document).ready(function(){
+		$("a[data-gal^='prettyPhoto']").prettyPhoto({social_tools:'', animation_speed: 'normal' , theme: 'dark_rounded'});
+	});
 		
 
 		//CALL TESTIMONIAL ROTATOR
@@ -259,34 +258,6 @@ $(function(){
 var searchpage = {
 	init: function(tel) {
 		searchpage.tel = $(tel);
-		var x_typ = {
-			autocomplete:true,
-			sel:'input[name="typ"]',
-			selDataFromId:'input[name="id_typ"]',
-			def:'TYP',
-			cfg:{
-				source:[
-					{label:'Studia licencjackie',value:'1'},
-					{label:'Studia inżynierskie',value:'2'},
-					{label:'Studia magisterskie',value:'3'},
-					{label:'Studia podyplomowe',value:'4'}
-				],
-				minLength: 0
-			}
-		};
-		var x_tryb = {
-			autocomplete:true,
-			sel:'input[name="tryb"]',
-			selDataFromId:'input[name="id_tryb"]',
-			def:'TRYB',
-			cfg:{
-				source:[
-					{label:'Stacjonarne',value:'1'},
-					{label:'Niestacjonarne',value:'2'}
-				],
-				minLength: 0
-			}
-		};
 		var x_kierunek = {
 			autocomplete:true,
 			sel:'input[name="kierunek"]',
@@ -297,49 +268,9 @@ var searchpage = {
 				minLength: 1
 			}
 		};
-		var x_jezyk = {
-			autocomplete:true,
-			sel:'input[name="jezyk"]',
-			selDataFromId:'input[name="jezyk_id"]',
-			def:'JĘZYK',
-			cfg:{
-				source:searchpage.getJezyki,
-				minLength: 1
-			}
-		};
-		var x_wojewodztwo = {
-			autocomplete:true,
-			sel:'input[name="wojewodztwo"]',
-			selDataFromId:'input[name="id_wojewodztwo"]',
-			def:'WOJEWÓDZTWO',
-			cfg:{
-				source:searchpage.getWojewodztwa,
-				minLength: 0
-			}
-		};
-		var x_miasto = {
-			autocomplete:true,
-			sel:'input[name="miasto"]',
-			def:'MIASTO',
-			cfg:{
-				source:searchpage.getMiasta,
-				minLength: 0
-			}
-		};
-		var x_slowo = {
-			autocomplete:false,
-			sel:'input[name="slowo"]',
-			def:'SŁOWO KLUCZOWE',
-		};
 		//searchpage.setDataFromHidden();
 		searchpage.cfg = [
-			x_typ,
-			x_tryb,
-			x_kierunek,
-			x_wojewodztwo,
-			x_miasto,
-			x_slowo,
-			x_jezyk
+			x_kierunek
 		];
 		for (var i in searchpage.cfg) {
 			var ti = searchpage.cfg[i];
@@ -395,32 +326,6 @@ var searchpage = {
 		$.ajax({
 			type: "POST",
 			url: "/courses/ajax/3",
-			data: {txt:txt},
-			dataType: "json",
-			success:function(r){
-				c(r,d);
-			}
-		});
-	},
-	getMiasta: function(d,c) {
-		var woj = $('input[name="id_wojewodztwo"]').val();
-		var txt = d.term;
-		if (!woj && txt.length === 0) return;
-		$.ajax({
-			type: "POST",
-			url: "/universities/ajax/2",
-			data: {txt:txt,wid:woj},
-			dataType: "json",
-			success:function(r){
-				c(r,d);
-			}
-		});
-	},
-	getWojewodztwa: function(d,c) {
-		var txt = d.term;
-		$.ajax({
-			type: "POST",
-			url: "/universities/ajax/1",
 			data: {txt:txt},
 			dataType: "json",
 			success:function(r){
@@ -657,7 +562,7 @@ function statusCallback(response) {
 					x.jel = $('#welcome');
 					if (r ==0) {					
 						$('.uczelnia-schowek').bind('click',function(){
-						window.location.href = '/users/rejestracja';
+						window.location.href = '/clients/rejestracja';
 						});
 						x.jel.append('<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#logowanie" aria-expanded="false" aria-controls="logowanie">Logowanie</button><div class="collapse" id="logowanie"><form method="post" action="/clients/login" class="form-inline"> <input type="text" name="login" placeholder="Login"/> <input type="password" name="password" placeholder="Hasło"/> <input type="submit" value="Login"/> </form> </div> <a href="/clients/rejestracja" class="btn btn-primary" type="button"> Rejestracja </a>');
 					} else {

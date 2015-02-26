@@ -149,8 +149,13 @@ class ClientsController extends AppController {
                     $this->Client->create();
                 //Debugger::dump($this->request->data);
                     if ($this->Client->save($this->request->data)) {
-                        $this->Auth->login($client['Client']);
-                        //return $this->redirect(array('action' => 'index'));
+                         $id = $this->Client->id;
+                        $this->request->data['Client'] = array_merge(
+                            $this->request->data['Client'],
+                            array('id' => $id)
+                        );
+                        unset($this->request->data['Client']['password']);
+                        $this->Auth->login($this->request->data['Client']);
                     }
                      $id = $this->Auth->user('id');
                     $r = $this->Client->findById($id);

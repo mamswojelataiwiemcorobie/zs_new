@@ -11,7 +11,12 @@
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Logo</label>
 			<div class="col-sm-10">
-				<div class="jsimageupload_single">
+				<div class="jsimageupload_single_article">
+					<?php if (!empty($this->request->data['Article']['logo'])) :?>
+						<div class="uimage"><input type="hidden" name="data[Article][logo]" value="<?php echo $this->request->data['Article']['logo']?>"/>
+							<img src="/miniatura/200x200/uploads/<?php echo $this->request->data['Article']['logo']?>"/>
+						</div>
+					<?php endif;?>
 				</div>
 			</div>
 		</div>

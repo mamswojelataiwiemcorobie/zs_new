@@ -30,11 +30,12 @@
 		</ul>
 	</div>
 </div><?php endif;?>
-<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fzostanstudentem&amp;send=false&amp;layout=standard&amp;width=320&amp;show_faces=true&amp;font=arial&amp;colorscheme=light&amp;action=like&amp;height=80&amp;appId=290331384356620" scrolling="yes" frameborder="0" style="border:none; overflow:hidden; width:320px; height:80px;" allowTransparency="true"></iframe>		
-<a href="http://www.uniplaces.com/?utm_source=zostanstudentem&utm_medium=Display_Partners&utm_term=Homepage&utm_content=London&utm_campaign=zostanstudentem"><img src="/img/banners-12.jpg" width="301" height="251" TARGET="_blank"/></a>
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fzostanstudentem&amp;send=false&amp;layout=standard&amp;width=320&amp;show_faces=true&amp;font=arial&amp;colorscheme=light&amp;action=like&amp;height=80&amp;appId=290331384356620" scrolling="yes" frameborder="0" style="border:none; overflow:hidden; width:320px; height:80px; margin: 15px auto; display: block;
+max-width: 100%;" allowTransparency="true"></iframe>		
+<a href="http://www.uniplaces.com/?utm_source=zostanstudentem&utm_medium=Display_Partners&utm_term=Homepage&utm_content=London&utm_campaign=zostanstudentem"><img src="/img/banners-12.jpg" class="img-responsive" width="301" height="251" TARGET="_blank"/></a>
 </br>
 </br>
-<a href="http://studiujwuk.pl/"><img src="/img/logoUK.png" width="280" height="280"  TARGET="_blank"/></a>
+<a href="http://studiujwuk.pl/"><img src="/img/logoUK.png" class="img-responsive" width="280" height="280"  TARGET="_blank"/></a>
 </br>
 <!-- {if $act!=='wyszukiwarka'}<div id="znajdz-uczelnie-mini"><div><form method="get" action="/wyszukiwarka/szukaj-4.html">
 	<input type="hidden" name="s[wojewodztwo]"/>

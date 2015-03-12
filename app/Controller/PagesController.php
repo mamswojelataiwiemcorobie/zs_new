@@ -79,9 +79,9 @@ class PagesController extends AppController {
 		}
 	}
 	public function home() {
-		$this->set('title_for_layout', 'Najlepsze uczelnie');
-		$this->set('description_for_layout', 'Ranking uczelni. Najlepsze uczelnie na rynku.');
-		$this->set('keywords_for_layout', 'najlepsze, uczelnie, ranking');
+		$this->set('title_for_layout', 'Zostań Studentem - szkoły wyższe, policealne, kierunki studiów');
+		$this->set('description_for_layout', 'Zostań Studentem - wyszukiwarka szkół wyższych, policealnych i językowych. Gdzie studiować? Kierunki studiów. Znajdź uczelnie w Krakowie, Warszawie, Poznaniu');
+		$this->set('keywords_for_layout', 'studia, szkoła, wyższe, policealne, językowe, kierunki');
 
 		
 		}

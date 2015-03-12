@@ -1,6 +1,8 @@
 <IfModule mod_rewrite.c>
     RewriteEngine on
 	RewriteBase /
+	RewriteCond %{HTTP_HOST} ^zostanstudentem.pl$
+	RewriteRule ^(.*) http://www.zostanstudentem.pl%{REQUEST_URI} [QSA,L,R=301]
     RewriteRule    ^$    webroot/    [L]
     RewriteRule    (.*) webroot/$1    [L]
 </IfModule>

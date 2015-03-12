@@ -12,7 +12,7 @@
 																	'action' => 'home_slider'));
 						foreach ($universities as $university) :
 
-							$slug = Inflector::slug($university['University']['nazwa'],'-');
+							$slug = strtolower(Inflector::slug($university['University']['nazwa'],'-'));
 					?>						
 					<li>
 						<div class="boxcontainer">

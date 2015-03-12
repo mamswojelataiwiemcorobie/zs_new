@@ -14,10 +14,13 @@
 	<script type="text/javascript">
 	tinymce.init({
 		selector: "textarea.wysiwig",
-		 plugins: "code link image paste",
+ 		plugins: "code link image paste",
 		toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
-		paste_word_valid_elements: "b,strong,i,em,h1,h2"
-	 });
+		image_advtab: true,
+		image_class_list: [
+	        {title: 'img-responsive', value: 'img-responsive'}
+	    ],
+		paste_word_valid_elements: "b,strong,i,em,h1,h2"	 });
 	</script>
 
 </head>

@@ -23,10 +23,8 @@
 	<?php 
 		echo $this->Html->charset(); 
 		// Outputs: echo $this->Html->charset(); 
-		echo $this->Html->meta('viewport', 'width=device-width, initial-scale=1.0');
-		// Outputs: <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	?>
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php echo $title_for_layout . ' | Zostań Studentem'  ?></title>
 	
 	<?php

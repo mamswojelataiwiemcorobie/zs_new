@@ -34,7 +34,9 @@
 					<td><?php echo $university['Abonament']['nazwa']; ?></td>
 					<td >
 					<?php 	echo $this->Html->link("Edit",   array('action'=>'edit', $university['University']['id']) ); ?> | 
-					<?php	echo $this->Html->link("Delete", array('action'=>'delete', $university['University']['id'])); ?> |
+					<?php	echo $this->Form->postLink('Usuń', array('action' => 'delete', $university['University']['id']),
+	                    array('confirm' => 'Jesteś pewnien, że chcesz USUNĄĆ uczelnie?')
+	                );?> |
 					<?php 	echo $this->Html->link("Kierunki", array('controller'=> 'courseon_universities', 'action'=>'lista', $university['University']['id']));?> |
 					<?php 	echo $this->Html->link("Wydziały", array('controller'=> 'faculties', 'action'=>'lista', $university['University']['id']));	?>
 					</td>

@@ -9,39 +9,6 @@ class UniversitiesController extends AppController {
 	    'index'  => 48000
 	);
 	//public $components = array('DataTable');
-
-
-
-	public function index() {
-	
-		$this->set('title_for_layout', 'Zostań studentem');
-		$this->set('description_for_layout', 'Zostań studentem. Najlepsze szkoły wyższe.');
-		$this->set('keywords_for_layout', 'uniwersytety, szkoły, ranking');
-		$this->set('tabele', true);
-
-		$this->University->recursive = 3; 
-		$universities = $this->University->find('all', array('limit'=> 1));
-		Debugger::dump($universities);
-		
-		if($this->RequestHandler->responseType() == 'json') {
-			$this->paginate = array(
-				'order' => array('University.rank' => 'asc'),//'order' => array('University.srednia' => 'desc'),
-				'contain' => array('City', 'UniversityType'),
-				'fields' => array( 'University.rank',
-									'University.photo',
-									'University.nazwa',
-									'University.publiczna',
-									'City.nazwa',
-									'UniversityType.nazwa',
-									'University.srednia',
-									'University.id',
-									'University.all_courses_names'),
-			);
-			$this->DataTable->emptyElements = 1;
-			$this->set('universities', $this->DataTable->getResponse());
-			$this->set('_serialize','universities');
-		}
-	}
 	
 	public function view($id, $nrzakladki=null) {
 		$this->set('mapy', true);
@@ -154,7 +121,34 @@ class UniversitiesController extends AppController {
             $keywords = mysql_escape_string(mb_strtolower($this->request->query['keywords'], 'UTF-8'));
             $this->University->countSearchKeywords($keywords);
             $keywords = explode(' ', $keywords);
-			if (isset($keywords[1])) {
+			if (isset($keywords[2])) {
+				$conditions = array(
+				    'OR' => array(
+				        array('LOWER(University.all_courses) LIKE' => "%$keywords[0]%"),
+				        array('LOWER(University.nazwa) LIKE' => "%$keywords[0]%"),
+				        array('LOWER(University.miasto) LIKE' => "%$keywords[0]%"),
+				         array('LOWER(UniversitiesParameter.tagi) LIKE' => "%$keywords[0]%"),
+				    ),
+				    'AND' => array(
+				    	array('University.university_type_id' => $tid),
+				    	'OR' => array(	    			
+							    		array('LOWER(University.all_courses) LIKE' => "%$keywords[1]%"),
+									    array('LOWER(University.nazwa) LIKE' => "%$keywords[1]%"),
+									    array('LOWER(University.miasto) LIKE' => "%$keywords[1]%"),
+									     array('LOWER(UniversitiesParameter.tagi) LIKE' => "%$keywords[1]%")),
+				    			'AND' => array(
+								    'OR' => array(
+								    	
+							                 array('LOWER(University.all_courses) LIKE' => "%$keywords[2]%"),
+										    array('LOWER(University.nazwa) LIKE' => "%$keywords[2]%"),
+										    array('LOWER(University.miasto) LIKE' => "%$keywords[2]%"),
+										     array('LOWER(UniversitiesParameter.tagi) LIKE' => "%$keywords[2]%"),
+										
+								    ))								
+				    ),
+				    
+				);
+			} elseif (isset($keywords[1])) {
 						$conditions = array(
 						    'OR' => array(
 						        array('University.all_courses LIKE' => "%$keywords[0]%"),
@@ -474,7 +468,37 @@ class UniversitiesController extends AppController {
             $this->University->countSearchKeywords($keywords);
             $keywords = explode(' ', $keywords);
             //Debugger::dump($keywords);
-			if (isset($keywords[1])) {
+			if (isset($keywords[2])) {
+				$conditions = array(
+				    'OR' => array(
+				        array('LOWER(University.all_courses) LIKE' => "%$keywords[0]%"),
+				        array('LOWER(University.nazwa) LIKE' => "%$keywords[0]%"),
+				        array('LOWER(University.miasto) LIKE' => "%$keywords[0]%"),
+				         array('LOWER(UniversitiesParameter.tagi) LIKE' => "%$keywords[0]%"),
+				    ),
+				    'AND' => array(
+				    	array('University.university_type_id' => $tid),
+				    	'OR' => array(	    			
+							    	
+							    		array('LOWER(University.all_courses) LIKE' => "%$keywords[1]%"),
+						         
+									    array('LOWER(University.nazwa) LIKE' => "%$keywords[1]%"),
+									    array('LOWER(University.miasto) LIKE' => "%$keywords[1]%"),
+									     array('LOWER(UniversitiesParameter.tagi) LIKE' => "%$keywords[1]%")),
+				    			'AND' => array(
+								    'OR' => array(
+								    	
+							                 array('LOWER(University.all_courses) LIKE' => "%$keywords[2]%"),
+							                
+										    array('LOWER(University.nazwa) LIKE' => "%$keywords[2]%"),
+										    array('LOWER(University.miasto) LIKE' => "%$keywords[2]%"),
+										     array('LOWER(UniversitiesParameter.tagi) LIKE' => "%$keywords[2]%"),
+										
+								    ))								
+				    ),
+				    
+				);
+			} elseif (isset($keywords[1])) {
 						$conditions = array(
 						    'OR' => array(
 						        array('University.all_courses LIKE' => "%$keywords[0]%"),
@@ -491,7 +515,6 @@ class UniversitiesController extends AppController {
 									     array('UniversitiesParameter.tagi LIKE' => "%$keywords[1]%"),
 								)
 						    ),
-						    
 						);
 			} else {
 				$conditions = array(

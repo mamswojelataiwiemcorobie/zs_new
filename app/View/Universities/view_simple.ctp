@@ -55,9 +55,6 @@
 					<div class="tab-content cont">
 						<?php if ($zakladka_page === 0) : ?>
 							<div class="tab-pane active">								
-								<h1 class="smalltitle">
-									<span>Opis</span>
-								</h1>
 								<section>
 									<div class="info">									
 										<?php echo $university['University']['nazwa'];?>
@@ -71,21 +68,7 @@
 						<!-- KIERUNKI -->
 						<?php elseif ($zakladka_page === 5) :?>
 							<div class="tab-pane active">
-								<?php if($university['University']['university_type_id'] == 3): ?>
-									<div class="lista_jezykow">
-										<h1 class="smalltitle">
-											<span>JĘZYKI</span>
-										</h1>
-										<div class="info">
-											<ul>
-											<?php foreach ($kierunki as $uk): ?>
-												<li><?php echo $uk['Course']['nazwa']?></li>
-											<?php endforeach;?>
-											</ul></div>
-										<div class="cl"></div>
-									</div>
-								<?php endif;?>
-								<?php if ($university['University']['university_type_id'] != 3) :?>
+								<?php if ($university['University']['university_type_id'] == 1) :?>
 									<div class="lista_kierunkow">
 										<h1 class="smalltitle">
 											<span>KIERUNKI</span>
@@ -107,7 +90,7 @@
 			</div>
 			<div class="col-md-4">
 				<?php if ($lokalizacja_poparawna) :?>
-					<h1 class="smalltitle"><span>Lokalizacja</span></h1>
+					<h3>LOKALIZACJA</h3>
 					<div class="row">
 						<div class="col-md-12 animated fadeInLeft notransition">
 							<div class="info" id="map-canvas" style="width: 100%; height: 266px; margin-bottom: 5%;"></div>

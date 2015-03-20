@@ -20,10 +20,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php 
-		echo $this->Html->charset(); 
-		// Outputs: echo $this->Html->charset(); 
-	?>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php echo $title_for_layout . ' | Zostań Studentem'  ?></title>
 	
@@ -42,16 +39,11 @@
 			// Outputs: <link href="http://example.com/favicon.ico" title="favicon.ico" type="image/x-icon"  rel="alternate" />
 			// InSteadOf: 
 		//echo '<link rel="shortcut icon" href="img/icon/favicon.ico" />';
-		echo $this->fetch('css');
-
-		//Studeo LAYOUT
+		
 		echo $this->Html->css('bootstrap.css');
-		echo $this->Html->css('style.css');
+		echo $this->Html->css('app.min.css');
 		//Responsive
 		echo $this->Html->css('responsive.css');
-		//Choose Skin
-		echo $this->Html->css('skin-red.css', null, array('media' => 'screen', 'id' => 'main-color'));
-		//<link rel="stylesheet" href="css/skin-red.css" rel="stylesheet" id="main-color" media="screen" />
 		
 		if ($tabele) 	{
 			echo $this->Html->css('/js/datatables/css/jquery.dataTables.css', null, array('media' => 'screen'));
@@ -117,7 +109,7 @@
 		<?php echo $this->element('footer', array(), array('cache' => true)); ?>
 	</div>
 	<?php
-		echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js');
+		echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
 		echo $this->Html->script('https://www.google.com/jsapi');
 		if ($tabele) 		{
 			echo $this->Html->script('/js/datatables/js/jquery.dataTables.min.js');
@@ -131,7 +123,7 @@
 	<?php 
 		// Writes cached scripts
 	echo $this->Html->script('jquery.scrollable-1.0.2.min.js');
-		echo $this->Html->script('bootstrap.js');
+		echo $this->Html->script('bootstrap.min.js');
 		echo $this->Html->script('common.js');
 		echo $this->Html->script('plugins.js');
 		//echo $this->Html->script('jquery-ui-1.8.17.custom.min.js');

@@ -1,8 +1,8 @@
 <?php
 class BlogController extends AppController {
 	public function recent_post(){
-		$recent_posts = Cache::read('recent_posts', 'short');
-        if (!$recent_posts) {
+		//$recent_posts = Cache::read('recent_posts', 'short');
+        //if (!$recent_posts) {
         
 			$db_query = "SELECT id, post_date, post_content, post_title, post_name, guid
 	                FROM wp_posts
@@ -23,7 +23,7 @@ class BlogController extends AppController {
 					// Thumbnail exists
 					$db_query3 = "SELECT meta_value
 						FROM wp_postmeta
-						WHERE post_id = ?
+						WHERE post_id = ? AND meta_key = '_wp_attached_file'
 						LIMIT 1";
 					$thumb = $db->fetchAll($db_query3, array($thumb_id[0]['wp_postmeta']['meta_value']));
 					//Debugger::dump($thumb);
@@ -37,8 +37,8 @@ class BlogController extends AppController {
 				$tag = $db->fetchAll($db_query4, array($recent_posts[$key]['wp_posts']['id']));
 				$recent_posts[$key]['url'] = "http://blog.zostanstudentem.pl/".$tag[0]['wp_terms']['slug']."/".$recent_posts[$key]['wp_posts']['post_name'];
 
-				Cache::write('recent_posts', $recent_posts, 'short');
-			}
+				//Cache::write('recent_posts', $recent_posts, 'short');
+			//}
 		}
 
 		if (!empty($this -> request -> params['requested'])) {

@@ -59,7 +59,7 @@
 						<a href="<?php echo $university['url'];?>"><?php if($university['University']['university_type_id'] == 1):?>O UCZELNI<?php else : ?>O SZKOLE<?php endif;?></a>
 					</li>
 					<li class="<?php if ($zakladka_page === 5): ?>active<?php endif;?>">
-						<a href="<?php echo $university['url'];?>/KIERUNKI-5">KIERUNKI</a>
+						<a href="<?php echo $university['zakladka5url'];?>">KIERUNKI</a>
 					</li>
 					<?php if($university['UniversitiesParameter']['zakladka1']):?>
 						<li class="<?php if ($zakladka_page === 1): ?>active<?php endif;?>">
@@ -138,7 +138,7 @@
 												<ul class="icons chevronlist">	
 													<?php foreach($wydzialy as $wydzial) : ?>											
 														<li>
-															<a href="/wydzial/<?php echo Inflector::slug($wydzial['Faculty']['nazwa'],'-').'-'. $wydzial['Faculty']['id'];?>.html"><?php echo $wydzial['Faculty']['nazwa'];?></a>
+															<a href="/wydzial/<?php echo strtolower(Inflector::slug($wydzial['Faculty']['nazwa'],'-')).'-'. $wydzial['Faculty']['id'];?>.html"><?php echo $wydzial['Faculty']['nazwa'];?></a>
 														</li>
 													<?php endforeach;?>
 												</ul>
@@ -224,7 +224,7 @@
 																<tr <?php if (isset($kierunki_full[$ukk][$ukk2]['wydzialnazwa'])):?> class="collapse <?php if($i!==0):?>out<?php else :?>in<?php endif;?> <?php echo $kierunki_full[$ukk][$ukk2]['wydzial_id'];?>collapsed" <?php endif;?>>	
 																	<td >
 																		<div >
-																			<a href="/kierunek/<?php echo Inflector::slug($kierunki_full[$ukk][$ukk2]['nazwa'],'-').'-'. $ukk2;?>.html">
+																			<a href="/kierunek/<?php echo strtolower(Inflector::slug($kierunki_full[$ukk][$ukk2]['nazwa'],'-')).'-'. $ukk2;?>.html">
 																				<?php echo $kierunki_full[$ukk][$ukk2]['nazwa'];?>
 																			</a>
 																		</div>

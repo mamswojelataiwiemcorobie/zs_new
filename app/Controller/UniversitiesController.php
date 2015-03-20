@@ -18,12 +18,14 @@ class UniversitiesController extends AppController {
 			$zakladka_page = !empty($nrzakladki) ? (int)$nrzakladki : 0;
 			$this->set('zakladka_page', $zakladka_page);
 			
-			$university['url'] = "/uczelnia/". Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];
-			$base_url = substr($university['url'],0);
-			$university['zakladka1url'] = $base_url.'/'.Inflector::slug($university['UniversitiesParameter']['nzakladki1'], '-').'-1';
-			$university['zakladka2url'] = $base_url.'/'.Inflector::slug($university['UniversitiesParameter']['nzakladki2'], '-').'-2';
-			$university['zakladka3url'] = $base_url.'/'.Inflector::slug($university['UniversitiesParameter']['nzakladki3'], '-').'-3';
-			$university['zakladka4url'] = $base_url.'/'.Inflector::slug($university['UniversitiesParameter']['nzakladki4'], '-').'-4';
+			$base = "/uczelnia/". strtolower(Inflector::slug($university['University']['nazwa'],'-')).'-'.  $university['University']['id'];
+			$base_url = substr($base,0);
+			$university['url'] = "/uczelnia/". strtolower(Inflector::slug($university['University']['nazwa'],'-')).'-'.  $university['University']['id'].'.html';
+			$university['zakladka1url'] = $base_url.'/'.strtolower(Inflector::slug($university['UniversitiesParameter']['nzakladki1'], '-')).'-1.html';
+			$university['zakladka2url'] = $base_url.'/'.strtolower(Inflector::slug($university['UniversitiesParameter']['nzakladki2'], '-')).'-2.html';
+			$university['zakladka3url'] = $base_url.'/'.strtolower(Inflector::slug($university['UniversitiesParameter']['nzakladki3'], '-')).'-3.html';
+			$university['zakladka4url'] = $base_url.'/'.strtolower(Inflector::slug($university['UniversitiesParameter']['nzakladki4'], '-')).'-4.html';
+			$university['zakladka5url'] = $base_url.'/kierunki-5';
 					
 			$this->set('description_for_layout', 'Zostań studentem. Najlepsze szkoły wyższe.');
 			$this->set('keywords_for_layout', 'uniwersytety, szkoły, ranking');
@@ -91,6 +93,7 @@ class UniversitiesController extends AppController {
 					}
 					$this->set('kierunki_full', $kierunki_full);
 					$this->set('kierunki_types', $kierunki_types);
+					$this->set('title_for_layout', $university['University']['nazwa'].' - Kierunki');
 				}	
 
 				$this->set('university', $university);

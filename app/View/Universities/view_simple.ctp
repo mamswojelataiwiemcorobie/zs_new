@@ -18,7 +18,10 @@
 								<?php if($university['UniversitiesParameter']['telefon']):?><br/>tel: <?php echo $university['UniversitiesParameter']['telefon']; endif; ?>
 								<?php if($university['UniversitiesParameter']['email']):?><br/>e-mail: <?php echo $university['UniversitiesParameter']['email']; endif; ?>
 							</address>
-							<p>Zobacz tą uczelnię w naszej porównywarce >><a href="http://porownywarkauczelni.pl/uczelnia<?php echo Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];?>"><?php echo $university['University']['nazwa'];?></a></p>
+							<p>
+								<a href="http://porownywarkauczelni.pl/uczelnia/<?php echo Inflector::slug($university['University']['nazwa'],'-').'-'.  $university['University']['id'];?>" class="btn porownywarka" target="_blank">
+									<img src="/img/logo_porownywarka.png"/></a>
+							</p>
 						</div>
 						<div class="mbr col-sm-4">
 							<a href="/info/kontakt-1.html" class="uzupelnij-profil btn btn-danger" target="_blank"><i class="icon-plus"></i> UZUPEŁNIJ</a>
@@ -49,7 +52,7 @@
 							<a href="<?php echo $university['url'];?>"><?php if($university['University']['university_type_id'] == 1):?>O UCZELNI<?php else : ?>O SZKOLE<?php endif;?></a>
 						</li>
 						<li class="<?php if ($zakladka_page === 5): ?>active<?php endif;?>">
-							<a href="<?php echo $university['url'];?>/KIERUNKI-5">KIERUNKI</a>
+							<a href="<?php echo $university['zakladka5url'];?>">KIERUNKI</a>
 						</li>
 					</ul>
 					<div class="tab-content cont">
@@ -75,7 +78,7 @@
 										</h1>
 										<div class="info">
 											<?php foreach ($kierunki as $kierunek) :?>
-												<a href="/kierunek/<?php echo Inflector::slug($kierunek['Course']['nazwa'],'-').'-'. $kierunek['Course']['id'];?>.html">
+												<a href="/kierunek/<?php echo strtolower(Inflector::slug($kierunek['Course']['nazwa'],'-')).'-'. $kierunek['Course']['id'];?>.html">
 													<?php echo $kierunek['Course']['nazwa'];?></a> | 
 											<?php endforeach;?>
 										</div>

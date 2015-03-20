@@ -12,7 +12,7 @@
 			<ul class="nav nav-tabs">
 				<?php foreach($kategorie as $kik =>$ki):?>
 					<li class="<?php if ($kategoria_set && $kik==$kategoria['CoursesCategory']['id']-1):?>active<?php endif;?>">
-						<a href="/kierunki/<?php echo $slug=Inflector::slug($ki['CoursesCategory']['nazwa'],'-').'-'. $ki['CoursesCategory']['id'];?>.html" ><?php echo $ki['CoursesCategory']['nazwa'];?></a>
+						<a href="/kierunki/<?php echo $slug=strtolower(Inflector::slug($ki['CoursesCategory']['nazwa'],'-')).'-'. $ki['CoursesCategory']['id'];?>.html" ><?php echo $ki['CoursesCategory']['nazwa'];?></a>
 					</li>
 				<?php endforeach;?>
 			</ul>
@@ -27,7 +27,7 @@
 						<ul class="icons chevronlist lista_kierunkow">
 							<?php foreach ($kierunki as $ki):?>
 								<li class="col-sm-6">
-									<a href="/kierunek/<?php echo $slug=Inflector::slug($ki['Course']['nazwa'],'-').'-'. $ki['Course']['id'];?>.html"><?php echo $ki['Course']['nazwa'];?></a>
+									<a href="/kierunek/<?php echo $slug=strtolower(Inflector::slug($ki['Course']['nazwa'],'-')).'-'. $ki['Course']['id'];?>.html"><?php echo $ki['Course']['nazwa'];?></a>
 								</li>
 							<?php endforeach;?>
 						</ul>

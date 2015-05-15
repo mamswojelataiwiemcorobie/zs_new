@@ -1,0 +1,53 @@
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Administracja
+Gdańska Szkoła Wyższa z siedzibą w Gdańsku;Administracja
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Administracja
+Wyższa Szkoła Administracji Publicznej imienia Stanisława Staszica w Białymstoku;Administracja
+Wyższa Szkoła Administracji Publicznej imienia Stanisława Staszica w Białymstoku;Bezpieczeństwo narodowe
+Wyższa Szkoła Bezpieczeństwa Publicznego i Indywidualnego "Apeiron" w Krakowie;Bezpieczeństwo wewnętrzne
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Bezpieczeństwo wewnętrzne
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Dziennikarstwo i komunikacja społeczna
+Uniwersytet Papieski Jana Pawła II w Krakowie;Dziennikarstwo i komunikacja społeczna
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Ekonomia
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Ekonomia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Ekonomia
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Elektrotechnika
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia angielska
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Filologia
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Finanse i rachunkowość
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Grafika
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Informatyka
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Informatyka
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Kosmetologia
+Warszawska Wyższa Szkoła Humanistyczna im. Bolesława Prusa (decyzja z dnia 06.07.2006 r.);Kulturoznawstwo
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Mechanika i budowa maszyn
+Uniwersytet Papieski Jana Pawła II w Krakowie;Nauki o rodzinie
+Wyższa Szkoła Społeczno-Ekonomiczna w Gdańsu z siedzibą w Gdańsku;Pedagogika
+Wyższa Szkoła Zawodowa „Kadry dla Europy” w Poznaniu z siedzibą w Poznaniu;Pedagogika
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Pedagogika
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Pedagogika
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Pedagogika
+Gnieźnieńska Szkoła Wyższa Milenium z siedzibą w Gnieźnie;Pedagogika
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Pedagogika
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Pedagogika specjalna
+Uniwersytet Papieski Jana Pawła II w Krakowie;Praca socjalna
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Socjologia
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Stosunki międzynarodowe
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Sztuka mediów i edukacja wizualna [do 2012-09-30 Edukacja artystyczna w zakresie sztuk plastycznych]
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Technologia chemiczna
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Technologia chemiczna
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Transport
+Szkoła Główna Turystyki i Rekreacji;Turystyka i rekreacja
+Gnieźnieńska Szkoła Wyższa Milenium z siedzibą w Gnieźnie;Zarządzanie
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Zarządzanie
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Zarządzanie
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Zdrowie publiczne
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Bezpieczeństwo narodowe
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Dziennikarstwo i komunikacja społeczna
+Wrocławska Wyższa Szkoła Informatyki Stosowanej we Wrocławiu;Informatyka
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Pedagogika
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Pedagogika
+Wyższa Szkoła Biznesu i Nauk o Zdrowiu w Łodzi;Pedagogika
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Pielęgniarstwo
+Wyższa Szkoła Nauk Humanistycznych i Dziennikarstwa w Poznaniu;Politologia
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Praca socjalna
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Turystyka i rekreacja

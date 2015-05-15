@@ -59,22 +59,37 @@
 						<?php if ($zakladka_page === 0) : ?>
 							<div class="tab-pane active">								
 								<section>
-									<div class="info">									
-										<?php echo $university['University']['nazwa'];?>
-										<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 1):?>. Kierunki studiów. Studia dzienne (stacjonarne) i zaoczne (niestacjonarne), licencjackie, inżynierskie, magisterskie. Jakie studia wybrać? Czy warto tu studiować twój wymarzony kierunek. <?php endif;?>
-										<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 2):?>. Szkoła policealna - kursy roczne i dwuletnie po których jest pewna praca.<?php endif;?>
-										<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 3):?>. Szkoła językowa - angielski, niemiecki, rosyjski, hiszpański, japoński<?php endif;?>
-									</div>
-								</section>
-								
+									<?php if (strlen($university['UniversitiesParameter']['opis']) > 100):?>
+										<div class="info"><?php echo $this->Text->truncate(
+																    $university['UniversitiesParameter']['opis'],
+																    822,
+																    array(
+																        'ellipsis' => '...',
+																        'exact' => false
+																    )
+																);
+																?></div>
+										<br/>
+										<?php if(isset($university['UniversitiesParameter']['tagi'])) echo $university['UniversitiesParameter']['tagi'];?>
+									<?php else :?>
+										<div class="info">
+											<?php echo $university['University']['nazwa'];?>
+											<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 1):?>. Kierunki studiów. Studia dzienne (stacjonarne) i zaoczne (niestacjonarne), licencjackie, inżynierskie, magisterskie. Jakie studia wybrać? Czy warto tu studiować twój wymarzony kierunek. <?php endif;?>
+											<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 2):?>. Szkoła policealna - kursy roczne i dwuletnie po których jest pewna praca.<?php endif;?>
+											<?php if ($university['University']['abonament_id'] < 2 && $university['University']['university_type_id'] == 3):?>. Szkoła językowa - angielski, niemiecki, rosyjski, hiszpański, japoński<?php endif;?>
+											<br/>
+											<?php if(isset($university['UniversitiesParameter']['tagi'])) echo $university['UniversitiesParameter']['tagi'];?>
+										</div>
+									<?php endif;?>
+								</section>								
 							</div>
 						<!-- KIERUNKI -->
 						<?php elseif ($zakladka_page === 5) :?>
 							<div class="tab-pane active">
-								<?php if ($university['University']['university_type_id'] == 1) :?>
+								
 									<div class="lista_kierunkow">
 										<h1 class="smalltitle">
-											<span>KIERUNKI</span>
+											<?php if ($university['University']['university_type_id'] == 1) :?><span>KIERUNKI</span><?php else :?><span>JĘZYKI</span><?php endif;?>
 										</h1>
 										<div class="info">
 											<?php foreach ($kierunki as $kierunek) :?>
@@ -84,7 +99,7 @@
 										</div>
 										<div class="cl"></div>
 									</div>
-								<?php endif;?>
+								
 							</div>
 						<?php endif;?>
 					</div>

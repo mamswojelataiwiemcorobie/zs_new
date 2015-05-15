@@ -984,6 +984,7 @@ text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 #uczelnia .main address {
 clear:both;
+  margin: 0;
 }
 #uczelnia .main a.url {
 float:left;

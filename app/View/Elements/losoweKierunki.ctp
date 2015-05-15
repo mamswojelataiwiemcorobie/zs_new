@@ -3,11 +3,11 @@ $losowe = $this->requestAction(array('controller' => 'courses',
 											'action' => 'losowyKierunek'));
 							?>	
 <section class="service-box topspace30" id="service-top">
-	<div class="container">
+	<div class="bgarea-semitransparent">
 		<div class="row">
 		    <div class="col-md-4 text-center animated fadeInLeftNow notransition fadeInLeft">
 				<div class="icon-box-top">
-					<i class="fontawesome-icon medium circle-white center icon-rocket"></i>
+					<a href="/kierunek/<?php echo strtolower(Inflector::slug($losowe[0]['Course']['nazwa'],'-')).'-'.  $losowe[0]['Course']['id'];?>.html"><i class="fontawesome-icon medium circle-white center icon-rocket"></i></a>
 					<h1><?php echo $losowe[0]['Course']['nazwa']?></h1>
 					<p><?php echo $this->Text->truncate(
 												    strip_tags($losowe[0]['Course']['opis1']),

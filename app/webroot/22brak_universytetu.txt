@@ -1,0 +1,25 @@
+Wyższa Szkoła Zawodowa „Kadry dla Europy” w Poznaniu z siedzibą w Poznaniu;Architektura [do 2014-09-28 Architektura i urbanistyka]
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Bezpieczeństwo i higiena pracy
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Budownictwo
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Budownictwo
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Budownictwo
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Elektrotechnika
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Geodezja i kartografia
+Wyższa Szkoła Przedsiębiorczości z siedzibą w Nowym Sączu;Geodezja i kartografia
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Informatyka
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Informatyka
+Wrocławska Wyższa Szkoła Informatyki Stosowanej we Wrocławiu;Informatyka
+Wyższa Szkoła Zarządzania w Gdańsku;Informatyka
+Wyższa Szkoła Nauk Humanistycznych i Dziennikarstwa w Poznaniu;Informatyka
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Inżynieria odnawialnych źródeł energii
+Wyższa Szkoła Przedsiębiorczości z siedzibą w Nowym Sączu;Inżynieria środowiska
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Logistyka
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Mechanika i budowa maszyn
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Rolnictwo
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Samochody i bezpieczeństwo w transporcie drogowym
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Transport
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Transport
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Transport
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Zarządzanie i inżynieria produkcji
+Gdańska Szkoła Wyższa z siedzibą w Gdańsku;Zarządzanie i inżynieria produkcji
+Gdańska Szkoła Wyższa z siedzibą w Gdańsku;Zarządzanie i inżynieria produkcji

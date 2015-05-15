@@ -1,0 +1,41 @@
+Politechnika Wrocławska;Architektura [do 2012-09-30 Architektura i urbanistyka]
+Państwowa Wyższa Szkoła Zawodowa w Nysie;Architektura [do 2012-09-30 Architektura i urbanistyka]
+Wyższa Szkoła Ekologii i Zarządzania w Warszawie;Architektura [do 2012-09-30 Architektura i urbanistyka]
+Politechnika Poznańska;Architektura [do 2014-09-30 Architektura i urbanistyka]
+Podhalańska Państwowa Wyższa Szkoła Zawodowa w Nowym Targu;Architektura [do 2015-02-05 Architektura i urbanistyka]
+Sopocka Szkoła Wyższa z siedzibą w Sopocie;Architektura [do 2014-09-14 Architektura i urbanistyka]
+Wyższa Szkoła Przedsiębiorczości i Administracji w Lublinie;Architektura [do 2012-09-30 Architektura i urbanistyka]
+Uniwersytet Przyrodniczy w Lublinie;Behawiorystyka zwierząt
+Uniwersytet Warmińsko-Mazurski w Olsztynie;Bioinżynieria produkcji żywności [do 2012-09-30 Makrokierunek - bioinżynieria produkcji żywności]
+Politechnika Białostocka;Biotechnolologia
+Szkoła Główna Gospodarstwa Wiejskiego w Warszawie;gastronomia i hotelarstwo
+Uniwersytet Przyrodniczy w Lublinie;Gastronomia i sztuka kulinarna
+Państwowa Wyższa Szkoła Zawodowa im. Jana Grodka w Sanoku;Gospodarka w ekosystemach rolnych i leśnych
+Szkoła Główna Gospodarstwa Wiejskiego w Warszawie;hodowla i ochrona zwierząt towarzyszących i dzikich
+Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie;Informatyka stosowana [do 2012-09-30 Informatyka stosowana]
+Uniwersytet Łódzki;Informatyka, studia inżynierskie
+Politechnika Koszalińska;Inwestycje i wdrożenia przemysłowe
+Politechnika Łódzka;Inżynieria produkcji
+Politechnika Lubelska;Inżynieria produkcji
+Uniwersytet Przyrodniczy w Lublinie;Inżynieria przemysłu spożywczego
+Wyższa Szkoła Techniczna we Włocławku;Inżynieria techniczno-informatyczna [do 2013-06-06 Edukacja techniczno-informatyczna]
+Politechnika Poznańska;Inżynieria zarządzania
+Wyższa Szkoła Bankowa w Toruniu;Inżynieria zarządzania
+Wyższa Szkoła Bankowa w Toruniu;Inżynieria zarządzania
+Wyższa Szkoła Bankowa we Wrocławiu;Inżynieria zarządzania
+Wyższa Szkoła Bankowa w Poznaniu;Inżynieria zarządzania
+Wyższa Szkoła Techniczno-Przyrodnicza w Poznaniu z siedzibą w Poznaniu;Inżynieria zarządzania
+Wyższa Szkoła Biznesu w Dąbrowie Górniczej;Inżynieria zarządzania
+Wojskowa Akademia Techniczna im. Jarosława Dąbrowskiego;Kryptologia i cyberbezpieczeństwo
+Uniwersytet Przyrodniczy w Poznaniu;Makrokierunek - informatyka i agroinżynieria
+Politechnika Śląska;Makrokierunek - informatyka przemysłowa
+Politechnika Śląska;Makrokierunek - nanotechnologia i technologie procesów mat.
+Szkoła Główna Gospodarstwa Wiejskiego w Warszawie;Makrokierunek - technologie energii odnawialnej
+Wyższa Szkoła Oficerska Sił Powietrznych;Nawigacja
+Akademia Morska w Szczecinie;Nawigacja
+Akademia Marynarki Wojennej im. Bohaterów Westerplatte;Nawigacja
+Akademia Morska w Gdyni;Nawigacja
+Uniwersytet Przyrodniczy w Lublinie;Ochrona roślin i kontrola fitosanitarna
+Politechnika Częstochowska;Recykling materiałów
+Uniwersytet Przyrodniczy w Lublinie;Zielarstwo i terapie roślinne
+Szkoła Główna Gospodarstwa Wiejskiego w Warszawie;żywienie człowieka i ocena żywności

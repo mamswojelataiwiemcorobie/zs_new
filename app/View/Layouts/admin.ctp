@@ -14,13 +14,25 @@
 	<script type="text/javascript">
 	tinymce.init({
 		selector: "textarea.wysiwig",
- 		plugins: "code link image paste",
-		toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+		theme : "modern",
+ 		plugins: [
+	        "advlist autolink lists link image charmap",
+	        "searchreplace visualblocks code fullscreen",
+	        "table contextmenu paste"
+	    ],
+		toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | fullscreen",
 		image_advtab: true,
 		image_class_list: [
 	        {title: 'img-responsive', value: 'img-responsive'}
 	    ],
-		paste_word_valid_elements: "b,strong,i,em,h1,h2"	 });
+	    extended_valid_elements : "i[class]",
+		paste_word_valid_elements: "b,strong,i,em,h1,h2,h3,table,tr,td,tbody,thead,ol,ul,li,p",
+		style_formats_merge: true,
+		style_formats: [
+		    {title: 'Red text', inline: 'span', styles: {color: '#ff0000'}}
+		],
+		extended_valid_elements: "table[class=table table-hover table-bordered], td[width=100%]",
+	 });
 	</script>
 
 </head>
@@ -60,7 +72,7 @@
 			echo $this->Js->writeBuffer();
 		// Writes cached scripts
 
-		echo $this->Html->script('bootstrap.js');
+		echo $this->Html->script('bootstrap_admin.js');
 	?>
 	<script src="/js/jquery.form.js" type="text/javascript"></script>
 

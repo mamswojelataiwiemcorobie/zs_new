@@ -34,14 +34,14 @@ class UniversitiesController extends AppController {
 				$university['logo'] = 'no-photo.jpg';
 				//$u['kierunki'] = $u['kierunki_full'] = array();
 				$uuniversity['zakladka1'] = $university['zakladka2'] = $university['zakladka3'] = $university['zakladka4'] = '';
-			}
+			} 
 			if ($university['UniversitiesParameter']['lokalizacja_x'] > 0 && $university['UniversitiesParameter']['lokalizacja_y'] > 0) {
 				$this->set('lokalizacja_poparawna',true);
 			} else $this->set('lokalizacja_poparawna',false);
 
 			$this->set('title_for_layout', $university['University']['nazwa']);
 
-			if ($university['University']['abonament_id'] < 2 || $university['University']['university_type_id'] == 3) {
+			if ($university['University']['abonament_id'] < 2) {
 				if($zakladka_page==5) {
 					$this->University->CourseonUniversity->contain('Course.id', 'Course.nazwa');
 					$kierunki = $this->University->CourseonUniversity->find('all', array('conditions'=>array('CourseonUniversity.university_id'=>$id), 																
@@ -70,36 +70,45 @@ class UniversitiesController extends AppController {
 																									'conditions'=>array('Faculty.university_id'=>$id)));
 					$this->set('wydzialy', $wydzialy);
 				} elseif($zakladka_page==5) {
-					$this->University->CourseonUniversity->contain('Course.id', 'Course.nazwa', 'Faculty.nazwa', 'Faculty.id');
-					$kierunki = $this->University->CourseonUniversity->find('all', array('conditions'=>array('CourseonUniversity.university_id'=>$id), 																
-																						'order'=>array('Course.nazwa')));
-					foreach ($kierunki as $kierunek) {
-						$type= $kierunek['CourseonUniversity']['course_type_id'].$kierunek['CourseonUniversity']['course_mode_id'];
-						$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['nazwa'] = $kierunek['Course']['nazwa'];
-						if (isset($kierunek['Faculty']['nazwa'])) {
-							$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['wydzial_id'] = $kierunek['Faculty']['id'];
-							$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['wydzialnazwa'] = $kierunek['Faculty']['nazwa'];
+					if ($university['University']['university_type_id'] == 3) {
+						$this->University->CourseonUniversity->contain('Course.id', 'Course.nazwa');
+						$kierunki = $this->University->CourseonUniversity->find('all', array('conditions'=>array('CourseonUniversity.university_id'=>$id), 																
+																							'order'=>array('Course.nazwa'),
+																							'group'=>'Course.nazwa'));
+						$this->set('kierunki', $kierunki);
+						$this->set('kierunki_full', $kierunki_full=0);
+					} else {
+						$this->University->CourseonUniversity->contain('Course.id', 'Course.nazwa', 'Faculty.nazwa', 'Faculty.id');
+						$kierunki = $this->University->CourseonUniversity->find('all', array('conditions'=>array('CourseonUniversity.university_id'=>$id), 																
+																							'order'=>array('Course.nazwa')));
+						foreach ($kierunki as $kierunek) {
+							$type= $kierunek['CourseonUniversity']['course_type_id'].$kierunek['CourseonUniversity']['course_mode_id'];
+							$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['nazwa'] = $kierunek['Course']['nazwa'];
+							if (isset($kierunek['Faculty']['nazwa'])) {
+								$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['wydzial_id'] = $kierunek['Faculty']['id'];
+								$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']]['wydzialnazwa'] = $kierunek['Faculty']['nazwa'];
+							}
+							$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']][$type] = true;
+							$kierunki_types[$type] = true;
 						}
-						$kierunki_full[$kierunek['CourseonUniversity']['faculty_id']][$kierunek['Course']['id']][$type] = true;
-						$kierunki_types[$type] = true;
-					}
-					$types = array('11','21','31','41','61','51','71','12','22','32','42','62','52','72','60','50','70');
-					if (isset($kierunki_types)) {
-						$ttypes = array();
-						foreach ($types as $t) {
-							if (isset($kierunki_types[$t])) $ttypes[] = $t;
+						$types = array('11','21','31','41','61','51','71','12','22','32','42','62','52','72','60','50','70');
+						if (isset($kierunki_types)) {
+							$ttypes = array();
+							foreach ($types as $t) {
+								if (isset($kierunki_types[$t])) $ttypes[] = $t;
+							}
+							$kierunki_types = $ttypes;
 						}
-						$kierunki_types = $ttypes;
+						$this->set('kierunki_full', $kierunki_full);
+						$this->set('kierunki_types', $kierunki_types);
 					}
-					$this->set('kierunki_full', $kierunki_full);
-					$this->set('kierunki_types', $kierunki_types);
 					$this->set('title_for_layout', $university['University']['nazwa'].' - Kierunki');
 				}	
 
 				$this->set('university', $university);
 			}
 			$this->zapisz_odwiedziny_uczelni($university);
-		} 
+		} else $this->set('lokalizacja_poparawna',false);
 	}
 
 	public function zapisz_odwiedziny_uczelni($u) {
@@ -190,7 +199,7 @@ class UniversitiesController extends AppController {
 				$this->paginate = array(
 					'University' => array(
 						'order' => array('University.abonament_id'=> 'desc', 'University.nazwa' => 'asc' ),				 
-						'limit' => 5,
+						'limit' => 7,
 						'recursive' => 0,
 						'conditions' => 
 		        			$conditions
@@ -616,7 +625,7 @@ class UniversitiesController extends AppController {
 	
 	public function zapis() {
 		# Open the File.
-		if (($handle = fopen("uczelnie_foto.csv", "r")) !== FALSE) {
+		if (($handle = fopen("kierunki_niestacjonarne_licencjat.csv", "r")) !== FALSE) {
 			# Set the parent multidimensional array key to 0.
 			$nn = 0;
 			while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {
@@ -632,19 +641,118 @@ class UniversitiesController extends AppController {
 			# Close the File.
 			fclose($handle);
 		}
-
+		//Debugger::dump($csvarray);
+		$i =0;
+		$j = 0;
+		$k=0;
+		$bledy_kierunki = '';
+		$bledy ='';
 		foreach ($csvarray as $uni) {
-			$this->University->contain();
-			$c = $this->University->find('all');
-			foreach ($c as $c2) {		
-				if ($c2['University']['id'] == $uni[1]) {
-					if($uni[2]=='logo') {
-						Debugger::dump($uni);
-						$this->University->updateAll(	array('University.photo' => "'".$uni[3]."'"),  													array('University.id' => $c2['University']['id']));
+			preg_match('/\(([^)]+)\)/', $uni[0], $kierunek_nazwas);
+			if(!empty($kierunek_nazwas[1])) {
+				$kierunek_nazwa = $kierunek_nazwas[1];
+			} else $kierunek_nazwa = $uni[0];
+			//Debugger::dump($kierunek_nazwa);
+			$univar= explode('; ', $uni[1]);
+			//Debugger::dump($univar);
+			$this->University->CourseonUniversity->contain('Course.nazwa', 'University.nazwa');
+			$c = $this->University->CourseonUniversity->find('all', array('conditions'=>array('course_type_id'=>1, 'course_mode_id'=>2, 'LOWER(TRIM(Course.nazwa)) LIKE'=>mb_strtolower($kierunek_nazwa, 'UTF-8'), 'LOWER(TRIM(University.nazwa)) LIKE'=> mb_strtolower($univar[0], 'UTF-8'))));
+			if (empty($c)) {
+				//Debugger::dump($univar);
+				$this->University->contain();
+				$uniwersytet= $this->University->find('first', array('conditions'=> array('LOWER(TRIM(University.nazwa)) LIKE'=> mb_strtolower($univar[0], 'UTF-8'))));
+				//Debugger::dump($uniwersytet);
+				if (!empty($uniwersytet)) {
+					$this->University->CourseonUniversity->Course->contain();
+					$kierunek = $this->University->CourseonUniversity->Course->find('first', array('fields'=>array('id', 'nazwa'), 'conditions'=>array('LOWER(TRIM(Course.nazwa)) LIKE'=>mb_strtolower($kierunek_nazwa, 'UTF-8'))));
+					if(!empty($kierunek)) {
+						if (isset($univar[1])) {
+							$this->University->CourseonUniversity->Faculty->contain();
+							$wydzialy = $this->University->CourseonUniversity->Faculty->find('all', array('fields'=>array('Faculty.id', 'Faculty.nazwa', 'Faculty.university_id'),
+																										'conditions'=>array('Faculty.university_id'=>$uniwersytet['University']['id'])));
+							if(!empty($wydzialy)) {
+								$wydzial = false;
+								foreach ($wydzialy as $wydzial) {
+									if (mb_strtolower($wydzial['Faculty']['nazwa'], 'UTF-8') == mb_strtolower($univar[1], 'UTF-8')) {
+										//Debugger::dump($wydzialy);
+										$this->University->CourseonUniversity->contain('Course.nazwa', 'University.nazwa');
+										$inz = $this->University->CourseonUniversity->find('first', array('conditions'=>array('course_type_id'=>2, 'course_mode_id'=>2, 'LOWER(TRIM(Course.nazwa)) LIKE'=>mb_strtolower($kierunek_nazwa, 'UTF-8'), 'LOWER(TRIM(University.nazwa)) LIKE'=> mb_strtolower($univar[0], 'UTF-8'))));
+										if(!empty($inz)) {
+											$update[$i]['uniwersytet'] = $uniwersytet['University']['nazwa'];
+											$update[$i]['wydzial'] = $univar[1];
+											$update[$i]['kierunek'] = $kierunek_nazwa;
+											$i++;
+											echo 'Zmień inżyniera!';
+											$this->University->CourseonUniversity->id = $inz['CourseonUniversity']['id'];
+											if($this->University->CourseonUniversity->saveField('course_type_id',1))  $this->Session->setFlash(__('The user has been updated'));
+										} else {
+											$update[$i]['uniwersytet'] = $uniwersytet['University']['nazwa'];
+											$update[$i]['wydzial'] = $wydzial['Faculty']['nazwa'];
+											$update[$i]['kierunek'] = $kierunek_nazwa;
+											$i++;
+											$this->University->CourseonUniversity->create();
+											if($this->University->CourseonUniversity->save(array('CourseonUniversity'=>array('university_id'=>$uniwersytet['University']['id'],
+																																'faculty_id'=>$wydzial['Faculty']['id'],
+																																'course_id'=>$kierunek['Course']['id'],
+																																'course_type_id'=>1,
+																																'course_mode_id'=>2))))  $this->Session->setFlash(__('The user has been updated'));
+
+										}
+										$wydzial = true;break;
+									} 
+								}
+								if(!$wydzial) {
+										 echo 'Znaleziono wydział ale nie ma go w bazie';
+										 Debugger::dump($wydzialy);
+										$update[$i]['uniwersytet'] = $uniwersytet['University']['nazwa'];
+										$update[$i]['wydzial'] = $univar[1];
+										$update[$i]['kierunek'] = $kierunek_nazwa;
+										$i++;
+										
+									}
+							} else {
+								//echo 'Nie ma wydziaów - dodaj kierunek';
+								//Debugger::dump($univar);
+								$update[$i]['uniwersytet'] = $uniwersytet['University']['nazwa'];
+								$update[$i]['wydzial'] = 0;
+								$update[$i]['kierunek'] = $kierunek_nazwa;
+								$i++;
+								$this->University->CourseonUniversity->create();
+								if($this->University->CourseonUniversity->save(array('CourseonUniversity'=>array('university_id'=>$uniwersytet['University']['id'],
+																													'faculty_id'=>0,
+																													'course_id'=>$kierunek['Course']['id'],
+																													'course_type_id'=>1,
+																													'course_mode_id'=>2))))  $this->Session->setFlash(__('Utworzono'));
+							}
+						} else {
+							//echo 'Nie ma wydziałów';
+							//Debugger::dump($univar);
+							$update[$i]['uniwersytet'] = $uniwersytet['University']['nazwa'];
+							$update[$i]['wydzial'] = 0;
+							$update[$i]['kierunek'] = $kierunek_nazwa;
+							$i++;
+							$this->University->CourseonUniversity->create();
+							if($this->University->CourseonUniversity->save(array('CourseonUniversity'=>array('university_id'=>$uniwersytet['University']['id'],
+																												'faculty_id'=>0,
+																												'course_id'=>$kierunek['Course']['id'],
+																												'course_type_id'=>1,
+																												'course_mode_id'=>2))))  $this->Session->setFlash(__('Utworzono'));
+						}
+					} else {
+						$bledy_kierunki .= $univar[0].";". $kierunek_nazwa."\r\n";
 					}
+				} else {
+					$bledy .= $univar[0].';'. $kierunek_nazwa."\r\n";
+					
 				}
+
+
 			}
+			
 		}
+		file_put_contents('brak_kierunku.txt', $bledy_kierunki);
+		file_put_contents('brak_universytetu.txt', $bledy);
+		Debugger::dump($update);
 	}
 	
 	
@@ -652,7 +760,7 @@ class UniversitiesController extends AppController {
 		$this->University->contain();
 		$universities = $this->University->find('all', array('fields' => array('University.id'), 'order' => array('University.abonament_id' => 'DESC')));	
 		foreach ($universities as $university) {
-			if(empty($university['University']['all_courses'])) {
+			//if(empty($university['University']['all_courses'])) {
 				$this->University->CourseonUniversity->contain('Course.nazwa');
 				$courses = $this->University->CourseonUniversity->find('list', array(
 																				'conditions'=>array(
@@ -665,7 +773,7 @@ class UniversitiesController extends AppController {
 				//Debugger::dump($courses_names);
 				$this->University->id = $university['University']['id'];
 				$this->University->saveField('all_courses', $courses_names);	
-			}	
+			//}	
 		}		
 	}
 
@@ -682,6 +790,32 @@ class UniversitiesController extends AppController {
 			}
 		}
 	}
+
+	public function zapisz_uczelnie() {
+		
+		//Debugger::dump($courses);
+		$filename = 'uczelnie.txt';
+		if ($fh = fopen($filename, "r")) {
+			$lista2= '';
+			while (!feof($fh)) {
+			  	$line = trim(fgets($fh));
+				$line1 = mb_strtolower($line, 'UTF-8');
+			  	$this->University->contain();
+			  	$course = $this->University->find('all', array('fields'=>array('nazwa'), 'conditions' => array(
+                    'LOWER(TRIM(nazwa)) LIKE' => "$line1",
+                )));
+                if(!empty($course)) {
+					//echo 'dobry - '. $line .'-'.$course.'<br/>'; 
+				} else { 
+					$lista[] = $line;
+					$lista2 .= $line."\r\n";
+				}
+			}
+			fclose($fh);
+			file_put_contents('uczelnie_nowe.txt', $lista2);
+			Debugger::dump($lista);
+		}
+	} 
 	
 	public function admin_search() {
         // the page we will redirect to
@@ -701,24 +835,41 @@ class UniversitiesController extends AppController {
     }
 	
 	public function admin_index() {
-		if(isset($this->passedArgs['Search.keywords'])) {
+		$conditions =array();
+		if(!empty($this->passedArgs['Search.keywords'])) {
             $keywords = mb_strtolower($this->passedArgs['Search.keywords'], 'UTF-8');
 			//Debugger::dump($keywords);
-            $this->paginate = array(
-            	'limit' =>10,
-                'conditions' => array(
-                    'LOWER(University.nazwa) LIKE' => "%$keywords%",
-                )
+			$conditions[] = array('OR' => array(
+                					'University.id' => $keywords,
+                	               'LOWER(University.nazwa) LIKE' => "%$keywords%",
+                	               'LOWER(University.miasto) LIKE' => "%$keywords%",
+                	));
+        } 
+        if (!empty($this->passedArgs['Search.university_type_id'])) {
+        	$type = $this->passedArgs['Search.university_type_id'];
+        	//$this->paginate['conditions'][]['University.university_type_id'] = $type;
+        	$conditions[] = array('University.university_type_id' => $type);
+        	
+           	$this->request->data['Search']['university_type_id'] = $this->passedArgs['Search.university_type_id'];
+        }
+
+         if (!empty($this->passedArgs['Search.abonament_id'])) {
+        	$abonament = $this->passedArgs['Search.abonament_id'];
+        	$conditions[] = array('University.abonament_id' => $abonament);
+        	
+           	$this->request->data['Search']['abonament_id'] = $this->passedArgs['Search.abonament_id'];
+        
+        } 
+		$this->paginate = array(
+            	'limit' =>15,
+                'conditions' => $conditions,
+                'order' => array('Abonament.id'=> 'desc','UniversityType.id_typ'=>'asc', 'University.nazwa' => 'asc' ),
+                'contain' => array('UniversityType', 'Abonament')
             );
-        } else { 
-			$this->paginate = array(
-				'limit' => 15,
-				'order' => array('Abonament.id'=> 'desc', 'UniversityType.id_typ'=>'asc', 'University.nazwa' => 'asc' ),
-				'contain' => array('UniversityType', 'Abonament')
-			);
-		}
         $universities = $this->paginate('University');
 		//Debugger::dump($universities);
+		$this->set('abonaments', $this->University->Abonament->find('list'));
+		$this->set('universityTypes', $this->University->UniversityType->find('list'));
         $this->set('universities', $universities);
 	}
 	

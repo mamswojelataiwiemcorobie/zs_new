@@ -59,8 +59,8 @@
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
-	      <script src="js/html5shiv.js"></script>
-	      <script src="js/respond.min.js"></script>	   
+	      <script src="/js/html5shiv.js"></script>
+	      <script src="/js/respond.min.js"></script>	   
 	<![endif]-->
 	<!--[if lte IE 8]>
 		<link href="css/ie8.css" rel="stylesheet">
@@ -72,7 +72,6 @@
 			echo '<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false"></script>';
 		}
 	?>
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script><!--google chart-->
 
 <script async type="text/javascript">
   var _gaq = _gaq || [];
@@ -87,7 +86,7 @@
 </script>
 <meta name="google-site-verification" content="_sN9VAdYA89dMemv5QW1VtC4NX3q5ZgcYC8UW_NZ2Fk" />
 </head>
-<body class="on" onLoad="" scroll="yes" >
+<body class="on" scroll="yes" >
 	<?php 
 		if(isset($user)) echo $this->element('menu_top', array("username"=>$user['Client']['login'])); 
 		else echo $this->element('menu_top'); 
@@ -109,8 +108,10 @@
 		<?php echo $this->element('footer', array(), array('cache' => true)); ?>
 	</div>
 	<?php
-		echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
-		echo $this->Html->script('https://www.google.com/jsapi');
+		
+			echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
+
+		
 		if ($tabele) 		{
 			echo $this->Html->script('/js/datatables/js/jquery.dataTables.min.js');
 			//echo $this->Html->script('/js/datatables/js/jquery.dataTables.rowGrouping.js');
@@ -118,15 +119,16 @@
 			echo $this->Html->script('http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js');
 			echo $this->Html->script('funkcje_tabele.js');
 		}
-		echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js');?>
-	
-	<?php 
+		echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js');
 		// Writes cached scripts
 	echo $this->Html->script('jquery.scrollable-1.0.2.min.js');
-		echo $this->Html->script('bootstrap.min.js');
+		echo $this->Html->script('bootstrap.js');
 		echo $this->Html->script('common.js');
 		echo $this->Html->script('plugins.js');
-		//echo $this->Html->script('jquery-ui-1.8.17.custom.min.js');
+		if(isset($glowna)) {
+			echo $this->Html->css('owl.carousel_v1.1.css');
+			echo $this->Html->script('owl.carousel.min.js');
+		}
 		echo $this->Html->script('index_func.js');
 	?>
 	

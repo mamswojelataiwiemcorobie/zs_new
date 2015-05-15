@@ -20,14 +20,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php 
-		echo $this->Html->charset(); 
-		// Outputs: echo $this->Html->charset(); 
-		echo $this->Html->meta('viewport', 'width=device-width, initial-scale=1.0');
-		// Outputs: <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	?>
-	
-	<title><?php echo $title_for_layout . ' | Образование в Польше'  ?></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><?php echo $title_for_layout . ' | Zostań Studentem'  ?></title>
 	
 	<?php
 		echo '<link rel="shortcut icon" href="/img/icon/icon5.ico" />';
@@ -46,16 +41,10 @@
 		//echo '<link rel="shortcut icon" href="img/icon/favicon.ico" />';
 		echo $this->fetch('css');
 
-		//Studeo LAYOUT
 		echo $this->Html->css('bootstrap.css');
-		echo $this->Html->css('style.css');
+		echo $this->Html->css('app.min.css');
 		//Responsive
 		echo $this->Html->css('responsive.css');
-		//Choose Layout
-		echo $this->Html->css('layout-semiboxed.css');
-		//Choose Skin
-		echo $this->Html->css('skin-red.css', null, array('media' => 'screen', 'id' => 'main-color'));
-		//<link rel="stylesheet" href="css/skin-red.css" rel="stylesheet" id="main-color" media="screen" />
 		
 		if ($tabele) 	{
 			echo $this->Html->css('/js/datatables/css/jquery.dataTables.css', null, array('media' => 'screen'));
@@ -64,9 +53,6 @@
 			echo $this->Html->css('table_nowrap.css');
 			//responsive
 			echo $this->Html->css('/css/display/rwd-table.css');
-		}
-		if ($this->name == 'Universities') {
-			echo $this->Html->css('uni_v.css');
 		}
 	?>
 	

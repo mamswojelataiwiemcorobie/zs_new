@@ -1,0 +1,28 @@
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Architektura krajobrazu
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Bezpieczeństwo ekologiczne
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Bezpieczeństwo i higiena pracy
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Budownictwo
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Budownictwo
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Budownictwo
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Elektronika i telekomunikacja
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Elektrotechnika
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Geodezja i kartografia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Gospodarka przestrzenna
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Informatyka
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Informatyka
+Wrocławska Wyższa Szkoła Informatyki Stosowanej we Wrocławiu;Informatyka
+Wyższa Szkoła Nauk Humanistycznych i Dziennikarstwa w Poznaniu;Informatyka
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Inżynieria materiałowa
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Inżynieria odnawialnych źródeł energii
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Inżynieria środowiska
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Logistyka
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Logistyka
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Mechanika i budowa maszyn
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Rolnictwo
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Samochody i bezpieczeństwo w transporcie drogowym
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Technologia chemiczna
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Towaroznawstwo
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Transport
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Transport
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Transport
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Zarządzanie i inżynieria produkcji

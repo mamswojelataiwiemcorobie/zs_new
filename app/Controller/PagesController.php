@@ -82,7 +82,7 @@ class PagesController extends AppController {
 		$this->set('title_for_layout', 'Zostań Studentem - szkoły wyższe, policealne, kierunki studiów');
 		$this->set('description_for_layout', 'Zostań Studentem - wyszukiwarka szkół wyższych, policealnych i językowych. Gdzie studiować? Kierunki studiów. Znajdź uczelnie w Krakowie, Warszawie, Poznaniu');
 		$this->set('keywords_for_layout', 'studia, szkoła, wyższe, policealne, językowe, kierunki');
-
+		$this->set('glowna', true);
 		
 		}
 }

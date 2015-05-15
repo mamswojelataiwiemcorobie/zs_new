@@ -1,4 +1,12 @@
 <div id= "kierunek">
+	<div id="searchpage">
+		<div id="kierser">
+			<form method="get" action="/courses/znajdz_kierunki/1">
+				<input type="hidden" name="kierunek_id" />
+				<input type="text" name="kierunek" class="s kieronly input-medium form-control"/>
+			</form>
+		</div>
+	</div>
 		<div id="horizontalTab">
 			<ul class="nav nav-tabs">
 				<?php foreach($kategorie as $kik =>$ki):?>
@@ -54,5 +62,5 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div class="col-md-4 r"><?php echo $this->element('column_right');?></div> -->
+	<!-- <div class="col-md-4 r"><?php //echo $this->element('column_right');?></div> -->
 </div>

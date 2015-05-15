@@ -1,0 +1,25 @@
+Uniwersytet Warszawski;hungarystyka
+Uniwersytet Warszawski;filologia romańska
+Uniwersytet Warszawski;dwujęzykowe studia dla tłumaczy
+Uniwersytet im. Adama Mickiewicza w Poznaniu;nie określono specjalności
+Uniwersytet Jagielloński w Krakowie;filologia słowiańska - chorwacka
+Uniwersytet Jagielloński w Krakowie;filologia słowiańska - czeska
+Uniwersytet Jagielloński w Krakowie;filologia słowiańska - serbska
+Uniwersytet Jagielloński w Krakowie;filologia słowiańska - słowacka
+Uniwersytet Jagielloński w Krakowie;filologia hiszpańska
+Uniwersytet Jagielloński w Krakowie;filologia romańska
+Uniwersytet Jagielloński w Krakowie;filologia słowiańska - bułgarska
+Uniwersytet Jagielloński w Krakowie;filologia orientalna - japonistyka
+Uniwersytet Warszawski;bałtystyka 
+Uniwersytet Warszawski;filologia klasyczna 
+Uniwersytet im. Adama Mickiewicza w Poznaniu;nie określono specjalności
+Uniwersytet Warszawski;indywidualne studia międzyobszarowe w obszarach nauk humanistycznych i nauk społecznych [do 2014-03-18 indywidualne międzyobszarowe studia humanistyczne ]
+Uniwersytet Warszawski;indywidualne studia międzyobszarowe w obszarach nauk humanistycznych i nauk społecznych [do 2014-03-18 indywidualne międzyobszarowe studia humanistyczne ]
+Uniwersytet Warszawski;indywidualne studia międzyobszarowe w obszarach nauk ścisłych, nauk przyrodniczych i nauk społecznych [do 2014-03-18 indywidualne międzyobszarowe studia matematyczno-przyrodnicze ]
+Uniwersytet Warszawski;indywidualne studia międzyobszarowe w obszarach nauk ścisłych, nauk przyrodniczych i nauk społecznych [do 2014-03-18 indywidualne międzyobszarowe studia matematyczno-przyrodnicze ]
+Politechnika Śląska;Makrokierunek - automatyka i robot.,elektronika i telekom., informatyka
+Politechnika Warszawska;Makrokierunek - elektronika, informatyka i telekomunikacja
+Uniwersytet Jagielloński w Krakowie;Studia międzykierunkowe: Międzywydziałowe Indywidualne Studia Humanistyczne
+Uniwersytet Śląski w Katowicach;Studia międzykierunkowe: Międzywydziałowe Indywidualne Studia Humanistyczne
+Uniwersytet Śląski w Katowicach;Studia międzykierunkowe: Międzywydziałowe Indywidualne Studia Humanistyczne
+Uniwersytet Mikołaja Kopernika w Toruniu;Sztuka mediów i edukacja wizualna

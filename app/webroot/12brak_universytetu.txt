@@ -1,0 +1,132 @@
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Administracja
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Administracja
+Wyższa Szkoła Zarządzania i Nauk Społecznych im. ks. Emila Szramka w Tychach w likwidacji z siedzibą w Tychach;Administracja
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Administracja
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Administracja
+Gdańska Szkoła Wyższa z siedzibą w Gdańsku;Administracja
+Gdańska Szkoła Wyższa z siedzibą w Gdańsku;Administracja
+Gdańska Szkoła Wyższa z siedzibą w Gdańsku;Administracja
+Wyższa Szkoła Zarządzania w Gdańsku;Administracja
+Wyższa Szkoła Administracji Publicznej imienia Stanisława Staszica w Białymstoku;Administracja
+Szkoła Wyższa Ekonomii i Zarządzania w Łodzi;Administracja
+Wyższa Szkoła Przedsiębiorczości w Warszawie z siedzibą w Warszawie;Administracja
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Administracja
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Architektura wnętrz
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Bezpieczeństwo narodowe
+Wyższa Szkoła Administracji Publicznej imienia Stanisława Staszica w Białymstoku;Bezpieczeństwo narodowe
+Wyższa Szkoła Zarządzania i Nauk Społecznych im. ks. Emila Szramka w Tychach w likwidacji z siedzibą w Tychach;Bezpieczeństwo wewnętrzne
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Bezpieczeństwo wewnętrzne
+Bydgoska Wyższa Szkoła Główna;Bezpieczeństwo wewnętrzne
+Uczelnia Nauk Społecznych;Bezpieczeństwo wewnętrzne
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Bezpieczeństwo wewnętrzne
+Warszawska Wyższa Szkoła Humanistyczna im. Bolesława Prusa (decyzja z dnia 06.07.2006 r.);Dziennikarstwo i komunikacja społeczna
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Ekonomia
+Wyższa Szkoła Administracji Publicznej imienia Stanisława Staszica w Białymstoku;Ekonomia
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;filologia angielska
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;filologia germańska
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;filologia angielsko- rosyjska
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia angielska
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Finanse i rachunkowość
+Szkoła Wyższa Ekonomii i Zarządzania w Łodzi;Finanse i rachunkowość
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Finanse i rachunkowość
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Fizjoterapia
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Grafika
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Grafika
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Informatyka
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Informatyka
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Informatyka
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Informatyka
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Kosmetologia
+Wyższa Szkoła Przedsiębiorczości w Warszawie z siedzibą w Warszawie;Kosmetologia
+Warszawska Wyższa Szkoła Humanistyczna im. Bolesława Prusa (decyzja z dnia 06.07.2006 r.);Kulturoznawstwo
+Uniwersytet Papieski Jana Pawła II w Krakowie;Nauki o rodzinie
+Wyższa Szkoła Biznesu i Nauk o Zdrowiu w Łodzi;Pedagogika
+Wyższa Szkoła Społeczno-Ekonomiczna w Gdańsu z siedzibą w Gdańsku;Pedagogika
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Pedagogika
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Pedagogika
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Pedagogika
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Pedagogika
+Gdańska Szkoła Wyższa z siedzibą w Gdańsku;Pedagogika
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Pedagogika
+Szkoła Wyższa Ekonomii i Zarządzania w Łodzi;Pedagogika
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Pedagogika
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Pedagogika
+Uczelnia Nauk Społecznych;Pedagogika
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Praca socjalna
+Wyższa Szkoła Zawodowa z siedzibą w Kostrzynie nad Odrą;Ratownictwo medyczne
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Stosunki międzynarodowe
+Prawosławne Seminarium Duchowne w Warszawie;Teologia prawosławna
+Szkoła Główna Turystyki i Rekreacji;Turystyka i rekreacja
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Zarządzanie
+Wyższa Szkoła Społeczno-Ekonomiczna w Gdańsu z siedzibą w Gdańsku;Zarządzanie
+Wyższa Szkoła Zarządzania i Nauk Społecznych im. ks. Emila Szramka w Tychach w likwidacji z siedzibą w Tychach;Zarządzanie
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Zarządzanie
+Wyższa Szkoła Zarządzania w Gdańsku;Zarządzanie
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Zarządzanie
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Administracja
+Wyższa Szkoła Bezpieczeństwa Publicznego i Indywidualnego "Apeiron" w Krakowie;Administracja
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Administracja
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Administracja
+Wyższa Szkoła Nauk Prawnych i Administracji im. Leona Petrażyckiego z siedzibą w Wołominie;Administracja
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Architektura wnętrz
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Bezpieczeństwo narodowe
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Bezpieczeństwo wewnętrzne
+Wyższa Szkoła Bankowości i Finansów z siedzibą w katowicach;Bezpieczeństwo wewnętrzne
+Wyższa Szkoła Bezpieczeństwa Publicznego i Indywidualnego "Apeiron" w Krakowie;Bezpieczeństwo wewnętrzne
+Wyższa Szkoła Bezpieczeństwa Publicznego i Indywidualnego "Apeiron" w Krakowie;Bezpieczeństwo wewnętrzne
+Wyższa Szkoła Biznesu i Nauk o Zdrowiu w Łodzi;Dietetyka
+Wyższa Szkoła Nauk Społecznych z siedzibą w Lublinie;Dietetyka
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Dietetyka
+Szkoła Główna Turystyki i Rekreacji;Dietetyka
+Wyższa Szkoła Przedsiębiorczości w Warszawie z siedzibą w Warszawie;Dietetyka
+Wyższa Szkoła Nauk Humanistycznych i Dziennikarstwa w Poznaniu;Doradztwo i coaching
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Dziennikarstwo i komunikacja społeczna
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Dziennikarstwo i komunikacja społeczna
+Uniwersytet Papieski Jana Pawła II w Krakowie;Dziennikarstwo i komunikacja społeczna
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Ekonomia
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;angielska
+Wrocławska Wyższa Szkoła Informatyki Stosowanej we Wrocławiu;Filologia angielska
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Finanse i rachunkowość
+Wyższa Szkoła Bankowości i Finansów z siedzibą w katowicach;Finanse i rachunkowość
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Fizjoterapia
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Fizjoterapia
+Wyższa Szkoła Zarządzania w Gdańsku;Fizjoterapia
+Wyższa Szkoła Nauk Humanistycznych i Dziennikarstwa w Poznaniu;Grafika
+Wrocławska Wyższa Szkoła Informatyki Stosowanej we Wrocławiu;Informatyka
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Kosmetologia
+Wyższa Szkoła Biznesu i Nauk o Zdrowiu w Łodzi;Kosmetologia
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Kosmetologia
+Wyższa Szkoła Zarządzania w Gdańsku;Kosmetologia
+Wyższa Szkoła Nauk Społecznych z siedzibą w Lublinie;Kosmetologia
+Wyższa Szkoła Nauk Humanistycznych i Dziennikarstwa w Poznaniu;Marketing internetowy
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Mechatronika
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Pedagogika
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Pedagogika
+Wyższa Szkoła Zarządzania i Nauk Społecznych im. ks. Emila Szramka w Tychach w likwidacji z siedzibą w Tychach;Pedagogika
+Wyższa Szkoła Zawodowa „Kadry dla Europy” w Poznaniu z siedzibą w Poznaniu;Pedagogika
+Gnieźnieńska Szkoła Wyższa Milenium z siedzibą w Gnieźnie;Pedagogika
+Gnieźnieńska Szkoła Wyższa Milenium z siedzibą w Gnieźnie;Pedagogika
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Pedagogika specjalna
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Studia pomostowe, l. sem. 3
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Studia pomostowe, l. sem. 2
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Studia pomostowe, l. sem. 3
+Wyższa Szkoła Zawodowa z siedzibą w Kostrzynie nad Odrą;Studia pomostowe, l. sem. 2
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Praca socjalna
+Wyższa Szkoła Nauk Społecznych z siedzibą w Lublinie;Praca socjalna
+Uniwersytet Papieski Jana Pawła II w Krakowie;Praca socjalna
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Psychologia stosowana
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Ratownictwo medyczne
+Wyższa Szkoła Nauk Społecznych z siedzibą w Lublinie;Ratownictwo medyczne
+Wyższa Szkoła Nauk Społecznych z siedzibą w Lublinie;Socjologia
+Wyższa Szkoła Nauk Humanistycznych i Dziennikarstwa w Poznaniu;Stosunki międzynarodowe
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Sztuki nowoczesne - Design now!
+Wyższa Szkoła Nauk Społecznych z siedzibą w Lublinie;Techniki dentystyczne
+Wrocławska Wyższa Szkoła Informatyki Stosowanej we Wrocławiu;Turystyka i rekreacja
+Wyższa Szkoła Zawodowa „Kadry dla Europy” w Poznaniu z siedzibą w Poznaniu;Turystyka i rekreacja
+Szkoła Główna Turystyki i Rekreacji;Turystyka i rekreacja
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Wychowanie fizyczne
+Wyższa Szkoła Biznesu w Gorzowie Wlkp.;Zarządzanie
+Wyższa Szkoła Finansów i Administracji w likwidacji z siedzibą w Gdyni;Zarządzanie
+Gnieźnieńska Szkoła Wyższa Milenium z siedzibą w Gnieźnie;Zarządzanie
+Wyższa Szkoła Handlu i Rachunkowości z siedzibą w Poznaniu w likwidacji;Zarządzanie
+Gnieźnieńska Szkoła Wyższa Milenium z siedzibą w Gnieźnie;Zarządzanie

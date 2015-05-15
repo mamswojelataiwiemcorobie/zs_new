@@ -2,7 +2,7 @@
 	<div class="">
 <!-- 		<p class="animated fadeInRightNow notransition text-center topspace20 fadeInRight">Wpisz nazwę uczelni, miasto, kierunek</p>
  -->		<div class="szukaj">
-			<?php echo $this->Form->create('University',array('class'=>'form input-append wyszukiwarka', 'role'=>'form', 'type' => 'GET'));?>
+			<?php echo $this->Form->create('University',array('action' => 'search/1', 'class'=>'form input-append wyszukiwarka', 'role'=>'form', 'type' => 'GET'));?>
 					<input type="text" name="keywords" placeholder="Wpisz nazwe uczelni, miasto, kierunek…" class="input-medium form-control">
 					<button class="btn-lg btn btn-info" type="submit" ><i class="icon-search"></i> Szukaj</button>
 					<!-- <button class="btn" type="button">Options</button> -->
@@ -59,10 +59,10 @@
 			<?php foreach ($uczelnie_wyniki_demo as $uw):?><hr/>
 			<div class="item-low">
 				<div class="header">
-					<a href="/uczelnia/<?php echo $slug=Inflector::slug($uw['University']['nazwa'],'-').'-'.  $uw['University']['id'];?>.html" class="title">
+					<a href="/uczelnia/<?php echo $slug=strtolower(Inflector::slug($uw['University']['nazwa'],'-')).'-'.  $uw['University']['id'];?>.html" class="title">
 						<h4><?php echo $uw['University']['nazwa'];?></h4></a>
-					<span class="url"><?php echo $uw['UniversitiesParameter']['www'];?></span>
 				</div>
+				<span class="url"><?php echo $uw['UniversitiesParameter']['www'];?></span>
 				<address><?php echo $uw['UniversitiesParameter']['adres'];?><br/><?php if ($uw['UniversitiesParameter']['telefon']):?>tel: <?php echo $uw['UniversitiesParameter']['telefon']; endif;?></address>
 			</div>
 			<?php endforeach;?>

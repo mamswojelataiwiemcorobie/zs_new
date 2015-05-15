@@ -1,0 +1,71 @@
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Administracja
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Administracja
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Administracja
+Wyższa Szkoła Administracji Publicznej imienia Stanisława Staszica w Białymstoku;Administracja
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Architektura krajobrazu
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Bezpieczeństwo narodowe
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Biotechnologia
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Dziennikarstwo i komunikacja społeczna
+Uniwersytet Papieski Jana Pawła II w Krakowie;Dziennikarstwo i komunikacja społeczna
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Dziennikarstwo i komunikacja społeczna
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Ekonomia
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Ekonomia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Ekonomia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Ekonomia
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Elektrotechnika
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Europeistyka
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia angielska
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia germańska
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia klasyczna
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia romańska
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia niderlandzka
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia słowiańska
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Filologia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Filologia polska
+Uniwersytet Papieski Jana Pawła II w Krakowie;Filozofia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Filozofia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Gospodarka przestrzenna
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Grafika
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Grafika
+Uniwersytet Papieski Jana Pawła II w Krakowie;Historia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Historia
+Uniwersytet Papieski Jana Pawła II w Krakowie;Historia sztuki
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Historia sztuki
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Informatyka
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Informatyka
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Informatyka
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Inżynieria środowiska
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Kulturoznawstwo
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Matematyka
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Matematyka
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Mechanika i budowa maszyn
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Mediteranistyka
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Międzyobszarowe Indywidualne Studia Humanistyczno-Społeczne
+Uniwersytet Papieski Jana Pawła II w Krakowie;Muzyka kościelna - k. unikatowy
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Muzykologia
+Uniwersytet Papieski Jana Pawła II w Krakowie;Nauki o rodzinie
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Nauki o rodzinie
+Uniwersytet Papieski Jana Pawła II w Krakowie;Ochrona dóbr kultury
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Ochrona środowiska
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Pedagogika
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Pedagogika
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Pedagogika
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Politologia
+Uniwersytet Papieski Jana Pawła II w Krakowie;Praca socjalna
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Prawo w bizesie
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Przyrodoznawstwo i filozofia przyrody - k. unikatowy
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Socjologia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Socjologia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Stosunki międzynarodowe
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Sztuka mediów i edukacja wizualna [do 2012-09-30 Edukacja artystyczna w zakresie sztuk plastycznych]
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Technologia chemiczna
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Technologia chemiczna
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Towaroznawstwo
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Transport
+Szkoła Główna Turystyki i Rekreacji;Turystyka i rekreacja
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Wzornictwo
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Zarządzanie
+Wrocławska Wyższa Szkoła Informatyki Stosowanej we Wrocławiu;Informatyka
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Pedagogika
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Pielęgniarstwo
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Turystyka i rekreacja

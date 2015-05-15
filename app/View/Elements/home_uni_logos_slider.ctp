@@ -10,14 +10,18 @@
 						$universities = $this->requestAction(array('controller' => 'universities',
 
 																	'action' => 'home_slider'));
-						foreach ($universities as $university) :
+						foreach ($universities as $key => $university) :
 
 							$slug = strtolower(Inflector::slug($university['University']['nazwa'],'-'));
 					?>						
 					<li>
 						<div class="boxcontainer">
 							<div class="wrap">
-								<img src="miniatura/255x185/uploads/<?php echo $university['UniversitiesPhoto']['path']; ?>" alt="Logo $university['University']['nazwa']">
+								<?php if($key < 4):?>
+									<img src="miniatura/255x185/uploads/<?php echo $university['UniversitiesPhoto']['path']; ?>" alt="Logo <?php echo $university['University']['nazwa'];?>">
+								<?php else :?>
+									<img class="owl-lazy" data-src="miniatura/255x185/uploads/<?php echo $university['UniversitiesPhoto']['path']; ?>" alt="Logo <?php echo $university['University']['nazwa'];?>">
+								<?php endif;?>
 							</div>
 							<div class="roll" style="opacity: 0;">
 								<div class="wrapcaption">

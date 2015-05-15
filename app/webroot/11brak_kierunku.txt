@@ -1,0 +1,400 @@
+Akademia im. Jana Długosza w Częstochowie;Analityka i kreatywność społeczna
+Uniwersytet Łódzki;Analityka społeczna
+Uniwersytet Łódzki;Analiza i zarządzanie w biznesie
+Uniwersytet Warszawski;Andragogika
+Uniwersytet Marii Curie-Skłodowskiej w Lublinie;animacja kultury
+Uniwersytet Śląski w Katowicach;Animacja społeczno-kulturalna z edukacją kulturalną
+Uniwersytet Warszawski;Artes liberales
+Uniwersytet Mikołaja Kopernika w Toruniu;Audiofonolgia
+Warszawski Uniwersytet Medyczny;Audiofonologia z protetyką słuchu [do 2014-05-25 Audiofonolgia]
+Uniwersytet im. Adama Mickiewicza w Poznaniu;UAM
+Uniwersytet Śląski w Katowicach;Bezpieczeństwo narodowe i międzynarodowe
+Państwowa Wyższa Szkoła Zawodowa w Raciborzu;Bezpieczeństwo państwa
+Uniwersytet Warszawski;bioinformatyka i biologia systemów [do 2012-09-30 Makrokierunek bioinformatyka i biologia systemów]
+Uniwersytet Łódzki;Biomonitoring
+Śląski Uniwersytet Medyczny w Katowicach;Biotechnologia medyczna [do 2012-09-30 Biotechnologia]
+Uniwersytet Łódzki;Business management
+Uniwersytet Łódzki;Chemia kosmetyczna
+Uniwersytet Mikołaja Kopernika w Toruniu;Chemia kosmetyczna
+Uniwersytet Wrocławski;CHEMISTRY
+Uniwersytet Artystyczny w Poznaniu;Design krajobrazu [do 2014-09-28 sztuka projektowania krajobrazu]
+Uniwersytet im. Adama Mickiewicza w Poznaniu;Dialog i doradztwo społeczne
+Uniwersytet Śląski w Katowicach;Doradztwo filozoficzne i coaching
+Uniwersytet Śląski w Katowicach;Doradztwo polityczne i publiczne
+Uniwersytet Wrocławski;Dziedzictwo kultury materialnej - ochrona, promocja, gospodarowanie
+Uniwersytet Warszawski;Dziennikarstwo i medioznawstwo
+Państwowa Wyższa Szkoła Zawodowa w Nowym Sączu;e-Administracja
+Uniwersytet Szczeciński;Economics and IT Applications
+Uniwersytet Łódzki;Ekonomia Ekobiznes
+Uniwersytet w Białymstoku;Ekonomiczno-prawny
+Uniwersytet Szczeciński;Ekonomiczno-prawny
+Akademia Obrony Narodowej;Ekonomika obronności
+Uniwersytet Jagielloński w Krakowie;Elektroniczne przetwarzanie informacji
+Uniwersytet Warszawski;energetyka i chemia jądrowa [do 2012-09-30 Makrokierunek energetyka i chemia jądrowa]
+Uniwersytet Opolski;English in Public Communication
+Uniwersytet Opolski;English Philology [do 2014-09-30 Filologia angielska]
+Uniwersytet Gdański;Etnofilologia kaszubska
+Uniwersytet Mikołaja Kopernika w Toruniu;Etnologia - antropologia kulturowa [do 2012-09-30 Etnologia]
+Uniwersytet Jagielloński w Krakowie;Etnologia i antropologia kulturowa [do 2012-09-30 Etnologia]
+Uniwersytet Warszawski;Etnologia i antropologia kulturowa [do 2012-09-30 Etnologia]
+Uniwersytet Wrocławski;Etnologia i antropologia kulturowa [do 2013-09-30 Etnologia]
+Uniwersytet Gdański;European and International Business Law nad EU Administration
+Uniwersytet Wrocławski;EUROPEAN CULTURES
+Uniwersytet Warszawski;europeistyka - studia europejskie [do 2012-09-30 Europeistyka]
+Uniwersytet Zielonogórski;Europeistyka i stosunki transgraniczne
+Uniwersytet Warszawski;Europeistyka w zakresie europejskich procesów integracyjnych [do 2012-09-30 Europeistyka]
+Uniwersytet Warszawski;Europeistyka w zakresie realizacji polityk Unii Europejskiej
+Uniwersytet Jana Kochanowskiego w Kielcach;Europejskie studia kulturowe
+Uniwersytet im. Adama Mickiewicza w Poznaniu;Filmoznawstwo i kultura mediów [do 2012-09-30 Filmoznawstwo]
+Uniwersytet Jagielloński w Krakowie;Filmoznawstwo i wiedza o nowych mediach
+Uniwersytet Łódzki;filologia hiszpańska
+Uniwersytet Łódzki;filologia słowiańska
+Uniwersytet Łódzki;filologia romańska
+Uniwersytet Łódzki;filologia klasyczna i studia śródziemnomorskie
+Uniwersytet Marii Curie-Skłodowskiej w Lublinie;Slawistyka
+Uniwersytet Marii Curie-Skłodowskiej w Lublinie;Filologia iberyjska
+Uniwersytet Marii Curie-Skłodowskiej w Lublinie;Filologia romańska
+Uniwersytet Zielonogórski;filologia romańska
+Politechnika Śląska;Język angielski
+Politechnika Śląska;Język włoski
+Politechnika Śląska;Język francuski
+Politechnika Śląska;język niemiecki
+Uniwersytet im. Adama Mickiewicza w Poznaniu;bułgarska, chorwacka, klasyczna, serbska, słowiańska i polska, czeska, studia śródziemnomorskie
+Uniwersytet im. Adama Mickiewicza w Poznaniu;arabistyka, litewska, łotewska, duńska, germańska, hiszpańska, koreańska, nowogrecka, romańska
+Państwowa Wyższa Szkoła Zawodowa w Raciborzu;filologia słowiańska
+Państwowa Wyższa Szkoła Techniczno-Ekonomiczna im. ks. Bronisława Markiewicza w Jarosławiu;filologia
+Uniwersytet Wrocławski;filologia klasyczna i kultura śródziemnomorska
+Uniwersytet Wrocławski;niderlandystyka
+Uniwersytet Wrocławski;filologia francuska
+Uniwersytet Wrocławski;filologia hiszpańska
+Uniwersytet Wrocławski;filologia serbska i chorwacka
+Uniwersytet Wrocławski;judaistyka
+Uniwersytet Wrocławski;Italianistyka
+Uniwersytet Warmińsko-Mazurski w Olsztynie;filologia rosyjska z językiem angielskim
+Uniwersytet Warmińsko-Mazurski w Olsztynie;filologia specjalność nauczycielska w zakresie języka angielskiego
+Uniwersytet Warmińsko-Mazurski w Olsztynie;filologia specjalność nauczycielska w zakresie języka niemieckiego
+Uniwersytet Warmińsko-Mazurski w Olsztynie;specjalność nauczycielska w zakresie języka rosyjskiego
+Uniwersytet Warmińsko-Mazurski w Olsztynie;specjalność nauczycielska w zakresie języka rosyjskiego i języka angielskiego
+Uniwersytet Warmińsko-Mazurski w Olsztynie;specjalność nauczycielska w zakresie języka ukraińskiego i języka angielskiego
+Uniwersytet Warmińsko-Mazurski w Olsztynie;specjalność nauczycielska w zakresie języka angielskiego i wiedza o kulturze
+Uniwersytet Warmińsko-Mazurski w Olsztynie;specjalność nauczycielska w zakresie języka niemieckiego i wiedza o kulturze
+Uniwersytet Pedagogiczny im. Komisji Edukacji Narodowej w Krakowie;filologia romańska
+Uniwersytet Pedagogiczny im. Komisji Edukacji Narodowej w Krakowie;język hiszpański
+Uniwersytet Pedagogiczny im. Komisji Edukacji Narodowej w Krakowie;język włoski
+Uniwersytet Pedagogiczny im. Komisji Edukacji Narodowej w Krakowie;filologia hiszpańska
+Państwowa Wyższa Szkoła Zawodowa w Nowym Sączu;angielski; rosyjski; niemiecki
+Państwowa Wyższa Szkoła Zawodowa w Nysie;język biznesu angielski
+Uniwersytet Przyrodniczo-Humanistyczny w Siedlcach;anglistyka
+Uniwersytet Przyrodniczo-Humanistyczny w Siedlcach;rusycystyka
+Uniwersytet Przyrodniczo-Humanistyczny w Siedlcach;germanistyka
+Uniwersytet Przyrodniczo-Humanistyczny w Siedlcach;język rosyjski w biznesie
+Uniwersytet Przyrodniczo-Humanistyczny w Siedlcach;język niemiecki w biznesie
+Uniwersytet Śląski w Katowicach;języki stosowane: język francuski i język angielski
+Uniwersytet Śląski w Katowicach;język francuski
+Uniwersytet Śląski w Katowicach;język włoski z programem tłumaczeniowym
+Uniwersytet Śląski w Katowicach;język hiszpański
+Uniwersytet Śląski w Katowicach;języki stosowane: język włoski i język angielski z programem tłumaczeniowym
+Uniwersytet Śląski w Katowicach;języki stosowane: język hiszpański i język portugalski z programem tłumaczeniowym
+Uniwersytet Śląski w Katowicach;język rosyjski w mediach i komunikacji społecznej
+Państwowa Wyższa Szkoła Zawodowa w Chełmie;filologia słowiańska
+Akademia Pomorska w Słupsku;angielska
+Akademia Pomorska w Słupsku;germańska
+Akademia Pomorska w Słupsku;rosyjska
+Państwowa Wyższa Szkoła Zawodowa im. Angelusa Silesiusa w Wałbrzychu;język niemiecki
+Państwowa Wyższa Szkoła Zawodowa w Wałczu;język angielski
+Państwowa Wyższa Szkoła Zawodowa w Wałczu;język niemiecki
+Uniwersytet w Białymstoku;język angielski stosowany, z hiszpańskim
+Uniwersytet w Białymstoku;filologia rosyjska - komunikacja językowa w sferze biznesu
+Uniwersytet w Białymstoku;filologia francuska
+Uniwersytet w Białymstoku;język francuski stosowany, z hiszpańskim
+Uniwersytet w Białymstoku;filologia rosyjska z językiem angielskim
+Uniwersytet w Białymstoku;filologia białoruska z językiem angielskim
+Uniwersytet w Białymstoku;język angielski stosowany z językiem rosyjskim
+Uniwersytet w Białymstoku;język francuski (od podstaw
+Państwowa Wyższa Szkoła Zawodowa w Tarnowie;filologia romańska
+Uniwersytet im. Adama Mickiewicza w Poznaniu;Filologia
+Uniwersytet Mikołaja Kopernika w Toruniu;filologia romańska
+Uniwersytet Mikołaja Kopernika w Toruniu;hellenistyka
+Uniwersytet Mikołaja Kopernika w Toruniu;japonistyka
+Uniwersytet Mikołaja Kopernika w Toruniu;lingwistyka stosowana: język francuski z językiem arabskim
+Uniwersytet Mikołaja Kopernika w Toruniu;wiedza o kulturze śródziemnomorskiej
+Uniwersytet Mikołaja Kopernika w Toruniu;lingwistyka stosowana: język włoski z językiem hiszpańskim
+Uniwersytet Mikołaja Kopernika w Toruniu;lingwistyka stosowana (język francuski z językiem hiszpańskim
+Uniwersytet Szczeciński;filologia romańska z językiem włoskim
+Uniwersytet Szczeciński;Filologia romańska z językiem obcym do wyboru
+Uniwersytet Szczeciński;Skandynawistyka - studia norweskie
+Akademia Techniczno-Humanistyczna w Bielsku-Białej;filologia hiszpańska
+Akademia Techniczno-Humanistyczna w Bielsku-Białej;filologia słowiańska
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;lingwistyka stosowana - angielski z arabskim
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;lingwistyka stosowana - angielski z niemieckim
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;lingwistyka stosowana - angielski z rosyjskim
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;lingwistyka stosowana - niemiecki z rosyjskim
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;germanistyka ze znajomością języka niemieckiego
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;germanistyka bez znajomości języka niemieckiego
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;lingwistyka stosowana angielski z niemieckim bez znajomości języka niemieckiego
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;lingwistyka stosowana angielski z niemieckim ze znajomością języka niemieckiego
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;filologia rosyjska bez znajmości języka rosyjskiego
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;filologia rosyjska ze znajmością języka rosyjskiego
+Politechnika Częstochowska;angielski język biznesu
+Państwowa Wyższa Szkoła Zawodowa im. Stanisława Pigonia w Krośnie;Filologia angielska, Filologia germańska, Język i kultura Rosji, Dwujęzykowe studia dla tłumaczy
+Państwowa Wyższa Szkoła Zawodowa im. Stanisława Pigonia w Krośnie;Język rosyjski dla biznesu
+Państwowa Szkoła Wyższa im. Papieża Jana Pawła II w Białej Podlaskiej;Język Angielski
+Państwowa Wyższa Szkoła Zawodowa w Płocku;Języki europejskie i kultury - j.angielski z j.niemieckim
+Państwowa Wyższa Szkoła Zawodowa w Płocku;Języki europejskie i kultury - j.angielski z j.rosyjskim
+Państwowa Wyższa Szkoła Zawodowa w Płocku;Asystent językowy w biznesie (j.angielski
+Państwowa Wyższa Szkoła Zawodowa w Płocku;Asystent językowy w biznesie (j.niemiecki
+Państwowa Wyższa Szkoła Zawodowa w Płocku;Asystent językowy w biznesie (j.rosyjski
+Podhalańska Państwowa Wyższa Szkoła Zawodowa w Nowym Targu;Filologia
+Państwowa Wyższa Szkoła Zawodowa w Koninie;filologia angielska, filologia germańska
+Państwowa Wyższa Szkoła Zawodowa w Koninie;filologia angielska, filologia germańska
+Państwowa Wyższa Szkoła Zawodowa im. rotmistrza Witolda Pileckiego w Oświęcimiu;Filologia germańska z językiem angielskim
+Państwowa Wyższa Szkoła Zawodowa im. Jakuba z Paradyża w Gorzowie Wielkopolskim;język niemiecki
+Państwowa Wyższa Szkoła Zawodowa im. Jakuba z Paradyża w Gorzowie Wielkopolskim;Język niemiecki z językiem włoskim
+Państwowa Wyższa Szkoła Zawodowa im. Jakuba z Paradyża w Gorzowie Wielkopolskim;Język włoski z językiem niemieckim
+Państwowa Wyższa Szkoła Zawodowa im. Jakuba z Paradyża w Gorzowie Wielkopolskim;język angielski
+Państwowa Wyższa Szkoła Zawodowa im. Jakuba z Paradyża w Gorzowie Wielkopolskim;język angielski z językiem rosyjskim
+Państwowa Wyższa Szkoła Zawodowa im. Jakuba z Paradyża w Gorzowie Wielkopolskim;język włoski
+Państwowa Wyższa Szkoła Zawodowa im. Jana Amosa Komeńskiego w Lesznie;język angielski
+Państwowa Wyższa Szkoła Zawodowa im. Jana Amosa Komeńskiego w Lesznie;język niemiecki
+Państwowa Wyższa Szkoła Zawodowa im. Jana Amosa Komeńskiego w Lesznie;język hiszpański
+Uniwersytet Opolski;filologia romańska od podstaw
+Uniwersytet Opolski;języki obce w turystyce
+Uniwersytet Opolski;język biznesu
+Uniwersytet Opolski;filologia rosyjska od podstaw
+Uniwersytet Opolski;języki obce w turystyce
+Uniwersytet Warszawski;brak
+Uniwersytet im. Adama Mickiewicza w Poznaniu;UAM
+Uniwersytet Mikołaja Kopernika w Toruniu;filologia klasyczna i studia śródziemnomorskie
+Uniwersytet Warszawski;brak
+Uniwersytet im. Adama Mickiewicza w Poznaniu;filologia polska jako obca
+Uniwersytet Gdański;filologia romańska
+Uniwersytet Warszawski;filologia romańska
+Uniwersytet Śląski w Katowicach;Filologia słowiańska
+Uniwersytet Opolski;Filologia słowiańska
+Uniwersytet Warszawski;filologia ugrofińska
+Uniwersytet Ekonomiczny w Poznaniu;Finance
+Uniwersytet Łódzki;Finanse i inwestycje
+Uniwersytet Ekonomiczny w Poznaniu;Finanse i rachunkowość biznesu [do 2014-09-30 Finanse i rachunkowość]
+Uniwersytet Warszawski;Finanse, inwestycje i rachunkowość [do 2012-09-30 Finanse i rachunkowość]
+Uniwersytet Ekonomiczny w Katowicach;Finanse menedżerskie
+Państwowa Wyższa Szkoła Zawodowa im. Witelona w Legnicy;Finanse, rachunkowość i podatki
+Uniwersytet Warszawski;Finanse, rachunkowość i ubezpieczenia [do 2012-09-30 Finanse i rachunkowość]
+Uniwersytet Wrocławski;Genetyka i biologia eksperymentalna
+Uniwersytet Szczeciński;Geoanalityka
+Uniwersytet Łódzki;Geomonitoring
+Uniwersytet Opolski;Germanische Philologie [do 2014-09-30 Filologia germańska]
+Uniwersytet Warszawski;Germanistyka
+Szkoła Główna Handlowa w Warszawie;Global Business, Finance and Governance
+Uniwersytet Szczeciński;Gospodarka nieruchomościami
+Uniwersytet Ekonomiczny w Katowicach;Gospodarka turystyczna [do 2010-02-15 Gospodarka turystyczna]
+Uniwersytet Warszawski;Historia i kultura Żydów
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;Humanistyka drugiej generacji
+Uniwersytet im. Adama Mickiewicza w Poznaniu;Humanistyka w szkole - polonistyczno-historyczne studia nauczycielskie
+Uniwersytet Warszawski;iberystyka [do 2012-09-30 Kulturoznawstwo]
+Uniwersytet Gdański;iberystyka
+Uniwersytet Wrocławski;indywidualne studia informatyczno-matematyczne
+Uniwersytet Warszawski;indywidualne studia międzyobszarowe w obszarach nauk humanistycznych i nauk społecznych [do 2014-03-18 indywidualne międzyobszarowe studia humanistyczne ]
+Uniwersytet Warszawski;indywidualne studia międzyobszarowe w obszarach nauk humanistycznych i nauk społecznych [do 2014-03-18 indywidualne międzyobszarowe studia humanistyczne ]
+Uniwersytet Warszawski;indywidualne studia międzyobszarowe w obszarach nauk ścisłych, nauk przyrodniczych i nauk społecznych [do 2014-03-18 indywidualne międzyobszarowe studia matematyczno-przyrodnicze ]
+Uniwersytet Warszawski;indywidualne studia międzyobszarowe w obszarach nauk ścisłych, nauk przyrodniczych i nauk społecznych [do 2014-03-18 indywidualne międzyobszarowe studia matematyczno-przyrodnicze ]
+Uniwersytet Śląski w Katowicach;Informacja w instytucjach e-społeczeństwa
+Uniwersytet Jana Kochanowskiego w Kielcach;Informacja w przestrzeni publicznej
+Uniwersytet Jagielloński w Krakowie;Informatyka analityczna
+Państwowa Wyższa Szkoła Zawodowa w Wałczu;Informatyka w biznesie i administracji
+Uniwersytet Łódzki;Informatyka w języku angielskim
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;Innowacyjność i zarządzanie sferą publiczną
+Uniwersytet Jagielloński w Krakowie;International Relations and Area Studies
+Uniwersytet Warszawski;inżynieria nanostruktur [do 2012-09-30 Makrokierunek inżynieria nanostruktur]
+Akademia Obrony Narodowej;Inżynieria systemów bezpieczeństwa
+Uniwersytet Szczeciński;Italianistyka z elementami studiów nad chrześcijaństwem
+Uniwersytet Opolski;Język polski, specjalność nauczycielska z logopedią
+Uniwersytet Jagielloński w Krakowie;Język polski w komunikacji społecznej
+Uniwersytet Jagielloński w Krakowie;Judaistyka
+Uniwersytet im. Adama Mickiewicza w Poznaniu;Kierunek prawno-ekonomiczny
+Uniwersytet Ekonomiczny w Poznaniu;kierunek prawno-ekonomiczny
+Uniwersytet Szczeciński;Kognitywistyka komunikacji
+Uniwersytet Mikołaja Kopernika w Toruniu;Komparatystyka literacko-kulturowa
+Akademia Muzyczna im. Karola Szymanowskiego w Katowicach;Kompozycja, dyrygentura i teoria muzyki
+Uniwersytet Zielonogórski;Komunikacja biznesowa w języku rosyjskim
+Uniwersytet Śląski w Katowicach;Komunikacja promocyjna i kryzysowa
+Uniwersytet Wrocławski;Komunikacja wizerunkowa
+Uniwersytet Mikołaja Kopernika w Toruniu;krytyka artystyczna
+Uniwersytet Wrocławski;Kultura i praktyka tekstu: twórcze pisanie i edytorstwo
+Uniwersytet Opolski;Kultura śródziemnomorska
+Uniwersytet Warszawski;kulturoznawstwo - cywilizacja śródziemnomorska [do 2012-09-30 Kulturoznawstwo]
+Uniwersytet Warszawski;kulturoznawstwo - wiedza o kulturze [do 2012-09-30 Kulturoznawstwo]
+Akademia im. Jana Długosza w Częstochowie;Kulturoznawstwo europejskie
+Uniwersytet Warszawski;kulturoznawstwo Europy Środkowo -Wschodniej [do 2012-09-30 Kulturoznawstwo]
+Uniwersytet Śląski w Katowicach;Kultury mediów
+Uniwersytet Łódzki;Lingwistyka dla biznesu
+Uniwersytet Marii Curie-Skłodowskiej w Lublinie;UMCS
+Uniwersytet Warszawski;nauczycielska i tłumaczeniowa
+Uniwersytet Wrocławski;LL.B. International and European Law
+Uniwersytet Warszawski;Logistyka mediów
+Uniwersytet Jagielloński w Krakowie;Makrokierunek - biologia i geografia
+Uniwersytet Jagielloński w Krakowie;Makrokierunek - biologia i geologia
+Uniwersytet Wrocławski;Makrokierunek - dyplomacja europejska
+Uniwersytet Łódzki;Management and Finance
+Uniwersytet Łódzki;Marketing
+Uniwersytet Ekonomiczny w Krakowie;marketing i komunikacja rynkowa
+Uniwersytet Jagielloński w Krakowie;Matematyka komputerowa
+Uniwersytet Szczeciński;Media i cywilizacja
+Uniwersytet Szczeciński;Mediacja międzykulturowa
+Akademia Sztuk Pięknych im. Eugeniusza Gepperta we Wrocławiu;Mediacja Sztuki
+Szkoła Główna Handlowa w Warszawie;Metody ilościowe w ekonomii i systemy informacyjne
+Uniwersytet Warszawski;UW
+Uniwersytet Warszawski;UW
+Uniwersytet Łódzki;Międzynarodowe studia kulturowe
+Uniwersytet Śląski w Katowicach;Międzynarodowe studia polskie
+Uniwersytet Łódzki;Międzyobszarowe Indywidualne Studia Humanistyczno-Społeczne
+Uniwersytet Wrocławski;Międzyobszarowe Indywidualne Studia Humanistyczne i Społeczne [do 2013-09-30 Studia międzykierunkowe: Międzywydziałowe Indywidualne Studia Humanistyczne]
+Uniwersytet Jagielloński w Krakowie;Migracje międzynarodowe
+Uniwersytet Wrocławski;Militarioznawstwo
+Akademia Muzyczna im. Grażyny i Kiejstuta Bacewiczów w Łodzi;Musical i choreografia
+Akademia Muzyczna im. Karola Szymanowskiego w Katowicach;muzyka koscielna
+Uniwersytet Warszawski;specjalności główne: nauczanie j.angielskiego,nauczanie j.francuskiego,nauczanie j.niemieckiego 
+Uniwersytet Kardynała Stefana Wyszyńskiego w Warszawie;Nauki ścisłe
+Uniwersytet Jagielloński w Krakowie;filologia hiszpańska
+Uniwersytet Jagielloński w Krakowie;filologia orientalna - japonistyka
+Uniwersytet Jagielloński w Krakowie;filologia romańska
+Uniwersytet Jagielloński w Krakowie;filologia słowiańska - bułgarska
+Uniwersytet Jagielloński w Krakowie;filologia słowiańska - chorwacka
+Uniwersytet Jagielloński w Krakowie;filologia słowiańska - czeska
+Uniwersytet Jagielloński w Krakowie;filologia słowiańska - serbska
+Uniwersytet Jagielloński w Krakowie;filologia słowiańska - słowacka
+Uniwersytet Jagielloński w Krakowie;filologia angielska z językiem niemieckim
+Uniwersytet Jagielloński w Krakowie;filologia germańska z językiem angielskim
+Uniwersytet Jagielloński w Krakowie;filologia francuska
+Uniwersytet Jagielloński w Krakowie;filologia słowiańska 
+Uniwersytet Jagielloński w Krakowie;filologia orientalna - sinologia
+Uniwersytet Jagielloński w Krakowie;filologia orientalna - indologia
+Uniwersytet Gdański;Niemcoznawstwo
+Państwowa Wyższa Szkoła Zawodowa im. Jana Grodka w Sanoku;Nowe media, reklama, kultura współczesna
+Akademia Obrony Narodowej;Obronność
+Uniwersytet Opolski;Ochrona dziedzictwa kulturowego
+Uniwersytet Zielonogórski;Ochrona i bezpieczeństwo dziedzictwa kulturowego
+Uniwersytet Łódzki;Okcydentalistyka
+Uniwersytet Śląski w Katowicach;Oligofrenopedagogika z arteterapią
+Uniwersytet Mikołaja Kopernika w Toruniu;Optyka okularowa z elementami optometrii
+Uniwersytet Warszawski;UW
+Uniwersytet Warszawski;Pedagogika małego dziecka
+Uniwersytet Warszawski;Pedagogika specjalna i edukacja społeczna
+Uniwersytet Warszawski;pedagogika społeczno - wychowawcza [do 2012-09-30 Pedagogika]
+Uniwersytet Gdański;Pedagogika wczesnej edukacji
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;Pedagogika wczesnoszkolna
+Uniwersytet Medyczny w Łodzi;Studia pomostowe, l. sem. 2
+Uniwersytet Zielonogórski;Polityka publiczna
+Uniwersytet Mikołaja Kopernika w Toruniu;Polityka publiczna
+Uniwersytet Jagielloński w Krakowie;Polonistyka - komparatystyka
+Uniwersytet Medyczny w Łodzi;Studia pomostowe, l. sem. 2
+Uniwersytet Marii Curie-Skłodowskiej w Lublinie;Prawno-biznesowy
+Uniwersytet im. Adama Mickiewicza w Poznaniu;Prawo europejskie
+Uniwersytet Jagielloński w Krakowie;Prawo własności intelektualnej i nowych mediów
+Uniwersytet Śląski w Katowicach;Projektowanie gier i przestrzeni wirtualnej
+Państwowa Wyższa Szkoła Wschodnioeuropejska w Przemyślu;Projektowanie graficzne
+Uniwersytet Artystyczny w Poznaniu;projektowanie mebla
+Akademia Sztuk Pięknych w Gdańsku;Projektowanie w krajobrazie kulturowym
+Uniwersytet Śląski w Katowicach;Przedsiębiorczość
+Uniwersytet Ekonomiczny w Katowicach;Przedsiębiorczość i finanse
+Uniwersytet Szczeciński;Przedsiębiorczość i inwestycje
+Uniwersytet Gdański;Przyroda
+Uniwersytet Marii Curie-Skłodowskiej w Lublinie;Public relations i doradztwo medialne
+Uniwersytet Wrocławski;publikowanie cyfrowe i sieciowe
+Uniwersytet Łódzki;Rachunkowość
+Uniwersytet Łódzki;Regionalistyka kulturowa
+Uniwersytet Jagielloński w Krakowie;Relacje międzykulturowe
+Uniwersytet Jagielloński w Krakowie;Religioznawstwo – interdyscyplinarne studia nad religiami i kulturami świata [do 2014-09-30 Religioznawstwo]
+Uniwersytet Warszawski;Samorząd terytorialny i polityka regionalna [do 2012-09-30 Makrokierunek samorząd terytorialny i polityka regionalna]
+Uniwersytet Gdański;Sinologia
+Uniwersytet Gdański;Skandynawistyka
+Uniwersytet Gdański;Slawistyka
+Uniwersytet Warszawski;slawistyka
+Uniwersytet Wrocławski;socjologia grup dyspozycyjnych
+Uniwersytet Warszawski;socjologia stosowana i antropologia społeczna [do 2012-09-30 Socjologia]
+Uniwersytet Śląski w Katowicach;Stosowane nauki społeczne
+Uniwersytet Warszawski;studia amerykanistyczne [do 2012-09-30 Kulturoznawstwo]
+Uniwersytet Jagielloński w Krakowie;Studia azjatyckie
+Uniwersytet Mikołaja Kopernika w Toruniu;Studia Bałtyckie
+Uniwersytet Warszawski;studia filologiczno - kulturoznawcze [do 2012-09-30 Makrokierunek filologiczno-kulturoznawczy]
+Uniwersytet Mikołaja Kopernika w Toruniu;Studia miejskie
+Uniwersytet Łódzki;Studia międzykierunkowe: Międzykierunkowe Indywidualne Studia Matematyczno-Przyrodnicze
+Uniwersytet Śląski w Katowicach;Studia międzykierunkowe: Międzywydziałowe Indywidualne Studia Humanistyczne
+Uniwersytet Śląski w Katowicach;Studia międzykierunkowe: Międzywydziałowe Indywidualne Studia Humanistyczne
+Uniwersytet Jagielloński w Krakowie;Studia międzykierunkowe: Międzywydziałowe Indywidualne Studia Humanistyczne
+Uniwersytet Mikołaja Kopernika w Toruniu;Studia międzykierunkowe: Międzywydziałowe Indywidualne Studia Humanistyczne
+Uniwersytet Śląski w Katowicach;Studia międzykierunkowe: Międzywydziałowe Indywidualne Studia Matematyczno-Przyrodnicze
+Uniwersytet Jagielloński w Krakowie;UJ
+Uniwersytet Mikołaja Kopernika w Toruniu;studia międzyobszarowe matematyka i ekonomia [do 2012-09-30 Studia międzykierunkowe: matematyka i ekonomia]
+Uniwersytet Warszawski;Studia nad słowiańszczyzną wschodnią
+Uniwersytet Szczeciński;Studia nad wojną i wojskowością
+Uniwersytet Łódzki;Studia polsko-niemieckie
+Uniwersytet Marii Curie-Skłodowskiej w Lublinie;Science and technology
+Uniwersytet Łódzki;Studia regionalne
+Uniwersytet Śląski w Katowicach;Studia regionalne
+Akademia Sztuk Pięknych im. Eugeniusza Gepperta we Wrocławiu;Sztuka i Wzornictwo Ceramiki
+Akademia Sztuk Pięknych im. Eugeniusza Gepperta we Wrocławiu;Sztuka i Wzornictwo Szkła
+Uniwersytet Śląski w Katowicach;Sztuka pisania
+Uniwersytet Rzeszowski;Sztuki wizualne [do 2012-09-30 Edukacja artystyczna w zakresie sztuk plastycznych]
+Uniwersytet Łódzki;Technologie informatyczne w logistyce
+Uniwersytet Marii Curie-Skłodowskiej w Lublinie;Turystyka historyczna
+Uniwersytet Śląski w Katowicach;Turystyka historyczna
+Uniwersytet Warszawski;ukrainistyka
+Uniwersytet Warszawski;Undergraduate Programme in International Relations
+Akademia Marynarki Wojennej im. Bohaterów Westerplatte;Wojsko w systemie służb publicznych
+Uniwersytet Muzyczny Fryderyka Chopina w Warszawie;Wokalistka
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;Zarządzanie dziedzictwem kulturowym i ochrona zabytków [do 2013-09-30 Ochrona dóbr kultury]
+Akademia Obrony Narodowej;Zarządzanie i dowodzenie
+Uniwersytet Jagielloński w Krakowie;Zarządzanie informacją
+Uniwersytet Mikołaja Kopernika w Toruniu;Zarządzanie informacją i bibliologia [do 2012-09-30 Informacja naukowa i bibliotekoznawstwo]
+Uniwersytet Gdański;Zarządzanie instytucjami artystycznymi
+Uniwersytet Jagielloński w Krakowie;Zarządzanie kulturą i mediami
+Uniwersytet im. Adama Mickiewicza w Poznaniu;Zarządzanie państwem
+Uniwersytet Łódzki;Zarządzanie publiczne
+Uniwersytet im. Adama Mickiewicza w Poznaniu;Zarządzanie środowiskiem
+Uniwersytet Opolski;Zarządzanie wiedzą z infobrokeringiem
+Uniwersytet Łódzki;Zarządzanie zasobami ludzkimi
+Wyższa Szkoła Bankowa w Poznaniu;Bezpieczeństwo w biznesie i administracji
+Warszawska Szkoła Filmowa z siedzibą w Warszawie;Film i multimedia
+Akademia Humanistyczno-Ekonomiczna w Łodzi;germańska
+Ateneum - Szkoła Wyższa w Gdańsku;filologia hiszpańska
+Wyższa Szkoła Języków Obcych im. Samuela Bogumiła Lindego z siedzibą w Poznaniu;filologia hiszpańska
+Wyższa Szkoła Języków Obcych im. Samuela Bogumiła Lindego z siedzibą w Poznaniu;sinologia
+Wszechnica Polska Szkoła Wyższa w Warszawie;filologia hiszpańska
+Wyższa Szkoła Humanitas w Sosnowcu;Angielska
+Wyższa Szkoła Studiów Międzynarodowych w Łodzi;filologia hiszpańska
+Wyższa Szkoła Turystyki i Języków Obcych w Warszawie;angielska
+Szkoła Wyższa Psychologii Społecznej w Warszawie;Iberystyka
+Szkoła Wyższa Psychologii Społecznej w Warszawie;italianistyka
+Wyższa Szkoła Bankowa we Wrocławiu;Filologia
+Akademia Finansów i Biznesu Vistula;Filologia
+Społeczna Akademia Nauk z siedzibą w Łodzi;Filologia
+Wyższa Szkoła Filologiczna we Wrocławiu;filologia hiszpańska
+Wyższa Szkoła Filologiczna we Wrocławiu;filologia hiszpańska
+Społeczna Akademia Nauk z siedzibą w Łodzi;angielska
+Gliwicka Wyższa Szkoła Przedsiębiorczości w Gliwicach;Angielski Język Biznesu 
+Kujawsko-Pomorska Szkoła Wyższa w Bydgoszczy;filologia
+Lingwistyczna Szkoła Wyższa w Warszawie;języka angielski
+Społeczna Akademia Nauk z siedzibą w Łodzi;Filologia
+Wyższa Szkoła Europejska im. Ks. Józefa Tischnera w Krakowie;Grafika reklamowa i multimedia
+Górnośląska Wyższa Szkoła Przedsiębiorczości im. Karola Goduli w Chorzowie;gry i grafika interaktywna
+Górnośląska Wyższa Szkoła Przedsiębiorczości im. Karola Goduli w Chorzowie;Modern business - zarządzanie i rachunkowość
+Radomska Szkoła Wyższa;Studia pomostowe, l. sem. 2
+Radomska Szkoła Wyższa;Studia pomostowe, l. sem. 3
+Wyższa Szkoła Medyczna w Legnicy z siedzibą w Legnicy;Studia pomostowe, l. sem. 2
+Wyższa Szkoła Bankowa we Wrocławiu;Prawo w bizesie
+Akademia Polonijna w Częstochowie;Prawo w bizesie
+Wyższa Szkoła Bankowa w Poznaniu;Prawo w biznesie
+Wyższa Szkoła Bankowa w Toruniu;Prawo w biznesie
+Wyższa Szkoła Bankowa w Poznaniu;Prawo w biznesie
+Wyższa Szkoła Bankowa w Toruniu;Prawo w biznesie
+Wyższa Szkoła Bankowa w Gdańsku;Prawo w biznesie
+Wyższa Szkoła Bankowa w Poznaniu;Prawo w biznesie
+Szkoła Wyższa Psychologii Społecznej w Warszawie;Prawo w biznesie
+Wyższa Szkoła Administracji i Biznesu im. Eugeniusza Kwiatkowskiego w Gdyni;projektowanie aktywności społecznej
+Szkoła Wyższa Psychologii Społecznej w Warszawie;Psychokryminalistyka
+Wyższa Szkoła Bankowa w Toruniu;Psychologia w biznesie
+Wyższa Szkoła Bankowa w Toruniu;psychologia w biznesie
+Collegium Humanitatis z siedzibą w Świdnicy w likwidacji;stosowana psychologia zwierząt
+Szkoła Wyższa Psychologii Społecznej w Warszawie;Studia azjatyckie: Chiny i Azja Wschodnia
+Szkoła Wyższa Psychologii Społecznej w Warszawie;Studia azjatyckie: Chiny i Azja Wschodnia
+Szkoła Wyższa Psychologii Społecznej w Warszawie;Zarządzanie Humanistyczne

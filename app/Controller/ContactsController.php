@@ -37,8 +37,8 @@
 				$this->Contact->set($this->request->data);
 				if($this->Contact->validates()) {
 					// do something, save you data, login, whatever
-					$name = addslashes($this->data['name']);
-					$email = addslashes($this->data['email']);
+					$name = htmlentities(trim(strip_tags(stripslashes($this->data['name']))));
+					$email = htmlentities(trim(strip_tags(stripslashes($this->data['email']))));
 					if(isset($thema)) {
 						$thema = $this->data['Contact']['thema'];
 					}else {
@@ -49,7 +49,7 @@
 						case 1 : $thema = 'Uzupełnienie profilu uczelni'; break;
 						case 2 : $thema = 'Aktualizacja profilu'; break;
 					}
-					$message = addslashes($this->data['message']);
+					$message = strip_tags(htmlentities(trim(stripslashes($this->data['message']))));
 					$IP = $this->data['Contact']['IP'];
 					$DATE_TIME = $this->data['Contact']['DATE_TIME'];
 					$PATH = $this->data['Contact']['PATH'];

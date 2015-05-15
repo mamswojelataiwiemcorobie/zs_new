@@ -5,7 +5,16 @@
 			<div class="form-group">
 				<label class="sr-only"></label>
 			<?php
-				echo $this->Form->input('Search.keywords', array('label'=>false, 'class'=> 'form-control'));?>
+				echo $this->Form->input('Search.keywords', array('label'=>false, 'class'=> 'form-control', 'placeholder'=>'Wpisz ID, lub nazwe'));?>
+			</div>
+			<div class="form-group">
+				<label >Typ</label>
+			<?php	echo $this->Form->input('Search.university_type_id', array('label'=>false, 'class'=> 'form-control', 'div'=>false));
+				?>
+			</div>
+			<div class="form-group">
+				<label >Kategoria</label>
+				<?php	echo $this->Form->input('Search.courses_category_id', array('label'=>false,'empty'=>true,'class'=> 'form-control', 'div'=>false));?>
 			</div>
 			<div class="form-group">
 				<?php echo $this->Form->submit('Szukaj', array('class'=> 'btn btn-default'));
@@ -17,7 +26,7 @@
 		<table class="table table-striped table-hover">
 			<thead>
 				<tr>
-					<th>ID</th>
+					<th><?php echo $this->Paginator->sort('id', 'ID');?></th>
 					<th><?php echo $this->Paginator->sort('nazwa', 'Nazwa');?>  </th>
 					<th><?php echo $this->Paginator->sort('CoursesCategory.nazwa', 'kategoria');?>  </th>
 					<th><?php echo $this->Paginator->sort('UniversityType.nazwa', 'Typ');?>  </th>

@@ -1,0 +1,120 @@
+Szkoła Główna Handlowa w Warszawie;Analiza danych - big data
+Uniwersytet Warszawski;Andragogika
+Zachodniopomorski Uniwersytet Technologiczny w Szczecinie;Architektura [do 2012-06-24 Architektura i urbanistyka]
+Politechnika Poznańska;Architektura [do 2014-09-30 Architektura i urbanistyka]
+Politechnika Śląska;Architektura [do 2015-03-29 Architektura i urbanistyka]
+Szkoła Główna Handlowa w Warszawie;Badania i analizy społeczne
+Uniwersytet Przyrodniczy w Lublinie;Behawiorystyka zwierząt
+Uniwersytet Wrocławski;bezpieczeństwo międzynarodowe
+Uniwersytet Szczeciński;Biologiczne podstawy kryminalistyki
+Uniwersytet Jagielloński w Krakowie;Biotechnologia molekularna [do 2014-09-30 Biotechnologia]
+Uniwersytet Gdański;Biznes i technologia ekologiczna
+Uniwersytet Łódzki;Chemia kosmetyczna
+Uniwersytet Mikołaja Kopernika w Toruniu;Doradztwo podatkowe
+Szkoła Główna Handlowa w Warszawie;E-biznes
+Uniwersytet Łódzki;Ekonomia Ekobiznes
+Uniwersytet Jagielloński w Krakowie;Elektroniczne przetwarzanie informacji
+Uniwersytet Opolski;English Philology [do 2014-09-30 Filologia angielska]
+Uniwersytet Warszawski;Etnologia i antropologia kulturowa [do 2012-09-30 Etnologia]
+Uniwersytet Wrocławski;Etnologia i antropologia kulturowa [do 2013-09-30 Etnologia]
+Uniwersytet Warszawski;European Administration
+Uniwersytet Warszawski;europeistyka - studia europejskie [do 2012-09-30 Europeistyka]
+Uniwersytet Warszawski;Europeistyka w zakresie europejskich procesów integracyjnych [do 2012-09-30 Europeistyka]
+Uniwersytet Jagielloński w Krakowie;Filmoznawstwo i wiedza o nowych mediach
+Uniwersytet Łódzki;filologia romańska
+Uniwersytet Łódzki;bez określenia specjalności
+Uniwersytet Wrocławski;filologia francuska
+Uniwersytet Wrocławski;filologia hiszpańska
+Uniwersytet im. Adama Mickiewicza w Poznaniu;hiszpańska, romańska, włoska, rosyjska, germańska
+Uniwersytet Pedagogiczny im. Komisji Edukacji Narodowej w Krakowie;filologia romańska
+Uniwersytet Śląski w Katowicach;język hiszpański
+Uniwersytet Śląski w Katowicach;filologia romańska
+Uniwersytet Śląski w Katowicach;języki stosowane: język francuski i język angielski z progr. tłumaczeniowym z językiem biznesu
+Akademia im. Jana Długosza w Częstochowie;Filologia
+Uniwersytet im. Adama Mickiewicza w Poznaniu;Filologia
+Uniwersytet Szczeciński;Filologia romańska
+Wyższa Szkoła Zarządzania Marketingowego i Języków Obcych w Katowicach;filologia
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;germanistyka
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;lingwistyka stosowana angielski z niemieckim
+Akademia Pomorska w Słupsku;Filologia
+Wyższa Szkoła Studiów Międzynarodowych w Łodzi;filologia hiszpańska
+Wszechnica Polska Szkoła Wyższa w Warszawie;Filologia hiszpańska
+Uniwersytet Warmińsko-Mazurski w Olsztynie;filologia specjalność nauczycielska w zakresie języka angielskiego
+Uniwersytet Warmińsko-Mazurski w Olsztynie;specjalność nauczycielska w zakresie języka niemieckiego
+Wyższa Szkoła Języków Obcych w Świeciu;filologia obca
+Uniwersytet Opolski;germanische philologie
+Uniwersytet Przyrodniczo-Humanistyczny w Siedlcach;Filologia
+Wyższa Szkoła Filologiczna we Wrocławiu;filologia hiszpańska
+Społeczna Akademia Nauk z siedzibą w Łodzi;angielska
+Społeczna Akademia Nauk z siedzibą w Łodzi;1
+Uniwersytet Warszawski;filologia - translatoryka - glottodydaktyka
+Uniwersytet Warszawski;brak
+Uniwersytet im. Adama Mickiewicza w Poznaniu;UAM
+Uniwersytet Warszawski;filologia iberyjska
+Uniwersytet Warszawski;filologia romańska
+Uniwersytet Ekonomiczny w Poznaniu;Finanse i rachunkowość biznesu [do 2014-09-30 Finanse i rachunkowość]
+Uniwersytet Warszawski;Finanse, inwestycje i rachunkowość [do 2012-09-30 Finanse i rachunkowość]
+Uniwersytet Warszawski;Finanse, rachunkowość i ubezpieczenia [do 2012-09-30 Finanse i rachunkowość]
+Uniwersytet Mikołaja Kopernika w Toruniu;Geoinformacja środowiskowa
+Uniwersytet Warszawski;Germanistyka
+Szkoła Główna Handlowa w Warszawie;Global Business, Finance and Governance
+Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie;Informatyka stosowana [do 2012-09-30 Informatyka stosowana]
+Uniwersytet Warmińsko-Mazurski w Olsztynie;Inżynieria precyzyjna w produkcji rolno-spożywczej
+Politechnika Łódzka;Inżynieria produkcji
+Politechnika Lubelska;Inżynieria produkcji
+Uniwersytet Przyrodniczy w Lublinie;Inżynieria przemysłu spożywczego
+Politechnika Poznańska;Inżynieria zarządzania
+Uniwersytet Wrocławski;Komunikacja wizerunkowa
+Uniwersytet Warszawski;kulturoznawstwo Azji i Afryki [do 2012-09-30 Kulturoznawstwo]
+Uniwersytet Warszawski;kulturoznawstwo Europy Środkowo -Wschodniej [do 2012-09-30 Kulturoznawstwo]
+Uniwersytet Śląski w Katowicach;Kultury mediów
+Uniwersytet Wrocławski;Makrokierunek - dyplomacja europejska
+Uniwersytet Przyrodniczy w Poznaniu;Makrokierunek - informatyka i agroinżynieria
+Politechnika Śląska;Makrokierunek - informatyka przemysłowa
+Politechnika Śląska;Makrokierunek - nanotechnologia i technologie procesów mat.
+Szkoła Główna Gospodarstwa Wiejskiego w Warszawie;Makrokierunek - technologie energii odnawialnej
+Uniwersytet Ekonomiczny w Krakowie;Marketing i komunikacja rynkowa
+Szkoła Główna Handlowa w Warszawie;Metody ilościowe w ekonomii i systemy informacyjne
+Akademia Morska w Gdyni;Nawigacja
+Akademia Morska w Szczecinie;Nawigacja
+Akademia Obrony Narodowej;Obronność
+Uniwersytet Przyrodniczy w Poznaniu;Ochrona przyrody
+Uniwersytet Przyrodniczy w Lublinie;Ochrona roślin i kontrola fitosanitarna
+Uniwersytet Warszawski;UW
+Uniwersytet Gdański;Podatki i doradztwo podatkowe
+Uniwersytet im. Adama Mickiewicza w Poznaniu;Prawo europejskie
+Uniwersytet Warszawski;Prawo finansowe i skarbowość
+Uniwersytet Łódzki;Prawo medyczne
+Uniwersytet Łódzki;Prawo podatkowe i rachunkowość
+Uniwersytet Łódzki;Prawo zatrudnienia – kadry i płace
+Uniwersytet Śląski w Katowicach;Przedsiębiorczość
+Uniwersytet Jagielloński w Krakowie;Religioznawstwo – interdyscyplinarne studia nad religiami i kulturami świata [do 2014-09-30 Religioznawstwo]
+Uniwersytet Warszawski;Samorząd terytorialny i polityka regionalna [do 2012-09-30 Makrokierunek samorząd terytorialny i polityka regionalna]
+Uniwersytet Warszawski;socjologia stosowana i antropologia społeczna [do 2012-09-30 Socjologia]
+Uniwersytet Warszawski;studia amerykanistyczne [do 2012-09-30 Kulturoznawstwo]
+Uniwersytet Warszawski;Studia euroazjatyckie
+Uniwersytet Warszawski;studia filologiczno - kulturoznawcze [do 2012-09-30 Makrokierunek filologiczno-kulturoznawczy]
+Uniwersytet Warszawski;Studia nad słowiańszczyzną wschodnią
+Uniwersytet Śląski w Katowicach;Studia śląskie
+Uniwersytet Rzeszowski;Sztuki wizualne [do 2012-09-30 Edukacja artystyczna w zakresie sztuk plastycznych]
+Uniwersytet Przyrodniczy w Lublinie;Transport w inżynierii produkcji
+Szkoła Główna Handlowa w Warszawie;Turystyka międzynarodowa, hotelarstwo i usługi czasu wolnego
+Uniwersytet Warszawski;ukrainistyka
+Akademia Obrony Narodowej;Zarządzanie i dowodzenie
+Uniwersytet Mikołaja Kopernika w Toruniu;Zarządzanie informacją i bibliologia [do 2012-09-30 Informacja naukowa i bibliotekoznawstwo]
+Uniwersytet Jagielloński w Krakowie;Zarządzanie kulturą i mediami
+Uniwersytet Śląski w Katowicach;Zarządzanie międzykulturowe
+Uniwersytet Warszawski;zarządzanie środowiskiem [do 2012-09-30 Makrokierunek zarządzanie środowiskiem]
+Uniwersytet Przyrodniczy w Lublinie;Żywienie człowieka i dietetyka
+Szkoła Główna Gospodarstwa Wiejskiego w Warszawie;żywienie człowieka i ocena żywności
+Uniwersytet Śląski w Katowicach;Doradztwo filozoficzne i coaching
+Wyższa Szkoła Filologiczna we Wrocławiu;Filologia (filologia angielska
+Wyższa Szkoła Filologiczna we Wrocławiu;Filologia (filologia germańska
+Wyższa Szkoła Filologiczna we Wrocławiu;Filologia (filologia hiszpańska
+Ateneum - Szkoła Wyższa w Gdańsku;Filologia
+Lingwistyczna Szkoła Wyższa w Warszawie;Filologia
+Uniwersytet Jagielloński w Krakowie;Lingwistyka
+Wyższa Szkoła Bankowa w Toruniu;Menedżersko-prawny
+Akademia Marynarki Wojennej im. Bohaterów Westerplatte;Nawigacja
+Uniwersytet Warszawski;Pedagogika nauczycielska
+Uniwersytet Ekonomiczny w Katowicach;Przedsiębiorczość i finanse

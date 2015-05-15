@@ -1,0 +1,98 @@
+Uniwersytet Technologiczno-Przyrodniczy im. Jana i Jędrzeja Śniadeckich w Bydgoszczy;Analityka chemiczna i spożywcza
+Politechnika Wrocławska;Architektura [do 2012-09-30 Architektura i urbanistyka]
+Politechnika Lubelska;Architektura [do 2013-09-30 Architektura i urbanistyka]
+Państwowa Wyższa Szkoła Zawodowa w Nysie;Architektura [do 2012-09-30 Architektura i urbanistyka]
+Politechnika Świętokrzyska w Kielcach;Architektura [do 2014-09-30 Architektura i urbanistyka]
+Zachodniopomorski Uniwersytet Technologiczny w Szczecinie;Architektura [do 2012-05-27 Architektura i urbanistyka]
+Politechnika Gdańska;Architektura [do 2012-09-30 Architektura i urbanistyka]
+Politechnika Opolska;Architektura [do 2014-12-16 Architektura i urbanistyka]
+Politechnika Rzeszowska im. Ignacego Łukasiewicza;Architektura [do 2012-09-30 Architektura i urbanistyka]
+Wyższa Szkoła Ekologii i Zarządzania w Warszawie;Architektura [do 2012-09-30 Architektura i urbanistyka]
+Politechnika Poznańska;Architektura [do 2014-09-30 Architektura i urbanistyka]
+Podhalańska Państwowa Wyższa Szkoła Zawodowa w Nowym Targu;Architektura [do 2015-02-05 Architektura i urbanistyka]
+Sopocka Szkoła Wyższa z siedzibą w Sopocie;Architektura [do 2014-09-14 Architektura i urbanistyka]
+Wyższa Szkoła Przedsiębiorczości i Administracji w Lublinie;Architektura [do 2012-09-30 Architektura i urbanistyka]
+Uniwersytet Przyrodniczy w Lublinie;Behawiorystyka zwierząt
+Państwowa Wyższa Szkoła Wschodnioeuropejska w Przemyślu;Bezpieczeństwo i produkcja żywności
+Zachodniopomorski Uniwersytet Technologiczny w Szczecinie;biologia, informatyka
+Uniwersytet Warmińsko-Mazurski w Olsztynie;Bioinżynieria produkcji żywności [do 2012-09-30 Makrokierunek - bioinżynieria produkcji żywności]
+Uniwersytet Technologiczno-Przyrodniczy im. Jana i Jędrzeja Śniadeckich w Bydgoszczy;Bioinżynieria w produkcji zwierzęcej
+Szkoła Główna Gospodarstwa Wiejskiego w Warszawie;bioinżynieria zwierząt
+Politechnika Łódzka;biotechnologia środowiska
+Politechnika Białostocka;Biotechnolologia
+Zachodniopomorski Uniwersytet Technologiczny w Szczecinie;oceanotechnika, inżynieria materiałowa
+Uniwersytet Mikołaja Kopernika w Toruniu;Chemia i technologia żywności
+Politechnika Białostocka;Ekoinżynieria
+Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie;Fizyka medyczna [do 2012-09-30 Fizyka medyczna]
+Uniwersytet Warmińsko-Mazurski w Olsztynie;Gastronomia - sztuka kulinarna [do 2012-09-30 Makrokierunek - gastronomia - sztuka kulinarna]
+Szkoła Główna Gospodarstwa Wiejskiego w Warszawie;gastronomia i hotelarstwo
+Uniwersytet Przyrodniczy w Lublinie;Gastronomia i sztuka kulinarna
+Uniwersytet Warszawski;geologia stosowana
+Zachodniopomorski Uniwersytet Technologiczny w Szczecinie;gospodarka odpadami i rekultywacja terenów zdegradowanych
+Państwowa Wyższa Szkoła Zawodowa im. Jana Grodka w Sanoku;Gospodarka w ekosystemach rolnych i leśnych
+Uniwersytet Przyrodniczy w Lublinie;Hipologia i jeździectwo
+Szkoła Główna Gospodarstwa Wiejskiego w Warszawie;hodowla i ochrona zwierząt towarzyszących i dzikich
+Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie;Informatyka [do 2013-09-30 Informatyka stosowana]
+Politechnika Śląska;Informatyka przemysłowa
+Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie;Informatyka stosowana [do 2012-09-30 Informatyka stosowana]
+Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie;Informatyka stosowana [do 2012-09-30 Informatyka stosowana]
+Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie;Informatyka stosowana [do 2012-09-30 Informatyka stosowana]
+Uniwersytet Łódzki;Informatyka, studia inżynierskie
+Wojskowa Akademia Techniczna im. Jarosława Dąbrowskiego;Informatyka w medycynie
+Politechnika Koszalińska;Inwestycje i wdrożenia przemysłowe
+Politechnika Łódzka;Inżynieria biochemiczna
+Uniwersytet Przyrodniczy w Poznaniu;Inżynieria biotworzyw
+Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie;Inżynieria ciepła
+Zachodniopomorski Uniwersytet Technologiczny w Szczecinie;Inżynieria cyfryzacji
+Uniwersytet Zielonogórski;Inżynieria danych
+Szkoła Główna Gospodarstwa Wiejskiego w Warszawie;inżynieria ekologiczna
+Państwowa Szkoła Wyższa im. Papieża Jana Pawła II w Białej Podlaskiej;Inżynieria geologiczna
+Uniwersytet Zielonogórski;Inżynieria kosmiczna
+Politechnika Rzeszowska im. Ignacego Łukasiewicza;Inżynieria medyczna
+Uniwersytet Technologiczno-Przyrodniczy im. Jana i Jędrzeja Śniadeckich w Bydgoszczy;Inżynieria odnawialnych źródeł energii
+Politechnika Lubelska;Inżynieria odnawialnych źródeł energii
+Politechnika Warszawska;Inżynieria Pojzadów Elektrycznych i Hybrydowych
+Politechnika Łódzka;Inżynieria procesowa
+Politechnika Łódzka;Inżynieria produkcji
+Politechnika Lubelska;Inżynieria produkcji
+Uniwersytet Przyrodniczy w Lublinie;Inżynieria przemysłu spożywczego
+Politechnika Białostocka;Inżynieria rolno-spożywcza i leśna
+Państwowa Wyższa Szkoła Zawodowa im. Witelona w Legnicy;Inżynieria testowa
+Państwowa Wyższa Szkoła Wschodnioeuropejska w Przemyślu;Inżynieria transportu i logistyki
+Politechnika Krakowska im. Tadeusza Kościuszki;Inżynieria wzornictwa przemysłowego
+Politechnika Poznańska;Inżynieria zarządzania
+Wyższa Szkoła Bankowa w Toruniu;Inżynieria zarządzania
+Wyższa Szkoła Bankowa w Toruniu;Inżynieria zarządzania
+Wyższa Szkoła Bankowa w Poznaniu;Inżynieria zarządzania
+Wojskowa Akademia Techniczna im. Jarosława Dąbrowskiego;Kryptologia i cyberbezpieczeństwo
+Politechnika Śląska;Makrokierunek - automatyka i robot.,elektronika i telekom., informatyka
+Uniwersytet Przyrodniczy w Poznaniu;Makrokierunek - informatyka i agroinżynieria
+Politechnika Śląska;Makrokierunek - informatyka przemysłowa
+Politechnika Łódzka;Makrokierunek - inżynieria architektoniczna
+Politechnika Łódzka;Makrokierunek - nanotechnologia
+Politechnika Śląska;Makrokierunek - nanotechnologia i technologie procesów mat.
+Szkoła Główna Gospodarstwa Wiejskiego w Warszawie;Makrokierunek - technologie energii odnawialnej
+Politechnika Wrocławska;Matematyka stosowana
+Uniwersytet Mikołaja Kopernika w Toruniu;materiały współczesnych technologii [do 2012-09-30 Makrokierunek - materiały współczesnych technologii]
+Szkoła Główna Gospodarstwa Wiejskiego w Warszawie;meblarstwo
+Uniwersytet Technologiczno-Przyrodniczy im. Jana i Jędrzeja Śniadeckich w Bydgoszczy;Mechaniczna inżynieria tworzyw
+Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie;Mikroelektronika w technice i medycynie
+Uniwersytet Technologiczno-Przyrodniczy im. Jana i Jędrzeja Śniadeckich w Bydgoszczy;Nanobioinżynieria
+Wyższa Szkoła Oficerska Sił Powietrznych;Nawigacja
+Akademia Morska w Szczecinie;Nawigacja
+Akademia Marynarki Wojennej im. Bohaterów Westerplatte;Nawigacja
+Akademia Morska w Gdyni;Nawigacja
+Uniwersytet Przyrodniczy w Lublinie;Ochrona roślin i kontrola fitosanitarna
+Uniwersytet Opolski;Odnawialne źródła energii
+Zachodniopomorski Uniwersytet Technologiczny w Szczecinie;Odnawialne źródła energii
+Uniwersytet Technologiczno-Przyrodniczy im. Jana i Jędrzeja Śniadeckich w Bydgoszczy;Ogrody zoologiczne i zwierzęta amatorskie
+Politechnika Częstochowska;Recykling materiałów
+Uniwersytet Śląski w Katowicach;Studia międzykierunkowe: Międzywydziałowe Indywidualne Studia Matematyczno-Przyrodnicze
+Politechnika Opolska;Technologie energetyki odnawialnej
+Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie;Wirtotechnologia
+Politechnika Świętokrzyska w Kielcach;Wzornictwo przemysłowe
+Zachodniopomorski Uniwersytet Technologiczny w Szczecinie;Zarządzanie bezpieczeństwem i jakością żywności
+Państwowa Wyższa Szkoła Zawodowa w Skierniewicach;Zarządzanie obszarami wiejskimi
+Uniwersytet Przyrodniczy w Lublinie;Zielarstwo i terapie roślinne
+Uniwersytet Technologiczno-Przyrodniczy im. Jana i Jędrzeja Śniadeckich w Bydgoszczy;Zoofizjoterapia
+Szkoła Główna Gospodarstwa Wiejskiego w Warszawie;żywienie człowieka i ocena żywności

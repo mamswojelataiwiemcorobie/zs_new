@@ -4,7 +4,7 @@
 		<section class="animated fadeInUp notransitioncont main row">
 			<?php if ($university['logo']): ?>
 				<div class="ml col-sm-4">
-					<img itemprop="logo" src="/miniatura/180x260/uploads/<?php echo $university['logo'];?>" alt="Logo uczelni <?php echo $university['University']['nazwa'];?>"/>
+					<img itemprop="logo" src="/miniatura/330x260/uploads/<?php echo $university['logo'];?>" alt="Logo uczelni <?php echo $university['University']['nazwa'];?>"/>
 				</div>
 			<?php endif; ?>
 			<div class="mr row <?php if (!($university['logo'])): ?> mr-noimage<?php else: ?>col-sm-8<?php endif; ?>">
@@ -166,10 +166,12 @@
 										</h1>
 										<div class="info">
 											<ul>
-											<?php foreach ($kierunki as $uk): ?>
-												<li><?php echo $uk['nazwa']?></li>{cycle values=',,<div class="cl"></div>'}
-											<?php endforeach;?>
-											</ul></div>
+												<?php foreach ($kierunki as $kierunek) :?>
+													<li><a href="/kierunek/<?php echo strtolower(Inflector::slug($kierunek['Course']['nazwa'],'-')).'-'. $kierunek['Course']['id'];?>.html">
+														<?php echo $kierunek['Course']['nazwa'];?></a></li> 
+												<?php endforeach;?>
+											</ul>
+										</div>
 										<div class="cl"></div>
 									</div>
 								<?php endif;?>
@@ -266,7 +268,8 @@
 </div>
 <?php else :?>
 <div>
-	<h2>Nie udało się znaleść podanej uczelniw naszej bazie.</h2>
+	<h2>Nie udało się znaleść podanej uczelni w naszej bazie.</h2>
+	<h3>Spróbuj znaleść ją w naszej <a href="/wyszukiwarka/szkoly-wyzsze-1.html">wyszukiwarce</a></h3>
 </div>
 <?php endif;?>
 <?php if ($lokalizacja_poparawna) :?>

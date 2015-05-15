@@ -14,7 +14,7 @@ class ArticlesController extends AppController {
 
         //Debugger::dump($articles);
         $this->set('articles', $articles);
-        $this->set('title_for_layout', 'Artukuły');
+        $this->set('title_for_layout', 'Artykuły');
         $this->set('description_for_layout', 'Ciekawe artykuły i wiadomości na temat studiów, życia studenckiego');
         $this->set('keywords_for_layout', 'wiadomości, artykuły, studia, wydarzenia, kierunki');
     }
@@ -78,7 +78,7 @@ class ArticlesController extends AppController {
 			//Debugger::dump($this->request->data);
 
             if ($this->Article->saveAssociated($this->request->data)) {
-                $this->Session->setFlash(__('Podstrona została uaktualniona'));
+                $this->Session->setFlash(__('Artykuł został zaktualizowany.'));
                 $this->redirect(array('action' => 'edit', $id));
             }else{
                 $this->Session->setFlash(__('Unable to update your user.'));

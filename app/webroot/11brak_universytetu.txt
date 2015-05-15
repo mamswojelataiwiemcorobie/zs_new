@@ -1,0 +1,131 @@
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Administracja
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Administracja
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Analityka społeczna i internetowa
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Architektura wnętrz
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Bezpieczeństwo narodowe
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Bezpieczeństwo wewnętrzne
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Biotechnologia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Dziennikarstwo i komunikacja społeczna
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Edytorstwo
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Ekonomia
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Ekonomia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Ekonomia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Ekonomia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Ekonomia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Europeistyka
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;filologia angielska
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;filologia germańska
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;filologia angielsko- rosyjska
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia angielska
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia germańska
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia klasyczna
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia romańska
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia niderlandzka
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia słowiańska
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;filologia - sinologia
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Filologia polska
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Filologia polska
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Filozofia
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Finanse i rachunkowość
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Fizjoterapia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Gerontologia społeczna
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Grafika
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Historia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Historia sztuki
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Informatyka
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Kognitywistyka
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Kosmetologia
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Kosmetologia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Krajoznawstwo i turystyka kulturowa
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Kulturoznawstwo
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Matematyka
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Matematyka
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Mediteranistyka
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Międzyobszarowe Indywidualne Studia Humanistyczno-Społeczne
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Muzykologia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Nauki o rodzinie
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Naukoznawstwo
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Ochrona środowiska
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Pedagogika
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Pedagogika
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Pedagogika
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Pedagogika
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Pielęgniarstwo
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Pielęgniarstwo
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Politologia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Praca socjalna
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Praca socjalna
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Praca socjalna
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Prawo w działalności gospodarczej
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Przyrodoznawstwo i filozofia przyrody
+Państwowa Wyższa Szkoła Zawodowa im. prof. E. Szczepanika w Suwałkach;Ratownictwo medyczne
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Retoryka stosowana
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Socjologia
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Stosunki międzynarodowe
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Stosunki międzynarodowe
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Sztuka mediów i edukacja wizualna [do 2012-09-30 Edukacja artystyczna w zakresie sztuk plastycznych]
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Teksty kultury i animacja sieci
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Turystyka i rekreacja
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Wiedza o teatrze
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Wychowanie fizyczne
+Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu;Wzornictwo
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Zarządzanie
+Katolicki Uniwersytet Lubelski Jana Pawła II w Lublinie;Zarządzanie dokumentacją i archiwistyka
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Administracja
+Wyższa Szkoła Administracji Publicznej imienia Stanisława Staszica w Białymstoku;Administracja
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Administracja
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Architektura wnętrz
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Bezpieczeństwo narodowe
+Wyższa Szkoła Administracji Publicznej imienia Stanisława Staszica w Białymstoku;Bezpieczeństwo narodowe
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Bezpieczeństwo wewnętrzne
+Wyższa Szkoła Bankowości i Finansów z siedzibą w katowicach;Bezpieczeństwo wewnętrzne
+Wyższa Szkoła Bezpieczeństwa Publicznego i Indywidualnego "Apeiron" w Krakowie;Bezpieczeństwo wewnętrzne
+Uczelnia Nauk Społecznych;Bezpieczeństwo wewnętrzne
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Bezpieczeństwo wewnętrzne
+Wyższa Szkoła Biznesu i Nauk o Zdrowiu w Łodzi;Dietetyka
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Dietetyka
+Szkoła Główna Turystyki i Rekreacji;Dietetyka
+Wyższa Szkoła Nauk Humanistycznych i Dziennikarstwa w Poznaniu;Doradztwo i coaching
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Dziennikarstwo i komunikacja społeczna
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Dziennikarstwo i komunikacja społeczna
+Warszawska Wyższa Szkoła Humanistyczna im. Bolesława Prusa (decyzja z dnia 06.07.2006 r.);Dziennikarstwo i komunikacja społeczna
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Ekonomia
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;angielska
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Finanse i rachunkowość
+Wyższa Szkoła Bankowości i Finansów z siedzibą w katowicach;Finanse i rachunkowość
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Finanse i rachunkowość
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Fizjoterapia
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Fizjoterapia
+Wyższa Szkoła Zarządzania w Gdańsku;Fizjoterapia
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Grafika
+Wyższa Szkoła Nauk Humanistycznych i Dziennikarstwa w Poznaniu;Grafika
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Informatyka
+Wrocławska Wyższa Szkoła Informatyki Stosowanej we Wrocławiu;Informatyka
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Informatyka
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Informatyka
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Informatyka i ekonometria
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Kosmetologia
+Wyższa Szkoła Biznesu i Nauk o Zdrowiu w Łodzi;Kosmetologia
+Wyższa Szkoła Przedsiębiorczości w Warszawie z siedzibą w Warszawie;Kosmetologia
+Wyższa Szkoła Zarządzania w Gdańsku;Kosmetologia
+Wyższa Szkoła Nauk Społecznych z siedzibą w Lublinie;Kosmetologia
+Warszawska Wyższa Szkoła Humanistyczna im. Bolesława Prusa (decyzja z dnia 06.07.2006 r.);Kulturoznawstwo
+Wyższa Szkoła Nauk Humanistycznych i Dziennikarstwa w Poznaniu;Marketing internetowy
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Mechatronika
+Wyższa Szkoła Społeczno-Ekonomiczna w Gdańsu z siedzibą w Gdańsku;Pedagogika
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Pedagogika
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Pedagogika
+Uczelnia Nauk Społecznych;Pedagogika
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Pedagogika specjalna
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Psychologia stosowana
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Stosunki międzynarodowe
+Dolnośląska Szkoła Wyższa z siedzibą we Wrocławiu;Sztuki nowoczesne - Design now!
+Wyższa Szkoła Nauk Społecznych z siedzibą w Lublinie;Techniki dentystyczne
+Wyższa Szkoła Informatyki i Zarządzania z siedziba w Rzeszowie;Turystyka i rekreacja
+Wrocławska Wyższa Szkoła Informatyki Stosowanej we Wrocławiu;Turystyka i rekreacja
+Szkoła Główna Turystyki i Rekreacji;Turystyka i rekreacja
+Szkoła Główna Turystyki i Rekreacji;Turystyka i rekreacja
+Wyższa Szkoła Informatyki i Umiejętności z siedzibą w Łodzi;Wychowanie fizyczne
+Wyższa Szkoła Społeczno-Ekonomiczna w Gdańsu z siedzibą w Gdańsku;Zarządzanie
+Wyższa Szkoła Finansów i Administracji w likwidacji z siedzibą w Gdyni;Zarządzanie
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej;Zarządzanie

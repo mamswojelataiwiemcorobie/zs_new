@@ -7,8 +7,7 @@ $(function(){
 	}
 	if ($('#welcome').size() > 0) {
 		enable_facebook();		
-	}
-	
+	}	
 });
 
 //podświetlenie aktywnej strony w menu
@@ -25,38 +24,24 @@ $("#nav a").each(function () {
 	/* ---------------------------------------------------------------------- */
 	$(window).load(function(){	
 		if ($('#carousel-projects_services').size() > 0) {	
-			$('#carousel-projects_services').carouFredSel({
-				responsive: true,
-				items       : {
-		        width       : 200,
-		        height      : 150,
-		        visible     : {
-		            min         : 1,
-		            max         : 4
-		        }
-		    },
-				width: '200px',
-				height: '150px',
-				auto: true,
-				circular	: true,
-				infinite	: false,
-				prev : {
-					button		: "#car_prev",
-					key			: "left",
-						},
-				next : {
-					button		: "#car_next",
-					key			: "right",
-							},
-				swipe: {
-					onMouse: true,
-					onTouch: true
+			if (window.matchMedia("(min-width: 600px)").matches){
+				$("#carousel-projects_services").owlCarousel({
+					nav:false,
+				  lazyLoad:true,
+				  autoplay: true,
+				  slideBy: 2,
+				  autoplayHoverPause: true,
+				  loop:true,
+				  responsive:{
+					480:{
+					  items:2
 					},
-				scroll: {
-			        easing: "",
-			        duration: 1200
-			    }
-			});	
+					960:{
+					  items:4
+					}
+				  }
+				}); 
+			}
 		}
 		if ($('#carousel-projects').size() > 0) {		
 			$('#carousel-projects').carouFredSel({
@@ -127,36 +112,34 @@ $("#nav a").each(function () {
 		});
 		}
 		if ($('#carousel-projects_uni').size() > 0) {	
-			$('#carousel-projects_uni').carouFredSel({
-			responsive: true,
-			items       : {
-	        width       : 200,
-	        height      : 330,
-	        visible     : {
-	            min         : 1,
-	            max         : 4
-	        }
-	    },
-			auto: true, 
-			circular	: true,
-			infinite	: false,
-			prev : {
-				button		: "#car_prev",
-				key			: "left",
+			var owl = $('#carousel-projects_uni');
+			owl.owlCarousel({
+				  lazyLoad:true,
+				  autoplay: true,
+				  slideBy: 2,
+				  autoplayHoverPause: true,
+				  loop:true,
+				  center:false,
+				  nestedItemSelector: 'boxcontainer',
+				  itemElement: 'li',
+				  margin: 10,
+				  responsive:{
+					0: { items:1},
+					480:{
+					  items:2
 					},
-			next : {
-				button		: "#car_next",
-				key			: "right",
-						},
-			swipe: {
-				onMouse: true,
-				onTouch: true
-				},
-			scroll: {
-	        easing: "",
-	        duration: 1200
-	    }
-		});
+					960:{
+					  items:4
+					}
+				  }
+				  }); 
+			 $('.carousel_nav .next').click(function() {
+				owl.trigger('next.owl.carousel');
+			});
+			
+			$(".carousel_nav .prev").click(function() {
+				owl.trigger('prev.owl.carousel');
+			});
 		}
 	});
 	//CALL PRETTY PHOTO
@@ -184,20 +167,6 @@ $("#nav a").each(function () {
 			*/
 			$( '#cbp-qtrotator' ).cbpQTRotator();
 		} );
-
-		//MASONRY
-		$(document).ready(function(){
-			$('#filter a').click(function (event) {
-				$('a.selected').removeClass('selected');
-				var $this = $(this);
-				$this.addClass('selected');
-				var selector = $this.attr('data-filter');
-				$container.isotope({
-					 filter: selector
-				});
-				return false;
-			});
-		});
 
 		/* ---------------------------------------------------------------------- */
 	/*	Accordion 1

@@ -111,6 +111,12 @@ class CourseonUniversitiesController extends AppController {
 		echo "</pre>";*/
 		
 	}
+
+	public function kierunki_naukraine() {
+		$this->CourseonUniversity->contain('University.university_type_id');
+		$courses = $this->CourseonUniversity->find('all', array('conditions'=>array('University.university_type_id'=>1), 'fields'=>array('university_id', 'faculty_id', 'course_id','course_type_id','course_mode_id'), 'order'=>array('University.id'=>'asc'), 'limit'=>11786/2));
+		Debugger::dump($courses);
+	}
 	
 	public function pokaz() {
 		$this->CourseonUniversity->contain('University');
@@ -293,7 +299,7 @@ class CourseonUniversitiesController extends AppController {
 																					'typ_course_id' => 0, 
 																					'tryb_course_id' => 0,
 												)))) {
-					$nazwa = $this->CourseonUniversity->Course->find('first', array('conditions'=>array('course_id'=>$kierunek)));
+					$nazwa = $this->CourseonUniversity->Course->find('first', array('conditions'=>array('Course.id'=>$kierunek)));
 					$nazwy .= ', '. $nazwa['Course']['nazwa'];
 					$this->Session->setFlash(__('Kierunek uczelni został utworzony'));
 				} else {

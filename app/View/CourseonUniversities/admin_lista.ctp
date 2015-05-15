@@ -41,7 +41,7 @@
 										<thead>
 											<tr>
 												<th rowspan="3">Nazwa</td>
-												<?php if ($university['University']['university_type_id'] == 1):?><th colspan="10">Studia</td><?php else:?><th colspan="4">Szkoła</td><?php endif;?>
+												<?php if ($university['University']['university_type_id'] == 1):?><th colspan="10">Studia</th><?php else:?><th colspan="4">Szkoła</td><?php endif;?>
 												<th rowspan="3"></th>
 											</tr>
 											<tr>
@@ -153,3 +153,4 @@
 	</h3>
 	<?php endif;?>
 </div>
+<div> <?php	echo $this->Html->link("Wróć do edycji uniwersytetu", array('controller'=>'universities', 'action'=>'edit', $university['University']['id'])); ?></div>

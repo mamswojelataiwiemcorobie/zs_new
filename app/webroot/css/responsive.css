@@ -248,4 +248,22 @@ h3.landingpage {line-height: 25px;font-size: 18px;}
 	.cbp-qtrotator blockquote footer {
 		margin-bottom: 30px;
 	}
+
+	.car-widecircle {
+	    width: 100px;
+	    height: 100px;
+	}
+	.car-widecircle span {
+	    line-height: 100px;
+	    width: 100px;
+	}
+	#c-slide .item {
+    	padding: 0px 0px 90px;
+    }
+    .car-largetext {
+	    font-size: 40px;
+	}
+	.nasi-partnerzy {
+		display: none;
+	}
 }

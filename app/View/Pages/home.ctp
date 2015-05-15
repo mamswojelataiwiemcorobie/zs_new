@@ -81,56 +81,13 @@
 		    	<div class="col-md-12">
 					<div class="list_carousel">
 						<div class="caroufredsel_wrapper">
-							<ul id="carousel-projects_services">
+							<ul id="carousel-projects_services" class="owl-carousel">
 								<li>
-									<div class="featured-projects">
-										<div class="featured-projects-image">
-											<a href="http://www.sp.edu.pl/"><div class="wrap"><img src="/images/loga/smart_prospects.jpg" class="imgOpa" alt="Smart Projects" /></div></a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="featured-projects">
-										<div class="featured-projects-image">
-											<a href="http://www.interia.pl/"><div class="wrap"><img src="/images/loga/interia-logo-2-0.svg" class="imgOpa" alt="Interia" /></div></a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="featured-projects">
-										<div class="featured-projects-image">
-											<a href="http://www.notatek.pl/"><div class="wrap"><img src="/images/loga/logo-fb-new.jpg" class="imgOpa" alt="Notatek" /></div></a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="featured-projects">
-										<div class="featured-projects-image">
-											<a href="http://www.youngtalentmanagement.pl/YTM/Young_Talent_Management.html">
-                      <div class="wrap">
-												<img src="/images/loga/YTM.jpg" class="imgOpa" alt="Young_Talent_Management" />
-                      </div>
-											</a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="featured-projects">
-										<div class="featured-projects-image">
-											<a href="http://www.happinate.com/">
-                      <div class="wrap">
-												<img src="/images/loga/logo-happinate.png" class="imgOpa " alt="Happinate" />
-                        </div>
-											</a>
-										</div>
-									</div>
-								</li>
-                <li>
                   <div class="featured-projects">
                     <div class="featured-projects-image">
-                      <a href="http://www.krakow.pl">
-                      <div class="wrap">
-                        <img src="/images/loga/KRK-new.png" class="imgOpa " alt="Kraków" />
+                      <a href="http://www.sp.edu.pl/">
+                        <div class="wrap">
+                          <img class="owl-lazy" data-src="/images/loga/smart_prospects.jpg" alt="Smart Projects">
                         </div>
                       </a>
                     </div>
@@ -139,9 +96,58 @@
                 <li>
                   <div class="featured-projects">
                     <div class="featured-projects-image">
+                      <a href="http://www.interia.pl/"><div class="wrap">
+                        <img class="owl-lazy" data-src="/images/loga/interia-logo-2-0.svg" class="imgOpa" alt="Interia"/></div></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="featured-projects">
+                    <div class="featured-projects-image">
+                      <a href="http://www.notatek.pl/"><div class="wrap">
+                        <img class="owl-lazy" data-src="/images/loga/logo-fb-new.jpg" class="imgOpa" alt="Notatek"/></div></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="featured-projects">
+                    <div class="featured-projects-image">
+                      <a href="http://www.youngtalentmanagement.pl/YTM/Young_Talent_Management.html">
+                      <div class="wrap">
+                        <img class="owl-lazy" data-src="/images/loga/YTM.jpg" class="imgOpa" alt="Young_Talent_Management"/>
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+								<li>
+                  <div class="featured-projects">
+                    <div class="featured-projects-image">
+                      <a href="http://www.happinate.com/">
+                      <div class="wrap">
+                        <img class="owl-lazy" data-src="/images/loga/logo-happinate.png" class="imgOpa " alt="Happinate"/>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="featured-projects">
+                  <div class="featured-projects-image">
+                    <a href="http://www.krakow.pl">
+                    <div class="wrap">
+                    <img class="owl-lazy" data-src="/images/loga/KRK-new.png" class="imgOpa " alt="Kraków"/>
+                    </div>
+                    </a>
+                  </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="featured-projects">
+                    <div class="featured-projects-image">
                       <a href="http://www.bialystok.pl">
                       <div class="wrap">
-                        <img src="/images/loga/Bialystok_Logo.jpg" class="imgOpa " alt="Białystok" />
+                        <img class="owl-lazy" data-src="/images/loga/Bialystok_Logo.jpg" class="imgOpa " alt="Białystok"/>
                         </div>
                       </a>
                     </div>
@@ -152,7 +158,7 @@
                     <div class="featured-projects-image">
                       <a href="http://www.lublin.eu">
                       <div class="wrap">
-                        <img src="/images/loga/logo-lublin.png" class="imgOpa " alt="Lublin" />
+                        <img class="owl-lazy" data-src="/images/loga/logo-lublin.png" class="imgOpa " alt="Lublin"/>
                         </div>
                       </a>
                     </div>
@@ -163,7 +169,7 @@
                     <div class="featured-projects-image">
                       <a href="http://www.gdansk.pl">
                       <div class="wrap">
-                        <img src="/images/loga/Gdansk_www_falka.gif" class="imgOpa " alt="Gdańsk" />
+                        <img class="owl-lazy" data-src="/images/loga/Gdansk_www_falka.gif" class="imgOpa " alt="Gdańsk"/>
                         </div>
                       </a>
                     </div>
@@ -174,7 +180,7 @@
                     <div class="featured-projects-image">
                       <a href="http://www.opole.pl">
                       <div class="wrap">
-                        <img src="/images/loga/logo-opole.jpg" class="imgOpa " alt="Opole" />
+                        <img class="owl-lazy" data-src="/images/loga/logo-opole.jpg" class="imgOpa " alt="Opole" />
                         </div>
                       </a>
                     </div>
@@ -185,7 +191,7 @@
                     <div class="featured-projects-image">
                       <a href="http://www.olsztyn.eu">
                       <div class="wrap">
-                        <img src="/images/loga/logo-olsztyn.jpg" class="imgOpa " alt="Olsztyn" />
+                        <img class="owl-lazy" data-src="/images/loga/logo-olsztyn.jpg" class="imgOpa " alt="Olsztyn" />
                         </div>
                       </a>
                     </div>
@@ -196,18 +202,18 @@
                     <div class="featured-projects-image">
                       <a href="http://www.rzeszow.pl">
                       <div class="wrap">
-                        <img src="/images/loga/logo_rz_pl.jpg" class="imgOpa " alt="Rzeszów" />
+                        <img class="owl-lazy" data-src="/images/loga/logo_rz_pl.jpg" class="imgOpa " alt="Rzeszów" />
                         </div>
                       </a>
                     </div>
                   </div>
                 </li>
-                <li>
+               <li>
                   <div class="featured-projects">
                     <div class="featured-projects-image">
                       <a href="http://www.zielona-gora.pl/">
                       <div class="wrap">
-                        <img src="/images/loga/logo_zielona-310x310.jpg" class="imgOpa " alt="logo Zielonej Góry" />
+                        <img class="owl-lazy" data-src="/images/loga/logo_zielona-310x310.jpg" class="imgOpa " alt="logo Zielonej Góry" />
                         </div>
                       </a>
                     </div>
@@ -218,7 +224,7 @@
                     <div class="featured-projects-image">
                       <a href="http://www.um.kielce.pl/">
                       <div class="wrap">
-                        <img src="/images/loga/Kielce_big.jpg" class="imgOpa " alt="logo Kielc" />
+                        <img class="owl-lazy" data-src="/images/loga/Kielce_big.jpg" class="imgOpa " alt="logo Kielc" />
                         </div>
                       </a>
                     </div>
@@ -227,9 +233,9 @@
                 <li>
                   <div class="featured-projects">
                     <div class="featured-projects-image">
-                      <a href="http://study.lublin.eu/pl/">
+                      <a href="http://study.lublin.eu/ru/">
                       <div class="wrap">
-                        <img src="/images/loga/logo-pl.png" class="imgOpa " alt="logo Studiuj w Lublinie" />
+                        <img class="owl-lazy" data-src="/images/loga/logo-pl.png" class="imgOpa " alt="logo Studiuj w Lublinie" />
                         </div>
                       </a>
                     </div>
@@ -240,7 +246,7 @@
                     <div class="featured-projects-image">
                       <a href="http://nzsuek.pl/">
                       <div class="wrap">
-                        <img src="/images/loga/logotyp_nzs_podstawowy.svg" class="imgOpa " alt="logo NSZ UEK" />
+                        <img class="owl-lazy" data-src="/images/loga/logotyp_nzs_podstawowy.svg" class="imgOpa " alt="logo NSZ UEK" />
                         </div>
                       </a>
                     </div>

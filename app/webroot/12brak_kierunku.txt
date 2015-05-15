@@ -1,0 +1,286 @@
+Uniwersytet Łódzki;Analityka społeczna
+Uniwersytet Śląski w Katowicach;Bezpieczeństwo narodowe i międzynarodowe
+Uniwersytet Łódzki;Chemia kosmetyczna
+Uniwersytet Śląski w Katowicach;Doradztwo filozoficzne i coaching
+Uniwersytet Śląski w Katowicach;Doradztwo polityczne i publiczne
+Uniwersytet Łódzki;Ekonomia Ekobiznes
+Uniwersytet w Białymstoku;Ekonomiczno-prawny
+Uniwersytet Jagielloński w Krakowie;Elektroniczne przetwarzanie informacji
+Uniwersytet Opolski;English Philology [do 2014-09-30 Filologia angielska]
+Uniwersytet Warszawski;Etnologia i antropologia kulturowa [do 2012-09-30 Etnologia]
+Uniwersytet Wrocławski;Etnologia i antropologia kulturowa [do 2013-09-30 Etnologia]
+Uniwersytet Warszawski;europeistyka - studia europejskie [do 2012-09-30 Europeistyka]
+Uniwersytet Warszawski;Europeistyka w zakresie europejskich procesów integracyjnych [do 2012-09-30 Europeistyka]
+Uniwersytet Jagielloński w Krakowie;Filmoznawstwo i wiedza o nowych mediach
+Uniwersytet Łódzki;filologia romańska
+Uniwersytet Zielonogórski;filologia romańska
+Politechnika Śląska;Język angielski
+Politechnika Śląska;Język włoski
+Politechnika Śląska;Język francuski
+Politechnika Śląska;język niemiecki
+Uniwersytet im. Adama Mickiewicza w Poznaniu;rosyjska, hiszpańska, japonistyka, 
+Państwowa Wyższa Szkoła Techniczno-Ekonomiczna im. ks. Bronisława Markiewicza w Jarosławiu;tłumaczeniowa, nauczycielska
+Uniwersytet Wrocławski;niderlandystyka
+Uniwersytet Wrocławski;filologia klasyczna i kultura śródziemnomorska
+Uniwersytet Pedagogiczny im. Komisji Edukacji Narodowej w Krakowie;język hiszpański
+Uniwersytet Pedagogiczny im. Komisji Edukacji Narodowej w Krakowie;filologia romańska
+Uniwersytet Pedagogiczny im. Komisji Edukacji Narodowej w Krakowie;język włoski
+Uniwersytet Pedagogiczny im. Komisji Edukacji Narodowej w Krakowie;filologia hiszpańska
+Uniwersytet Przyrodniczo-Humanistyczny w Siedlcach;anglistyka
+Uniwersytet Przyrodniczo-Humanistyczny w Siedlcach;rusycystyka
+Uniwersytet Przyrodniczo-Humanistyczny w Siedlcach;język rosyjski w biznesie
+Uniwersytet Śląski w Katowicach;języki stosowane: język francuski i język angielski
+Uniwersytet Śląski w Katowicach;język włoski z programem tłumaczeniowym
+Uniwersytet Śląski w Katowicach;język hiszpański
+Uniwersytet Śląski w Katowicach;języki stosowane: język włoski i język angielski z programem tłumaczeniowym
+Uniwersytet Śląski w Katowicach;języki stosowane: język hiszpański i język portugalski z programem tłumaczeniowym
+Państwowa Wyższa Szkoła Zawodowa w Chełmie;filologia słowiańska
+Akademia Pomorska w Słupsku;angielska
+Akademia Pomorska w Słupsku;germańska
+Uniwersytet Mikołaja Kopernika w Toruniu;fiilologia romańska
+Uniwersytet Szczeciński;Filologia romańska z językiem włoskim
+Uniwersytet Szczeciński;Skandynawistyka - studia norweskie
+Wyższa Szkoła Języków Obcych im. Samuela Bogumiła Lindego z siedzibą w Poznaniu;filologia hiszpańska
+Wyższa Szkoła Zarządzania Marketingowego i Języków Obcych w Katowicach;filologia
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;filologia rosyjska bez znajmości języka rosyjskiego
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;filologia rosyjska ze znajmością języka rosyjskiego
+Wszechnica Polska Szkoła Wyższa w Warszawie;filologia hiszpańska
+Wyższa Szkoła Humanitas w Sosnowcu;Angielska
+Wyższa Szkoła Studiów Międzynarodowych w Łodzi;filologia hiszpańska
+Wyższa Szkoła Komunikowania, Politologii i Stosunków Międzynarodowych w Warszawie;filologia hiszpańska
+Wyższa Szkoła Pedagogiki i Administracji im. Mieszka I w Poznaniu;angielska
+Wyższa Szkoła Pedagogiki i Administracji im. Mieszka I w Poznaniu;germańska
+Wyższa Szkoła Języków Obcych w Świeciu;filologia obca
+Wyższa Szkoła Języków Obcych w Świeciu;filologia obca
+Wyższa Szkoła Współpracy Międzynarodowej i Regionalnej im. Zygmunta Glogera z siedzibą w Wołominie;filologia arabska
+Wyższa Szkoła Współpracy Międzynarodowej i Regionalnej im. Zygmunta Glogera z siedzibą w Wołominie;sinologia
+Akademia Finansów i Biznesu Vistula;Filologia
+Społeczna Akademia Nauk z siedzibą w Łodzi;Filologia
+Państwowa Wyższa Szkoła Zawodowa w Płocku;Języki europejskie i kultury - j.angielski z j.rosyjskim
+Państwowa Wyższa Szkoła Zawodowa w Płocku;Języki europejskie i kultury - j.angielski z j.niemieckim
+Państwowa Wyższa Szkoła Zawodowa w Płocku;Asystent językowy w biznesie (j.angielski
+Państwowa Wyższa Szkoła Zawodowa w Płocku;Asystent językowy w biznesie (j.niemiecki
+Państwowa Wyższa Szkoła Zawodowa w Płocku;Asystent językowy w biznesie (j.rosyjski
+Wyższa Szkoła Filologiczna we Wrocławiu;filologia hiszpańska
+Państwowa Wyższa Szkoła Zawodowa im. rotmistrza Witolda Pileckiego w Oświęcimiu;germańska
+Państwowa Wyższa Szkoła Zawodowa im. Jakuba z Paradyża w Gorzowie Wielkopolskim;Język niemiecki z językiem włoskim
+Państwowa Wyższa Szkoła Zawodowa im. Jakuba z Paradyża w Gorzowie Wielkopolskim;Język włoski z językiem niemieckim
+Państwowa Wyższa Szkoła Zawodowa im. Jakuba z Paradyża w Gorzowie Wielkopolskim;język angielski
+Państwowa Wyższa Szkoła Zawodowa im. Jakuba z Paradyża w Gorzowie Wielkopolskim;język niemiecki
+Państwowa Wyższa Szkoła Zawodowa im. Jakuba z Paradyża w Gorzowie Wielkopolskim;język angielski z językiem rosyjskim
+Państwowa Wyższa Szkoła Zawodowa im. Jakuba z Paradyża w Gorzowie Wielkopolskim;język włoski
+Gliwicka Wyższa Szkoła Przedsiębiorczości w Gliwicach;Angielski Język Biznesu 
+Kujawsko-Pomorska Szkoła Wyższa w Bydgoszczy;filologia hiszpańska
+Kujawsko-Pomorska Szkoła Wyższa w Bydgoszczy;filologia
+Społeczna Akademia Nauk z siedzibą w Łodzi;1
+Uniwersytet Warszawski;brak
+Uniwersytet im. Adama Mickiewicza w Poznaniu;UAM
+Uniwersytet Gdański;filologia romańska
+Uniwersytet Warszawski;filologia romańska
+Uniwersytet Warszawski;filologia ugrofińska
+Uniwersytet Ekonomiczny w Poznaniu;Finanse i rachunkowość biznesu [do 2014-09-30 Finanse i rachunkowość]
+Uniwersytet Warszawski;Finanse, inwestycje i rachunkowość [do 2012-09-30 Finanse i rachunkowość]
+Uniwersytet Warszawski;Finanse, rachunkowość i ubezpieczenia [do 2012-09-30 Finanse i rachunkowość]
+Uniwersytet Łódzki;Geomonitoring
+Uniwersytet Opolski;Germanische Philologie [do 2014-09-30 Filologia germańska]
+Szkoła Główna Handlowa w Warszawie;Global Business, Finance and Governance
+Uniwersytet Ekonomiczny w Katowicach;Gospodarka turystyczna [do 2010-02-15 Gospodarka turystyczna]
+Uniwersytet Warszawski;iberystyka [do 2012-09-30 Kulturoznawstwo]
+Uniwersytet Gdański;iberystyka
+Uniwersytet Szczeciński;Italianistyka z elementami studiów nad chrześcijaństwem
+Uniwersytet Zielonogórski;Komunikacja biznesowa w języku rosyjskim
+Uniwersytet Wrocławski;Komunikacja wizerunkowa
+Uniwersytet Warszawski;kulturoznawstwo Azji i Afryki [do 2012-09-30 Kulturoznawstwo]
+Uniwersytet Warszawski;kulturoznawstwo Europy Środkowo -Wschodniej [do 2012-09-30 Kulturoznawstwo]
+Uniwersytet Śląski w Katowicach;Kultury mediów
+Uniwersytet Wrocławski;Makrokierunek - dyplomacja europejska
+Uniwersytet Ekonomiczny w Krakowie;marketing i komunikacja rynkowa
+Szkoła Główna Handlowa w Warszawie;Metody ilościowe w ekonomii i systemy informacyjne
+Akademia Muzyczna im. Grażyny i Kiejstuta Bacewiczów w Łodzi;Musical i choreografia
+Uniwersytet Jagielloński w Krakowie;filologia w zakresie języka hiszpańskiego
+Uniwersytet Jagielloński w Krakowie;filologia w zakresie języka włoskiego
+Akademia Obrony Narodowej;Obronność
+Uniwersytet Śląski w Katowicach;Oligofrenopedagogika z arteterapią
+Uniwersytet Warszawski;UW
+Uniwersytet Gdański;Pedagogika wczesnej edukacji
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;Pedagogika wczesnoszkolna
+Uniwersytet Zielonogórski;Polityka publiczna
+Uniwersytet im. Adama Mickiewicza w Poznaniu;Prawo europejskie
+Uniwersytet Marii Curie-Skłodowskiej w Lublinie;Public relations i doradztwo medialne
+Uniwersytet Wrocławski;publikowanie cyfrowe i sieciowe
+Uniwersytet Jagielloński w Krakowie;Religioznawstwo – interdyscyplinarne studia nad religiami i kulturami świata [do 2014-09-30 Religioznawstwo]
+Uniwersytet Warszawski;Samorząd terytorialny i polityka regionalna [do 2012-09-30 Makrokierunek samorząd terytorialny i polityka regionalna]
+Uniwersytet Gdański;Sinologia
+Uniwersytet Gdański;Slawistyka
+Uniwersytet Warszawski;socjologia stosowana i antropologia społeczna [do 2012-09-30 Socjologia]
+Uniwersytet Warszawski;studia amerykanistyczne [do 2012-09-30 Kulturoznawstwo]
+Uniwersytet Jagielloński w Krakowie;Studia azjatyckie
+Uniwersytet Mikołaja Kopernika w Toruniu;Studia Bałtyckie
+Uniwersytet Warszawski;studia filologiczno - kulturoznawcze [do 2012-09-30 Makrokierunek filologiczno-kulturoznawczy]
+Uniwersytet Mikołaja Kopernika w Toruniu;Studia menedżersko-finansowe
+Uniwersytet Warszawski;Studia nad słowiańszczyzną wschodnią
+Uniwersytet Łódzki;Studia regionalne
+Uniwersytet Śląski w Katowicach;Studia regionalne
+Uniwersytet Rzeszowski;Sztuki wizualne [do 2012-09-30 Edukacja artystyczna w zakresie sztuk plastycznych]
+Uniwersytet Śląski w Katowicach;Turystyka historyczna
+Uniwersytet Warszawski;ukrainistyka
+Uniwersytet Warszawski;Undergraduate Programme in International Relations
+Akademia Obrony Narodowej;Zarządzanie i dowodzenie
+Uniwersytet Mikołaja Kopernika w Toruniu;Zarządzanie informacją i bibliologia [do 2012-09-30 Informacja naukowa i bibliotekoznawstwo]
+Uniwersytet Jagielloński w Krakowie;Zarządzanie kulturą i mediami
+Wyższa Szkoła Bankowa we Wrocławiu;Administracja i bezpieczeństwo wewnętrzne
+Uniwersytet Łódzki;Analiza i zarządzanie w biznesie
+Uniwersytet Warszawski;Andragogika
+Warszawski Uniwersytet Medyczny;Audiofonologia z protetyką słuchu [do 2014-05-25 Audiofonolgia]
+Wyższa Szkoła Bankowa w Poznaniu;Bezpieczeństwo w biznesie i administracji
+Państwowa Wyższa Szkoła Zawodowa w Nowym Sączu;e-Administracja
+Uniwersytet Warszawski;Europeistyka w zakresie realizacji polityk Unii Europejskiej
+Warszawska Szkoła Filmowa z siedzibą w Warszawie;Film i multimedia
+Państwowa Wyższa Szkoła Zawodowa w Raciborzu;filologia słowiańska
+Pomorska Wyższa Szkoła Nauk Stosowanych w Gdyni;Filologia hiszpańska
+Ateneum - Szkoła Wyższa w Gdańsku;filologia hiszpańska
+Państwowa Wyższa Szkoła Informatyki i Przedsiębiorczości w Łomży;filologia angielska z technolgią informacyjną
+Wyższa Szkoła Zarządzania "Edukacja" we Wrocławiu;nauczycielska
+Szkoła Wyższa Psychologii Społecznej w Warszawie;Iberystyka
+Szkoła Wyższa Psychologii Społecznej w Warszawie;Italianistyka
+Wyższa Szkoła Bankowa we Wrocławiu;Filologia
+Państwowa Wyższa Szkoła Zawodowa im. Stanisława Pigonia w Krośnie;Filologia angielska, Filologia germańska, Język i kultura Rosji, Dwujęzykowe studia dla tłumaczy
+Podhalańska Państwowa Wyższa Szkoła Zawodowa w Nowym Targu;Filologia
+Wyższa Szkoła Filologiczna we Wrocławiu;Filologia (filologia germańska
+Wyższa Szkoła Filologiczna we Wrocławiu;Filologia (filologia angielska
+Wyższa Szkoła Filologiczna we Wrocławiu;Filologia (filologia hiszpańska
+Wyższa Szkoła Filologiczna we Wrocławiu;Filologia (filologia włoska
+Państwowa Wyższa Szkoła Zawodowa im. rotmistrza Witolda Pileckiego w Oświęcimiu;Filologia germańska z językiem angielskim
+Lingwistyczna Szkoła Wyższa w Warszawie;język niemiecki
+Lingwistyczna Szkoła Wyższa w Warszawie;jezyk rosyjski
+Lingwistyczna Szkoła Wyższa w Warszawie;język 
+Lingwistyczna Szkoła Wyższa w Warszawie;język angielski
+Uniwersytet Łódzki;Finanse i inwestycje
+Państwowa Wyższa Szkoła Zawodowa im. Witelona w Legnicy;Finanse, rachunkowość i podatki
+Wyższa Szkoła Europejska im. Ks. Józefa Tischnera w Krakowie;Grafika reklamowa i multimedia
+Górnośląska Wyższa Szkoła Przedsiębiorczości im. Karola Goduli w Chorzowie;gry i grafika interaktywna
+Uniwersytet Kazimierza Wielkiego w Bydgoszczy;Humanistyka drugiej generacji
+Uniwersytet Śląski w Katowicach;Komunikacja promocyjna i kryzysowa
+Uniwersytet Łódzki;Lingwistyka dla biznesu
+Uniwersytet Warszawski;Logistyka mediów
+Górnośląska Wyższa Szkoła Przedsiębiorczości im. Karola Goduli w Chorzowie;Modern business - zarządzanie i rachunkowość
+Uniwersytet Warszawski;specjalności główne: nauczanie j.angielskiego,nauczanie j.francuskiego,nauczanie j.niemieckiego
+Uniwersytet Jagielloński w Krakowie;filologia angielska z językiem niemieckim
+Uniwersytet Jagielloński w Krakowie;filologia germańska z językiem angielskim
+Państwowa Wyższa Szkoła Zawodowa im. Jana Grodka w Sanoku;Nowe media, reklama, kultura współczesna
+Uniwersytet Warszawski;Pedagogika małego dziecka
+Uniwersytet Warszawski;Pedagogika specjalna i edukacja społeczna
+Uniwersytet Warszawski;pedagogika społeczno - wychowawcza [do 2012-09-30 Pedagogika]
+Państwowa Medyczna Wyższa Szkoła Zawodowa w Opolu;Studia pomostowe, l. sem. 3
+Państwowa Wyższa Szkoła Zawodowa im. Jana Amosa Komeńskiego w Lesznie;Studia pomostowe, l. sem. 3
+Państwowa Wyższa Szkoła Zawodowa im. Jana Amosa Komeńskiego w Lesznie;Studia pomostowe, l. sem. 2
+Śląski Uniwersytet Medyczny w Katowicach;Studia pomostowe, l. sem. 2
+Państwowa Wyższa Szkoła Techniczno-Ekonomiczna im. ks. Bronisława Markiewicza w Jarosławiu;Studia pomostowe, l. sem. 2
+Państwowa Wyższa Szkoła Techniczno-Ekonomiczna im. ks. Bronisława Markiewicza w Jarosławiu;Studia pomostowe, l. sem. 3
+Warszawski Uniwersytet Medyczny;Studia pomostowe, l. sem. 2
+Warszawski Uniwersytet Medyczny;Studia pomostowe, l. sem. 3
+Państwowa Wyższa Szkoła Zawodowa w Nowym Sączu;Studia pomostowe, l. sem. 3
+Uniwersytet Warmińsko-Mazurski w Olsztynie;Studia pomostowe, l. sem. 3
+Krakowska Akademia im. Andrzeja Frycza Modrzewskiego w Krakowie;Studia pomostowe, l. sem. 3
+Śląska Wyższa Szkoła Zarządzania im. Gen. Jerzego Ziętka w Katowicach;Studia pomostowe, l. sem. 2
+Wyższa Szkoła Gospodarki Krajowej w Kutnie;Studia pomostowe, l. sem. 2
+Wyższa Szkoła Gospodarki Krajowej w Kutnie;Studia pomostowe, l. sem. 3
+Wyższa Szkoła Humanistyczno-Ekonomiczna we Włocławku;Studia pomostowe, l. sem. 2
+Wyższa Szkoła Humanistyczno-Ekonomiczna we Włocławku;Studia pomostowe, l. sem. 3
+Uniwersytet Medyczny w Łodzi;Studia pomostowe, l. sem. 2
+Uniwersytet Medyczny w Łodzi;Studia pomostowe, l. sem. 3
+Akademia Polonijna w Częstochowie;Studia pomostowe, l. sem. 2
+Akademia Polonijna w Częstochowie;Studia pomostowe, l. sem. 3
+Wyższa Szkoła Biznesu i Przedsiębiorczości w Ostrowcu Świętokrzyskim;Studia pomostowe, l. sem. 3
+Wyższa Szkoła Biznesu i Przedsiębiorczości w Ostrowcu Świętokrzyskim;Studia pomostowe, l. sem. 2
+Państwowa Wyższa Szkoła Zawodowa im. Jana Grodka w Sanoku;Studia pomostowe, l. sem. 2
+Państwowa Wyższa Szkoła Zawodowa im. Jana Grodka w Sanoku;Studia pomostowe, l. sem. 3
+Państwowa Wyższa Szkoła Zawodowa w Nysie;Studia pomostowe, l. sem. 2
+Państwowa Wyższa Szkoła Zawodowa w Nysie;Studia pomostowe, l. sem. 3
+Państwowa Wyższa Szkoła Zawodowa im. Witelona w Legnicy;Studia pomostowe, l. sem. 2
+Karkonoska Państwowa Szkoła Wyższa w Jeleniej Górze;Studia pomostowe, l. sem. 2
+Niepubliczna Wyższa Szkoła Medyczna we Wrocławiu;Studia pomostowe, l. sem. 2
+Niepubliczna Wyższa Szkoła Medyczna we Wrocławiu;Studia pomostowe, l. sem. 3
+Państwowa Wyższa Szkoła Zawodowa w Tarnowie;Studia pomostowe, l. sem. 2
+Państwowa Wyższa Szkoła Zawodowa w Tarnowie;Studia pomostowe, l. sem. 3
+Państwowa Wyższa Szkoła Zawodowa im. Stanisława Staszica w Pile;Studia pomostowe, l. sem. 3
+Uniwersytet Rzeszowski;Studia pomostowe, l. sem. 2
+Wyższa Szkoła Medyczna w Legnicy z siedzibą w Legnicy;Studia pomostowe, l. sem. 2
+Państwowa Wyższa Szkoła Zawodowa im. Prezydenta Stanisława Wojciechowskiego w Kaliszu;Studia pomostowe, l. sem. 2
+Akademia Techniczno-Humanistyczna w Bielsku-Białej;Studia pomostowe, l. sem. 2
+Państwowa Wyższa Szkoła Zawodowa im. Hipolita Cegielskiego w Gnieźnie;Studia pomostowe, l. sem. 2
+Państwowa Wyższa Szkoła Zawodowa im. Hipolita Cegielskiego w Gnieźnie;Studia pomostowe, l. sem. 3
+Powiślańska Szkoła Wyższa w Kwidzynie;Studia pomostowe, l. sem. 2
+Powiślańska Szkoła Wyższa w Kwidzynie;Studia pomostowe, l. sem. 3
+Państwowa Wyższa Szkoła Zawodowa im. rotmistrza Witolda Pileckiego w Oświęcimiu;Studia pomostowe, l. sem. 2
+Pomorski Uniwersytet Medyczny w Szczecinie;Studia pomostowe, l. sem. 3
+Pomorski Uniwersytet Medyczny w Szczecinie;Studia pomostowe, l. sem. 2
+Gdański Uniwersytet Medyczny;Studia pomostowe, l. sem. 2
+Gdański Uniwersytet Medyczny;Studia pomostowe, l. sem. 3
+Collegium Mazovia Innowacyjna Szkoła Wyższa w Siedlcach;Studia pomostowe, l. sem. 2
+Collegium Mazovia Innowacyjna Szkoła Wyższa w Siedlcach;Studia pomostowe, l. sem. 3
+Uczelnia Warszawska im. Marii Skłodowskiej-Curie w Warszawie;Studia pomostowe, l. sem. 2
+Wyższa Szkoła Humanistyczno-Przyrodnicza Studium Generale Sandomiriense w Sandomierzu;Studia pomostowe, l. sem. 2
+Szkoła Wyższa im. Bogdana Jańskiego w Warszawie;Studia pomostowe, l. sem. 3
+Szkoła Wyższa im. Bogdana Jańskiego w Warszawie;Studia pomostowe, l. sem. 2
+Uniwersytet Medyczny im. Piastów Śląskich we Wrocławiu;Studia pomostowe, l. sem. 3
+Podhalańska Państwowa Wyższa Szkoła Zawodowa w Nowym Targu;Studia pomostowe, l. sem. 3
+Wyższa Szkoła Ekonomii i Innowacji w Lublinie;Studia pomostowe, l. sem. 2
+Wyższa Szkoła Ekonomii i Innowacji w Lublinie;Studia pomostowe, l. sem. 3
+Wyższa Szkoła Nauk Stosowanych w Rudzie Śląskiej;Studia pomostowe, l. sem. 2
+Wyższa Szkoła Nauk Stosowanych w Rudzie Śląskiej;Studia pomostowe, l. sem. 3
+Uniwersytet Mikołaja Kopernika w Toruniu;Studia pomostowe, l. sem. 2
+Uniwersytet Mikołaja Kopernika w Toruniu;Studia pomostowe, l. sem. 3
+Wyższa Szkoła Medyczna w Sosnowcu;Studia pomostowe, l. sem. 2
+Wyższa Szkoła Medyczna w Sosnowcu;Studia pomostowe, l. sem. 3
+Państwowa Wyższa Szkoła Zawodowa w Koszalinie;Studia pomostowe, l. sem. 2
+Państwowa Wyższa Szkoła Zawodowa w Koszalinie;Studia pomostowe, l. sem. 3
+Wyższa Szkoła Umiejętności Zawodowych w Pińczowie;Studia pomostowe, l. sem. 3
+Wyższa Szkoła Umiejętności Zawodowych w Pińczowie;Studia pomostowe, l. sem. 2
+Wyższa Szkoła Medyczna z siedzibą w Białymstoku;Studia pomostowe, l. sem. 3
+Państwowa Wyższa Szkoła Zawodowa im. Stanisława Pigonia w Krośnie;Studia pomostowe, l. sem. 2
+Państwowa Wyższa Szkoła Zawodowa im. Stanisława Pigonia w Krośnie;Studia pomostowe, l. sem. 3
+Collegium Masoviense - Wyższa Szkoła Nauk o Zdrowiu w Żyrardowie;Studia pomostowe, l. sem. 3
+Uniwersytet Medyczny w Lublinie;Studia pomostowe, l. sem. 2
+Państwowa Szkoła Wyższa im. Papieża Jana Pawła II w Białej Podlaskiej;Studia pomostowe, l. sem. 2
+Państwowa Szkoła Wyższa im. Papieża Jana Pawła II w Białej Podlaskiej;Studia pomostowe, l. sem. 3
+Państwowa Wyższa Szkoła Zawodowa w Płocku;Studia pomostowe, l. sem. 2
+Państwowa Wyższa Szkoła Zawodowa w Płocku;Studia pomostowe, l. sem. 3
+Wyższa Szkoła Zarządzania w Częstochowie;Studia pomostowe, l. sem. 2
+Wyższa Szkoła Biznesu i Przedsiębiorczości w Ostrowcu Świętokrzyskim;Studia pomostowe, l. sem. 3
+Wyższa Szkoła Biznesu i Przedsiębiorczości w Ostrowcu Świętokrzyskim;Studia pomostowe, l. sem. 2
+Wyższa Szkoła Planowania Strategicznego w Dąbrowie Górniczej;Studia pomostowe, l. sem. 2
+Uniwersytet Jagielloński w Krakowie;pomostowe
+Państwowa Medyczna Wyższa Szkoła Zawodowa w Opolu;Studia pomostowe, l. sem. 2
+Śląski Uniwersytet Medyczny w Katowicach;Studia pomostowe, l. sem. 2
+Warszawski Uniwersytet Medyczny;Studia pomostowe, l. sem. 2
+Uniwersytet Rzeszowski;Studia pomostowe, l. sem. 2
+Państwowa Wyższa Szkoła Zawodowa im. Prezydenta Stanisława Wojciechowskiego w Kaliszu;Studia pomostowe, l. sem. 2
+Pomorski Uniwersytet Medyczny w Szczecinie;Studia pomostowe, l. sem. 2
+Gdański Uniwersytet Medyczny;Studia pomostowe, l. sem. 2
+Uniwersytet Medyczny im. Piastów Śląskich we Wrocławiu;Studia pomostowe, l. sem. 2
+Uniwersytet Mikołaja Kopernika w Toruniu;Studia pomostowe, l. sem. 2
+Uniwersytet Medyczny w Lublinie;Studia pomostowe, l. sem. 2
+Uniwersytet Jagielloński w Krakowie;pomostowe
+Wyższa Szkoła Gospodarki Euroregionalnej im. Alcide De Gasperi w Józefowie;Prawo urzędnicze
+Wyższa Szkoła Bankowa we Wrocławiu;Prawo w bizesie
+Akademia Polonijna w Częstochowie;Prawo w bizesie
+Wyższa Szkoła Bankowa w Poznaniu;Prawo w biznesie
+Wyższa Szkoła Bankowa w Toruniu;Prawo w biznesie
+Wyższa Szkoła Bankowa w Poznaniu;Prawo w biznesie
+Wyższa Szkoła Bankowa w Toruniu;Prawo w biznesie
+Wyższa Szkoła Bankowa w Gdańsku;Prawo w biznesie
+Wyższa Szkoła Bankowa w Poznaniu;Prawo w biznesie
+Uniwersytet Jagielloński w Krakowie;Prawo własności intelektualnej i nowych mediów
+Wyższa Szkoła Administracji i Biznesu im. Eugeniusza Kwiatkowskiego w Gdyni;projektowanie aktywności społecznej
+Uniwersytet Śląski w Katowicach;Przedsiębiorczość
+Uniwersytet Ekonomiczny w Katowicach;Przedsiębiorczość i finanse
+Szkoła Wyższa Psychologii Społecznej w Warszawie;Psychokryminalistyka
+Wyższa Szkoła Bankowa w Toruniu;Psychologia w biznesie
+Wyższa Szkoła Bankowa w Toruniu;psychologia w biznesie
+Uniwersytet Łódzki;Rachunkowość
+Collegium Humanitatis z siedzibą w Świdnicy w likwidacji;stosowana psychologia zwierząt
+Uniwersytet Śląski w Katowicach;Stosowane nauki społeczne
+Górnośląska Wyższa Szkoła Przedsiębiorczości im. Karola Goduli w Chorzowie;Terapia artystyczna
+Uniwersytet im. Adama Mickiewicza w Poznaniu;Zarządzanie państwem
+Uniwersytet Łódzki;Zarządzanie zasobami ludzkimi

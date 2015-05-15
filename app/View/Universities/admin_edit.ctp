@@ -1,8 +1,7 @@
 <div class="university form col-sm-11">
 <?php echo $this->Form->create('University', array('type' => 'file', 'class'=>'form-horizontal', 'role'=>'form')); ?>
     <form class="form-horizontal" role="form">
-		
-        <legend><?php echo __('Edit University'); ?></legend>
+        <legend><?php echo __('Edit University'); ?><div class="pull-right"><?php	echo $this->Html->link( "Kierunki",   array('controller'=>'courseon_universities', 'action'=>'lista', $this->data['University']['id']) ); ?></div></legend>
 		<div class="form-group">
 		<?php 	echo $this->Form->hidden('id', array('value' => $this->data['University']['id']));?>
 			<label class="col-sm-2 control-label">Nazwa</label>			
@@ -174,7 +173,7 @@
 		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
-			  <?php echo $this->Form->button('Edytuj uczelnie', array('type' => 'submit', 'class'=> 'btn btn-default'));?>
+			  <?php echo $this->Form->button('Edytuj uczelnie', array('type' => 'submit', 'class'=> 'btn btn-primary'));?>
 			</div>
 		  </div>
 		</div>
@@ -183,6 +182,11 @@
 </div>
 <div class="clearfix"></div>
 <?php 
-echo $this->Html->link( "Return to Dashboard",   array('action'=>'index') ); 
+
+$slug = strtolower(Inflector::slug($this->data['University']['nazwa'],'-'));?>
+<a href="/uczelnia/<?php echo $slug.'-'.  $this->data['University']['id'];?>.html" class="btn btn-info" target="_blank">
+	Zobacz profil
+</a>
+<?php	echo $this->Html->link( "Powrót do listy uniwersytetów",   array('action'=>'index') ); 
 	echo $this->element('html_gmap');
 ?>

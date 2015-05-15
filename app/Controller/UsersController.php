@@ -101,14 +101,14 @@ class UsersController extends AppController {
 		$this->layout = 'login';
 		
 		if ($this->request->is('post')) {
-			if ($_SERVER['REMOTE_ADDR'] == '192.162.147.207' || $_SERVER['REMOTE_ADDR'] == '192.162.147.193' || $_SERVER['REMOTE_ADDR'] == '89.66.128.54' || $_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
+			//if ($_SERVER['REMOTE_ADDR'] == '192.162.147.207' || $_SERVER['REMOTE_ADDR'] == '192.162.147.193' || $_SERVER['REMOTE_ADDR'] == '89.68.25.161' || $_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
 				if ($this->Auth->login()) {
 					$this->Session->setFlash(__('Welcome, '. $this->Auth->user('username')));
 					$this->redirect($this->Auth->redirectUrl());
 				}
 				$this->Session->setFlash(__('Invalid username or password, try again'));
-			}
-		}else{
+			//} else $this->Session->setFlash(__('Nie masz dostepu z tej lokalizacji'));
+		} else {
                 $this -> Session -> Setflash('Error: Access Denied');
         }
     }
@@ -155,15 +155,15 @@ class UsersController extends AppController {
         $who = $ip_name + $cookie_name;
         $this->Accessadmin->saveField('who', $who);*/
 		if ($this->request->is('post')) {
-			if ($_SERVER['REMOTE_ADDR'] == '192.162.147.207' || $_SERVER['REMOTE_ADDR'] == '192.162.147.193' || $_SERVER['REMOTE_ADDR'] == '89.66.128.54' || $_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
+			//if ($_SERVER['REMOTE_ADDR'] == '192.162.147.207' || $_SERVER['REMOTE_ADDR'] == '192.162.147.193' || $_SERVER['REMOTE_ADDR'] == '89.66.128.54' || $_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
 				if ($this->Auth->login()) {
 					$this->Session->setFlash(__('Witaj, '. $this->Auth->user('username')));
 					$this->redirect($this->Auth->redirectUrl());
 				}
 				$this->Session->setFlash(__('Invalid username or password, try again'));
-			} else{
-                $this -> Session -> Setflash('Error: Access Denied');
-			}
+			//} else{
+               // $this -> Session -> Setflash('Error: Access Denied');
+			//}
 		}
     }
 	public function admin_logout() {

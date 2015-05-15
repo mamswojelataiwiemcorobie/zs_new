@@ -18,7 +18,8 @@ class CoursesController extends AppController {
 		$kategorie = $this->Course->CoursesCategory->find('all');
 		$this->set('kategorie',$kategorie);
 		if ($tid) {
-			$kierunki = $this->Course->find('all', array('conditions' => array('Course.courses_category_id' => $tid, 'Course.university_type_id' => 1)));
+			$this->Course->contain();
+			$kierunki = $this->Course->find('all', array('conditions' => array('Course.courses_category_id' => $tid, 'Course.university_type_id' => 1), 'order'=>array('Course.nazwa'=>'asc')));
 			$this->set('kategoria_set',1);
 			$this->set('kierunki',$kierunki);
 			$this->set('kategoria',$kategorie[$tid-1]);
@@ -129,7 +130,7 @@ class CoursesController extends AppController {
 				} else {
 					$ref = 1;
 				}
-				$txt = mysql_escape_string(mb_strtolower($_POST['txt']));
+				$txt =  htmlentities(trim(strip_tags(stripslashes(mb_strtolower($_POST['txt'])))));
 				$this->Course->contain();
 				$rq = $this->Course->find('all', array('conditions'=> array('OR'=>array(
 																						array('LOWER(Course.nazwa) LIKE ' => '%'.$txt.'%')),
@@ -235,6 +236,42 @@ class CoursesController extends AppController {
 			}
 		}
 	}
+
+	public function zapisz_kierunki() {
+		
+		//Debugger::dump($courses);
+		$filename = 'kierunki';
+		if ($fh = fopen($filename, "r")) {
+			$lista2= '';
+			while (!feof($fh)) {
+			  	$line = trim(fgets($fh));
+				$line1 = mb_strtolower($line, 'UTF-8');
+			  	$this->Course->contain();
+			  	$course = $this->Course->find('all', array('fields'=>array('nazwa'), 'conditions' => array(
+                    'LOWER(TRIM(nazwa)) LIKE' => "$line1",
+                )));
+                if(!empty($course)) {
+					//echo 'dobry - '. $line .'-'.$course.'<br/>'; 
+				} else { 
+					$lista[] = $line;
+					$lista2 .= $line."\r\n";
+				}
+			  	/*$good = false; 
+			  	foreach($courses as $course) {
+			  		if(strcmp(mb_strtoupper($line,'UTF-8'),mb_strtoupper($course,'UTF-8')) == 0) {
+			  			echo 'dobry - '. $line .'-'.$course; 
+			  			$good = true; break;
+			  		} //else  echo 'zły - '. $line .'-'.$course1;
+			  	}
+			  	if (!$good) {
+			  		echo 'źle - '.$line;
+			  	}*/
+			}
+			fclose($fh);
+			file_put_contents('nowe.txt', $lista2);
+			Debugger::dump($lista);
+		}
+	} 
 	
 	public function admin_search() {
         // the page we will redirect to
@@ -254,23 +291,41 @@ class CoursesController extends AppController {
     }
 	
 	public function admin_index() {
+		$conditions =array();
 		if(isset($this->passedArgs['Search.keywords'])) {
             $keywords = mb_strtolower($this->passedArgs['Search.keywords'], 'UTF-8');
 			//Debugger::dump($keywords);
-            $this->paginate = array(
-            	'limit' =>10,
-                'conditions' => array(
-                    'LOWER(Course.nazwa) LIKE' => "%$keywords%",
-                )
-            );
-        } else { $this->paginate = array(
+			$conditions[] = array('OR' => array(
+                					'Course.id' => $keywords,
+                	               'LOWER(Course.nazwa) LIKE' => "%$keywords%",
+                	));
+        }  
+        if (!empty($this->passedArgs['Search.university_type_id'])) {
+        	$type = $this->passedArgs['Search.university_type_id'];
+        	//$this->paginate['conditions'][]['University.university_type_id'] = $type;
+        	$conditions[] = array('Course.university_type_id' => $type);
+        	
+           	$this->request->data['Search']['university_type_id'] = $this->passedArgs['Search.university_type_id'];
+        }
+
+         if (!empty($this->passedArgs['Search.courses_category_id'])) {
+        	$abonament = $this->passedArgs['Search.courses_category_id'];
+        	$conditions[] = array('Course.courses_category_id' => $abonament);
+        	
+           	$this->request->data['Search']['courses_category_id'] = $this->passedArgs['courses_category_id'];
+        
+        } 
+		$this->paginate = array(
             'limit' => 20,
+            'conditions' => $conditions,
             'order' => array('Course.nazwa' => 'asc' ),
 			'contain' => array('CoursesCategory', 'UniversityType')
 	        );
-	    }
+	    
         $courses = $this->paginate('Course');
 		//Debugger::dump($courses);
+		$this->set('coursesCategories', $this->Course->CoursesCategory->find('list'));
+		$this->set('universityTypes', $this->Course->UniversityType->find('list'));
         $this->set('courses', $courses);
 	}
 	

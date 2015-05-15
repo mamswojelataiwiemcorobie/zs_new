@@ -3,9 +3,19 @@
 	<div class="pull-right">
 		<?php echo $this->Form->create('University',array('action'=>'search','class'=>'form-inline', 'role'=>'form'));?>
 			<div class="form-group">
-				<label class="sr-only"></label>
+				<label class="sr-only">Keywords</label>
 			<?php
-				echo $this->Form->input('Search.keywords', array('label'=>false, 'class'=> 'form-control'));?>
+				echo $this->Form->input('Search.keywords', array('label'=>false, 'class'=> 'form-control', 'placeholder'=>'ID, nazwa, lub miasto'));
+				?>
+			</div>
+			<div class="form-group">
+				<label for="SearchUniversityTypeId">Typ</label>
+			<?php	echo $this->Form->input('Search.university_type_id', array('label'=>false,'empty'=>true, 'class'=> 'form-control', 'div'=>false));
+				?>
+			</div>
+			<div class="form-group">
+				<label for="SearchAbonamentId">Pakiet</label>
+				<?php	echo $this->Form->input('Search.abonament_id', array('label'=>false,'empty'=>true, 'class'=> 'form-control', 'div'=>false));?>
 			</div>
 			<div class="form-group">
 				<?php echo $this->Form->submit('Szukaj', array('class'=> 'btn btn-default'));
@@ -13,11 +23,12 @@
 			</div>
 		<?php echo $this->Form->end();?>
 	</div>
+	<?php $this->Paginator->options(array('url' => $this->passedArgs)); ?>
 	<div class="table-responsive">
 		<table class="table table-striped table-hover">
 			<thead>
 				<tr>
-					<th>ID</th>
+					<th><?php echo $this->Paginator->sort('id', 'ID');?></th>
 					<th><?php echo $this->Paginator->sort('nazwa', 'Nazwa');?>  </th>
 					<th><?php echo $this->Paginator->sort('UniversityType.nazwa', 'Typ');?>  </th>
 					<th><?php echo $this->Paginator->sort('University.miasta', 'Miasto');?></th>
